@@ -1,0 +1,11 @@
+[*] Binary protection state of pptp.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function mmap tear down of pptp.ko
+
+
+[*] Function mmap used 0 times pptp.ko
+

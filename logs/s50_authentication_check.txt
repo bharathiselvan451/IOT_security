@@ -1,0 +1,84 @@
+[+] Check users, groups and authentication
+=================================================================
+The authentication checking module performs various authentication checks.
+
+
+
+==> Users with UID zero (0)
+-----------------------------------------------------------------
+[*] Searching accounts with UID 0
+[-] /etc/passwd not available
+
+
+==> Shadow file identification
+-----------------------------------------------------------------
+[*] Searching shadow files
+[+] Found shadow file /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow (-rw-rw-r-- 501 502) with possible hash root:$1$$zdlNHiCDxYDfeF4MZL.H3/:10933:0:99999:7::: of hashtype: MD5
+[+] Found shadow file /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow (-rw-rw-r-- 501 502) with possible hash Admin:$1$$zdlNHiCDxYDfeF4MZL.H3/:10933:0:99999:7::: of hashtype: MD5
+
+
+==> Non-unique accounts
+-----------------------------------------------------------------
+[*] Searching non-unique accounts
+[-] /etc/passwd not available
+
+
+==> Unique group IDs
+-----------------------------------------------------------------
+[*] Searching non-unique group ID's
+[-] All group ID's found in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/group (-rw-rw-r-- 501 502) are unique
+
+
+==> Unique group name
+-----------------------------------------------------------------
+[*] Searching non-unique group names
+[-] All group names found in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/group (-rw-rw-r-- 501 502) are unique
+
+
+==> Query user accounts
+-----------------------------------------------------------------
+[*] Reading system users
+[-] /etc/passwd not available
+
+
+==> Query NIS and NIS+ authentication support
+-----------------------------------------------------------------
+[*] Check nsswitch.conf
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/nsswitch.conf (-rw-rw-r-- 501 502) exist
+[-] NIS/NIS+ authentication not enabled
+
+
+==> Scan and test sudoers files
+-----------------------------------------------------------------
+[-] No sudoers files found in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract
+
+
+==> Ownership and permissions for sudo configuration files
+-----------------------------------------------------------------
+[-] No sudoers files found - no check possible
+
+
+==> Search for PAM password strength testing libraries
+-----------------------------------------------------------------
+[*] Searching PAM password testing modules (cracklib, passwdqc, pwquality)
+[-] pam_cracklib.so not found
+[-] pam_passwdqc.so not found
+[-] pam_pwquality.so not found
+[-] No PAM modules for password strength testing found
+
+
+==> Scan PAM configuration file
+-----------------------------------------------------------------
+[-] /etc/pam.conf not available
+
+
+==> Searching PAM configurations and LDAP support in PAM files
+-----------------------------------------------------------------
+[-] /etc/pam.d not available
+
+
+==> Searching available PAM files
+-----------------------------------------------------------------
+[-] Nothing found
+
+[*] Statistics:2

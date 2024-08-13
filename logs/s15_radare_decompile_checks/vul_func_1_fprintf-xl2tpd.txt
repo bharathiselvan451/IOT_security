@@ -1,0 +1,76 @@
+[*] Binary protection state of xl2tpd
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of xl2tpd
+
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/xl2tpd @ 0x40684c */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) sym.l2tp_log ()                  | void l2tp_log () {
+    0x0040684c lui gp, 6                     |     
+    0x00406850 addiu gp, gp, -0x111c         |     
+    0x00406854 addu gp, gp, t9               |     gp += t9;
+    0x00406858 addiu sp, sp, -0x120          |     
+    0x0040685c sw ra, 0x11c(sp)              |     *(var_11ch) = ra;
+    0x00406860 sw s0, 0x118(sp)              |     *(var_118h) = s0;
+    0x00406864 sw gp, 0x10(sp)               |     *(var_10h) = gp;
+    0x00406868 lw t9, -0x7c48(gp)            |     t9 = sym.imp.vsnprintf;
+    0x0040686c move s0, a0                   |     s0 = a0;
+    0x00406870 sw a2, 0x128(sp)              |     *(arg_128h) = a2;
+    0x00406874 addiu a0, sp, 0x18            |     a0 = sp + 0x18;
+    0x00406878 sw a3, 0x12c(sp)              |     *(arg_12ch) = a3;
+    0x0040687c move a2, a1                   |     a2 = a1;
+    0x00406880 addiu a3, sp, 0x128           |     a3 = sp + 0x128;
+    0x00406884 addiu a1, zero, 0x100         |     a1 = 0x100;
+    0x00406888 jalr t9                       |     t9 ();
+    0x0040688c lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x00406890 lw v0, -0x7eac(gp)            |     v0 = *(gp);
+    0x00406894 lw t9, -0x7c50(gp)            |     t9 = sym.init_log;
+    0x00406898 lw v1, 0x328(v0)              |     v1 = *((v0 + 202));
+    0x0040689c move a0, t9                   |     a0 = t9;
+    0x004068a0 lw t9, -0x7bb4(gp)            |     t9 = sym.imp.getpid;
+                                             |     if (v1 != 0) {
+    0x004068a4 beqz v1, 0x4068e8             |         
+    0x004068a8 nop                           |         
+    0x004068ac move t9, a0                   |         t9 = a0;
+    0x004068b0 jalr t9                       |         t9 ();
+    0x004068b4 nop                           |         
+    0x004068b8 move a0, s0                   |         a0 = s0;
+    0x004068bc lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x004068c0 addiu a2, sp, 0x18            |         a2 = sp + 0x18;
+    0x004068c4 lw a1, -0x7fe0(gp)            |         a1 = *((gp - 8184));
+    0x004068c8 lw t9, -0x7e5c(gp)            |         t9 = sym.imp.syslog;
+                                             |         /* esilref: '&s' */
+    0x004068cc addiu a1, a1, -0x6e48         |         a1 += -0x6e48;
+    0x004068d0 jalr t9                       |         t9 ();
+    0x004068d4 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x004068d8 lw ra, 0x11c(sp)              |         ra = *(var_11ch);
+    0x004068dc lw s0, 0x118(sp)              |         s0 = *(var_118h);
+    0x004068e0 addiu sp, sp, 0x120           |         
+    0x004068e4 jr ra                         |         return v0;
+                                             |     }
+    0x004068e8 jalr t9                       |     t9 ();
+    0x004068ec nop                           |     
+    0x004068f0 addiu a3, sp, 0x18            |     a3 = sp + 0x18;
+    0x004068f4 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x004068f8 move a2, v0                   |     a2 = v0;
+    0x004068fc lw v0, -0x7ea8(gp)            |     v0 = *((gp - 8106));
+    0x00406900 lw a1, -0x7fe0(gp)            |     a1 = *((gp - 8184));
+[31m    0x00406904 lw t9, -0x7d08(gp)            |     t9 = sym.imp.fprintf;[0m
+    0x00406908 lw a0, (v0)                   |     a0 = *(v0);
+                                             |     /* esilref: 'xl2tpd[&d]: &s' */
+    0x0040690c addiu a1, a1, -0x6e44         |     a1 += -0x6e44;
+    0x00406910 jalr t9                       |     t9 ();
+    0x00406914 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x00406918 lw ra, 0x11c(sp)              |     ra = *(var_11ch);
+    0x0040691c lw s0, 0x118(sp)              |     s0 = *(var_118h);
+    0x00406920 addiu sp, sp, 0x120           |     
+    0x00406924 jr ra                         |     return v0;
+                                             | }
+
+[*] Function fprintf used 1 times xl2tpd
+

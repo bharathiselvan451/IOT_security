@@ -1,0 +1,11 @@
+[*] Binary protection state of dhcp6c
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of dhcp6c
+
+
+[*] Function strcat used 0 times dhcp6c
+

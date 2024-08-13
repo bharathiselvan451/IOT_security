@@ -1,0 +1,20 @@
+[+] Search package management details
+=================================================================
+The package mgmt extractor module extracts package information from Debian, OpenWRT and RPM packaging systems, including package names and versions.
+
+
+
+==> Debian package management identification
+-----------------------------------------------------------------
+[-] No debian package files found!
+
+
+==> OpenWRT package management identification
+-----------------------------------------------------------------
+[-] No OpenWRT package files found!
+
+
+==> RPM package management identification
+-----------------------------------------------------------------
+[-] No RPM package management database found!
+[-] Wed Jul 31 20:47:21 EDT 2024 - S08_package_mgmt_extractor nothing reported

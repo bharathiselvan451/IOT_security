@@ -1,0 +1,349 @@
+[*] Binary protection state of usbp
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function printf tear down of usbp
+
+move a0, s0
+lw gp, 0x20(sp)
+move a1, zero
+lw t9, -sym.imp.memset(gp)
+jalr t9
+addiu a2, zero, 0x10
+move a0, s4
+lw gp, 0x20(sp)
+move a1, s1
+move a2, s0
+lw t9, -sym.getDevNumName(gp)
+lw s6, -segment.LOAD0(gp)
+jalr t9
+move a3, s5
+move a0, s2
+lw gp, 0x20(sp)
+move a1, zero
+lw t9, -sym.imp.memset(gp)
+jalr t9
+addiu a2, zero, 0x100
+addiu a1, zero, 0x100
+lw gp, 0x20(sp)
+addiu a3, s6, 0x1cd4
+move a0, s2
+lw a2, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.snprintf(gp)[0m
+addiu a2, a2, 0x1ce0
+jalr t9
+sw s5, 0x10(sp)
+move a0, s1
+lw gp, 0x20(sp)
+lw t9, -sym.imp.atoi(gp)
+lw s1, -segment.LOAD0(gp)
+jalr t9
+addiu s4, s1, 0x1ce8
+move a0, s0
+lw gp, 0x20(sp)
+lw t9, -sym.imp.atoi(gp)
+jalr t9
+sll s0, v0, 8
+move a0, s2
+lw gp, 0x20(sp)
+or s0, s0, v0
+move a3, s0
+sra a2, s0, 0x1f
+lw t9, -sym.imp.mknod(gp)
+jalr t9
+addiu a1, zero, 0x61b6
+move a0, s2
+lw gp, 0x20(sp)
+move a1, zero
+lw t9, -sym.imp.memset(gp)
+jalr t9
+addiu a2, zero, 0x100
+move a3, s4
+lw gp, 0x20(sp)
+move a0, s2
+addiu a1, zero, 0x100
+lw v0, -segment.LOAD0(gp)
+lw a2, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.snprintf(gp)[0m
+addiu s0, v0, 0x1cf8
+addiu a2, a2, 0x1d00
+sw s0, 0x10(sp)
+jalr t9
+sw s7, 0x14(sp)
+move a0, s2
+lw gp, 0x20(sp)
+lw t9, -sym.imp.mkdir(gp)
+jalr t9
+addiu a1, zero, 0x1ff
+move a0, s2
+lw gp, 0x20(sp)
+move a1, zero
+lw t9, -sym.imp.memset(gp)
+jalr t9
+addiu a2, zero, 0x100
+move a0, s2
+lw gp, 0x20(sp)
+addiu a1, zero, 0x100
+addiu a3, s6, 0x1cd4
+lw a2, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.snprintf(gp)[0m
+addiu a2, a2, 0x1d08
+sw s5, 0x10(sp)
+sw s4, 0x14(sp)
+sw s0, 0x18(sp)
+jalr t9
+sw s7, 0x1c(sp)
+lw gp, 0x20(sp)
+lw t9, -sym.imp.system(gp)
+jalr t9
+move a0, s2
+lw gp, 0x20(sp)
+beqz v0, 0x4011f8
+move a0, s2
+lw t9, -sym.imp.memset(gp)
+move a1, zero
+jalr t9
+addiu a2, zero, 0x100
+addiu a3, s6, 0x1cd4
+lw gp, 0x20(sp)
+move a0, s2
+addiu a1, zero, 0x100
+lw a2, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.snprintf(gp)[0m
+addiu a2, a2, 0x1d4c
+sw s5, 0x10(sp)
+sw s4, 0x14(sp)
+sw s0, 0x18(sp)
+jalr t9
+sw s7, 0x1c(sp)
+lw gp, 0x20(sp)
+lw t9, -sym.imp.system(gp)
+jalr t9
+move a0, s2
+lw gp, 0x20(sp)
+beqz v0, 0x4011f8
+move a0, s2
+lw t9, -sym.imp.memset(gp)
+move a1, zero
+jalr t9
+addiu a2, zero, 0x100
+move a3, s4
+lw gp, 0x20(sp)
+move a0, s2
+addiu a1, zero, 0x100
+lw a2, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.snprintf(gp)[0m
+addiu a2, a2, 0x1d8c
+sw s0, 0x10(sp)
+jalr t9
+sw s5, 0x14(sp)
+lw gp, 0x20(sp)
+lw t9, -sym.imp.system(gp)
+jalr t9
+move a0, s2
+lw gp, 0x20(sp)
+b 0x400f54
+nop
+addiu s7, s7, 1
+addiu v0, zero, 1
+slti v1, s7, 9
+bnez v1, 0x400f54
+movz fp, v0, fp
+lw t9, -sym.imp.fclose(gp)
+jalr t9
+move a0, s3
+addiu v0, zero, 1
+--
+jr ra
+addiu sp, sp, 0x280
+lui gp, 5
+addiu gp, gp, -0x73d0
+addu gp, gp, t9
+addiu sp, sp, -0x338
+sw ra, 0x330(sp)
+sw s5, 0x32c(sp)
+sw s4, 0x328(sp)
+sw s3, 0x324(sp)
+sw s2, 0x320(sp)
+sw s1, 0x31c(sp)
+sw s0, 0x318(sp)
+sw gp, 0x10(sp)
+move a1, zero
+lw t9, -sym.imp.memset(gp)
+addiu s4, sp, 0x118
+move a0, s4
+jalr t9
+addiu a2, zero, 0x100
+move a0, s4
+lw gp, 0x10(sp)
+addiu a1, zero, 0x100
+move s5, zero
+lw a2, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.snprintf(gp)[0m
+jalr t9
+addiu a2, a2, 0x1ddc
+move a0, s4
+lw gp, 0x10(sp)
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.popen(gp)
+jalr t9
+addiu a1, a1, 0x1de4
+move s3, v0
+lw gp, 0x10(sp)
+beqz s3, 0x4014f0
+addiu v0, zero, -1
+lw t9, -sym.imp.memset(gp)
+addiu s0, sp, 0x18
+move a0, s0
+move a1, zero
+jalr t9
+addiu a2, zero, 0x100
+move a0, s0
+lw gp, 0x10(sp)
+--
+move s1, v0
+move a0, s2
+move a1, zero
+lw t9, -sym.imp.memset(gp)
+beqz v0, 0x401334
+addiu a2, zero, 0x100
+jalr t9
+nop
+move a0, s2
+lw gp, 0x10(sp)
+move a1, s0
+lw t9, -sym.imp.strncpy(gp)
+jalr t9
+subu a2, s1, s0
+move a0, s4
+lw gp, 0x10(sp)
+move a1, zero
+lw t9, -sym.imp.memset(gp)
+jalr t9
+addiu a2, zero, 0x100
+move a0, s4
+lw gp, 0x10(sp)
+move a3, s2
+addiu a1, zero, 0x100
+lw a2, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.snprintf(gp)[0m
+jalr t9
+addiu a2, a2, 0x1de8
+lw gp, 0x10(sp)
+lw t9, -sym.imp.system(gp)
+jalr t9
+move a0, s4
+lw gp, 0x10(sp)
+beqz v0, 0x401330
+nop
+b 0x401330
+addiu s5, s5, 1
+lw t9, -sym.imp.pclose(gp)
+jalr t9
+move a0, s3
+lw gp, 0x10(sp)
+bnez s5, 0x4014f0
+addiu v0, zero, -1
+lw t9, -sym.imp.memset(gp)
+addiu s0, sp, 0x118
+move a0, s0
+move a1, zero
+jalr t9
+addiu a2, zero, 0x100
+addiu a1, zero, 0x100
+lw gp, 0x10(sp)
+move a0, s0
+lw s1, -segment.LOAD0(gp)
+lw a3, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.snprintf(gp)[0m
+addiu a2, s1, 0x1df4
+jalr t9
+addiu a3, a3, 0x1ce8
+lw gp, 0x10(sp)
+lw t9, -sym.imp.system(gp)
+jalr t9
+move a0, s0
+move a0, s0
+lw gp, 0x10(sp)
+move a1, zero
+lw t9, -sym.imp.memset(gp)
+jalr t9
+addiu a2, zero, 0x100
+move a0, s0
+lw gp, 0x10(sp)
+addiu a2, s1, 0x1df4
+addiu a1, zero, 0x100
+lw a3, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.snprintf(gp)[0m
+jalr t9
+addiu a3, a3, 0x1cd4
+lw gp, 0x10(sp)
+lw t9, -sym.imp.system(gp)
+jalr t9
+move a0, s0
+move v0, zero
+lw gp, 0x10(sp)
+lw ra, 0x330(sp)
+lw s5, 0x32c(sp)
+lw s4, 0x328(sp)
+lw s3, 0x324(sp)
+lw s2, 0x320(sp)
+lw s1, 0x31c(sp)
+lw s0, 0x318(sp)
+jr ra
+addiu sp, sp, 0x338
+lui gp, 5
+addiu gp, gp, -0x7644
+addu gp, gp, t9
+--
+jalr t9
+addiu a2, zero, 0x100
+move a0, s1
+lw gp, 0x10(fp)
+move a1, zero
+addiu a2, zero, 0x100
+lw t9, -sym.imp.memset(gp)
+jalr t9
+addiu s2, s0, 0xb
+move a0, s2
+lw gp, 0x10(fp)
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.strcmp(gp)
+jalr t9
+addiu a1, a1, 0x1e08
+lw gp, 0x10(fp)
+beqz v0, 0x401780
+nop
+lbu v0, 0xb(s0)
+addiu v0, v0, -0x30
+andi v0, v0, 0xff
+sltiu v0, v0, 0xa
+beqz v0, 0x401780
+move a0, s6
+lw a2, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.snprintf(gp)[0m
+addiu a1, zero, 0x100
+addiu a2, a2, 0x1e0c
+jalr t9
+move a3, s2
+move a0, s6
+lw gp, 0x10(fp)
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.fopen(gp)
+jalr t9
+addiu a1, a1, 0x1cd0
+lw gp, 0x10(fp)
+beqz v0, 0x401780
+move s0, v0
+lw t9, -sym.imp.fgets(gp)
+move a0, s1
+addiu a1, zero, 0xff
+jalr t9
+move a2, v0
+lw gp, 0x10(fp)
+lw t9, -sym.imp.fclose(gp)
+
+[*] Function printf used 10 times usbp
+

@@ -1,0 +1,10 @@
+[*] Searching (args for grep: -i) for trick.
+[*] Grepit state info - comment: Trick. Sounds suspicious.
+[*] Grepit state info - Filename 5_general_trick.txt
+[*] Grepit state info - Example: trick
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: trick
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_CLASSIFY.ko[m[36m:[m[32m1[m[36m:[mELF$4(<
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_CLASSIFY.ko[m[36m-[m[32m2[m[36m-[mso	

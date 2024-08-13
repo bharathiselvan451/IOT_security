@@ -1,0 +1,361 @@
+[*] Searching (args for grep: -i) for http://.
+[*] Grepit state info - comment: All HTTP URIs
+[*] Grepit state info - Filename 5_general_http_urls.txt
+[*] Grepit state info - Example: http://example.com
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: http://
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libixml.so.2.0.4[m[36m-[m[32m44[m[36m-[m=""<>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libixml.so.2.0.4[m[36m-[m[32m45[m[36m-[m></0p<?xml version="1.0"?>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libixml.so.2.0.4[m[36m-[m[32m46[m[36m-[m*#document!!"4"@"""""X<!DOCTYPE<?xml
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libixml.so.2.0.4[m[36m:[m[32m47[m[36m:[m	 ?><?<?xml?<!---->/></<![CDATA[]]>01234567890123456789ABCDEFabcdef&quot;&lt;&gt;&apos;&amp;&#x&#rb#cdata-section#text>xmlnsxmlns:<xml[01;31mhttp://[mwww.w3.org/XML/1998/namespacexmlns[01;31mhttp://[mwww.w3.org/2000/xmlns/#document#text#cdata-section0--..09E`a@@KR`ipp			<	<	>	L	M	M	Q	T	b	c	f	o																				
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libixml.so.2.0.4[m[36m-[m[32m48[m[36m-[m
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m206[m[36m-[mST: %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m207[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m208[m[36m-[mdeviceTypeUDNserviceserviceTypeuuid:schemas:deviceuuid:%surn%suuid::urn::service:urn:device:::upnp:rootdevice:all:rootdeviceuuid:*239.255.255.250:1900239.255.255.250CONTENT-TYPE: text/xml; charset="utf-8"
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m:[m[32m209[m[36m:[mInvalid ActionAction FailedInvalid Var%d<s:Envelope xmlns:s="[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/" s:encodingStyle="[01;31mhttp://[mschemas.xmlsoap.org/soap/encoding/">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m210[m[36m-[m<s:Body>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m221[m[36m-[m</s:Body>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m222[m[36m-[m</s:Envelope>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m223[m[36m-[mRNsDsSXccsssssEXT:
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m:[m[32m224[m[36m:[mredsonicb[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/Body"%surn:schemas-upnp-org:control-1-0<s:Envelope xmlns:s="[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/" s:encodingStyle="[01;31mhttp://[mschemas.xmlsoap.org/soap/encoding/"><s:Body>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m:[m[32m225[m[36m:[m</s:Body> </s:Envelope>%q%i ; ns = %s-SOAPACTION%sQueryStateVariableXML error<s:Envelope xmlns:s="[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/" s:encodingStyle="[01;31mhttp://[mschemas.xmlsoap.org/soap/encoding/">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m226[m[36m-[m<s:Body>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m229[m[36m-[m</u:QueryStateVariableResponse>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m230[m[36m-[m</s:Body>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m231[m[36m-[m</s:Envelope>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m:[m[32m232[m[36m:[mRNsDsSXccsss*User-Agent%.*sRNsDsSXccbbbbOut of memory%s:%s%0M-MAN: "[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/"; ns=01
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m:[m[32m233[m[36m:[m01-SOAPACTION:EnvelopeBodyQueryStateVariableResponsereturnFaultdetailUPnPErrorerrorCodeerrorDescription<s:Envelope xmlns:s="[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/" s:encodingStyle="[01;31mhttp://[mschemas.xmlsoap.org/soap/encoding/">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m234[m[36m-[m<s:Body> <%s:%s</s:Body>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m235[m[36m-[m</s:Envelope>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m236[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m:[m[32m237[m[36m:[mqNssssbscUcbbbSOAPACTION: "#"Response<s:Envelope xmlns:s="[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/" s:encodingStyle="[01;31mhttp://[mschemas.xmlsoap.org/soap/encoding/">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m238[m[36m-[m<s:Body></s:Body>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m239[m[36m-[m</s:Envelope>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m240[m[36m-[m<s:Header>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m241[m[36m-[m</s:Header>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m:[m[32m242[m[36m:[mqNssssbscUcbbbbbbb<s:Envelope xmlns:s="[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/" s:encodingStyle="[01;31mhttp://[mschemas.xmlsoap.org/soap/encoding/">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m243[m[36m-[m<s:Body>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m273[m[36m-[mCONTENT-LENGTH: %ld
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m274[m[36m-[mNT: upnp:event
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m275[m[36m-[mNTS: upnp:propchange
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m:[m[32m276[m[36m:[mTIMEOUT: Second-infiniteTIMEOUT: Second-%dredsonicRDSNXcsscsccbupnp:event%iSecond-%d%0Second-infiniteuuid:%sSID: qsscUc%dinfiniteTIMEOUT: Second-qsscssccqsssdscscssccCALLBACK: <[01;31mhttp://[m:/>NT: upnp:event%iSecond-%d%0Second-infiniteuuid:%s%d%0upnp:eventupnp:propchangerbdescription.xml.xmldeviceserviceList$XUPNP_E_SUCCESSUPNP_E_INVALID_HANDLEUPNP_E_INVALID_PARAMUPNP_E_OUTOF_HANDLEUPNP_E_OUTOF_CONTEXTUPNP_E_OUTOF_MEMORUPNP_E_INITUPNP_E_BUFFER_TOO_SMALLUPNP_E_INVALID_DESCUPNP_E_INVALID_URLUPNP_E_INVALID_SIDUPNP_E_INVALID_DEVICEUPNP_E_INVALID_SERVICEUPNP_E_BAD_RESPONSEUPNP_E_BAD_REQUESTUPNP_E_INVALID_ACTIONUPNP_E_FINISHUPNP_E_INIT_FAILEDUPNP_E_BAD_HTTPMSGUPNP_E_NETWORK_ERRORUPNP_E_SOCKET_WRITEUPNP_E_SOCKET_READUPNP_E_SOCKET_BINDUPNP_E_SOCKET_CONNECTUPNP_E_OUTOF_SOCKETUPNP_E_LISTENUPNP_E_EVENT_PROTOCOLUPNP_E_SUBSCRIBE_UNACCEPTEDUPNP_E_UNSUBSCRIBE_UNACCEPTEDUPNP_E_NOTIFY_UNACCEPTEDUPNP_E_INTERNAL_ERRORUPNP_E_INVALID_ARGUMENTUPNP_E_OUTOF_BOUNDSUnknown Error<u:%sResponse xmlns:u="%s">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m-[m[32m277[m[36m-[m</u:%sResponse><u:%s xmlns:u="%s">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5[m[36m:[m[32m278[m[36m:[m</u:%s><e:propertyset xmlns:e="urn:schemas-upnp-org:event-1-0"></e:propertyset>e:property@%8.8x-%4.4x-%4.4x-%2.2x%2.2x-%2.2x%2.2x%2.2x%2.2x%2.2x%2.2x%s:%dURLBase[01;31mhttp://[m/://
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0[m[36m-[m[32m389[m[36m-[m   or the partition table is corrupt (partition is smaller than NTFS),
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0[m[36m-[m[32m390[m[36m-[m   or the NTFS boot sector is corrupt (NTFS size is not valid).
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0[m[36m-[m[32m391[m[36m-[minodenidatalookupsecuridlegacyRuns not adjacentInvalid holeAdjacent holesbegin compressed writeend compressed writeend compressed close..>$BadDEBUG: TRACE: QUIET: INFO: VERBOSE: PROGRESS: WARNING: ERROR: CRITICAL: %s%s (%d) %s(): : %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0[m[36m:[m[32m392[m[36m:[m--log-debug--log-verbose--log-quiet--log-trace  Leaving inconsistent metadata.  Run chkdsk.>$ObjId/sys/block/%s/dm/namer/dev/mapper/%s/dm-\??\\??\Volume{.NTFS-3G/:/$Reparse%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02xS-%hhu-%lu0x%llx-%u/proc/%u/task/%u/status.NTFS-3G/UserMapping$Secureutf8UTF8utf-8UTF-8News, support and information:  [01;31mhttp://[mtuxera.com
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0[m[36m-[m[32m393[m[36m-[mThe device '%s' doesn't seem to have a valid NTFS.
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0[m[36m-[m[32m418[m[36m-[mPlease see the 'dmraid' documentation for help.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0[m[36m-[m[32m419[m[36m-[mPlease check '%s' and the ntfs-3g binary permissions,
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0[m[36m-[m[32m420[m[36m-[mand the mounting user ID. More explanation is provided at
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0[m[36m:[m[32m421[m[36m:[m[01;31mhttp://[mtuxera.com/community/ntfs-3g-faq/#unprivileged
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0[m[36m-[m[32m422[m[36m-[mhiberfil.syshibr$MFT$MFTMirr$LogFile$Volume$AttrDefroot directory$Bitmap$Boot$BadClus$Secure$UpCase$Extendsystem filemft record/etc/mtabr/rorwntfs-3g.user.system.ntfs_aclsystem.ntfs_attribsystem.ntfs_attrib_besystem.ntfs_efsinfosystem.ntfs_reparse_datasystem.ntfs_object_idsystem.ntfs_dos_namesystem.ntfs_timessystem.ntfs_times_besystem.ntfs_crtimesystem.ntfs_crtime_besystem.posix_acl_accesssystem.posix_acl_defaultuser.ntfs.efsinfoMIJJ<JJKK@KKLLLQMMNNOO8O`OOPQ$TRRRRRS SRRRR`0
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare[m[36m-[m[32m158[m[36m-[mx!
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare[m[36m-[m[32m159[m[36m-[mX!
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare[m[36m-[m[32m160[m[36m-[m8!
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare[m[36m:[m[32m161[m[36m:[m!
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare[m[36m-[m[32m162[m[36m-[m***
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5473[m[36m-[m		document.body.style.background = "url(../images/tp-beta-mark.png)";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5474[m[36m-[m</SCRIPT>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5475[m[36m-[mwmBufferMalloc: no pool memorywmBufferMalloc: no memorywmBufferResize: no new data!wmBufferUpdate: bad bufferwmBufferUpdate: null data ptrwmBufferUpdate: already has static datawmBufferResize: can't resize static memorywmBufferAppend: invalid bufferwmBufferAppend: no datawmBufferAppend: no destwmBufferDelete: invalid bufferwmBufferCreate: no memory
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m5476[m[36m:[mbad bufferno ptrwmb_timerwmbTMNewTCB: no memorywmbTMAddObject: bad sessionwmbTMAddObject: bad backplaneTransactionID: %l - Transaction Error : %lwmbTMErrorwmbTMProcessInput: bad TcbwmbTMProcessInput: bad statewmbTMProcessInput: bad inputTransactionID: %l - Begin TransactionwmbTMBeginTransaction: bad TcbwmbTMGo: bad TIDwmbTestTransaction: Handler NULL詄hp詄詀ppTransactionID: %l - Test TransactionTransactionID: %l - Abort TransactionTransactionID: %l - Commit TransactionTransactionID: %l - Get RequestTransactionID: %l - Abort RequestwmbTMAbortRequest: bad TcbTransactionID: %l - Request CompletewmbTMRequestComplete: bad TcbTransactionID: %l - Transaction CompleteTransactionID: %l - Transaction Timeout1.1.4EverywhereContinueOKMultiple ChoicesBad RequestNot ImplementedN/A(OWOWOWOWOWOWOWOW[01;31mhttp://[mRouter Webserver'
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5477[m[36m-[mTXTtext/plainCJAVAHTMLtext/htmlHTMSGMLtext/x-sgmlSGMTSVtext/tab-separated-valuesDOCapplication/mswordPPTapplication/powerpointPDFapplication/pdfCLASSapplication/octet-streamBINPSapplication/postscriptEPSTCLapplication/x-tclTARapplication/x-tarTGZapplication/x-gtarZapplication/x-compressGZapplication/x-gzipZIPapplication/zipGIFimage/gifJPEGimage/jpegJPGJPEPBMimage/x-portable-bitmapPPMimage/x-portable-pixmapXBMimage/x-xbitmapXPMimage/x-xpixmapAUaudio/basicSNDWAVaudio/x-wavRAaudio/x-realaudioRAMaudio/x-pn-realaudioRPMaudio/x-pn-realaudio-pluginMPGAaudio/mpegMP2MP3AIFaudio/x-aiffAIFFAIFCMPEGvideo/mpegMPGMPEQTvideo/quicktimeMOVAVIvideo/x-msvideoWRLx-world/x-vrmlVRMLCONTENT-TYPEACCEPT-ENCODINGCONTENT-LENGTHHOSTAUTHORIZATIONREFERERACCESS-LANGUAGE1.1.4%c%c%c%c%c%c%c%c%c%c<fd:%d>: Invalid pipeinvalid pipe modeToo many symbolic links encountered translating the pathname.
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5581[m[36m-[m<SCRIPT language="javascript" src="/dynaform/common.js" type="text/javascript"></SCRIPT>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5582[m[36m-[m<LINK href="/dynaform/css_help.css" rel=stylesheet type="text/css">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5583[m[36m-[m<SCRIPT language="javascript" type="text/javascript"><!--
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m5584[m[36m:[m%d.%d.%d.%dif(window.parent == window){window.location.href="[01;31mhttp://[m%s";}
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5585[m[36m-[mfunction Click(){ return false;}
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5750[m[36m-[m);
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5751[m[36m-[m--></script>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5752[m[36m-[m/userRpm/confUploadErrorRpm.htm/userRpm/BakNRestoreRpm.htmx-bin/octet-stream/userRpm/config.bin/userRpm/ConfUpdateTemp.htm/incoming/RouterBakCfgUpload.cfgBakNRestoreRpmHTTP/1.1 301 Moved
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m5753[m[36m:[mLocation: [01;31mhttp://[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5754[m[36m-[m
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6381[m[36m-[m</e:property>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6382[m[36m-[m</e:propertyset>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6383[m[36m-[mTIMEOUT: Second-infiniteTIMEOUT: Second-%dRDSsscsccbupnp:event%iSecond-%d%0Second-infiniteuuid:%u-%uCONTENT-TYPE: text/xml; charset="utf-8"
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6384[m[36m:[mInvalid ActionAction FailedInvalid Var<SOAP-ENV:Envelope xmlns:SOAP-ENV="[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/" SOAP-ENV:encodingStyle="[01;31mhttp://[mschemas.xmlsoap.org/soap/encoding/">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6385[m[36m-[m<SOAP-ENV:Body>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6397[m[36m-[m</SOAP-ENV:Envelope>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6398[m[36m-[m%dRNsDsScsssssEXT:
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6399[m[36m-[mb%s"%s<u:%sResponse xmlns:u="%s"><%s>%s</%s></u:%sResponse>urn:schemas-upnp-org:control-1-0?>EnvelopeBodyQueryStateVariablevarName%q%i ; ns = %s<?xml version="1.0"?>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6400[m[36m:[m<SOAP-ENV:Envelope xmlns:SOAP-ENV="[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/" SOAP-ENV:encodingStyle="[01;31mhttp://[mschemas.xmlsoap.org/soap/encoding/">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6401[m[36m-[m<SOAP-ENV:Body>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6405[m[36m-[m</SOAP-ENV:Body>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6406[m[36m-[m</SOAP-ENV:Envelope>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6407[m[36m-[mRNsDsScsssXML error<?xml version="1.0"?>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6408[m[36m:[m<SOAP-ENV:Envelope xmlns:SOAP-ENV="[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/" SOAP-ENV:encodingStyle="[01;31mhttp://[mschemas.xmlsoap.org/soap/encoding/">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6409[m[36m-[m<SOAP-ENV:Body>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6416[m[36m-[mLocal port:%d.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6417[m[36m-[m                                                                ip = %08x; oldIp = %08x
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6418[m[36m-[m<presentationURL>wlanOn = %08x; oldWlanOn = %08x
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6419[m[36m:[m[01;31mhttp://[m%d.%d.%d.%d:%d/<friendlyName></friendlyName>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6420[m[36m-[m%s%s<manufacturer></manufacturer>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6422[m[36m-[m<modelDescription></modelDescription>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6423[m[36m-[m<modelName></modelName>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6424[m[36m-[m<modelNumber></modelNumber>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6425[m[36m:[m<modelURL>[01;31mhttp://[m%d.%d.%d.%d:%d%s</modelURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6426[m[36m-[m<!-- WFAWC goes here  WFAWC ends here -->
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6427[m[36m:[m<controlURL>/WFAWLANConfig/control[01;31mhttp://[m%d.%d.%d.%d:%d%s%s</controlURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6428[m[36m-[m<eventSubURL>/WFAWLANConfig/event</eventSubURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6429[m[36m-[m<SCPDURL>/wfc.xml</SCPDURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6430[m[36m-[murn:schemas-upnp-org:service:Layer3Forwarding:1urn:upnp-org:serviceId:L3Forwarding1/l3f.xml/l3fuuid:060b7353-fca6-4070-85f4-1fbfb9add62curn:schemas-upnp-org:service:WANCommonInterfaceConfig:1urn:upnp-org:serviceId:WANCommonIFC1/ifc.xml/ifcuuid:254e9977-8964-49f3-b8d5-51acb7bd40fcurn:schemas-upnp-org:service:WANIPConnection:1urn:upnp-org:serviceId:WANIPConn1/ipc.xml/ipcuuid:9f0865b3-f5da-4ad5-85b7-7404637fdf37urn:schemas-wifialliance-org:service:WFAWLANConfig:1urn:wifialliance-org:serviceId:WFAWLANConfig1/wfc.xml/wfcuuid:565aa949-67c1-4c0e-aa8f-f349e6f59311urn:schemas-upnp-org:device:InternetGatewayDevice:1urn:schemas-upnp-org:device:WANDevice:1urn:schemas-upnp-org:device:WANConnectionDevice:1urn:schemas-wifialliance-org:device:WFADevice:1Message_defaultInMessage_defaultOutMessage_defaultDeviceInfo_defaultAPSettings_defaultSTASettings_defaultSTAStatus_defaultWLANEvent_defaultAPStatus_defaultWLANEventType_defaultWLANEventMAC_defaultWLANResponse_defaultMessageInMessageOutMessageDeviceInfoAPSettingsSTASettingsSTAStatusWLANEventAPStatusWLANEventTypeWLANEventMACWLANResponseConnectionType_defaultPossibleConnectionTypes_defaultConnectionStatus_defaultUptime_defaultLastConnectionError_defaultRSIPAvailable_defaultNATEnabled_defaultExternalIPAddress_defaultPortMappingNumberOfEntries_defaultPortMappingEnabled_defaultPortMappingLeaseDuration_defaultRemoteHost_defaultExternalPort_defaultInternalPort_defaultPortMappingProtocol_defaultInternalClient_defaultPortMappingDescription_defaultConnectionTypePossibleConnectionTypesConnectionStatusUptimeLastConnectionErrorRSIPAvailableNATEnabledExternalIPAddressPortMappingNumberOfEntriesPortMappingEnabledPortMappingLeaseDurationRemoteHostExternalPortInternalPortPortMappingProtocolInternalClientPortMappingDescriptionWANAccessType_defaultLayer1UpstreamMaxBitRate_defaultLayer1DownstreamMaxBitRate_defaultPhysicalLinkStatus_defaultMaximumActiveConnections_defaultTotalBytesSent_defaultTotalBytesReceived_defaultTotalPacketsSent_defaultTotalPacketsReceived_defaultWANAccessTypeLayer1UpstreamMaxBitRateLayer1DownstreamMaxBitRatePhysicalLinkStatusMaximumActiveConnectionsTotalBytesSentTotalBytesReceivedTotalPacketsSentTotalPacketsReceivedDefaultConnectionService_defaultDefaultConnectionServiceSetDefaultConnectionServiceGetDefaultConnectionServiceGetCommonLinkPropertiesGetTotalBytesSentGetTotalBytesReceivedGetTotalPacketsSentGetTotalPacketsReceivedSetConnectionTypeGetConnectionTypeInfoForceTerminationRequestConnectionGetStatusInfoGetNATRSIPStatusGetGenericPortMappingEntryGetSpecificPortMappingEntryAddPortMappingDeletePortMappingGetExternalIPAddressGetDeviceInfoPutMessageGetAPSettingsSetAPSettingsDelAPSettingsGetSTASettingsSetSTASettingsDelSTASettingsPutWLANResponseSetSelectedRegistrarRebootAPResetAPRebootSTAResetSTAigdSetServiceTable%s0src/igd.cNew%sAction FailedInvalid VariableInvalid Action$4444444444/UPnPUPnP: libUPnPInitSubs() failedUPnP: unable to get lan ipUPnP: igdEntryInit() failedUPnP: Error with UpnpInit(%s, %d, %d, %d, %d) -- %d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6431[m[36m:[migd.xml[01;31mhttp://[m%s:%d/%sError specifying webserver root directory -- %s: %d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6432[m[36m-[mError registering the rootdevice : %d
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6513[m[36m-[mstate_readystate_getting_dns_1_center_server_ipstate_getting_dns_2_center_server_ipstate_conecting_center_serverstate_getting_center_server_user_inforstate_getting_dns_1_sub_server_ipstate_getting_dns_2_sub_server_ipstate_conecting_sub_serverstate_waiting_sub_server_readystate_waiting_sub_server_challenge_keystate_waiting_sub_server_validate_resultstate_waiting_sub_server_register_resultstate_udp_refresh_readingstate_waiting_udp_responsesstate_noevent_udp_refreshevent_register_domainevent_unregister_domainevent_tcp_connect_okevent_tcp_connect_errorevent_read_errorevent_read_finevent_read_okevent_no~~~~~connect to center server failconnect to sub server failsend date fail	login failsend date failparser domain data  failno domain nameparser recv data  failrecv data failrecv date timeoutrecv dns data timeoutparser dns data  failsend refresh data failparser refresh response failuser name or password authenticate failsub server authenticate failerrorlx phCleanStateDataphCleanSocketStatehphwebservice.oray.netHGet PeanutHull server IP address failed.lTTT
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6514[m[36m-[mlastSuccUpdateTime >3 min 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6515[m[36m-[mUpdate	failed.H4parser refresh response fail
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6516[m[36m:[mDDhDDDD0TphStateConversionphInitNoblockDnsModule2 failedphStartGetHostByNameBind socket error!phStartGetHostByNameFromDnsServerpName is nullphNamedPipeOpen errBig Endian noip %d, %sABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/%c%c==%c%c%c=%c%c%c%cnoipTaskNO-IP init failed.ʼsocketʧSend data failed.ʧ:ip changed, try update.hand update.the hostname is tabu now!dynupdate.no-ip.comConnect to the server failed.error connecting to No-IP serverget wanipmask error.username=%s&pass=%s&h[]=%srequestL=GET [01;31mhttp://[m%s/%s?%s%s HTTP/1.0
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6517[m[36m-[m%s
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6629[m[36m-[mmkdir() failed!the folder path is %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6630[m[36m-[mthe dest folder path is %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6631[m[36m-[mthe src folder path is %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6632[m[36m:[m50000:60000iptables -t nat -F PREROUTING_FTPiptables -t nat -A PREROUTING_FTP -d %s -p tcp --dport %d -j ACCEPTiptables -t nat -A PREROUTING_FTP -d %s -p tcp --dport %s -j ACCEPT<wlanWarn> PF_PACKET socket:<wlanWarn> AF_INET socket:<wlanWarn> malloc sendBuf:/web/userRpm/WlanWeakWarning.htm<wlanWarn> get file size[01;31mhttp://[m%s:%d/?redirectToWlanSec=1HTTP/1.1 200 OK
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6633[m[36m-[mConnection: close
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7488[m[36m-[m<URLBase></URLBase>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7489[m[36m-[m	<device>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7490[m[36m-[m		<deviceType>urn:schemas-upnp-org:device:InternetGatewayDevice:1</deviceType>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7491[m[36m:[m		<presentationURL>[01;31mhttp://[m255.255.255.255:65535</presentationURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7492[m[36m-[m		<friendlyName>                                </friendlyName>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7495[m[36m-[m		<modelDescription>                                </modelDescription>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7496[m[36m-[m		<modelName>                                </modelName>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7497[m[36m-[m		<modelNumber>                                </modelNumber>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7498[m[36m:[m		<modelURL>[01;31mhttp://[m255.255.255.255:65535</modelURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7499[m[36m-[m		<serialNumber>none</serialNumber>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7517[m[36m-[m			<modelDescription>                                </modelDescription>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7518[m[36m-[m			<modelName>                                </modelName>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7519[m[36m-[m			<modelNumber>                                </modelNumber>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7520[m[36m:[m			<modelURL>[01;31mhttp://[m255.255.255.255:65535</modelURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7521[m[36m-[m			<serialNumber>none</serialNumber>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7539[m[36m-[m					<modelDescription>                                </modelDescription>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7540[m[36m-[m					<modelName>                                </modelName>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7541[m[36m-[m					<modelNumber>                                </modelNumber>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7542[m[36m:[m					<modelURL>[01;31mhttp://[m255.255.255.255:65535</modelURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7543[m[36m-[m					<serialNumber>none</serialNumber>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7558[m[36m-[m<!-- WFAWC goes here -->
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7559[m[36m-[m		<device>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7560[m[36m-[m			<deviceType>urn:schemas-wifialliance-org:device:WFADevice:1</deviceType>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7561[m[36m:[m			<presentationURL>[01;31mhttp://[m255.255.255.255:65535</presentationURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7562[m[36m-[m			<friendlyName>                                </friendlyName>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7565[m[36m-[m			<modelDescription>                                </modelDescription>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7566[m[36m-[m			<modelName>                                </modelName>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7567[m[36m-[m			<modelNumber>                                </modelNumber>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7568[m[36m:[m			<modelURL>[01;31mhttp://[m255.255.255.255:65535</modelURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7569[m[36m-[m			<serialNumber>none</serialNumber>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7573[m[36m-[m				<service>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7574[m[36m-[m					<serviceType>urn:schemas-wifialliance-org:service:WFAWLANConfig:1</serviceType>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7575[m[36m-[m					<serviceId>urn:wifialliance-org:serviceId:WFAWLANConfig1</serviceId>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7576[m[36m:[m					<controlURL>[01;31mhttp://[m255.255.255.255:65535/WFAWLANConfig/control</controlURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7577[m[36m:[m					<eventSubURL>[01;31mhttp://[m255.255.255.255:65535/WFAWLANConfig/event</eventSubURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7578[m[36m:[m					<SCPDURL>[01;31mhttp://[m255.255.255.255:65535/wfc.xml</SCPDURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7579[m[36m-[m				</service>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7587[m[36m-[m</AuthHeader>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7588[m[36m-[m</soap:Header>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7589[m[36m-[m <soap:Body>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7590[m[36m:[m <GetMiscInfo xmlns="[01;31mhttp://[mtempuri.org/">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7591[m[36m-[m  <clientversion>%s</clientversion>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7594[m[36m-[m</soap:Envelope>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7595[m[36m-[m</Password>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7596[m[36m-[m<Password><?xml version="1.0" encoding="utf-8"?>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7597[m[36m:[m<soap:Envelope xmlns:xsi="[01;31mhttp://[mwww.w3.org/2001/XMLSchema-instance" xmlns:xsd="[01;31mhttp://[mwww.w3.org/2001/XMLSchema" xmlns:soap="[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7598[m[36m-[m<soap:Header>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7599[m[36m:[m<AuthHeader xmlns="[01;31mhttp://[mtempuri.org/">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7600[m[36m-[m<ID>0</ID>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7603[m[36m-[mHost: phservice2.oray.net
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7604[m[36m-[mContent-Type: text/xml; charset=utf-8
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7605[m[36m-[mContent-Length: 012345678901
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7606[m[36m:[mSOAPAction: "[01;31mhttp://[mtempuri.org/GetMiscInfo"
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7607[m[36m-[m
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/samba/lib/.svn/entries[m[36m-[m[32m2[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/samba/lib/.svn/entries[m[36m-[m[32m3[m[36m-[mdir
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/samba/lib/.svn/entries[m[36m-[m[32m4[m[36m-[m23806
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/samba/lib/.svn/entries[m[36m:[m[32m5[m[36m:[m[01;31mhttp://[mrdscm.tp-link.net/svn/SMB/WR841N/branch/branch_rtl8198_wr1042n_v2.5/rtl819x/users/nas/naspackage/samba/lib
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/samba/lib/.svn/entries[m[36m:[m[32m6[m[36m:[m[01;31mhttp://[mrdscm.tp-link.net/svn/SMB/WR841N
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/samba/lib/.svn/entries[m[36m-[m[32m7[m[36m-[m
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/wscd.conf[m[36m-[m[32m17[m[36m-[muuid = 63041253101920061228aabbccddeeff
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/wscd.conf[m[36m-[m[32m18[m[36m-[m#device_name = "RTKAP-123"
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/wscd.conf[m[36m-[m[32m19[m[36m-[mmanufacturer = "TP-LINK Technologies Co. Ltd."
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/wscd.conf[m[36m:[m[32m20[m[36m:[mmanufacturerURL = "[01;31mhttp://[mwww.tp-link.com/"
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/wscd.conf[m[36m:[m[32m21[m[36m:[mmodelURL = "[01;31mhttp://[mwww.tp-link.com/"
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/wscd.conf[m[36m-[m[32m22[m[36m-[mmodel_name = "TL-WR1042N"
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables[m[36m-[m[32m851[m[36m-[m    --name name                 Name of the recent list to be used.  DEFAULT used if none given.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables[m[36m-[m[32m852[m[36m-[m    --rsource                   Match/Save the source address of each packet in the recent list table (default).
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables[m[36m-[m[32m853[m[36m-[m    --rdest                     Match/Save the destination address of each packet in the recent list table.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables[m[36m:[m[32m854[m[36m:[mxt_recent by: Stephen Frost <sfrost@snowman.net>.  [01;31mhttp://[msnowman.net/projects/ipt_recent/DEFAULTrecent: only one of `--set', `--rcheck' `--update' or `--remove' may be setHP DLrecent: you must specify one of `--set', `--rcheck' `--update' or `--remove'recent: --rttl may only be used with --rcheck or --updaterecent: SET CHECK UPDATE REMOVE seconds: %d hit_count: %d TTL-Match name: %s side: source side: dest! --set --rcheck --update --remove --seconds %d --hitcount %d --rttl --name %s --rsource --rdest libxtables.so.2sctpsource-portsportdestination-portdportchunk-typesDATA-----UBEINIT--------INIT_ACKSACKHEARTBEATHEARTBEAT_ACKABORT-------TSHUTDOWNSHUTDOWN_ACKERRORCOOKIE_ECHOCOOKIE_ACKECN_ECNEECN_CWRSHUTDOWN_COMPLETEASCONFASCONF_ACKsctp match options
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables[m[36m-[m[32m855[m[36m-[m[!] --source-port port[:port]                          match source port(s)
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m-[m[32m250[m[36m-[m         message to disappear then you should upgrade to at least kernel
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m-[m[32m251[m[36m-[m         version 2.6.20, or request help from your distribution to fix
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m-[m[32m252[m[36m-[m         the kernel problem. The below web page has more information:
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m:[m[32m253[m[36m:[m         [01;31mhttp://[mtuxera.com/community/ntfs-3g-faq/#fuse26
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m-[m[32m254[m[36m-[m
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m-[m[32m337[m[36m-[mfd=%i,rootmode=%o,user_id=%i,group_id=%ifuseblkfd=%i,rootmode=%o,user_id=%i%s: 'fuseblk' support missing
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m-[m[32m338[m[36m-[m%s: mount failed: %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m-[m[32m339[m[36m-[mUser doesn't have privilege to mount. For more information
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m:[m[32m340[m[36m:[mplease see: [01;31mhttp://[mtuxera.com/community/ntfs-3g-faq/#unprivileged
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m-[m[32m341[m[36m-[m%s: failed to access mountpoint %s: %s
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m822[m[36m-[mfunc_offiwpriv %s set_mib func_off=%dWarning!! func_off_mibValue!=0 tx of %s will be holded
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m823[m[36m-[m/var/wsc-cfg.fifosignal_websciwpriv %s set_mib wsc_enable=5Wi-Fi Easy and Secure Key Derivationioctl[SIOCGIWRTLJOINREQ]ioctl[SIOCGIWRTLJOINREQSTATUS]echo %d > %s/tmp/wscd_statusecho E > /proc/gpio/simplecfg.xml/simplecfgservice.xmlGetDeviceInfoPutMessageSetSelectedRegistrarPutWLANResponseupnp:rootdeviceurn:schemas-wifialliance-org:device:WFADevice:urn:schemas-wifialliance-org:service:WFAWLANConfig:<NewDeviceInfo>%s</NewDeviceInfo><u:%sResponse xmlns:u="%s">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m824[m[36m-[m%s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m:[m[32m825[m[36m:[m</u:%sResponse>urn:schemas-wifialliance-org:WFAWLANConfig:1NewOutMessageNewInMessage<%s>%s</%s><%s></%s>NewMessageNewWLANEventTypeNewWLANEventMAC<u:%sResponse xmlns:u="%s"></u:%sResponse>WLANEventAPStatusSTAStatus1200:01:02:03:04:05123Can not gain IP address from LAN!simplecfg[01;31mhttp://[m%s:%d/%s.xml%s.xml/var/wps/%s%sw<?xml version="1.0"?>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m826[m[36m-[m<root xmlns="urn:schemas-upnp-org:device-1-0">
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m828[m[36m-[m		<major>1</major>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m829[m[36m-[m		<minor>0</minor>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m830[m[36m-[m	</specVersion>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m:[m[32m831[m[36m:[m	<URLBase>[01;31mhttp://[m%s:%u</URLBase>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m832[m[36m-[m	<device>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m835[m[36m-[m		<friendlyName>%s</friendlyName>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m836[m[36m-[m		<manufacturer>Realtek Semiconductor</manufacturer>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m837[m[36m-[m		<manufacturer>%s</manufacturer>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m:[m[32m838[m[36m:[m		<manufacturerURL>[01;31mhttp://[mwww.realtek.com.tw</manufacturerURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m839[m[36m-[m		<manufacturerURL>%s</manufacturerURL>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m843[m[36m-[m		<modelName>%s</modelName>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m844[m[36m-[m		<modelNumber>RTL8186</modelNumber>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m845[m[36m-[m		<modelNumber>%s</modelNumber>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m:[m[32m846[m[36m:[m		<modelURL>[01;31mhttp://[mwww.realtek.com.tw</modelURL>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m847[m[36m-[m		<modelURL>%s</modelURL>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m946[m[36m-[mUSN: %s::%.*s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m947[m[36m-[mEXT:
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m948[m[36m-[mServer: OS 1.0 UPnP/1.0 Realtek/V1.3
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m:[m[32m949[m[36m:[mLocation: [01;31mhttp://[m%s:%u/%s.xml
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m950[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m951[m[36m-[malivebyebyeNOTIFY * HTTP/1.1
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m952[m[36m-[mHost:%s:%d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m953[m[36m-[mCache-Control:max-age=%d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m:[m[32m954[m[36m:[mLocation:[01;31mhttp://[m%s:%d/%s.xml
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m955[m[36m-[mServer:OS 1.0 UPnP/1.0 Realtek/V1.3
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m960[m[36m-[m1NOTIFY * HTTP/1.1
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m961[m[36m-[mHost:%s:%d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m962[m[36m-[mCache-Control:max-age=%d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m:[m[32m963[m[36m:[mLocation:[01;31mhttp://[m%s:%d/%s.xml
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m964[m[36m-[mServer:OS 1.0 UPnP/1.0 Realtek/V1.3
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m1007[m[36m-[mHTTP/1.1 200 OK 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m1008[m[36m-[mContent-Length: 0
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m1009[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m:[m[32m1010[m[36m:[mSUBSCRIBEUNSUBSCRIBEHost%s:%dCallback<[01;31mhttp://[mTimeoutSecondinfiniteSIDuuiduuid:OK<html><body>Bad request</body></html>Bad RequestHTTP/1.1 412 Too Many Subscribers
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m1011[m[36m-[mContent-Length: 0
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m1019[m[36m-[mContent-LengthSOAPActionPOSTGETGET /HNAPGetDeviceSettings%x-UNIXSocketUNIXSocket bindUNIXSocket listen%s = %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m1020[m[36m-[mrbFailed to open file [%s]. EXITING
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m1021[m[36m-[mmini_UPnP_UploadXML Out of memory! EXITINGmini_UPnP_UploadXML File length mismatched! EXITING<?xml version="1.0"?>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m:[m[32m1022[m[36m:[m<s:Envelope xmlns:s="[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/" s:encodingStyle="[01;31mhttp://[mschemas.xmlsoap.org/soap/encoding/"><s:Body></s:Body></s:Envelope>OK<s:Envelope xmlns:s="[01;31mhttp://[mschemas.xmlsoap.org/soap/envelope/" s:encodingStyle="[01;31mhttp://[mschemas.xmlsoap.org/soap/encoding/"><s:Body><s:Fault><faultcode>s:Client</faultcode><faultstring>UPnPError</faultstring><detail><UPnPError xmlns="urn:schemas-upnp-org:control-1-0"><errorCode>%d</errorCode><errorDescription>%s</errorDescription></UPnPError></detail></s:Fault></s:Body></s:Envelope>Internal Server Error[01;31mhttp://[mpurenetworks.com/HNAPInvalid ActionCAC AC8A CHACTAClAh AA(AD@tAA(AD@t@AAƀAƜAƸ@dG@Gmode1upnp1config_method134auth_type1encrypt_type1connection_type1wsc_manual_config0network_keyssidpin_code89542798rf_band1device_nameڢ!h4b)Ngt;"QJy4:C0+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m1023[m[36m-[mm_7O5mmQE䅵vb^~LB7k\8kZ$|KI(fQ[=
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m-[m[32m954[m[36m-[m	var val = 0;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m-[m[32m955[m[36m-[m	addrParts = address.split(':');
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m-[m[32m956[m[36m-[m	
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m:[m[32m957[m[36m:[m	/*[01;31mhttp://[mwww.iana.org/assignments/ipv6-unicast-address-assignments/ipv6-unicast-address-assignments.xml*/
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m-[m[32m958[m[36m-[m	/*2001:db8/32 documentation-only prefix  in the IPv6*/
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DdnsAddComexeHelpRpm.htm[m[36m-[m[32m20[m[36m-[mfunction openWindow1()	{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DdnsAddComexeHelpRpm.htm[m[36m-[m[32m21[m[36m-[mif(tpNewWin) 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DdnsAddComexeHelpRpm.htm[m[36m-[m[32m22[m[36m-[m	tpNewWin.close(); 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DdnsAddComexeHelpRpm.htm[m[36m:[m[32m23[m[36m:[mtpNewWin = window.open("[01;31mhttp://[mwww.oray.net","","" );}
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DdnsAddComexeHelpRpm.htm[m[36m-[m[32m24[m[36m-[mfunction openWindow2()	{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DdnsAddComexeHelpRpm.htm[m[36m-[m[32m25[m[36m-[mif(tpNewWin) 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DdnsAddComexeHelpRpm.htm[m[36m-[m[32m26[m[36m-[m	tpNewWin.close(); 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DdnsAddComexeHelpRpm.htm[m[36m:[m[32m27[m[36m:[mtpNewWin = window.open("[01;31mhttp://[mwww.comexe.cn","","" );}
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DdnsAddComexeHelpRpm.htm[m[36m-[m[32m28[m[36m-[m</SCRIPT>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/NoipDdnsHelpRpm.htm[m[36m-[m[32m22[m[36m-[mfunction openWindow1()	{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/NoipDdnsHelpRpm.htm[m[36m-[m[32m23[m[36m-[mif(tpNewWin) 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/NoipDdnsHelpRpm.htm[m[36m-[m[32m24[m[36m-[m	tpNewWin.close(); 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/NoipDdnsHelpRpm.htm[m[36m:[m[32m25[m[36m:[mtpNewWin = window.open("[01;31mhttp://[mwww.no-ip.com","","" );}
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/NoipDdnsHelpRpm.htm[m[36m-[m[32m26[m[36m-[m</SCRIPT>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DynDdnsHelpRpm.htm[m[36m-[m[32m22[m[36m-[mfunction openWindow1()	{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DynDdnsHelpRpm.htm[m[36m-[m[32m23[m[36m-[mif(tpNewWin) 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DynDdnsHelpRpm.htm[m[36m-[m[32m24[m[36m-[m	tpNewWin.close(); 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DynDdnsHelpRpm.htm[m[36m:[m[32m25[m[36m:[mtpNewWin = window.open("[01;31mhttp://[mwww.dyndns.org","","" );}
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/DynDdnsHelpRpm.htm[m[36m-[m[32m26[m[36m-[m</SCRIPT>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/SoftwareUpgradeHelpRpm.htm[m[36m-[m[32m33[m[36m-[m{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/SoftwareUpgradeHelpRpm.htm[m[36m-[m[32m34[m[36m-[m    if(tpNewWin) 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/SoftwareUpgradeHelpRpm.htm[m[36m-[m[32m35[m[36m-[m    tpNewWin.close(); 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/SoftwareUpgradeHelpRpm.htm[m[36m:[m[32m36[m[36m:[m    tpNewWin = window.open("[01;31mhttp://[m"  + our_web_site, "", "" );
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/SoftwareUpgradeHelpRpm.htm[m[36m-[m[32m37[m[36m-[m}
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/ManageControlHelpRpm.htm[m[36m-[m[32m13[m[36m-[m<P>To access the Router, you should enter your Router's WAN IP address into your
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/ManageControlHelpRpm.htm[m[36m-[m[32m14[m[36m-[mbrowser's address (in IE) or location (in Netscape) box, followed by a colon
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/ManageControlHelpRpm.htm[m[36m-[m[32m15[m[36m-[mand the custom port number you set in the Web Management Port box. For example, if your Router's WAN address is 202.96.12.8
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/ManageControlHelpRpm.htm[m[36m:[m[32m16[m[36m:[mand you use port number 8080, enter [01;31mhttp://[m202.96.12.8:8080
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/help/ManageControlHelpRpm.htm[m[36m-[m[32m17[m[36m-[min your browser. You will be asked for the Router's password. After successfully entering the password, you will be able to access the Router's web-based utility.</P>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/DynDdnsRpm.htm[m[36m-[m[32m78[m[36m-[m//-->
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/DynDdnsRpm.htm[m[36m-[m[32m79[m[36m-[m</SCRIPT>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/DynDdnsRpm.htm[m[36m-[m[32m80[m[36m-[m          </SELECT>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/DynDdnsRpm.htm[m[36m:[m[32m81[m[36m:[m          &nbsp;<A href="javascript:goUrl('[01;31mhttp://[mwww.dyndns.org');" onMouseOver="return ResetStatus();" id="t_register">Go to register...</A></TD>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/DynDdnsRpm.htm[m[36m-[m[32m82[m[36m-[m      </TR>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/restart.htm[m[36m-[m[32m5[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/restart.htm[m[36m-[m[32m6[m[36m-[mfunction LoadMain()
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/restart.htm[m[36m-[m[32m7[m[36m-[m{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/restart.htm[m[36m:[m[32m8[m[36m:[m	parent.location.href = "[01;31mhttp://[m" + rebootInf[0] + ":" + rebootInf[1];
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/restart.htm[m[36m-[m[32m9[m[36m-[m}
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/AccessDenied.htm[m[36m-[m[32m1[m[36m-[m<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/AccessDenied.htm[m[36m:[m[32m2[m[36m:[m  "[01;31mhttp://[mwww.w3.org/TR/html4/loose.dtd">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/AccessDenied.htm[m[36m-[m[32m3[m[36m-[m<HTML>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/CmxDdnsRpm.htm[m[36m-[m[32m96[m[36m-[mif(ddnsType[3]) document.write("<option value=3 selected>No-IP ( www.no-ip.com )</option>");
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/CmxDdnsRpm.htm[m[36m-[m[32m97[m[36m-[m//--></script>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/CmxDdnsRpm.htm[m[36m-[m[32m98[m[36m-[m</select>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/CmxDdnsRpm.htm[m[36m:[m[32m99[m[36m:[m&nbsp;<a href="javascript:goUrl('[01;31mhttp://[mwww.comexe.cn');" OnMouseOver="return ResetStatus();" id="t_register">Go to register...</a></td></tr>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/CmxDdnsRpm.htm[m[36m-[m[32m100[m[36m-[m<script language="JavaScript">
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NoipDdnsRpm.htm[m[36m-[m[32m75[m[36m-[mif(ddnsType[3]) document.write("<option value=3 selected>No-IP ( www.no-ip.com )</option>");
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NoipDdnsRpm.htm[m[36m-[m[32m76[m[36m-[m//--></SCRIPT>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NoipDdnsRpm.htm[m[36m-[m[32m77[m[36m-[m          </SELECT>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NoipDdnsRpm.htm[m[36m:[m[32m78[m[36m:[m          &nbsp;<A href="javascript:goUrl('[01;31mhttp://[mwww.no-ip.com');" onMouseOver="return ResetStatus();"><SPAN id="t_go_register">Go to register...</SPAN></A></TD>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NoipDdnsRpm.htm[m[36m-[m[32m79[m[36m-[m      </TR>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m33[m[36m-[mvar hl = "StatusHelpRpm.htm";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m34[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m35[m[36m-[mvar newWin;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m:[m[32m36[m[36m:[mvar url="[01;31mhttp://[m" + our_web_site;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m37[m[36m-[m
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m57[m[36m-[mvar errorFlag;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m58[m[36m-[mfunction LoadPage(){
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m59[m[36m-[m	if(true == errorFlag)
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m:[m[32m60[m[36m:[m		parent.location.href = '[01;31mhttp://[m' + address;	
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m61[m[36m-[m}

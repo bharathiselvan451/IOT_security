@@ -1,0 +1,15 @@
+fcn.00403e74
+fcn.00404c40
+fcn.00406f84
+fcn.00408f8c
+sym.CreateUnixSocket
+sym.IPCon_GetIpAddr
+sym.PWSCUpnpCallbackEventHandler
+sym.WSCUpnpStart
+sym.getWlJoinRequest
+sym.getWlJoinResult
+sym.send_wsc_M8
+sym.wlioctl_get_mib
+sym.wlioctl_scan_reqest
+sym.wlioctl_scan_result
+sym.wlioctl_set_wsc_ie

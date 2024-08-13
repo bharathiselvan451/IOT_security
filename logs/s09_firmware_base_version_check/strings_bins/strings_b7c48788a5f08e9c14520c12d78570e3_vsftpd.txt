@@ -1,0 +1,1466 @@
+/lib/ld-uClibc.so.0
+_fini
+__uClibc_main
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+tunables_load_defaults
+vsf_sysutil_map_anon_pages_init
+vsf_parseconf_load_file
+vsf_sysutil_stat
+vsf_sysutil_retval_is_error
+vsf_sysutil_free
+tunable_pasv_address
+tunable_pasv_addr_resolve
+tunable_run_as_launching_user
+tunable_setproctitle_enable
+tunable_ssl_enable
+tunable_listen
+tunable_listen_ipv6
+vsf_standalone_main
+tunable_tcp_wrappers
+vsf_sysutil_getenv
+vsf_sysutil_fstat
+vsf_sysutil_statbuf_is_socket
+tunable_one_process_model
+tunable_local_enable
+vsf_sysdep_has_capabilities_as_non_root
+tunable_anonymous_enable
+tunable_ftp_enable
+tunable_http_enable
+vsf_sysutil_getpeername
+vsf_sysutil_getsockname
+tunable_guest_enable
+tunable_chown_uploads
+vsf_sysutil_make_session_leader
+vsf_sysutil_set_umask
+vsf_sysutil_tzset
+vsf_sysutil_install_null_sighandler
+tunable_text_userdb_names
+vsf_sysutil_set_address_space_limit
+vsf_sysutil_inet_ntop
+str_alloc_text
+vsf_cmdio_sock_setup
+tunable_deny_email_enable
+tunable_banner_file
+tunable_secure_email_list_enable
+vsf_one_process_start
+vsf_two_process_start
+vsf_exit
+vsf_parseconf_load_setting
+die2
+str_fileread
+tunable_banned_email_file
+ssl_init
+ssl_add_entropy
+vsf_sysutil_set_proctitle_prefix
+vsf_sysutil_setproctitle
+vsf_sysutil_running_as_root
+tunable_connect_from_port_20
+tunable_email_password_file
+vsf_sysutil_setproctitle_init
+tunable_chown_username
+vsf_sysutil_getpwnam
+vsf_sysutil_user_getuid
+tunable_guest_username
+tunable_ftp_username
+vsf_tcp_wrapper_ok
+vsf_sysutil_dns_resolve
+vsf_sysutil_strdup
+vsf_sysutil_activate_noblock
+vsf_sysutil_write_loop
+vsf_sysutil_strlen
+vsf_sysutil_exit
+str_append_text
+str_getbuf
+tunable_max_login_fails
+str_isempty
+vsf_cmdio_write
+vsf_one_process_login
+vsf_two_process_login
+str_empty
+vsf_cmdio_set_alarm
+tunable_max_clients
+vsf_log_line
+vsf_cmdio_write_exit
+tunable_max_per_ip
+tunable_implicit_ssl
+ssl_control_handshake
+vsf_cmdio_get_cmd_and_arg
+str_equal_text
+str_copy
+str_upper
+tunable_allow_anon_ssl
+tunable_force_anon_logins_ssl
+tunable_force_local_logins_ssl
+tunable_userlist_enable
+tunable_no_anon_password
+handle_feat
+handle_opts
+str_contains_line
+tunable_userlist_deny
+tunable_delay_failed_login
+__floatsidf
+vsf_sysutil_sleep
+handle_prot
+handle_auth
+handle_pbsz
+__adddf3
+tunable_ftpd_banner
+vsf_banner_write
+str_free
+vsf_sysutil_activate_keepalive
+vsf_sysutil_set_nodelay
+vsf_sysutil_activate_oobinline
+tunable_log_ftp_protocol
+ftp_write_str
+str_alloc_ulong
+str_replace_text
+str_replace_char
+str_append_char
+str_append_str
+vsf_sysutil_deactivate_noblock
+vsf_sysutil_shutdown_read_failok
+vsf_sysutil_shutdown_failok
+tunable_idle_session_timeout
+vsf_sysutil_install_sighandler
+vsf_sysutil_set_alarm
+ftp_getline
+str_getlen
+str_trunc
+str_get_char_at
+str_split_char
+vsf_secbuf_alloc
+vsf_one_process_pasv_active
+vsf_two_process_pasv_active
+vsf_sysutil_sockaddr_clear
+vsf_one_process_pasv_cleanup
+vsf_two_process_pasv_cleanup
+vsf_sysutil_sockaddr_is_ipv6
+vsf_one_process_listen
+vsf_sysutil_sockaddr_alloc_ipv4
+vsf_sysutil_inet_aton
+str_append_ulong
+vsf_cmdio_write_str
+vsf_two_process_listen
+vsf_sysutil_sockaddr_clone
+vsf_sysutil_sockaddr_ipv6_v4
+vsf_sysutil_inet_ntoa
+vsf_sysutil_atoi
+tunable_force_local_data_ssl
+tunable_force_anon_data_ssl
+str_getcwd
+str_right
+vsf_ftpdataio_get_pasv_fd
+vsf_ftpdataio_get_port_fd
+vsf_ftpdataio_post_mark_connect
+vsf_ftpdataio_dispose_transfer_fd
+tunable_tilde_user_enable
+str_getpwnam
+vsf_sysutil_user_get_homedir
+vsf_access_check_file
+str_chdir
+vsf_banner_dir_changed
+vsf_log_start_entry
+str_open
+tunable_lock_upload_files
+vsf_sysutil_statbuf_is_regfile
+tunable_anon_world_readable_only
+tunable_ascii_download_enable
+vsf_sysutil_statbuf_get_size
+str_append_filesize_t
+vsf_ftpdataio_transfer_file
+vsf_sysutil_close
+vsf_sysutil_lock_file_read
+vsf_sysutil_statbuf_is_dir
+vsf_log_clear_entry
+vsf_sysutil_lseek_to
+vsf_log_do_log
+vsf_sysutil_statbuf_is_readable_other
+str_opendir
+str_mid_to_end
+str_locate_char
+str_split_char_reverse
+vsf_cmdio_write_hyphen
+vsf_sysutil_dir_stat
+vsf_sysutil_closedir
+vsf_ftpdataio_transfer_dir
+tunable_anon_other_write_enable
+str_create_exclusive
+str_stat
+str_create
+tunable_ascii_upload_enable
+tunable_delete_failed_uploads
+str_unlink
+vsf_sysutil_lock_file_write
+vsf_sysutil_lseek_end
+vsf_sysutil_ftruncate
+tunable_chown_upload_mode
+vsf_sysutil_fchmod
+vsf_one_process_chown_upload
+vsf_two_process_chown_upload
+tunable_write_enable
+tunable_chmod_enable
+vsf_sysutil_get_umask
+vsf_sysutil_uint_to_octal
+str_octal_to_uint
+str_chmod
+tunable_mdtm_write
+vsf_sysutil_isdigit
+vsf_sysutil_parse_time
+vsf_sysutil_statbuf_get_numeric_date
+tunable_use_localtime
+vsf_sysutil_setmodtime
+tunable_download_enable
+vsf_cmdio_write_raw
+vsf_log_entry_pending
+tunable_anon_umask
+tunable_anon_max_rate
+tunable_async_abor_enable
+vsf_sysutil_activate_sigurg
+tunable_cmds_allowed
+tunable_cmds_denied
+str_replace_unprintable
+vsf_sysutil_setproctitle_str
+str_equal
+tunable_local_umask
+tunable_local_max_rate
+tunable_pasv_enable
+tunable_dirlist_enable
+tunable_port_enable
+tunable_anon_upload_enable
+tunable_anon_mkdir_write_enable
+str_mkdir
+str_rmdir
+str_a_to_filesize_t
+str_rename
+str_atoi
+vsf_sysutil_parse_ipv4
+vsf_sysutil_sockaddr_set_ipv6addr
+vsf_sysutil_sockaddr_set_ipv4addr
+vsf_sysutil_sockaddr_set_port
+tunable_port_promiscuous
+vsf_sysutil_sockaddr_addr_equal
+vsf_sysutil_is_port_reserved
+vsf_sysutil_parse_ipv6
+str_alloc_filesize_t
+vsf_sysutil_parse_uchar_string_sep
+vsf_sysutil_ulong_to_str
+vsf_sysutil_unix_stream_socketpair
+priv_sock_send_int
+str_netfd_write
+vsf_sysutil_read_loop
+priv_sock_get_int
+str_netfd_read
+vsf_sysutil_send_fd
+vsf_sysutil_recv_fd
+tunable_chroot_local_user
+tunable_xferlog_enable
+tunable_dirmessage_enable
+tunable_secure_chroot_dir
+tunable_xferlog_std_format
+tunable_pasv_promiscuous
+tunable_chroot_list_enable
+tunable_ls_recurse_enable
+tunable_check_shell
+tunable_hide_ids
+tunable_passwd_chroot_enable
+tunable_use_sendfile
+tunable_force_dot_files
+tunable_dual_log_enable
+tunable_syslog_enable
+tunable_background
+tunable_virtual_use_local_privs
+tunable_session_support
+tunable_no_log_lock
+tunable_sslv2
+tunable_sslv3
+tunable_tlsv1
+tunable_debug_ssl
+tunable_require_cert
+tunable_validate_cert
+tunable_strict_ssl_read_eof
+tunable_connect_timeout
+tunable_ftp_data_port
+tunable_data_connection_timeout
+tunable_pasv_min_port
+tunable_listen_port
+tunable_file_open_mode
+tunable_strict_ssl_write_shutdown
+tunable_ssl_request_cert
+tunable_sandbox
+tunable_require_ssl_reuse
+tunable_isolate
+tunable_isolate_network
+tunable_accept_timeout
+tunable_pasv_max_port
+tunable_trans_chunk_size
+tunable_delay_successful_login
+tunable_xferlog_file
+tunable_vsftpd_log_file
+tunable_message_file
+tunable_nopriv_user
+tunable_chroot_list_file
+tunable_pam_service_name
+tunable_userlist_file
+tunable_anon_root
+tunable_local_root
+tunable_listen_address
+tunable_user_config_dir
+tunable_listen_address6
+tunable_hide_file
+tunable_deny_file
+tunable_user_sub_token
+tunable_rsa_cert_file
+tunable_dsa_cert_file
+tunable_ssl_ciphers
+tunable_rsa_private_key_file
+tunable_dsa_private_key_file
+tunable_ca_certs_file
+ssl_accept
+priv_sock_send_cmd
+priv_sock_send_fd
+priv_sock_get_result
+vsf_sysutil_clear_alarm
+vsf_sysutil_uninstall_io_handler
+vsf_sysutil_close_failok
+vsf_sysutil_deactivate_linger_failok
+ssl_data_close
+vsf_sysutil_set_iptos_throughput
+vsf_sysutil_activate_linger
+vsf_sysutil_install_io_handler
+vsf_one_process_get_priv_data_sock
+vsf_two_process_get_priv_data_sock
+vsf_one_process_get_pasv_fd
+vsf_two_process_get_pasv_fd
+vsf_sysutil_get_time_sec
+vsf_sysutil_get_time_usec
+__divdf3
+__ledf2
+__fixunsdfsi
+__subdf3
+__muldf3
+vsf_ls_populate_dir_list
+str_list_get_length
+str_reserve
+str_list_get_pstr
+str_list_free
+ftp_read_data
+vsf_ascii_ascii_to_bin
+vsf_sysutil_get_file_offset
+vsf_sysutil_sendfile
+ftp_write_data
+vsf_sysutil_read
+vsf_ascii_bin_to_ascii
+vsf_sysutil_getpagesize
+vsf_sysutil_memprotect
+vsf_sysutil_memunmap
+vsf_secbuf_free
+vsf_sysutil_map_anon_pages
+str_locate_chars
+str_left
+str_locate_str
+vsf_filename_passes_filter
+str_next_dirent
+vsf_access_check_file_visible
+vsf_sysutil_statbuf_is_symlink
+vsf_sysutil_statbuf_get_perms
+vsf_sysutil_statbuf_get_links
+str_lpad
+str_rpad
+vsf_sysutil_statbuf_get_date
+str_list_add
+str_list_sort
+vsf_sysutil_statbuf_get_sortkey_mtime
+str_lstat
+vsf_sysutil_statbuf_get_gid
+vsf_sysutil_getgrgid
+vsf_sysutil_group_getname
+vsf_sysutil_statbuf_get_uid
+vsf_sysutil_getpwuid
+vsf_sysutil_user_getname
+str_readlink
+vsf_secutil_change_credentials
+priv_sock_get_cmd
+vsf_privop_pasv_active
+vsf_privop_pasv_listen
+vsf_privop_get_ftp_port_sock
+priv_sock_send_result
+vsf_privop_pasv_cleanup
+priv_sock_recv_fd
+vsf_privop_do_file_chown
+vsf_privop_accept_pasv
+vsf_sysutil_create_or_open_file_append
+vsf_sysutil_openlog
+str_write_loop
+vsf_sysutil_unlock_file
+vsf_sysutil_get_current_date
+vsf_sysutil_getpid
+__floatdidf
+str_append_double
+str_syslog
+vsf_sysutil_realloc
+vsf_sysutil_memcpy
+vsf_sysutil_malloc
+private_str_alloc_memchunk
+vsf_sysutil_filesize_t_to_str
+vsf_sysutil_memcmp
+str_strcmp
+private_str_append_memchunk
+vsf_sysutil_double_to_str
+vsf_sysutil_toupper
+str_locate_text_reverse
+str_locate_text
+str_split_text_reverse
+str_split_text
+vsf_sysutil_isspace
+vsf_sysutil_isprint
+vsf_sysutil_a_to_filesize_t
+vsf_sysutil_octal_to_uint
+str_getline
+fopen
+__fgetc_unlocked
+fgetc
+fclose
+str_alloc_alt_term
+str_read_loop
+vsf_sysutil_getcwd
+vsf_sysutil_mkdir
+vsf_sysutil_rmdir
+vsf_sysutil_unlink
+vsf_sysutil_chdir
+vsf_sysutil_open_file
+vsf_sysutil_lstat
+vsf_sysutil_create_file_exclusive
+vsf_sysutil_create_or_open_file
+vsf_sysutil_chmod
+vsf_sysutil_rename
+vsf_sysutil_opendir
+vsf_sysutil_next_dirent
+vsf_sysutil_readlink
+vsf_sysutil_syslog
+vsf_sysutil_qsort
+vsf_cmdio_write_str_hyphen
+str_list_contains_str
+str_strdup
+vsf_sysutil_getuid
+str_all_space
+vsf_sysutil_initgroups
+vsf_sysdep_has_capabilities
+vsf_sysutil_clear_supp_groups
+vsf_sysutil_geteuid
+vsf_sysutil_getegid
+vsf_sysutil_setegid
+vsf_sysutil_seteuid
+vsf_sysutil_seteuid_numeric
+vsf_sysutil_setegid_numeric
+vsf_sysutil_chroot
+vsf_sysutil_set_no_fds
+vsf_sysutil_setgid
+vsf_sysutil_setuid
+vsf_sysutil_set_no_procs
+vsf_sysdep_adopt_capabilities
+vsf_sysdep_keep_capabilities
+init_connection
+ptrace_sandbox_attach_point
+ptrace_sandbox_alloc
+policy_setup
+ptrace_sandbox_launch_process
+ptrace_sandbox_run_processes
+ptrace_sandbox_free
+vsf_privop_do_login
+process_post_login
+vsf_sysutil_sockaddr_get_port
+vsf_sysutil_wait
+vsf_sysutil_wait_get_retval
+vsf_sysutil_wait_exited_normally
+vsf_sysutil_wait_get_exitcode
+priv_sock_send_str
+ssl_slave
+priv_sock_close
+priv_sock_init
+vsf_sysutil_fork_newnet
+vsf_sysutil_fork
+priv_sock_set_parent_context
+sprintf
+memset
+fgets
+fprintf
+vsf_priv_parent_postlogin
+strstr
+ssl_comm_channel_set_producer_context
+vsf_set_die_if_parent_dies
+priv_sock_set_child_context
+vsf_sysutil_write_access
+vsf_sysutil_get_error
+vsf_set_term_if_parent_dies
+ssl_comm_channel_init
+priv_sock_get_str
+my_getpwnam
+strncpy
+ssl_comm_channel_set_consumer_context
+vsf_sysutil_get_ipsock
+vsf_sysutil_activate_reuseaddr
+vsf_sysutil_bind
+vsf_sysutil_get_random_byte
+vsf_sysutil_connect_timeout
+vsf_sysutil_get_ipv6_sock
+vsf_sysutil_listen
+vsf_sysutil_get_ipv4_sock
+vsf_sysutil_sockaddr_alloc
+vsf_sysutil_accept_timeout
+vsf_sysutil_fchown
+vsf_sysutil_isalnum
+str_contains_space
+str_contains_unprintable
+vsf_sysdep_check_auth
+hash_lookup_entry
+hash_free_entry
+vsf_sysutil_get_ipaddr_size
+hash_alloc
+vsf_sysutil_sockaddr_set_any
+vsf_sysutil_sockaddr_alloc_ipv6
+vsf_sysutil_sockaddr_get_raw_addr
+vsf_sysutil_fork_failok
+vsf_sysutil_fork_isolate_all_failok
+vsf_sysutil_fork_isolate_failok
+hash_add_entry
+vsf_sysutil_reopen_standard_fds
+vsf_sysutil_dupfd2
+vsf_sysutil_wait_reap_one
+vsf_sysutil_memclr
+hash_get_bucket
+hash_get_node_by_key
+ssl_write_str
+ssl_read
+priv_sock_recv_buf
+vsf_sysutil_check_pending_actions
+ssl_write
+priv_sock_send_buf
+str_netfd_alloc
+vsf_sysutil_recv_peek
+ssl_peek
+ssl_read_into_str
+ptrace_sandbox_permit_exit
+ptrace_sandbox_permit_mmap
+ptrace_sandbox_permit_mprotect
+ptrace_sandbox_permit_brk
+ptrace_sandbox_permit_read
+ptrace_sandbox_permit_write
+ptrace_sandbox_permit_query_time
+ptrace_sandbox_permit_file_stats
+ptrace_sandbox_permit_fd_stats
+ptrace_sandbox_permit_getcwd
+ptrace_sandbox_permit_chdir
+ptrace_sandbox_permit_umask
+ptrace_sandbox_permit_open
+ptrace_sandbox_permit_close
+ptrace_sandbox_permit_sendfile
+ptrace_sandbox_permit_getdents
+ptrace_sandbox_permit_readlink
+ptrace_sandbox_permit_fcntl
+ptrace_sandbox_permit_seek
+ptrace_sandbox_permit_select
+ptrace_sandbox_permit_sigreturn
+ptrace_sandbox_permit_sleep
+ptrace_sandbox_permit_sigaction
+ptrace_sandbox_permit_recv
+ptrace_sandbox_permit_shutdown
+ptrace_sandbox_permit_socket
+ptrace_sandbox_set_socket_validator
+ptrace_sandbox_permit_bind
+ptrace_sandbox_set_bind_validator
+ptrace_sandbox_permit_setsockopt
+ptrace_sandbox_set_setsockopt_validator
+ptrace_sandbox_permit_mkdir
+ptrace_sandbox_permit_unlink
+ptrace_sandbox_permit_rmdir
+ptrace_sandbox_permit_rename
+ptrace_sandbox_permit_ftruncate
+ptrace_sandbox_permit_chmod
+ptrace_sandbox_permit_alarm
+ptrace_sandbox_permit_mremap
+ptrace_sandbox_permit_listen
+ptrace_sandbox_permit_accept
+ptrace_sandbox_permit_connect
+ptrace_sandbox_set_connect_validator
+ptrace_sandbox_permit_getsockopt
+ptrace_sandbox_set_getsockopt_validator
+ptrace_sandbox_permit_fchmod
+ptrace_sandbox_permit_fchown
+ptrace_sandbox_permit_utime
+ptrace_sandbox_get_socketcall_arg
+ptrace_sandbox_get_buf
+sigemptyset
+sigaddset
+sigprocmask
+__errno_location
+vsf_sysutil_write
+lseek64
+vsf_sysutil_getpid_nocache
+vsf_sysutil_post_fork
+waitpid
+fcntl64
+snprintf
+__ctype_b
+readdir64
+sigfillset
+vsf_sysutil_block_sig
+open64
+dup2
+fstat64
+lstat64
+dirfd
+gmtime
+strftime
+vsf_sysutil_sockaddr_ipv4_v6
+gethostbyname
+gettimeofday
+srand
+vsf_sysutil_setuid_numeric
+vsf_sysutil_setgid_numeric
+setreuid
+setregid
+setgroups
+setsid
+getpgrp
+putenv
+__fixdfsi
+nanosleep
+closelog
+vsf_sysutil_strcpy
+mktime
+ftruncate64
+setrlimit64
+syscall
+getusershell
+vsf_sysutil_strcmp
+endusershell
+getspnam
+crypt
+prctl
+capset
+sendmsg
+recvmsg
+libcrypt.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+libdl.so.0
+libnsl.so.0
+libresolv.so.0
+libutil.so.0
+__gedf2
+__thenan_df
+__unpack_d
+__pack_d
+__fpcmp_parts_d
+libc.so.0
+__environ
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+'9}@
+'9i`
+!$Fr 
+` !$
+` !$
+` !$
+` !$
+` !$
+	$Ew
+	$ew
+	$Ew
+	$Ew
+	$ew
+` !$
+	$Fw
+	$Fw
+	$ex
+	$Ex
+` !$
+	$fx
+	$Ex$
+	$Ex4
+	$Ex@
+	$exH
+	$ExP
+` !$
+	$fxX
+` !$
+	$Fx|
+	$Fx
+	$Fx
+	$Fx
+	$Fy
+	$Ey4
+	$ey<
+` !$
+` !$
+` !$
+` !$
+  !$
+  !&
+0!&$
+  !$
+` !$
+` !&
+@(!&D
+  !&F
+  !&
+  !$
+  !&
+  !&
+@0!'
+  !&
+@0!$
+  !&E
+  !&
+(!'9
+ !'9
+  !$
+  !$
+@0!'
+  !$
+  !$
+  !$
+  !$
+  !$
+  !$
+@ !'9
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+  !'9
+@ !$
+@ !$
+@ !$
+ 0!'
+@ !$
+@ !$
+@ !'9
+@ !$
+@ !$
+@ !&
+@ !$
+@ !$
+  !&e
+@ !$
+@ !$
+@ !$
+ (!$
+  !'9
+@ !$
+  !&
+@ !&
+@ !&P
+`(!$
+@ !$
+@ !$
+ !$Y
+	$E~
+ !$Y
+ !$Y
+	$e{L
+	$ez
+ !$Y
+	$F{T
+	$F}8
+ !&F
+  !$
+  !'9
+  !$
+  !'9
+ 0!'
+@ !&
+0!$Q
+ (!$
+ (!$
+ (!$
+  !0E
+`8!'93
+@ !$
+@ !&%
+`8!'93
+!'9;L
+0!'9;L
+ 0!'9F
+@ !$
+  !&e
+ 0!'
+0!&$
+` !&E
+ !&1
+(!&1
+  !'
+`P!%k
+@(!$
+`(!$
+@ !$
+  !$
+8!$y
+`(!*"
+ (!'9
+(!&d
+ !$D
+@ !$C
+@(!&
+@(!&
+ P!$
+@0!<
+  !$
+  !$
+  !$
+  !6
+@p!,B
+kh!1
+J`!,
+  !'
+@ !$
+` !$T
+  !6
+  !6
+  !6
+ !'9
+ !'9
+ !'9
+#0#%
+@8!$
+` !$
+@ !4
+@ !$
+ 8!&%
+@ !&
+@ !&%
+ (!&
+ 8!$
+ H!$
+@8!&$
+` !&
+.4cE
+@(!'
+0!8b
+@!%j
+g(%%h
+'9Up
+H'9Up
+BP!<
+(&4C
+CP%5e
+ !1e
+ !,b
+ !(b
+@P!1
+P!1%
+C`#)
+BP!<
+0!1g
+BP!<
+'9|p
+/tmp/vsftp/etc/vsftpd.conf
+VSFTPD_LOAD_CONF
+should not get here: main
+vsftpd: version 2.3.2
+unrecognise option: 
+vsftpd: missing argv[0]
+cannot read banner file:
+cannot read anon e-mail list file:
+connected
+cannot read email passwords file:
+vsftpd: must be started as root (see run_as_launching_user option)
+vsftpd: not configured for standalone, must be started from inetd
+vsftpd: both local and anonymous access disabled!
+vsftpd: both FTP and HTTP disabled!
+vsftpd: HTTP needs 'one_process_model' for now
+vsftpd: security: 'one_process_model' needs a better OS
+vsftpd: security: 'one_process_model' is anonymous only
+vsftpd: cannot locate user specified in 'chown_username':
+vsftpd: cannot locate user specified in 'ftp_username':
+vsftpd: cannot locate user specified in 'guest_username':
+500 OOPS: 
+Login with USER first.
+Login incorrect.
+Connection refused: too many sessions.
+There are too many connected users, please try later.
+Connection refused: too many sessions for this address.
+There are too many connections from your internet address.
+<http>
+USER
+Please specify the password.
+Bad HTTP verb.
+PASS
+QUIT
+Goodbye.
+<no password>
+ANONYMOUS
+FEAT
+OPTS
+PROT
+Please login with USER and PASS.
+Permission denied.
+This FTP server is anonymous only.
+Anonymous sessions may not use encryption.
+Non-anonymous sessions must use encryption.
+Anonymous sessions must use encryption.
+AUTH
+PBSZ
+(vsFTPd 2.3.2)
+Connection refused: tcp_wrappers denial.
+Service not available.
+not logged in
+ftp_write_str
+ftp_write
+Timeout.
+Input line too long.
+PASS
+PASS <password>
+pasv and port both active
+port and pasv both active
+invalid pasv_address
+Entering Passive Mode (
+Entering Extended Passive Mode (|||
+EPSV ALL ok.
+0,0,0,0
+Bad network protocol.
+Data connections must be encrypted.
+Use PORT or PASV first.
+ABOR successful.
+ABOR
+Unknown command.
+neither PORT nor PASV active in get_remote_transfer_fd
+Permission denied.
+Directory successfully changed.
+Failed to change directory.
+Opening 
+BINARY
+ mode data connection for 
+ bytes).
+Transfer complete.
+No support for resume of ASCII transfer.
+Failed to open file.
+ASCII
+Failure writing network stream.
+Failure reading local file.
+Here comes the directory listing.
+Transfer done (but failed to open directory).
+Status follows:
+End of status
+Directory send OK.
+Could not create file.
+FILE: 
+Failure reading network stream.
+Ok to send data.
+Failure writing to local file.
+UMASK
+Your current UMASK is 
+CHMOD
+SITE CHMOD needs 2 arguments.
+HELP
+CHMOD UMASK HELP
+UMASK set to 
+Unknown SITE command.
+SITE CHMOD command failed.
+SITE CHMOD command ok.
+Could not get file modification time.
+Could not set file modification time.
+File modification time set.
+HTTP/1.1 200 OK
+Server: vsftpd
+Connection: close
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+HTML
+Content-Type: text/html
+HTTP needs download - fix your config
+Content-Type: dunno
+should not be reached
+Login successful.
+IDLE
+QUIT
+Goodbye.
+XPWD
+XCWD
+CDUP
+XCUP
+RETR
+NOOP
+NOOP ok.
+EPSV
+SYST
+UNIX Type: L8
+PASV
+P@SW
+LIST
+TYPE
+STOR
+XMKD
+Create directory operation failed.
+XRMD
+Remove directory operation failed.
+DELE
+REST
+RNFR
+RNTO
+NLST
+SIZE
+SITE
+ABOR
+No transfer to ABOR.
+APPE
+MDTM
+EPRT
+STRU
+Structure set to F.
+Bad STRU command.
+MODE
+STOU
+ALLO
+ALLO command ignored.
+Mode set to S.
+REIN
+REIN not implemented.
+Bad MODE command.
+ACCT
+ACCT not implemented.
+Switching to Binary mode.
+Switching to ASCII mode.
+Unrecognised TYPE command.
+Restart position accepted (
+RNFR required first.
+Ready for RNTO.
+Rename successful.
+RNFR command failed.
+Rename failed.
+Could not get file size.
+Bad EPRT command.
+Illegal EPRT command.
+EPRT command successful. Consider using EPSV.
+Bad EPRT protocol.
+" created
+Remove directory operation successful.
+Delete operation failed.
+The following commands are recognized.
+ ABOR ACCT ALLO APPE CDUP CWD  DELE EPRT EPSV FEAT HELP LIST MDTM MKD
+ MODE NLST NOOP OPTS PASS PASV PORT PWD  QUIT REIN REST RETR RMD  RNFR
+ RNTO SITE SIZE SMNT STAT STOR STOU STRU SYST TYPE USER XCUP XCWD XMKD
+ XPWD XRMD
+Help OK.
+PORT
+Illegal PORT command.
+PORT command successful. Consider using PASV.
+SMNT
+SMNT not implemented.
+Delete operation successful.
+FEAT
+OPTS
+STAT
+PROT
+USER
+Can't change from guest user.
+PBSZ
+Any password will do.
+PASS
+Already logged in.
+Can't change to another user.
+FTP server status:
+     Connected to 
+     Logged in as 
+     TYPE: 
+ASCII
+     No session bandwidth limit
+     No session timeout
+     Control connection is encrypted
+     Data connections will be encrypted
+     At session startup, client count was 
+     vsFTPd 2.3.2 - secure, fast, stable
+     Data connections will be plain text
+     Control connection is plain text
+     Session timeout in seconds is 
+     Session bandwidth limit in byte/s is 
+BINARY
+parent_fd active
+child_fd active
+child_fd not active
+parent_fd not active
+priv_sock_send_cmd
+priv_sock_send_int
+priv_sock_send_buf
+priv_sock_get_int
+recv_len bigger than buffer
+priv_sock_recv_buf
+priv_sock_get_result
+priv_sock_get_cmd
+priv_sock_get_str: too big
+priv_sock_get_str: read error
+priv_sock_send_result
+/tmp/vsftp/
+root
+/tmp/vsftp/log/xferlog
+/tmp/vsftp/log/vsftpd.log
+.message
+nobody
+/tmp/vsftp/etc/vsftpd.banned_emails
+/tmp/vsftp/etc/vsftpd.chroot_list
+/tmp/vsftp/etc/vsftpd.user_list
+/tmp/vsftp/etc/vsftpd.email_passwords
+/tmp/vsftp/ssl/certs/vsftpd.pem
+DES-CBC3-SHA
+SSL connection failed
+; session reuse required
+: see require_ssl_reuse option in vsftpd.conf man page
+Data timeout. Reconnect. Sorry.
+no data descriptor in vsf_ftpdataio_dispose_transfer_fd
+data descriptor still present in init_data_sock_params
+Failed to establish connection.
+Security: Bad IP connecting.
+calc_num_send: negative file offset or send count
+ -> 
+bad request in process_post_login_req
+failed to open xferlog log file:
+failed to open vsftpd log file:
+non null log_type in vsf_log_start_entry
+bad entry_type in vsf_log_do_log
+: Client "
+ [pid 
+FAIL 
+LOGIN
+, anon password "
+FTP command
+FTP response
+CONNECT
+UPLOAD
+MKDIR
+DOWNLOAD
+DELETE
+RENAME
+RMDIR
+CHMOD
+DEBUG
+Kbyte/sec
+ bytes
+ftp 0 * 
+p_buf not NULL when setting it
+p_buf NULL and len or alloc_bytes != 0 in str_getbuf
+trunc_len not smaller than alloc_bytes in str_trunc
+indexx invalid in str_split_text
+chars invalid in str_left
+chars invalid in str_right
+invalid indexx in str_mid_to_end
+bad indexx in str_get_char_at
+p_pos out of range in str_getline
+/tmp/vsftp/etc/passwd
+you have no permission to access
+no entry found!
+poor buffer accounting in str_netfd_alloc
+vsf_sysutil_read_loop
+vsf_sysutil_recv_peek
+bytes_read > left in str_netfd_alloc
+vsf_sysutil_recv_peek: no data
+missing terminator in str_netfd_alloc
+zero str_len in str_netfd_write
+unknown mode value in str_open
+indexx out of range in str_list_get_str
+read size mismatch
+accept_timeout
+connect_timeout
+local_umask
+anon_umask
+ftp_data_port
+idle_session_timeout
+data_connection_timeout
+pasv_min_port
+pasv_max_port
+anon_max_rate
+local_max_rate
+listen_port
+max_clients
+file_open_mode
+max_per_ip
+trans_chunk_size
+delay_failed_login
+delay_successful_login
+max_login_fails
+chown_upload_mode
+anonymous_enable
+local_enable
+pasv_enable
+port_enable
+chroot_local_user
+write_enable
+anon_upload_enable
+anon_mkdir_write_enable
+anon_other_write_enable
+chown_uploads
+connect_from_port_20
+xferlog_enable
+dirmessage_enable
+anon_world_readable_only
+async_abor_enable
+ascii_upload_enable
+ascii_download_enable
+one_process_model
+xferlog_std_format
+pasv_promiscuous
+deny_email_enable
+chroot_list_enable
+setproctitle_enable
+text_userdb_names
+ls_recurse_enable
+log_ftp_protocol
+guest_enable
+userlist_enable
+userlist_deny
+use_localtime
+check_shell
+hide_ids
+listen
+port_promiscuous
+passwd_chroot_enable
+no_anon_password
+tcp_wrappers
+use_sendfile
+force_dot_files
+listen_ipv6
+dual_log_enable
+syslog_enable
+background
+virtual_use_local_privs
+session_support
+download_enable
+dirlist_enable
+chmod_enable
+secure_email_list_enable
+run_as_launching_user
+no_log_lock
+ssl_enable
+allow_anon_ssl
+force_local_logins_ssl
+force_local_data_ssl
+ssl_sslv2
+ssl_sslv3
+ssl_tlsv1
+tilde_user_enable
+force_anon_logins_ssl
+force_anon_data_ssl
+mdtm_write
+lock_upload_files
+pasv_addr_resolve
+debug_ssl
+require_cert
+validate_cert
+strict_ssl_read_eof
+strict_ssl_write_shutdown
+ssl_request_cert
+delete_failed_uploads
+implicit_ssl
+sandbox
+require_ssl_reuse
+isolate
+isolate_network
+ftp_enable
+http_enable
+secure_chroot_dir
+ftp_username
+chown_username
+xferlog_file
+vsftpd_log_file
+message_file
+nopriv_user
+ftpd_banner
+banned_email_file
+chroot_list_file
+pam_service_name
+guest_username
+userlist_file
+anon_root
+local_root
+banner_file
+pasv_address
+listen_address
+user_config_dir
+listen_address6
+cmds_allowed
+hide_file
+deny_file
+user_sub_token
+email_password_file
+rsa_cert_file
+dsa_cert_file
+ssl_ciphers
+rsa_private_key_file
+dsa_private_key_file
+ca_certs_file
+cmds_denied
+missing value in config file for: 
+unrecognised variable in config file: 
+TRUE
+FALSE
+bad bool value in config file for: 
+cannot read config file: 
+config file not owned by correct user, or not a file
+null filename in vsf_parseconf_load_file
+cannot change directory:
+vsf_secutil_change_credentials: not running as root
+cannot locate user entry:
+could not allocate sandbox (only works for 32-bit builds)
+could not launch sandboxed child
+bad state in vsf_one_process_login
+child died
+priv_sock_get_result
+could not get privileged socket
+could not clean up socket
+could not accept on listening socket
+unexpected failure in vsf_two_process_chown_upload
+/tmp/vsftp/var/%s
+vsftpd
+/proc/%s/cmdline
+should not get here in common_do_login
+should not get here: common_do_login
+vsftpd: refusing to run with writable anonymous root
+error opening per-user config file
+cannot locate user entry:
+root
+weird state in process_login_request
+bad request
+could not read chroot() list file:
+cannot read user list file:
+vsf_sysutil_bind
+Illegal port request
+vsf_sysutil_bind / listen
+invalid fd in cmd_process_chown
+ANONYMOUS
+unexpected local login in handle_login
+zero count for IP address
+IP address missing from hash
+could not bind listening IPv4 socket
+could not listen
+could not bind listening IPv6 socket
+bad listen_address: 
+LISTENER
+run two copies of vsftpd for IPv4 and IPv6
+bad listen_address6: 
+bad bucket lookup
+hash node not found
+duplicate hash key
+tcp_wrappers is set to YES but no tcp wrapper support compiled in
+Features:
+ MDTM
+ REST STREAM
+ SIZE
+ TVFS
+ UTF8
+ AUTH SSL
+ AUTH TLS
+ EPRT
+ EPSV
+ PASV
+ PBSZ
+ PROT
+UTF8 ON
+Always in UTF8 mode.
+Option not understood.
+SSL: ssl_enable is set but SSL support not compiled in
+state not clean
+bad request in process_ssl_slave_req
+SSL handler
+unknown signal in vsf_sysutil_translate_sig
+ sigemptyset
+sigaddset
+sigprocmask
+double register of i/o handler
+no i/o handler to unregister!
+retval too big in vsf_sysutil_read_loop
+size too big in vsf_sysutil_read_loop
+retval too big in vsf_sysutil_write_loop
+size too big in vsf_sysutil_write_loop
+lseek
+negative seek_pos in vsf_sysutil_lseek_to
+zero or big size in vsf_sysutil_malloc
+malloc
+zero or big size in vsf_sysutil_realloc
+realloc
+vsf_sysutil_free got a null pointer
+fork
+waitpid
+not a normal exit in vsf_sysutil_wait_get_exitcode
+setsockopt: keepalive
+setsockopt: reuseaddr
+setsockopt: nodelay
+fcntl
+setsockopt: oobinline
+%lld
+%.2f
+closedir
+string suspiciously long
+setsockopt: linger
+sigfillset
+sigaction
+possible negative value to memcpy?
+getpagesize
+bad value in vsf_sysutil_translate_memprot
+mprotect
+munmap
+bad mode in vsf_sysutil_translate_openmode
+dup2
+close
+fstat
+%b %d %H:%M
+%b %d  %Y
+strftime
+%Y%m%d%H%M%S
+invalid inode size in vsf_sysutil_statbuf_get_size
+%030ld
+fchown
+fchmod
+socket
+socketpair
+can only support ipv4 and ipv6 currently
+listen
+getsockopt
+getsockname
+getpeername
+bad family
+gethostbyname(): neither IPv4 nor IPv6
+cannot resolve host:
+negative uid in vsf_sysutil_getpwuid
+/tmp/vsftp/root
+negative gid in vsf_sysutil_getgrgid
+gettimeofday
+setuid
+setgid
+geteuid
+getegid
+seteuid
+setegid
+setgroups
+initgroups
+chroot
+not session leader
+/dev/null
+reopening standard file descriptors to /dev/null failed
+TZ=UTC%s
+localtime
+%a %b!%d %H:%M:%S %Y
+vsftpd
+ftruncate
+setrlimit
+setrlimit NOFILE
+setrlimit NPROC
+prctl
+asked to keep capabilities, but no support exists
+asked to adopt no capabilities
+capset
+num_written bigger than num_send in do_sendfile
+invalid offset or send count in vsf_sysutil_sendfile
+no argv[0] in vsf_sysutil_setproctitle_init
+vsf_sysutil_setproctitle_init called twice
+vsf_sysutil_setproctitle: not initialized
+vsftpd: 
+mmap
+sendmsg
+recvmsg
+no passed fd

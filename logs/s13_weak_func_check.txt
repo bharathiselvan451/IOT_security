@@ -1,0 +1,29 @@
+[+] Check binaries for weak functions (intense)
+=================================================================
+This module identifies the usage of critical binary functions in firmware via objdump.
+Examples of binary functions are system, strcpy, printf and strcat. These functions are configured in the configuration
+file config/functions.cfg. The module counts the usages per binary. For strcpy functions it also counts strlen functions
+right before the strcpy function. Additionally it checks if the binary is a known Linux binary or unknown and probably
+a vendor binary.
+
+[*] Vulnerable functions: fprintf mmap popen printf sprintf strcat strcpy system
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/acltd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 3 / networking: yes
+[REF] /logs/s13_weak_func_check/vul_func_3_printf-acltd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/acltd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcpy / Function count: 11 / strlen: 0 / networking: yes
+[REF] /logs/s13_weak_func_check/vul_func_11_strcpy-acltd.txt
+
+
+==> Top 10 legacy C functions - Objdump disasm mode
+-----------------------------------------------------------------
+
+[+] printf - top 10 results:
+[0;33m	3     : acltd           : common linux file: no[0m
+
+
+[+] strcpy - top 10 results:
+[0;33m	11    : acltd           : common linux file: no[0m
+
+
+[*] Statistics:11:108
+
+[*] Statistics1:MIPS

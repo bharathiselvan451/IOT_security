@@ -1,0 +1,57 @@
+[*] Binary protection state of libcrypt-0.9.30.so
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of libcrypt-0.9.30.so
+
+addiu a1, sp, 0x18
+addiu a0, sp, 0x30
+movz a1, s7, v0
+addiu a2, zero, 1
+addiu t9, t9, 0x41ec
+jalr t9
+sra s0, s0, 1
+b 0x4638
+nop
+lw t9, -0x7fdc(gp)
+move s0, zero
+lw s6, -0x7fd8(gp)
+addiu a1, t9, 0x4d10
+lw t9, -sym.imp.strcpy(gp)
+jalr t9
+addiu a0, s6, 0x62a0
+move a2, fp
+lw gp, 0x10(sp)
+addiu a0, s6, 0x62a0
+lw t9, -sym.imp.strncat(gp)
+jalr t9
+move a1, s4
+addiu a0, s6, 0x62a0
+lw gp, 0x10(sp)
+lw a1, -0x7fdc(gp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+addiu a1, a1, 0x4ea8
+addiu a0, sp, 0x18
+lw gp, 0x10(sp)
+lw v0, -0x7fdc(gp)
+addiu t9, v0, 0x42fc
+jalr t9
+addiu a1, sp, 0x30
+lw gp, 0x10(sp)
+lw v0, -0x7fdc(gp)
+addiu s1, sp, 0x88
+move a0, s1
+addiu t9, v0, 0x3f9c
+jalr t9
+andi s3, s0, 1
+lw gp, 0x10(sp)
+lw v0, -0x7fdc(gp)
+beqz s3, 0x470c
+addiu t9, v0, 0x41ec
+move a0, s1
+
+[*] Function strcat used 1 times libcrypt-0.9.30.so
+

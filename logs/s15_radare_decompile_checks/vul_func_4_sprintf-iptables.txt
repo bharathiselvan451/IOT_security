@@ -1,0 +1,192 @@
+[*] Binary protection state of iptables
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of iptables
+
+    ; assembly                                       | /* r2dec pseudo code output */
+                                                     | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables @ 0x4346ec */
+                                                     | #include <stdint.h>
+                                                     |  
+    ; (fcn) sym.xtables_ip6mask_to_numeric ()        | void xtables_ip6mask_to_numeric () {
+    0x004346ec lui gp, 6                             |     
+    0x004346f0 addiu gp, gp, -0x13ec                 |     
+    0x004346f4 addu gp, gp, t9                       |     gp += t9;
+    0x004346f8 addiu sp, sp, -0x20                   |     
+    0x004346fc sw ra, 0x1c(sp)                       |     *(var_1ch) = ra;
+    0x00434700 sw s0, 0x18(sp)                       |     *(var_18h) = s0;
+    0x00434704 sw gp, 0x10(sp)                       |     *(var_10h) = gp;
+    0x00434708 move a2, zero                         |     a2 = 0;
+    0x0043470c lw a1, (a0)                           |     a1 = *(a0);
+    0x00434710 lw a3, 4(a0)                          |     a3 = *((a0 + 1));
+    0x00434714 lw t0, 8(a0)                          |     t0 = *((a0 + 2));
+    0x00434718 lw t1, 0xc(a0)                        |     t1 = *((a0 + 3));
+                                                     |     do {
+    0x0043471c srl v0, a3, 0x1f                      |         v0 = a3 >> 0x1f;
+                                                     |         if (a1 >= 0) {
+    0x00434720 bgez a1, 0x434750                     |             goto label_0;
+                                                     |         }
+    0x00434724 sll a1, a1, 1                         |         a1 <<= 1;
+    0x00434728 srl v1, t0, 0x1f                      |         v1 = t0 >> 0x1f;
+    0x0043472c or a1, a1, v0                         |         a1 |= v0;
+    0x00434730 sll a3, a3, 1                         |         a3 <<= 1;
+    0x00434734 srl v0, t1, 0x1f                      |         v0 = t1 >> 0x1f;
+    0x00434738 sll t0, t0, 1                         |         t0 <<= 1;
+    0x0043473c or a3, a3, v1                         |         a3 |= v1;
+    0x00434740 or t0, t0, v0                         |         t0 |= v0;
+    0x00434744 addiu a2, a2, 1                       |         a2++;
+    0x00434748 sll t1, t1, 1                         |         t1 <<= 1;
+    0x0043474c b 0x43471c                            |         
+                                                     |     } while (1);
+                                                     |     if (a1 == 0) {
+                                                     | label_0:
+    0x00434750 bnez a1, 0x434770                     |         
+    0x00434754 nop                                   |         
+                                                     |         if (a3 != 0) {
+    0x00434758 bnez a3, 0x434770                     |             goto label_1;
+                                                     |         }
+    0x0043475c nop                                   |         
+                                                     |         if (t0 != 0) {
+    0x00434760 bnez t0, 0x434770                     |             goto label_1;
+                                                     |         }
+    0x00434764 nop                                   |         
+    0x00434768 addiu v0, zero, -1                    |         v0 = -1;
+                                                     |         if (t1 == 0) {
+    0x0043476c beqz t1, 0x434778                     |             goto label_2;
+                                                     |         }
+                                                     |     }
+                                                     | label_1:
+    0x00434770 addiu a2, zero, -1                    |     a2 = -1;
+    0x00434774 addiu v0, zero, -1                    |     v0 = -1;
+                                                     | label_2:
+    0x00434778 lw s0, -0x7fd0(gp)                    |     s0 = *((gp - 8180));
+    0x0043477c addiu v0, zero, 0x2f00                |     v0 = 0x2f00;
+                                                     |     if (a2 == v0) {
+    0x00434780 bne a2, v0, 0x4347ac                  |         
+    0x00434784 lw t9, -0x7c60(gp)                    |         t9 = sym.xtables_ip6addr_to_numeric;
+    0x00434788 sh v0, -0x3114(s0)                    |         *((s0 - 6282)) = v0;
+    0x0043478c jalr t9                               |         t9 ();
+    0x00434790 addiu a0, s0, -0x3114                 |         a0 = s0 + -0x3114;
+    0x00434794 lw gp, 0x10(sp)                       |         gp = *(var_10h);
+    0x00434798 lw t9, -0x7d18(gp)                    |         t9 = sym.imp.strcat;
+    0x0043479c move a1, v0                           |         a1 = v0;
+    0x004347a0 jalr t9                               |         t9 ();
+    0x004347a4 addiu v0, s0, -0x3114                 |         v0 = s0 + -0x3114;
+    0x004347a8 b 0x4347c4                            |         
+                                                     |     } else {
+    0x004347ac lw a1, -0x7fe0(gp)                    |         a1 = *((gp - 8184));
+    0x004347b0 addiu a0, s0, -0x3114                 |         a0 = s0 + -0x3114;
+[31m    0x004347b4 lw t9, -0x7e5c(gp)                    |         t9 = sym.imp.sprintf;[0m
+                                                     |         /* esilref: '/&d' */
+    0x004347b8 addiu a1, a1, 0x68b4                  |         a1 += 0x68b4;
+    0x004347bc jalr t9                               |         t9 ();
+    0x004347c0 addiu v0, s0, -0x3114                 |         v0 = s0 + -0x3114;
+                                                     |     }
+    0x004347c4 lw gp, 0x10(sp)                       |     gp = *(var_10h);
+    0x004347c8 lw ra, 0x1c(sp)                       |     ra = *(var_1ch);
+    0x004347cc lw s0, 0x18(sp)                       |     s0 = *(var_18h);
+    0x004347d0 addiu sp, sp, 0x20                    |     
+    0x004347d4 jr ra                                 |     return v0;
+                                                     | }
+    ; assembly                                       | /* r2dec pseudo code output */
+                                                     | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables @ 0x433b50 */
+                                                     | #include <stdint.h>
+                                                     |  
+    ; (fcn) sym.xtables_ipaddr_to_numeric ()         | void xtables_ipaddr_to_numeric () {
+    0x00433b50 lui gp, 6                             |     
+    0x00433b54 addiu gp, gp, -0x850                  |     
+    0x00433b58 addu gp, gp, t9                       |     gp += t9;
+    0x00433b5c addiu sp, sp, -0x28                   |     
+    0x00433b60 sw ra, 0x24(sp)                       |     *(var_24h) = ra;
+    0x00433b64 sw s0, 0x20(sp)                       |     *(var_20h) = s0;
+    0x00433b68 sw gp, 0x18(sp)                       |     *(var_18h) = gp;
+    0x00433b6c lw s0, -0x7fd0(gp)                    |     s0 = *((gp - 8180));
+    0x00433b70 lbu v1, 3(a0)                         |     v1 = *((a0 + 3));
+    0x00433b74 lbu v0, 2(a0)                         |     v0 = *((a0 + 2));
+    0x00433b78 lw a1, -0x7fe0(gp)                    |     a1 = *((gp - 8184));
+    0x00433b7c lbu a2, (a0)                          |     a2 = *(a0);
+    0x00433b80 lbu a3, 1(a0)                         |     a3 = *((a0 + 1));
+                                                     |     /* esilref: '&u.&u.&u.&u' */
+    0x00433b84 addiu a1, a1, 0x68a4                  |     a1 += 0x68a4;
+[31m    0x00433b88 lw t9, -0x7e5c(gp)                    |     t9 = sym.imp.sprintf;[0m
+    0x00433b8c addiu a0, s0, -0x3580                 |     a0 = s0 + -0x3580;
+    0x00433b90 sw v0, 0x10(sp)                       |     *(var_10h) = v0;
+    0x00433b94 sw v1, 0x14(sp)                       |     *(var_14h) = v1;
+    0x00433b98 jalr t9                               |     t9 ();
+    0x00433b9c addiu v0, s0, -0x3580                 |     v0 = s0 + -0x3580;
+    0x00433ba0 lw gp, 0x18(sp)                       |     gp = *(var_18h);
+    0x00433ba4 lw ra, 0x24(sp)                       |     ra = *(var_24h);
+    0x00433ba8 lw s0, 0x20(sp)                       |     s0 = *(var_20h);
+    0x00433bac addiu sp, sp, 0x28                    |     
+    0x00433bb0 jr ra                                 |     return v0;
+                                                     | }
+    ; assembly                                       | /* r2dec pseudo code output */
+                                                     | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables @ 0x433c48 */
+                                                     | #include <stdint.h>
+                                                     |  
+    ; (fcn) sym.xtables_ipmask_to_numeric ()         | void xtables_ipmask_to_numeric () {
+    0x00433c48 lui gp, 6                             |     
+    0x00433c4c addiu gp, gp, -0x948                  |     
+    0x00433c50 addu gp, gp, t9                       |     gp += t9;
+    0x00433c54 addiu sp, sp, -0x20                   |     
+    0x00433c58 sw ra, 0x1c(sp)                       |     *(var_1ch) = ra;
+    0x00433c5c sw s0, 0x18(sp)                       |     *(var_18h) = s0;
+    0x00433c60 sw gp, 0x10(sp)                       |     *(var_10h) = gp;
+    0x00433c64 addiu v0, zero, -1                    |     v0 = -1;
+    0x00433c68 lw v1, (a0)                           |     v1 = *(a0);
+    0x00433c6c addiu a2, zero, 0x1f                  |     a2 = 0x1f;
+                                                     |     if (v1 == v0) {
+    0x00433c70 bne v1, v0, 0x433c80                  |         
+    0x00433c74 lw v0, -0x7fe0(gp)                    |         v0 = *((gp - 8184));
+    0x00433c78 addiu v0, v0, 0x68b0                  |         v0 += 0x68b0;
+    0x00433c7c b 0x433cf0                            |         goto label_0;
+                                                     |     }
+    0x00433c80 addiu v0, zero, -2                    |     v0 = -2;
+                                                     |     do {
+                                                     |         if (v1 == v0) {
+    0x00433c84 beq v1, v0, 0x433c98                  |             goto label_1;
+                                                     |         }
+    0x00433c88 nop                                   |         
+    0x00433c8c addiu a2, a2, -1                      |         a2 += -1;
+    0x00433c90 sll v0, v0, 1                         |         v0 <<= 1;
+    0x00433c94 bgez a2, 0x433c84                     |         
+                                                     |     } while (a2 >= 0);
+                                                     | label_1:
+    0x00433c98 lw s0, -0x7fd0(gp)                    |     s0 = *((gp - 8180));
+                                                     |     if (a2 >= 0) {
+    0x00433c9c bltz a2, 0x433cb8                     |         
+    0x00433ca0 nop                                   |         
+    0x00433ca4 lw a1, -0x7fe0(gp)                    |         a1 = *((gp - 8184));
+    0x00433ca8 addiu a0, s0, -0x356c                 |         a0 = s0 + -0x356c;
+[31m    0x00433cac lw t9, -0x7e5c(gp)                    |         t9 = sym.imp.sprintf;[0m
+                                                     |         /* esilref: '/&d' */
+    0x00433cb0 addiu a1, a1, 0x68b4                  |         a1 += 0x68b4;
+    0x00433cb4 b 0x433cdc                            |         
+                                                     |     } else {
+    0x00433cb8 lw t9, -0x7c94(gp)                    |         t9 = sym.xtables_ipaddr_to_numeric;
+    0x00433cbc jalr t9                               |         t9 ();
+    0x00433cc0 nop                                   |         
+    0x00433cc4 addiu a0, s0, -0x356c                 |         a0 = s0 + -0x356c;
+    0x00433cc8 lw gp, 0x10(sp)                       |         gp = *(var_10h);
+    0x00433ccc move a2, v0                           |         a2 = v0;
+    0x00433cd0 lw a1, -0x7fe0(gp)                    |         a1 = *((gp - 8184));
+[31m    0x00433cd4 lw t9, -0x7e5c(gp)                    |         t9 = sym.imp.sprintf;[0m
+                                                     |         /* esilref: '/&s' */
+    0x00433cd8 addiu a1, a1, 0x68b8                  |         a1 += 0x68b8;
+                                                     |     }
+    0x00433cdc jalr t9                               |     t9 ();
+    0x00433ce0 nop                                   |     
+    0x00433ce4 lw gp, 0x10(sp)                       |     gp = *(var_10h);
+    0x00433ce8 lw v0, -0x7fd0(gp)                    |     v0 = *((gp - 8180));
+    0x00433cec addiu v0, v0, -0x356c                 |     v0 += -0x356c;
+                                                     | label_0:
+    0x00433cf0 lw ra, 0x1c(sp)                       |     ra = *(var_1ch);
+    0x00433cf4 lw s0, 0x18(sp)                       |     s0 = *(var_18h);
+    0x00433cf8 addiu sp, sp, 0x20                    |     
+    0x00433cfc jr ra                                 |     return v0;
+                                                     | }
+
+[*] Function sprintf used 4 times iptables
+

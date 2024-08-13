@@ -1,0 +1,19 @@
+[*] Searching (args for grep: ) for Marshal.
+[*] Grepit state info - comment: If you use Marshal in .NET you use an unsafe API and therefore you could introduce buffer overflows etc. again.
+[*] Grepit state info - Filename 4_dotnet_marshal.txt
+[*] Grepit state info - Example: Marshal
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: Marshal
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_nat_rtsp.ko[m[36m-[m[32m19[m[36m-[m/<$B@	/v+@< !$b$,0#@	!!$Dhb#q+@Q`!<! !$b30#@	$;<h !U#@<$r$;$$(!@a$B$$$c  ! #&,'@!`$c"$@$
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_nat_rtsp.ko[m[36m-[m[32m20[m[36m-[mQ+<а#$BP#@	0#'h@'l<$B@	h|D!Q+@@!v+!q+@X!< !$;$B@	30# !<@U#$t$$@a$B&&$c 0!0#&s'P; !' <$ch#`	S!b!@!Pb+0!
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_nat_rtsp.ko[m[36m-[m[32m21[m[36m-[m%u.%u.%u.%u%hu%hu-%hu%hu/%hudestination=client_port=nf_nat_rtsp v0.6.21 loading
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_nat_rtsp.ko[m[36m:[m[32m22[m[36m:[mautostripnoneparm=destaction:Action for destination parameter (auto/strip/none)parmtype=destaction:charpparm=stunaddr:Address for detecting STUNparmtype=stunaddr:charplicense=GPLdescription=RTSP network address translation moduleauthor=Tom [01;31mMarshal[ml <tmarshall at real.com>depends=nf_conntrack_rtspvermagic=2.6.30.9 mod_unload RLX 32BIT nf_nat_rtspGCC: (GNU) 3.4.6-1.3.6GCC: (GNU) 3.4.6-1.3.6
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_nat_rtsp.ko[m[36m-[m[32m23[m[36m-[mDx	
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_conntrack_rtsp.ko[m[36m-[m[32m29[m[36m-[mnf_conntrack_rtsp v0.6.21 loading
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_conntrack_rtsp.ko[m[36m-[m[32m30[m[36m-[mnf_conntrack_rtsp: max_outstanding must be a positive integer
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_conntrack_rtsp.ko[m[36m-[m[32m31[m[36m-[mnf_conntrack_rtsp: ERROR registering port %d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_conntrack_rtsp.ko[m[36m:[m[32m32[m[36m:[mrtsprtsp-%dnf_nat_rtsp_hook_expectfnnf_nat_rtsp_hookparm=setup_timeout:timeout on for unestablished data channelsparmtype=setup_timeout:intparm=max_outstanding:max number of outstanding SETUP requests per RTSP sessionparmtype=max_outstanding:intparm=ports:port numbers of RTSP serversparmtype=ports:array of intlicense=GPLdescription=RTSP connection tracking moduleauthor=Tom [01;31mMarshal[ml <tmarshall at real.com>depends=vermagic=2.6.30.9 mod_unload RLX 32BIT 8 ,nf_conntrack_rtspGCC: (GNU) 3.4.6-1.3.6GCC: (GNU) 3.4.6-1.3.6
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_conntrack_rtsp.ko[m[36m-[m[32m33[m[36m-[m|u	X"L	

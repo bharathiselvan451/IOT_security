@@ -1,0 +1,102 @@
+[*] Binary protection state of libuClibc-0.9.30.so
+
+  
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of libuClibc-0.9.30.so
+
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libuClibc-0.9.30.so @ 0x2c4c0 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) sym.ptsname_r ()                 | void ptsname_r () {
+    0x0002c4c0 lui gp, 5                     |     
+    0x0002c4c4 addiu gp, gp, 0x7250          |     
+    0x0002c4c8 addu gp, gp, t9               |     gp += t9;
+    0x0002c4cc addiu sp, sp, -0x50           |     
+    0x0002c4d0 sw ra, 0x4c(sp)               |     *(var_4ch) = ra;
+    0x0002c4d4 sw s4, 0x48(sp)               |     *(var_48h) = s4;
+    0x0002c4d8 sw s3, 0x44(sp)               |     *(var_44h) = s3;
+    0x0002c4dc sw s2, 0x40(sp)               |     *(var_40h) = s2;
+    0x0002c4e0 sw s1, 0x3c(sp)               |     *(var_3ch) = s1;
+    0x0002c4e4 sw s0, 0x38(sp)               |     *(var_38h) = s0;
+    0x0002c4e8 sw gp, 0x18(sp)               |     *(var_18h) = gp;
+    0x0002c4ec lw t9, -0x7940(gp)            |     t9 = sym.__errno_location;
+    0x0002c4f0 move s2, a1                   |     s2 = a1;
+    0x0002c4f4 move s4, a2                   |     s4 = a2;
+    0x0002c4f8 move s0, a0                   |     s0 = a0;
+    0x0002c4fc jalr t9                       |     t9 ();
+    0x0002c500 lui a1, 0x4004                |     a1 = 0x40040000;
+    0x0002c504 lw gp, 0x18(sp)               |     gp = *(var_18h);
+    0x0002c508 move s1, v0                   |     s1 = v0;
+    0x0002c50c lw s3, (v0)                   |     s3 = *(v0);
+    0x0002c510 ori a1, a1, 0x5430            |     a1 |= 0x5430;
+    0x0002c514 lw t9, -0x7d04(gp)            |     t9 = sym.ioctl;
+    0x0002c518 move a0, s0                   |     a0 = s0;
+    0x0002c51c addiu a2, sp, 0x30            |     a2 = sp + 0x30;
+    0x0002c520 addiu v1, zero, 0x16          |     v1 = 0x16;
+    0x0002c524 addiu v0, zero, 0x16          |     v0 = 0x16;
+                                             |     if (s2 != 0) {
+    0x0002c528 beqz s2, 0x2c5c8              |         
+    0x0002c52c jalr t9                       |         t9 ();
+    0x0002c530 nop                           |         
+    0x0002c534 addiu a0, sp, 0x2b            |         a0 = sp + 0x2b;
+    0x0002c538 lw gp, 0x18(sp)               |         gp = *(var_18h);
+    0x0002c53c lw t9, -0x7e38(gp)            |         t9 = *(gp);
+    0x0002c540 addiu v1, zero, 0x19          |         v1 = 0x19;
+                                             |         if (v0 == 0) {
+    0x0002c544 bnez v0, 0x2c5c4              |             
+    0x0002c548 lw v0, 0x30(sp)               |             v0 = *(var_30h);
+    0x0002c54c sw zero, 0x14(sp)             |             *(var_14h) = 0;
+    0x0002c550 move a3, v0                   |             a3 = v0;
+    0x0002c554 sra a2, v0, 0x1f              |             a2 = v0 >> 0x1f;
+    0x0002c558 addiu v0, zero, -0xa          |             v0 = -0xa;
+    0x0002c55c sw v0, 0x10(sp)               |             *(var_10h) = v0;
+    0x0002c560 jalr t9                       |             t9 ();
+    0x0002c564 move a0, s2                   |             a0 = s2;
+    0x0002c568 lw gp, 0x18(sp)               |             gp = *(var_18h);
+    0x0002c56c move s0, v0                   |             s0 = v0;
+    0x0002c570 subu v0, sp, v0               |             __asm ("subu v0, sp, v0");
+    0x0002c574 addiu v1, zero, 0x22          |             v1 = 0x22;
+    0x0002c578 addiu v0, v0, 0x35            |             v0 += 0x35;
+    0x0002c57c lw a1, -0x7f24(gp)            |             a1 = *((gp - 8137));
+    0x0002c580 sltu v0, s4, v0               |             v0 = (s4 < v0) ? 1 : 0;
+    0x0002c584 lw t9, -0x7fbc(gp)            |             t9 = sym.strcpy;
+                                             |             /* esilref: '/dev/pts/' */
+    0x0002c588 addiu a1, a1, -0x6980         |             a1 += -0x6980;
+                                             |             if (v0 != 0) {
+    0x0002c58c beqz v0, 0x2c598              |                 
+    0x0002c590 addiu v0, zero, 0x22          |                 v0 = 0x22;
+    0x0002c594 b 0x2c5c8                     |                 goto label_0;
+                                             |             }
+    0x0002c598 jalr t9                       |             t9 ();
+    0x0002c59c nop                           |             
+    0x0002c5a0 move a0, s2                   |             a0 = s2;
+    0x0002c5a4 lw gp, 0x18(sp)               |             gp = *(var_18h);
+[31m    0x0002c5a8 lw t9, -0x7afc(gp)            |             t9 = sym.strcat;[0m
+    0x0002c5ac move a1, s0                   |             a1 = s0;
+    0x0002c5b0 jalr t9                       |             t9 ();
+    0x0002c5b4 move v1, zero                 |             v1 = 0;
+    0x0002c5b8 lw gp, 0x18(sp)               |             gp = *(var_18h);
+    0x0002c5bc sw s3, (s1)                   |             *(s1) = s3;
+    0x0002c5c0 b 0x2c5cc                     |             goto label_1;
+                                             |         }
+    0x0002c5c4 addiu v0, zero, 0x19          |         v0 = 0x19;
+                                             |     }
+                                             | label_0:
+    0x0002c5c8 sw v0, (s1)                   |     *(s1) = v0;
+                                             | label_1:
+    0x0002c5cc lw ra, 0x4c(sp)               |     ra = *(var_4ch);
+    0x0002c5d0 move v0, v1                   |     v0 = v1;
+    0x0002c5d4 lw s4, 0x48(sp)               |     s4 = *(var_48h);
+    0x0002c5d8 lw s3, 0x44(sp)               |     s3 = *(var_44h);
+    0x0002c5dc lw s2, 0x40(sp)               |     s2 = *(var_40h);
+    0x0002c5e0 lw s1, 0x3c(sp)               |     s1 = *(var_3ch);
+    0x0002c5e4 lw s0, 0x38(sp)               |     s0 = *(var_38h);
+    0x0002c5e8 addiu sp, sp, 0x50            |     
+    0x0002c5ec jr ra                         |     return v0;
+                                             | }
+
+[*] Function strcat used 1 times libuClibc-0.9.30.so
+

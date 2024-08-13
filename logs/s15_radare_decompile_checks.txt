@@ -1,0 +1,340 @@
+[+] Create and analyze decompilation of binaries
+=================================================================
+The Radare decompile checker module performs analysis of binary files and decompiles them to identify vulnerable functions.
+
+[*] Vulnerable functions: fprintf mmap popen printf sprintf strcat strcpy system
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libdl-0.9.30.so (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 6 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_6_fprintf-libdl-0.9.30.so.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libthreadutil.so.2.2.3 (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 1 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_fprintf-libthreadutil.so.2.2.3.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libdl-0.9.30.so (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 6 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_6_printf-libdl-0.9.30.so.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libthreadutil.so.2.2.3 (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 1 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_printf-libthreadutil.so.2.2.3.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libuClibc-0.9.30.so (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 10 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_10_fprintf-libuClibc-0.9.30.so.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/ld-uClibc-0.9.30.so (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 21 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_21_printf-ld-uClibc-0.9.30.so.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libuClibc-0.9.30.so (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcat / Function count: 1 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_strcat-libuClibc-0.9.30.so.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libuClibc-0.9.30.so (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcpy / Function count: 19 / strlen: 0 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_19_strcpy-libuClibc-0.9.30.so.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libmsglog.so (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 4 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_printf-libmsglog.so.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 2 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_fprintf-ushare.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libmsglog.so (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: sprintf / Function count: 2 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_sprintf-libmsglog.so.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0 (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 3 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_3_fprintf-libntfs-3g.so.83.0.0.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/xl2tpd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: fprintf / Function count: 1 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_fprintf-xl2tpd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/dhcp6s (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 4 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_fprintf-dhcp6s.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 2 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_printf-ushare.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5 (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 14 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_14_printf-libupnp.so.3.0.5.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/radvd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: fprintf / Function count: 17 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_17_fprintf-radvd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: sprintf / Function count: 7 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_7_sprintf-ushare.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5 (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: sprintf / Function count: 14 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_14_sprintf-libupnp.so.3.0.5.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: strcat / Function count: 9 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_9_strcat-ushare.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: strcpy / Function count: 3 / strlen: 3 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_3_strcpy-ushare.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5 (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: strcat / Function count: 9 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_9_strcat-libupnp.so.3.0.5.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/radvd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: printf / Function count: 21 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_21_printf-radvd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: system / Function count: 3 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_3_system-ushare.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: fprintf / Function count: 5 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_5_fprintf-httpd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/xl2tpd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcpy / Function count: 9 / strlen: 4 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_9_strcpy-xl2tpd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/pppd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: fprintf / Function count: 19 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_19_fprintf-pppd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5 (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: strcpy / Function count: 47 / strlen: 38 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_47_strcpy-libupnp.so.3.0.5.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0 (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 3 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_3_printf-libntfs-3g.so.83.0.0.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/radvd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcpy / Function count: 1 / strlen: 0 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_strcpy-radvd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/dhcp6s (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 225 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_225_printf-dhcp6s.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/bpalogin (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 4 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_fprintf-bpalogin.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/smbd (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: mmap / Function count: 2 / Correct error handling: NA 
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_mmap-smbd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/bpalogin (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 1 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_printf-bpalogin.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/bpalogin (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: sprintf / Function count: 1 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_sprintf-bpalogin.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/dhcp6ctl (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 20 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_20_printf-dhcp6ctl.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/bpalogin (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcat / Function count: 1 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_strcat-bpalogin.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/bpalogin (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcpy / Function count: 1 / strlen: 1 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_strcpy-bpalogin.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/pppd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: printf / Function count: 8 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_8_printf-pppd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0 (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcat / Function count: 10 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_10_strcat-libntfs-3g.so.83.0.0.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/radvdctl (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 26 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_26_printf-radvdctl.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ping6 (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: fprintf / Function count: 10 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_10_fprintf-ping6.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/radvdctl (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: sprintf / Function count: 21 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_21_sprintf-radvdctl.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 2 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_fprintf-vsftpd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/pppd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: sprintf / Function count: 13 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_13_sprintf-pppd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/radvdctl (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: system / Function count: 5 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_5_system-radvdctl.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: mmap / Function count: 1 / Correct error handling: NA 
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_mmap-vsftpd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0 (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcpy / Function count: 4 / strlen: 8 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_strcpy-libntfs-3g.so.83.0.0.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/dhcp6c (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 4 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_fprintf-dhcp6c.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/smbd (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: printf / Function count: 21 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_21_printf-smbd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/tc (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: fprintf / Function count: 8 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_8_fprintf-tc.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/pppd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcpy / Function count: 5 / strlen: 4 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_5_strcpy-pppd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 4 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_printf-vsftpd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/lld2d (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 4 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_fprintf-lld2d.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/pppd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: system / Function count: 3 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_3_system-pppd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: sprintf / Function count: 2 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_sprintf-vsftpd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/tc (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: printf / Function count: 8 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_8_printf-tc.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/lld2d (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 9 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_9_printf-lld2d.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/tc (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: sprintf / Function count: 2 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_sprintf-tc.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iwcontrol (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 24 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_24_fprintf-iwcontrol.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/lld2d (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcpy / Function count: 3 / strlen: 5 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_3_strcpy-lld2d.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/smbd (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: sprintf / Function count: 21 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_21_sprintf-smbd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/tc (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcat / Function count: 1 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_strcat-tc.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcpy / Function count: 7 / strlen: 1 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_7_strcpy-vsftpd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: printf / Function count: 2 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_printf-httpd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iwcontrol (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 21 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_21_printf-iwcontrol.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/tc (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcpy / Function count: 4 / strlen: 2 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_strcpy-tc.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/auth (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: fprintf / Function count: 2 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_fprintf-auth.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/smbd (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: strcat / Function count: 4 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_strcat-smbd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: fprintf / Function count: 4 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_fprintf-iptables.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iwcontrol (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: sprintf / Function count: 11 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_11_sprintf-iwcontrol.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iapp (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 2 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_fprintf-iapp.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: printf / Function count: 4 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_printf-iptables.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iwcontrol (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcpy / Function count: 5 / strlen: 1 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_5_strcpy-iwcontrol.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: sprintf / Function count: 4 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_sprintf-iptables.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/auth (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: printf / Function count: 25 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_25_printf-auth.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/dhcp6c (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 364 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_364_printf-dhcp6c.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iwpriv (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: fprintf / Function count: 16 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_16_fprintf-iwpriv.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcat / Function count: 7 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_7_strcat-iptables.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iapp (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 46 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_46_printf-iapp.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iwpriv (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: printf / Function count: 1 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_printf-iwpriv.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/smbd (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: strcpy / Function count: 48 / strlen: 10 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_48_strcpy-smbd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iwpriv (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: sprintf / Function count: 1 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_sprintf-iwpriv.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/auth (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: sprintf / Function count: 12 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_12_sprintf-auth.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iwpriv (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcpy / Function count: 2 / strlen: 0 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_strcpy-iwpriv.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iapp (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: sprintf / Function count: 9 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_9_sprintf-iapp.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/smbd (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: system / Function count: 3 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_3_system-smbd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/acltd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 5 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_5_printf-acltd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ip (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: fprintf / Function count: 427 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_427_fprintf-ip.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iapp (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcpy / Function count: 4 / strlen: 0 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_strcpy-iapp.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/acltd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcpy / Function count: 22 / strlen: 0 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_22_strcpy-acltd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/auth (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcpy / Function count: 12 / strlen: 6 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_12_strcpy-auth.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: fprintf / Function count: 1 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_fprintf-busybox.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: fprintf / Function count: 31 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_31_fprintf-ntfs-3g.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iapp (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: system / Function count: 5 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_5_system-iapp.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/usbp (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: popen / Function count: 1 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_popen-usbp.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/usbp (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 10 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_10_printf-usbp.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: mmap / Function count: 2 / Correct error handling: NA 
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_mmap-busybox.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcpy / Function count: 14 / strlen: 3 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_14_strcpy-iptables.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ip (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: printf / Function count: 21 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_21_printf-ip.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/usbp (-rwxr-xr-x 501 502) - common linux file: no - Vulnerable function: system / Function count: 9 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_9_system-usbp.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: printf / Function count: 6 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_6_printf-ntfs-3g.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: sprintf / Function count: 2 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_sprintf-ntfs-3g.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ip (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: sprintf / Function count: 11 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_11_sprintf-ip.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ip (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcat / Function count: 1 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_1_strcat-ip.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: fprintf / Function count: 2 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_fprintf-wscd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: strcat / Function count: 4 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_strcat-ntfs-3g.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: printf / Function count: 2 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_printf-busybox.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: strcpy / Function count: 3 / strlen: 5 / networking: no
+[REF] /logs/s15_radare_decompile_checks/vul_func_3_strcpy-ntfs-3g.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ip (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcpy / Function count: 4 / strlen: 0 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_4_strcpy-ip.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: sprintf / Function count: 2 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_2_sprintf-busybox.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: strcat / Function count: 7 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_7_strcat-busybox.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: printf / Function count: 134 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_134_printf-wscd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox (-rwxr-xr-x 501 502) - common linux file: yes -  Vulnerable function: strcpy / Function count: 24 / strlen: 8 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_24_strcpy-busybox.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: sprintf / Function count: 130 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_130_sprintf-wscd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcat / Function count: 6 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_6_strcat-wscd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: strcpy / Function count: 51 / strlen: 47 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_51_strcpy-wscd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd (-rwxrwxr-x 501 502) - common linux file: no - Vulnerable function: system / Function count: 27 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_27_system-wscd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: sprintf / Function count: 363 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_363_sprintf-httpd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcat / Function count: 32 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_32_strcat-httpd.txt
+[+] /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd (-rwxrwxr-x 501 502) - common linux file: yes -  Vulnerable function: strcpy / Function count: 146 / strlen: 124 / networking: yes
+[REF] /logs/s15_radare_decompile_checks/vul_func_146_strcpy-httpd.txt
+
+
+==> Top 10 legacy C functions - Radare2 decompilation mode
+-----------------------------------------------------------------
+
+[+] fprintf - top 10 results:
+[0;32m	427   : ip              : common linux file: yes[0m
+[0;32m	31    : ntfs-3g         : common linux file: yes[0m
+[0;33m	24    : iwcontrol       : common linux file: no[0m
+[0;32m	19    : pppd            : common linux file: yes[0m
+[0;32m	17    : radvd           : common linux file: yes[0m
+[0;32m	16    : iwpriv          : common linux file: yes[0m
+[0;32m	10    : ping6           : common linux file: yes[0m
+[0;33m	10    : libuClibc-0.9.3 : common linux file: no[0m
+[0;32m	8     : tc              : common linux file: yes[0m
+[0;33m	6     : libdl-0.9.30.so : common linux file: no[0m
+
+
+[+] mmap - top 10 results:
+[0;32m	2     : smbd            : common linux file: yes[0m
+[0;32m	2     : busybox         : common linux file: yes[0m
+[0;33m	1     : vsftpd          : common linux file: no[0m
+
+
+[+] popen - top 10 results:
+[0;33m	1     : usbp            : common linux file: no[0m
+
+
+[+] printf - top 10 results:
+[0;33m	364   : dhcp6c          : common linux file: no[0m
+[0;33m	225   : dhcp6s          : common linux file: no[0m
+[0;33m	134   : wscd            : common linux file: no[0m
+[0;33m	46    : iapp            : common linux file: no[0m
+[0;33m	26    : radvdctl        : common linux file: no[0m
+[0;32m	25    : auth            : common linux file: yes[0m
+[0;32m	21    : smbd            : common linux file: yes[0m
+[0;32m	21    : radvd           : common linux file: yes[0m
+[0;33m	21    : ld-uClibc-0.9.3 : common linux file: no[0m
+[0;33m	21    : iwcontrol       : common linux file: no[0m
+
+
+[+] sprintf - top 10 results:
+[0;32m	363   : httpd           : common linux file: yes[0m
+[0;33m	130   : wscd            : common linux file: no[0m
+[0;32m	21    : smbd            : common linux file: yes[0m
+[0;33m	21    : radvdctl        : common linux file: no[0m
+[0;33m	14    : libupnp.so.3.0. : common linux file: no[0m
+[0;32m	13    : pppd            : common linux file: yes[0m
+[0;32m	12    : auth            : common linux file: yes[0m
+[0;33m	11    : iwcontrol       : common linux file: no[0m
+[0;32m	11    : ip              : common linux file: yes[0m
+[0;33m	9     : iapp            : common linux file: no[0m
+
+
+[+] strcat - top 10 results:
+[0;32m	32    : httpd           : common linux file: yes[0m
+[0;33m	10    : libntfs-3g.so.8 : common linux file: no[0m
+[0;33m	9     : ushare          : common linux file: no[0m
+[0;33m	9     : libupnp.so.3.0. : common linux file: no[0m
+[0;32m	7     : iptables        : common linux file: yes[0m
+[0;32m	7     : busybox         : common linux file: yes[0m
+[0;33m	6     : wscd            : common linux file: no[0m
+[0;32m	4     : smbd            : common linux file: yes[0m
+[0;32m	4     : ntfs-3g         : common linux file: yes[0m
+[0;32m	1     : tc              : common linux file: yes[0m
+
+
+[+] strcpy - top 10 results:
+[0;32m	146   : httpd           : common linux file: yes[0m
+[0;33m	51    : wscd            : common linux file: no[0m
+[0;32m	48    : smbd            : common linux file: yes[0m
+[0;33m	47    : libupnp.so.3.0. : common linux file: no[0m
+[0;32m	24    : busybox         : common linux file: yes[0m
+[0;33m	22    : acltd           : common linux file: no[0m
+[0;33m	19    : libuClibc-0.9.3 : common linux file: no[0m
+[0;32m	14    : iptables        : common linux file: yes[0m
+[0;32m	12    : auth            : common linux file: yes[0m
+[0;32m	9     : xl2tpd          : common linux file: yes[0m
+
+
+[+] system - top 10 results:
+[0;33m	27    : wscd            : common linux file: no[0m
+[0;33m	9     : usbp            : common linux file: no[0m
+[0;33m	5     : radvdctl        : common linux file: no[0m
+[0;33m	5     : iapp            : common linux file: no[0m
+[0;33m	3     : ushare          : common linux file: no[0m
+[0;32m	3     : smbd            : common linux file: yes[0m
+[0;32m	3     : pppd            : common linux file: yes[0m
+
+
+[*] Statistics:438
+
+[*] Statistics1:MIPS

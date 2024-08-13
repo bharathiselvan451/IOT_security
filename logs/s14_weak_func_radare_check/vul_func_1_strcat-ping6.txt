@@ -1,0 +1,57 @@
+[*] Binary protection state of ping6
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of ping6
+
+lw gp, 0x18(sp)
+move a1, s4
+lw t9, -sym.MD5_Update(gp)
+jalr t9
+addiu a0, sp, 0x20
+addiu a0, sp, 0x80
+lw gp, 0x18(sp)
+lw t9, -sym.MD5_Final(gp)
+jalr t9
+addiu a1, sp, 0x20
+addiu a0, s1, -0x4a10
+lw gp, 0x18(sp)
+lbu v0, 0x82(sp)
+lw a1, -0x7fe0(gp)
+lbu v1, 0x83(sp)
+lw t9, -sym.imp.sprintf(gp)
+addiu a1, a1, -0x66e4
+lbu a2, 0x80(sp)
+lbu a3, 0x81(sp)
+sw v0, 0x10(sp)
+jalr t9
+sw v1, 0x14(sp)
+lw gp, 0x18(sp)
+beqz s3, 0x402468
+move a1, s3
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+addiu a0, s1, -0x4a10
+lw gp, 0x18(sp)
+addiu v0, s1, -0x4a10
+lw ra, 0xe4(sp)
+lw s4, 0xe0(sp)
+lw s3, 0xdc(sp)
+lw s2, 0xd8(sp)
+lw s1, 0xd4(sp)
+lw s0, 0xd0(sp)
+jr ra
+addiu sp, sp, 0xe8
+lw v0, -0x7f0c(gp)
+lw a1, -0x7fe0(gp)
+lw a0, (v0)
+lw t9, -sym.imp.fprintf(gp)
+addiu a1, a1, -0x66c8
+jalr t9
+nop
+lw gp, 0x18(sp)
+
+[*] Function strcat used 1 times ping6
+

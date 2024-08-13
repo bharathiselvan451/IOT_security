@@ -1,0 +1,11 @@
+[*] Binary protection state of cls_basic.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcpy tear down of cls_basic.ko
+
+
+[*] Function strcpy used 0 times cls_basic.ko
+

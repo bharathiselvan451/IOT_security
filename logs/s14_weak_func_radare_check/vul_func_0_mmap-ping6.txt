@@ -1,0 +1,11 @@
+[*] Binary protection state of ping6
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function mmap tear down of ping6
+
+
+[*] Function mmap used 0 times ping6
+

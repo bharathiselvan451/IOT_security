@@ -1,0 +1,41 @@
+alias=ip_nat_tftp
+license=GPL
+description=TFTP NAT helper
+author=Magnus Boden <mb@ozaba.mine.nu>
+depends=nf_conntrack_tftp
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+nf_nat_tftp
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.help
+.rel.exit.text
+.rel.init.text
+.modinfo
+.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+nf_nat_tftp.c
+nf_nat_tftp_init
+nf_nat_tftp_fini
+__mod_alias21
+__mod_license20
+__mod_description19
+__mod_author18
+help
+nf_nat_tftp.mod.c
+__module_depends
+__mod_vermagic5
+__this_module
+nf_nat_follow_master
+cleanup_module
+init_module
+synchronize_rcu
+nf_ct_expect_related_report
+nf_nat_tftp_hook

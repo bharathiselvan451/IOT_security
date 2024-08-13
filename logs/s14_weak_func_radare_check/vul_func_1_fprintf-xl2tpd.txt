@@ -1,0 +1,57 @@
+[*] Binary protection state of xl2tpd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of xl2tpd
+
+lw t9, -sym.imp.getpid(gp)
+beqz v1, 0x4068e8
+nop
+move t9, a0
+jalr t9
+nop
+move a0, s0
+lw gp, 0x10(sp)
+addiu a2, sp, 0x18
+lw a1, -0x7fe0(gp)
+lw t9, -sym.imp.syslog(gp)
+jalr t9
+addiu a1, a1, -0x6e48
+lw gp, 0x10(sp)
+lw ra, 0x11c(sp)
+lw s0, 0x118(sp)
+jr ra
+addiu sp, sp, 0x120
+jalr t9
+nop
+addiu a3, sp, 0x18
+lw gp, 0x10(sp)
+move a2, v0
+lw v0, -0x7ea8(gp)
+lw a1, -0x7fe0(gp)
+[31mlw t9, -sym.imp.fprintf(gp)[0m
+lw a0, (v0)
+jalr t9
+addiu a1, a1, -0x6e44
+lw gp, 0x10(sp)
+lw ra, 0x11c(sp)
+lw s0, 0x118(sp)
+jr ra
+addiu sp, sp, 0x120
+lui gp, 6
+addiu gp, gp, -0x11f8
+addu gp, gp, t9
+addiu sp, sp, -0x28
+sw ra, 0x20(sp)
+sw s1, 0x1c(sp)
+sw s0, 0x18(sp)
+sw gp, 0x10(sp)
+addiu v1, zero, -1
+move s0, a0
+addiu s1, a0, 0x1fc
+lw t9, -sym.imp.vsnprintf(gp)
+
+[*] Function fprintf used 1 times xl2tpd
+

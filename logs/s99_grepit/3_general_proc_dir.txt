@@ -1,0 +1,13 @@
+[*] Searching (args for grep: ) for ["']/proc/.
+[*] Grepit state info - comment: Reading values from /proc/
+[*] Grepit state info - Filename 3_general_proc_dir.txt
+[*] Grepit state info - Example: place = "/proc/softwareupdate"
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: ["']/proc/
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/lld2d[m[36m-[m[32m224[m[36m-[mget_hwaddr(%d,%s): FAILED : %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/lld2d[m[36m-[m[32m225[m[36m-[mget_hwaddr: was expecting addr type to be Ether, not type %d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/lld2d[m[36m-[m[32m226[m[36m-[mosl_get_hw_addr: expected an ethernet address on our interface
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/lld2d[m[36m:[m[32m227[m[36m:[m/proc/net/devrforeach_interface: open([01;31m"/proc/[mnet/dev") for read failed: %s; not able to determine hostId, so no support for multiple NICs.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/lld2d[m[36m-[m[32m228[m[36m-[mforeach_interface: parse error reading /proc/net/dev: missing colon

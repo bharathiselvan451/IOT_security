@@ -1,0 +1,25 @@
+[+] Search network configs
+=================================================================
+The network checking module is responsible for searching and analyzing network configurations.
+
+
+
+==> Search resolv.conf
+-----------------------------------------------------------------
+[-] No or empty network configuration found
+
+
+==> Search iptables.conf
+-----------------------------------------------------------------
+[-] No iptables configuration found
+
+
+==> Check SNMP configuration
+-----------------------------------------------------------------
+[-] No SNMP configuration found
+
+
+==> Check for other network configurations
+-----------------------------------------------------------------
+[-] No network configs found
+[-] Wed Jul 31 21:03:04 EDT 2024 - S75_network_check nothing reported

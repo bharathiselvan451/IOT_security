@@ -1,0 +1,148 @@
+[*] Binary protection state of iptables
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of iptables
+
+    ; assembly                           | /* r2dec pseudo code output */
+                                         | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables @ 0x4322f0 */
+                                         | #include <stdint.h>
+                                         |  
+    ; (fcn) sym.basic_exit_err ()        | void basic_exit_err () {
+    0x004322f0 lui gp, 6                 |     
+    0x004322f4 addiu gp, gp, 0x1010      |     
+    0x004322f8 addu gp, gp, t9           |     gp += t9;
+    0x004322fc addiu sp, sp, -0x28       |     
+    0x00432300 sw ra, 0x24(sp)           |     *(var_24h) = ra;
+    0x00432304 sw s2, 0x20(sp)           |     *(var_20h) = s2;
+    0x00432308 sw s1, 0x1c(sp)           |     *(var_1ch) = s1;
+    0x0043230c sw s0, 0x18(sp)           |     *(var_18h) = s0;
+    0x00432310 sw gp, 0x10(sp)           |     *(var_10h) = gp;
+    0x00432314 lw v0, -0x7f70(gp)        |     v0 = *(gp);
+    0x00432318 move s1, a1               |     s1 = a1;
+    0x0043231c lw s0, -0x7e78(gp)        |     s0 = *((gp - 8094));
+    0x00432320 move s2, a0               |     s2 = a0;
+    0x00432324 lw v0, (v0)               |     v0 = *(v0);
+    0x00432328 lw a1, -0x7fe0(gp)        |     a1 = *((gp - 8184));
+[31m    0x0043232c lw t9, -0x7d0c(gp)        |     t9 = sym.imp.fprintf;[0m
+    0x00432330 sw a2, 0x30(sp)           |     *(arg_30h) = a2;
+    0x00432334 sw a3, 0x34(sp)           |     *(arg_34h) = a3;
+    0x00432338 lw a0, (s0)               |     a0 = *(s0);
+    0x0043233c lw a3, 8(v0)              |     a3 = *((v0 + 2));
+    0x00432340 lw a2, 4(v0)              |     a2 = *((v0 + 1));
+                                         |     /* esilref: '&s v&s: ' */
+    0x00432344 addiu a1, a1, 0x62e8      |     a1 += 0x62e8;
+    0x00432348 jalr t9                   |     t9 ();
+    0x0043234c move a1, s1               |     a1 = s1;
+    0x00432350 lw gp, 0x10(sp)           |     gp = *(var_10h);
+    0x00432354 lw a0, (s0)               |     a0 = *(s0);
+[31m    0x00432358 lw t9, -0x7f90(gp)        |     t9 = sym.imp.vfprintf;[0m
+    0x0043235c addiu a2, sp, 0x30        |     a2 = sp + 0x30;
+    0x00432360 jalr t9                   |     t9 ();
+    0x00432364 lw gp, 0x10(sp)           |     gp = *(var_10h);
+    0x00432368 lw a1, (s0)               |     a1 = *(s0);
+    0x0043236c lw t9, -0x7ea0(gp)        |     t9 = sym.imp.fputc;
+    0x00432370 addiu a0, zero, 0xa       |     a0 = 0xa;
+    0x00432374 jalr t9                   |     t9 ();
+    0x00432378 lw gp, 0x10(sp)           |     gp = *(var_10h);
+    0x0043237c lw t9, -0x7efc(gp)        |     t9 = sym.imp.exit;
+    0x00432380 move a0, s2               |     a0 = s2;
+    0x00432384 jalr t9                   |     t9 ();
+                                         | }
+    ; assembly                                   | /* r2dec pseudo code output */
+                                                 | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables @ 0x406a58 */
+                                                 | #include <stdint.h>
+                                                 |  
+    ; (fcn) sym.iptables_exit_error ()           | void iptables_exit_error () {
+    0x00406a58 lui gp, 9                         |     
+    0x00406a5c addiu gp, gp, -0x3758             |     
+    0x00406a60 addu gp, gp, t9                   |     gp += t9;
+    0x00406a64 addiu sp, sp, -0x28               |     
+    0x00406a68 sw ra, 0x24(sp)                   |     *(var_24h) = ra;
+    0x00406a6c sw s2, 0x20(sp)                   |     *(var_20h) = s2;
+    0x00406a70 sw s1, 0x1c(sp)                   |     *(var_1ch) = s1;
+    0x00406a74 sw s0, 0x18(sp)                   |     *(var_18h) = s0;
+    0x00406a78 sw gp, 0x10(sp)                   |     *(var_10h) = gp;
+    0x00406a7c lw s1, -0x7e78(gp)                |     s1 = *((gp - 8094));
+    0x00406a80 move s0, a1                       |     s0 = a1;
+    0x00406a84 lw v0, -0x7d48(gp)                |     v0 = *(gp);
+    0x00406a88 move s2, a0                       |     s2 = a0;
+    0x00406a8c lw a1, -0x7fd4(gp)                |     a1 = *((gp - 8181));
+[31m    0x00406a90 lw t9, -0x7d0c(gp)                |     t9 = sym.imp.fprintf;[0m
+    0x00406a94 sw a2, 0x30(sp)                   |     *(arg_30h) = a2;
+    0x00406a98 sw a3, 0x34(sp)                   |     *(arg_34h) = a3;
+    0x00406a9c lw a0, (s1)                       |     a0 = *(s1);
+    0x00406aa0 lw a3, 8(v0)                      |     a3 = *((v0 + 2));
+    0x00406aa4 lw a2, 4(v0)                      |     a2 = *((v0 + 1));
+                                                 |     /* esilref: '&s v&s: ' */
+    0x00406aa8 addiu a1, a1, 0x68f4              |     a1 += 0x68f4;
+    0x00406aac jalr t9                           |     t9 ();
+    0x00406ab0 move a1, s0                       |     a1 = s0;
+    0x00406ab4 lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00406ab8 lw a0, (s1)                       |     a0 = *(s1);
+[31m    0x00406abc lw t9, -0x7f90(gp)                |     t9 = sym.imp.vfprintf;[0m
+    0x00406ac0 addiu a2, sp, 0x30                |     a2 = sp + 0x30;
+    0x00406ac4 jalr t9                           |     t9 ();
+    0x00406ac8 lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00406acc lw a1, (s1)                       |     a1 = *(s1);
+    0x00406ad0 lw t9, -0x7ea0(gp)                |     t9 = sym.imp.fputc;
+    0x00406ad4 addiu a0, zero, 0xa               |     a0 = 0xa;
+    0x00406ad8 jalr t9                           |     t9 ();
+    0x00406adc addiu v0, zero, 2                 |     v0 = 2;
+    0x00406ae0 lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00406ae4 addiu v0, zero, 3                 |     v0 = 3;
+                                                 |     if (s2 == v0) {
+    0x00406ae8 bne s2, v0, 0x406b04              |         
+    0x00406aec lw t9, -0x7fd8(gp)                |         t9 = *(gp);
+    0x00406af0 addiu t9, t9, 0x69c8              |         t9 += 0x69c8;
+    0x00406af4 addiu a0, zero, 2                 |         a0 = 2;
+    0x00406af8 jalr t9                           |         t9 ();
+    0x00406afc lw gp, 0x10(sp)                   |         gp = *(var_10h);
+    0x00406b00 addiu v0, zero, 3                 |         v0 = 3;
+                                                 |     }
+                                                 |     if (s2 == v0) {
+    0x00406b04 bne s2, v0, 0x406b24              |         
+    0x00406b08 nop                               |         
+    0x00406b0c lw a0, -0x7fd4(gp)                |         a0 = *((gp - 8181));
+    0x00406b10 lw t9, -0x7f5c(gp)                |         t9 = sym.imp.fputs;
+    0x00406b14 lw a1, (s1)                       |         a1 = *(s1);
+                                                 |         /* esilref: 'Perhaps iptables or your kernel needs to be upgraded.
+' */
+    0x00406b18 addiu a0, a0, 0x6900              |         a0 += 0x6900;
+    0x00406b1c jalr t9                           |         t9 ();
+    0x00406b20 lw gp, 0x10(sp)                   |         gp = *(var_10h);
+                                                 |     }
+    0x00406b24 lw t9, -0x7dfc(gp)                |     t9 = sym.xtables_free_opts;
+    0x00406b28 addiu a0, zero, 1                 |     a0 = 1;
+    0x00406b2c jalr t9                           |     t9 ();
+    0x00406b30 lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00406b34 lw t9, -0x7efc(gp)                |     t9 = sym.imp.exit;
+    0x00406b38 move a0, s2                       |     a0 = s2;
+    0x00406b3c jalr t9                           |     t9 ();
+    0x00406b40 lui gp, 9                         |     
+    0x00406b44 addiu gp, gp, -0x3840             |     
+    0x00406b48 addu gp, gp, t9                   |     gp += t9;
+    0x00406b4c lw v0, -0x7fd4(gp)                |     v0 = *((gp - 8181));
+    0x00406b50 slti v1, a0, 2                    |     v1 = (a0 < 2) ? 1 : 0;
+                                                 |     /* esilref: 'nsdpjvxiof0cError occurred at line: &d
+' */
+    0x00406b54 addiu a1, v0, 0x6898              |     a1 = v0 + 0x6898;
+                                                 |     if (v1 != 0) {
+    0x00406b58 bnez v1, 0x406b6c                 |         goto label_0;
+                                                 |     }
+                                                 |     do {
+    0x00406b5c sra a0, a0, 1                     |         a0 >>= 1;
+    0x00406b60 slti v0, a0, 2                    |         v0 = (a0 < 2) ? 1 : 0;
+    0x00406b64 addiu a1, a1, 1                   |         a1++;
+    0x00406b68 beqz v0, 0x406b5c                 |         
+                                                 |     } while (v0 == 0);
+                                                 | label_0:
+    0x00406b6c lb v0, (a1)                       |     v0 = *(a1);
+    0x00406b70 jr ra                             |     return v0;
+    0x00406b74 nop                               |     
+                                                 | }
+
+[*] Function fprintf used 4 times iptables
+

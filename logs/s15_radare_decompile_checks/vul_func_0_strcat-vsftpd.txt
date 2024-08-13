@@ -1,0 +1,11 @@
+[*] Binary protection state of vsftpd
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of vsftpd
+
+
+[*] Function strcat used 0 times vsftpd
+

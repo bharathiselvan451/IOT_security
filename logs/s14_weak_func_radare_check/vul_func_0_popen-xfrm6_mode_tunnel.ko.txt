@@ -1,0 +1,11 @@
+[*] Binary protection state of xfrm6_mode_tunnel.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function popen tear down of xfrm6_mode_tunnel.ko
+
+
+[*] Function popen used 0 times xfrm6_mode_tunnel.ko
+

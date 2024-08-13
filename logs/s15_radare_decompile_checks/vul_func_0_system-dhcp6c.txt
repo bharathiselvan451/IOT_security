@@ -1,0 +1,11 @@
+[*] Binary protection state of dhcp6c
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function system tear down of dhcp6c
+
+
+[*] Function system used 0 times dhcp6c
+

@@ -1,0 +1,13 @@
+[*] Searching (args for grep: -i) for integer.{0,20}overflow.
+[*] Grepit state info - comment: Integer overflow and variants of it. Sometimes refered in comments or variable names for code that should prevent it. If you find something interesting that is used for prevention in a framework, you might want to add another grep for that in this script.
+[*] Grepit state info - Filename 2_general_hacking_techniques_integer-overflow.txt
+[*] Grepit state info - Example: integer-overflow
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: integer.{0,20}overflow
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m4356[m[36m-[mCode: (Bad address in epc)
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m4357[m[36m-[m%c%0*x%c%s[#%d]:
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m4358[m[36m-[mFatal exception in interrupt<0>Fatal exception: panic in 5 seconds
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m:[m[32m4359[m[36m:[mFatal exception[01;31mInteger overflow[mBreak%s instruction in kernel codeKernel bug detectedOopsRI FaultReserved instruction in kernel codedo_cpu invoked from kernel context!Caught reserved exception %ld - should not happen.Unhandled kernel unaligned accessUnhandled kernel unaligned access or invalid instructionKernel unaligned instruction accessDDԀDDlDlDllDlDlllllllDunaligned_instructionsunaligned_action<2>How did I get here?
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m4360[m[36m-[m`tTTTTTT

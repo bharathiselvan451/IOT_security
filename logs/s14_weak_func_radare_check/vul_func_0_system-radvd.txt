@@ -1,0 +1,11 @@
+[*] Binary protection state of radvd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function system tear down of radvd
+
+
+[*] Function system used 0 times radvd
+

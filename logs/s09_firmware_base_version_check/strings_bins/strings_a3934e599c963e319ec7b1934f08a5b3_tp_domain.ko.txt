@@ -1,0 +1,86 @@
+ !$Q
+ !$B
+`8!'
+ !$B
+ !$B
+0+0B
+(!&1
+` !$e
+` !$
+` !$P
+@(!$
+@(!$
+@(!&s
+@(!&s
+@(!$
+` !'
+` !$
+(!0d
+lan_ip
+ip_route_output_key() failed in file create_tp_dns_skb.c, ret = %d
+alias=tp_domain
+description=The domain name tplinklogin.net.
+author=Huang Wenzhong <huangwenzhong@tp-link.net>
+license=GPL
+parmtype=lan_ip:uint
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+tplinklogin
+tplinklogin
+tp_domain
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.tp_dns_handler
+.rel.init.text
+.rel.exit.text
+.rodata
+.modinfo
+.rel__param
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+tp_domain.c
+dns_init
+dns_exit
+__mod_alias536
+__mod_description533
+__mod_author532
+__mod_license530
+__mod_lan_iptype47
+__param_lan_ip
+__param_str_lan_ip
+lan_ip
+tp_dns_hook_ops
+tp_dns_handler
+query2
+query1
+tp_domain.mod.c
+__module_depends
+__mod_vermagic5
+__ip_select_ident
+skb_put
+__this_module
+cleanup_module
+param_set_uint
+memcpy
+nf_unregister_hook
+nf_conntrack_destroy
+init_module
+kfree_skb
+param_get_uint
+__alloc_skb
+init_net
+memcmp
+printk
+memset
+nf_register_hook
+nf_ct_attach
+dev_get_by_name
+ip_route_output_key

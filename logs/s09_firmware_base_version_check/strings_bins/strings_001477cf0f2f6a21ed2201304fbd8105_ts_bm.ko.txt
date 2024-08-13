@@ -1,0 +1,50 @@
+@ !'
+ #$c
+ !$B
+(!$B
+@8!<
+`0!$e
+license=GPL
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+ts_bm
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.bm_find
+.rel.text.bm_init
+.text.bm_get_pattern
+.text.bm_get_pattern_len
+.rel.init.text
+.rel.exit.text
+.rodata
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+ts_bm.c
+init_bm
+exit_bm
+__mod_license204
+bm_ops
+bm_init
+bm_find
+bm_get_pattern
+bm_get_pattern_len
+ts_bm.mod.c
+__module_depends
+__mod_vermagic5
+textsearch_unregister
+__this_module
+cleanup_module
+memcpy
+init_module
+_ctype
+textsearch_register
+__kmalloc

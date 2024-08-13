@@ -1,0 +1,57 @@
+[*] Binary protection state of tc
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of tc
+
+beqz v0, 0x41e19c
+nop
+sb zero, (v0)
+lw s2, 0x18(sp)
+lw s1, (s5)
+jalr t9
+move a0, s1
+move a0, s2
+lw gp, 0x10(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move s0, v0
+move a0, s1
+lw gp, 0x10(sp)
+addu s0, s0, v0
+lw v0, 0x4c(sp)
+addiu s0, s0, 1
+lw t9, -sym.imp.realloc(gp)
+move a1, s0
+jalr t9
+sw s0, (v0)
+lw gp, 0x10(sp)
+move s0, v0
+addu v0, s4, s3
+move a0, s0
+[31mlw t9, -sym.imp.strcat(gp)[0m
+addiu s3, v0, -2
+beqz s0, 0x41e288
+sw s0, (s5)
+lw a1, 0x18(sp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+lw a0, 0x18(sp)
+lw t9, -sym.imp.free(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+lw s0, (s5)
+lw t9, -sym.imp.strstr(gp)
+move a0, s0
+jalr t9
+addiu a1, s7, 0x61ec
+move a2, fp
+lw gp, 0x10(sp)
+move s1, v0
+
+[*] Function strcat used 1 times tc
+

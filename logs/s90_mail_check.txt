@@ -1,0 +1,5 @@
+[+] Search Mail files
+=================================================================
+The mail checking module is designed to search for and report findings related to mail-related files on a Linux system, specifically examining directories located at /var/mail and /var/mail/root/ for their contents.
+
+[-] Wed Jul 31 21:03:21 EDT 2024 - S90_mail_check nothing reported

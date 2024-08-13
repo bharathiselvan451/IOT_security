@@ -1,0 +1,151 @@
+[*] Binary protection state of dhcp6c
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of dhcp6c
+
+lw v0, -0x4fbc(s0)
+beqz v0, 0x406b28
+nop
+lw v0, (fp)
+bnez v0, 0x406980
+nop
+lw v0, -0x4fbc(s0)
+beqz v0, 0x406b88
+addiu a0, zero, 1
+lw t9, -sym.imp.getpid(gp)
+jalr t9
+nop
+lw gp, 0x18(sp)
+move s1, v0
+lw v0, -0x7fe8(gp)
+lw a1, -0x7fd8(gp)
+lw t9, -sym.imp.fopen(gp)
+lw a0, -0x4f98(v0)
+jalr t9
+addiu a1, a1, 0x44dc
+lw gp, 0x18(sp)
+beqz v0, 0x4069e4
+move s0, v0
+lw a1, -0x7fd8(gp)
+move a2, s1
+[31mlw t9, -sym.imp.fprintf(gp)[0m
+move a0, v0
+jalr t9
+addiu a1, a1, 0x44e0
+lw gp, 0x18(sp)
+lw t9, -sym.imp.fclose(gp)
+jalr t9
+move a0, s0
+lw gp, 0x18(sp)
+lw t9, -sym.tp_dhcp_ipc_fork(gp)
+jalr t9
+addiu a0, zero, 0xc
+lw gp, 0x18(sp)
+lw t9, -segment.LOAD0(gp)
+addiu t9, t9, 0x2fec
+jalr t9
+move a0, zero
+lw gp, 0x18(sp)
+lw t9, -segment.LOAD0(gp)
+addiu t9, t9, 0x500c
+jalr t9
+--
+addiu t1, sp, 0x38
+lw v1, 0x14(v0)
+lw a0, 0x10(v0)
+addiu v1, v1, 0x76c
+lw a3, 0xc(v0)
+sll a0, a0, 2
+sw v1, 0x10(sp)
+addu a0, a0, t1
+lw v1, 8(v0)
+lw gp, 0x30(sp)
+sw v1, 0x14(sp)
+lw a1, 4(v0)
+lw v1, -0x7eb8(gp)
+lw t0, (v1)
+sw a1, 0x18(sp)
+lw v1, (v0)
+sw s1, 0x20(sp)
+sw v1, 0x1c(sp)
+lw a2, 0x800(a0)
+bnez s2, 0x408938
+nop
+lw v0, -0x7fd8(gp)
+addiu v0, v0, 0x4810
+lw a1, -0x7fd8(gp)
+move a0, t0
+[31mlw t9, -sym.imp.fprintf(gp)[0m
+sw v0, 0x24(sp)
+addiu a1, a1, 0x4cc0
+jalr t9
+sw t1, 0x28(sp)
+lw gp, 0x30(sp)
+lw ra, 0x87c(sp)
+lw s2, 0x878(sp)
+lw s1, 0x874(sp)
+lw s0, 0x870(sp)
+jr ra
+addiu sp, sp, 0x880
+bnez s2, 0x40892c
+nop
+lw v0, -0x7fd8(gp)
+addiu a3, v0, 0x4810
+lw a1, -0x7fd8(gp)
+addiu v0, sp, 0x38
+lw t9, -sym.imp.syslog(gp)
+move a0, s0
+sw v0, 0x10(sp)
+--
+nop
+lw v0, -0x4e0c(s1)
+sll v0, v0, 2
+addu v0, v0, a1
+lw v1, (v0)
+beqz v1, 0x41fbb0
+nop
+lw t9, -0x7fd8(gp)
+addiu t9, t9, -0x8c0
+jalr t9
+nop
+addiu v1, zero, 1
+lw gp, 0x10(sp)
+lw v0, -0x7fe8(gp)
+b 0x41fbb0
+sw v1, -0x17f8(v0)
+lui gp, 5
+addiu gp, gp, 0x35e8
+addu gp, gp, t9
+addiu sp, sp, -0x20
+sw ra, 0x18(sp)
+sw gp, 0x10(sp)
+lw v0, -0x7eb8(gp)
+move a2, a0
+lw a1, -0x7fe0(gp)
+[31mlw t9, -sym.imp.fprintf(gp)[0m
+lw a0, (v0)
+jalr t9
+addiu a1, a1, -0x5550
+lw gp, 0x10(sp)
+lw t9, -sym.imp.exit(gp)
+jalr t9
+addiu a0, zero, 2
+lui gp, 5
+addiu gp, gp, 0x35a4
+addu gp, gp, t9
+lw v1, -obj.yylineno(gp)
+lw v0, (v1)
+jr ra
+nop
+lui gp, 5
+addiu gp, gp, 0x3588
+addu gp, gp, t9
+lw v1, -obj.yyin(gp)
+lw v0, (v1)
+jr ra
+
+[*] Function fprintf used 3 times dhcp6c
+

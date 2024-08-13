@@ -1,0 +1,11 @@
+[*] Binary protection state of libnsl-0.9.30.so
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  DSO          No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of libnsl-0.9.30.so
+
+
+[*] Function strcpy used 0 times libnsl-0.9.30.so
+

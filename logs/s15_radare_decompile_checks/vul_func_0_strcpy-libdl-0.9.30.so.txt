@@ -1,0 +1,11 @@
+[*] Binary protection state of libdl-0.9.30.so
+
+  
+  	Partial RELRO  No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of libdl-0.9.30.so
+
+
+[*] Function strcpy used 0 times libdl-0.9.30.so
+

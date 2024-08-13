@@ -1,0 +1,19 @@
+[*] Searching (args for grep: ) for exec\s{0,20}\(.
+[*] Grepit state info - comment: Exec mostly means executing on OS.
+[*] Grepit state info - Filename 4_general_exec_narrow.txt
+[*] Grepit state info - Example: runTime.exec("echo "+unsanitized_input);
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: exec\s{0,20}\(
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m-[m[32m685[m[36m-[m	name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m-[m[32m686[m[36m-[m	var regexS = "[\\?&]"+name+"=\\s*([^&#]*)";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m-[m[32m687[m[36m-[m	var regex = new RegExp( regexS );
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m:[m[32m688[m[36m:[m	var results = regex.[01;31mexec([m window.location.href );
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m-[m[32m689[m[36m-[m	if(results == null)
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/LanArpBindingAdvRpm.htm[m[36m-[m[32m39[m[36m-[mif(!is_macaddr(document.forms[0].Mac.value))
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/LanArpBindingAdvRpm.htm[m[36m-[m[32m40[m[36m-[m{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/LanArpBindingAdvRpm.htm[m[36m-[m[32m41[m[36m-[mvar errcha=/[^0-9A-Fa-f-]/g;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/LanArpBindingAdvRpm.htm[m[36m:[m[32m42[m[36m:[mif(null!= errcha.[01;31mexec([mdocument.forms[0].Mac.value))
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/LanArpBindingAdvRpm.htm[m[36m-[m[32m43[m[36m-[m{

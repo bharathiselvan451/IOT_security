@@ -1,0 +1,11 @@
+[*] Binary protection state of wlan_warn.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function sprintf tear down of wlan_warn.ko
+
+
+[*] Function sprintf used 0 times wlan_warn.ko
+

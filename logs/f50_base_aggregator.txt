@@ -1,0 +1,83 @@
+[+] Final aggregator
+=================================================================
+The main aggregator module compiles and summarizes results from various analysis modules into a comprehensive overview by processing and logging detailed information from each identified element.
+
+[+] Tested firmware: /home/bharathi/Downloads/firmware.bin
+[+] EMBA start command: ./emba -t -f /home/bharathi/Downloads/firmware.bin
+[+] Detected architecture and endianness (verified): MIPS / EB
+[+] Operating system detected (verified): Linux / v2.6.30.9
+
+-----------------------------------------------------------------
+[+] 369 files and 47 directories detected.
+[+] Entropy analysis of binary firmware is: 4.607654 bits per byte.
+[+] Entropy analysis of binary firmware is available: /logs/firmware_entropy.png
+[+] Found 22 issues in 15 shell scripts.
+
+-----------------------------------------------------------------
+[+] Found the following configuration issues:
+    Found 4 areas with weak permissions.
+    Found 2 authentication issues.
+    Found 9 password related details via STACS (3 passwords cracked.)
+    Found 66 kernel modules with 1 licensing issues.
+    Found 0 interesting files and 2 files that could be useful for post-exploitation.
+
+-----------------------------------------------------------------
+[+] Found 106 (98%) binaries without enabled RELRO in 108 binaries.
+[+] Found 108 (100%) binaries without enabled NX in 108 binaries.
+[+] Found 26 (24%) binaries without enabled PIE in 108 binaries.
+[+] Found 42 (39%) stripped binaries without symbols in 108 binaries.
+
+-----------------------------------------------------------------
+[+] Found 593 usages of strcpy in 108 binaries.
+
+[+] STRCPY - top 10 results:
+[32m	COUNT| BINARY NAME     | common linux file: y/n | CWE CNT  / SEMGREP | RELRO    | CANARY    | NX state    | SYMBOLS    | NETWORKING    |[0m
+[32m	188  | httpd           | common linux file: yes | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[32m	108  | smbd            | common linux file: yes | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[33m	65   | libupnp.so.3.0. | common linux file: no  | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[33m	60   | wscd            | common linux file: no  | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[32m	31   | busybox         | common linux file: yes | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[33m	22   | libuClibc-0.9.3 | common linux file: no  | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [32mNo Networking |[0m
+[32m	22   | iptables        | common linux file: yes | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [32mNo Networking |[0m
+[33m	11   | acltd           | common linux file: no  | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[32m	10   | xl2tpd          | common linux file: yes | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[32m	10   | pppd            | common linux file: yes | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+
+
+[+] SYSTEM - top 10 results:
+[32m	COUNT| BINARY NAME     | common linux file: y/n | CWE CNT  / SEMGREP | RELRO    | CANARY    | NX state    | SYMBOLS    | NETWORKING    |[0m
+[32m	197  | httpd           | common linux file: yes | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[33m	25   | wscd            | common linux file: no  | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[33m	8    | usbp            | common linux file: no  | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [32mNo Networking |[0m
+[33m	5    | radvdctl        | common linux file: no  | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [32mNo Networking |[0m
+[32m	4    | pppd            | common linux file: yes | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[32m	3    | smbd            | common linux file: yes | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[33m	3    | iapp            | common linux file: no  | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[33m	2    | ushare          | common linux file: no  | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [32mNo Symbols | [31mNetworking    |[0m
+[32m	0    | xt_time.ko      | common linux file: yes | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [31mSymbols    | [33mNetworking un |[0m
+[32m	0    | xt_string.ko    | common linux file: yes | Vulns: NA   / NA   | [31mNo RELRO | [32mCanary    | [31mNX disabled | [31mSymbols    | [33mNetworking un |[0m
+
+
+-----------------------------------------------------------------
+[*] Identified the following software inventory, vulnerabilities and exploits:
+[+] Found version details: 	bpalogin            :   2.0.2          :   CVEs: 0         :   Exploits: 0    :   Source: STAT           
+[+] Found version details: 	xl2tpd              :   1.1.12         :   CVEs: 0         :   Exploits: 0    :   Source: STAT           
+[+] Found version details: 	iptables            :   1.4.5          :   CVEs: 1         :   Exploits: 0    :   Source: STAT           
+[+] Found version details: 	vsftpd              :   2.3.2          :   CVEs: 3         :   Exploits: 1    :   Source: STAT           
+[+] Found version details: 	busybox             :   1.01           :   CVEs: 16        :   Exploits: 0    :   Source: STAT           
+[+] Found version details: 	zlib                :   1.1.4          :   CVEs: 5         :   Exploits: 1    :   Source: STAT           
+[+] Found version details: 	openssl             :   1.0.0d         :   CVEs: 69        :   Exploits: 6    :   Source: STAT           
+[+] Found version details: 	openssl             :   0.9.8b         :   CVEs: 88        :   Exploits: 10   :   Source: STAT           
+[+] Found version details: 	linux_kernel        :   2.6.30.9       :   CVEs: 1946      :   Exploits: 150  :   Source: STAT           
+
+[+] Identified a SBOM including 9 software components with version details.
+
+
+[+] Identified 2128 CVE entries.
+    Identified 551 High rated CVE entries / Exploits: 57
+    Identified 1308 Medium rated CVE entries / Exploits: 83
+    Identified 269 Low rated CVE entries /Exploits: 19
+    159 possible exploits available (22 Metasploit modules).
+    Remote exploits: 1 / Local exploits: 31 / DoS exploits: 9 / Github PoCs: 0 / Known exploited vulnerabilities: 7 / Verified Exploits: 0
+
+-----------------------------------------------------------------

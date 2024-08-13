@@ -1,0 +1,19 @@
+[*] Searching (args for grep: -i) for type=.?file.
+[*] Grepit state info - comment: HTML upload form.
+[*] Grepit state info - Filename 5_html_upload_input_tag.txt
+[*] Grepit state info - Example: <input name="param" type="file"
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: type=.?file
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/BakNRestoreRpm.htm[m[36m-[m[32m33[m[36m-[m      </TR>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/BakNRestoreRpm.htm[m[36m-[m[32m34[m[36m-[m      <TR>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/BakNRestoreRpm.htm[m[36m-[m[32m35[m[36m-[m        <TD class=Item id = "t_file">File:</TD>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/BakNRestoreRpm.htm[m[36m:[m[32m36[m[36m:[m        <TD><INPUT class="text" name="filename" [01;31mtype="file[m" size="20" onKeyDown="return false">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/BakNRestoreRpm.htm[m[36m-[m[32m37[m[36m-[m          &nbsp;&nbsp;</TD>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/SoftwareUpgradeRpm.htm[m[36m-[m[32m40[m[36m-[m    </TR>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/SoftwareUpgradeRpm.htm[m[36m-[m[32m41[m[36m-[m    <TR>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/SoftwareUpgradeRpm.htm[m[36m-[m[32m42[m[36m-[m      <TD class=Item id="t_file">File:</TD>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/SoftwareUpgradeRpm.htm[m[36m:[m[32m43[m[36m:[m      <TD ><INPUT class="text" name="Filename" [01;31mtype="file[m" size="35"></TD>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/SoftwareUpgradeRpm.htm[m[36m-[m[32m44[m[36m-[m    </TR>

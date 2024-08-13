@@ -1,0 +1,66 @@
+[+] Cracking identified password hashes
+=================================================================
+The jtr local password cracking module cracks password hashes found in firmware using John the Ripper.
+
+[*] Found password data $1$$zdlNHiCDxYDfeF4MZL.H3/ for further processing in shadow
+[*] Found password data Admin:$1$$zdlNHiCDxYDfeF4MZL.H3/:10933:0:99999:7::: for further processing in shadow
+[*] Found password data root:$1$$zdlNHiCDxYDfeF4MZL.H3/:10933:0:99999:7::: for further processing in shadow
+[*] Starting jtr with a runtime of 3600 on the following data:
+$1$$zdlNHiCDxYDfeF4MZL.H3/
+Admin:$1$$zdlNHiCDxYDfeF4MZL.H3/:10933:0:99999:7:::
+root:$1$$zdlNHiCDxYDfeF4MZL.H3/:10933:0:99999:7:::
+
+Warning: detected hash type "md5crypt", but the string is also recognized as "md5crypt-long"
+Use the "--format=md5crypt-long" option to force loading these as that type instead
+Using default input encoding: UTF-8
+Loaded 3 password hashes with no different salts (md5crypt, crypt(3) $1$ (and variants) [MD5 256/256 AVX2 8x3])
+Will run 4 OpenMP threads
+Proceeding with single, rules:Single
+Press Ctrl-C to abort, or send SIGUSR1 to john process for status
+Almost done: Processing the remaining buffered candidate passwords, if any.
+Proceeding with wordlist:/usr/share/john/password.lst
+Proceeding with incremental:ASCII
+0g 0:00:02:00  3/3 0g/s 4806p/s 4806c/s 14419C/s 146971..153997
+0g 0:00:04:00  3/3 0g/s 5168p/s 5168c/s 15504C/s bbom2..cosit
+0g 0:00:06:00  3/3 0g/s 5209p/s 5209c/s 15628C/s bassicha..branne08
+0g 0:00:08:00  3/3 0g/s 5253p/s 5253c/s 15761C/s smexya..smk275
+0g 0:00:10:00  3/3 0g/s 5297p/s 5297c/s 15891C/s kr328..klh19
+0g 0:00:12:00  3/3 0g/s 5333p/s 5333c/s 15999C/s ppgrot..ppgmo1
+0g 0:00:14:00  3/3 0g/s 5366p/s 5366c/s 16098C/s cr2kah..cr0glg
+0g 0:00:16:00  3/3 0g/s 5403p/s 5403c/s 16210C/s 24l3n0..20cete
+0g 0:00:18:00  3/3 0g/s 5422p/s 5422c/s 16268C/s lb183a..lb1793
+0g 0:00:20:00  3/3 0g/s 5597p/s 5597c/s 16793C/s 12s38b..11118k
+0g 0:00:22:00  3/3 0g/s 6019p/s 6019c/s 18059C/s asitier..asiry08
+0g 0:00:24:00  3/3 0g/s 6350p/s 6350c/s 19051C/s malanito..malaguiz
+0g 0:00:26:00  3/3 0g/s 6599p/s 6599c/s 19798C/s 1lvo96..1l3y44
+0g 0:00:28:00  3/3 0g/s 6823p/s 6823c/s 20469C/s paonzi..pakodj
+0g 0:00:30:00  3/3 0g/s 6987p/s 6987c/s 20963C/s sn0m05..sn0MP1
+0g 0:00:32:00  3/3 0g/s 7118p/s 7118c/s 21354C/s 05bluz..05buri
+0g 0:00:34:00  3/3 0g/s 7417p/s 7417c/s 22251C/s rh569a..rh5061
+0g 0:00:36:00  3/3 0g/s 7841p/s 7841c/s 23525C/s 1104ch..1152dd
+0g 0:00:38:00  3/3 0g/s 8725p/s 8725c/s 26175C/s 059kas..05m392
+0g 0:00:40:00  3/3 0g/s 9936p/s 9936c/s 29809C/s cbo1v3..cbm43c
+0g 0:00:42:00  3/3 0g/s 11070p/s 11070c/s 33210C/s parmy29..parm033
+0g 0:00:44:00  3/3 0g/s 12328p/s 12328c/s 36986C/s pigu1!..pisi21
+0g 0:00:46:00  3/3 0g/s 13454p/s 13454c/s 40362C/s tuchure..tuchr09
+0g 0:00:48:00  3/3 0g/s 14548p/s 14548c/s 43645C/s 18466200..18485201
+0g 0:00:50:00  3/3 0g/s 15515p/s 15515c/s 46546C/s cuzu8i..cuigy2
+0g 0:00:52:00  3/3 0g/s 16405p/s 16405c/s 49216C/s 0r7ypi..0r@hop
+0g 0:00:54:00  3/3 0g/s 17262p/s 17262c/s 51787C/s fbluh..fblg8
+0g 0:00:56:00  3/3 0g/s 18113p/s 18113c/s 54339C/s jeik3k..jekja2
+0g 0:00:58:00  3/3 0g/s 19296p/s 19296c/s 57888C/s sadysa3..sado12j
+0g 0:01:00:00  3/3 0g/s 20693p/s 20693c/s 62081C/s dnsuet..dnsoti
+0g 0:01:02:00  3/3 0g/s 21925p/s 21925c/s 65776C/s lychunti..lych1256
+5up              (?)
+5up              (Admin)
+5up              (root)
+3g 0:01:02:49 DONE 3/3 (2024-07-31 22:59) 0.000795g/s 22441p/s 22441c/s 67325C/s 5-c..5lx
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed.
+
+
+[*] John the ripper final status: 3 password hashes cracked, 0 left
+[+] Password hash cracked: ?:5up
+[+] Password hash cracked: Admin:5up:10933:0:99999:7:::
+[+] Password hash cracked: root:5up:10933:0:99999:7:::
+[*] Statistics:3

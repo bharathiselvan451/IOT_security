@@ -1,0 +1,32 @@
+[*] Binary protection state of libpthread-0.9.30.so
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function mmap tear down of libpthread-0.9.30.so
+
+[31mlw t9, -sym.imp.mmap(gp)[0m
+move a0, t1
+sw v1, 0x168(sp)
+sw t0, 0x160(sp)
+sw t1, 0x164(sp)
+sw v0, 0x10(sp)
+jalr t9
+sw zero, 0x14(sp)
+lw t1, 0x164(sp)
+lw gp, 0x18(sp)
+lw v1, 0x168(sp)
+lw t0, 0x160(sp)
+beq v0, t1, 0x8380
+addiu a0, zero, -1
+beq v0, a0, 0x8430
+addiu s2, s2, 1
+addiu s2, s2, -1
+lw t9, -sym.imp.munmap(gp)
+move a0, v0
+jalr t9
+move a1, t0
+
+[*] Function mmap used 1 times libpthread-0.9.30.so
+

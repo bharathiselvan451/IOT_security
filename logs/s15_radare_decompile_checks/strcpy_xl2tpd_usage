@@ -1,0 +1,8 @@
+sym.add_vendor_avp
+sym.control_xmit
+sym.death_handler
+sym.lac_call
+sym.lac_disconnect
+sym.lac_hangup
+sym.network_thread
+sym.set_range

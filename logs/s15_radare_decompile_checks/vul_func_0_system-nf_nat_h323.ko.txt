@@ -1,0 +1,11 @@
+[*] Binary protection state of nf_nat_h323.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function system tear down of nf_nat_h323.ko
+
+
+[*] Function system used 0 times nf_nat_h323.ko
+

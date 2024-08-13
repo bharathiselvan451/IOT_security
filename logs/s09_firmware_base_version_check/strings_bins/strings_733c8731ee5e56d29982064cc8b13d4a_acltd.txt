@@ -1,0 +1,111 @@
+/lib/ld-uClibc.so.0
+_init
+_fini
+__uClibc_start_main
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+strlen
+memcmp
+fopen
+fread
+fclose
+target_name
+strstr
+sscanf
+strstr_in1line
+clientfd
+recv
+strncmp
+bzero
+get_wlan0_stats
+printf
+send
+usleep
+malloc
+strcpy
+socket
+sockfd
+perror
+__errno_location
+exit
+bind
+listen
+client_addr
+addrlen
+accept
+inet_ntoa
+fork
+report
+libc.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+$B!0
+$B 4
+$! 4
+$B 4
+$!!0
+$c!P
+@(!$
+`(!$
+@ !$
+@(!$
+'9	0
+/proc/wlan0/sta_info
+%s %u (%u %u %u %u)
+%s MCS%d (%d.%d)
+%s MCS%d (%d)
+%s %d
+get proc data failed
+rx_retrys:
+tx_retrys:
+rx_crc_errors:
+rx_decache:
+rssi:
+rssi_pathA:
+rssi_pathB:
+rssi_pathC:
+rssi_pathD:
+current_tx_rate:
+current_rx_rate:
+Socket
+socket--bind
+socket--listen
+Auto Cable Link Test daemon start...
+%s:%d connected
+GCC: (GNU) 3.3.2
+GCC: (GNU) 3.2.3-1.2.11
+GCC: (GNU) 3.2.3-1.2.11
+GCC: (GNU) 3.2.3-1.2.11
+GCC: (GNU) 3.3.2
+.shstrtab
+.interp
+.reginfo
+.dynamic
+.hash
+.dynsym
+.dynstr
+.init
+.text
+.MIPS.stubs
+.fini
+.rodata
+.eh_frame
+.ctors
+.dtors
+.jcr
+.data
+.rld_map
+.got
+.sbss
+.bss
+.comment
+.mdebug.abi32
+.pdr

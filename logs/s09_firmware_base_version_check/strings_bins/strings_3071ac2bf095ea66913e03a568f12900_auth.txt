@@ -1,0 +1,1103 @@
+/lib/ld-uClibc.so.0
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+libnet_open_link_interface
+dev_svr
+lib1x_message
+libnet_get_ipaddr
+inet_ntoa
+strcpy
+ourip
+libnet_get_hwaddr
+oursvr_addr
+libnet_close_link_interface
+dev_supp
+oursupp_addr
+sprintf
+stat
+unlink
+mkfifo
+__errno_location
+strerror
+fcntl
+malloc
+RTLAuthenticator
+strcmp
+fopen
+fgets
+sscanf
+kill
+fclose
+lockf
+daemon
+fdopen
+getpid
+fprintf
+setsid
+strlen
+lib1x_load_config
+svrip
+udp_svrport
+svrip2
+udp_svrport2
+lib1x_resolve
+sleep
+exit
+lib1x_print_etheraddr
+lib1x_init_txrx
+svraddr
+lib1x_init_auth
+lib1x_init_authRSNConfig
+lib1x_init_authGlobal
+lib1x_init_fifo
+lib1x_init_supp
+RTLClient
+lib1x_control_STA_SetGTK
+lib1x_control_RSNIE
+lib1x_control_InitQueue
+lib1x_init_authTimer
+lib1x_do_supplicant
+lib1x_do_authenticator
+memset
+lib1x_nal_initialize
+inet_addr
+lib1x_nal_connect
+inet_aton
+lib1x_control_init
+lib1x_authRSN_constructIE
+GenNonce
+lib1x_ptsm_initialize
+lib1x_reauthsm_init
+lib1x_bauthsm_init
+lib1x_cdsm_init
+lib1x_krcsm_init
+lib1x_kxsm_init
+lib1x_acctsm_init
+lib1x_nas_id
+SuppTestInfoElement
+AuthTestInfoElement
+SetNonce
+gettimeofday
+lib1x_init_authenticator
+lib1x_acct_UCS4_TO_UTF8
+memcpy
+lib1x_acctsm_request
+lib1x_timer_authenticator
+sigaction
+setitimer
+perror
+lib1x_akmsm_GroupReKey_Timer_proc
+lib1x_akmsm_Timer_proc
+lib1x_akmsm_EAPOLStart_Timer_proc
+lib1x_akmsm_Account_Timer_proc
+lib1x_ptsm_timer
+lib1x_supp_timer_proc
+lib1x_akmsm_execute
+strncmp
+lib1x_authWPA2_parseIE
+lib1x_authRSN_parseIE
+lib1x_authRSN_err
+lib1x_authRSN_match
+lib1x_control_AssociationRsp
+syslog
+socket
+ioctl
+lib1x_reset_authenticator
+lib1x_control_RemovePTK
+lib1x_control_SetPORT
+lib1x_akmsm_Disconnect
+lib1x_akmsm_trans
+lib1x_store_eap
+lib1x_rad_eapresp_svr
+lib1x_rad_vendor_attr
+lib1x_rad_session_timeout
+lib1x_rad_idle_timeout
+lib1x_rad_interim_timeout
+lib1x_process_radiusaccept
+lib1x_process_radiuschallenge
+lib1x_process_radiusacct
+lib1x_rad_eapresp_supp
+KeyDump
+lib1x_handle_eapsupp
+lib1x_handle_eapsupp_key
+stderr
+fputs
+lib1x_auth_radius2_exchange
+lib1x_nal_send
+lib1x_auth_txCannedFail
+lib1x_auth_txReqId
+lib1x_rad_special_type
+lib1x_auth_txCannedSuccess
+lib1x_authsm_initialize
+lib1x_authsm_disconnected
+lib1x_authsm_connecting
+lib1x_authsm_authenticated
+lib1x_authsm_authenticating
+lib1x_authsm_aborting
+lib1x_authsm_force_auth
+lib1x_authsm_force_unauth
+fflush
+lib1x_trans_authsm
+lib1x_authsm_dump
+stdout
+lib1x_authsm_execute_authsm
+lib1x_trans_reauthsm
+lib1x_bauthsm
+lib1x_trans_kxsm
+lib1x_trans_cdsm
+lib1x_trans_krcsm
+lib1x_nal_receive
+lib1x_auth_process
+memcmp
+lib1x_insert_supp
+EMPTY_ADDR
+__assert
+lib1x_bauthsm_abortAuth
+lib1x_bauthsm_sendRespToServer
+lib1x_bauthsm_txReq
+lib1x_exec_bauthsm_request
+lib1x_exec_bauthsm_response
+lib1x_exec_bauthsm_success
+lib1x_exec_bauthsm_timeout
+lib1x_exec_bauthsm_initialize
+lib1x_exec_bauthsm_fail
+lib1x_exec_bauthsm_idle
+lib1x_trans_bauthsm
+lib1x_exec_bauthsm
+vsnprintf
+putchar
+lib1x_krcsm_processKey
+strncpy
+bind
+select
+recv
+lib1x_search_supp
+lib1x_authsm_capture_svr
+read
+lib1x_suppsm_capture_auth
+lib1x_authsm_capture_supp
+lib1x_suppsm_capture_control
+lib1x_capture_control
+libnet_write_link_layer
+ReplayCounter_LI2OC
+INCLargeInteger
+RC4_set_key
+hmac_md5
+lib1x_control_SetGTK
+lib1x_control_SetPTK
+free
+lib1x_kxsm_key_transmit
+MD5_Init
+MD5_Update
+MD5_Final
+lib1x_create_reqauth
+lib1x_radconst_create
+lib1x_radconst_addattr
+lib1x_radconst_addEAPMessAttr
+lib1x_radconst_calradlength
+lib1x_create_messauth
+lib1x_decrypt_MPPESendRecvKeys
+lib1x_radpassword_create
+lib1x_acct_MAC_TO_DASH_ASCII
+lib1x_create_reqauth_acct
+lib1x_acctsm_sendReqToServer
+lib1x_PrintAddr
+lib1x_ptsm_dump
+lib1x_init_algo
+ConfigTag
+lib1x_config_parse
+lib1x_config_err
+atoi
+PasswordHash
+strtol
+lib1x_config_text2bin
+sockets_open
+lib1x_akmsm_dump
+Message_setReplayCounter
+INCOctet32_INTEGER
+lib1x_control_QueryRSC
+EncGTK
+CalcGTK
+lib1x_akmsm_SendEAPOL_proc
+Message_ReplayCounter_OC2LI
+SubStr
+CalcPTK
+CheckMIC
+wpa2_hexdump
+SetEAPOL_KEYIV
+lib1x_akmsm_UpdateGK_proc
+Message_EqualReplayCounter
+del_pmksa_by_spa
+Message_LargerReplayCounter
+CalcMIC
+CalcPMKID
+get_pmksa_node
+cache_pmksa
+lib1x_del_supp
+lib1x_control_QuerySTA
+lib1x_acct_maperr_wlan2acct
+lib1x_control_STADisconnect
+lib1x_control_Query_All_Sta_Info
+lib1x_acctsm
+lib1x_akmsm_Update_Station_Status
+lib1x_control_IndicateMICFail
+lib1x_akmsm_ProcessEAPOL_proc
+lib1x_akmsm_IntegrityFailure
+KM_STRERR
+lib1x_akmsm_AuthenticationRequest
+lib1x_akmsm_AuthenticationSuccess
+lib1x_akmsm_EAPOLKeyRecvd
+lib1x_reset_supp
+lib1x_control_STA_QUERY_SSID
+Message_SmallerEqualReplayCounter
+DecWPA2KeyData
+DecGTK
+lib1x_control_STA_SetPTK
+lib1x_control_STA_SetPORT
+lib1x_control_STA_QUERY_BSSID
+lib1x_skmsm_EAPOLKeyRecvd
+lib1x_skmsm_EAPOLKeySend
+hmac_sha1
+i_PRF
+time
+AES_WRAP
+AES_UnWRAP
+find_pmksa
+endianTest
+SHAInit
+SHAUpdate
+SHAFinal
+truncate
+SHA1ProcessMessageBlock
+SHA1PadMessage
+SHA1Reset
+SHA1Input
+SHA1Result
+hmac_sha
+i_P_SHA1
+pow_tab
+log_tab
+rco_tab
+sbx_tab
+isb_tab
+it_tab
+il_tab
+ft_tab
+fl_tab
+tab_gen
+gen_tabs
+k_len
+e_key
+d_key
+AES_SetKey
+AES_Encrypt
+AES_Decrypt
+lib1x_nal_send_acct
+lib1x_acct_request
+sendto
+free_pmksa_node
+libc.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GLIBC_2.0
+$'98P
+('9?@
+@ !$
+  !$
+@ !$
+(&eD
+G<&J
+$cI 
+@(!$
+&C!@$
+($EI
+`0!$
+`0!$
+($cL
+	$CK
+($CK$
+$GK8
+($GK@
+$BKD
+($BKL
+@ !$
+($cQ
+($cSx
+@ !$
+@(!$
+@(!$
+@(!$
+  !$
+($cV
+@(!$
+W0&F
+@0!&
+($cY
+$cZX
+ 0!$
+ 8!$
+ 8!$
+!$b`
+(%0c
+ (!'
+ 0!*"
+@ !$
+` !$
+@ !$
+  !'
+ 0!'
+@ !$
+($Cc
+($Cc
+r(!$c
+r(!&
+ !,B
+` !$
+(*&1
+@0!$
+@8!$
+  !$
+  !$
+  !$
+  !$
+  !$
+  !$
+  !8C
+  !$
+  !$
+  !$
+  !$
+  !$
+  !$
+@0!&C
+!$Gk
+@(!'
+@(!'
+@0!&C
+($cmT
+)@8B
+8!8c
+9@8c
+h$bs0
+(!8B
+h$bs0
+(!8B
+  !$
+  !$
+  !$
+@(!$
+  !$
+@ !$
+@(!'
+X!$b
+ 0!$
+@ !$
+@ !$
+0!&b
+@ !$
+@ !$
+  !&R
+gE4B#
+24BTv
+'C0q
+F0#(
+(!&0
+@(!'
+@(!'
+!4B#
+24BTv
+(!)g
+p(!0
+% !$
+ !$C
+@!,B
+DP&0D
+C &0
+ %-e
+@!4J
+ !0c
+`&."
+8!0B
+@!0c
+(!0B
+@!0c
+fX!1J
+0!0c
+`!1k
+@&1)
+(!0B
+0!1J
+(!1g
+EP&1k
+ !1F
+CP!1
+(!0B
+p&1e
+"H&1k
+ !1&
+mX&0B
+@&1J
+(!1f
+"H&1k
+(!0B
+0!1J
+#H!1
+EP&1
+8!0B
+"H&0c
+h&1)
+dX&1
+@&1d
+ &0c
+0&1d
+& !$
+ !$S
+@8!$
+@8!$
+@ !$
+@ !'
+@ !$
+@ !$
+24BTv
+gE4B#
+' !$
+!4Bp
+!4BF
+!4B[
+!4Bq
+!4BC
+!4B%b
+!4BZQ
+!4cL
+!4c9B
+!4ca"
+!4c8
+!4cK`
+!4c~
+!4c'
+!4c0
+!4B|
+!4BVe
+!4B"D
+!4B#
+!4BY
+(@!4B]
+!4B~O
+!4BC
+!4B~
+@!4B
+"H!<
+	H!4B
+@0!'9
+C0#,b
+(!&9
+(!0M
+(!%)
+8!%)
+@ !$
+ 0!4
+P!@$R!@
+P!@$R!@
+P!@$R!@
+$'97
+ open1x: Could not obtain IP for interface %s
+open1x: Could not obtain ethernet address for interface %s
+open1x: Could not open interface %s
+/var/auth-%s.fifo
+mkfifo %s fifo error: %s!
+F_GETF: error
+main
+Usage: auth wlan-interface eth-interface mode conf-file
+client-infra
+client-adhoc
+auth
+Argument 4 is invalid. Valid value are: auth, client-infra or client-adhoc
+/var/run/auth-%s.pid
+Unable to open pidfile %s
+fork auth error!
+[%s-%d]-ERROR-: String Length of parameter [wlan_interface] exceeds (MAX: %d)
+[%s-%d]-DEBUG-: WLAN interface : %s
+[%s-%d]-ERROR-: String Length of parameter [lan_interface] exceeds (MAX: %d)
+[%s-%d]-DEBUG-: Radius interface : %s
+[%s-%d]-ERROR-: Configuration file [%s] loading FAILED!
+[%s-%d]-DEBUG-: Configuration file [%s] loading OK!
+802.1x daemon: open interface failed!
+IEEE 802.1x (WPA) daemon, version 1.8e 
+auth-%s:create fifo error 
+PRINT_AUTH_PAE_STATE
+%s: AUTH_PAE_STATE - apsm_Initialize
+%s: AUTH_PAE_STATE - apsm_Disconnected
+%s: AUTH_PAE_STATE - apsm_Connecting
+%s: AUTH_PAE_STATE - apsm_Authenticated
+%s: AUTH_PAE_STATE - apsm_Authenticating
+%s: AUTH_PAE_STATE - apsm_Aborting
+%s: AUTH_PAE_STATE - apsm_Held
+%s: AUTH_PAE_STATE - apsm_Force_Unauth
+%s: AUTH_PAE_STATE - apsm_Force_Auth
+%s: AUTH_PAE_STATE - apsm_Unknown
+Invalid OUR IP addr 
+addr
+Could not allocate memory for send buffer.
+CONNECT 11Mbps 802.11b
+lib1x_reset_authenticator
+sigaction
+alarm
+lib1x_capture_control, Receive DOT11_EVENT_ASSOCIATION_IND(DOT11_EVENT_REASSOCIATION_IND) from Driver
+RSNIELen = %d
+lib1x_authRSN_parseIE return Fail
+lib1x_authRSN_parseIE return Success
+lib1x_authRSN_match return Fail
+Error Reason:%s
+lib1x_authRSN_match return Success
+none
+WEP40
+TKIP
+WEP104
+invalid algorithm
+WPA2
+RADIUS
+%s: %s-%s %s authentication in progress...
+without RSNIE
+%s: RADIUS authentication in progress...
+tx_packets= %d
+rx_packets= %d
+tx_bytes= %d
+rx_bytes= %d
+Disassiciate Reason is %d
+Receive EAPOL_START, Take effect in state machine
+Dircard EAPOL_START because EAP-ReqestID has already been sent
+Receive EAPOL_START_PREAUTH, Take effect in state machine
+global->AuthKeyMethod = %d
+ FIRST EAP ATTRIBUTE
+ NEXT EAP ATTRIBUTE
+Received very short malformed EAP message field from RADIUS server 
+ RESP FROM SERVER: EAP MESSAGE FOUND LENGTH : %d 
+ Received Message Authenticator from radius server
+ Received STATE Attribute from radius server
+ -------  UNEXP LEN = %d
+No EAP message found in radius packet
+-------------   Done parsing RADIUS packet that is will be forwarded to Supp[i]
+lib1x_process_radiusaccept(1)
+-------------   Done parsing RADIUS packet
+AUTHENTICATION SUCCEEDED ! Accept Packet received from AuthServer
+MacAuthentication Fail
+Change from Phase 1 MAC Auth to Phase 2 Radius
+AUTHENTICATION FAILED ! Reject Packet received from AuthServer
+AUTHENTICATION RADIUS CHAL
+AUTHENTICATION RADIUS Accounting Respond
+lib1x_handle_eapsupp
+ Received EAP Response Identity packet with mismatching identifier field
+Too small a packet received from nal.
+lib1x_authsm_capture_supp
+Receive EAPOL-KEY
+ EAPOL LOGOFF
+AUTHENTICATOR> EAPOL EAP PKT
+AUTHENTICATOR> EAPOL KEY
+AUTHSM> Into AUTHENTICATING state
+lib1x_trans_authsm
+ Fatal: Null argument received.
+%s: Check Global Condition - 1
+%s: Check Global Condition - 2
+%s: Check Global Condition - 3
+Received authSuccess, into Authenticated state.
+gH%s: Authentication failled from radius server!
+Sending FAILURE EAP packet to Supplicant
+<<<<<<<<<<<<<<<<<< TO supplicant 
+Sending REQUEST / Identity EAP packet to Supplicant
+Sending SUCCESS EAP packet to Supplicant
+Into Initialize
+Into Disconnected
+Into Connecting
+Into Authenticated
+Into Authenticating
+Into Aborting
+Into Force Auth
+Into Force Unauth
+oL Executing Initialization
+ Running Reauthentication Timer State Machine
+ Running Backend Authentication State Machine
+ Authenticator Key Transmit State Machine
+ Running Controlled Directions State Machine
+ Running Key Receive State Machine
+ Null argument received.
+Calling the packet listener
+ lib1x_do_authenticator: Called with Supplicant Role.
+Error, allocate memory failed for supplicant!
+<lib1x_insert_supp> Number of Supplicant = %d
+lib1x_search_supp
+%s: got DOT11_EVENT_EAPOLSTART_PREAUTH
+[Insert suppid=%d into table]
+Receive Other Indcation from driver, Station is not in Table
+Find Supp[%d] in Table in EVENT_ASSOCIATION_IND
+Delete STA from Table
+<lib1x_del_supp> Number of Supplicant = %d
+lib1x_bauthsm_init
+bauth_sm != ((void *)0)
+1x_bauth_sm.c
+{pBAUTHSM> SUCCESS STATE.
+Backend Authentication SM: abortAuth: Authentication Aborted.
+Sending PREFABRICATED EAP packet to Server
+ Sending RADIUS EAP Response to server.
+ Attempt to send non-prefabricated packet
+ lib1x_bauthsm_sendRespToServer: Request for Xmit .. but no packet buffered !
+Sending Response EAP packet to Server
+BAUTHSM> Entering RESPONSE state.
+Sending PREFABRICATED EAP packet to SUPPLICANT
+ lib1x_bauthsm_txReq: Request for Xmit .. but no packet buffered !
+Sending Request EAP packet to Supplicant
+BAUTHSM> Entering REQ state.
+ Packet Dump 
+ %02X :    %02X %02X %02X %02X     %02X %02X %02X %02X  
+Initialize
+Disconnected
+Connecting
+Authenticating
+Authenticated
+Aborting
+Held
+Force_Auth
+Force_Unauth
+Request 
+Response 
+Success
+Fail
+Timeout
+Idle
+ Packet Dump : CHAR
+ %02X :    %02X  '%c'    %02X  '%c'    %02X  '%c'     %02X  '%c'         %02X  '%c'     %02X  '%c'     %02X  '%c'     %02X  '%c'      
+$$ %s $$: %s
+	Message is %d bytes %x hex
+%2x 
+- %s - %02x:%02x:%02x:%02x:%02x:%02x -
+g->authStart = %d
+g->authSuccess = %d
+g->currentId = %d
+g->portEnabled = %d
+g->receivedId = %d
+g->reAuthenticate = %d
+g->AuthKeyMethod = %d
+g->PreshareKeyAvaliable = %d
+g->MaxRetryCounts = %d
+g->EventId = %d
+g->portSecure = %d
+g->DescriptorType = %d
+g->KeyDescriptorVer = %d
+%02x%02x%02x%02x%02x%02x
+lib1x_krcsm_init
+1x_krc_sm.c
+krc_sm != ((void *)0)
+ Key Receive State Machine: PROCESS KEY ?
+lib1x_nal_intfdesc: Received NULL interface to open.
+lib1x_nal_intfdesc: Could not open libnet interface 
+lib1x_nal_initialize: Could not open Radius Authentication UDP socket !
+lib1x_nal_initialize: Could not open Radius Accounting UDP socket !
+Could not BIND Authentication server UDP socket.
+lib1x_nal_connect: Could not connect to Authentication Server . 
+Could not BIND Accounting server UDP socket.
+lib1x_nal_connect: NULL argument svraddr 
+lib1x_nal_connect: Could not connect to Accounting Server. 
+lib1x_nal_connect : FCNTL failed on UDP socket
+Receive driver indication
+ NUMREAD = 0 after recv !
+lib1x_nal_send: Descriptor contains invalid network identifier.
+libnet_write_link_layer send packets %d
+lib1x_nal_send: Sending UDP packet.
+lib1x_nal_send: Mismatch in send size!
+ NUM_SENT : %d . actual %d
+lib1x_kxsm_init
+1x_kxsm.c
+key_sm != ((void *)0)
+""""""""""""""""key_sm->keyAvailable=%d
+Double use of send buffer ? packet not sent !
+%02X-%02X-%02X-%02X-%02X-%02X
+Receive messages from supplicant 
+Send Auth-Request of MAC Authentication to Radius Server
+ACCT_ON
+STA[%d], Session Timeout : %d
+Idle Timeout : %d
+STA[%d], Interim Timeout : %d
+----------- Dump PTSM Supplicant [%d]------------
+ptsm->authWhile = %d
+ptsm->aWhile= %d
+ptsm->heldWhile = %d
+ptsm->quietWhile = %d
+ptsm->reAuthWhen = %d
+ptsm->startWhen = %d
+ptsm->txWhen = %d
+--------------------------------------------------
+lib1x_reauthsm_init
+reauth_sm != ((void *)0)
+1x_reauth_sm.c
+lib1x_cdsm_init
+1x_cdsm.c
+ctrl_sm != ((void *)0)
+Undefine parameter in configuration file
+Configuration file not exist
+Undefine tag in configuration file
+Uknown Failure
+wepGroupKey = %s
+%s->%s
+%s = %d
+ssid
+enable1x
+enableMacAuth
+authentication
+authentication = %s
+DOT11_AuthKeyType_RSN
+DOT11_AuthKeyType_RSNPSK
+unicastCipher
+ulUnicastCipher = %d
+wpa2UnicastCipher
+ulWPA2UnicastCipher = %d
+enablePreAuth
+encryption
+supportNonWpaClient
+wepKey
+wepGroupKey
+groupRekeyTime
+usePassphrase
+rsPort
+rsPort = %d
+rsIP
+rsIP = %s
+rsPassword
+Radius Shared Key = %s
+rs2Port
+rs2Port = %d
+rs2IP
+rs2IP = %s
+rs2Password
+Radius2 Shared Key = %s
+rs2enableMacAuth
+rsMaxReq
+Radius Retry Max = %d
+rsAWhile
+Radius Tx Period = %d
+accountRsEnabled
+accountRsEnabled = %d 
+accountRsPort
+accountRsIP
+accountRsPassword
+Acct Shared Key = %s
+accountRsMaxReq
+accountRsAWhile
+rsNasId
+rsReAuthTO
+rsReAuthTO = %d
+Can't set WPA TKIP+AES cipher for client mode. Use TKIP.
+Can't set WPA2 TKIP+AES cipher for client mode. Use TKIP.
+ulUnicastCipher = %d (1:TKIP, 2: AES)
+ulWPA2UnicastCipher = %d (1:TKIP, 2: AES)
+auth->RSNVariable.MulticastCipher = %d (2:TKIP, 4:AES)
+Encryption : WPA
+Encryption : WPA2
+Encryption : WPA2-mixed
+Encryption : WEP
+Encryption : NONE
+RSNEnabled : TRUE
+RSNEnabled : FALSE
+WPAEnabled : TRUE
+WPAEnabled : FALSE
+WPA2Enabled : TRUE
+WPA2Enabled : FALSE
+isSupportPreAuthentication : TRUE
+isSupportPreAuthentication : FALSE
+Dot1xEnabled : TRUE
+Dot1xEnabled : FALSE
+MacAuthEnabled : TRUE
+MacAuthEnabled : FALSE
+AccountingEnabled : TRUE
+AccountingEnabled : FALSE
+socket
+[RequestIndication]
+ : Return
+lib1x_control_STADisconnect(1)
+lib1x_control_AssociationRsp(1)
+lib1x_control_RemovePTK(1)
+lib1x_control_QueryRSC(1)
+lib1x_control_QueryRSC
+lib1x_control_STA_QUERY_SSID(1)
+lib1x_control_STA_SetPTK
+STA Set RSN key
+lib1x_control_STA_SetGTK
+lib1x_control_STA_SetPORT
+Set Port Authorized for STA =>
+Set Port Unathorized for STA =>
+lib1x_control_AuthDisconnect
+lib1x_control_QuerySTA(1)
+lib1x_control_QuerySTA(1) retun success
+lib1x_control_QuerySTA(1) retun -1
+lib1x_control_SetRSNIE(1)
+lib1x_control_AssocInfo(1)
+lib1x_control_SetPTK(1)
+Set RSN key
+Set NonRSN802.1x key
+lib1x_control_SetGTK(1)
+global->RSNVariable.MulticastCipher = %d
+global->RSNVariable.MulticastCipher = %s
+DOT11_ENC_NONE
+DOT11_ENC_WEP40
+DOT11_ENC_WEP104
+DOT11_ENC_TKIP
+DOT11_ENC_CCMP
+@lib1x_control_SetPORT(1)
+lib1x_control_SetExpiredTime(1)
+lib1x_control_Set802dot1x
+lib1x_control_InitQueue
+Receive Event %s
+NO_EVENT
+ASSOCIATION_IND
+REASSOCIATION_IND
+AUTHENTICATION_IND
+REAUTHENTICATION_IND
+DEAUTHENTICATION_IND
+DISASSOCIATION_IND
+MIC_FAILURE
+Receive %s Event id %d 
+Invalid
+lib1x_control_IndicateMICFail
+PRINT_GLOBAL_EVENTID
+%s: EventId = akmsm_EVENT_AuthenticationRequest
+%s: EventId = akmsm_EVENT_ReAuthenticationRequest
+%s: EventId = akmsm_EVENT_AuthenticationSuccess
+%s: EventId = akmsm_EVENT_Disconnect
+%s: EventId = akmsm_EVENT_DeauthenticationRequest
+%s: EventId = akmsm_EVENT_Init
+%s: EventId = akmsm_EVENT_Disassociate
+%s: EventId = akmsm_EVENT_IntegrityFailure
+%s: EventId = akmsm_EVENT_EAPOLKeyRecvd
+%s: EventId = akmsm_EVENT_TimeOut
+%s: Unknown EventId = %d
+lib1x_akmsm_UpdateGK_proc
+lib1x_akmsm_UpdateGK_proc, New Group Key Will generated
+gkm_sm->GTKRekey = TRUE
+gkm_sm->GInitAKeys = TRUE
+!gkm_sm->GInitDone = TRUE
+lib1x_akmsm_UpdateGK_proc, Group key is first generated
+GKeyDoneStations : Number of stations left to have their Group key updated = %d
+Execute Group key state machine of each STA
+Supp[%d] is enable, update group key
+Group Key Update One : STA[%d]
+Group KEY Update ALL : STA[%d]
+lib1x_akmsm_ProcessEAPOL_proc
+4-2: ERROR_MIC_FAIL
+%s: Authentication failled! (4-2: MIC error)
+PTK:
+Message 2:
+kenny: %s-%d ERROR!
+%s:%d del_pmksa due to 4-2 ERROR_MIC_FAIL
+4-4: RSN_MIC_failure
+%s: Authentication failled! (4-4: RSN MIC error)
+%s:%d del_pmksa due to 4-4 RSN_MIC_failure
+%s: Open and authenticated
+%s: akm_sm->state = Unknown.
+%s: Message_Request(global->EapolKeyMsgRecvd).
+lib1x_akmsm_Timer_proc
+akm_sm->TimeoutCtr = %d, global->Dot11RSNConfig.PairwiseUpdateCount = %d
+[****Pairwise Key state machine time out], Re-sent Packet
+[****Pairwise Key state machine time out], Maxmum Retry time
+%s:%d del_pmksa due to 4-1 or 4-3 timeout
+akm_sm->TimeoutCtr = %d, global->Dot11RSNConfig.GroupUpdateCount = %d
+[*****Group Key state machine time out], Resent Packet
+[*****Group Key state machine time out], Maximun Retry time
+last node of group key unpdate expired!
+=================================
+lib1x_akmsm_GroupReKey_Timer_proc
+lib1x_akmsm_SendEAPOL_proc
+Send EAPOL-KEY
+*************************Process Event akmsm_EVENT_AuthenticationRequest
+*************************CALL lib1x_control_RemovePTK
+*************************Process Event akmsm_EVENT_AuthenticationRequest and akmsm_EVENT_ReAuthenticationRequest
+Cached PMKID
+lib1x_akmsm_AuthenticationSuccess
+lib1x_akmsm_AuthenticationSuccess
+lib1x_akmsm_AuthenticationSuccess:Radius Key is Avaliable
+%s:%d, pmksa_node == NULL
+PreAuth done: 
+lib1x_akmsm_Disconnect(1)
+lib1x_akmsm_Disconnect(2) :				       	Request from 802.1x daemon
+lib1x_akmsm_Disconnect(2) :                                        Request from wlan driver
+Kick of STATION because of session timeout
+Kick of STATION because of Idle Timeout
+lib1x_akmsm_EAPOLKeyRecvd
+lib1x_akmsm_EAPOLKeyRecvd:Receive EAPOL-KEY and check [successfully] in akmsm_PTKSTART state
+lib1x_akmsm_EAPOLKeyRecvd:Receive EAPOL-KEY and check [Fail] in akmsm_PTKSTART state
+lib1x_akmsm_EAPOLKeyRecvd:Receive EAPOL-KEY and check [successfully] in akmsm_PTKINITNEGOTIATING state
+lib1x_akmsm_EAPOLKeyRecvd : Receive 4 message of 4-way handshake and check successfully
+ global->auth->gk_sm->GKeyDoneStations=%d
+WPA2: 4-way handshake done
+lib1x_akmsm_EAPOLKeyRecvd:Receive EAPOL-KEY 4way  message 2 again 
+lib1x_akmsm_EAPOLKeyRecvd:Receive EAPOL-KEY and check [Fail] in akmsm_PTKINITNEGOTIATING state
+lib1x_akmsm_EAPOLKeyRecvd:Receive EAPOL-KEY and check [successfully] in akmsm_PTKINITDONE state
+%s() in akmsm_PTKINITDONE state. Call lib1x_akmsm_UpdateGK_proc()
+lib1x_akmsm_EAPOLKeyRecvd:Receive EAPOL-KEY and check [Fail] in akmsm_PTKINITDONE state
+global->auth->gk_sm->GKeyDoneStations=%d
+lib1x_akmsm_EAPOLKeyRecvd : Receive 2 message of 2-way handshake and check successfully
+2-way Handshake is finished
+ Receive bad group key handshake
+lib1x_akmsm_trans
+%s: Unknown AuthKeyMethod
+Judge eapStart in state akmsm_AUTHENTICATION2
+Judge eapStart not in state akmsm_AUTHENTICATION2
+global->akm_sm->AuthenticationRequest == TRUE
+lib1x_akmsm_execute: Receive EAPOL Key
+lib1x_akmsm_execute: Has EAPOL Key Packet sent to supplicant
+Could not allocate memory for send buffer.
+addr
+ Null argument received.
+Maxmun Retry. Disassociate with AP
+Wait for packet Timeout, Resent
+Receive Disassociation Indication, Reason Code = %d. Reset State Machine
+Receive association Indication, Reset State Machine
+none
+WEP40
+TKIP
+WEP104
+invalid algorithm
+WPA2
+%s: %s-%s PSK authentication in progress...
+Receive DOT11_EVENT_WPA2_MULTICAST_CIPHER
+Receive DOT11_EVENT_WPA_MULTICAST_CIPHER
+lib1x_skmsm_EAPOLKeyRecvd
+Message 4-1
+4-1 received
+AP trigger pairwise rekey
+Message 4-1 ERROR_EQUALSMALLER_REPLAYCOUNTER %d, (%d, %d)
+%s:%d ERROR!
+Message 4-2
+4-2 sent
+Message 4-3
+4-3 received
+Message 4-3:ERROR_EQUALSMALLER_REPLAYCOUNTER %d
+Message 4-3:ERROR_NONEQUAL_NONCE %d
+%s: Authentication failled! (4-3: ERROR_NONEQUAL_NONCE)
+Message 4-3:ERROR_MIC_FAIL %d
+%s: Authentication failled! (4-3: MIC error)
+4-3 KeyData (Decrypted) ERROR
+Message 4-3:ERROR_AESKEYWRAP_MIC_FAIL %d
+%s: Authentication failled! (4-3: ERROR_AESKEYWRAP_MIC_FAIL)
+The second optional RSNIE is present! Cannot handle it yet!
+Message 4-4
+4-4 sent
+4-Way Message 4-4 done
+%s: Open and authenticated
+Message 2-1
+Message 2-1:ERROR_EQUALSMALLER_REPLAYCOUNTER %d
+Message 2-1:ERROR_MIC_FAIL %d
+Message 2-1:ERROR_AESKEYWRAP_MIC_FAIL %d
+Group Message 2-2 done
+pGlobal is NULL
+lib1x_nal_intfdesc is NULL
+spkt is NULL
+Too small a packet received from nal.
+NUUL Pairwise Share Key
+Time Out
+MIC Failure
+Fail to set Pairwise Transient Key
+Non Equal Replay 
+Equal/Smaller Replay 
+Non Equal Nonce received in 3rd Message
+AES_WRAP MIC Fail
+Larger Replay 
+Invalid Group key length received
+Non Equal RSN Information Element received
+Uknown Failure
+YXPMK Name
+Pairwise key expansion
+Init Counter
+Group key expansion
+Input Buffer too small
+Invalid RSNIE Parameter
+Invalid RSNIE
+Multicast Cipher is not valid
+Unicast Cipher is not valid
+Authentication Key Management Protocol is not valid
+Unsupported RSNE version
+Invalid RSNE Capabilities
+Uknown Failure
+Llib1x_authRSN_constructIE: WPA2 RSN IE
+pDot11RSNIESuite->Type = %x
+A9 99 3E 36 47 06 81 6A BA 3E 25 71 78 50 C2 6C 9C D0 D8 9D
+84 98 3E 44 1C 3B D2 6E BA AE 4A A1 F9 51 29 E5 E5 46 70 F1
+34 AA 97 3C D4 C4 DA A4 F6 1E EB 2B DB AD 27 31 65 34 01 6F
+DE A3 56 A2 CD DD 90 C7 A7 EC ED C5 EB B5 63 93 4F 46 04 52
+abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq
+0123456701234567012345670123456701234567012345670123456701234567
+34AA973C D4C4DAA4 F61EEB2B DBAD2731 6534016F
+84983E44 1C3BD26E BAAE4AA1 F95129E5 E54670F1
+A9993E36 4706816A BA3E2571 7850C26C 9CD0D89D
+lib1x_nal_send: Descriptor contains invalid network identifier.
+libnet_write_link_layer send packets %d
+lib1x_nal_send: Sending Accounting UDP packet.
+lib1x_nal_send: Mismatch in send size!
+ NUM_SENT : %d . actual %d
+ lib1x_acctsm_sendReqToServer================.
+ Sending Accouting information to server.
+Send Acct-Request to Radius Server
+LIB1X_RADACCT_ACTION_ACCOUNT_START
+LIB1X_RADACCT_ACTION_ACCOUNT_STOP
+tx_packets= %d
+rx_packets= %d
+tx_bytes= %d
+rx_bytes= %d
+LIB1X_RADACCT_ACTION_INTERIM_UPDATE
+LIB1X_RADACCT_ACTION_TERMINATE_CAUSE
+acctsm_Acct_Start
+==============================================
+global->auth->GlobalSessionId = %d
+acctsm_Acct_Stop
+%02x-%02x-%02x-%02x-%02x-%02x
+malloc: %s
+socket: %s
+SIOCGIFHWADDR: %s
+unknown physical layer type 0x%x
+get_hwaddr: %s
+get_pmksa_node
+%s: malloc fails
+PMK Cache:
+Realtek Access Point. 8186
+ssid
+encryption
+enable1x
+enableMacAuth
+supportNonWpaClient
+wepKey
+wepGroupKey
+authentication
+unicastCipher
+wpa2UnicastCipher
+enablePreAuth
+usePassphrase
+groupRekeyTime
+rsPort
+rsIP
+rsPassword
+rs2Port
+rs2IP
+rs2Password
+rs2enableMacAuth
+rsMaxReq
+rsAWhile
+rsNasId
+rsReAuthTO
+accountRsEnabled
+accountRsPort
+accountRsIP
+accountRsPassword
+accountRsMaxReq
+accountRsAWhile
+accountRsUpdateEnabled
+accountRsUpdateTime
+abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq

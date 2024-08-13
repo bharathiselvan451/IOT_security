@@ -1,0 +1,11 @@
+[*] Binary protection state of radvdctl
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of radvdctl
+
+
+[*] Function strcpy used 0 times radvdctl
+

@@ -1,0 +1,11 @@
+[*] Binary protection state of ohci-hcd.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function sprintf tear down of ohci-hcd.ko
+
+
+[*] Function sprintf used 0 times ohci-hcd.ko
+

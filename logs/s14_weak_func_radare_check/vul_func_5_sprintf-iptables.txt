@@ -1,0 +1,208 @@
+[*] Binary protection state of iptables
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of iptables
+
+b 0x42b110
+addiu v1, v0, 0x3048
+lw v0, -0x7fe0(gp)
+b 0x42b110
+addiu v1, v0, 0x3068
+lw v0, -0x7fe0(gp)
+addiu v1, v0, 0x3294
+jr ra
+move v0, v1
+lui gp, 7
+addiu gp, gp, -0x7e18
+addu gp, gp, t9
+addiu sp, sp, -0x30
+sw ra, 0x2c(sp)
+sw s0, 0x28(sp)
+sw gp, 0x20(sp)
+lbu t1, 5(a0)
+lbu v0, 2(a0)
+lbu t0, 3(a0)
+lbu v1, 4(a0)
+lw s0, -0x7fd0(gp)
+lw a1, -0x7fe0(gp)
+lbu a2, (a0)
+lbu a3, 1(a0)
+addiu a1, a1, 0x32a4
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a0, s0, -0x35a0
+sw v0, 0x10(sp)
+sw t0, 0x14(sp)
+sw v1, 0x18(sp)
+jalr t9
+sw t1, 0x1c(sp)
+addiu v0, s0, -0x35a0
+lw gp, 0x20(sp)
+lw ra, 0x2c(sp)
+lw s0, 0x28(sp)
+jr ra
+addiu sp, sp, 0x30
+lui gp, 7
+addiu gp, gp, -0x7e8c
+addu gp, gp, t9
+addiu sp, sp, -0x30
+sw ra, 0x2c(sp)
+sw s2, 0x28(sp)
+sw s1, 0x24(sp)
+sw s0, 0x20(sp)
+--
+addiu a1, a1, 0x6880
+lw v0, -obj.xt_params(gp)
+move a1, a2
+addiu a2, sp, 0x30
+lw v0, (v0)
+lw t9, 0x14(v0)
+jalr t9
+nop
+lw ra, 0x20(sp)
+jr ra
+addiu sp, sp, 0x28
+lui gp, 6
+addiu gp, gp, -0x850
+addu gp, gp, t9
+addiu sp, sp, -0x28
+sw ra, 0x24(sp)
+sw s0, 0x20(sp)
+sw gp, 0x18(sp)
+lw s0, -0x7fd0(gp)
+lbu v1, 3(a0)
+lbu v0, 2(a0)
+lw a1, -0x7fe0(gp)
+lbu a2, (a0)
+lbu a3, 1(a0)
+addiu a1, a1, 0x68a4
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a0, s0, -0x3580
+sw v0, 0x10(sp)
+jalr t9
+sw v1, 0x14(sp)
+addiu v0, s0, -0x3580
+lw gp, 0x18(sp)
+lw ra, 0x24(sp)
+lw s0, 0x20(sp)
+jr ra
+addiu sp, sp, 0x28
+lui gp, 6
+addiu gp, gp, -0x8b4
+addu gp, gp, t9
+addiu sp, sp, -0x20
+sw ra, 0x1c(sp)
+sw s0, 0x18(sp)
+sw gp, 0x10(sp)
+addiu a1, zero, 4
+lw t9, -sym.imp.gethostbyaddr(gp)
+addiu a2, zero, 2
+--
+lui gp, 6
+addiu gp, gp, -0x948
+addu gp, gp, t9
+addiu sp, sp, -0x20
+sw ra, 0x1c(sp)
+sw s0, 0x18(sp)
+sw gp, 0x10(sp)
+addiu v0, zero, -1
+lw v1, (a0)
+bne v1, v0, 0x433c80
+addiu a2, zero, 0x1f
+lw v0, -0x7fe0(gp)
+b 0x433cf0
+addiu v0, v0, 0x68b0
+addiu v0, zero, -2
+beq v1, v0, 0x433c98
+nop
+addiu a2, a2, -1
+bgez a2, 0x433c84
+sll v0, v0, 1
+lw s0, -0x7fd0(gp)
+bltz a2, 0x433cb8
+nop
+lw a1, -0x7fe0(gp)
+addiu a0, s0, -0x356c
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+b 0x433cdc
+addiu a1, a1, 0x68b4
+lw t9, -sym.xtables_ipaddr_to_numeric(gp)
+jalr t9
+nop
+addiu a0, s0, -0x356c
+lw gp, 0x10(sp)
+move a2, v0
+lw a1, -0x7fe0(gp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a1, a1, 0x68b8
+jalr t9
+nop
+lw gp, 0x10(sp)
+lw v0, -0x7fd0(gp)
+addiu v0, v0, -0x356c
+lw ra, 0x1c(sp)
+lw s0, 0x18(sp)
+jr ra
+addiu sp, sp, 0x20
+lui gp, 6
+addiu gp, gp, -0xa00
+addu gp, gp, t9
+addiu sp, sp, -0x60
+sw ra, 0x58(sp)
+sw s5, 0x54(sp)
+sw s4, 0x50(sp)
+sw s3, 0x4c(sp)
+sw s2, 0x48(sp)
+sw s1, 0x44(sp)
+--
+bnez a1, 0x434770
+nop
+bnez a3, 0x434770
+nop
+bnez t0, 0x434770
+nop
+beqz t1, 0x434778
+addiu v0, zero, -1
+addiu a2, zero, -1
+addiu v0, zero, -1
+lw s0, -0x7fd0(gp)
+bne a2, v0, 0x4347ac
+addiu v0, zero, 0x2f00
+lw t9, -sym.xtables_ip6addr_to_numeric(gp)
+jalr t9
+sh v0, -0x3114(s0)
+addiu a0, s0, -0x3114
+lw gp, 0x10(sp)
+lw t9, -sym.imp.strcat(gp)
+jalr t9
+move a1, v0
+b 0x4347c4
+addiu v0, s0, -0x3114
+lw a1, -0x7fe0(gp)
+addiu a0, s0, -0x3114
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+jalr t9
+addiu a1, a1, 0x68b4
+addiu v0, s0, -0x3114
+lw gp, 0x10(sp)
+lw ra, 0x1c(sp)
+lw s0, 0x18(sp)
+jr ra
+addiu sp, sp, 0x20
+lui gp, 6
+addiu gp, gp, -0x14d8
+addu gp, gp, t9
+addiu sp, sp, -0x20
+sw ra, 0x1c(sp)
+sw s0, 0x18(sp)
+sw gp, 0x10(sp)
+lw s0, -0x7fd0(gp)
+move a1, a0
+lw t9, -sym.imp.inet_pton(gp)
+addiu a0, zero, 0xa
+addiu a2, s0, -0x30e0
+
+[*] Function sprintf used 5 times iptables
+

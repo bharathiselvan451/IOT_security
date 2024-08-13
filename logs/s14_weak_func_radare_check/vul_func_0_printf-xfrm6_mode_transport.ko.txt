@@ -1,0 +1,11 @@
+[*] Binary protection state of xfrm6_mode_transport.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function printf tear down of xfrm6_mode_transport.ko
+
+
+[*] Function printf used 0 times xfrm6_mode_transport.ko
+

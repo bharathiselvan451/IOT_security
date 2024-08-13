@@ -1,0 +1,109 @@
+RELRO;STACK CANARY;NX;PIE;RPATH;RUNPATH;Symbols;FORTIFY;Fortified;Fortifiable;FILE
+No RELRO;No Canary found;NX disabled;PIE enabled;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libpthread-0.9.30.so
+Partial RELRO;No Canary found;NX disabled;PIE enabled;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libdl-0.9.30.so
+Full RELRO;No Canary found;NX disabled;PIE enabled;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/ld-uClibc-0.9.30.so
+No RELRO;No Canary found;NX disabled;PIE enabled;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libm-0.9.30.so
+No RELRO;No Canary found;NX disabled;PIE enabled;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libuClibc-0.9.30.so
+No RELRO;No Canary found;NX disabled;PIE enabled;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libthreadutil.so.2.2.3
+No RELRO;No Canary found;NX disabled;PIE enabled;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libgcc_s_5281.so.1
+No RELRO;No Canary found;NX disabled;PIE enabled;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libixml.so.2.0.4
+No RELRO;No Canary found;NX disabled;PIE enabled;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/librt-0.9.30.so
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_conntrack.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/cls_fw.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/scsi_wait_scan.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/ipt_REJECT.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_nat_tftp.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_conntrack_ftp.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_nat_h323.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/br_filter.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nls_iso8859-1.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_state.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/pptp.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nls_utf8.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/sch_sfq.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/ehci-hcd.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_mac.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/NetUSB.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_nat_proto_gre.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_time.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/sch_htb.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/usbcore.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_conntrack_h323.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/pppol2tp.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_nat_rtsp.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_conntrack_rtsp.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_conntrack_proto_gre.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_CLASSIFY.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/usb-storage.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/GPL_NetUSB.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xfrm6_mode_beet.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/cls_basic.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/sch_prio.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/tp_domain.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_mark.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_MARK.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_conntrack_tftp.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/tunnel4.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/wlan_warn.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_nat_pptp.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/ntfs.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xfrm6_mode_tunnel.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/statistics.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_comment.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/rtl8198_gpio.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nls_cp850.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/ts_fsm.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/ipt_REDIRECT.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_multiport.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/ts_kmp.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_string.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/sit.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/fuse.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_conntrack_pptp.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/fat.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/nf_nat_ftp.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/ipt_TRIGGER.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_TCPMSS.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/ipv6.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/tp_kernel_calls.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/iptable_filter.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/ts_bm.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xfrm6_mode_transport.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/xt_iprange.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/vfat.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/ohci-hcd.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/usbmon.ko
+No RELRO;No Canary found;NX disabled;REL;No RPATH;No RUNPATH;Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/modules/2.6.30/kernel/ipt_multiurl.ko
+No RELRO;No Canary found;NX disabled;DSO;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libutil-0.9.30.so
+No RELRO;No Canary found;NX disabled;DSO;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libnsl-0.9.30.so
+No RELRO;No Canary found;NX disabled;PIE enabled;RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5
+No RELRO;No Canary found;NX disabled;PIE enabled;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libcrypt-0.9.30.so
+No RELRO;No Canary found;NX disabled;PIE enabled;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0
+No RELRO;No Canary found;NX disabled;PIE enabled;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libmsglog.so
+No RELRO;No Canary found;NX disabled;DSO;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libresolv-0.9.30.so
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/dhcp6s
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/xl2tpd
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/radvd
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ip
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/pppd
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/smbd
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/bpalogin
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/dhcp6ctl
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/radvdctl
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ping6
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/dhcp6c
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/tc
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/lld2d
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iwcontrol
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/auth
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iapp
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iwpriv
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;4;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/acltd
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox
+No RELRO;No Canary found;NX disabled;No PIE;RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd
+No RELRO;No Canary found;NX disabled;No PIE;No RPATH;No RUNPATH;No Symbols;No;0;0;/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/usbp

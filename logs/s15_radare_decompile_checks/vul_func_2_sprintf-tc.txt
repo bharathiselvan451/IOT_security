@@ -1,0 +1,122 @@
+[*] Binary protection state of tc
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of tc
+
+    ; assembly                           | /* r2dec pseudo code output */
+                                         | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/tc @ 0x419118 */
+                                         | #include <stdint.h>
+                                         |  
+    ; (fcn) sym.addr_to_dotted ()        | void addr_to_dotted () {
+    0x00419118 lui gp, 5                 |     
+    0x0041911c addiu gp, gp, 0x5e98      |     
+    0x00419120 addu gp, gp, t9           |     gp += t9;
+    0x00419124 addiu sp, sp, -0x28       |     
+    0x00419128 sw ra, 0x24(sp)           |     *(var_24h) = ra;
+    0x0041912c sw s0, 0x20(sp)           |     *(var_20h) = s0;
+    0x00419130 sw gp, 0x18(sp)           |     *(var_18h) = gp;
+    0x00419134 lw s0, -0x7fe8(gp)        |     s0 = *((gp - 8186));
+    0x00419138 lbu v1, 3(a0)             |     v1 = *((a0 + 3));
+    0x0041913c lbu v0, 2(a0)             |     v0 = *((a0 + 2));
+    0x00419140 lw a1, -0x7fe0(gp)        |     a1 = *((gp - 8184));
+    0x00419144 lbu a2, (a0)              |     a2 = *(a0);
+    0x00419148 lbu a3, 1(a0)             |     a3 = *((a0 + 1));
+                                         |     /* esilref: '&d.&d.&d.&d' */
+    0x0041914c addiu a1, a1, 0x592c      |     a1 += 0x592c;
+[31m    0x00419150 lw t9, -0x7e7c(gp)        |     t9 = sym.imp.sprintf;[0m
+    0x00419154 addiu a0, s0, 0x75d0      |     a0 = s0 + 0x75d0;
+    0x00419158 sw v0, 0x10(sp)           |     *(var_10h) = v0;
+    0x0041915c sw v1, 0x14(sp)           |     *(var_14h) = v1;
+    0x00419160 jalr t9                   |     t9 ();
+    0x00419164 addiu v0, s0, 0x75d0      |     v0 = s0 + 0x75d0;
+    0x00419168 lw gp, 0x18(sp)           |     gp = *(var_18h);
+    0x0041916c lw ra, 0x24(sp)           |     ra = *(var_24h);
+    0x00419170 lw s0, 0x20(sp)           |     s0 = *(var_20h);
+    0x00419174 addiu sp, sp, 0x28        |     
+    0x00419178 jr ra                     |     return v0;
+                                         | }
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/tc @ 0x41dde0 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) sym.hexstring_n2a ()             | void hexstring_n2a () {
+    0x0041dde0 lui gp, 5                     |     
+    0x0041dde4 addiu gp, gp, 0x11d0          |     
+    0x0041dde8 addu gp, gp, t9               |     gp += t9;
+    0x0041ddec addiu sp, sp, -0x40           |     
+    0x0041ddf0 sw ra, 0x3c(sp)               |     *(var_3ch) = ra;
+    0x0041ddf4 sw fp, 0x38(sp)               |     *(var_38h) = fp;
+    0x0041ddf8 sw s7, 0x34(sp)               |     *(var_34h) = s7;
+    0x0041ddfc sw s6, 0x30(sp)               |     *(var_30h) = s6;
+    0x0041de00 sw s5, 0x2c(sp)               |     *(var_2ch) = s5;
+    0x0041de04 sw s4, 0x28(sp)               |     *(var_28h) = s4;
+    0x0041de08 sw s3, 0x24(sp)               |     *(var_24h) = s3;
+    0x0041de0c sw s2, 0x20(sp)               |     *(var_20h) = s2;
+    0x0041de10 sw s1, 0x1c(sp)               |     *(var_1ch) = s1;
+    0x0041de14 sw s0, 0x18(sp)               |     *(var_18h) = s0;
+    0x0041de18 sw gp, 0x10(sp)               |     *(var_10h) = gp;
+    0x0041de1c move s2, zero                 |     s2 = 0;
+    0x0041de20 move fp, a2                   |     fp = a2;
+    0x0041de24 move s4, a1                   |     s4 = a1;
+    0x0041de28 move s6, a0                   |     s6 = a0;
+    0x0041de2c move s0, a3                   |     s0 = a3;
+    0x0041de30 move s1, a2                   |     s1 = a2;
+                                             |     if (a1 <= 0) {
+    0x0041de34 blez a1, 0x41de9c             |         goto label_0;
+                                             |     }
+    0x0041de38 lw s5, -0x7fe0(gp)            |     s5 = *((gp - 8184));
+    0x0041de3c addiu s3, a1, -1              |     s3 = a1 + -1;
+    0x0041de40 addiu s7, zero, 0x3a          |     s7 = 0x3a;
+    0x0041de44 slti v0, s0, 3                |     v0 = (s0 < 3) ? 1 : 0;
+                                             |     do {
+    0x0041de48 move a0, s1                   |         a0 = s1;
+    0x0041de4c addu v1, s6, s2               |         v1 = s6 + s2;
+                                             |         /* esilref: '&02x' */
+    0x0041de50 addiu a1, s5, 0x61cc          |         a1 = s5 + 0x61cc;
+[31m    0x0041de54 lw t9, -0x7e7c(gp)            |         t9 = sym.imp.sprintf;[0m
+    0x0041de58 addiu s1, s1, 2               |         s1 += 2;
+                                             |         if (v0 != 0) {
+    0x0041de5c bnez v0, 0x41de9c             |             goto label_0;
+                                             |         }
+    0x0041de60 lbu a2, (v1)                  |         a2 = *(v1);
+    0x0041de64 addiu s0, s0, -2              |         s0 += -2;
+    0x0041de68 jalr t9                       |         t9 ();
+    0x0041de6c lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x0041de70 slti v0, s0, 2                |         v0 = (s0 < 2) ? 1 : 0;
+                                             |         if (s3 != s2) {
+    0x0041de74 beq s3, s2, 0x41de8c          |             
+                                             |             if (v0 != 0) {
+    0x0041de78 bnez v0, 0x41de8c             |                 goto label_1;
+                                             |             }
+    0x0041de7c nop                           |             
+    0x0041de80 sb s7, (s1)                   |             *(s1) = s7;
+    0x0041de84 addiu s0, s0, -1              |             s0 += -1;
+    0x0041de88 addiu s1, s1, 1               |             s1++;
+                                             |         }
+                                             | label_1:
+    0x0041de8c addiu s2, s2, 1               |         s2++;
+    0x0041de90 slt v0, s2, s4                |         v0 = (s2 < s4) ? 1 : 0;
+    0x0041de94 slti v0, s0, 3                |         v0 = (s0 < 3) ? 1 : 0;
+    0x0041de98 bnez v0, 0x41de48             |         
+                                             |     } while (v0 != 0);
+                                             | label_0:
+    0x0041de9c move v0, fp                   |     v0 = fp;
+    0x0041dea0 lw ra, 0x3c(sp)               |     ra = *(var_3ch);
+    0x0041dea4 lw fp, 0x38(sp)               |     fp = *(var_38h);
+    0x0041dea8 lw s7, 0x34(sp)               |     s7 = *(var_34h);
+    0x0041deac lw s6, 0x30(sp)               |     s6 = *(var_30h);
+    0x0041deb0 lw s5, 0x2c(sp)               |     s5 = *(var_2ch);
+    0x0041deb4 lw s4, 0x28(sp)               |     s4 = *(var_28h);
+    0x0041deb8 lw s3, 0x24(sp)               |     s3 = *(var_24h);
+    0x0041debc lw s2, 0x20(sp)               |     s2 = *(var_20h);
+    0x0041dec0 lw s1, 0x1c(sp)               |     s1 = *(var_1ch);
+    0x0041dec4 lw s0, 0x18(sp)               |     s0 = *(var_18h);
+    0x0041dec8 addiu sp, sp, 0x40            |     
+    0x0041decc jr ra                         |     return v0;
+                                             | }
+
+[*] Function sprintf used 2 times tc
+

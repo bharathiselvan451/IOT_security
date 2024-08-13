@@ -1,0 +1,11 @@
+[*] Binary protection state of libutil-0.9.30.so
+
+  
+  	No RELRO       No Canary found   NX disabled  DSO          No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of libutil-0.9.30.so
+
+
+[*] Function strcat used 0 times libutil-0.9.30.so
+

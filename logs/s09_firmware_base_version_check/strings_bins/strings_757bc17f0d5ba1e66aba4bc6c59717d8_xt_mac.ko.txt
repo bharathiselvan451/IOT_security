@@ -1,0 +1,47 @@
+ (!$B
+alias=ip6t_mac
+alias=ipt_mac
+description=Xtables: MAC address match
+author=Netfilter Core Team <coreteam@netfilter.org>
+license=GPL
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+xt_mac
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.mac_mt
+.rel.init.text
+.rel.exit.text
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+xt_mac.c
+mac_mt_init
+mac_mt_exit
+__mod_alias32
+__mod_alias31
+__mod_description30
+__mod_author29
+__mod_license28
+mac_mt_reg
+mac_mt
+xt_mac.mod.c
+__module_depends
+__mod_vermagic5
+xt_register_match
+__this_module
+cleanup_module
+memcpy
+init_module
+local_bh_enable
+xt_unregister_match
+local_bh_disable
+memcmp

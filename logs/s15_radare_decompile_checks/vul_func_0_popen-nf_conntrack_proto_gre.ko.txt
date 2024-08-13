@@ -1,0 +1,11 @@
+[*] Binary protection state of nf_conntrack_proto_gre.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function popen tear down of nf_conntrack_proto_gre.ko
+
+
+[*] Function popen used 0 times nf_conntrack_proto_gre.ko
+

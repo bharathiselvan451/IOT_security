@@ -1,0 +1,11 @@
+[*] Binary protection state of ipv6.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcat tear down of ipv6.ko
+
+
+[*] Function strcat used 0 times ipv6.ko
+

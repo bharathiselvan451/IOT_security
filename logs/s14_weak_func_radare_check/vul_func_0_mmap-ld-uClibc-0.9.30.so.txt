@@ -1,0 +1,11 @@
+[*] Binary protection state of ld-uClibc-0.9.30.so
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	Full RELRO     No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function mmap tear down of ld-uClibc-0.9.30.so
+
+
+[*] Function mmap used 0 times ld-uClibc-0.9.30.so
+

@@ -1,0 +1,11 @@
+[*] Binary protection state of libpthread-0.9.30.so
+
+  
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of libpthread-0.9.30.so
+
+
+[*] Function fprintf used 0 times libpthread-0.9.30.so
+

@@ -1,0 +1,11 @@
+[*] Binary protection state of ip
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function system tear down of ip
+
+
+[*] Function system used 0 times ip
+

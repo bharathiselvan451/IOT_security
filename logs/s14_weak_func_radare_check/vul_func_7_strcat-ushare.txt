@@ -1,0 +1,303 @@
+[*] Binary protection state of ushare
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of ushare
+
+lw s0, (s1)
+lw t9, -sym.imp.malloc(gp)
+beqz s0, 0x4085a4
+ori a0, zero, 0x8000
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s2
+lw t0, 4(s1)
+lw a2, 8(s1)
+addu a3, t0, v0
+sll a1, a2, 1
+addiu v0, a3, 1
+sltu a0, a1, v0
+sltu v1, a3, a2
+lw gp, 0x10(sp)
+movz v0, a1, a0
+move a1, v0
+lw t9, -sym.imp.realloc(gp)
+bnez v1, 0x40855c
+move a0, s0
+jalr t9
+sw v0, 8(s1)
+lw gp, 0x10(sp)
+move s0, v0
+sw v0, (s1)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+move a0, s0
+jalr t9
+move a1, s2
+lw gp, 0x10(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s2
+lw t2, 4(s1)
+lw gp, 0x10(sp)
+addu t1, t2, v0
+sw t1, 4(s1)
+lw ra, 0x24(sp)
+lw s2, 0x20(sp)
+lw s1, 0x1c(sp)
+lw s0, 0x18(sp)
+jr ra
+addiu sp, sp, 0x28
+ori v0, zero, 0x8000
+jalr t9
+sw v0, 8(s1)
+--
+addiu s0, v0, 1
+lw s0, (s2)
+beqz s0, 0x408818
+addiu s1, sp, 0x18
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s1
+lw t8, 4(s2)
+lw a0, 8(s2)
+addu v1, t8, v0
+sltu s4, v1, a0
+lw gp, 0x10(sp)
+bnez s4, 0x4086c8
+sll ra, a0, 1
+addiu v0, v1, 1
+sltu a1, ra, v0
+movn ra, v0, a1
+lw t9, -sym.imp.realloc(gp)
+move a1, ra
+sw ra, 8(s2)
+jalr t9
+move a0, s0
+lw gp, 0x10(sp)
+move s0, v0
+sw v0, (s2)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+move a0, s0
+jalr t9
+move a1, s1
+lw gp, 0x10(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s1
+lw a0, 4(s2)
+lw gp, 0x10(sp)
+addu v1, a0, v0
+sw v1, 4(s2)
+addiu sp, sp, 0x50
+lw ra, 0x7fdc(sp)
+lw s4, 0x7fd8(sp)
+lw s3, 0x7fd4(sp)
+lw s2, 0x7fd0(sp)
+lw s1, 0x7fcc(sp)
+lw s0, 0x7fc8(sp)
+jr ra
+addiu sp, sp, 0x7fe0
+--
+nop
+lw s0, (s2)
+beqz s0, 0x408858
+ori t1, zero, 0x8000
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s3
+lw t3, 4(s2)
+lw a0, 8(s2)
+addu v1, t3, v0
+sltu t2, v1, a0
+lw gp, 0x10(sp)
+bnez t2, 0x4087b4
+sll t4, a0, 1
+addiu t5, v1, 1
+sltu t6, t4, t5
+move a0, s0
+movn t4, t5, t6
+lw t9, -sym.imp.realloc(gp)
+move a1, t4
+jalr t9
+sw t4, 8(s2)
+lw gp, 0x10(sp)
+move s0, v0
+sw v0, (s2)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+move a0, s0
+jalr t9
+move a1, s3
+lw gp, 0x10(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s3
+lw s1, 4(s2)
+lw gp, 0x10(sp)
+addu t7, s1, v0
+sw t7, 4(s2)
+lw t9, -sym.imp.free(gp)
+jalr t9
+move a0, s3
+lw gp, 0x10(sp)
+addiu sp, sp, 0x50
+lw ra, 0x7fdc(sp)
+lw s4, 0x7fd8(sp)
+lw s3, 0x7fd4(sp)
+lw s2, 0x7fd0(sp)
+--
+addiu sp, sp, -0x418
+sw ra, 0x414(sp)
+sw s4, 0x410(sp)
+sw s3, 0x40c(sp)
+sw s2, 0x408(sp)
+sw s1, 0x404(sp)
+sw s0, 0x400(sp)
+sw gp, 0x38(sp)
+lw t0, 0x42c(sp)
+move s2, a1
+move s3, a2
+lw v1, (t0)
+sltiu v0, v1, 0x1d
+bnez v0, 0x411f94
+move s4, a3
+lw v0, -obj.dlna_id_type_list(gp)
+addiu a2, zero, 1
+lw s0, (v0)
+beq a0, a2, 0x411fb0
+nop
+lw v1, 4(t0)
+sltiu t0, v1, 0x22
+bnez t0, 0x411fe0
+nop
+lw v0, -obj.dlna_mime_type_list(gp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+lw a1, (v0)
+jalr t9
+addiu a0, sp, 0x40
+move a0, s0
+lw gp, 0x38(sp)
+lw t6, -0x7fe0(gp)
+lw t9, -sym.imp.strcmp(gp)
+jalr t9
+addiu a1, t6, -0x6c44
+lw gp, 0x38(sp)
+bnez v0, 0x412020
+nop
+lw t8, -0x7fe0(gp)
+addiu s1, sp, 0x240
+[31mlw t9, -sym.imp.strcat(gp)[0m
+move a1, s1
+addiu s4, t8, -0x6970
+addiu a0, sp, 0x40
+lw t7, 0xc(s4)
+lw s3, -0x6970(t8)
+lw s2, 4(s4)
+lw s0, 8(s4)
+sw s3, 0x240(sp)
+sw s2, 0x244(sp)
+sw s0, 0x248(sp)
+jalr t9
+sw t7, 0x24c(sp)
+lw gp, 0x38(sp)
+lw t9, -sym.imp.strdup(gp)
+jalr t9
+addiu a0, sp, 0x40
+lw gp, 0x38(sp)
+lw ra, 0x414(sp)
+lw s4, 0x410(sp)
+lw s3, 0x40c(sp)
+--
+lw s1, 0x404(sp)
+lw s0, 0x400(sp)
+jr ra
+addiu sp, sp, 0x418
+sll a1, v1, 2
+addiu a2, zero, 1
+lw v1, -obj.dlna_id_type_list(gp)
+addu v0, a1, v1
+lw s0, (v0)
+bne a0, a2, 0x411edc
+nop
+lw t3, -0x7fe0(gp)
+addiu t2, t3, -0x6960
+lw a3, 8(t2)
+lw a0, -0x6960(t3)
+lw t1, 4(t2)
+sw a0, 0x40(sp)
+sw t1, 0x44(sp)
+sw a3, 0x48(sp)
+lw v1, 4(t0)
+sltiu t0, v1, 0x22
+beqz t0, 0x411eec
+nop
+lw t5, -obj.dlna_mime_type_list(gp)
+sll t4, v1, 2
+[31mlw t9, -sym.imp.strcat(gp)[0m
+addu v0, t4, t5
+lw a1, (v0)
+jalr t9
+addiu a0, sp, 0x40
+move a0, s0
+lw gp, 0x38(sp)
+lw t6, -0x7fe0(gp)
+lw t9, -sym.imp.strcmp(gp)
+jalr t9
+addiu a1, t6, -0x6c44
+lw gp, 0x38(sp)
+beqz v0, 0x411f24
+nop
+lw t4, -0x7fe0(gp)
+addiu s1, sp, 0x240
+lw t0, -0x7fe0(gp)
+move a3, s2
+lw t2, -0x7fe0(gp)
+addiu a0, t4, -0x6954
+lw v1, -0x7fe0(gp)
+addiu t3, t0, -0x6948
+lw ra, 0x428(sp)
+addiu t1, t2, -0x693c
+lw a1, -0x7fe0(gp)
+addiu v0, v1, -0x6930
+lw a2, -0x7fe0(gp)
+lw t9, -sym.imp.sprintf(gp)
+addiu a1, a1, -0x6920
+sw ra, 0x2c(sp)
+addiu a2, a2, -0x68f8
+sw t3, 0x18(sp)
+sw t1, 0x20(sp)
+sw a0, 0x10(sp)
+move a0, s1
+sw s3, 0x14(sp)
+sw s4, 0x1c(sp)
+sw s0, 0x24(sp)
+sw v0, 0x28(sp)
+jalr t9
+sw zero, 0x30(sp)
+move a1, s1
+lw gp, 0x38(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+addiu a0, sp, 0x40
+lw gp, 0x38(sp)
+lw t9, -sym.imp.strdup(gp)
+jalr t9
+addiu a0, sp, 0x40
+lw gp, 0x38(sp)
+lw ra, 0x414(sp)
+lw s4, 0x410(sp)
+lw s3, 0x40c(sp)
+lw s2, 0x408(sp)
+lw s1, 0x404(sp)
+lw s0, 0x400(sp)
+jr ra
+addiu sp, sp, 0x418
+nop
+nop
+nop
+jr ra
+move v0, zero
+
+[*] Function strcat used 7 times ushare
+

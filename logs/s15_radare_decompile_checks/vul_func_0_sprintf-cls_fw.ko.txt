@@ -1,0 +1,11 @@
+[*] Binary protection state of cls_fw.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function sprintf tear down of cls_fw.ko
+
+
+[*] Function sprintf used 0 times cls_fw.ko
+

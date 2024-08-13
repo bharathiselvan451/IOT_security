@@ -1,0 +1,245 @@
+/lib/ld-uClibc.so.0
+_init
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+stderr
+fputs
+sscanf
+strcmp
+fprintf
+strlen
+memcpy
+iw_in_addr
+strncpy
+iw_get_priv_size
+ioctl
+__errno_location
+strerror
+putchar
+iw_ether_ntop
+iw_get_priv_info
+iw_sockets_open
+perror
+iw_enum_devices
+strncmp
+iw_print_version_info
+strcasecmp
+exit
+strncasecmp
+socket
+__ctype_b
+fopen
+fgets
+strrchr
+fclose
+memset
+iw_ignore_version
+__floatsidf
+__muldf3
+iw_freq2float
+__gtdf2
+__divdf3
+__fixdfsi
+iw_float2freq
+strchr
+sprintf
+__ltdf2
+__gedf2
+__eqdf2
+iw_pass_key
+malloc
+strcpy
+strtok
+free
+getnetbyname
+gethostbyname
+__h_errno_location
+index
+iw_check_if_addr_type
+iw_in_inet
+iw_check_mac_addr_type
+iw_ether_aton
+libc.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GCC_3.0
+GLIBC_2.0
+ '9S
+$!dT
+$BdT
+  !$B
+ (b@
+ $Idp
+8!'9
+ !$bd`
+hd`$
+@(!$
+$c\d
+@ !&R
+`0!'
+@(!$
+@ !'
+!$Q_
+	$T_
+P0!$
+ !&R
+$B`p
+ $B`|
+$B`p
+ $B`|
+$B`p
+ $B`|
+ $Ca$
+& *$Ea(
+Ha,$Ga,:"
+&ea0
+&ea0&1
+ $Ca
+ $Ca
+ $ba
+ $Ca
+4BB?
+ $Ca
+ $Cb
+ $bb$
+ $Cb@
+ $bbT
+ $Ca
+ $Ca
+ $bbl
+4BB?
+$B\D
+ $B\
+      
+byte 
+char 
+int  
+addr 
+Usage: iwpriv interface [private-command [private-arguments]]
+              interface [roam {on|off}]
+              interface [port {ad-hoc|managed|N}]
+[%d]
+Invalid command : %s
+Here < ? 
+Invalid private ioctl definition for : %s
+<mapping sub-ioctl %s to cmd 0x%X-%d>
+The command %s need exactly %d argument...
+length=0?
+Interface doesn't accept private ioctl...
+%s (%X): %s
+%-8.8s  %s:
+%d  
+Set PRIV FLOAT is not allowed!
+           %.*s
+                
+Not yet implemented...
+Invalid address [%s]...
+%-8.8s  no private ioctls.
+%-8.8s  Available private ioctl :
+          %-16.16s (%.4X) : set %3d %s & get %3d %s
+%-8.8s  Available read-only private ioctl :
+socket
+--all
+--help
+--version
+iwpriv
+roam
+%-8.8s  enable roaming
+%-8.8s  disable roaming
+setroam
+This device doesn't support roaming
+Roaming support is broken.
+port
+invalid
+managed (BSS)
+reserved
+ad-hoc
+gport_type
+get_port
+This device doesn't support getting port type
+Port type support is broken.
+%-8.8s  Current port mode is %s <port type is %d>.
+sport_type
+set_port
+This device doesn't support setting port type
+Invalid port type (or setting not allowed)
+Auto
+Ad-Hoc
+Managed
+Master
+Repeater
+Secondary
+Monitor
+										
+/proc/net/dev
+Cannot parse /proc/net/wireless
+SIOCGIFCONF: %s
+Warning: Driver for device %s has been compiled with version %d
+of Wireless Extension, while this program is using version %d.
+Some things may be broken...
+Warning: Driver for device %s recommend version %d of Wireless Extension,
+but has been compiled with version %d, therefore some driver features
+may not be available...
+Warning: Driver for device %s has been compiled with an ancient version
+%-8.8s  Recommend Wireless Extension v%d or later,
+          Currently compiled with Wireless Extension v%d.
+socket
+%-8.8s  Version %d
+          Compatible with Wireless Extension v%d or earlier,
+SIOCSIWNWID: %s
+SIOCSIWFREQ: %s
+SIOCSIWENCODE(%d): %s
+SIOCSIWESSID: %s
+SIOCSIWMODE: %s
+IEEE 802.11
+%02X:%02X:%02X:%02X:%02X:%02X
+Channel:%g
+Frequency:%gGHz
+Frequency:%gMHz
+Frequency:%gkHz
+%gGb/s
+%gMb/s
+%gkb/s
+ (updated)
+Quality:%d/%d  Signal level:%d dBm  Noise level:%d dBm%s
+Quality:%d/%d  Signal level:%d/%d  Noise level:%d/%d%s
+Quality:%d  Signal level:%d  Noise level:%d%s
+%.2X
+Error: Passphrase not implemented
+Malloc failed (string too long ?)
+-:;.,
+ min
+ max
+ timeout:
+ period:
+%gms
+%dus
+mode:Unicast only received
+mode:Multicast only received
+mode:All packets received
+mode:Force sending
+mode:Repeat multicasts
+ lifetime:
+ limit:%d
+%02d:%02d:%02d.%06u 
+Interface %s doesn't support MAC addresses
+Interface %s doesn't support IP addresses
+default
+%-8.8s  Interface doesn't support IP addresses
+Invalid interface address %s
+Arp failed for %s on %s... (%d)
+Try to ping the address before setting it.
+%-8.8s  Interface doesn't support MAC addresses
+Invalid hardware address %s

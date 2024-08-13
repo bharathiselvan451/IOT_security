@@ -1,0 +1,11 @@
+[*] Binary protection state of libmsglog.so
+
+  
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of libmsglog.so
+
+
+[*] Function fprintf used 0 times libmsglog.so
+

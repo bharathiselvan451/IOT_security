@@ -1,0 +1,1378 @@
+/lib/ld-uClibc.so.0
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+stderr
+fwrite
+exit
+dhcp6_vbuf_free
+dhcp6_copy_list
+sipnamelist
+siplist
+dnslist
+dnsnamelist
+ntplist
+nisnamelist
+nislist
+nispnamelist
+nisplist
+bcmcsnamelist
+bcmcslist
+optrefreshtime
+dprintf
+duidcmp
+dhcp6_add_listval
+dhcp6_clear_list
+dhcp6_find_listval
+dhcp6_set_options
+dhcp6_init_options
+dhcp6_vbuf_copy
+memset
+dhcp6_clear_options
+outsock
+transmit_sa
+dhcp6msgstr
+dhcp6_calc_mac
+find_pool
+is_available_in_pool
+get_free_address_from_pool
+duidfree
+release_address
+duidstr
+dhcp6_set_timer
+dhcp6_clear_listval
+is_leased
+malloc
+duidcpy
+dhcp6_add_timer
+in6addr2str
+dhcp6_remove_timer
+dhcp6_verify_mac
+memcpy
+cfparse
+__errno_location
+find_hostconf
+get_rdvalue
+dhcp6_auth_replaycheck
+memcmp
+dhcp6_validate_key
+decline_address
+create_dynamic_hostconf
+insock
+recvmsg
+__cmsg_nxthdr
+ifidx
+find_ifconfbyid
+dhcp6_get_options
+strrchr
+getpid
+srandom
+getopt
+optarg
+ctlport
+optind
+foreground
+device
+setloglevel
+ifinit
+daemon
+fopen
+fprintf
+fclose
+dhcp6_move_list
+lease_init
+if_nametoindex
+get_duid
+dhcp6_ctl_authinit
+getaddrinfo
+socket
+setsockopt
+bind
+freeaddrinfo
+signal
+dhcp6_check_timer
+ctlsock
+dhcp6_ctl_setreadfds
+select
+dhcp6_ctl_readcommand
+warnx
+inet_pton
+ctladdr
+dhcp6_ctl_init
+openlog
+dhcp6_ctl_acceptcommand
+unlink
+gai_strerror
+errx
+dhcp6_vbuf_cmp
+sendto
+sa6_plen2mask
+getnameinfo
+bcmp
+in6addr_loopback
+debug_thresh
+setlogmask
+vsnprintf
+localtime
+syslog
+gettimeofday
+__floatsidf
+__divdf3
+__muldf3
+__adddf3
+__ltdf2
+__fixdfsi
+dhcp6_event_statestr
+dhcp6optstr
+strlen
+__ctype_b
+__ctype_tolower
+fread
+getifaddrs
+freeifaddrs
+strcmp
+in6_addrscopebyif
+dhcp6_remove_evdata
+strlcat
+prefix6_mask
+dhcp6_stcodestr
+puts
+setStatus
+strncpy
+ioctl
+getuid
+geteuid
+lstat
+dhcp6_if
+find_ifconfbyname
+ifreset
+configfilename
+qstrdup
+strptime
+mktime
+base64_decodestring
+dhcp6_mode
+cf_sip_list
+cf_sip_name_list
+cf_dns_list
+cf_dns_name_list
+cf_ntp_list
+cf_nis_list
+cf_nis_name_list
+cf_nisp_list
+cf_nisp_name_list
+cf_bcmcs_list
+cf_bcmcs_name_list
+cf_refreshtime
+ia_conflist0
+find_iaconf
+find_authinfo
+sscanf
+atoi
+find_dynamic_hostconf
+timer_head
+timeval_sub
+udhcp_sp_setup
+tp_udhcp_sp_fd_set
+perror
+getReadPipe
+connect
+msgrcv
+msgget
+fork
+dhcp6c_ipc_rcv
+udhcpv6_sp_ipc_inform
+sleep
+msgsnd
+dhcp6c_ipc_send
+pipe
+strchr
+listen
+fgets
+ferror
+accept
+dhcp6_ctl_closecommand
+calloc
+yywarn
+yychar
+yynerrs
+yylval
+yyerror
+yylex
+cfswitch_buffer
+configure_keys
+configure_authinfo
+configure_ia
+configure_pool
+configure_interface
+configure_host
+configure_global_option
+configure_commit
+configure_cleanup
+yyin
+yytext
+yyfree
+yy_flush_buffer
+fileno
+isatty
+yy_delete_buffer
+yylineno
+yyout
+yyleng
+yy_flex_debug
+yypop_buffer_state
+yyalloc
+yyrealloc
+yy_switch_to_buffer
+yy_scan_buffer
+yy_scan_bytes
+yy_create_buffer
+stdout
+stdin
+cfdebug
+incstackp
+strtoll
+yywrap
+fgetc
+__fgetc_unlocked
+yyrestart
+clearerr
+yyparse
+cf_post_config
+libc.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+strlcpy
+_GLOBAL_OFFSET_TABLE_
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GLIBC_2.0
+$'9+p
+@ !'
+ H!$B
+(!$B
+	&E#d
+&E#d
+(&E#d
+ @!&F$
+$R$|
+,$b$
+$'9=
+$'9;L
+ !'90H
+@8!$
+$'9>
+ '92<
+ (!'99
+'92<
+(!'99
+$'9;L
+@(!$
+@8!$
+` !$
+$'9<h
+@ !$
+@8!&
+$'9=
+'9<h
+'9<h
+$'9;L
+` !$
+$'9HL
+'90H
+@ !&
+$'9HL
+@8!&
+(!$R0H$
+$'9HL
+'90H
+@ !'
+$'9>
+$'92<
+@8!&
+  !&
+@8!$
+$'9=
+$'9=
+@8!$
+@8!$
+@ !$
+@8!$
+  !'
+  !'
+@8!'9Xh
+$$QK
+$$QK
+'94x
+8!'9Xh
+$Y0H
+@8!$
+$'9HL
+$'94x
+@8!'
+8!'9Xh
+X'94x
+H$e.
+b(!$
+(!&$
+H$E.
+($c2
+H$e.
+$P,H
+  !&
+'94x
+'9^X
+'9hh
+$$Y,H
+H$e.
+H$E.
+@8!&
+('%.
+8!'9Xh
+$RSp
+@8!$
+'9Xh
+$RSp
+$RSp
+8!'94x
+$RSp
+'94x
+'9Xh
+@8!$
+`(!'
+ 8!'9?
+$$V?
+@(!'
+'94x
+'9Xh
+@(!'
+@(!'
+8!'94x
+($c6
+$'9,
+$'9,
+ !&E2
+@ !4
+ 0!'
+ 0!'
+ $Vm
+@(!&
+` !$
+@ !$
+($c6
+($c78
+$B7 
+$B7(
+$B70<
+&g7d
+  !&
+$B7p
+($c7
+($c:X
+$B8$
+$B80
+$B8<
+$B8T
+$B8h
+$B8t
+$B9 
+$B90
+$B9D
+$B9T
+$B9h
+$B9l
+$B:,
+$B:<
+$B:H
+($c;
+$B; 
+$B;,
+$B;4
+$B;@
+$B;H
+$B;P
+$B;X
+$B;`
+$B;h
+$B;p
+$B;x
+($B7`
+($G7`
+$G<@
+$B<@
+ H!'
+$c=H
+($c=
+($c=
+@ !$B
+@0!'
+(!$y
+H$E>
+	$F?p
+ 0!'
+@8!$
+ 8!$
+@ !&
+`8!$
+`8!&
+` !$
+@ !$
+@8!&
+!$bB@
+H&%B(
+(&%B(
+@8!&fB
+@&fC
+ +,B
+@8!'
+@8!$
+@ !$
+H$ED
+	$fD
+($ED
+0!'9
+($ED
+0!'9
+H$ED
+` !$
+H$eD
+($eD
+($eD
+H$eD
+H$ED
+H$ED
+	$FD
+Fx.b
+($cI
+` !$
+@8!&
+`0!&
+H$e7`
+	$E7`
+H$E7`
+@8!'
+@8!&
+	$E7`
+@8!&
+H$e7`
+	$e7`$
+@ !$
+($BG
+($BG
+H$E7`
+H$e7`
+`0!&
+`0!&
+H$E7`
+@8!'
+`0!&
+`0!&
+	$e7`.
+`0!&
+@ !$
+` !&
+@0!$
+` !&
+@ !$
+$e7`
+@ !$
+($BI
+($BI,
+  !$
+$TJd
+$TJl
+`(!$
+@ !&
+@ !'
+$R (
+p'9!L
+'9 (
+'9!L
+($cS
+($cSd
+  !$
+($cUx
+p'9!L
+($BU
+`(!'
+`(!'
+($cX
+'94t
+'94t
+@ !(B
+4BUV
+	$EWt$
+($BU
+H$EY
+('%Y,
+H$eY,$
+H$EY
+H$EY,
+$eY,
+($WMx
+H&E\h
+&E\h
+&E\h
+ 8!$
+ 8!$
+H&e\
+(!&e\
+(&e\
+(!&e\
+H&e]
+,$QMx
+(!&e]
+d(!<
+4cB?
+4BB@
+ @!$
+@8!&%]
+,'9[p
+'9[p
+(!$B]
+$B]d
+@8!&E^,
+,'9[p
+&E^,
+@8!$
+,'9[p
+@ !$
+@8!$
+(&d^t
+j&d^
+ 8!$
+ 8!$
+(&&`X
+0&d^
+!&%`X
+0&d^
+&&`X
+(&&`
+	&e^
+	&D^
+	&$a`
+&#a`
+4cTv
+0!4B
+!4Bp
+0$4B
+0&4B
+&4BF
+0&4B
+0&4B
+&4B[
+0&4B
+0&4Bq
+8&4BC
+&4c%b
+&4cZQ
+&4cL
+&4B9B
+&4Ba"
+&4B8
+&4BK`
+&4B~
+&4B'
+&4B0
+&4B|
+!4BVe
+(%4B"D
+0%4B
+%4B#
+(%4B
+0%4BY
+(%4B
+0%4B]
+%4B~O
+(%4B
+0%4BC
+8%4B~
+0%4B
+(!4B
+G8#$h
+ !&1z
+&y{D
+@ !&9z
+ !&y{D
+` !&
+(!."
+x!&P
+` !&
+@(!&
+  !$
+  !&
+,'9z
+ !&y
+  !'
+@ !$
+b@&Ea
+bl&Ea
+(&Ea
+@8!&
+	&ed
+H&ed
+@8!&ed
+P!$	
+@(!<
+@ !$
+($$P
+($ce`
+(!'9
+($ce
+@0!$B
+@$Bl
+($Bk
+($ci
+($Bg
+($co
+h$Dl
+($gi
+(@$Bf
+@$ci
+($Bf
+($Bh
+($Bh
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+E0!,
+('1|`$U
+($rx4
+($Pwx
+'$|`
+@(!'9
+($xx4
+`p!$Ywx
+ $o|`$M
+D(!'9
+|`$d
+8!$Jx4
+($Kwx
+!$Dq
+@(!$
+ X!$
+@ !$
+$'9*
+ 5547
+/tmp/dhcp6s.pid
+/etc/dhcp6sctlkey
+/tmp/dhcp6s.conf
+usage: dhcp6s [-c configfile] [-dDf] [-k ctlkeyfile] [-p ctlport] [-P pidfile] intface
+set_statelessinfo
+failed to copy SIP domain list
+failed to copy SIP servers
+failed to copy DNS servers
+failed to copy DNS search list
+failed to copy NTP servers
+failed to copy NIS domain list
+failed to copy NIS servers
+failed to copy NIS+ domain list
+failed to copy NIS+ servers
+failed to copy BCMCS domain list
+failed to copy BCMCS servers
+make_ia_stcode
+failed to make an option list
+calc_ia_timo
+assumption failure: IA list is not consistent
+find_binding_ia
+unknown binding type %d
+server6_signal
+received a signal (%d)
+server6_send
+transmit %s to %s
+transmit %s to %s failed
+authentication required but not key provided
+failed to calculate MAC
+failed to construct relay message
+failed to construct reply options
+make_iana_from_pool
+called
+pool '%s' not found
+returns (found=%d)
+update_binding_duration
+unknown binding type (%d)
+unsupported IA type
+free_binding
+unexpected binding value type(%d)
+bindingstr
+unexpected binding type(%d)
+[IA: duid=%s, type=%s, iaid=%lu, duration=%lu]
+update_binding
+update binding %s for %s
+make_ia
+make_match_ia
+add_binding
+we have a binding already: %s
+failed to copy binding info
+add a new binding %s
+failed to make a binding
+failed to copy DUID
+failed to allocate memory
+cannot lease any address
+cannot lease address %s
+failed to add timer
+failed to copy binding data
+remove_binding
+remove a binding %s
+binding_timo
+bound prefix %s/%d in %s has expired
+internal error: unknown binding type (%d)
+release_binding_ia
+bound prefix %s/%d has been released
+bound address %s has been released
+server6_do_ctlcommand
+server6_reload
+server6_stop
+unknown control command: %d (len=%d)
+timestamp is out of range
+invalid command length for reload: %d
+assumption failure: command length mismatch
+no such binding
+invalid command length for stop: %d
+failed to reload configuration file
+no secret key for control channel
+server reloaded
+authentication failure
+unsupported version: %d
+failed to get current time: %s
+unknown remove target: %ul
+unknown binding type: %ul
+exiting
+DUID length mismatch
+unknown IA type: %ul
+update_ia
+found a host configuration named %s
+failed  to copy binding info
+no binding found for %s
+impossible message type %s
+%s is not found in %s
+%s/%d is not found in %s
+process_auth
+unknown authentication algorithm (%d) required by %s
+unknown RDM (%d) required by %s
+client %s wanted authentication, but no key found
+client %s wanted authentication with unsupported protocol (%d)
+found key %s for client %s
+previous RD value for %s is unknown (accept it)
+client %s did not provide authentication information in %s
+authentication key mismatch with client %s
+authentication information provided in solicit from %s
+failed to get a replay detection value for %s
+possible replay attack detected for client %s
+key %s has expired
+failed to allocate memory for authentication realm for %s
+message authentication validated for client %s
+invalid message authentication
+react_release
+failed to copy client ID
+failed to process authentication information for %s
+unexpected unicast message from %s
+failed to add a status code
+no server ID option
+no client ID option
+server ID mismatch
+failed to copy server ID
+react_decline
+decline_binding_ia
+bound address %s has been marked as declined
+no binding found for address %s
+react_confirm
+IA-NA configuration not found
+failed to make host configuration
+%s does not seem to belong to %s's link
+no link-addr found
+failed to make local data
+no IA-NA option found
+no IA-ADDR option found in IA-NA %d
+server ID option found
+server6_recv
+process_relayforw
+react_solicit
+react_request
+react_renew
+react_rebind
+react_informreq
+short packet (%d bytes)
+failed to get packet info
+recvmsg: %s
+received %s from %s
+dhcp6 relay: hop=%d, linkaddr=%s, peeraddr=%s
+invalid unicast message
+unknown or unsupported msgtype (%s)
+server ID option is included in a rebind message
+unexpected interface (%d)
+relay reply message from %s
+failed to parse options
+failed to allocate relay info
+client ID %s
+short relay message from %s
+short packet (%d bytes) in relay message
+relay forward from %s without a relay message
+failed to set other stateless information
+no useful information for a rebind
+found a host configuration for %s
+server DUID mismatch
+information request contains an IA_NA option
+information request contains an IA_PD option
+S,main
+server6_init
+server6_mainloop
+c:dDfk:n:p:P:
+/tmp/dhcp6s_duid
+ff02::1:2
+ff05::1:3
+skip opening control port
+-n dnsserv option was obsoleted.  use configuration file.
+failed to initialize control channel
+failed to initialize control message authentication
+select: %s
+failed to set signal: %s
+setsockopt(outsock, IPV6_MULTICAST_IF): %s
+socket(outsock): %s
+setsockopt(insock, IPV6_JOIN_GROUP): %s
+bind(insock): %s
+setsockopt(inbound, IPV6_V6ONLY): %s
+setsockopt(inbound, IPV6_RECVPKTINFO): %s
+setsockopt(insock, SO_REUSEADDR): %s
+setsockopt(insock, SO_REUSEPORT): %s
+socket(insock): %s
+getaddrinfo: %s
+memory allocation failed
+failed to get a DUID
+invalid interface %s
+failed to initialize the lease table
+do not specify DNS servers both by command line and by configuration file.
+daemon
+failed to parse configuration file
+malloc failed for a DNS server
+invalid DNS server %s
+IDLE
+INIT
+SOLICIT
+INFOREQ
+REQUEST
+RENEW
+REBIND
+RELEASE
+%s%02x
+INVALID code
+code%d
+no prefixes
+use multicast
+not on-link
+no binding
+no addresses
+unspec failure
+success
+INVALID option
+opt_%d
+client FQDN
+client ID
+server ID
+identity association
+IA for temporary
+IA address
+option request
+preference
+elapsed time
+relay message
+authentication
+server unicast
+status code
+rapid commit
+user class
+vendor class
+vendor specific info
+interface ID
+reconfigure message
+SIP domain name
+SIP server address
+domain search list
+IA_PD
+IA_PD prefix
+NIS servers
+NIS+ servers
+NIS domain name
+NIS+ domain name
+NTP server
+information refresh time
+BCMCS domain name
+BCMCS server address
+Geoconf Civic
+remote ID
+subscriber ID
+%04x %04x %04x %04x
+INVALID msg
+msg%d
+relay-reply
+solicit
+advertise
+request
+confirm
+renew
+rebind
+reply
+release
+decline
+reconfigure
+information request
+relay-forward
+8Jan
+%3s/%02d/%04d %02d:%02d:%02d: %s%s%s
+%s%s%s
+get_rdvalue
+unsupported RDM (%d)
+unsupported RD size (%d)
+gettimeofday failed: %s
+duidcpy
+memory allocation failed
+dhcp6_reset_timer
+reset a timer on %s, state=%s, timeo=%d, retrans=%d
+dhcp6_set_timeoparam
+unexpected event state %d on %s
+copyout_option
+unknown option: code %d
+set %s
+copy_option
+set %s (len %d)
+option buffer short for %s
+dhcp6_set_domain
+failed to encode a %s domain name
+buffer length for %s domain name is too short
+memory allocation failed for %s domain options
+dhcp6_set_addr
+memory allocation failed for %s options
+dhcp6_set_options
+failed to count option length
+short buffer
+memory allocation failed for IA_NA options
+failed to construct an IA_NA option
+refresh time option is not requested for %s
+memory allocation failed for options
+failed to construct an IA_PD option
+memory allocation failed for IA_PD options
+key ID %x, offset %d
+failed to allocate memory for authentication information
+unexpected authentication protocol
+get_duid
+gethwid
+DUID file corrupted
+extracted an existing DUID from %s: %s
+failed to open DUID file: %s
+found an interface %s for DUID
+failed to get a hardware address
+generated a new DUID: %s
+failed to save DUID
+saved generated DUID to %s
+failed to allocate memory
+failed to open DUID file for save
+getifidfromaddr
+if_nametoindex failed for %s
+getifaddrs failed: %s
+getifaddr
+dhcp6_auth_replaycheck
+ffff ffff ffff ffff
+previous: %s, current: %s
+detected a singular point
+unsupported replay detection method (%d)
+dhcp6_remove_event
+removing an event on %s, state=%s
+removing server (ID: %s)
+dhcp6_create_event
+failed to allocate memory for an event
+dhcp6_add_listval
+unexpected list value type (%d)
+failed to allocate memory for list entry
+dhcp6_get_domain
+failed to decode a %s domain name
+malformed DHCP option: type %d, len %d
+failed to copy a %s domain name
+dhcp6_get_addr
+duplicated %s address (%s)
+failed to copy %s address
+copyin_option
+copyin_option
+get DHCP option %s, len %d
+  IA_PD prefix: %s/%d pltime=%lu vltime=%lu
+  IA_NA address: %s pltime=%lu vltime=%lu
+  status code: %s
+%s %s %d : 
+common.c
+call setStaus
+duplicated status code (%d)
+%s is an invalid position for %s
+duplicated IA_NA address%s pltime=%lu vltime=%lu
+duplicated IA_PD prefix %s/%d pltime=%lu vltime=%lu
+malformed DHCP option
+invalid prefix length (%d)
+  malformed DHCP option: type %d
+dhcp6_get_options
+unknown or unexpected DHCP6 option %s, len %d
+  DUID: %s
+failed to copy DUID
+  IA_NA: ID=%lu, T1=%lu, T2=%lu
+duplicated IA_NA %lu
+  requested option: %s
+duplicated option type (%s)
+  preference: %d
+duplicated preference option
+  elapsed time: %lu
+duplicated elapsed time option
+unknown(255)
+unknown(%d)
+HMAC-MD5
+mono counter
+proto: %s, alg: %s, RDM: %s, RD: %s
+  %s
+failed to copy status code
+  IA_PD: ID=%lu, T1=%lu, T2=%lu
+duplicated IA_PD %lu
+   information refresh time: %lu
+duplicated refresh time option
+  auth key ID: %x, offset=%d, realmlen=%d
+refresh time is too small (%d), adjusted
+delayed
+failed to copy requested option
+reconfig
+malformed DHCP options
+found more than one authentication option
+unsupported authentication protocol: %d
+failed allocate memory for auth realm
+ifaddrconf
+remove
+%s an address %s/%d on %s
+failed to %s an address on %s: %s
+can't open a temporary socket: %s
+failed to get the index of %s: %s
+safefile
+setuid'ed execution not allowed
+%s has invalid owner uid
+%s is an invalid file type 0x%o
+lstat failed: %s
+ifreset
+invalid interface(%s): %s
+ifinit
+malloc failed
+duplicated interface: %s
+failed to copy ifname
+getifaddrs failed: %s
+configure_keys
+%s:%d duplicate realm for key %s (ignored)
+forever
+%s:%d duplicate expire for key %s (ignored)
+%Y-%m-%d %H:%M
+%m-%d %H:%M
+%s:%d key ID overflow
+%s:%d duplicate secret for key %s (ignored)
+key ID not specified for key %s
+%s:%d invalid key parameter for %s
+%H:%M
+invalid expiration time: %s
+failed to allocate memory for realm
+failed to copy key name: %s
+memory allocation failed for key %s
+realm not specified for key %s
+secret not specified for key %s
+failed to make a copy of secret
+%s:%d failed to parse base64 key
+failed to allocate memory for secret
+past expiration time specified: %s
+cannot get current time: %s
+configure_authinfo
+%s:%d duplicate protocol for auth info %s (ignored)
+%s:%d auth info specific keys are not supported
+%s:%d duplicate algorithm for auth info %s (ignored)
+%s:%d duplicate RDM for auth info %s (ignored)
+server-only auth protocol is specified
+client-only auth protocol is specified
+%s:%d invalid auth info parameter for %s
+memory allocation failed for auth info %s
+failed to copy auth info name: %s
+auth protocol is not specified for %s
+configure_addr
+%s:%d duplicated %s server: %s
+failed to add a %s server
+%s:%d server-only configuration
+configure_domain
+failed to copy a %s domain name
+%s:%d duplicated %s name: %s
+failed to add a %s name
+NISP
+BCMCS
+clear_poolconf
+called
+clear_iaconf
+assumption failure
+configure_commit
+some IA configuration defined but not used
+add_options
+%s:%d unsupported option type: %d
+%s:%d IA_PD (%lu) is not defined
+invalid operation (%d) for option type (%d)
+failed to configure an option
+duplicated requested option: %s
+%s:%d authinfo is doubly specified on %s
+%s:%d auth info (%s) is not defined
+%s:%d IA_NA (%lu) is not defined
+tconfigure_interface
+%s:%d invalid interface configuration
+%s:%d pool '%s' not found
+%s:%d bad value: %d
+pool '%s' is specified to the interface '%s'
+%s:%d client-only configuration
+memory allocation for %s failed
+invalid interface(%s): %s
+failed to copy ifname
+script must be an absolute path
+failed to copy script path
+%s:%d duplicated configuration
+specified a larger preferred lifetime than valid lifetime
+%s:%d 
+memory allocation failed
+add_prefix
+prefix %s/%d for %s has a trailing garbage.  It should be %s/%d
+invalid prefix address: %s
+%s has larger preferred lifetime than valid lifetime
+%s/%d has larger preferred lifetime than valid lifetime
+invalid prefix: %d
+duplicated address: %s for %s
+duplicated prefix: %s/%d for %s
+configure_host
+configure_duid
+%s:%d invalid host configuration for %s
+configure key for delayed auth with %s (keyid=%08x)
+failed to configure prefix for %s
+%02x
+configure DUID for %s: %s
+%s:%d: duplicate key %s for %s (ignored)
+pool '%s' is specified to the host '%s'
+assumption failure (bad string)
+%s:%d failed to configure DUID for %s
+failed to configure address for %s
+failed to copy host name: %s
+memory allocation failed for host %s
+%s:%d duplicated DUID for %s
+too long DUID (%d)
+failed to find key information for %s
+configure_ia
+add_pd_pif
+get_default_ifid
+internal error
+IANA
+IAPD
+failed to configure prefix
+%s:%d duplicated prefix interface: %s
+cannot find interface information for %s
+failed to get default IF ID for %s
+%s:%d invalid configuration
+%s:%d internal error: invalid configuration
+%s:%d invalid SLA length: %d
+failed to configure address
+%s:%d invalid iatype %d
+memory allocation for IA %s failed
+getifaddrs failed: %s
+%s:%d invalid interface (%s): %s
+link layer address is too short (%s)
+create_dynamic_hostconf
+reached to the max count (count=%lu)
+created host_conf (name=%s)
+configure_pool
+create_pool
+name=%s, range=%s->%s
+%s:%d invalid pool configuration
+%s:%d pool statement is server-only
+faled to craete pool '%s'
+%s:%d pool '%s' has no range declaration
+invalid address range %s->%s
+find_pool
+name=%s
+not found (name=%s)
+found (name=%s)
+get_free_address_from_pool
+called (pool=%s)
+next address %s
+no available address
+found %s
+is_available_in_pool
+pool=%s, addr=%s
+unavailable address (pool=%s, addr=%s)
+dhcp6_add_timer
+can't allocate memory
+timeout function unspecified
+dhcp6_timer_rest
+a timer must be expired, but not yet
+decline_address
+addr=%s
+not found: %s
+lease_init
+called
+release_address
+lease_address
+already leased: %s
+buf = %08X, len=%d
+%02X 
+- %02X 
+%02X 
+recv_httpd_cmd
+select error:
+%s %s %d : 
+tp_ipc.c
+rdPipe = %d
+cmd = %d
+read error:
+/tmp/client_dhcp6c
+/tmp/ipc
+ClientA::error on connecting 
+bind error
+msgget
+IPC:this msg is not for dhcpc
+IPC:incorrect magic
+IPC:unsupported version
+tp_dhcp_ipc_fork
+fork error:
+msqid:%d mtype:%d
+busybox:msgsnd
+httpd_ipc_send:msg too log
+update_info
+update_info error
+setStatus
+%s %d set info.status = %d
+setType
+%s %d set info.type = %d
+setIp
+%s %d set ip
+%s %d info.v6ip = %s
+pv6Ip == NULL
+setPrefix
+%s %d set prefix = %s, prefixLength = %d
+pv6Prefix == NULL
+setDns
+%s %d set Dns
+pipe error:
+udhcpv6_sp_ipc_inform
+udhcp_sp_ipc_inform send
+%s %d send %d bytes to fd %d.
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=
+dhcp6_ctl_init
+dhcp6_ctl_init
+%s %d addr = %s, port = %s
+%s %d dhcp6_ctl_init succeed
+listen(control sock): %s
+%s %d goto fail
+setsockopt(control sock, SO_REUSEADDR: %s
+bind(control sock): %s
+invalid maximum number of commands (%d)
+getaddrinfo error:
+getaddrinfo: %s
+%s %d return -1 
+socket(control sock): %s
+%s %d goto fail 
+dhcp6_ctl_authinit
+failed to read key file: %s
+failed to decode base64 string
+failed to allocate control key
+failed to allocate secret key
+failed to open %s: %s
+dhcp6_ctl_closecommand
+assumption error: command queue is empty?
+dhcp6_ctl_acceptcommand
+accept control connection from %s
+command queue is full. drop the oldest one (fd=%d)
+failed to accept control connection: %s
+command queue is not initialized
+failed to allocate new command context
+dhcp6_ctl_readcommand
+too large command (%d bytes)
+control channel was reset by peer
+read failed: %s
+&06;HIJKLMNOP
+ !"-47B?
+??QBQ<QBQBQBQB???>S?\?aS>AR>>>>>>>>>>>chS
+#$%8:@CT\
+@C]^a
+@b@'(./@d1235@i@AX
+ !"&UVUV<
+>BAAWAZ>AY@
+>Y@X>>)*e+f,gA>B<BB>><D[><<->E>>>>>>9>[>=>>?>>>>>>>>>>>[UA[<_[
+@`[<<>>>
+FGGHHHHHHHHIJKKKKKKKKKKKKLLLLMNOPQQRSSTTTTTTTTTTTTUUVVVVVVVVVVVVVVVVWXXYYZZ[[\\]]^__``aabccddddeefghhiiii
+Zd% 
+5;<=>9:?@ABCD
+!MLF,786(
+'*.+/0
+Y\]^_fghiG4EK
+tuv&w
+UVWXYH%ZEx
+4(6J8
+E[\]*	/1e
+_LpqEN`-EaUVWXYP3ZE{r5=7
+9:;<?AG[\]UVWXYIKZMOQ
+ !"#
+^}_~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDE
+duplicated name: %s (ignored)
+syntax error
+multiple refresh times (ignored)
+memory exhausted
+refresh time is too small (must not be smaller than %d)
+refresh time is out of range
+can't allocate memory
+invalid IPv6 address: %s
+out of dynamic memory in yy_create_buffer()
+out of dynamic memory in yyensure_buffer_stack()
+out of dynamic memory in yy_scan_buffer()
+bad buffer in yy_scan_bytes()
+out of dynamic memory in yy_scan_bytes()
+cfdebug_print
+<%d>%s [%s] (%d)
+<%d>[%s] (%d)
+****
+comment
+fatal flex scanner internal error--end of buffer missed
+begin of closure
+end of sentence
+end of closure
+fatal error - scanner input buffer overflow
+input in flex scanner failed
+out of dynamic memory in yy_get_next_buffer()
+fatal flex scanner internal error--no action found
+4yyerror0
+%s %d: 
+cfswitch_buffer
+cfparse: includes nested too deeply
+cfparse: fopen(%s): %s
+cfparse
+fatal parse failure: exiting (%d errors)
+fatal parse failure: exiting
+/dev/urandom

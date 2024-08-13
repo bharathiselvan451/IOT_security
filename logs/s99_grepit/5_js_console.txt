@@ -1,0 +1,19 @@
+[*] Searching (args for grep: ) for console\..
+[*] Grepit state info - comment: Console should not be logged to in production
+[*] Grepit state info - Filename 5_js_console.txt
+[*] Grepit state info - Example: console.log(user_password);
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: console\.
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m1071[m[36m-[m @` 0@!`PCadil1gnsxAkcetuSXrvLT:w:%s%7ld %4lld %-10s %4ld %-8d %-8d%4d, %3d %9lld %24.24s %6.6s %5.5s  %4.4s  -> .%s:
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m1072[m[36m-[mf-i:i-ffiRrcannot remove `.' or `..'-r-w-x-e-f-d-c-b-p-u-g-k-s-t-z-n-h-O-G-L-S=!=<>-eq-ne-ge-gt-le-lt-nt-ot-ef!-a-o()%s: %s%s%s: out of range%s: bad numberargument expected`ddddP,closing paren expectedtttttt8T[]missing ]unknown operand--%s%c%i%cH-h:e*:f*:C-ABlnqvscFiHhe:f:LA:B:CEinvalid context length argumentr-%s%s:%d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m1073[m[36m-[mHOME=/PATH=/usr/bin:/bin:/usr/sbin:/sbinSHELL=/bin/shUSER=rootsysinitrespawnaskfirstwaitoncectrlaltdelshutdownrestart%s/dev/console
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m:[m[32m1074[m[36m:[mPlease press Enter to activate this [01;31mconsole.[m device '%s' does not exist.Bummer, can't open %sCan't fork!~`!$^&*()=|\{}[];"'<>?exec -c 	Starting pid %d, console %s: '%s'Bummer, could not run '%s': %mThe system is going down NOW !!Sending SIGTERM to all processes.Sending SIGKILL to all processes.Please stand by while rebooting the system.The system is halted. Press Reset or turn off powerexec of '%s' failed: %m/dev/nullMemory allocation failure/etc/inittabr/sbin/reboot/bin/umount -a -r/sbin/swapoff -a/sbin/init/dev/tty2/dev/tty3/dev/tty4/etc/init.d/rcS/dev/Bad inittab entry: %sReloading /etc/inittab-qlinuxrcCONSOLEconsole/dev/ttyS%d/dev/tty%d/dev/tty0TERMlinuxTERM=vt102TERM=linux/init started:  %ssingle-s1initProcess '%s' (pid %d) exited.  Scheduling it for restart.d:initlinuxrcno process killed" cannot open module `%s'cannot mmap `%s'Invalid module formatUnknown symbol in moduleModule has wrong symbol versionInvalid parameterscannot insert `%s': %s (%li)Module                  Size  Used by/proc/modulesrmmoda%sSent %d probes (%d broadcast(s))
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m1075[m[36m-[miesyReceived %d repl%s (%d request(s), %s%d broadcast(s)UnicastBroadcast%s replyrequest%s from [%s]for %s for  %ld.%03ldms
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m4279[m[36m-[mcalling  %pF @ %i
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m4280[m[36m-[minitcall %pF returned %d after %Ld usecs
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m4281[m[36m-[merror code %d preemption imbalance disabled interrupts initcall %pF returned with %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m:[m[32m4282[m[36m:[m/dev/console<4>Warning: unable to open an initial [01;31mconsole.[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m4283[m[36m-[m<4>Failed to execute %s

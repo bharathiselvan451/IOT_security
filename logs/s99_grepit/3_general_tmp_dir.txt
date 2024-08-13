@@ -1,0 +1,19 @@
+[*] Searching (args for grep: ) for ["']/tmp/.
+[*] Grepit state info - comment: Search for binary paths or similar: Command execution?
+[*] Grepit state info - Filename 3_general_tmp_dir.txt
+[*] Grepit state info - Example: place = "/tmp/softwareupdate"
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: ["']/tmp/
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/wscd.conf[m[36m-[m[32m53[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/wscd.conf[m[36m-[m[32m54[m[36m-[m# When 0, WPS daemon will issue command 'flash set wlan0 value' to update setting
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/wscd.conf[m[36m-[m[32m55[m[36m-[m# When 1, WPS daemon will issue command 'flash set value' to update setting
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/wscd.conf[m[36m:[m[32m56[m[36m:[m# When 2, WPS daemon will update setting to a file [01;31m'/tmp/[mflash_param'
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/wscd.conf[m[36m-[m[32m57[m[36m-[mNo_ifname_for_flash_set = 2
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFtpCfgRpm.htm[m[36m-[m[32m154[m[36m-[m		document.write('<TR align="center">');
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFtpCfgRpm.htm[m[36m-[m[32m155[m[36m-[m		document.write('<TD>' + folderListArray[row] + '<\/TD>');
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFtpCfgRpm.htm[m[36m-[m[32m156[m[36m-[m		document.write('<TD>' + folderListArray[row+1] + '<\/TD>');
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFtpCfgRpm.htm[m[36m:[m[32m157[m[36m:[m		//the length of [01;31m'/tmp/[musbdisk/' is 13
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFtpCfgRpm.htm[m[36m-[m[32m158[m[36m-[m		document.write('<TD>' + folderListArray[row+2].substr(13) + '<\/TD>');

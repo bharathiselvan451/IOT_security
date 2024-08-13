@@ -1,0 +1,11 @@
+[*] Binary protection state of pptp.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcpy tear down of pptp.ko
+
+
+[*] Function strcpy used 0 times pptp.ko
+

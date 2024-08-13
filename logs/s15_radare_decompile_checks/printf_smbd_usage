@@ -1,0 +1,13 @@
+fcn.00435aa0
+sym.add_signature
+sym.check_hosts_equiv
+sym.do_smbpasswd
+sym.gidtoname
+sym.lp_add_home
+sym.lp_load
+sym.mv_internals
+sym.pidfile_create
+sym.pidfile_pid
+sym.reply_copy
+sym.reply_search
+sym.reply_unlink

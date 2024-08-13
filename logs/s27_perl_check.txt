@@ -1,0 +1,8 @@
+[+] Check perl scripts for security issues
+=================================================================
+The Perl checking module is designed to analyze Perl scripts for security vulnerabilities with the SAST tool zarn
+    https://github.com/htrgouvea/zarn
+
+
+[*] Statistics:0:0
+[-] Wed Jul 31 20:58:19 EDT 2024 - S27_perl_check nothing reported

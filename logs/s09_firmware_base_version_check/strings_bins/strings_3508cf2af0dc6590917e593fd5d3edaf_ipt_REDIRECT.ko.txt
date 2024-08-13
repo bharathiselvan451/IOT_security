@@ -1,0 +1,43 @@
+description=Xtables: Connection redirection to localhost
+author=Netfilter Core Team <coreteam@netfilter.org>
+license=GPL
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+REDIRECT
+ipt_REDIRECT
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.text.redirect_tg_check
+.rel.text.redirect_tg
+.rel.init.text
+.rel.exit.text
+.rodata
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+ipt_REDIRECT.c
+redirect_tg_init
+redirect_tg_exit
+__mod_description26
+__mod_author25
+__mod_license24
+redirect_tg_reg
+redirect_tg
+redirect_tg_check
+ipt_REDIRECT.mod.c
+__module_depends
+__mod_vermagic5
+__this_module
+cleanup_module
+init_module
+nf_nat_setup_info
+xt_register_target
+xt_unregister_target

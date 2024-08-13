@@ -1,0 +1,11 @@
+[*] Binary protection state of xl2tpd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function popen tear down of xl2tpd
+
+
+[*] Function popen used 0 times xl2tpd
+

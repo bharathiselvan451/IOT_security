@@ -1,0 +1,11 @@
+[*] Binary protection state of usb-storage.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcpy tear down of usb-storage.ko
+
+
+[*] Function strcpy used 0 times usb-storage.ko
+

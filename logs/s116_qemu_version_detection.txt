@@ -1,0 +1,5 @@
+[+] Identified software components - via usermode emulation.
+=================================================================
+This module extracts version and license details from the results of the user-mode emulation module (s115).
+
+[-] Wed Jul 31 21:42:08 EDT 2024 - S116_qemu_version_detection nothing reported

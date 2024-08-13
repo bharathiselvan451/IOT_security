@@ -1,0 +1,170 @@
+[*] Binary protection state of pppd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function system tear down of pppd
+
+lbu a1, 5(s0)
+lbu a2, 0x14(s0)
+lw a3, 0x10(s0)
+lw t9, -sym.sifvjcomp(gp)
+jalr t9
+nop
+lw gp, 0x18(sp)
+lw s3, -obj.ipcp_wantoptions(gp)
+addiu a0, zero, 6
+lw a1, -0x7fd8(gp)
+addiu a1, a1, 0x4fb8
+lbu a2, 3(s3)
+lw t9, -sym.log_to_web(gp)
+jalr t9
+nop
+lw gp, 0x18(sp)
+lw v0, -obj.ipv6(gp)
+lw v0, (v0)
+bnez v0, 0x412f84
+addiu v0, zero, 1
+lbu v1, 3(s3)
+bne v1, v0, 0x412f84
+nop
+lw a0, -0x7fd8(gp)
+addiu a0, a0, 0x4fec
+[31mlw t9, -sym.imp.system(gp)[0m
+jalr t9
+nop
+lw gp, 0x18(sp)
+addiu a0, zero, 6
+lw a1, -0x7fd8(gp)
+addiu a1, a1, 0x5000
+lw t9, -sym.log_to_web(gp)
+jalr t9
+nop
+lw gp, 0x18(sp)
+lw v0, -obj.demand(gp)
+lbu v0, (v0)
+beqz v0, 0x413244
+nop
+lw v1, 0x18(s1)
+lw v0, 0x18(s2)
+bne v1, v0, 0x412fb4
+nop
+lw v1, 0x1c(s0)
+lw v0, 0x1c(s2)
+--
+jalr t9
+nop
+lw gp, 0x10(sp)
+move a0, s1
+lw t9, -sym.imp.inet_ntoa(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+move a0, s0
+lw a1, -0x7fe0(gp)
+addiu a1, a1, -0x7718
+move a2, v0
+lw a3, -obj.ifname(gp)
+lw t9, -sym.imp.sprintf(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+lw a0, -0x7fe0(gp)
+addiu a0, a0, -0x76fc
+move a1, s0
+lw t9, -sym.info(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+move a0, s0
+[31mlw t9, -sym.imp.system(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(sp)
+addiu v1, zero, 1
+move v0, v1
+lw ra, 0xfc(sp)
+lw s2, 0xf8(sp)
+lw s1, 0xf4(sp)
+lw s0, 0xf0(sp)
+jr ra
+addiu sp, sp, 0x100
+lui gp, 7
+addiu gp, gp, 0x2794
+addu gp, gp, t9
+addiu sp, sp, -0xe8
+sw ra, 0xe0(sp)
+sw s1, 0xdc(sp)
+sw s0, 0xd8(sp)
+sw gp, 0x10(sp)
+move s0, a1
+--
+lw a0, (a0)
+ori a1, zero, 0x890b
+addiu a2, sp, 0x18
+lw t9, -sym.imp.ioctl(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+bgez v0, 0x426e0c
+addiu a0, zero, 3
+lw t9, -sym.imp.__errno_location(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+lw v1, (v0)
+addiu v0, zero, 5
+beq v1, v0, 0x426d7c
+nop
+lw a0, -0x7fe0(gp)
+addiu a0, a0, -0x76bc
+lw t9, -sym.error(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+lw a0, -0x7fe0(gp)
+addiu a0, a0, -0x7698
+[31mlw t9, -sym.imp.system(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(sp)
+move a0, s0
+lw t9, -sym.imp.inet_ntoa(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+addiu s0, sp, 0x70
+move a0, s0
+lw a1, -0x7fe0(gp)
+addiu a1, a1, -0x7684
+move a2, v0
+lw t9, -sym.imp.sprintf(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+move a0, s0
+[31mlw t9, -sym.imp.system(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(sp)
+addiu a0, zero, 3
+lw a1, -0x7fe0(gp)
+addiu a1, a1, -0x7660
+lw a2, -0x7fe0(gp)
+addiu a2, a2, -0x765c
+lw t9, -sym.log_to_web(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+b 0x426e30
+move a0, s1
+lw a1, -0x7fe0(gp)
+addiu a1, a1, -0x7660
+lw a2, -0x7fe0(gp)
+addiu a2, a2, -0x7644
+lw t9, -sym.log_to_web(gp)
+jalr t9
+
+[*] Function system used 4 times pppd
+

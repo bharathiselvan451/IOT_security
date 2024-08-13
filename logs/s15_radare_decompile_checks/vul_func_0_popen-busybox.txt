@@ -1,0 +1,11 @@
+[*] Binary protection state of busybox
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function popen tear down of busybox
+
+
+[*] Function popen used 0 times busybox
+

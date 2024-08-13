@@ -1,0 +1,13 @@
+[*] Searching (args for grep: -i) for file://.
+[*] Grepit state info - comment: file URIs
+[*] Grepit state info - Filename 4_general_non_ssl_uris_file.txt
+[*] Grepit state info - Example: file://c/example.txt
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: file://
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m110[m[36m-[m		/*add href attribute*/
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m111[m[36m-[m		else
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m112[m[36m-[m		{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m:[m[32m113[m[36m:[m			href_value = '[01;31mfile://[m///'+ routerIpInfoArray[0]+'/Volume'+(i+1);
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m114[m[36m-[m			document.getElementById(disk_id).setAttribute('href', href_value);

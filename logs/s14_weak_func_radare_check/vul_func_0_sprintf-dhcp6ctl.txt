@@ -1,0 +1,11 @@
+[*] Binary protection state of dhcp6ctl
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of dhcp6ctl
+
+
+[*] Function sprintf used 0 times dhcp6ctl
+

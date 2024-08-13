@@ -1,0 +1,211 @@
+[*] Binary protection state of ushare
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of ushare
+
+beq s7, a3, 0x406d14
+addu v1, a1, t0
+lw a0, 4(v1)
+bnez a0, 0x406cb0
+addu a0, a1, t0
+sb t1, (s0)
+addiu s0, s0, 1
+addiu s4, s4, 1
+lbu t1, (s4)
+sll v1, t1, 0x18
+sra a3, v1, 0x18
+bnez a3, 0x406c94
+nop
+beqz s5, 0x4068dc
+sb zero, (s0)
+lw t9, -sym.imp.free(gp)
+move a0, s3
+jalr t9
+move s3, s5
+lw gp, 0x18(sp)
+b 0x4068e0
+sw s3, 0x1c(s2)
+lw s1, 4(a0)
+beqz s1, 0x406cd0
+move a0, s0
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+move a1, s1
+lw gp, 0x18(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s1
+lw gp, 0x18(sp)
+b 0x406cd8
+addu s0, s0, v0
+beqz s1, 0x406a7c
+move a0, s7
+lw t9, -sym.imp.strrchr(gp)
+addiu a1, zero, 0x2e
+jalr t9
+sw s1, 0x18(s2)
+addiu a0, sp, 0x20
+lw gp, 0x18(sp)
+addiu a2, v0, 1
+movz a2, zero, v0
+addiu a1, zero, 0x20
+--
+jalr t9
+addiu a0, a0, -0x7260
+lw gp, 0x10(sp)
+b 0x40e030
+move v0, zero
+lui gp, 5
+addiu gp, gp, 0x4a84
+addu gp, gp, t9
+addiu sp, sp, -0x60
+sw ra, 0x58(sp)
+sw s1, 0x54(sp)
+sw s0, 0x50(sp)
+sw gp, 0x28(sp)
+move a2, zero
+move s0, a0
+addiu a1, zero, 2
+lw t9, -sym.imp.socket(gp)
+addiu a0, zero, 2
+beqz s0, 0x40e270
+move v0, zero
+jalr t9
+nop
+move a1, s0
+lw gp, 0x28(sp)
+move s1, v0
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+move v1, t9
+lw t9, -sym.imp.perror(gp)
+bltz v0, 0x40e298
+addiu a0, sp, 0x30
+move t9, v1
+jalr t9
+nop
+ori a1, zero, 0x8927
+lw gp, 0x28(sp)
+move a0, s1
+addiu a2, sp, 0x30
+lw t9, -sym.imp.ioctl(gp)
+jalr t9
+sb zero, 0x42(sp)
+lw gp, 0x28(sp)
+lw t9, -sym.imp.malloc(gp)
+move a1, t9
+lw t9, -sym.imp.perror(gp)
+bltz v0, 0x40e2b0
+addiu a0, zero, 0x40
+--
+jalr t9
+addiu a0, v0, -0x7268
+lw gp, 0x28(sp)
+b 0x40e270
+move v0, zero
+lui gp, 5
+addiu gp, gp, 0x48f8
+addu gp, gp, t9
+addiu sp, sp, -0x50
+sw ra, 0x48(sp)
+sw s1, 0x44(sp)
+sw s0, 0x40(sp)
+sw gp, 0x18(sp)
+move a2, zero
+move s0, a0
+addiu a1, zero, 2
+lw t9, -sym.imp.socket(gp)
+addiu a0, zero, 2
+beqz s0, 0x40e3d4
+move v0, zero
+jalr t9
+nop
+move a1, s0
+lw gp, 0x18(sp)
+move s1, v0
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+move v1, t9
+lw t9, -sym.imp.perror(gp)
+bltz v0, 0x40e3e8
+addiu a0, sp, 0x20
+move t9, v1
+jalr t9
+nop
+addiu v0, zero, 2
+lw gp, 0x18(sp)
+ori a1, zero, 0x8915
+move a0, s1
+addiu a2, sp, 0x20
+lw t9, -sym.imp.ioctl(gp)
+jalr t9
+sh v0, 0x30(sp)
+lw gp, 0x18(sp)
+lw t9, -sym.imp.malloc(gp)
+move a1, t9
+lw t9, -sym.imp.perror(gp)
+bltz v0, 0x40e400
+--
+lw a3, -0x7fe0(gp)
+lw t9, -sym.imp.printf(gp)
+jalr t9
+addiu a0, a3, -0x6d84
+lw gp, 0x18(sp)
+b 0x40ff1c
+addiu a0, zero, 5
+lw s7, -obj.ut(gp)
+lw v0, (s7)
+beqz v0, 0x410550
+nop
+lw v0, 0x18(v0)
+beqz v0, 0x410550
+nop
+lw t3, 8(v0)
+blez t3, 0x410134
+move s2, zero
+move fp, s7
+move s5, zero
+lw t1, (s7)
+sll s0, s2, 2
+addiu a2, sp, 0xc0
+addu a0, s5, s4
+lw a3, 0x18(t1)
+addu s1, a2, s5
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+addiu s5, s5, 0x94
+lw t0, 4(a3)
+sw s2, 0xa8(a0)
+addiu a0, s1, 0xc
+addu v0, s0, t0
+lw a1, (v0)
+jalr t9
+addiu s2, s2, 1
+addiu a0, s1, 0x1c
+lw v1, (s7)
+lw gp, 0x18(sp)
+lw ra, 0x18(v1)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw t8, (ra)
+lw s7, -obj.ut(gp)
+addu s1, s0, t8
+lw a1, (s1)
+jalr t9
+nop
+lw t7, (fp)
+lw gp, 0x18(sp)
+lw t6, 0x18(t7)
+lw t5, 8(t6)
+slt t4, s2, t5
+beqz t4, 0x41064c
+nop
+slti v0, s2, 6
+bnez v0, 0x410098
+nop
+lw a2, 0x20(sp)
+beqz v0, 0x410154
+nop
+sll t3, s2, 3
+
+[*] Function strcpy used 5 times ushare
+

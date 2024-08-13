@@ -1,0 +1,744 @@
+[*] Binary protection state of usbp
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function system tear down of usbp
+
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/usbp @ 0x400bf0 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) main ()                          | int32_t main () {
+    0x00400bf0 lui gp, 5                     |     
+    0x00400bf4 addiu gp, gp, -0x6d20         |     
+    0x00400bf8 addu gp, gp, t9               |     gp += t9;
+    0x00400bfc addiu sp, sp, -0x28           |     
+    0x00400c00 sw ra, 0x20(sp)               |     *(var_20h) = ra;
+    0x00400c04 sw s1, 0x1c(sp)               |     *(var_1ch) = s1;
+    0x00400c08 sw s0, 0x18(sp)               |     *(var_18h) = s0;
+    0x00400c0c sw gp, 0x10(sp)               |     *(var_10h) = gp;
+    0x00400c10 move s0, a0                   |     s0 = a0;
+    0x00400c14 move s1, a1                   |     s1 = a1;
+    0x00400c18 lw a0, -0x7fe0(gp)            |     a0 = *(gp);
+    0x00400c1c lw t9, -0x7f40(gp)            |     t9 = sym.imp.puts;
+                                             |     /* esilref: 'usbp start ...' */
+    0x00400c20 addiu a0, a0, 0x1c70          |     a0 += 0x1c70;
+    0x00400c24 jalr t9                       |     t9 ();
+    0x00400c28 addiu v0, zero, 1             |     v0 = 1;
+    0x00400c2c lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x00400c30 move a2, zero                 |     a2 = 0;
+    0x00400c34 lw a1, -0x7fe0(gp)            |     a1 = *(gp);
+    0x00400c38 lw t9, -0x7f94(gp)            |     t9 = sym.imp.strcmp;
+                                             |     /* esilref: 'mount' */
+    0x00400c3c addiu a1, a1, 0x1c80          |     a1 += 0x1c80;
+                                             |     if (s0 != v0) {
+    0x00400c40 beq s0, v0, 0x400d2c          |         
+    0x00400c44 lw s0, 4(s1)                  |         s0 = *((s1 + 1));
+    0x00400c48 move a0, s0                   |         a0 = s0;
+    0x00400c4c jalr t9                       |         t9 ();
+    0x00400c50 addiu a0, zero, 1             |         a0 = 1;
+    0x00400c54 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00400c58 lw t9, -0x7f98(gp)            |         t9 = sym.usbLed1GpioSet;
+    0x00400c5c lw a1, -0x7fe0(gp)            |         a1 = *(gp);
+    0x00400c60 move v1, t9                   |         v1 = t9;
+    0x00400c64 lw t9, -0x7f94(gp)            |         t9 = sym.imp.strcmp;
+                                             |         /* esilref: 'umount' */
+    0x00400c68 addiu a1, a1, 0x1c88          |         a1 += 0x1c88;
+                                             |         if (v0 == 0) {
+    0x00400c6c bnez v0, 0x400c8c             |             
+    0x00400c70 move t9, v1                   |             t9 = v1;
+    0x00400c74 jalr t9                       |             t9 ();
+    0x00400c78 nop                           |             
+    0x00400c7c lw gp, 0x10(sp)               |             gp = *(var_10h);
+    0x00400c80 lw t9, -0x7fac(gp)            |             t9 = sym.doMount;
+    0x00400c84 b 0x400d18                    |             goto label_0;
+    0x00400c88 nop                           |             
+                                             |         }
+    0x00400c8c move a0, s0                   |         a0 = s0;
+    0x00400c90 jalr t9                       |         t9 ();
+    0x00400c94 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00400c98 lw t9, -0x7f98(gp)            |         t9 = sym.usbLed1GpioSet;
+    0x00400c9c move a0, zero                 |         a0 = 0;
+                                             |         if (v0 == 0) {
+    0x00400ca0 bnez v0, 0x400cf4             |             
+    0x00400ca4 jalr t9                       |             t9 ();
+    0x00400ca8 nop                           |             
+    0x00400cac lw gp, 0x10(sp)               |             gp = *(var_10h);
+    0x00400cb0 lw t9, -0x7f50(gp)            |             t9 = sym.imp.sleep;
+    0x00400cb4 addiu a0, zero, 1             |             a0 = 1;
+    0x00400cb8 jalr t9                       |             t9 ();
+    0x00400cbc lw gp, 0x10(sp)               |             gp = *(var_10h);
+    0x00400cc0 lw t9, -0x7fbc(gp)            |             t9 = sym.doUmount;
+    0x00400cc4 jalr t9                       |             t9 ();
+    0x00400cc8 nop                           |             
+    0x00400ccc addiu v1, zero, -1            |             v1 = -1;
+    0x00400cd0 lw gp, 0x10(sp)               |             gp = *(var_10h);
+    0x00400cd4 addiu a2, zero, -1            |             a2 = -1;
+    0x00400cd8 lw a0, -0x7fe0(gp)            |             a0 = *(gp);
+[31m    0x00400cdc lw t9, -0x7f48(gp)            |             t9 = sym.imp.system;[0m
+                                             |             /* esilref: 'echo 2 > /var/run/usb_envent_notify' */
+    0x00400ce0 addiu a0, a0, 0x1c90          |             a0 += 0x1c90;
+                                             |             if (v0 == v1) {
+    0x00400ce4 beq v0, v1, 0x400d2c          |                 goto label_1;
+                                             |             }
+    0x00400ce8 jalr t9                       |             t9 ();
+    0x00400cec nop                           |             
+    0x00400cf0 lw gp, 0x10(sp)               |             gp = *(var_10h);
+                                             |         }
+    0x00400cf4 lw a1, -0x7fe0(gp)            |         a1 = *(gp);
+    0x00400cf8 lw t9, -0x7f94(gp)            |         t9 = sym.imp.strcmp;
+    0x00400cfc lw a0, 4(s1)                  |         a0 = *((s1 + 1));
+                                             |         /* esilref: 'sumount' */
+    0x00400d00 addiu a1, a1, 0x1cb4          |         a1 += 0x1cb4;
+    0x00400d04 jalr t9                       |         t9 ();
+    0x00400d08 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00400d0c lw t9, -0x7f58(gp)            |         t9 = sym.doSafeUmount;
+    0x00400d10 addiu a2, zero, -1            |         a2 = -1;
+                                             |         if (v0 != 0) {
+    0x00400d14 bnez v0, 0x400d2c             |             goto label_1;
+                                             |         }
+                                             | label_0:
+    0x00400d18 lw ra, 0x20(sp)               |         ra = *(var_20h);
+    0x00400d1c lw s1, 0x1c(sp)               |         s1 = *(var_1ch);
+    0x00400d20 lw s0, 0x18(sp)               |         s0 = *(var_18h);
+    0x00400d24 addiu sp, sp, 0x28            |         
+    0x00400d28 jr t9                         |         t9 ();
+                                             |     }
+                                             | label_1:
+    0x00400d2c lw ra, 0x20(sp)               |     ra = *(var_20h);
+    0x00400d30 move v0, a2                   |     v0 = a2;
+    0x00400d34 lw s1, 0x1c(sp)               |     s1 = *(var_1ch);
+    0x00400d38 lw s0, 0x18(sp)               |     s0 = *(var_18h);
+    0x00400d3c addiu sp, sp, 0x28            |     
+    0x00400d40 jr ra                         |     return v0;
+                                             | }
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/usbp @ 0x400bf0 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) main ()                          | int32_t main () {
+    0x00400bf0 lui gp, 5                     |     
+    0x00400bf4 addiu gp, gp, -0x6d20         |     
+    0x00400bf8 addu gp, gp, t9               |     gp += t9;
+    0x00400bfc addiu sp, sp, -0x28           |     
+    0x00400c00 sw ra, 0x20(sp)               |     *(var_20h) = ra;
+    0x00400c04 sw s1, 0x1c(sp)               |     *(var_1ch) = s1;
+    0x00400c08 sw s0, 0x18(sp)               |     *(var_18h) = s0;
+    0x00400c0c sw gp, 0x10(sp)               |     *(var_10h) = gp;
+    0x00400c10 move s0, a0                   |     s0 = a0;
+    0x00400c14 move s1, a1                   |     s1 = a1;
+    0x00400c18 lw a0, -0x7fe0(gp)            |     a0 = *(gp);
+    0x00400c1c lw t9, -0x7f40(gp)            |     t9 = sym.imp.puts;
+                                             |     /* esilref: 'usbp start ...' */
+    0x00400c20 addiu a0, a0, 0x1c70          |     a0 += 0x1c70;
+    0x00400c24 jalr t9                       |     t9 ();
+    0x00400c28 addiu v0, zero, 1             |     v0 = 1;
+    0x00400c2c lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x00400c30 move a2, zero                 |     a2 = 0;
+    0x00400c34 lw a1, -0x7fe0(gp)            |     a1 = *(gp);
+    0x00400c38 lw t9, -0x7f94(gp)            |     t9 = sym.imp.strcmp;
+                                             |     /* esilref: 'mount' */
+    0x00400c3c addiu a1, a1, 0x1c80          |     a1 += 0x1c80;
+                                             |     if (s0 != v0) {
+    0x00400c40 beq s0, v0, 0x400d2c          |         
+    0x00400c44 lw s0, 4(s1)                  |         s0 = *((s1 + 1));
+    0x00400c48 move a0, s0                   |         a0 = s0;
+    0x00400c4c jalr t9                       |         t9 ();
+    0x00400c50 addiu a0, zero, 1             |         a0 = 1;
+    0x00400c54 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00400c58 lw t9, -0x7f98(gp)            |         t9 = sym.usbLed1GpioSet;
+    0x00400c5c lw a1, -0x7fe0(gp)            |         a1 = *(gp);
+    0x00400c60 move v1, t9                   |         v1 = t9;
+    0x00400c64 lw t9, -0x7f94(gp)            |         t9 = sym.imp.strcmp;
+                                             |         /* esilref: 'umount' */
+    0x00400c68 addiu a1, a1, 0x1c88          |         a1 += 0x1c88;
+                                             |         if (v0 == 0) {
+    0x00400c6c bnez v0, 0x400c8c             |             
+    0x00400c70 move t9, v1                   |             t9 = v1;
+    0x00400c74 jalr t9                       |             t9 ();
+    0x00400c78 nop                           |             
+    0x00400c7c lw gp, 0x10(sp)               |             gp = *(var_10h);
+    0x00400c80 lw t9, -0x7fac(gp)            |             t9 = sym.doMount;
+    0x00400c84 b 0x400d18                    |             goto label_0;
+    0x00400c88 nop                           |             
+                                             |         }
+    0x00400c8c move a0, s0                   |         a0 = s0;
+    0x00400c90 jalr t9                       |         t9 ();
+    0x00400c94 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00400c98 lw t9, -0x7f98(gp)            |         t9 = sym.usbLed1GpioSet;
+    0x00400c9c move a0, zero                 |         a0 = 0;
+                                             |         if (v0 == 0) {
+    0x00400ca0 bnez v0, 0x400cf4             |             
+    0x00400ca4 jalr t9                       |             t9 ();
+    0x00400ca8 nop                           |             
+    0x00400cac lw gp, 0x10(sp)               |             gp = *(var_10h);
+    0x00400cb0 lw t9, -0x7f50(gp)            |             t9 = sym.imp.sleep;
+    0x00400cb4 addiu a0, zero, 1             |             a0 = 1;
+    0x00400cb8 jalr t9                       |             t9 ();
+    0x00400cbc lw gp, 0x10(sp)               |             gp = *(var_10h);
+    0x00400cc0 lw t9, -0x7fbc(gp)            |             t9 = sym.doUmount;
+    0x00400cc4 jalr t9                       |             t9 ();
+    0x00400cc8 nop                           |             
+    0x00400ccc addiu v1, zero, -1            |             v1 = -1;
+    0x00400cd0 lw gp, 0x10(sp)               |             gp = *(var_10h);
+    0x00400cd4 addiu a2, zero, -1            |             a2 = -1;
+    0x00400cd8 lw a0, -0x7fe0(gp)            |             a0 = *(gp);
+[31m    0x00400cdc lw t9, -0x7f48(gp)            |             t9 = sym.imp.system;[0m
+                                             |             /* esilref: 'echo 2 > /var/run/usb_envent_notify' */
+    0x00400ce0 addiu a0, a0, 0x1c90          |             a0 += 0x1c90;
+                                             |             if (v0 == v1) {
+    0x00400ce4 beq v0, v1, 0x400d2c          |                 goto label_1;
+                                             |             }
+    0x00400ce8 jalr t9                       |             t9 ();
+    0x00400cec nop                           |             
+    0x00400cf0 lw gp, 0x10(sp)               |             gp = *(var_10h);
+                                             |         }
+    0x00400cf4 lw a1, -0x7fe0(gp)            |         a1 = *(gp);
+    0x00400cf8 lw t9, -0x7f94(gp)            |         t9 = sym.imp.strcmp;
+    0x00400cfc lw a0, 4(s1)                  |         a0 = *((s1 + 1));
+                                             |         /* esilref: 'sumount' */
+    0x00400d00 addiu a1, a1, 0x1cb4          |         a1 += 0x1cb4;
+    0x00400d04 jalr t9                       |         t9 ();
+    0x00400d08 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00400d0c lw t9, -0x7f58(gp)            |         t9 = sym.doSafeUmount;
+    0x00400d10 addiu a2, zero, -1            |         a2 = -1;
+                                             |         if (v0 != 0) {
+    0x00400d14 bnez v0, 0x400d2c             |             goto label_1;
+                                             |         }
+                                             | label_0:
+    0x00400d18 lw ra, 0x20(sp)               |         ra = *(var_20h);
+    0x00400d1c lw s1, 0x1c(sp)               |         s1 = *(var_1ch);
+    0x00400d20 lw s0, 0x18(sp)               |         s0 = *(var_18h);
+    0x00400d24 addiu sp, sp, 0x28            |         
+    0x00400d28 jr t9                         |         t9 ();
+                                             |     }
+                                             | label_1:
+    0x00400d2c lw ra, 0x20(sp)               |     ra = *(var_20h);
+    0x00400d30 move v0, a2                   |     v0 = a2;
+    0x00400d34 lw s1, 0x1c(sp)               |     s1 = *(var_1ch);
+    0x00400d38 lw s0, 0x18(sp)               |     s0 = *(var_18h);
+    0x00400d3c addiu sp, sp, 0x28            |     
+    0x00400d40 jr ra                         |     return v0;
+                                             | }
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/usbp @ 0x401b30 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) sym.imp.__uClibc_main ()         | void uClibc_main () {
+    0x00401b30 lw t9, -0x7ff0(gp)            |     t9 = *((gp - 8188));
+    0x00401b34 move t7, ra                   |     t7 = ra;
+    0x00401b38 addiu t8, zero, 0x1f          |     t8 = 0x1f;
+    0x00401b3c jalr t9                       |     t9 ();
+                                             | }
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/usbp @ 0x400e70 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) sym.doMount ()                   | void doMount () {
+    0x00400e70 lui gp, 5                     |     
+    0x00400e74 addiu gp, gp, -0x6fa0         |     
+    0x00400e78 addu gp, gp, t9               |     gp += t9;
+    0x00400e7c addiu sp, sp, -0x280          |     
+    0x00400e80 sw ra, 0x27c(sp)              |     *(var_27ch) = ra;
+    0x00400e84 sw fp, 0x278(sp)              |     *(var_278h) = fp;
+    0x00400e88 sw s7, 0x274(sp)              |     *(var_274h) = s7;
+    0x00400e8c sw s6, 0x270(sp)              |     *(var_270h) = s6;
+    0x00400e90 sw s5, 0x26c(sp)              |     *(var_26ch) = s5;
+    0x00400e94 sw s4, 0x268(sp)              |     *(var_268h) = s4;
+    0x00400e98 sw s3, 0x264(sp)              |     *(var_264h) = s3;
+    0x00400e9c sw s2, 0x260(sp)              |     *(var_260h) = s2;
+    0x00400ea0 sw s1, 0x25c(sp)              |     *(var_25ch) = s1;
+    0x00400ea4 sw s0, 0x258(sp)              |     *(var_258h) = s0;
+    0x00400ea8 sw gp, 0x20(sp)               |     *(var_20h) = gp;
+    0x00400eac move fp, zero                 |     fp = 0;
+    0x00400eb0 lw a0, -0x7fe0(gp)            |     a0 = *(gp);
+    0x00400eb4 addiu s7, zero, 1             |     s7 = 1;
+    0x00400eb8 lw a1, -0x7fe0(gp)            |     a1 = *(gp);
+    0x00400ebc lw t9, -0x7f80(gp)            |     t9 = sym.imp.fopen;
+                                             |     /* esilref: '/proc/diskstats' */
+    0x00400ec0 addiu a0, a0, 0x1cc0          |     a0 += 0x1cc0;
+    0x00400ec4 addiu a1, a1, 0x1cd0          |     a1 += 0x1cd0;
+    0x00400ec8 jalr t9                       |     t9 ();
+    0x00400ecc move s3, v0                   |     s3 = v0;
+    0x00400ed0 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00400ed4 addiu v0, zero, -1            |     v0 = -1;
+                                             |     if (s3 == 0) {
+    0x00400ed8 beqz s3, 0x401270             |         goto label_1;
+                                             |     }
+    0x00400edc move s0, zero                 |     s0 = 0;
+                                             |     do {
+    0x00400ee0 lw t9, -0x7f34(gp)            |         t9 = sym.imp.fgets;
+    0x00400ee4 addiu a0, sp, 0x28            |         a0 = sp + 0x28;
+    0x00400ee8 addiu a1, zero, 0x100         |         a1 = 0x100;
+    0x00400eec move a2, s3                   |         a2 = s3;
+    0x00400ef0 jalr t9                       |         t9 ();
+    0x00400ef4 addiu s0, s0, 1               |         s0++;
+    0x00400ef8 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00400efc slti v1, s0, 6                |         v1 = (s0 < 6) ? 1 : 0;
+                                             |         if (v0 == 0) {
+    0x00400f00 beqz v0, 0x400f0c             |             goto label_2;
+                                             |         }
+    0x00400f04 bnez v1, 0x400ee0             |         
+                                             |     } while (v1 != 0);
+    0x00400f08 nop                           |     
+                                             | label_2:
+    0x00400f0c lw t9, -0x7f6c(gp)            |     t9 = sym.imp.ferror;
+    0x00400f10 move a0, s3                   |     a0 = s3;
+    0x00400f14 jalr t9                       |     t9 ();
+    0x00400f18 lw gp, 0x20(sp)               |     gp = *(var_20h);
+                                             |     if (v0 == 0) {
+    0x00400f1c bnez v0, 0x400f3c             |         
+    0x00400f20 nop                           |         
+    0x00400f24 lw t9, -0x7f4c(gp)            |         t9 = sym.imp.feof;
+    0x00400f28 move a0, s3                   |         a0 = s3;
+    0x00400f2c jalr t9                       |         t9 ();
+    0x00400f30 lw gp, 0x20(sp)               |         gp = *(var_20h);
+                                             |         if (v0 == 0) {
+    0x00400f34 beqz v0, 0x400f54             |             goto label_0;
+                                             |         }
+    0x00400f38 nop                           |         
+                                             |     }
+    0x00400f3c lw t9, -0x7f8c(gp)            |     t9 = sym.imp.fclose;
+    0x00400f40 move a0, s3                   |     a0 = s3;
+    0x00400f44 jalr t9                       |     t9 ();
+    0x00400f48 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00400f4c addiu v0, zero, -1            |     v0 = -1;
+    0x00400f50 b 0x401270                    |     goto label_1;
+                                             |     do {
+                                             | label_0:
+    0x00400f54 lw t9, -0x7f84(gp)            |         t9 = sym.imp.memset;
+    0x00400f58 addiu s4, sp, 0x28            |         s4 = sp + 0x28;
+    0x00400f5c move a0, s4                   |         a0 = s4;
+    0x00400f60 move a1, zero                 |         a1 = 0;
+    0x00400f64 addiu a2, zero, 0x100         |         a2 = 0x100;
+    0x00400f68 jalr t9                       |         t9 ();
+    0x00400f6c move a0, s4                   |         a0 = s4;
+    0x00400f70 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00400f74 addiu a1, zero, 0x100         |         a1 = 0x100;
+    0x00400f78 lw t9, -0x7f34(gp)            |         t9 = sym.imp.fgets;
+    0x00400f7c move a2, s3                   |         a2 = s3;
+    0x00400f80 jalr t9                       |         t9 ();
+    0x00400f84 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00400f88 addiu s5, sp, 0x148           |         s5 = sp + 0x148;
+                                             |         if (v0 == 0) {
+    0x00400f8c beqz v0, 0x40120c             |             goto label_3;
+                                             |         }
+    0x00400f90 lw t9, -0x7f84(gp)            |         t9 = sym.imp.memset;
+    0x00400f94 move a0, s5                   |         a0 = s5;
+    0x00400f98 move a1, zero                 |         a1 = 0;
+    0x00400f9c addiu a2, zero, 0x10          |         a2 = 0x10;
+    0x00400fa0 addiu s1, sp, 0x128           |         s1 = sp + 0x128;
+    0x00400fa4 jalr t9                       |         t9 ();
+    0x00400fa8 move a0, s1                   |         a0 = s1;
+    0x00400fac lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00400fb0 move a1, zero                 |         a1 = 0;
+    0x00400fb4 addiu a2, zero, 0x10          |         a2 = 0x10;
+    0x00400fb8 addiu s0, sp, 0x138           |         s0 = sp + 0x138;
+    0x00400fbc lw t9, -0x7f84(gp)            |         t9 = sym.imp.memset;
+    0x00400fc0 addiu s2, sp, 0x158           |         s2 = sp + 0x158;
+    0x00400fc4 jalr t9                       |         t9 ();
+    0x00400fc8 move a0, s0                   |         a0 = s0;
+    0x00400fcc lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00400fd0 move a1, zero                 |         a1 = 0;
+    0x00400fd4 lw t9, -0x7f84(gp)            |         t9 = sym.imp.memset;
+    0x00400fd8 addiu a2, zero, 0x10          |         a2 = 0x10;
+    0x00400fdc jalr t9                       |         t9 ();
+    0x00400fe0 move a0, s4                   |         a0 = s4;
+    0x00400fe4 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00400fe8 move a1, s1                   |         a1 = s1;
+    0x00400fec move a2, s0                   |         a2 = s0;
+    0x00400ff0 lw t9, -0x7fa4(gp)            |         t9 = sym.getDevNumName;
+    0x00400ff4 lw s6, -0x7fe0(gp)            |         s6 = *(gp);
+    0x00400ff8 move a3, s5                   |         a3 = s5;
+    0x00400ffc jalr t9                       |         t9 ();
+    0x00401000 move a0, s2                   |         a0 = s2;
+    0x00401004 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00401008 move a1, zero                 |         a1 = 0;
+    0x0040100c lw t9, -0x7f84(gp)            |         t9 = sym.imp.memset;
+    0x00401010 addiu a2, zero, 0x100         |         a2 = 0x100;
+    0x00401014 jalr t9                       |         t9 ();
+    0x00401018 addiu a1, zero, 0x100         |         a1 = 0x100;
+    0x0040101c lw gp, 0x20(sp)               |         gp = *(var_20h);
+                                             |         /* esilref: '/tmp/dev/' */
+    0x00401020 addiu a3, s6, 0x1cd4          |         a3 = s6 + 0x1cd4;
+    0x00401024 move a0, s2                   |         a0 = s2;
+    0x00401028 lw a2, -0x7fe0(gp)            |         a2 = *(gp);
+    0x0040102c lw t9, -0x7f28(gp)            |         t9 = sym.imp.snprintf;
+                                             |         /* esilref: '&s&s' */
+    0x00401030 addiu a2, a2, 0x1ce0          |         a2 += 0x1ce0;
+    0x00401034 sw s5, 0x10(sp)               |         *(var_10h) = s5;
+    0x00401038 jalr t9                       |         t9 ();
+    0x0040103c move a0, s1                   |         a0 = s1;
+    0x00401040 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00401044 lw t9, -0x7fa8(gp)            |         t9 = sym.imp.atoi;
+    0x00401048 lw s1, -0x7fe0(gp)            |         s1 = *(gp);
+                                             |         /* esilref: '/tmp/usbdisk/' */
+    0x0040104c addiu s4, s1, 0x1ce8          |         s4 = s1 + 0x1ce8;
+    0x00401050 jalr t9                       |         t9 ();
+    0x00401054 move a0, s0                   |         a0 = s0;
+    0x00401058 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x0040105c lw t9, -0x7fa8(gp)            |         t9 = sym.imp.atoi;
+    0x00401060 sll s0, v0, 8                 |         s0 = v0 << 8;
+    0x00401064 jalr t9                       |         t9 ();
+    0x00401068 move a0, s2                   |         a0 = s2;
+    0x0040106c lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00401070 or s0, s0, v0                 |         s0 |= v0;
+    0x00401074 move a3, s0                   |         a3 = s0;
+    0x00401078 sra a2, s0, 0x1f              |         a2 = s0 >> 0x1f;
+    0x0040107c lw t9, -0x7f2c(gp)            |         t9 = sym.imp.mknod;
+    0x00401080 addiu a1, zero, 0x61b6        |         a1 = 0x61b6;
+    0x00401084 jalr t9                       |         t9 ();
+    0x00401088 move a0, s2                   |         a0 = s2;
+    0x0040108c lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00401090 move a1, zero                 |         a1 = 0;
+    0x00401094 lw t9, -0x7f84(gp)            |         t9 = sym.imp.memset;
+    0x00401098 addiu a2, zero, 0x100         |         a2 = 0x100;
+    0x0040109c jalr t9                       |         t9 ();
+    0x004010a0 move a3, s4                   |         a3 = s4;
+    0x004010a4 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x004010a8 move a0, s2                   |         a0 = s2;
+    0x004010ac addiu a1, zero, 0x100         |         a1 = 0x100;
+    0x004010b0 lw v0, -0x7fe0(gp)            |         v0 = *(gp);
+    0x004010b4 lw a2, -0x7fe0(gp)            |         a2 = *(gp);
+    0x004010b8 lw t9, -0x7f28(gp)            |         t9 = sym.imp.snprintf;
+                                             |         /* esilref: 'volume' */
+    0x004010bc addiu s0, v0, 0x1cf8          |         s0 = v0 + 0x1cf8;
+                                             |         /* esilref: '&s&s&d' */
+    0x004010c0 addiu a2, a2, 0x1d00          |         a2 += 0x1d00;
+    0x004010c4 sw s0, 0x10(sp)               |         *(var_10h) = s0;
+    0x004010c8 sw s7, 0x14(sp)               |         *(var_14h) = s7;
+    0x004010cc jalr t9                       |         t9 ();
+    0x004010d0 move a0, s2                   |         a0 = s2;
+    0x004010d4 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x004010d8 lw t9, -0x7fc4(gp)            |         t9 = sym.imp.mkdir;
+    0x004010dc addiu a1, zero, 0x1ff         |         a1 = 0x1ff;
+    0x004010e0 jalr t9                       |         t9 ();
+    0x004010e4 move a0, s2                   |         a0 = s2;
+    0x004010e8 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x004010ec move a1, zero                 |         a1 = 0;
+    0x004010f0 lw t9, -0x7f84(gp)            |         t9 = sym.imp.memset;
+    0x004010f4 addiu a2, zero, 0x100         |         a2 = 0x100;
+    0x004010f8 jalr t9                       |         t9 ();
+    0x004010fc move a0, s2                   |         a0 = s2;
+    0x00401100 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00401104 addiu a1, zero, 0x100         |         a1 = 0x100;
+                                             |         /* esilref: '/tmp/dev/' */
+    0x00401108 addiu a3, s6, 0x1cd4          |         a3 = s6 + 0x1cd4;
+    0x0040110c lw a2, -0x7fe0(gp)            |         a2 = *(gp);
+    0x00401110 lw t9, -0x7f28(gp)            |         t9 = sym.imp.snprintf;
+                                             |         /* esilref: 'mount &s&s &s&s&d -o noatime,fmask=0000,dmask=0000,iocharset=utf8' */
+    0x00401114 addiu a2, a2, 0x1d08          |         a2 += 0x1d08;
+    0x00401118 sw s5, 0x10(sp)               |         *(var_10h) = s5;
+    0x0040111c sw s4, 0x14(sp)               |         *(var_14h) = s4;
+    0x00401120 sw s0, 0x18(sp)               |         *(var_18h) = s0;
+    0x00401124 sw s7, 0x1c(sp)               |         *(var_1ch) = s7;
+    0x00401128 jalr t9                       |         t9 ();
+    0x0040112c lw gp, 0x20(sp)               |         gp = *(var_20h);
+[31m    0x00401130 lw t9, -0x7f48(gp)            |         t9 = sym.imp.system;[0m
+    0x00401134 move a0, s2                   |         a0 = s2;
+    0x00401138 jalr t9                       |         t9 ();
+    0x0040113c lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00401140 move a0, s2                   |         a0 = s2;
+                                             |         if (v0 == 0) {
+    0x00401144 beqz v0, 0x4011f8             |             goto label_4;
+                                             |         }
+    0x00401148 lw t9, -0x7f84(gp)            |         t9 = sym.imp.memset;
+    0x0040114c move a1, zero                 |         a1 = 0;
+    0x00401150 addiu a2, zero, 0x100         |         a2 = 0x100;
+    0x00401154 jalr t9                       |         t9 ();
+                                             |         /* esilref: '/tmp/dev/' */
+    0x00401158 addiu a3, s6, 0x1cd4          |         a3 = s6 + 0x1cd4;
+    0x0040115c lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x00401160 move a0, s2                   |         a0 = s2;
+    0x00401164 addiu a1, zero, 0x100         |         a1 = 0x100;
+    0x00401168 lw a2, -0x7fe0(gp)            |         a2 = *(gp);
+    0x0040116c lw t9, -0x7f28(gp)            |         t9 = sym.imp.snprintf;
+                                             |         /* esilref: 'ntfs-3g &s&s &s&s&d -o big_writes,async,nodirtime,noatime,force' */
+    0x00401170 addiu a2, a2, 0x1d4c          |         a2 += 0x1d4c;
+    0x00401174 sw s5, 0x10(sp)               |         *(var_10h) = s5;
+    0x00401178 sw s4, 0x14(sp)               |         *(var_14h) = s4;
+    0x0040117c sw s0, 0x18(sp)               |         *(var_18h) = s0;
+    0x00401180 sw s7, 0x1c(sp)               |         *(var_1ch) = s7;
+    0x00401184 jalr t9                       |         t9 ();
+    0x00401188 lw gp, 0x20(sp)               |         gp = *(var_20h);
+[31m    0x0040118c lw t9, -0x7f48(gp)            |         t9 = sym.imp.system;[0m
+    0x00401190 move a0, s2                   |         a0 = s2;
+    0x00401194 jalr t9                       |         t9 ();
+    0x00401198 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x0040119c move a0, s2                   |         a0 = s2;
+                                             |         if (v0 == 0) {
+    0x004011a0 beqz v0, 0x4011f8             |             goto label_4;
+                                             |         }
+    0x004011a4 lw t9, -0x7f84(gp)            |         t9 = sym.imp.memset;
+    0x004011a8 move a1, zero                 |         a1 = 0;
+    0x004011ac addiu a2, zero, 0x100         |         a2 = 0x100;
+    0x004011b0 jalr t9                       |         t9 ();
+    0x004011b4 move a3, s4                   |         a3 = s4;
+    0x004011b8 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x004011bc move a0, s2                   |         a0 = s2;
+    0x004011c0 addiu a1, zero, 0x100         |         a1 = 0x100;
+    0x004011c4 lw a2, -0x7fe0(gp)            |         a2 = *(gp);
+    0x004011c8 lw t9, -0x7f28(gp)            |         t9 = sym.imp.snprintf;
+                                             |         /* esilref: 'rm -rf &s&s&s' */
+    0x004011cc addiu a2, a2, 0x1d8c          |         a2 += 0x1d8c;
+    0x004011d0 sw s0, 0x10(sp)               |         *(var_10h) = s0;
+    0x004011d4 sw s5, 0x14(sp)               |         *(var_14h) = s5;
+    0x004011d8 jalr t9                       |         t9 ();
+    0x004011dc lw gp, 0x20(sp)               |         gp = *(var_20h);
+[31m    0x004011e0 lw t9, -0x7f48(gp)            |         t9 = sym.imp.system;[0m
+    0x004011e4 move a0, s2                   |         a0 = s2;
+    0x004011e8 jalr t9                       |         t9 ();
+    0x004011ec lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x004011f0 b 0x400f54                    |         
+                                             |     } while (1);
+    0x004011f4 nop                           |     
+                                             | label_4:
+    0x004011f8 addiu s7, s7, 1               |     s7++;
+    0x004011fc addiu v0, zero, 1             |     v0 = 1;
+    0x00401200 slti v1, s7, 9                |     v1 = (s7 < 9) ? 1 : 0;
+                                             |     if (fp == 0) {
+    0x00401204 movz fp, v0, fp               |         fp = v0;
+                                             |         goto label_5;
+                                             |     }
+                                             |     if (v1 != 0) {
+                                             | label_5:
+    0x00401208 bnez v1, 0x400f54             |         goto label_0;
+                                             |     }
+                                             | label_3:
+    0x0040120c lw t9, -0x7f8c(gp)            |     t9 = sym.imp.fclose;
+    0x00401210 move a0, s3                   |     a0 = s3;
+    0x00401214 jalr t9                       |     t9 ();
+    0x00401218 addiu v0, zero, 1             |     v0 = 1;
+    0x0040121c lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00401220 move v0, zero                 |     v0 = 0;
+                                             |     if (fp == v0) {
+    0x00401224 bne fp, v0, 0x401270          |         
+    0x00401228 lw a0, -0x7fe0(gp)            |         a0 = *(gp);
+    0x0040122c addiu a1, zero, 4             |         a1 = 4;
+    0x00401230 lw t9, -0x7fa0(gp)            |         t9 = sym.imp.access;
+                                             |         /* esilref: '/var/run/usb_envent_notify' */
+    0x00401234 addiu a0, a0, 0x1d9c          |         a0 += 0x1d9c;
+    0x00401238 jalr t9                       |         t9 ();
+    0x0040123c lw gp, 0x20(sp)               |         gp = *(var_20h);
+                                             |         if (v0 != 0) {
+    0x00401240 beqz v0, 0x401258             |             
+    0x00401244 nop                           |             
+    0x00401248 lw t9, -0x7f50(gp)            |             t9 = sym.imp.sleep;
+    0x0040124c addiu a0, zero, 2             |             a0 = 2;
+    0x00401250 jalr t9                       |             t9 ();
+    0x00401254 lw gp, 0x20(sp)               |             gp = *(var_20h);
+                                             |         }
+    0x00401258 lw a0, -0x7fe0(gp)            |         a0 = *(gp);
+[31m    0x0040125c lw t9, -0x7f48(gp)            |         t9 = sym.imp.system;[0m
+                                             |         /* esilref: 'echo 1 > /var/run/usb_envent_notify' */
+    0x00401260 addiu a0, a0, 0x1db8          |         a0 += 0x1db8;
+    0x00401264 jalr t9                       |         t9 ();
+    0x00401268 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x0040126c move v0, zero                 |         v0 = 0;
+                                             |     }
+                                             | label_1:
+    0x00401270 lw ra, 0x27c(sp)              |     ra = *(var_27ch);
+    0x00401274 lw fp, 0x278(sp)              |     fp = *(var_278h);
+    0x00401278 lw s7, 0x274(sp)              |     s7 = *(var_274h);
+    0x0040127c lw s6, 0x270(sp)              |     s6 = *(var_270h);
+    0x00401280 lw s5, 0x26c(sp)              |     s5 = *(var_26ch);
+    0x00401284 lw s4, 0x268(sp)              |     s4 = *(var_268h);
+    0x00401288 lw s3, 0x264(sp)              |     s3 = *(var_264h);
+    0x0040128c lw s2, 0x260(sp)              |     s2 = *(var_260h);
+    0x00401290 lw s1, 0x25c(sp)              |     s1 = *(var_25ch);
+    0x00401294 lw s0, 0x258(sp)              |     s0 = *(var_258h);
+    0x00401298 addiu sp, sp, 0x280           |     
+    0x0040129c jr ra                         |     return v0;
+                                             | }
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/usbp @ 0x4012a0 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) sym.doSafeUmount ()              | void doSafeUmount () {
+    0x004012a0 lui gp, 5                     |     
+    0x004012a4 addiu gp, gp, -0x73d0         |     
+    0x004012a8 addu gp, gp, t9               |     gp += t9;
+    0x004012ac addiu sp, sp, -0x338          |     
+    0x004012b0 sw ra, 0x330(sp)              |     *(var_330h) = ra;
+    0x004012b4 sw s5, 0x32c(sp)              |     *(var_32ch) = s5;
+    0x004012b8 sw s4, 0x328(sp)              |     *(var_328h) = s4;
+    0x004012bc sw s3, 0x324(sp)              |     *(var_324h) = s3;
+    0x004012c0 sw s2, 0x320(sp)              |     *(var_320h) = s2;
+    0x004012c4 sw s1, 0x31c(sp)              |     *(var_31ch) = s1;
+    0x004012c8 sw s0, 0x318(sp)              |     *(var_318h) = s0;
+    0x004012cc sw gp, 0x10(sp)               |     *(var_10h) = gp;
+    0x004012d0 move a1, zero                 |     a1 = 0;
+    0x004012d4 lw t9, -0x7f84(gp)            |     t9 = sym.imp.memset;
+    0x004012d8 addiu s4, sp, 0x118           |     s4 = sp + 0x118;
+    0x004012dc move a0, s4                   |     a0 = s4;
+    0x004012e0 addiu a2, zero, 0x100         |     a2 = 0x100;
+    0x004012e4 jalr t9                       |     t9 ();
+    0x004012e8 move a0, s4                   |     a0 = s4;
+    0x004012ec lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x004012f0 addiu a1, zero, 0x100         |     a1 = 0x100;
+    0x004012f4 move s5, zero                 |     s5 = 0;
+    0x004012f8 lw a2, -0x7fe0(gp)            |     a2 = *(gp);
+    0x004012fc lw t9, -0x7f28(gp)            |     t9 = sym.imp.snprintf;
+                                             |     /* esilref: 'mount' */
+    0x00401300 addiu a2, a2, 0x1ddc          |     a2 += 0x1ddc;
+    0x00401304 jalr t9                       |     t9 ();
+    0x00401308 move a0, s4                   |     a0 = s4;
+    0x0040130c lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x00401310 lw a1, -0x7fe0(gp)            |     a1 = *(gp);
+    0x00401314 lw t9, -0x7f20(gp)            |     t9 = sym.imp.popen;
+                                             |     /* esilref: 'rt' */
+    0x00401318 addiu a1, a1, 0x1de4          |     a1 += 0x1de4;
+    0x0040131c jalr t9                       |     t9 ();
+    0x00401320 move s3, v0                   |     s3 = v0;
+    0x00401324 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x00401328 addiu v0, zero, -1            |     v0 = -1;
+                                             |     if (s3 == 0) {
+    0x0040132c beqz s3, 0x4014f0             |         goto label_2;
+                                             |     }
+                                             |     do {
+                                             | label_1:
+    0x00401330 lw t9, -0x7f84(gp)            |         t9 = sym.imp.memset;
+                                             | label_0:
+    0x00401334 addiu s0, sp, 0x18            |         s0 = sp + 0x18;
+    0x00401338 move a0, s0                   |         a0 = s0;
+    0x0040133c move a1, zero                 |         a1 = 0;
+    0x00401340 addiu a2, zero, 0x100         |         a2 = 0x100;
+    0x00401344 jalr t9                       |         t9 ();
+    0x00401348 move a0, s0                   |         a0 = s0;
+    0x0040134c lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00401350 addiu a1, zero, 0x100         |         a1 = 0x100;
+    0x00401354 lw t9, -0x7f34(gp)            |         t9 = sym.imp.fgets;
+    0x00401358 move a2, s3                   |         a2 = s3;
+    0x0040135c jalr t9                       |         t9 ();
+    0x00401360 move a0, s0                   |         a0 = s0;
+    0x00401364 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00401368 lw a1, -0x7fe0(gp)            |         a1 = *(gp);
+    0x0040136c lw t9, -0x7f70(gp)            |         t9 = sym.imp.strstr;
+                                             |         /* esilref: '/tmp/usbdisk/' */
+    0x00401370 addiu a1, a1, 0x1ce8          |         a1 += 0x1ce8;
+                                             |         if (v0 == 0) {
+    0x00401374 beqz v0, 0x40143c             |             goto label_3;
+                                             |         }
+    0x00401378 jalr t9                       |         t9 ();
+    0x0040137c nop                           |         
+    0x00401380 addiu a1, zero, 0x20          |         a1 = 0x20;
+    0x00401384 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00401388 move s0, v0                   |         s0 = v0;
+    0x0040138c lw t9, -0x7fb4(gp)            |         t9 = sym.imp.strchr;
+    0x00401390 move a0, v0                   |         a0 = v0;
+    0x00401394 beqz v0, 0x401330             |         
+                                             |     } while (v0 == 0);
+    0x00401398 jalr t9                       |     t9 ();
+    0x0040139c nop                           |     
+    0x004013a0 addiu s2, sp, 0x218           |     s2 = sp + 0x218;
+    0x004013a4 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x004013a8 move s1, v0                   |     s1 = v0;
+    0x004013ac move a0, s2                   |     a0 = s2;
+    0x004013b0 move a1, zero                 |     a1 = 0;
+    0x004013b4 lw t9, -0x7f84(gp)            |     t9 = sym.imp.memset;
+    0x004013b8 addiu a2, zero, 0x100         |     a2 = 0x100;
+                                             |     if (v0 == 0) {
+    0x004013bc beqz v0, 0x401334             |         goto label_0;
+                                             |     }
+    0x004013c0 jalr t9                       |     t9 ();
+    0x004013c4 nop                           |     
+    0x004013c8 move a0, s2                   |     a0 = s2;
+    0x004013cc lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x004013d0 move a1, s0                   |     a1 = s0;
+    0x004013d4 lw t9, -0x7f74(gp)            |     t9 = sym.imp.strncpy;
+    0x004013d8 subu a2, s1, s0               |     __asm ("subu a2, s1, s0");
+    0x004013dc jalr t9                       |     t9 ();
+    0x004013e0 move a0, s4                   |     a0 = s4;
+    0x004013e4 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x004013e8 move a1, zero                 |     a1 = 0;
+    0x004013ec lw t9, -0x7f84(gp)            |     t9 = sym.imp.memset;
+    0x004013f0 addiu a2, zero, 0x100         |     a2 = 0x100;
+    0x004013f4 jalr t9                       |     t9 ();
+    0x004013f8 move a0, s4                   |     a0 = s4;
+    0x004013fc lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x00401400 move a3, s2                   |     a3 = s2;
+    0x00401404 addiu a1, zero, 0x100         |     a1 = 0x100;
+    0x00401408 lw a2, -0x7fe0(gp)            |     a2 = *(gp);
+    0x0040140c lw t9, -0x7f28(gp)            |     t9 = sym.imp.snprintf;
+                                             |     /* esilref: 'umount &s' */
+    0x00401410 addiu a2, a2, 0x1de8          |     a2 += 0x1de8;
+    0x00401414 jalr t9                       |     t9 ();
+    0x00401418 lw gp, 0x10(sp)               |     gp = *(var_10h);
+[31m    0x0040141c lw t9, -0x7f48(gp)            |     t9 = sym.imp.system;[0m
+    0x00401420 move a0, s4                   |     a0 = s4;
+    0x00401424 jalr t9                       |     t9 ();
+    0x00401428 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             |     if (v0 == 0) {
+    0x0040142c beqz v0, 0x401330             |         goto label_1;
+                                             |     }
+    0x00401430 nop                           |     
+    0x00401434 addiu s5, s5, 1               |     s5++;
+    0x00401438 b 0x401330                    |     goto label_1;
+                                             | label_3:
+    0x0040143c lw t9, -0x7f24(gp)            |     t9 = sym.imp.pclose;
+    0x00401440 move a0, s3                   |     a0 = s3;
+    0x00401444 jalr t9                       |     t9 ();
+    0x00401448 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040144c addiu v0, zero, -1            |     v0 = -1;
+                                             |     if (s5 == 0) {
+    0x00401450 bnez s5, 0x4014f0             |         
+    0x00401454 lw t9, -0x7f84(gp)            |         t9 = sym.imp.memset;
+    0x00401458 addiu s0, sp, 0x118           |         s0 = sp + 0x118;
+    0x0040145c move a0, s0                   |         a0 = s0;
+    0x00401460 move a1, zero                 |         a1 = 0;
+    0x00401464 addiu a2, zero, 0x100         |         a2 = 0x100;
+    0x00401468 jalr t9                       |         t9 ();
+    0x0040146c addiu a1, zero, 0x100         |         a1 = 0x100;
+    0x00401470 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00401474 move a0, s0                   |         a0 = s0;
+    0x00401478 lw s1, -0x7fe0(gp)            |         s1 = *(gp);
+    0x0040147c lw a3, -0x7fe0(gp)            |         a3 = *(gp);
+    0x00401480 lw t9, -0x7f28(gp)            |         t9 = sym.imp.snprintf;
+                                             |         /* esilref: 'rm -rf &s*' */
+    0x00401484 addiu a2, s1, 0x1df4          |         a2 = s1 + 0x1df4;
+                                             |         /* esilref: '/tmp/usbdisk/' */
+    0x00401488 addiu a3, a3, 0x1ce8          |         a3 += 0x1ce8;
+    0x0040148c jalr t9                       |         t9 ();
+    0x00401490 lw gp, 0x10(sp)               |         gp = *(var_10h);
+[31m    0x00401494 lw t9, -0x7f48(gp)            |         t9 = sym.imp.system;[0m
+    0x00401498 move a0, s0                   |         a0 = s0;
+    0x0040149c jalr t9                       |         t9 ();
+    0x004014a0 move a0, s0                   |         a0 = s0;
+    0x004014a4 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x004014a8 move a1, zero                 |         a1 = 0;
+    0x004014ac lw t9, -0x7f84(gp)            |         t9 = sym.imp.memset;
+    0x004014b0 addiu a2, zero, 0x100         |         a2 = 0x100;
+    0x004014b4 jalr t9                       |         t9 ();
+    0x004014b8 move a0, s0                   |         a0 = s0;
+    0x004014bc lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |         /* esilref: 'rm -rf &s*' */
+    0x004014c0 addiu a2, s1, 0x1df4          |         a2 = s1 + 0x1df4;
+    0x004014c4 addiu a1, zero, 0x100         |         a1 = 0x100;
+    0x004014c8 lw a3, -0x7fe0(gp)            |         a3 = *(gp);
+    0x004014cc lw t9, -0x7f28(gp)            |         t9 = sym.imp.snprintf;
+                                             |         /* esilref: '/tmp/dev/' */
+    0x004014d0 addiu a3, a3, 0x1cd4          |         a3 += 0x1cd4;
+    0x004014d4 jalr t9                       |         t9 ();
+    0x004014d8 lw gp, 0x10(sp)               |         gp = *(var_10h);
+[31m    0x004014dc lw t9, -0x7f48(gp)            |         t9 = sym.imp.system;[0m
+    0x004014e0 move a0, s0                   |         a0 = s0;
+    0x004014e4 jalr t9                       |         t9 ();
+    0x004014e8 move v0, zero                 |         v0 = 0;
+    0x004014ec lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |     }
+                                             | label_2:
+    0x004014f0 lw ra, 0x330(sp)              |     ra = *(var_330h);
+    0x004014f4 lw s5, 0x32c(sp)              |     s5 = *(var_32ch);
+    0x004014f8 lw s4, 0x328(sp)              |     s4 = *(var_328h);
+    0x004014fc lw s3, 0x324(sp)              |     s3 = *(var_324h);
+    0x00401500 lw s2, 0x320(sp)              |     s2 = *(var_320h);
+    0x00401504 lw s1, 0x31c(sp)              |     s1 = *(var_31ch);
+    0x00401508 lw s0, 0x318(sp)              |     s0 = *(var_318h);
+    0x0040150c addiu sp, sp, 0x338           |     
+    0x00401510 jr ra                         |     return v0;
+                                             | }
+
+[*] Function system used 9 times usbp
+

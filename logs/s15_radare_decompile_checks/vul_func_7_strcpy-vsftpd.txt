@@ -1,0 +1,179 @@
+[*] Binary protection state of vsftpd
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of vsftpd
+
+    ; assembly                                   | /* r2dec pseudo code output */
+                                                 | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd @ 0x4239e4 */
+                                                 | #include <stdint.h>
+                                                 |  
+    ; (fcn) sym.vsf_sysutil_parse_time ()        | void vsf_sysutil_parse_time () {
+    0x004239e4 lui gp, 5                         |     
+    0x004239e8 addiu gp, gp, -0x994              |     
+    0x004239ec addu gp, gp, t9                   |     gp += t9;
+    0x004239f0 addiu sp, sp, -0xa0               |     
+    0x004239f4 sw ra, 0x98(sp)                   |     *(var_98h) = ra;
+    0x004239f8 sw s7, 0x94(sp)                   |     *(var_94h) = s7;
+    0x004239fc sw s6, 0x90(sp)                   |     *(var_90h) = s6;
+    0x00423a00 sw s5, 0x8c(sp)                   |     *(var_8ch) = s5;
+    0x00423a04 sw s4, 0x88(sp)                   |     *(var_88h) = s4;
+    0x00423a08 sw s3, 0x84(sp)                   |     *(var_84h) = s3;
+    0x00423a0c sw s2, 0x80(sp)                   |     *(var_80h) = s2;
+    0x00423a10 sw s1, 0x7c(sp)                   |     *(var_7ch) = s1;
+    0x00423a14 sw s0, 0x78(sp)                   |     *(var_78h) = s0;
+    0x00423a18 sw gp, 0x10(sp)                   |     *(var_10h) = gp;
+    0x00423a1c lw t9, -0x76b4(gp)                |     t9 = sym.vsf_sysutil_strlen;
+    0x00423a20 move s0, a0                       |     s0 = a0;
+    0x00423a24 addiu s2, sp, 0x48                |     s2 = sp + 0x48;
+    0x00423a28 jalr t9                           |     t9 ();
+    0x00423a2c lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00423a30 addiu a0, sp, 0x18                |     a0 = sp + 0x18;
+    0x00423a34 addiu a1, zero, 0x2c              |     a1 = 0x2c;
+    0x00423a38 lw t9, -0x7f6c(gp)                |     t9 = sym.vsf_sysutil_memclr;
+    0x00423a3c move s1, v0                       |     s1 = v0;
+    0x00423a40 addiu s5, sp, 0x60                |     s5 = sp + 0x60;
+    0x00423a44 jalr t9                           |     t9 ();
+    0x00423a48 lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00423a4c sltiu v0, s1, 8                   |     v0 = (s1 < 8) ? 1 : 0;
+    0x00423a50 addiu s3, sp, 0x50                |     s3 = sp + 0x50;
+    0x00423a54 addiu s6, sp, 0x68                |     s6 = sp + 0x68;
+    0x00423a58 addiu s4, sp, 0x58                |     s4 = sp + 0x58;
+    0x00423a5c addiu s7, sp, 0x70                |     s7 = sp + 0x70;
+[31m    0x00423a60 lw t9, -0x7e38(gp)                |     t9 = sym.vsf_sysutil_strcpy;[0m
+    0x00423a64 move a0, s2                       |     a0 = s2;
+    0x00423a68 move a1, s0                       |     a1 = s0;
+    0x00423a6c addiu a2, zero, 5                 |     a2 = 5;
+                                                 |     if (v0 == 0) {
+    0x00423a70 beqz v0, 0x423acc                 |         goto label_0;
+                                                 |     }
+    0x00423a74 sltiu v0, s1, 0xe                 |     v0 = (s1 < 0xe) ? 1 : 0;
+[31m    0x00423a78 lw t9, -0x7e38(gp)                |     t9 = sym.vsf_sysutil_strcpy;[0m
+    0x00423a7c move a0, s5                       |     a0 = s5;
+    0x00423a80 addiu a1, s0, 8                   |     a1 = s0 + 8;
+    0x00423a84 addiu a2, zero, 3                 |     a2 = 3;
+                                                 |     if (v0 == 0) {
+    0x00423a88 beqz v0, 0x423b7c                 |         goto label_1;
+                                                 |     }
+                                                 |     do {
+    0x00423a8c lw t9, -0x79e4(gp)                |         t9 = sym.imp.mktime;
+    0x00423a90 nop                               |         
+    0x00423a94 addiu a0, sp, 0x18                |         a0 = sp + 0x18;
+    0x00423a98 jalr t9                           |         t9 ();
+    0x00423a9c lw gp, 0x10(sp)                   |         gp = *(var_10h);
+    0x00423aa0 lw ra, 0x98(sp)                   |         ra = *(var_98h);
+    0x00423aa4 lw s7, 0x94(sp)                   |         s7 = *(var_94h);
+    0x00423aa8 lw s6, 0x90(sp)                   |         s6 = *(var_90h);
+    0x00423aac lw s5, 0x8c(sp)                   |         s5 = *(var_8ch);
+    0x00423ab0 lw s4, 0x88(sp)                   |         s4 = *(var_88h);
+    0x00423ab4 lw s3, 0x84(sp)                   |         s3 = *(var_84h);
+    0x00423ab8 lw s2, 0x80(sp)                   |         s2 = *(var_80h);
+    0x00423abc lw s1, 0x7c(sp)                   |         s1 = *(var_7ch);
+    0x00423ac0 lw s0, 0x78(sp)                   |         s0 = *(var_78h);
+    0x00423ac4 addiu sp, sp, 0xa0                |         
+    0x00423ac8 jr ra                             |         return v0;
+                                                 | label_0:
+    0x00423acc jalr t9                           |         t9 ();
+    0x00423ad0 nop                               |         
+    0x00423ad4 lw gp, 0x10(sp)                   |         gp = *(var_10h);
+    0x00423ad8 move a0, s3                       |         a0 = s3;
+    0x00423adc addiu a1, s0, 4                   |         a1 = s0 + 4;
+[31m    0x00423ae0 lw t9, -0x7e38(gp)                |         t9 = sym.vsf_sysutil_strcpy;[0m
+    0x00423ae4 nop                               |         
+    0x00423ae8 addiu a2, zero, 3                 |         a2 = 3;
+    0x00423aec jalr t9                           |         t9 ();
+    0x00423af0 lw gp, 0x10(sp)                   |         gp = *(var_10h);
+    0x00423af4 addiu a1, s0, 6                   |         a1 = s0 + 6;
+    0x00423af8 addiu a2, zero, 3                 |         a2 = 3;
+[31m    0x00423afc lw t9, -0x7e38(gp)                |         t9 = sym.vsf_sysutil_strcpy;[0m
+    0x00423b00 nop                               |         
+    0x00423b04 move a0, s4                       |         a0 = s4;
+    0x00423b08 jalr t9                           |         t9 ();
+    0x00423b0c lw gp, 0x10(sp)                   |         gp = *(var_10h);
+    0x00423b10 nop                               |         
+    0x00423b14 lw t9, -0x7b34(gp)                |         t9 = sym.vsf_sysutil_atoi;
+    0x00423b18 nop                               |         
+    0x00423b1c move a0, s2                       |         a0 = s2;
+    0x00423b20 jalr t9                           |         t9 ();
+    0x00423b24 lw gp, 0x10(sp)                   |         gp = *(var_10h);
+    0x00423b28 addiu v0, v0, -0x76c              |         v0 += -0x76c;
+    0x00423b2c move a0, s3                       |         a0 = s3;
+    0x00423b30 lw t9, -0x7b34(gp)                |         t9 = sym.vsf_sysutil_atoi;
+    0x00423b34 nop                               |         
+    0x00423b38 sw v0, 0x2c(sp)                   |         *(var_2ch) = v0;
+    0x00423b3c jalr t9                           |         t9 ();
+    0x00423b40 lw gp, 0x10(sp)                   |         gp = *(var_10h);
+    0x00423b44 addiu v0, v0, -1                  |         v0 += -1;
+    0x00423b48 move a0, s4                       |         a0 = s4;
+    0x00423b4c lw t9, -0x7b34(gp)                |         t9 = sym.vsf_sysutil_atoi;
+    0x00423b50 nop                               |         
+    0x00423b54 sw v0, 0x28(sp)                   |         *(var_28h) = v0;
+    0x00423b58 jalr t9                           |         t9 ();
+    0x00423b5c lw gp, 0x10(sp)                   |         gp = *(var_10h);
+    0x00423b60 sw v0, 0x24(sp)                   |         *(var_24h) = v0;
+    0x00423b64 sltiu v0, s1, 0xe                 |         v0 = (s1 < 0xe) ? 1 : 0;
+[31m    0x00423b68 lw t9, -0x7e38(gp)                |         t9 = sym.vsf_sysutil_strcpy;[0m
+    0x00423b6c move a0, s5                       |         a0 = s5;
+    0x00423b70 addiu a1, s0, 8                   |         a1 = s0 + 8;
+    0x00423b74 addiu a2, zero, 3                 |         a2 = 3;
+    0x00423b78 bnez v0, 0x423a8c                 |         
+                                                 |     } while (v0 != 0);
+                                                 | label_1:
+    0x00423b7c jalr t9                           |     t9 ();
+    0x00423b80 nop                               |     
+    0x00423b84 lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00423b88 move a0, s6                       |     a0 = s6;
+    0x00423b8c addiu a1, s0, 0xa                 |     a1 = s0 + 0xa;
+[31m    0x00423b90 lw t9, -0x7e38(gp)                |     t9 = sym.vsf_sysutil_strcpy;[0m
+    0x00423b94 nop                               |     
+    0x00423b98 addiu a2, zero, 3                 |     a2 = 3;
+    0x00423b9c jalr t9                           |     t9 ();
+    0x00423ba0 lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00423ba4 addiu a1, s0, 0xc                 |     a1 = s0 + 0xc;
+    0x00423ba8 addiu a2, zero, 3                 |     a2 = 3;
+[31m    0x00423bac lw t9, -0x7e38(gp)                |     t9 = sym.vsf_sysutil_strcpy;[0m
+    0x00423bb0 nop                               |     
+    0x00423bb4 move a0, s7                       |     a0 = s7;
+    0x00423bb8 jalr t9                           |     t9 ();
+    0x00423bbc lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00423bc0 nop                               |     
+    0x00423bc4 lw t9, -0x7b34(gp)                |     t9 = sym.vsf_sysutil_atoi;
+    0x00423bc8 nop                               |     
+    0x00423bcc move a0, s5                       |     a0 = s5;
+    0x00423bd0 jalr t9                           |     t9 ();
+    0x00423bd4 lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00423bd8 move a0, s6                       |     a0 = s6;
+    0x00423bdc lw t9, -0x7b34(gp)                |     t9 = sym.vsf_sysutil_atoi;
+    0x00423be0 nop                               |     
+    0x00423be4 sw v0, 0x20(sp)                   |     *(var_20h) = v0;
+    0x00423be8 jalr t9                           |     t9 ();
+    0x00423bec lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00423bf0 move a0, s7                       |     a0 = s7;
+    0x00423bf4 lw t9, -0x7b34(gp)                |     t9 = sym.vsf_sysutil_atoi;
+    0x00423bf8 nop                               |     
+    0x00423bfc sw v0, 0x1c(sp)                   |     *(var_1ch) = v0;
+    0x00423c00 jalr t9                           |     t9 ();
+    0x00423c04 lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00423c08 sw v0, 0x18(sp)                   |     *(var_18h) = v0;
+    0x00423c0c lw t9, -0x79e4(gp)                |     t9 = sym.imp.mktime;
+    0x00423c10 nop                               |     
+    0x00423c14 addiu a0, sp, 0x18                |     a0 = sp + 0x18;
+    0x00423c18 jalr t9                           |     t9 ();
+    0x00423c1c lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00423c20 lw ra, 0x98(sp)                   |     ra = *(var_98h);
+    0x00423c24 lw s7, 0x94(sp)                   |     s7 = *(var_94h);
+    0x00423c28 lw s6, 0x90(sp)                   |     s6 = *(var_90h);
+    0x00423c2c lw s5, 0x8c(sp)                   |     s5 = *(var_8ch);
+    0x00423c30 lw s4, 0x88(sp)                   |     s4 = *(var_88h);
+    0x00423c34 lw s3, 0x84(sp)                   |     s3 = *(var_84h);
+    0x00423c38 lw s2, 0x80(sp)                   |     s2 = *(var_80h);
+    0x00423c3c lw s1, 0x7c(sp)                   |     s1 = *(var_7ch);
+    0x00423c40 lw s0, 0x78(sp)                   |     s0 = *(var_78h);
+    0x00423c44 addiu sp, sp, 0xa0                |     
+    0x00423c48 jr ra                             |     return v0;
+                                                 | }
+
+[*] Function strcpy used 7 times vsftpd
+

@@ -1,0 +1,22 @@
+[+] Search/scan config files
+=================================================================
+This module tries to identify different kind of configuration files.
+
+
+
+==> Search for config file
+-----------------------------------------------------------------
+[+] Found 7 possible configuration files:
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/fstab (-rw-rw-r-- 501 502)
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/host.conf (-rw-rw-r-- 501 502)
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/lld2d.conf (-rw-rw-r-- 501 502)
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/nsswitch.conf (-rw-rw-r-- 501 502)
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/ushare.conf (-rw-r--r-- 501 502)
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/wscd.conf (-rwxrwxr-x 501 502)
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/oem/model.conf (-rwxrwxr-t 501 502)
+
+
+==> Scan fstab
+-----------------------------------------------------------------
+[-] No fstab files with user details found
+[-] No fstab files with passwords found

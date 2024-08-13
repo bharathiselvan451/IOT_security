@@ -1,0 +1,11 @@
+[*] Binary protection state of acltd
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of acltd
+
+
+[*] Function sprintf used 0 times acltd
+

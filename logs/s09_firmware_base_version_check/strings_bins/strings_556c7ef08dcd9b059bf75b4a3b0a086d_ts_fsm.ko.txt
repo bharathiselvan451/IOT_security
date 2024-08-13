@@ -1,0 +1,45 @@
+license=GPL
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+ts_fsm
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.fsm_find
+.rel.text.fsm_init
+.text.fsm_get_pattern
+.text.fsm_get_pattern_len
+.rel.init.text
+.rel.exit.text
+.rel.rodata
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+ts_fsm.c
+init_fsm
+exit_fsm
+__mod_license338
+fsm_ops
+fsm_init
+fsm_find
+fsm_get_pattern
+fsm_get_pattern_len
+token_lookup_tbl
+token_map
+ts_fsm.mod.c
+__module_depends
+__mod_vermagic5
+textsearch_unregister
+__this_module
+cleanup_module
+memcpy
+init_module
+textsearch_register
+__kmalloc

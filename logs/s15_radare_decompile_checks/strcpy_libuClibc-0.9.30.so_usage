@@ -1,0 +1,14 @@
+fcn.00014dbc
+fcn.00024ef4
+fcn.00026190
+fcn.00032db0
+sym.__libc_getdomainname
+sym.clnt_spcreateerror
+sym.clnt_sperror
+sym.cuserid
+sym.gethostbyaddr_r
+sym.gethostname
+sym.inet_ntop
+sym.ptsname_r
+sym.realpath
+sym.ttyname_r

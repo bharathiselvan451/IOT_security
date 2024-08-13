@@ -1,0 +1,299 @@
+` !$B
+0#$B
+` !$B
+(#$B
+0!$B
+@8!$B
+C(#$B
+(#$B
+` !$B
+ !0B
+`(!$B
+`0!$B
+@(!$B
+($$B
+8!$B
+0!0B
+0!$B
+ !$B
+E($<
+0!$B
+`(!$B
+(!$B
+` !$B
+@ !<
+` !$B
+  !$
+  !<
+@ !<
+  !&
+  !$B
+  !$
+  !<
+  !<
+  !$
+@(!<
+@(!$B
+ (!$
+ (!$
+E(%$
+` !'
+ 0!$B
+4btZ
+4btS4
+4btR
+4btY<
+@H4Bt6
+0!$B
+@H4Bt6
+` !$B
+@ !<
+(!$B
+(!$B
+`0!<
+@@!$
+@ !&
+@ !$
+ !'9
+<6>PPPOL2TP: %s: recv short packet (len=%d)
+<7>%s: recv: 
+ %02X
+<7>PPPOL2TP: %s: recv control packet, len=%d
+<6>PPPOL2TP: %s: no socket found (%hu/%hu). Passing up.
+<6>PPPOL2TP: %s: requested to enable seq numbers by LNS
+<7>PPPOL2TP: %s: recv data ns=%hu, nr=%hu, session nr=%hu
+<6>PPPOL2TP: %s: requested to disable seq numbers by LNS
+<4>PPPOL2TP: %s: recv data has no seq numbers when required. Discarding
+<7>PPPOL2TP: %s: pkt %hu, inserted before %hu, reorder_q len=%d
+<7>PPPOL2TP: %s: oos pkt %hu len %d discarded, waiting for %hu, reorder_q_len=%d
+<7>PPPOL2TP: %s: oos pkt %hu len %d discarded (too old), waiting for %hu, reorder_q_len=%d
+<7>PPPOL2TP: %s: holding oos pkt %hu len %d, waiting for %hu, reorder_q_len=%d
+<7>PPPOL2TP: %s: updated nr to %hu
+<7>PPPOL2TP: %s: recv %d byte data frame, passing to ppp
+<6>PPPOL2TP: %s: socket not bound
+%s: UDP: bad checksum
+<7>PPPOL2TP: %s: received %d bytes
+<7>PPPOL2TP: %s: updated ns to %hu
+<7>PPPOL2TP: %s: send %Zd bytes, ns=%hu
+ ...
+<7>PPPOL2TP: %s: send %Zd bytes
+<7>%s: xmit:
+<7>PPPOL2TP: %s: send %d bytes, ns=%hu
+<7>PPPOL2TP: %s: send %d bytes
+<6>PPPOL2TP: %s: closing...
+<6>PPPOL2TP: %s: closing all sessions...
+<6>PPPOL2TP: %s: closing session
+<3>PPPOL2TP: tunl %hu: sockfd_lookup(fd=%d) returned %d
+<3>PPPOL2TP: tunl %hu: fd %d wrong protocol, got %d, expected %d
+<3>PPPOL2TP: tunl %hu: fd %d wrong family, got %d, expected %d
+tunl %hu
+sess %hu/%hu
+<6>PPPOL2TP: %s: created
+<4>PPPOL2TP: connect failed: %d
+<4>PPPOL2TP: %s: connect failed: %d
+<7>PPPOL2TP: %s: pppol2tp_session_ioctl(cmd=%#x, arg=%#lx)
+<6>PPPOL2TP: %s: get mtu=%d
+<6>PPPOL2TP: %s: set mtu=%d
+<6>PPPOL2TP: %s: get mru=%d
+<6>PPPOL2TP: %s: set mru=%d
+<6>PPPOL2TP: %s: get flags=%d
+<6>PPPOL2TP: %s: set flags=%d
+<6>PPPOL2TP: %s: get L2TP stats
+<7>PPPOL2TP: %s: pppol2tp_tunnel_ioctl(cmd=%#x, arg=%#lx)
+<6>PPPOL2TP: %s: set debug=%x
+<6>PPPOL2TP: %s: set recv_seq=%d
+<6>PPPOL2TP: %s: set send_seq=%d
+<6>PPPOL2TP: %s: set lns_mode=%d
+<6>PPPOL2TP: %s: set reorder_timeout=%d
+<6>PPPOL2TP: %s: get debug=%x
+<6>PPPOL2TP: %s: get recv_seq=%d
+<6>PPPOL2TP: %s: get send_seq=%d
+<6>PPPOL2TP: %s: get lns_mode=%d
+<6>PPPOL2TP: %s: get debug=%d
+<6>PPPOL2TP: %s: get reorder_timeout=%d
+PPPoL2TP driver info, V1.0
+TUNNEL name, user-data-ok session-count
+ debug tx-pkts/bytes/errs rx-pkts/bytes/errs
+  SESSION name, addr/port src-tid/sid dest-tid/sid state user-data-ok
+   mtu/mru/rcvseq/sendseq/lns debug reorderto
+   nr/ns tx-pkts/bytes/errs rx-pkts/bytes/errs
+TUNNEL '%s', %c %d
+ %08x %llu/%llu/%llu %llu/%llu/%llu
+  SESSION '%s' %08X/%d %04X/%04X -> %04X/%04X %d %c
+   %d/%d/%c/%c/%s %08x %u
+   %hu/%hu %llu/%llu/%llu %llu/%llu/%llu
+pppol2tp
+<6>PPPoL2TP kernel driver, %s
+V1.0
+version=V1.0
+license=GPL
+description=PPP over L2TP over UDP
+author=Martijn van Oosterhout <kleptog@svana.org>, James Chapman <jchapman@katalix.com>
+srcversion=421A7FF15124FB0FD883795
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+PPPOL2TP
+pppol2tp
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.pppol2tp_tunnel_free
+.rel.text.pppol2tp_session_find
+.rel.text.pppol2tp_recv_core
+.rel.text.pppol2tp_udp_encap_recv
+.rel.text.pppol2tp_recvmsg
+.rel.text.pppol2tp_build_l2tp_header
+.rel.text.pppol2tp_sendmsg
+.rel.text.pppol2tp_sock_wfree
+.rel.text.pppol2tp_xmit
+.rel.text.pppol2tp_tunnel_destruct
+.rel.text.pppol2tp_session_destruct
+.rel.text.pppol2tp_release
+.rel.text.pppol2tp_create
+.rel.text.pppol2tp_connect
+.rel.text.pppol2tp_getname
+.rel.text.pppol2tp_session_ioctl
+.rel.fixup
+.rel.text.pppol2tp_ioctl
+.rel.text.pppol2tp_setsockopt
+.rel.text.pppol2tp_getsockopt
+.rel.text.pppol2tp_seq_start
+.text.pppol2tp_seq_next
+.text.pppol2tp_seq_stop
+.rel.text.pppol2tp_seq_show
+.rel.text.pppol2tp_proc_open
+.rel.init.text
+.rel.ref.text
+.rel.exit.text
+.rel.rodata
+.modinfo
+.rel__ex_table
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+pppol2tp.c
+pppol2tp_init
+pppol2tp_exit
+__mod_version2697
+__mod_license2696
+__mod_description2695
+__mod_author2694
+pppol2tp_sk_proto
+pppol2tp_net_ops
+pppol2tp_init_net
+pppol2tp_exit_net
+pppol2tp_proc_fops
+pppol2tp_proc_open
+pppol2tp_seq_ops
+pppol2tp_seq_start
+pppol2tp_seq_stop
+pppol2tp_seq_next
+pppol2tp_seq_show
+pppol2tp_proto
+pppol2tp_create
+pppol2tp_ioctl
+pppol2tp_ops
+pppol2tp_release
+pppol2tp_connect
+pppol2tp_getname
+pppol2tp_setsockopt
+pppol2tp_getsockopt
+pppol2tp_sendmsg
+pppol2tp_recvmsg
+pppol2tp_chan_ops
+pppol2tp_xmit
+pppol2tp_tunnel_free
+pppol2tp_net_id
+pppol2tp_tunnel_count
+pppol2tp_session_find
+pppol2tp_recv_core
+pppol2tp_udp_encap_recv
+pppol2tp_build_l2tp_header
+ppph.0
+pppol2tp_sock_wfree
+ppph.1
+pppol2tp_tunnel_destruct
+pppol2tp_session_destruct
+pppol2tp_session_count
+pppol2tp_session_ioctl
+pppol2tp.mod.c
+__mod_srcversion23
+__module_depends
+__mod_vermagic5
+__skb_checksum_complete
+pppox_ioctl
+ip_queue_xmit
+skb_put
+sock_wmalloc
+__this_module
+skb_dequeue
+memcpy_fromiovec
+ppp_input
+cleanup_module
+seq_open_net
+memcpy
+kfree
+seq_lseek
+unregister_pppox_proto
+net_ratelimit
+nf_conntrack_destroy
+skb_copy_datagram_iovec
+init_module
+pskb_expand_head
+local_bh_enable
+proto_unregister
+kfree_skb
+msecs_to_jiffies
+datagram_poll
+kmem_cache_alloc
+proto_register
+__secpath_destroy
+local_bh_disable
+skb_queue_tail
+sock_no_shutdown
+fput
+init_net
+skb_pull
+net_msg_warn
+udp_prot
+seq_release_net
+sk_free
+sock_no_accept
+sock_no_listen
+register_pppox_proto
+pppox_unbind_sock
+proc_net_remove
+lock_sock_nested
+sock_no_bind
+printk
+jiffies_to_msecs
+sk_alloc
+skb_checksum
+sock_no_socketpair
+memset
+skb_queue_purge
+sock_no_mmap
+__copy_user
+__pskb_pull_tail
+register_pernet_gen_device
+jiffies
+proc_net_fops_create
+seq_read
+sprintf
+ppp_register_net_channel
+skb_recv_datagram
+seq_printf
+dst_release
+seq_puts
+malloc_sizes
+net_assign_generic
+sockfd_lookup
+unregister_pernet_gen_device
+sock_init_data
+release_sock

@@ -1,0 +1,14 @@
+sym.Get_Pwnam
+sym.client_addr
+sym.get_myname
+sym.make_connection
+sym.map_username
+sym.register_vuid
+sym.reply_search
+sym.reply_sesssetup_and_X
+sym.reply_special
+sym.reply_tcon
+sym.reply_tcon_and_X
+sym.resolve_wildcards
+sym.set_remote_arch
+sym.sub_set_smb_name

@@ -1,0 +1,40 @@
+[*] Searching (args for grep: -i) for [^:]{3,20}:[^:]{1,200}:\d{0,20}:\d{0,20}:[^:]{0,200}:[^:]{0,200}:[^:]*$.
+[*] Grepit state info - comment: Find *nix passwd or shadow files.
+[*] Grepit state info - Filename 1_cryptocred_passwd_or_shadow_files.txt
+[*] Grepit state info - Example: _xcsbuildagent:*:239:239:Xcode Server Build Agent:/var/empty:/usr/bin/false
+[*] Grepit state info - False positive example: /Users/eh2pasz/workspace/ios/CCB/CCB/Classes/CBSaver.h:23:46: note: passing argument to parameter "name" here^M+ (NSString *)loadStringWithName:(NSString *)name; 1b:ee:24:46:0c:17:
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: [^:]{3,20}:[^:]{1,200}:\d{0,20}:\d{0,20}:[^:]{0,200}:[^:]{0,200}:[^:]*$
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6571[m[36m-[m display charset = UTF8
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6572[m[36m-[m bind interfaces only = yes
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6573[m[36m-[m stat cache = no
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6574[m[36m:[m[01;31m%s:x:500:500:%s:/home:/bin/sh[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6575[m[36m:[m[01;31mroot:x:0:0:root:/root:/bin/sh[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6576[m[36m:[m[01;31mAdmin:x:0:0:root:/root:/bin/sh[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6577[m[36m:[m[01;31mbin:x:1:1:bin:/bin:/bin/sh[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6578[m[36m:[m[01;31mdaemon:x:2:2:daemon:/usr/sbin:/bin/sh[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6579[m[36m:[m[01;31madm:x:3:4:adm:/adm:/bin/sh[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6580[m[36m-[mlp:x:4:7:lp:/var/spool/lpd:/bin/sh
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6581[m[36m:[m[01;31msync:x:5:0:sync:/bin:/bin/sync[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6582[m[36m:[m[01;31mshutdown:x:6:11:shutdown:/sbin:/sbin/shutdown[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6583[m[36m:[m[01;31mhalt:x:7:0:halt:/sbin:/sbin/halt[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6584[m[36m:[m[01;31muucp:x:10:14:uucp:/var/spool/uucp:/bin/sh[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6585[m[36m:[m[01;31moperator:x:11:0:Operator:/var:/bin/sh[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6586[m[36m:[m[01;31mnobody:x:65534:65534:nobody:/home:/bin/sh[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6587[m[36m:[m[01;31map71:x:500:0:Linux User,,,:/root:/bin/sh[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6588[m[36m-[mmake dir for samba and usb./tmp/dev/tmp/usbdisk/tmp/samba/tmp/samba/var/tmp/samba/private/tmp/vsftp/tmp/vsftp/etc/tmp/vsftp/log/tmp/vsftp/ssl/tmp/vsftp/ssl/certs/tmp/vsftp/root/tmp/vsftp/varInsert language package modules.insmod /lib/modules/2.6.30/kernel/nls_utf8.koinsmod /lib/modules/2.6.30/kernel/nls_cp850.koInsert fs driver modules.insmod /lib/modules/2.6.30/kernel/fat.koinsmod /lib/modules/2.6.30/kernel/vfat.koinsmod /lib/modules/2.6.30/kernel/fuse.koInsert USB modules.insmod /lib/modules/2.6.30/kernel/usbcore.koinsmod /lib/modules/2.6.30/kernel/ehci-hcd.koinsmod /lib/modules/2.6.30/kernel/ohci-hcd.koinsmod /lib/modules/2.6.30/kernel/usb-storage.konasSambaStart/tmp/samba/var/timezone%d###Init timezone for smbd is:%s#####%s -Dsmbd####SMB starts!####
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m1[m[36m:[mroot:$1$$zdlNHiCDxYDfeF4MZL.H3/:[01;31m10933:0:99999:7:::[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m2[m[36m:[mAdmin:$1$$zdlNHiCDxYDfeF4MZL.H3/:[01;31m10933:0:99999:7:::[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m3[m[36m:[mbin::[01;31m10933:0:99999:7:::[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m4[m[36m:[mdaemon::[01;31m10933:0:99999:7:::[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m5[m[36m:[madm::[01;31m10933:0:99999:7:::[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m6[m[36m:[mlp:*:[01;31m10933:0:99999:7:::[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m7[m[36m:[msync:*:[01;31m10933:0:99999:7:::[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m8[m[36m:[mshutdown:*:[01;31m10933:0:99999:7:::[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m9[m[36m:[mhalt:*:[01;31m10933:0:99999:7:::[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m10[m[36m:[muucp:*:[01;31m10933:0:99999:7:::[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m11[m[36m:[moperator:*:[01;31m10933:0:99999:7:::[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m12[m[36m:[mnobody::[01;31m10933:0:99999:7:::[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow[m[36m:[m[32m13[m[36m:[map71::[01;31m10933:0:99999:7:::[m

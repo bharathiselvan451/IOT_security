@@ -1,0 +1,11 @@
+[*] Binary protection state of pppd
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of pppd
+
+
+[*] Function strcat used 0 times pppd
+

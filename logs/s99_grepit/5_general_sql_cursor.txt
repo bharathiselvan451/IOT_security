@@ -1,0 +1,25 @@
+[*] Searching (args for grep: -i) for cursor.
+[*] Grepit state info - comment: SQL cursor?
+[*] Grepit state info - Filename 5_general_sql_cursor.txt
+[*] Grepit state info - Example: cursor
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: cursor
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6362[m[36m-[mCONTENT-RANGE: bytes %d-%ld/%ld
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6363[m[36m-[mCONTENT-RANGE: bytes 0-%ld/%ld
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6364[m[36m-[mCONTENT-RANGE: bytes %ld-%ld/%ld
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6365[m[36m:[mtrailersprocess_requestreq->method == HTTPMETHOD_GET || req->method == HTTPMETHOD_HEAD || req->method == HTTPMETHOD_POST || req->method == HTTPMETHOD_SIMPLEGETLAST-MODIFIED: RTGKDstcSCcRNTGDstcSCcRKTDstcSCcRNTDstcSCcRTDstcSCcIbfbsock_initinfolibUpnp/src/sock.c;/?:@&=+$,{}-_.!~*'()%2xhttpACCEPTACCEPT-CHARSETACCEPT-ENCODINGACCEPT-LANGUAGEACCEPT-RANGESCACHE-CONTROLCALLBACKCONTENT-ENCODINGCONTENT-LANGUAGECONTENT-LENGTHCONTENT-LOCATIONCONTENT-RANGECONTENT-TYPEDATEEXTHOSTIF-RANGELOCATIONMANMXNTNTSRANGESEQSERVERSIDSOAPACTIONSTTETIMEOUTTRANSFER-ENCODINGUSER-AGENTUSNGETHEADM-POSTM-SEARCHNOTIFYPOSTSUBSCRIBEUNSUBSCRIBEscanner_get_tokenis_qdtext_char 	()<>@,;:\"/[]?={}c != '"'libUpnp/src/httpparser.c[01;31mcursor[m == null_terminatorvfmatchscanner != ((void *)0)fmt != ((void *)0)str_ptr != ((void *)0)int_ptr != ((void *)0)uri_ptr != ((void *)0)0parser_parse_responselineparser->position == POS_RESPONSE_LINE%ihttp%w/%w%L%c%d . %d %dbufCharCopy(): bufLen = %d > maxLen = %d.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6366[m[36m-[mparser_parse_headersparser->position == POS_HEADERS || parser->ent_position == 6 : %R%cparser_parse_headers(): header name or value too longparser_parse_headers(): too many (%d) headers
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/MenuRpm.htm[m[36m-[m[32m59[m[36m-[m	underline: none
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/MenuRpm.htm[m[36m-[m[32m60[m[36m-[m}
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/MenuRpm.htm[m[36m-[m[32m61[m[36m-[mA:hover {
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/MenuRpm.htm[m[36m:[m[32m62[m[36m:[m	[01;31mCURSOR[m: hand;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/MenuRpm.htm[m[36m-[m[32m63[m[36m-[m	COLOR: rgb(171,221,47);
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m75[m[36m-[m<BODY background="/images/top_bg.jpg" leftMargin=0 topMargin=0 marginheight="0" marginwidth="0" >
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m76[m[36m-[m<table cellpadding=0 cellspacing=0 width="100%">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m77[m[36m-[m	<tr><td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m:[m[32m78[m[36m:[m  	<tr><td><a OnClick="return NewW();" onMouseOver="return ShowUrl();" onMouseOut="return EraseUrl();"><img src="/images/top1_1.jpg" border="0" style="[01;31mcursor[m:pointer"></a></td>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m79[m[36m-[m		<td width="490" align=right background="/images/top1_2.jpg" style="padding-top:23">

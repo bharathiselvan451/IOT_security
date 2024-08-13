@@ -1,0 +1,11 @@
+binary/file;version_rule;version_detected;csv_rule;license;static/emulation;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/bpalogin;bpalogin;BPALogin v2.0.2 - portable BigPond Broadband login client;bpalogin:2.0.2;GPL-2.0-only;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox;busybox;BusyBox v1.01 ;busybox:1.01;GPL-2.0-only;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox;busybox;BusyBox v1.01 (2013.09.23-07:32+0000) multi-call binary;busybox:1.01;GPL-2.0-only;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox;busybox;BusyBox v1.01 (2013.09.23-07:32+0000) Built-in shell;busybox:1.01;GPL-2.0-only;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables;iptables;1.4.5;iptables:1.4.5;GPL-2.0-only;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd;openssl;part of OpenSSL 0.9.8b-;openssl:openssl:0.9.8b;OpenSSL OR Apache-2.0;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ping6;openssl;part of OpenSSL 1.0.0d ;openssl:openssl:1.0.0d;OpenSSL OR Apache-2.0;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd;vsftpd;vsftpd: version 2.3.2;vsftpd_project:vsftpd:2.3.2;GPL-2.0-only;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/xl2tpd;xl2tpd;xl2tpd version xl2tpd-1.1.12 started;xl2tpd:1.1.12;unknown;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd;zlib;inflate 1.1.4 Copyright 1995-2002 Mark Adler;zlib:1.1.4;Zlib;static;

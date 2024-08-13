@@ -1,0 +1,11 @@
+[*] Vulnerability details for zlib / version 1.1.4 / source STAT:
+
+[0;32m	BIN NAME            :   BIN VERS    :   CVE ID            :  CVSS VALUE : EPSS :   SOURCE         :   EXPLOIT[0m
+[0;31m	zlib                :   1.1.4       :   CVE-2023-45853    :   9.8       :  0   :   STAT           :   No exploit available[0m
+[0;33m	zlib                :   1.1.4       :   CVE-2023-6992     :   5.5       :  0   :   STAT           :   No exploit available[0m
+[0;31m	zlib                :   1.1.4       :   CVE-2018-25032    :   7.5       :  0   :   STAT           :   No exploit available[0m
+[0;31m	zlib                :   1.1.4       :   CVE-2022-37434    :   9.8       :  0   :   STAT           :   No exploit available[0m
+[0;35m	zlib                :   1.1.4       :   CVE-2003-0107     :   7.5 (v2)  :  7   :   STAT           :   Exploit (EDB ID: 22273)[0m
+
+[+] Found 5 CVEs and 1 exploits (including POC's) in zlib with version 1.1.4 (source STAT).
+

@@ -1,0 +1,12 @@
+[+] Search password files
+=================================================================
+This module tries to identify password related files and analyses found password files for hashes, users and other configuration weaknesses.
+
+[+] Found 1 password related files:
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow (-rw-rw-r-- 501 502)
+    Found passwords or weak configuration:
+        root:$1$$zdlNHiCDxYDfeF4MZL.H3/:10933:0:99999:7:::
+        Admin:$1$$zdlNHiCDxYDfeF4MZL.H3/:10933:0:99999:7:::
+
+
+[*] Statistics:1

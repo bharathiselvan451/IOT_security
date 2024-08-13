@@ -1,0 +1,344 @@
+METRICS: Using configs from the Registry (like --config=p/ci) reports pseudonymous rule metrics to semgrep.dev.
+To disable Registry rule metrics, use "--metrics=off".
+Using configs only from local files (like --config=xyz.yml) does not enable metrics.
+
+More information: https://semgrep.dev/docs/metrics
+
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 378 files tracked by git with 7 Code rules:
+  Scanning 15 files with 7 bash rules.
+                    
+                    
+┌──────────────────┐
+│ 53 Code Findings │
+└──────────────────┘
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/bin/getmib                                                  
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-variable-
+       expansion-in-command                                           
+          Variable expansions must be double-quoted so as to       
+          prevent being split into multiple pieces according to    
+          whitespace or whichever separator is specified by the IFS
+          variable. If you really wish to split the variable's     
+          contents, you may use a variable that starts with an     
+          underscore e.g. $_X instead of $X, and semgrep will      
+          ignore it. If what you need is an array, consider using a
+          proper bash array.                                       
+                                                                   
+            6┆ iwpriv wlan0 get_mib $1
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/bin/ib                                                      
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-variable-
+       expansion-in-command                                           
+          Variable expansions must be double-quoted so as to       
+          prevent being split into multiple pieces according to    
+          whitespace or whichever separator is specified by the IFS
+          variable. If you really wish to split the variable's     
+          contents, you may use a variable that starts with an     
+          underscore e.g. $_X instead of $X, and semgrep will      
+          ignore it. If what you need is an array, consider using a
+          proper bash array.                                       
+                                                                   
+            6┆ iwpriv wlan0 read_reg b,$1
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/bin/idd                                                     
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-variable-
+       expansion-in-command                                           
+          Variable expansions must be double-quoted so as to       
+          prevent being split into multiple pieces according to    
+          whitespace or whichever separator is specified by the IFS
+          variable. If you really wish to split the variable's     
+          contents, you may use a variable that starts with an     
+          underscore e.g. $_X instead of $X, and semgrep will      
+          ignore it. If what you need is an array, consider using a
+          proper bash array.                                       
+                                                                   
+            6┆ iwpriv wlan0 read_reg dw,$1
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/bin/irf                                                     
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-variable-
+       expansion-in-command                                           
+          Variable expansions must be double-quoted so as to       
+          prevent being split into multiple pieces according to    
+          whitespace or whichever separator is specified by the IFS
+          variable. If you really wish to split the variable's     
+          contents, you may use a variable that starts with an     
+          underscore e.g. $_X instead of $X, and semgrep will      
+          ignore it. If what you need is an array, consider using a
+          proper bash array.                                       
+                                                                   
+            6┆ iwpriv wlan0 read_rf $1,$2
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/bin/iw                                                      
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-variable-
+       expansion-in-command                                           
+          Variable expansions must be double-quoted so as to       
+          prevent being split into multiple pieces according to    
+          whitespace or whichever separator is specified by the IFS
+          variable. If you really wish to split the variable's     
+          contents, you may use a variable that starts with an     
+          underscore e.g. $_X instead of $X, and semgrep will      
+          ignore it. If what you need is an array, consider using a
+          proper bash array.                                       
+                                                                   
+            6┆ iwpriv wlan0 read_reg w,$1
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/bin/ob                                                      
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-variable-
+       expansion-in-command                                           
+          Variable expansions must be double-quoted so as to       
+          prevent being split into multiple pieces according to    
+          whitespace or whichever separator is specified by the IFS
+          variable. If you really wish to split the variable's     
+          contents, you may use a variable that starts with an     
+          underscore e.g. $_X instead of $X, and semgrep will      
+          ignore it. If what you need is an array, consider using a
+          proper bash array.                                       
+                                                                   
+            6┆ iwpriv wlan0 write_reg b,$1,$2
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/bin/od                                                      
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-variable-
+       expansion-in-command                                           
+          Variable expansions must be double-quoted so as to       
+          prevent being split into multiple pieces according to    
+          whitespace or whichever separator is specified by the IFS
+          variable. If you really wish to split the variable's     
+          contents, you may use a variable that starts with an     
+          underscore e.g. $_X instead of $X, and semgrep will      
+          ignore it. If what you need is an array, consider using a
+          proper bash array.                                       
+                                                                   
+            6┆ iwpriv wlan0 write_reg dw,$1,$2
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/bin/orf                                                     
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-variable-
+       expansion-in-command                                           
+          Variable expansions must be double-quoted so as to       
+          prevent being split into multiple pieces according to    
+          whitespace or whichever separator is specified by the IFS
+          variable. If you really wish to split the variable's     
+          contents, you may use a variable that starts with an     
+          underscore e.g. $_X instead of $X, and semgrep will      
+          ignore it. If what you need is an array, consider using a
+          proper bash array.                                       
+                                                                   
+            6┆ iwpriv wlan0 write_rf $1,$2,$3
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/bin/ow                                                      
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-variable-
+       expansion-in-command                                           
+          Variable expansions must be double-quoted so as to       
+          prevent being split into multiple pieces according to    
+          whitespace or whichever separator is specified by the IFS
+          variable. If you really wish to split the variable's     
+          contents, you may use a variable that starts with an     
+          underscore e.g. $_X instead of $X, and semgrep will      
+          ignore it. If what you need is an array, consider using a
+          proper bash array.                                       
+                                                                   
+            6┆ iwpriv wlan0 write_reg w,$1,$2
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/bin/rssi                                                    
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-variable-
+       expansion-in-command                                           
+          Variable expansions must be double-quoted so as to       
+          prevent being split into multiple pieces according to    
+          whitespace or whichever separator is specified by the IFS
+          variable. If you really wish to split the variable's     
+          contents, you may use a variable that starts with an     
+          underscore e.g. $_X instead of $X, and semgrep will      
+          ignore it. If what you need is an array, consider using a
+          proper bash array.                                       
+                                                                   
+            4┆ iwpriv wlan0 set_mib rssi_dump=$1
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/bin/setmib                                                  
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-variable-
+       expansion-in-command                                           
+          Variable expansions must be double-quoted so as to       
+          prevent being split into multiple pieces according to    
+          whitespace or whichever separator is specified by the IFS
+          variable. If you really wish to split the variable's     
+          contents, you may use a variable that starts with an     
+          underscore e.g. $_X instead of $X, and semgrep will      
+          ignore it. If what you need is an array, consider using a
+          proper bash array.                                       
+                                                                   
+            6┆ iwpriv wlan0 set_mib $1=$2
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/etc/init.d/rc.modules                                       
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-variable-
+       expansion-in-command                                           
+          Variable expansions must be double-quoted so as to       
+          prevent being split into multiple pieces according to    
+          whitespace or whichever separator is specified by the IFS
+          variable. If you really wish to split the variable's     
+          contents, you may use a variable that starts with an     
+          underscore e.g. $_X instead of $X, and semgrep will      
+          ignore it. If what you need is an array, consider using a
+          proper bash array.                                       
+                                                                   
+            8┆ insmod                                        
+               /lib/modules/$KERNEL_VER_STR/kernel/xt_MARK.ko
+            ⋮┆----------------------------------------
+            9┆ insmod                                        
+               /lib/modules/$KERNEL_VER_STR/kernel/xt_mark.ko
+            ⋮┆----------------------------------------
+           10┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/xt_TCPMSS.ko
+            ⋮┆----------------------------------------
+           11┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/xt_comment.k
+               o                                               
+            ⋮┆----------------------------------------
+           12┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/xt_iprange.k
+               o                                               
+            ⋮┆----------------------------------------
+           13┆ insmod                                       
+               /lib/modules/$KERNEL_VER_STR/kernel/xt_mac.ko
+            ⋮┆----------------------------------------
+           14┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/xt_multiport
+               .ko                                             
+            ⋮┆----------------------------------------
+           15┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/xt_string.ko
+            ⋮┆----------------------------------------
+           16┆ insmod                                        
+               /lib/modules/$KERNEL_VER_STR/kernel/xt_time.ko
+            ⋮┆----------------------------------------
+           17┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/ipt_multiurl
+               .ko                                             
+            ⋮┆----------------------------------------
+           19┆ insmod /lib/modules/$KERNEL_VER_STR/kernel/nf_co
+               nntrack_proto_gre.ko                            
+            ⋮┆----------------------------------------
+           20┆ insmod /lib/modules/$KERNEL_VER_STR/kernel/nf_co
+               nntrack_h323.ko                                 
+            ⋮┆----------------------------------------
+           22┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/xt_conntrack
+               .ko                                             
+            ⋮┆----------------------------------------
+           23┆ insmod                                         
+               /lib/modules/$KERNEL_VER_STR/kernel/xt_state.ko
+            ⋮┆----------------------------------------
+           27┆ insmod /lib/modules/$KERNEL_VER_STR/kernel/nf_na
+               t_proto_gre.ko                                  
+            ⋮┆----------------------------------------
+           29┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/iptable_filt
+               er.ko                                           
+            ⋮┆----------------------------------------
+           30┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/ipt_REDIRECT
+               .ko                                             
+            ⋮┆----------------------------------------
+           31┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/ipt_REJECT.k
+               o                                               
+            ⋮┆----------------------------------------
+           32┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/ipt_TRIGGER.
+               ko                                              
+            ⋮┆----------------------------------------
+           35┆ insmod                                        
+               /lib/modules/$KERNEL_VER_STR/kernel/sch_htb.ko
+            ⋮┆----------------------------------------
+           36┆ insmod                                         
+               /lib/modules/$KERNEL_VER_STR/kernel/sch_prio.ko
+            ⋮┆----------------------------------------
+           37┆ insmod                                        
+               /lib/modules/$KERNEL_VER_STR/kernel/sch_sfq.ko
+            ⋮┆----------------------------------------
+           38┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/cls_basic.ko
+            ⋮┆----------------------------------------
+           39┆ insmod                                       
+               /lib/modules/$KERNEL_VER_STR/kernel/cls_fw.ko
+            ⋮┆----------------------------------------
+           41┆ insmod                                       
+               /lib/modules/$KERNEL_VER_STR/kernel/ts_kmp.ko
+            ⋮┆----------------------------------------
+           42┆ insmod                                        
+               /lib/modules/$KERNEL_VER_STR/kernel/flashid.ko
+               # XXX                                         
+            ⋮┆----------------------------------------
+           43┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/br_filter.ko
+            ⋮┆----------------------------------------
+           46┆ insmod                                         
+               /lib/modules/$KERNEL_VER_STR/kernel/pppol2tp.ko
+            ⋮┆----------------------------------------
+           47┆ insmod                                     
+               /lib/modules/$KERNEL_VER_STR/kernel/pptp.ko
+            ⋮┆----------------------------------------
+           49┆ insmod                                        
+               /lib/modules/$KERNEL_VER_STR/kernel/harmony.ko
+               # XXX                                         
+            ⋮┆----------------------------------------
+           50┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/wlan_warn.ko
+            ⋮┆----------------------------------------
+           53┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/statistics.k
+               o                                               
+            ⋮┆----------------------------------------
+           56┆ insmod                                          
+               /lib/modules/$KERNEL_VER_STR/kernel/rtl8198_gpio
+               .ko                                             
+            ⋮┆----------------------------------------
+           59┆ insmod /lib/modules/$KERNEL_VER_STR/kernel/tp_ke
+               rnel_calls.ko                                   
+                                                                             
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs
+  _v4_le_extract/sbin/hotplug                                                
+     ❱ external.semgrep-rules.bash.lang.correctness.unquoted-command-
+       substitution-in-command                                       
+          The result of command substitution $(...) or `...`, if
+          unquoted, is split on whitespace or other separators  
+          specified by the IFS variable. You should surround it 
+          with double quotes to avoid splitting the result.     
+                                                                
+            9┆ `usbp mount`
+            ⋮┆----------------------------------------
+           10┆ `echo 1 > /tmp/ab`
+            ⋮┆----------------------------------------
+           13┆ `usbp umount`
+            ⋮┆----------------------------------------
+           14┆ `echo 2 > /tmp/ab`
+            ⋮┆----------------------------------------
+           20┆ `usbp mount`
+            ⋮┆----------------------------------------
+           21┆ `echo 3 > /tmp/ab`
+            ⋮┆----------------------------------------
+           25┆ `usbp umount`
+            ⋮┆----------------------------------------
+           26┆ `echo 4 > /tmp/ab`
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+
+Ran 7 rules on 15 files: 53 findings.
+

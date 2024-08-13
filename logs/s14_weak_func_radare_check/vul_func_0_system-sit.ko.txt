@@ -1,0 +1,11 @@
+[*] Binary protection state of sit.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function system tear down of sit.ko
+
+
+[*] Function system used 0 times sit.ko
+

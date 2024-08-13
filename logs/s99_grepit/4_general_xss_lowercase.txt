@@ -1,0 +1,13 @@
+[*] Searching (args for grep: ) for xss.
+[*] Grepit state info - comment: XSS. Sometimes refered in comments or variable names for code that should prevent it. If you find something interesting that is used for prevention in a framework, you might want to add another grep for that in this script.
+[*] Grepit state info - Filename 4_general_xss_lowercase.txt
+[*] Grepit state info - Example: xss
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: xss
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le[m[36m-[m[32m2528[m[36m-[mPJ8%9&ټ8r#;{9""4?_O;Qpo(n	x}7QơTkJ->[["d)5,&_x9)@l9|m+o5
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le[m[36m-[m[32m2529[m[36m-[mދdEz`=pqy*H>Isn梶t;TM{&e=10V%4h#*AB/\]Sދ㜐@u>\.tP֔.[g17N)6(h!*C
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le[m[36m-[m[32m2530[m[36m-[mJ8oYKKTpsObKM*QUO-ȭѫF~#I-X+@G3y8IɫNئpO6(A2]ksZ{զA Ʋv!һbQ2ҳu]"iUќذj`gؘ^RT/Ti (!<<J.dW7kժK~0+,/ڔARaDD/2N'k?K6/^?l@~9z|1<y\e>Y̟5?z*BE"/IC)%M4âZ쯺6fS6Cv$$4Z5ܲƻ+c=HPEa\Zi;岓./..{c@oaI5 |a7\?Ij1<1x\KAݜnn&~!*҃Owc4vv-=4xSewD:sCY-w$et Ct_LQTsfv14ףEVJJ[fg5R-|CwmӇԇiC-ӽ7^Igשr8	4~8P/;chq@̴e%#'_in,U֍iw NgKͻ8ϪWZ[/*pc@+`i,{?wrH@Uݡ^ީ)<@Vftp
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le[m[36m:[m[32m2531[m[36m:[mR7Y_]TVh8CX1-'϶"n|I2{K0:0.*V*`okn"W#<7j[01;31mxss[mkAĚ\.A:{GL]1:×N(
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le[m[36m-[m[32m2532[m[36m-[mVƯhl7@b܇>PJSЭAECy޷wNҜ\9z;%bYLNUbc跺Y^X&,sO%-'hrcsKތf?qJi.h/lT9T*}EG7%)zj2BjփSvry|v1\Gj}5aoxFN̲`2h)es_s	[1lP&-[H

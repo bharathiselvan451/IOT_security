@@ -1,0 +1,150 @@
+[*] Binary protection state of libntfs-3g.so.83.0.0
+
+  
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of libntfs-3g.so.83.0.0
+
+    ; assembly                                   | /* r2dec pseudo code output */
+                                                 | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0 @ 0x57288 */
+                                                 | #include <stdint.h>
+                                                 |  
+    ; (fcn) sym.ntfs_log_handler_outerr ()       | void ntfs_log_handler_outerr () {
+    0x00057288 lui gp, 3                         |     
+    0x0005728c addiu gp, gp, 0x14c8              |     
+    0x00057290 addu gp, gp, t9                   |     gp += t9;
+    0x00057294 addiu sp, sp, -0x30               |     
+    0x00057298 sw ra, 0x2c(sp)                   |     *(var_2ch) = ra;
+    0x0005729c sw fp, 0x28(sp)                   |     *(var_28h) = fp;
+    0x000572a0 move fp, sp                       |     fp = sp;
+    0x000572a4 sw gp, 0x20(sp)                   |     *(var_20h) = gp;
+    0x000572a8 sw a0, 0x30(fp)                   |     *(arg_30h) = a0;
+    0x000572ac sw a1, 0x34(fp)                   |     *(arg_34h) = a1;
+    0x000572b0 sw a2, 0x38(fp)                   |     *(arg_38h) = a2;
+    0x000572b4 sw a3, 0x3c(fp)                   |     *(arg_3ch) = a3;
+    0x000572b8 lw v0, 0x40(fp)                   |     v0 = *(arg_40h);
+                                                 |     if (v0 == 0) {
+    0x000572bc bnez v0, 0x572e0                  |         
+    0x000572c0 nop                               |         
+    0x000572c4 lw a0, 0x3c(fp)                   |         a0 = *(arg_3ch);
+    0x000572c8 lw t9, -0x7fcc(gp)                |         t9 = *((gp - 8179));
+    0x000572cc addiu t9, t9, 0x6aa0              |         t9 += 0x6aa0;
+    0x000572d0 jalr t9                           |         t9 ();
+    0x000572d4 nop                               |         
+    0x000572d8 lw gp, 0x20(fp)                   |         gp = *(var_20h);
+    0x000572dc sw v0, 0x40(fp)                   |         *(arg_40h) = v0;
+                                                 |     }
+    0x000572e0 lw v0, 0x40(fp)                   |     v0 = *(arg_40h);
+    0x000572e4 sw v0, 0x10(sp)                   |     *(var_10h) = v0;
+    0x000572e8 lw v0, 0x44(fp)                   |     v0 = *(arg_44h);
+    0x000572ec sw v0, 0x14(sp)                   |     *(var_14h) = v0;
+    0x000572f0 lw v0, 0x48(fp)                   |     v0 = *(arg_48h);
+    0x000572f4 sw v0, 0x18(sp)                   |     *(var_18h) = v0;
+    0x000572f8 lw a0, 0x30(fp)                   |     a0 = *(arg_30h);
+    0x000572fc lw a1, 0x34(fp)                   |     a1 = *(arg_34h);
+    0x00057300 lw a2, 0x38(fp)                   |     a2 = *(arg_38h);
+    0x00057304 lw a3, 0x3c(fp)                   |     a3 = *(arg_3ch);
+[31m    0x00057308 lw t9, -0x7d1c(gp)                |     t9 = sym.ntfs_log_handler_fprintf;[0m
+    0x0005730c jalr t9                           |     t9 ();
+    0x00057310 nop                               |     
+    0x00057314 lw gp, 0x20(fp)                   |     gp = *(var_20h);
+    0x00057318 move sp, fp                       |     
+    0x0005731c lw ra, 0x2c(sp)                   |     ra = *(var_2ch);
+    0x00057320 lw fp, 0x28(sp)                   |     fp = *(var_28h);
+    0x00057324 addiu sp, sp, 0x30                |     
+    0x00057328 jr ra                             |     return v0;
+                                                 | }
+    ; assembly                                   | /* r2dec pseudo code output */
+                                                 | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0 @ 0x5732c */
+                                                 | #include <stdint.h>
+                                                 |  
+    ; (fcn) sym.ntfs_log_handler_stderr ()       | void ntfs_log_handler_stderr () {
+    0x0005732c lui gp, 3                         |     
+    0x00057330 addiu gp, gp, 0x1424              |     
+    0x00057334 addu gp, gp, t9                   |     gp += t9;
+    0x00057338 addiu sp, sp, -0x30               |     
+    0x0005733c sw ra, 0x2c(sp)                   |     *(var_2ch) = ra;
+    0x00057340 sw fp, 0x28(sp)                   |     *(var_28h) = fp;
+    0x00057344 move fp, sp                       |     fp = sp;
+    0x00057348 sw gp, 0x20(sp)                   |     *(var_20h) = gp;
+    0x0005734c sw a0, 0x30(fp)                   |     *(arg_30h) = a0;
+    0x00057350 sw a1, 0x34(fp)                   |     *(arg_34h) = a1;
+    0x00057354 sw a2, 0x38(fp)                   |     *(arg_38h) = a2;
+    0x00057358 sw a3, 0x3c(fp)                   |     *(arg_3ch) = a3;
+    0x0005735c lw v0, 0x40(fp)                   |     v0 = *(arg_40h);
+                                                 |     if (v0 == 0) {
+    0x00057360 bnez v0, 0x57374                  |         
+    0x00057364 nop                               |         
+    0x00057368 lw v0, -0x7e60(gp)                |         v0 = *((gp - 8088));
+    0x0005736c lw v0, (v0)                       |         v0 = *(v0);
+    0x00057370 sw v0, 0x40(fp)                   |         *(arg_40h) = v0;
+                                                 |     }
+    0x00057374 lw v0, 0x40(fp)                   |     v0 = *(arg_40h);
+    0x00057378 sw v0, 0x10(sp)                   |     *(var_10h) = v0;
+    0x0005737c lw v0, 0x44(fp)                   |     v0 = *(arg_44h);
+    0x00057380 sw v0, 0x14(sp)                   |     *(var_14h) = v0;
+    0x00057384 lw v0, 0x48(fp)                   |     v0 = *(arg_48h);
+    0x00057388 sw v0, 0x18(sp)                   |     *(var_18h) = v0;
+    0x0005738c lw a0, 0x30(fp)                   |     a0 = *(arg_30h);
+    0x00057390 lw a1, 0x34(fp)                   |     a1 = *(arg_34h);
+    0x00057394 lw a2, 0x38(fp)                   |     a2 = *(arg_38h);
+    0x00057398 lw a3, 0x3c(fp)                   |     a3 = *(arg_3ch);
+[31m    0x0005739c lw t9, -0x7d1c(gp)                |     t9 = sym.ntfs_log_handler_fprintf;[0m
+    0x000573a0 jalr t9                           |     t9 ();
+    0x000573a4 nop                               |     
+    0x000573a8 lw gp, 0x20(fp)                   |     gp = *(var_20h);
+    0x000573ac move sp, fp                       |     
+    0x000573b0 lw ra, 0x2c(sp)                   |     ra = *(var_2ch);
+    0x000573b4 lw fp, 0x28(sp)                   |     fp = *(var_28h);
+    0x000573b8 addiu sp, sp, 0x30                |     
+    0x000573bc jr ra                             |     return v0;
+                                                 | }
+    ; assembly                                   | /* r2dec pseudo code output */
+                                                 | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0 @ 0x571f4 */
+                                                 | #include <stdint.h>
+                                                 |  
+    ; (fcn) sym.ntfs_log_handler_stdout ()       | void ntfs_log_handler_stdout () {
+    0x000571f4 lui gp, 3                         |     
+    0x000571f8 addiu gp, gp, 0x155c              |     
+    0x000571fc addu gp, gp, t9                   |     gp += t9;
+    0x00057200 addiu sp, sp, -0x30               |     
+    0x00057204 sw ra, 0x2c(sp)                   |     *(var_2ch) = ra;
+    0x00057208 sw fp, 0x28(sp)                   |     *(var_28h) = fp;
+    0x0005720c move fp, sp                       |     fp = sp;
+    0x00057210 sw gp, 0x20(sp)                   |     *(var_20h) = gp;
+    0x00057214 sw a0, 0x30(fp)                   |     *(arg_30h) = a0;
+    0x00057218 sw a1, 0x34(fp)                   |     *(arg_34h) = a1;
+    0x0005721c sw a2, 0x38(fp)                   |     *(arg_38h) = a2;
+    0x00057220 sw a3, 0x3c(fp)                   |     *(arg_3ch) = a3;
+    0x00057224 lw v0, 0x40(fp)                   |     v0 = *(arg_40h);
+                                                 |     if (v0 == 0) {
+    0x00057228 bnez v0, 0x5723c                  |         
+    0x0005722c nop                               |         
+    0x00057230 lw v0, -0x7b18(gp)                |         v0 = *((gp - 7878));
+    0x00057234 lw v0, (v0)                       |         v0 = *(v0);
+    0x00057238 sw v0, 0x40(fp)                   |         *(arg_40h) = v0;
+                                                 |     }
+    0x0005723c lw v0, 0x40(fp)                   |     v0 = *(arg_40h);
+    0x00057240 sw v0, 0x10(sp)                   |     *(var_10h) = v0;
+    0x00057244 lw v0, 0x44(fp)                   |     v0 = *(arg_44h);
+    0x00057248 sw v0, 0x14(sp)                   |     *(var_14h) = v0;
+    0x0005724c lw v0, 0x48(fp)                   |     v0 = *(arg_48h);
+    0x00057250 sw v0, 0x18(sp)                   |     *(var_18h) = v0;
+    0x00057254 lw a0, 0x30(fp)                   |     a0 = *(arg_30h);
+    0x00057258 lw a1, 0x34(fp)                   |     a1 = *(arg_34h);
+    0x0005725c lw a2, 0x38(fp)                   |     a2 = *(arg_38h);
+    0x00057260 lw a3, 0x3c(fp)                   |     a3 = *(arg_3ch);
+[31m    0x00057264 lw t9, -0x7d1c(gp)                |     t9 = sym.ntfs_log_handler_fprintf;[0m
+    0x00057268 jalr t9                           |     t9 ();
+    0x0005726c nop                               |     
+    0x00057270 lw gp, 0x20(fp)                   |     gp = *(var_20h);
+    0x00057274 move sp, fp                       |     
+    0x00057278 lw ra, 0x2c(sp)                   |     ra = *(var_2ch);
+    0x0005727c lw fp, 0x28(sp)                   |     fp = *(var_28h);
+    0x00057280 addiu sp, sp, 0x30                |     
+    0x00057284 jr ra                             |     return v0;
+                                                 | }
+
+[*] Function fprintf used 3 times libntfs-3g.so.83.0.0
+

@@ -1,0 +1,11 @@
+[*] Binary protection state of ipt_REJECT.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcpy tear down of ipt_REJECT.ko
+
+
+[*] Function strcpy used 0 times ipt_REJECT.ko
+

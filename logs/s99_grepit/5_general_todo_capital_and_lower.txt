@@ -1,0 +1,13 @@
+[*] Searching (args for grep: ) for [Tt]odo.
+[*] Grepit state info - comment: TODOs, unfinished and insecure things?
+[*] Grepit state info - Filename 5_general_todo_capital_and_lower.txt
+[*] Grepit state info - Example: Todo:
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: [Tt]odo
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m5906[m[36m-[m<3>%s: Dropping NETIF_F_UFO since no NETIF_F_SG feature.
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m5907[m[36m-[m<5>%s: mixed HW and IP checksum settings.
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m5908[m[36m-[m<5>%s: mixed no checksumming and other settings.
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m:[m[32m5909[m[36m:[m<3>network [01;31mtodo[m '%s' but state %d
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m5910[m[36m-[m<0>unregister_netdevice: waiting for %s to become free. Usage count = %d

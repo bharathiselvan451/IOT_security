@@ -1,0 +1,292 @@
+[*] Binary protection state of libntfs-3g.so.83.0.0
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of libntfs-3g.so.83.0.0
+
+nop
+lw gp, 0x10(fp)
+sw v0, 0x1c(fp)
+lw v0, 0x1c(fp)
+sltiu v0, v0, 2
+bnez v0, 0x61728
+nop
+lw v1, 0x1c(fp)
+addiu v0, fp, 0x18
+addu v0, v0, v1
+sb zero, 0x11f(v0)
+addiu v0, fp, 0x20
+addiu v1, fp, 0x138
+move a0, v0
+addiu a1, zero, 0x118
+lw a2, -segment.LOAD1(gp)
+addiu a2, a2, -0x1004
+move a3, v1
+lw t9, -sym.imp.snprintf(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+addiu v0, fp, 0x20
+lw a0, 0x25c(fp)
+move a1, v0
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x248(fp)
+lw a0, 0x18(fp)
+lw t9, -sym.imp.fclose(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw v0, 0x248(fp)
+sw v0, 0x24c(fp)
+lw v0, 0x24c(fp)
+move sp, fp
+lw ra, 0x254(sp)
+lw fp, 0x250(sp)
+jr ra
+addiu sp, sp, 0x258
+lui gp, 2
+addiu gp, gp, 0x6ff4
+addu gp, gp, t9
+--
+move fp, sp
+sw gp, 0x10(sp)
+sw a0, 0x140(fp)
+move v0, a1
+sh v0, 0x144(fp)
+addiu v0, zero, -1
+sw v0, 0x124(fp)
+sw zero, 0x120(fp)
+addiu v0, fp, 0x144
+addiu v1, fp, 0x120
+move a0, v0
+addiu a1, zero, 1
+move a2, v1
+move a3, zero
+lw t9, -sym.ntfs_ucstombs(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x128(fp)
+lw v0, 0x128(fp)
+blez v0, 0x626f0
+nop
+addiu a0, fp, 0x18
+lw a1, -segment.LOAD1(gp)
+addiu a1, a1, -0xfc0
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw v0, 0x120(fp)
+lb v0, (v0)
+slti v0, v0, 0x61
+bnez v0, 0x62614
+nop
+lw v0, 0x120(fp)
+lb v0, (v0)
+slti v0, v0, 0x7b
+beqz v0, 0x62614
+nop
+lw v1, 0x120(fp)
+lw v0, 0x120(fp)
+lbu v0, (v0)
+addiu v0, v0, -0x20
+sb v0, (v1)
+addiu a0, fp, 0x18
+lw a1, 0x120(fp)
+--
+nop
+lw a0, 0x54(fp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+move s0, v0
+lw a0, 0x18(fp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+addu v0, s0, v0
+addiu v0, v0, 2
+move a0, v0
+lw t9, -sym.ntfs_malloc(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x1c(fp)
+lw v0, 0x1c(fp)
+beqz v0, 0x62c40
+nop
+lw a0, 0x1c(fp)
+lw a1, 0x54(fp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x1c(fp)
+lw a1, -segment.LOAD1(gp)
+addiu a1, a1, -0xfb0
+lw t9, -sym.imp.strcat(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x1c(fp)
+lw a1, 0x18(fp)
+lw t9, -sym.imp.strcat(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x18(fp)
+lw t9, -sym.imp.free(gp)
+jalr t9
+nop
+--
+sb v0, (v1)
+lw a0, 0x54(fp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+move s0, v0
+lw a0, 0x18(fp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+addu v0, s0, v0
+addiu v0, v0, 0xb
+move a0, v0
+lw t9, -sym.ntfs_malloc(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x1c(fp)
+lw v0, 0x1c(fp)
+beqz v0, 0x62e58
+nop
+lw a0, 0x1c(fp)
+lw a1, 0x54(fp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x1c(fp)
+lw a1, -segment.LOAD1(gp)
+addiu a1, a1, -0xfb0
+lw t9, -sym.imp.strcat(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x1c(fp)
+lw a1, -segment.LOAD1(gp)
+addiu a1, a1, -0xfc0
+lw t9, -sym.imp.strcat(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x1c(fp)
+lw a1, 0x18(fp)
+lw t9, -sym.imp.strcat(gp)
+--
+nop
+lw a0, 0x4c(fp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+move s0, v0
+lw a0, 0x18(fp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+addu v0, s0, v0
+addiu v0, v0, 2
+move a0, v0
+lw t9, -sym.ntfs_malloc(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x1c(fp)
+lw v0, 0x1c(fp)
+beqz v0, 0x630fc
+nop
+lw a0, 0x1c(fp)
+lw a1, 0x4c(fp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x1c(fp)
+lw a1, -segment.LOAD1(gp)
+addiu a1, a1, -0xfb0
+lw t9, -sym.imp.strcat(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x1c(fp)
+lw a1, 0x18(fp)
+lw t9, -sym.imp.strcat(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x18(fp)
+lw t9, -sym.imp.free(gp)
+jalr t9
+nop
+--
+sb v0, (v1)
+lw a0, 0x4c(fp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+move s0, v0
+lw a0, 0x18(fp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+addu v0, s0, v0
+addiu v0, v0, 0xb
+move a0, v0
+lw t9, -sym.ntfs_malloc(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x1c(fp)
+lw v0, 0x1c(fp)
+beqz v0, 0x632bc
+nop
+lw a0, 0x1c(fp)
+lw a1, 0x4c(fp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x1c(fp)
+lw a1, -segment.LOAD1(gp)
+addiu a1, a1, -0xfb0
+lw t9, -sym.imp.strcat(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x1c(fp)
+lw a1, -segment.LOAD1(gp)
+addiu a1, a1, -0xfc0
+lw t9, -sym.imp.strcat(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x1c(fp)
+lw a1, 0x18(fp)
+lw t9, -sym.imp.strcat(gp)
+
+[*] Function strcpy used 6 times libntfs-3g.so.83.0.0
+

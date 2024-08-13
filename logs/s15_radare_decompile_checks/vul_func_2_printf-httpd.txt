@@ -1,0 +1,38 @@
+[*] Binary protection state of httpd
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function printf tear down of httpd
+
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd @ 0x44728c */
+                                             | #include <stdint.h>
+                                             |  
+[31m    ; (fcn) sym.wmnetSocketVprintf ()        | void wmnetSocketVprintf () {[0m
+    0x0044728c lui gp, 0x16                  |     
+    0x00447290 addiu gp, gp, -0x7c6c         |     
+    0x00447294 addu gp, gp, t9               |     gp += t9;
+    0x00447298 addiu sp, sp, -0x20           |     
+    0x0044729c sw ra, 0x1c(sp)               |     *(var_1ch) = ra;
+    0x004472a0 sw s0, 0x18(sp)               |     *(var_18h) = s0;
+    0x004472a4 sw gp, 0x10(sp)               |     *(var_10h) = gp;
+[31m    0x004472a8 lw t9, -0x7ac0(gp)            |     t9 = sym.vfdprintf;[0m
+    0x004472ac move s0, a3                   |     s0 = a3;
+    0x004472b0 jalr t9                       |     t9 ();
+    0x004472b4 move v1, v0                   |     v1 = v0;
+    0x004472b8 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x004472bc move v0, zero                 |     v0 = 0;
+                                             |     if (s0 != 0) {
+    0x004472c0 beqz s0, 0x4472c8             |         
+    0x004472c4 sw v1, (s0)                   |         *(s0) = v1;
+                                             |     }
+    0x004472c8 lw ra, 0x1c(sp)               |     ra = *(var_1ch);
+    0x004472cc lw s0, 0x18(sp)               |     s0 = *(var_18h);
+    0x004472d0 addiu sp, sp, 0x20            |     
+    0x004472d4 jr ra                         |     return v1;
+                                             | }
+
+[*] Function printf used 2 times httpd
+

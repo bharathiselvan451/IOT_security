@@ -1,0 +1,1678 @@
+/lib/ld-uClibc.so.0
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+strcpy
+ioctl
+sscanf
+memcmp
+calloc
+build_beacon_ie
+build_provisioning_service_ie
+wlioctl_set_wsc_ie
+build_probe_rsp_ie
+search_blocked_ap_list
+search_tag
+strncmp
+clear_blocked_ap_list
+add_into_blocked_ap_list
+getWlJoinRequest
+sleep
+getWlJoinResult
+wlioctl_scan_reqest
+wlioctl_scan_result
+memset
+search_active_pbc_sta
+SwitchSessionOverlap_LED_On
+strlen
+client_set_WlanDriver_WscEnable
+atoi
+validate_pin_code
+wlioctl_set_led
+sprintf
+system
+report_WPS_STATUS
+update_ie
+update_ie2
+build_probe_request_ie
+build_assoc_request_ie
+sysinfo
+issue_scan_req
+disassociate_blocked_list
+stat
+unlink
+mkfifo
+func_on_wlan_tx
+reset_sta
+reset_ctx_state
+search_blocked_list
+send_eapol_start
+IssueDisconnect
+gettimeofday
+srand
+send_eap_reqid
+pktHandler_eap_fail
+pktHandler_rspid
+pktHandler_reqid
+WSC_VENDOR_ID
+pktHandler_wsc_ack
+pktHandler_wsc_msg
+pktHandler_wsc_nack
+send_wsc_nack
+pktHandler_wsc_done
+pktHandler_wsc_start
+memcpy
+convert_bin_to_str_UPnP
+WSCUpnpTxmit
+DH_free
+send_wsc_M1
+strcmp
+difftime
+__fixunsdfsi
+reset_sta_UPnP
+pktHandler_upnp_select_msg
+__ctype_b
+send_upnp_to_wlan
+WSCRegisterCallBackFunc
+PWSCUpnpCallbackEventHandler
+WSCUpnpStart
+pGlobalCtx
+fopen
+get_token
+get_value
+strncpy
+fgets
+string_to_hex
+fclose
+putchar
+kill
+ILibBase64Decode
+daemon
+socket
+bind
+perror
+RAND_seed
+setsid
+lockf
+fdopen
+getpid
+fprintf
+init_wlan
+signal
+enable_WPS_LED
+SendSSDPNotifies
+select
+signal_webs
+send_eap_fail
+send_wlan
+snprintf
+add_into_blocked_list
+remove_active_pbc_sta
+wlioctl_get_button_state
+func_off_wlan_tx
+WSCUpnpStop
+fputs
+countdown_blocked_list
+ProcessSSDPRequest
+accept
+New_upnphttp
+inet_ntoa
+Process_upnphttp
+Delete_upnphttp
+ProcessEventingResp
+hmac_sha256
+add_tlv
+Encrypt_aes_128_cbc
+send
+write_param_to_flash
+write_param_to_flash2
+convert_bin_to_str
+strcat
+strncat
+write_param_to_tmpfile
+append
+BN_bn2bin
+generate_dh_parameters
+wsc_prime_num
+DH_generate_key
+derive_key
+Decrypt_aes_128_cbc
+check_wep_key_format
+send_wsc_M3
+send_wsc_ack
+send_eap_rspid
+send_wsc_start
+send_wsc_M2
+send_wsc_M4
+send_wsc_M6
+send_wsc_M8
+send_wsc_M5
+send_wsc_M7
+send_wsc_done
+wlioctl_get_mib
+write
+DH_new
+BN_new
+BN_bin2bn
+BN_set_word
+clear_SetSelectedRegistrar_flag
+EVP_sha256
+HMAC
+DH_compute_key
+SHA256
+wsc_kdf
+AES_set_encrypt_key
+AES_cbc_encrypt
+AES_set_decrypt_key
+__floatsidf
+__gedf2
+strtol
+user_priv_data
+upnp_op_status
+WSCCallBack
+ILibBase64Encode
+BuildSendAndCloseSoapResp
+ParseNameValue
+GetValueFromNameValueList
+ClearNameValueList
+upnp_op_mode
+CreatePropertySet
+UpnpAddToPropertySet
+UpnpSendEventAll
+UpnpDocument_free
+WSCCallBack_registered
+UpnpSendEventSingle
+IPCon_New
+IPCon_GetIpAddrByStr
+IPCon_Destroy
+OpenAndConfUdpSocket
+OpenAndConfNotifySocket
+OpenAndConfHTTPSocket
+mini_UPnP_UploadXML
+mini_UPnPGetFirstElement
+BN_num_bits_word
+OPENSSL_cleanse
+CRYPTO_free
+CRYPTO_malloc
+bn_expand2
+BN_copy
+BN_free
+BN_dup
+BN_num_bits
+bn_cmp_words
+BN_CTX_new
+BN_MONT_CTX_set_locked
+BN_rand
+BN_init
+BN_CTX_free
+BN_CTX_start
+BN_CTX_get
+DH_check_pub_key
+BN_CTX_end
+BN_mod_exp_mont
+BN_mod_exp_mont_word
+BN_MONT_CTX_free
+DH_OpenSSL
+DH_get_default_method
+DH_new_method
+BN_clear_free
+SHA1_Init
+SHA1_Update
+SHA1_Final
+SHA224_Init
+SHA256_Init
+SHA256_Update
+SHA256_Final
+EVP_DigestInit_ex
+EVP_DigestUpdate
+EVP_DigestFinal_ex
+EVP_MD_CTX_copy_ex
+EVP_MD_CTX_init
+HMAC_CTX_init
+HMAC_Init_ex
+EVP_MD_CTX_cleanup
+HMAC_Init
+HMAC_Update
+HMAC_Final
+HMAC_CTX_cleanup
+RAND_SSLeay
+RAND_get_rand_method
+RAND_set_rand_method
+sha1_block_host_order
+sha1_block_data_order
+sha256_block_host_order
+sha256_block_data_order
+AES_encrypt
+AES_decrypt
+cleanse_ctr
+realloc
+memchr
+BN_clear
+BN_sqr
+BN_is_bit_set
+BN_mul
+BN_RECP_CTX_init
+BN_RECP_CTX_set
+BN_nnmod
+BN_mod_mul_reciprocal
+BN_RECP_CTX_free
+BN_MONT_CTX_new
+BN_MONT_CTX_set
+BN_ucmp
+BN_mod_mul_montgomery
+BN_value_one
+BN_from_montgomery
+BN_div
+BN_mul_word
+BN_mod_exp_recp
+BN_mod_mul
+BN_sub
+BN_add
+BN_uadd
+BN_usub
+BN_lshift1
+BN_cmp
+BN_lshift
+BN_mod_lshift_quick
+bn_mul_add_words
+BN_MONT_CTX_init
+BN_set_bit
+BN_mod_inverse
+BN_sub_word
+bn_sub_words
+bn_add_words
+bn_mul_words
+bn_mul_comba8
+bn_mul_normal
+RAND_add
+RAND_pseudo_bytes
+RAND_bytes
+BN_pseudo_rand
+BN_reciprocal
+BN_rshift
+BN_add_word
+BN_div_recp
+bn_sqr_words
+bn_sqr_comba4
+bn_sqr_comba8
+bn_sqr_normal
+bn_div_words
+BN_set_negative
+BN_mod_word
+BN_is_prime_ex
+BN_rshift1
+rand_ssleay_meth
+get_random_bytes
+__udivdi3
+BN_GENCB_call
+BN_pseudo_rand_range
+BN_is_prime_fasttest_ex
+setsockopt
+inet_addr
+sendto
+recvfrom
+SendSSDPAnnounce2
+strncasecmp
+IPCon_GetIpAddr
+listen
+ReliableSend
+CloseSocket_upnphttp
+recv
+BuildHeader_upnphttp
+BuildResp2_upnphttp
+ExecuteSoapAction
+SendResp_upnphttp
+strchr
+BuildResp_upnphttp
+CreateUnixSocket
+parsexml
+strrchr
+fread
+SoapError
+parseatt
+parseelt
+libc.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+GLIBC_2.0
+$'99
+('9l
+<	k_<
+iB4BZ
+bH#<
+ #4cfg
+@(!$
+  !$
+@(!$
+  !$
+`0!'
+@ !$
+`0!$
+  !(B
+(!'9C
+@ !$
+  !&er
+@0!$
+0!&$
+$csD
+$'9?
+$'9?
+(!$B
+$'9L@
+ !&Er
+  !$
+@0!$
+ (!$
+(!$bs`$
+$bst
+$'9?@
+$'9T`
+@ !0C
+  !<
+@ !,B
+@ !,B
+@ !,B
+@ !,B
+@ !,B
+@ !,B
+@ !$C
+@ !$
+'9?@
+@ !,B
+@ !,B
+@ !,B
+@ !,B
+@ !,B
+@ !,B
+@ !,B
+@ !$
+'9?@
+@ !,B
+@ !,B
+@ !,B
+@ !,B
+@ !,B
+@ !,B
+ (!&D
+@(!&$
+($cx
+k_4c
+'9<p
+$'9:
+ !&s
+ !&s
+ !&s
+ !&s
+ !&s
+k_4c
+'9<p
+$'9:
+ !&s
+ !&s
+@0!'
+@0!'
+ !&s
+ !&s
+ !,B
+ !&s
+@(!,B
+($by
+br4B0
+` !$Yo
+@(!$P>t
+$'9m,
+@ !$
+e(!'9L@
+$'9T`
+$'9T`
+!B0B
+!B0c
+$'9T`
+  !'9T`
+	&D~D
+$$Yo
+$'9m,
+	&D~D
+$'9T`
+$'9@
+$'9T`
+$'9@
+@(!$B
+$'9T`
+ !&d
+S !$
+@ !$
+@ !$
+@ !$
+  !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+0!&D
+`(!$
+D !,B
+D$b~
+ !&P
+  !$
+`8!$
+`8!$
+@ !$
+G8!$
+5(#$
+0!&D
+`(!$
+D !,B
+P$b~
+ !&P
+	z0b
+  !$
+	z0b
+`8!$
+`8!$
+@ !$
+G8!$
+5(#$
+@0!$
+E(!'
+@ !$
+@ !$
+@0!$
+E(!'
+@ !$
+b !4
+ 8!$
+@(!'
+@0!$
+	X$B
+`(!$
+@ !&e
+C8!$
+  !$
+@0!$
+@0!$
+@0!$
+@0!$
+  !$
+@ !$
+E(!'
+@0!&d
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@0!$
+@ !$
+@0!$
+@ !$
+@ !'
+@ !$
+@ !$
+@ !$
+@0!$
+@ !$
+@0!$
+@ !$
+@ !$
+@ !$
+@ !$
+@0!$
+@ !$
+@0!$
+@ !$
+g8!$
+8!'9
+@0!$
+E(!'
+` !$
+@ !$
+@ !$
+@0!$
+E(!'
+ 8!$
+@ !$
+  !$
+b !4
+@ !$
+@ !$
+g8!$
+ 8!$
+@0!$
+@0!$
+@0!$
+@0!$
+@ !$
+@ !$
+E(!'
+ 0!$C
+@ !$B
+0!$B
+@ !$B
+@ !$
+(!$B
+0!$B
+0!$B
+@h!$
+@h!$
+  !$B
+(!$B
+0!$B
+0!$B
+0!$B
+(!$B
+(!$B
+0!$B
+(!'9
+@(!$
+@(!$
+ (!$
+ (!$
+ (!$
+  !$
+@0!$
+ !$U
+@0!$
+@0!$
+@(!$
+ !$B
+@0!$
+@0!$B
+ (!$B
+@0!$
+@0!$B
+@0!$B
+  !$
+@0!$B
+ (!$B
+@0!$
+ (!$B
+@0!$
+ (!$B
+@0!$
+ (!$S
+@ !$
+ (!'9
+@(!$B
+@0!$
+@0!$
+ (!'9
+@(!$B
+(!'9
+@0!$
+ (!'9
+@(!$B
+(!'9
+@0!$
+@ !4
+@8!'9
+ (!'9
+@(!$B
+@0!$
+@0!$
+@0!$
+ (!'9
+@(!$B
+(!'9
+@0!$
+@ !'
+@ !4
+ (!'9
+@(!$B
+@8!'
+(!'9
+@ !$
+ 0!'9
+(!$B
+  !$B
+@ !4
+f0!'
+ (!$
+f0!'
+ (!4
+f0!'
+ (!4
+f0!'
+ (!4
+f0!'
+f0!'
+ (!4
+f0!'
+ (!4
+f0!'
+ (!4
+f0!'
+ (!'
+  !<
+f0!'
+ (!$
+f0!'
+ (!4
+f0!'
+ (!4
+f0!'
+ (!4
+f0!'
+f0!'
+ (!4
+f0!'
+ (!4
+f0!'
+ (!4
+f0!'
+ (!'
+  !<
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+  !$
+@ !$
+G8!$
+@0!$
+@0!$
+@0!$
+@0!$
+0!&$
+@ !'
+  !$
+@0!$
+@ !<
+@ !$
+@ !4
+@ !4
+@ !$
+,'9yd
+,'9yd
+@ !&
+@0!$
+  !$W
+@ !&
+@0!$
+@ !&
+ !'9
+@ !$
+@ !$
+ h!&
+@ !&
+(!(b
+ $0c
+@(!<
+@(!<
+ !4cy
+V !5
+@4By
+!<	Z
+!5)y
+(&5)
+ &&s
+ $&s
+ $&s
+ $&s
+(!&s
+ &&s
+ &&s
+(!&s
+ &&s
+ &&s
+(!&s
+24cTv
+6|4c
+0p4c
+4cY9
+hX4c
+l4cO
+<n4c
+!4B^
+!4B[
+!4B}
+04B]t
+($4B
+%4B/
+!4BD
+ !4B
+ !4B
+ !4B
+ !4B
+ !4B
+ !4B^
+ !4B
+ !4B[
+S($'
+ !4B
+ !4B}
+ !4B]t
+ !4B
+ $4B
+ %0B
+ &1f
+X'$B
+@%0B
+&B%n
+H&%c
+J8$0B
+('$i
+$ !1g
+@(!$
+@(!$
+JX!0
+J@!$
+8$0c
+x!1k
+'H!%J
+h!2h
+ !1J
+F(&0
+ $1%
+h!2g
+0!2k
+F(&0
+ $1%
+ $1)
+0$B\,
+0$B\H
+0$B\H
+0$B\
+0$B\,
+0$B\
+0$B\,
+0$B\H
+0$B\H
+ (!$
+ (!$
+@(!$
+0!$B
+C !$
+8!$Yx
+<$yx
+h$yx
+`8!$
+ (!&
+ (!&
+ (!&
+@8!$
+@8!$
+  !$C
+ 0!$
+@ !$
+@(!$
+@(!$
+`8!'9
+`8!'9
+`8!'9
+  !&E
+  !$
+(!'9
+(!'9
+  !$
+ !'9
+`X!%
+@(!(D
+` !(B
+  !$c
+8!&1
+ !$B
+ !$B
+@ !4
+ (!$
+@ !$
+<'9$h
+@ !$
+('9*8
+('9+
+('9*8
+('9+
+@ !$
+	'93<
+'93<
+'93<
+'93<
+$R3<
+$R3<
+ !$B
+'9$h
+('94
+0 !(E
+F0#*
+0 !(E
+F0#*
+0 !(E
+F0#*
+0 !(E
+F0#*
+0 !(E
+F0#*
+ h!&
+  !$B
+('92
+('9&
+('9&
+@ !'
+('94
+^'9&
+('92
+/'92
+@ !'9<
+4BUV
+ (!&
+ (!$
+('9N
+l !,B
+@(!'
+@$BU
+$BV$
+`0!$
+(!$D
+`0!$
+(!$D
+@ !&$
+@(!$
+$'990
+ Realtek WiFi Simple-Config Daemon program 2006-05-15
+ioctl(SIOCGIFHWADDR) failed!
+%02x
+%02d
+Microsoft
+PIN method is not configured!
+Invalid pin_code length!
+issue wlan ioctl set_led error!
+iwpriv %s set_mib wsc_enable=4
+iwpriv %s set_mib wsc_enable=3
+!!!Config-method no include PBC method , pls check!
+00000000
+tManufacturer
+TF123456
+Got an invalid signal [%d]!
+wlan_fifo0
+wlan_fifo1
+mode
+manual_config
+upnp
+use_ie
+config_method
+pin_code
+rf_band
+ssid
+wlan0_wsc_disabled
+wlan1_wsc_disabled
+ssid2
+auth_type2
+encrypt_type2
+wep_transmit_key2
+network_key2
+wep_key22
+wep_key32
+wep_key42
+auth_type
+auth_type_flags
+encrypt_type
+encrypt_type_flags
+wep_transmit_key
+connection_type
+uuid
+modelDescription
+manufacturer
+manufacturerURL
+modelURL
+model_name
+model_num
+serial_num
+device_category_id
+device_sub_category_id
+device_oui
+device_name
+device_password_id
+disable_configured_by_exReg
+button_hold_time_for_first_if
+PIN_timeout
+SSID_prefix
+PSK_LEN
+read PSK_LEN tocken
+network_key
+wep_key2
+wep_key3
+wep_key4
+tx_timeout
+resent_limit
+reg_timeout
+block_timeout
+WPS_PBC_overlapping_GPIO_number
+PBC_overlapping_LED_time_out
+WPS_END_LED_unconfig_GPIO_number
+WPS_END_LED_config_GPIO_number
+WPS_START_LED_GPIO_number
+No_ifname_for_flash_set
+WPS_ERROR_LED_time_out
+WPS_ERROR_LED_GPIO_number
+WPS_SUCCESS_LED_time_out
+WPS_SUCCESS_LED_GPIO_number
+disable_disconnect
+disable_auto_gen_ssid
+manual_key_type
+manual_key
+random_key_len
+disable_hidden_ap
+config_by_ext_reg
+fix_wzc_wep
+Parameter "mode" must be set!
+\  Usage: %s [argument]...
+wscd
+    Where arguments is optional as:
+	-c config_filename, config filename, default is %s
+/var/wscd.conf
+	-w wlan_interface, wlan interface
+	-br bridge_interface, lan interface
+	-fi fifo_name, wlan fifo path name
+	-method val, 1: PIN, 2: PBC, 3: both
+	-mode val, 1: ap unconfigured, 2: client unconfigured (enrollee),
+		3: client configured (registrar), 4: ap-proxy configured, 5: ap-proxy registrar
+	-upnp val, 1 - support upnp, 0 - not support (default)
+	-gen-pin, generate pin code for local entitiy
+	-peer_pin, assign pin code for peer entitiy
+	-local_pin, assign pin code for local device
+	-sig_start, start wsc protocol
+	-sig_pbc, signal PBC mode
+	-start_pbc, start PBC mode
+	-daemon, run as daemon
+-both_band_ap
+/var/run/wscd
+%s-wlan0-wlan1.pid
+%s-%s.pid
+-fi2
+-mode
+-gen-pin
+PIN: %s
+-upnp
+-peer_pin
+-local_pin
+-method
+-start
+-sig_start
+-sig_pbc
+-start_pbc
+-connection_type
+-ssid
+-disable_PBC_detection
+-64decode
+-daemon
+-led
+invalid argument - %s
+main
+allocate context failed!
+wlan1
+fork wscd daemon error!
+socket[PF_PACKET,SOCK_RAW]
+ioctl(SIOCGIFINDEX) failed!
+bind PACKET2 fail
+start_upnp() error!
+WiFi Simple Config %s (%s).
+v1.19
+2013.09.23-07:39+0000
+Unable to open pidfile %s
+%s %d Not enough mempry
+wscd init fialed!
+rm -f %s
+/tmp/wscd_status
+wlan0
+/tmp/wscd_byebye
+/tmp/reinit_wscd
+wscd: init_wlan() failed!
+wscd: start_upnp() failed!
+/tmp/wscd_cancel
+1234567890
+WSC_CONFIGBYEXTREG=%d
+flash set WSC_CONFIGBYEXTREG %d
+flash set %s WSC_CONFIGBYEXTREG %d
+00000000
+WFA-SimpleConfig-Registrar-1-0
+WFA-SimpleConfig-Enrollee-1-0
+KeyWrapAuthenticator
+SSID
+MAC Address
+AuthenticationType
+EncryptionType
+NetworkKeyIndex
+NetworkKey
+WEPTransmitKey
+EnrolleeNonce
+RegistrarNonce
+UUID-R
+PublicKey
+AuthenticationTypeFlags
+EncryptionTypeFlags
+ConnectionTypeFlags
+ConfigMethods
+Manufacture
+ModelName
+ModelNumber
+SerailNumber
+DeviceName
+RFBand
+AssociationState
+DevicePasswordID
+ConfigurationError
+OSVersion
+WFA-SimpleConfig-Enrollee-1-0
+WFA-SimpleConfig-Registrar-1-0
+%02x:%02x:%02x:%02x:%02x:%02x
+UUID-E
+MACAddress
+SimpleConfigState
+RegistarNonce
+E-Hash1
+E-Hash2
+E-S1
+E-S2
+00000000
+R-Hash1
+R-Hash2
+R-S1
+R-S2
+NetworkIndex
+<< Rec UPnP SetSelectedRegistrar msg>>
+Version
+SelectedRegistrar
+SelectedRegistrarConfigMethod
+iwpriv %s set_mib wsc_enable=4
+%02x
+%02x:
+echo %x > /proc/gpio
+wlan0
+wlan1
+wlioctl_set_wsc_ie
+%s %d failed
+/proc/gpio
+ioctl[SIOCGIWRTLSCANREQ]
+ioctl[SIOCGIWRTLGETBSSDB]
+ioctl[SIOCGIWRTLGETMIB]
+iwpriv %s set_mib wsc_enable=%d
+/tmp/flash_param
+SSID="%s"
+WSC_SSID="%s"
+AUTH_TYPE=%d
+ENCRYPT=%d
+WSC_AUTH=%d
+WPA_AUTH=2
+WPA_PSK=%s
+PSK_FORMAT=1
+PSK_FORMAT=0
+WSC_PSK=%s
+WPA_CIPHER_SUITE=%d
+WPA2_CIPHER_SUITE=%d
+WEP=%d
+WEP64_KEY1=%s
+WEP64_KEY2=%s
+WEP64_KEY3=%s
+WEP64_KEY4=%s
+WEP128_KEY1=%s
+WEP128_KEY2=%s
+WEP128_KEY3=%s
+WEP128_KEY4=%s
+WEP_DEFAULT_KEY=%d
+WEP_KEY_TYPE=%d
+WSC_ENC=%d
+WSC_CONFIGBYEXTREG=%d
+WSC_CONFIGURED=%d
+%s -param_file %s %s
+flash
+flash set WLAN1_WSC_CONFIGURED 1
+SSID=%s
+WSC_SSID=%s
+flash set WLAN0_WSC_CONFIGURED 1
+func_off
+iwpriv %s set_mib func_off=%d
+Warning!! func_off_mibValue!=0 tx of %s will be holded
+/var/wsc-cfg.fifo
+signal_webs
+iwpriv %s set_mib wsc_enable=5
+Wi-Fi Easy and Secure Key Derivation
+ioctl[SIOCGIWRTLJOINREQ]
+ioctl[SIOCGIWRTLJOINREQSTATUS]
+echo %d > %s
+/tmp/wscd_status
+echo E > /proc/gpio
+/simplecfg.xml
+/simplecfgservice.xml
+GetDeviceInfo
+PutMessage
+SetSelectedRegistrar
+PutWLANResponse
+upnp:rootdevice
+urn:schemas-wifialliance-org:device:WFADevice:
+urn:schemas-wifialliance-org:service:WFAWLANConfig:
+<NewDeviceInfo>%s</NewDeviceInfo>
+<u:%sResponse xmlns:u="%s">
+</u:%sResponse>
+urn:schemas-wifialliance-org:WFAWLANConfig:1
+NewOutMessage
+NewInMessage
+<%s>%s</%s>
+<%s></%s>
+NewMessage
+NewWLANEventType
+NewWLANEventMAC
+<u:%sResponse xmlns:u="%s"></u:%sResponse>
+WLANEvent
+APStatus
+STAStatus
+00:01:02:03:04:05
+Can not gain IP address from LAN!
+simplecfg
+http://%s:%d/%s.xml
+%s.xml
+/var/wps/
+%s%s
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+	<specVersion>
+		<major>1</major>
+		<minor>0</minor>
+	</specVersion>
+	<URLBase>http://%s:%u</URLBase>
+	<device>
+		<deviceType>urn:schemas-wifialliance-org:device:WFADevice:1</deviceType>
+		<friendlyName>RTL8186 WFA Device</friendlyName>
+		<friendlyName>%s</friendlyName>
+		<manufacturer>Realtek Semiconductor</manufacturer>
+		<manufacturer>%s</manufacturer>
+		<manufacturerURL>http://www.realtek.com.tw</manufacturerURL>
+		<manufacturerURL>%s</manufacturerURL>
+		<modelDescription>Simple Config UPnP Proxy</modelDescription>
+		<modelDescription>%s</modelDescription>
+		<modelName>Simple Config UPnP Proxy Version 1.0</modelName>
+		<modelName>%s</modelName>
+		<modelNumber>RTL8186</modelNumber>
+		<modelNumber>%s</modelNumber>
+		<modelURL>http://www.realtek.com.tw</modelURL>
+		<modelURL>%s</modelURL>
+		<serialNumber>12345678</serialNumber>
+		<serialNumber>%s</serialNumber>
+%02x%02x%02x%02x-%02x%02x-%02x%02x-%02x%02x-%02x%02x%02x%02x%02x%02x
+		<UDN>uuid:%s</UDN>
+		<UPC>112233445566</UPC>
+		<UPC>%s</UPC>
+Error in gen_simplecfg_xml!
+		<serviceList>
+			<service>
+				<serviceType>urn:schemas-wifialliance-org:service:WFAWLANConfig:1</serviceType>
+				<serviceId>urn:wifialliance-org:serviceId:WFAWLANConfig1</serviceId>
+				<SCPDURL>/simplecfgservice.xml</SCPDURL>
+				<controlURL>/upnp/control/WFAWLANConfig1</controlURL>
+				<eventSubURL>/upnp/event/WFAWLANConfig1</eventSubURL>
+			</service>
+		</serviceList>
+	</device>
+</root>
+Failed to open socket for SSDP. EXITING
+Failed to open socket for SSDP notify messages
+Failed to open socket for HTTP. EXITING
+%s%s.xml
+simplecfgservice
+eventSubURL
+Error with UpnpInit -- %d
+Big Number part of OpenSSL 0.9.8b-fips 04 May 2006
+./crypto/bn/bn_lib.c
+OpenSSL DH Method
+Diffie-Hellman part of OpenSSL 0.9.8b-fips 04 May 2006
+DH_new_method
+./crypto/dh/dh_lib.c
+<<-----------------%s %d------------------>>
+SHA1 part of OpenSSL 0.9.8b-fips 04 May 2006
+SHA-256 part of OpenSSL 0.9.8b-fips 04 May 2006
+,oJt
+))g'
+!8M,m
+sTvj
+'HwL4
+Oh.o
+RRRR				jjjj
+00006666
+8888
+@@@@
+||||
+9999
+////
+4444
+CCCCDDDD
+TTTT{{{{
+2222
+####====
+LLLL
+BBBB
+NNNN
+....
+ffff((((
+$$$$
+vvvv[[[[
+IIIImmmm
+%%%%rrrr
+dddd
+hhhh
+\\\\
+]]]]eeee
+llllppppHHHHPPPP
+^^^^
+FFFFWWWW
+XXXX
+EEEE
+,,,,
+????
+kkkk::::
+AAAAOOOOgggg
+ssss
+tttt""""
+5555
+7777
+uuuu
+nnnnGGGG
+qqqq
+))))
+oooo
+bbbb
+VVVV>>>>KKKK
+yyyy    
+xxxx
+ZZZZ
+3333
+1111
+YYYY''''
+____````QQQQ
+JJJJ
+----
+zzzz
+;;;;MMMM
+****
+<<<<
+SSSS
+aaaa
+++++
+~~~~
+wwww
+&&&&
+iiii
+ccccUUUU!!!!
+}}}}
+PQAeS~
+U vm
+Ebdw
+HhXpE
+ZrNl
+=-9'6
+!h[T
+6.:$
+awKiZ
+~4[C)v
+j~FbT
+1?#1*
+[_=o
+$4,8
+l\tH
+eS~A
+U 0m
+Xti)I
+EbSw
+hXpH
+*fU(
+H2+p
+rNlZ
+9'6-
+!h\T
+[.:$6g
+KiZw
+Df~4[
+Bc"@
+j_FbT~
+#1*?
+h4,8$@_
+2\tHlWB
+S~Ae
+Xt!)I
+Q3EbS
++XpHh
+@Cwg
+pNlZr
+'6-9d
+[T:$6.
+ iZwK
+*C<"
+Df;4[
+bT~F
+1*?#0
+f7tN
+,8$4_
+(<IA
+tHl\B
+P~AeS
+-Xt!
+X>k'
+Q3`bS
+pHhX
+lZrN
+6-9'
+$6.:
+ZwKi
+T~Fb
+&x	nY
+*?#1
+>8$4,
+pHl\t
+WBcccc||||wwww{{{{
+kkkkoooo
+0000
+gggg++++
+vvvv
+}}}}
+YYYYGGGG
+rrrr
+&&&&6666????
+4444
+qqqq
+1111
+####
+''''
+uuuu				
+,,,,
+nnnnZZZZ
+RRRR;;;;
+))))
+////
+SSSS
+    
+[[[[jjjj
+9999JJJJLLLLXXXX
+CCCCMMMM3333
+EEEE
+PPPP<<<<
+QQQQ
+@@@@
+8888
+!!!!
+____
+DDDD
+~~~~====dddd]]]]
+ssss````
+OOOO
+""""****
+FFFF
+^^^^
+2222::::
+IIII
+$$$$\\\\
+bbbb
+yyyy
+7777mmmm
+NNNN
+llllVVVV
+eeeezzzz
+xxxx%%%%....
+tttt
+KKKK
+pppp>>>>
+ffffHHHH
+aaaa5555WWWW
+iiii
+UUUU((((
+BBBBhhhhAAAA
+----
+TTTT
+00P`
+++}V
+=&&jL66Zl??A~
+44\h
+11Sb
+##eF
+''iN
+,,tX
+-6nn
+;;Mv
+})){R
+//q^
+  `@
+g99KrJJ
+33Uf
+<<Dx
+!88Hp
+!!cB
+==Gzdd
++2ss
+""fD**~T
+22Vd::Nt
+$$lH\\
+77Ynmm
+%%oJ..r\
+!>KK
+>>B|
+55_jWW
+3"ii
+((xP
+)--wZ
+0P`0
+g+}V+
+&jL&6Zl6?A~?
+4\h4
+1Sb1
+#eF#
+'iN'
+,tX,
+R;Mv;
+){R)
+/q^/
+ `@ 
+9Kr9J
+M3Uf3
+P<Dx<
+8Hp8
+!cB!
+~=Gz=d
+"fD"*~T*
+2Vd2:Nt:
+$lH$\
+7Yn7m
+x%oJ%.r\.
+p>B|>
+a5_j5W
+U(xP(
+-wZ-
+P`00
+gg}V++
+jL&&Zl66A~??
+\h44
+Sb11?*
+eF##^
+iN''
+tX,,.4
+RRMv;;a
+{R))>
+q^//
+`@  
+Kr99
+MMUf33
+PPDx<<
+Hp88
+cB!!0 
+DD9.
+~~Gz==
+]]+2
+fD""~T**
+Vd22Nt::
+lH$$
+Yn77
+xxoJ%%r\..$8
+tt!>
+ppB|>>
+aa_j55
+UUxP((z
+wZ--
+T`00P
+V++}
+L&&jl66Z~??A
+Oh44\Q
+sb11S*
+RF##e
+&N''i
+X,,t4
+v;;M
+R)){
+>^//q
+,@  `
+r99K
+f33U
+x<<D%
+p88H
+uB!!c 
+z==G
+D""fT**~;
+;d22Vt::N
+H$$l
+Cn77Y
+J%%o\..r8
+|>>Bq
+j55_
+P((x
+Z--w
+./crypto/mem.c
+./crypto/bn/bn_ctx.c
+./crypto/bn/bn_exp.c
+./crypto/bn/bn_mont.c
+./crypto/bn/bn_rand.c
+./crypto/bn/bn_recp.c
+./crypto/evp/digest.c
+239.255.255.250
+HTTP/1.1 200 OK
+Cache-Control: max-age=%d
+ST: %.*s
+USN: %s::%.*s
+EXT:
+Server: OS 1.0 UPnP/1.0 Realtek/V1.3
+Location: http://%s:%u/%s.xml
+alive
+byebye
+NOTIFY * HTTP/1.1
+Host:%s:%d
+Cache-Control:max-age=%d
+Location:http://%s:%d/%s.xml
+Server:OS 1.0 UPnP/1.0 Realtek/V1.3
+NT:%s
+USN:%s
+NTS:ssdp:%s
+NOTIFY * HTTP/1.1
+Host:%s:%d
+Cache-Control:max-age=%d
+Location:http://%s:%d/%s.xml
+Server:OS 1.0 UPnP/1.0 Realtek/V1.3
+NT:%s%s
+USN:%s::%s%s
+NTS:ssdp:%s
+NOTIFY
+M-SEARCH
+|$$$}rstuvwxyz{$$$$$$$>?@ABCDEFGHIJKLMNOPQRSTUVW$$$$$$XYZ[\]^_`abcdefghijklmnopq
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+%s %d %s
+Content-Type: text/xml; charset="utf-8"
+Connection: close
+Content-Length: %d
+Server: OS 1.0 UPnP/1.0 Realtek/V1.3
+Ext:
+Error in IPCon_New:Cannot allocate memory
+user: socket creation failed
+HTTP/1.1 404 Not found
+Connection: close
+Content-type: text/html
+<HTML><HEAD><TITLE>404 Not Found</TITLE></HEAD><BODY><H1>Not Found</H1>The requested URL was not found on this server.</BODY></HTML>
+HTTP/1.1 %d %s
+Connection: close
+Content-type: text/html
+WWW-Authenticate: Basic realm="%s"
+<HTML><HEAD><TITLE>%d %s</TITLE></HEAD><BODY><H1>%s</H1>%s</BODY></HTML>
+HTTP/1.1 412 Precondition Failed
+Content-Length: 0
+Connection: close
+<e:property><%s>%s</%s></e:property>
+NOTIFY %s HTTP/1.1
+SERVER: OS 1.0 UPnP/1.0 Realtek/V1.3
+HOST: %s:%d
+Content-Type: text/xml; charset="utf-8"
+NT: upnp:event
+NTS: upnp:propchange
+SID: %s
+SEQ: %d
+Content-Length: %d
+<?xml version="1.0" encoding="utf-8"?><e:propertyset xmlns:e="urn:schemas-upnp-org:event-1-0">%s</e:propertyset>
+HTTP/1.1 200 OK 
+Server: OS 1.0 UPnP/1.0 Realtek/V1.3
+SID: %s
+TIMEOUT: Second-%d
+Content-Length: 0
+HTTP/1.1 200 OK 
+Content-Length: 0
+SUBSCRIBE
+UNSUBSCRIBE
+Host
+%s:%d
+Callback
+<http://
+Timeout
+Second
+infinite
+uuid
+uuid:
+<html><body>Bad request</body></html>
+Bad Request
+HTTP/1.1 412 Too Many Subscribers
+Content-Length: 0
+Connection: close
+HTTP/1.1 501 Not Implemented
+Connection: close
+Content-type: text/html
+<HTML><HEAD><TITLE>501 Not Implemented</TITLE></HEAD><BODY><H1>Not Implemented</H1>The HTTP Method is not implemented by this server.</BODY></HTML>
+Content-Length
+SOAPAction
+POST
+GET /HNAP
+GetDeviceSettings
+UNIXSocket
+UNIXSocket bind
+UNIXSocket listen
+%s = %s
+Failed to open file [%s]. EXITING
+mini_UPnP_UploadXML Out of memory! EXITING
+mini_UPnP_UploadXML File length mismatched! EXITING
+<?xml version="1.0"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body>
+</s:Body></s:Envelope>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><s:Fault><faultcode>s:Client</faultcode><faultstring>UPnPError</faultstring><detail><UPnPError xmlns="urn:schemas-upnp-org:control-1-0"><errorCode>%d</errorCode><errorDescription>%s</errorDescription></UPnPError></detail></s:Fault></s:Body></s:Envelope>
+Internal Server Error
+http://purenetworks.com/HNAP
+Invalid Action
+mode
+upnp
+config_method
+auth_type
+encrypt_type
+connection_type
+wsc_manual_config
+network_key
+ssid
+pin_code
+89542798
+rf_band
+device_name
+5mmQ
+vb^~
+I(fQ

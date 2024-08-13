@@ -1,0 +1,43 @@
+@ !$
+0!$B
+utf8
+license=Dual BSD/GPL
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+nls_utf8
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.uni2char
+.rel.text.char2uni
+.rel.init.text
+.rel.exit.text
+.rodata
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+nls_utf8.c
+init_nls_utf8
+exit_nls_utf8
+__mod_license61
+table
+uni2char
+char2uni
+identity
+nls_utf8.mod.c
+__module_depends
+__mod_vermagic5
+__this_module
+register_nls
+cleanup_module
+init_module
+unregister_nls
+utf8_wctomb
+utf8_mbtowc

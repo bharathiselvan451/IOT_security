@@ -1,0 +1,151 @@
+[*] Binary protection state of smbd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function system tear down of smbd
+
+lw v0, -obj.Connections(gp)
+subu s0, s0, a0
+sll s0, s0, 3
+addu s0, s0, v0
+lw t9, -sym.lp_dir_mode(gp)
+lw a0, (s0)
+jalr t9
+ori s1, s1, 0x40c9
+lw gp, 0x10(sp)
+lw a0, (s0)
+lw t9, -sym.lp_force_dir_mode(gp)
+jalr t9
+and s1, s1, v0
+or s1, s1, v0
+move v0, s1
+lw gp, 0x10(sp)
+lw ra, 0x30(sp)
+lw s5, 0x2c(sp)
+lw s4, 0x28(sp)
+lw s3, 0x24(sp)
+lw s2, 0x20(sp)
+lw s1, 0x1c(sp)
+lw s0, 0x18(sp)
+jr ra
+addiu sp, sp, 0x38
+[31mlw t9, -sym.lp_map_system(gp)[0m
+lw a0, (v0)
+jalr t9
+nop
+lw gp, 0x10(sp)
+beqz v0, 0x41f848
+andi v1, s4, 4
+ori v0, s1, 8
+b 0x41f848
+movn s1, v0, v1
+ori v0, s1, 1
+b 0x41f880
+movn s1, v0, v1
+lui gp, 7
+addiu gp, gp, 0x3d3c
+addu gp, gp, t9
+addiu sp, sp, -0x40
+sw ra, 0x38(sp)
+sw s7, 0x34(sp)
+sw s6, 0x30(sp)
+sw s5, 0x2c(sp)
+--
+movn s1, v0, v1
+subu v0, s3, s4
+sll v0, v0, 3
+addu v0, v0, s6
+lw t9, -sym.is_in_path(gp)
+lw a1, 0x6c(v0)
+jalr t9
+move a0, s7
+ori v1, s1, 2
+movn s1, v1, v0
+move v0, s1
+lw gp, 0x10(sp)
+lw ra, 0x38(sp)
+lw s7, 0x34(sp)
+lw s6, 0x30(sp)
+lw s5, 0x2c(sp)
+lw s4, 0x28(sp)
+lw s3, 0x24(sp)
+lw s2, 0x20(sp)
+lw s1, 0x1c(sp)
+lw s0, 0x18(sp)
+jr ra
+addiu sp, sp, 0x40
+b 0x41faac
+ori s1, v0, 0x10
+[31mlw t9, -sym.lp_map_system(gp)[0m
+lw a0, (v0)
+jalr t9
+nop
+lw gp, 0x10(sp)
+beqz v0, 0x41fa7c
+ori v1, s1, 4
+lw a1, 0x18(s5)
+andi v0, a1, 8
+b 0x41fa7c
+movn s1, v1, v0
+lw t9, -sym.lp_map_archive(gp)
+lw a0, (v0)
+jalr t9
+nop
+lw gp, 0x10(sp)
+beqz v0, 0x41fa60
+ori v1, s1, 0x20
+lw a1, 0x18(s5)
+andi v0, a1, 0x40
+b 0x41fa60
+--
+sll v0, v0, 3
+addu v0, v0, v1
+lw a0, 0x20(v0)
+beqz a0, 0x41fd88
+nop
+lw t9, -sym.lp_map_archive(gp)
+lw a0, (v0)
+jalr t9
+nop
+lw gp, 0x10(sp)
+bnez v0, 0x41fd8c
+nop
+b 0x41fd8c
+addiu s3, zero, 0xc40
+b 0x41fd44
+ori s0, s0, 0x10
+lw t9, -sym.lp_map_hidden(gp)
+lw a0, (v0)
+jalr t9
+nop
+lw gp, 0x10(sp)
+bnez v0, 0x41fddc
+nop
+b 0x41fddc
+ori s3, s3, 1
+[31mlw t9, -sym.lp_map_system(gp)[0m
+lw a0, (v0)
+jalr t9
+nop
+lw gp, 0x10(sp)
+bnez v0, 0x41fdb4
+nop
+b 0x41fdb4
+ori s3, s3, 8
+lw t9, -sym.imp.stat64(gp)
+addiu s1, sp, 0x18
+move a0, a1
+jalr t9
+move a1, s1
+lw gp, 0x10(sp)
+beqz v0, 0x41fd2c
+addiu v1, zero, -1
+b 0x41fe88
+nop
+lw t9, -sym.imp.open64(gp)
+addiu a1, zero, 1
+
+[*] Function system used 3 times smbd
+

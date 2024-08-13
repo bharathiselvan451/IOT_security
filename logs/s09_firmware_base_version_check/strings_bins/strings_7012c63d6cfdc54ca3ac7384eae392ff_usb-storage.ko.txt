@@ -1,0 +1,1390 @@
+t4B 
+t4B 
+@0!<
+` !@
+0!&B
+@0!<
+ !$B
+@0!<
+ !$B
+@0!<
+ !$B
+ !$B
+ !$B
+ !$B
+ !$B
+ !$B
+ !$B
+ !$B
+@(!,B
+@ !$B
+u !<
+@ !$
+ (!<
+@(!$
+  !$
+  !<
+`8!$B
+(!$B
+ !$B
+ %0B
+US4BBC
+ 0!&
+@ !$B
+ 0!$
+ 0!$
+ 0!$
+ %0c
+(!$B
+ !$B
+ !$B
+  !0B
+8!$S
+@ !@
+@ !<
+@0!<
+@0!<
+(!$B
+@ !$B
+@ !$B
+  !<
+  !<
+  !&
+@ !$
+@ !$
+ !$S
+@ !$
+@(!<
+ !$B
+@ !<
+ !'9
+04BBC
+  !$B
+  !$
+E(%$
+E(%$
+  !$
+@ !&b
+@ !&b
+` !$B
+` !$B
+ (!&R
+` !$B
+  !&
+C0%$
+(H%<
+@ !<
+usb-storage
+max_sectors
+SCSI emulation for USB Mass Storage devices
+queuecommand
+<3>usb-storage: Error in %s: us->srb = %p
+   Host scsi%d: usb-storage
+Unknown
+       Vendor: %s
+      Product: %s
+None
+Serial Number: %s
+     Protocol: %s
+    Transport: %s
+       Quirks:
+ SINGLE_LUN
+ NEED_OVERRIDE
+ SCM_MULT_TARG
+ FIX_INQUIRY
+ FIX_CAPACITY
+ IGNORE_RESIDUE
+ BULK32
+ NOT_LOCKABLE
+ GO_SLOW
+ NO_WP_DETECT
+ MAX_SECTORS_64
+ IGNORE_DEVICE
+ CAPACITY_HEURISTICS
+ MAX_SECTORS_MIN
+ BULK_IGNORE_TAG
+ SANE_SENSE
+ CAPACITY_OK
+include/linux/usb.h
+quirks
+delay_use
+usb-storage
+ATMEL
+SND1 Storage
+Mitsumi
+USB FDD
+VIA Technologies Inc.
+Mitsumi multi cardreader
+CD-Writer+
+Personal Media Drive
+PhotoSmart R707
+NEC USB UF000x
+USB 2.0 Card Reader
+Buffalo
+DUB-P40G HDD
+Samsung Info. Systems America, Inc.
+MP3 Player
+Samsung
+TrekStor
+i.Beat 115 2.0
+i.Beat Joy 2.0
+GENERIC
+MP3 PLAYER
+Nokia
+Nokia 6288
+Nokia 3250
+6131
+Nokia 6233
+6234
+SMSC
+FDC GOLD-2.30
+Microtech
+CameraMate
+Neuros Audio
+USB 2.0 HD 2.5
+USBest Technology
+USB Mass Storage Device
+USB 2.0
+Flash Disk
+Mitac
+Virtual Floppy
+Kyocera
+Finecam S3x
+Finecam S4
+Finecam S5
+CONTAX SL300R T*
+Hitachi
+DVD-CAM DZ-MV100A Camcorder
+Tekom Technologies, Inc
+300_CAMERA
+NIKON
+NIKON DSC E2000
+IBM RSA2
+Epson
+875DC Storage
+785EPX Storage
+Fujifilm
+FinePix 1400Zoom
+ScanLogic
+SL11R-IDE
+Panasonic
+LS-120 Camera
+Sharp CE-CW05
+CD-R/RW Drive
+DMC-LCx Camera
+LEICA
+D-LUX Camera
+Matshita
+LS-120
+Shuttle
+eUSCSI Bridge
+SCM Microsystems
+eUSB CompactFlash Adapter
+SCM Microsystems Inc.
+eUSB MMC Adapter
+Sony
+Hifd
+eUSB ATA/ATAPI Adapter
+CD-RW Device
+YP-U3
+Kobian Mercury
+Binocam DCB-132
+Belkin
+USB SCSI Adaptor
+Iomega
+USB Clik! 40
+Linux
+File-backed Storage Gadget
+400_CAMERA
+DSC-S30/S70/S75/505V/F505/F707/F717/P8
+DSC-T1/T5/H5
+Memorystick NW-MS7
+USB Floppy Drive
+Memorystick MSAC-US1
+Handycam
+Handycam HC-85
+Memorystick MSC-U01N
+PEG N760c Memorystick
+Memorystick MSC-U03
+PEG Mass Storage
+SAMSUNG
+SFD-321U [FW 0C]
+Y-E Data
+Flashbuster-U
+Silicon Media R/W
+JetFlash
+TS1GJF2A/120
+Digital Camera EX-20 DSC
+ZIP 100
+LaCie
+DVD+-RW
+In-System
+PyroGate External CD-ROM Enclosure (FCD-523)
+Apple
+iPod
+Option N.V.
+Mass Storage
+Lexar
+USB CF Reader
+Genesys Logic
+USB to IDE Optical
+USB to IDE Disk
+USB to SATA
+Vivitar
+Vivicam 35Xx
+TEAC
+Floppy Drive
+SigmaTel
+USBMSC Audio Player
+Prolific Technology, Inc.
+Mass Storage Device
+Prolific Technology Inc.
+ATAPI-6 Bridge Controller
+Minolta
+Dimage F300
+DIMAGE E223
+Hagiwara
+Flashgate
+Thomson Multimedia Inc.
+RCA RD1080 MP3 Player
+RockChip
+ROCK MP3
+Sandisk
+ImageMate SDDR-05a
+SanDisk Corporation
+ImageMate CompactFlash USB
+ImageMate SDDR-12
+Freecom Technologies
+FHD-Classic
+USB-SCSI-DB25
+USB-SCSI-HD50
+Datafab
+KECF-USB
+Simple Tech/Datafab
+CF+SM Reader
+Casio
+QV DigitalCamera
+Digimax 410
+Argosy
+Storage
+Grandtech
+DC2MEGA
+PanDigital
+Photo Frame
+CITIZEN
+X1DE-USB
+AIPTEK
+Aiptek USB Keychain MP3 Player
+Trumpion
+t33520 USB Flash Card Controller
+Trumpion Microelectronics, Inc.
+33520 USB Digital Voice Recorder
+MP3 player
+Feiya
+5-in-1 Card Reader
+Pentax
+Optio 2/3/400
+ZyXEL
+G-220F USB-WLAN Install
+SiteCom
+WL-117 USB-WLAN Install
+Option
+GI 0401 SD-Card
+GI 0431 SD-Card
+Seagate
+FreeAgent Pro
+Maxtor
+Unknown
+Medion
+MD 7425
+Jenoptik
+JD 5200 z3
+Macpower Technology Co.LTD.
+USB 2.0 3.5" DEVICE
+Netac
+USB-CF-Card
+USB Flash Disk
+WINWARD
+Music Disk
+PNP_MP3
+PNP_MP3 PLAYER
+Cowon Systems
+iAUDIO M5
+Solid state disk
+Ours Technology
+Typhoon
+My DJ 1820
+Oracom Co., Ltd
+ORC-200M
+C-MEX
+A-VOX
+Sony Ericsson
+V800-Vodafone 802
+MD400
+P990i
+M600i
+Desknote
+UCR-61S2B
+Western Digital
+External HDD
+Actions Semiconductor
+Mtp device
+D-Link
+USB Mass Storage
+Sierra Wireless
+USB MMC Storage
+Digitech HMG
+DigiTech Mass Storage
+HUAWEI MOBILE
+Dimage Z10
+SWISSBIT
+Black Silver
+Super Top
+IDE DEVICE
+JMicron
+USB to ATA/ATAPI Bridge
+Teac
+HD-35PUK-B
+Motorola
+RAZR V3x
+MSnc.
+MPIO
+HS200
+INTOVA
+Pixtreme
+Mio DigiWalker USB Sync
+iRiver
+MP3 T10
+Micro Mini 1GB
+DataStor
+USB4500 FW1.04
+Digital MP3 Audio Player
+<7>usb-storage: device found at %d
+<7>usb-storage: waiting for device to settle before scanning
+<7>usb-storage: device scan complete
+an unneeded SubClass entry
+an unneeded Protocol entry
+unneeded SubClass and Protocol entries
+<4>usb-storage: Unable to allocate the scsi host
+&(us->dev_mutex)
+<6>%s %s: Quirks match for vid %04x pid %04x: %x
+<6>usb-storage: device ignored
+<5>usb-storage: This device (%04x,%04x,%04x S %02x P %02x) has %s in unusual_devs.h (kernel %s)
+   Please send a copy of this message to <linux-usb@vger.kernel.org> and <usb-storage@lists.one-eyed-alien.net>
+Control/Bulk
+Control/Bulk/Interrupt
+Bulk
+Reduced Block Commands (RBC)
+8020i
+QIC-157
+8070i
+Transparent SCSI
+Uniform Floppy Interface (UFI)
+ <4>usb-storage: Unable to start control thread
+<4>usb-storage: Unable to add the scsi host
+usb-stor-scan
+<4>usb-storage: Unable to start the device-scanning thread
+<6>Initializing USB Mass Storage driver...
+usb_storage
+<6>USB Mass Storage support registered.
+swi_tru_install
+truinst
+Forced Mass Storage
+Error
+REV=%02d SKU=%04X VER=%04X
+option_zero_cd
+USBCxV4
+usb_stor_sense_invalidCDB
+usb_stor_set_xfer_buf
+usb_stor_access_xfer_buf
+usb_stor_transparent_scsi_command
+usb_stor_Bulk_reset
+usb_stor_CB_reset
+usb_stor_Bulk_transport
+usb_stor_CB_transport
+usb_stor_bulk_transfer_sg
+usb_stor_bulk_srb
+usb_stor_bulk_transfer_buf
+usb_stor_ctrl_transfer
+usb_stor_clear_halt
+usb_stor_control_msg
+usb_stor_disconnect
+usb_stor_probe2
+usb_stor_probe1
+fill_inquiry_response
+usb_stor_post_reset
+usb_stor_pre_reset
+usb_usual_ignore_device
+usb_storage_usb_ids
+parm=quirks:supplemental list of device IDs and their quirks
+parmtype=quirks:string
+parm=delay_use:seconds to delay before using a new device
+parmtype=delay_use:uint
+license=GPL
+description=USB Mass Storage driver for Linux
+author=Matthew Dharm <mdharm-usb@one-eyed-alien.net>
+parm=swi_tru_install:TRU-Install mode (1=Full Logic (def), 2=Force CD-Rom, 3=Force Modem)
+parmtype=swi_tru_install:uint
+parm=option_zero_cd:ZeroCD mode (1=Force Modem (default), 2=Allow CD-Rom
+parmtype=option_zero_cd:uint
+alias=usb:v*p*d*dc*dsc*dp*ic08isc06ip50*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc05ip50*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc04ip50*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc03ip50*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc02ip50*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc01ip50*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc06ip00*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc05ip00*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc04ip00*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc03ip00*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc02ip00*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc01ip00*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc06ip01*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc05ip01*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc04ip01*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc03ip01*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc02ip01*
+alias=usb:v*p*d*dc*dsc*dp*ic08isc01ip01*
+alias=usb:vED10p7636d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:vED06p4500d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v4146pBA01d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v4102p1020d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v3340pFFFFd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v2770p915Dd0010dc*dsc*dp*ic*isc*ip*
+alias=usb:v2735p100Bd*dc*dsc*dp*ic*isc*ip*
+alias=usb:v22B8p6426d0101dc*dsc*dp*ic*isc*ip*
+alias=usb:v22B8p3010d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v2116p0320d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v1652p6600d0201dc*dsc*dp*ic*isc*ip*
+alias=usb:v152Dp2329d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v14CDp6600d0201dc*dsc*dp*ic*isc*ip*
+alias=usb:v1370p6828d0110dc*dsc*dp*ic*isc*ip*
+alias=usb:v132Bp000Bd0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p143Fd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p143Ed0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p143Dd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p143Cd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p143Bd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p143Ad0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1439d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1438d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1437d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1436d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1435d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1434d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1433d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1432d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1431d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1430d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p142Fd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p142Ed0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p142Dd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p142Cd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p142Bd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p142Ad0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1429d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1428d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1427d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1426d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1425d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1424d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1423d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1422d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1421d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1420d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p141Fd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p141Ed0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p141Dd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p141Cd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p141Bd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p141Ad0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1419d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1418d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1417d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1416d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1415d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1414d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1413d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1412d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1411d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1410d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p140Fd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p140Ed0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p140Dd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p140Cd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p140Bd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p140Ad0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1409d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1408d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1407d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1406d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1405d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1404d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1403d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1402d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1401d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1004d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1003d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v12D1p1001d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v1210p0003d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v1199p0FFFd*dc*dsc*dp*ic*isc*ip*
+alias=usb:v1186p3E04d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v10D6p2200d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v1058p0704d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v1019p0C55d00*dc*dsc*dp*ic*isc*ip*
+alias=usb:v1019p0C55d010*dc*dsc*dp*ic*isc*ip*
+alias=usb:v1019p0C55d0110dc*dsc*dp*ic*isc*ip*
+alias=usb:v0FCEpE092d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v0FCEpE031d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v0FCEpE030d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v0FCEpD0E1d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v0FCEpD008d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v0F19p0105d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0F19p0103d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0ED1p7636d0103dc*dsc*dp*ic*isc*ip*
+alias=usb:v0EA0p6828d0110dc*dsc*dp*ic*isc*ip*
+alias=usb:v0EA0p2168d0110dc*dsc*dp*ic*isc*ip*
+alias=usb:v0ED1p6660d0[1-2]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0ED1p6660d0300dc*dsc*dp*ic*isc*ip*
+alias=usb:v0E21p0520d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0DDAp0301d0012dc*dsc*dp*ic*isc*ip*
+alias=usb:v0DDAp0001d0012dc*dsc*dp*ic*isc*ip*
+alias=usb:v0DD8pD202d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0DD8p1060d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0DC4p0073d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v0D96p5200d01*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0D96p5200d00[1-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0D96p5200d0200dc*dsc*dp*ic*isc*ip*
+alias=usb:v0D96p5200d000[1-9]dc*dsc*dp*ic*isc*ip*
+alias=usb:v0D96p410Ad[1-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0D96p410Ad0[1-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0D96p410Ad00[1-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0D96p410Ad000[1-9]dc*dsc*dp*ic*isc*ip*
+alias=usb:v0C45p1060d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0D49p7310d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0BC2p3010d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v0AF0p7501d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v0AF0p7401d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v0AF0p6971d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0ACEp20FFd0101dc*dsc*dp*ic*isc*ip*
+alias=usb:v0ACEp2011d0101dc*dsc*dp*ic*isc*ip*
+alias=usb:v0A17p0004d1000dc*dsc*dp*ic*isc*ip*
+alias=usb:v090Cp1132d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v090Ap1200d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v090Ap1050d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v090Ap1001d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v08CAp3103d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v08BDp1100d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v0851p1543d0200dc*dsc*dp*ic*isc*ip*
+alias=usb:v084Dp0011d0110dc*dsc*dp*ic*isc*ip*
+alias=usb:v0840p0085d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v0840p0084d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v0840p0082d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v0839p000Ad0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v07CFp1001d[1-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v07C4pA4A5d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v07C4pA400d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v07AFp0006d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v07AFp0005d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v07AFp0004d01[0-2]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v07AFp0004d013[0-3]dc*dsc*dp*ic*isc*ip*
+alias=usb:v07ABpFCCDd*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0781p0100d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0781p0002d0009dc*dsc*dp*ic*isc*ip*
+alias=usb:v0781p0001d0200dc*dsc*dp*ic*isc*ip*
+alias=usb:v0727p0306d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v071Bp3203d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v071Bp32BBd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v071Bp3203d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v069Bp3004d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v0693p0005d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0686p4017d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v0686p4011d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v067Bp3507d00[1-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v067Bp3507d010[0-1]dc*dsc*dp*ic*isc*ip*
+alias=usb:v067Bp3507d000[1-9]dc*dsc*dp*ic*isc*ip*
+alias=usb:v067Bp2507d00[1-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v067Bp2507d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v067Bp2507d000[1-9]dc*dsc*dp*ic*isc*ip*
+alias=usb:v067Bp2317d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v066Fp8000d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v0644p0000d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0636p0003d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v05E3p0723d9451dc*dsc*dp*ic*isc*ip*
+alias=usb:v05E3p0702d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v05E3p0701d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v05DCpB002d00*dc*dsc*dp*ic*isc*ip*
+alias=usb:v05DCpB002d010*dc*dsc*dp*ic*isc*ip*
+alias=usb:v05DCpB002d011[0-3]dc*dsc*dp*ic*isc*ip*
+alias=usb:v05C6p1000d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v05ACp120Ad*dc*dsc*dp*ic*isc*ip*
+alias=usb:v05ACp1205d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v05ACp1204d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v05ACp1203d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v05ACp1202d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v05ABp0060d1110dc*dsc*dp*ic*isc*ip*
+alias=usb:v05ABp0060d110[4-9]dc*dsc*dp*ic*isc*ip*
+alias=usb:v059Fp0643d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v059Bp0001d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0595p4343d[0-1]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0595p4343d2[0-1]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0595p4343d220*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0595p4343d2210dc*dsc*dp*ic*isc*ip*
+alias=usb:v058Fp6387d0141dc*dsc*dp*ic*isc*ip*
+alias=usb:v057Bp0022d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v057Bp0000d[1-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v057Bp0000d0[3-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v057Bp0000d0[0-2]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v055Dp2020d0[0-1]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v055Dp2020d020*dc*dsc*dp*ic*isc*ip*
+alias=usb:v055Dp2020d0210dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp016Ad*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0099d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp006Dd*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0069d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0058d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0032d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp002Ed0500dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp002Ed02*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp002Ed030*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp002Ed01[1-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp002Ed0310dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp002Ed010[6-9]dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp002Dd0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp002Cd1*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp002Cd0[6-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp002Cd05[1-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp002Cd2000dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp002Cd050[1-9]dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0025d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0010d05*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0010d060*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0010d0610dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0010d0[2-3]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0010d04[0-4]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0010d01[1-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0010d0450dc*dsc*dp*ic*isc*ip*
+alias=usb:v054Cp0010d010[6-9]dc*dsc*dp*ic*isc*ip*
+alias=usb:v052Bp1911d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v052Bp1905d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v052Bp1807d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v052Bp1804d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v052Bp1801d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0525pA4A5d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0525pA140d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v050Dp0115d0133dc*dsc*dp*ic*isc*ip*
+alias=usb:v04FCp80C2d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E8p507Cd0220dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p0101d0200dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p000Cd0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p000Bd0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p000Ad0200dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p0009d0200dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p0007d01*dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p0007d0200dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p0006d0205dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p0006d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p0005d01*dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p0005d020[0-8]dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p0002d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v04E6p0001d0200dc*dsc*dp*ic*isc*ip*
+alias=usb:v04DAp2373d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v04DAp2372d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v04DAp0D05d0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v04DAp0901d01*dc*dsc*dp*ic*isc*ip*
+alias=usb:v04DAp0901d0200dc*dsc*dp*ic*isc*ip*
+alias=usb:v04CEp0002d0074dc*dsc*dp*ic*isc*ip*
+alias=usb:v04CBp0100d[0-1]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v04CBp0100d2[0-1]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v04CBp0100d220*dc*dsc*dp*ic*isc*ip*
+alias=usb:v04CBp0100d2210dc*dsc*dp*ic*isc*ip*
+alias=usb:v04B8p0602d0110dc*dsc*dp*ic*isc*ip*
+alias=usb:v04B8p0601d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v04B3p4001d0110dc*dsc*dp*ic*isc*ip*
+alias=usb:v04B0p0301d0010dc*dsc*dp*ic*isc*ip*
+alias=usb:v04A5p3010d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v04A4p0004d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v0482p0107d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0482p0103d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0482p0101d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0482p0100d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v046BpFF40d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v045EpFFFFd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v0457p0151d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0457p0150d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0451p5416d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0436p0005d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0424p0FDCd0210dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0495d0370dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0492d[1-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0492d0[5-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0492d04[6-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0492d045[2-9]dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p047Cd0[4-5]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p047Cd060*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p047Cd03[7-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p047Cd0610dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p044Ed0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0446d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0444d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0434d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0433d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p042Ed0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0019d060*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0019d05[10-9]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0019d0610dc*dsc*dp*ic*isc*ip*
+alias=usb:v0421p0019d059[2-9]dc*dsc*dp*ic*isc*ip*
+alias=usb:v0420p0001d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0419pAAF6d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0419pAAF5d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0419pAACEd0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0419p0100d0100dc*dsc*dp*ic*isc*ip*
+alias=usb:v0411p001Cd0113dc*dsc*dp*ic*isc*ip*
+alias=usb:v040Dp6205d0003dc*dsc*dp*ic*isc*ip*
+alias=usb:v0409p0040d*dc*dsc*dp*ic*isc*ip*
+alias=usb:v03F0p4002d0001dc*dsc*dp*ic*isc*ip*
+alias=usb:v03F0p070Cd0000dc*dsc*dp*ic*isc*ip*
+alias=usb:v03F0p0107d0200dc*dsc*dp*ic*isc*ip*
+alias=usb:v03EEp6906d0003dc*dsc*dp*ic*isc*ip*
+alias=usb:v03EEp6901d0[0-1]*dc*dsc*dp*ic*isc*ip*
+alias=usb:v03EEp6901d0200dc*dsc*dp*ic*isc*ip*
+alias=usb:v03EBp2002d0100dc*dsc*dp*ic*isc*ip*
+depends=usbcore
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+$PCCHIPS
+usb_storage
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.host_info
+.rel.text.slave_alloc
+.rel.text.slave_configure
+.rel.text.queuecommand
+.rel.text.command_abort
+.rel.text.device_reset
+.rel.text.bus_reset
+.rel.text.usb_stor_report_device_reset
+.rel.text.usb_stor_report_bus_reset
+.rel.text.proc_info
+.rel.text.show_max_sectors
+.rel.text.store_max_sectors
+.rel.text.usb_stor_pad12_command
+.rel.text.usb_stor_ufi_command
+.rel.text.usb_stor_transparent_scsi_command
+.rel.text.usb_stor_access_xfer_buf
+.rel.text.usb_stor_set_xfer_buf
+.rel.text.usb_stor_blocking_completion
+.rel.text.usb_stor_msg_common
+.rel.text.usb_stor_control_msg
+.rel.text.usb_stor_clear_halt
+.rel.text.interpret_urb_result
+.rel.text.usb_stor_ctrl_transfer
+.rel.text.usb_stor_bulk_transfer_buf
+.rel.text.usb_stor_bulk_transfer_sglist
+.rel.text.usb_stor_bulk_srb
+.rel.text.usb_stor_bulk_transfer_sg
+.rel.text.last_sector_hacks
+.rel.text.usb_stor_stop_transport
+.rel.text.usb_stor_CB_transport
+.rel.text.usb_stor_Bulk_max_lun
+.rel.text.usb_stor_Bulk_transport
+.rel.text.usb_stor_reset_common
+.rel.text.usb_stor_CB_reset
+.rel.text.usb_stor_Bulk_reset
+.rel.text.usb_stor_port_reset
+.rel.text.usb_stor_invoke_transport
+.rel.text.usb_stor_pre_reset
+.rel.text.usb_stor_post_reset
+.rel.text.fill_inquiry_response
+.rel.text.usb_stor_control_thread
+.rel.text.quiesce_and_remove_host
+.rel.text.release_everything
+.rel.text.usb_stor_scan_thread
+.rel.text.usb_stor_probe1
+.rel.text.usb_stor_probe2
+.rel.text.usb_stor_disconnect
+.rel.text.storage_probe
+.rel.init.text
+.rel.exit.text
+.rel.text.usb_stor_euscsi_init
+.rel.text.usb_stor_ucr61s2b_init
+.rel.text.usb_stor_huawei_e220_init
+.rel.text.sierra_set_ms_mode
+.rel.text.sierra_get_swoc_info
+.text.debug_swoc
+.rel.text.show_truinst
+.rel.text.sierra_ms_init
+.rel.text.option_ms_init
+.rel.text.usb_usual_ignore_device
+.rel.rodata
+.rel__ksymtab_gpl
+__ksymtab_strings
+.modinfo
+.rel__param
+.rel.data
+.rel.gnu.linkonce.this_module
+.sbss
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+scsiglue.c
+__ksymtab_usb_stor_sense_invalidCDB
+__kstrtab_usb_stor_sense_invalidCDB
+host_info
+queuecommand
+command_abort
+device_reset
+bus_reset
+slave_alloc
+slave_configure
+proc_info
+sysfs_device_attr_list
+dev_attr_max_sectors
+show_max_sectors
+store_max_sectors
+__func__.0
+protocol.c
+__ksymtab_usb_stor_set_xfer_buf
+__kstrtab_usb_stor_set_xfer_buf
+__ksymtab_usb_stor_access_xfer_buf
+__kstrtab_usb_stor_access_xfer_buf
+__ksymtab_usb_stor_transparent_scsi_command
+__kstrtab_usb_stor_transparent_scsi_command
+transport.c
+__ksymtab_usb_stor_Bulk_reset
+__kstrtab_usb_stor_Bulk_reset
+__ksymtab_usb_stor_CB_reset
+__kstrtab_usb_stor_CB_reset
+__ksymtab_usb_stor_Bulk_transport
+__kstrtab_usb_stor_Bulk_transport
+__ksymtab_usb_stor_CB_transport
+__kstrtab_usb_stor_CB_transport
+__ksymtab_usb_stor_bulk_transfer_sg
+__kstrtab_usb_stor_bulk_transfer_sg
+__ksymtab_usb_stor_bulk_srb
+__kstrtab_usb_stor_bulk_srb
+__ksymtab_usb_stor_bulk_transfer_buf
+__kstrtab_usb_stor_bulk_transfer_buf
+__ksymtab_usb_stor_ctrl_transfer
+__kstrtab_usb_stor_ctrl_transfer
+__ksymtab_usb_stor_clear_halt
+__kstrtab_usb_stor_clear_halt
+__ksymtab_usb_stor_control_msg
+__kstrtab_usb_stor_control_msg
+usb_stor_blocking_completion
+usb_stor_msg_common
+interpret_urb_result
+usb_stor_bulk_transfer_sglist
+record_not_found.0
+last_sector_hacks
+usb_stor_reset_common
+usb.c
+usb_stor_init
+usb_stor_exit
+__ksymtab_usb_stor_disconnect
+__kstrtab_usb_stor_disconnect
+__ksymtab_usb_stor_probe2
+__kstrtab_usb_stor_probe2
+__ksymtab_usb_stor_probe1
+__kstrtab_usb_stor_probe1
+__ksymtab_fill_inquiry_response
+__kstrtab_fill_inquiry_response
+__ksymtab_usb_stor_post_reset
+__kstrtab_usb_stor_post_reset
+__ksymtab_usb_stor_pre_reset
+__kstrtab_usb_stor_pre_reset
+__mod_quirks83
+__mod_quirkstype82
+__param_quirks
+__param_str_quirks
+__param_string_quirks
+quirks
+__mod_delay_use79
+__mod_delay_usetype78
+__param_delay_use
+__param_str_delay_use
+delay_use
+__mod_license75
+__mod_description74
+__mod_author73
+usb_storage_driver
+storage_probe
+us_unusual_dev_list
+usb_stor_control_thread
+quiesce_and_remove_host
+release_everything
+usb_stor_scan_thread
+__key.0
+msgs.1
+initializers.c
+init_string.0
+sierra_ms.c
+__mod_swi_tru_install26
+__mod_swi_tru_installtype24
+__param_swi_tru_install
+__param_str_swi_tru_install
+swi_tru_install
+dev_attr_truinst
+show_truinst
+sierra_set_ms_mode
+sierra_get_swoc_info
+debug_swoc
+option_ms.c
+__mod_option_zero_cd36
+__mod_option_zero_cdtype34
+__param_option_zero_cd
+__param_str_option_zero_cd
+option_zero_cd
+usual-tables.c
+__ksymtab_usb_usual_ignore_device
+__kstrtab_usb_usual_ignore_device
+__ksymtab_usb_storage_usb_ids
+__kstrtab_usb_storage_usb_ids
+ignore_ids
+usb-storage.mod.c
+__mod_alias343
+__mod_alias342
+__mod_alias341
+__mod_alias340
+__mod_alias339
+__mod_alias338
+__mod_alias337
+__mod_alias336
+__mod_alias335
+__mod_alias334
+__mod_alias333
+__mod_alias332
+__mod_alias331
+__mod_alias330
+__mod_alias329
+__mod_alias328
+__mod_alias327
+__mod_alias326
+__mod_alias325
+__mod_alias324
+__mod_alias323
+__mod_alias322
+__mod_alias321
+__mod_alias320
+__mod_alias319
+__mod_alias318
+__mod_alias317
+__mod_alias316
+__mod_alias315
+__mod_alias314
+__mod_alias313
+__mod_alias312
+__mod_alias311
+__mod_alias310
+__mod_alias309
+__mod_alias308
+__mod_alias307
+__mod_alias306
+__mod_alias305
+__mod_alias304
+__mod_alias303
+__mod_alias302
+__mod_alias301
+__mod_alias300
+__mod_alias299
+__mod_alias298
+__mod_alias297
+__mod_alias296
+__mod_alias295
+__mod_alias294
+__mod_alias293
+__mod_alias292
+__mod_alias291
+__mod_alias290
+__mod_alias289
+__mod_alias288
+__mod_alias287
+__mod_alias286
+__mod_alias285
+__mod_alias284
+__mod_alias283
+__mod_alias282
+__mod_alias281
+__mod_alias280
+__mod_alias279
+__mod_alias278
+__mod_alias277
+__mod_alias276
+__mod_alias275
+__mod_alias274
+__mod_alias273
+__mod_alias272
+__mod_alias271
+__mod_alias270
+__mod_alias269
+__mod_alias268
+__mod_alias267
+__mod_alias266
+__mod_alias265
+__mod_alias264
+__mod_alias263
+__mod_alias262
+__mod_alias261
+__mod_alias260
+__mod_alias259
+__mod_alias258
+__mod_alias257
+__mod_alias256
+__mod_alias255
+__mod_alias254
+__mod_alias253
+__mod_alias252
+__mod_alias251
+__mod_alias250
+__mod_alias249
+__mod_alias248
+__mod_alias247
+__mod_alias246
+__mod_alias245
+__mod_alias244
+__mod_alias243
+__mod_alias242
+__mod_alias241
+__mod_alias240
+__mod_alias239
+__mod_alias238
+__mod_alias237
+__mod_alias236
+__mod_alias235
+__mod_alias234
+__mod_alias233
+__mod_alias232
+__mod_alias231
+__mod_alias230
+__mod_alias229
+__mod_alias228
+__mod_alias227
+__mod_alias226
+__mod_alias225
+__mod_alias224
+__mod_alias223
+__mod_alias222
+__mod_alias221
+__mod_alias220
+__mod_alias219
+__mod_alias218
+__mod_alias217
+__mod_alias216
+__mod_alias215
+__mod_alias214
+__mod_alias213
+__mod_alias212
+__mod_alias211
+__mod_alias210
+__mod_alias209
+__mod_alias208
+__mod_alias207
+__mod_alias206
+__mod_alias205
+__mod_alias204
+__mod_alias203
+__mod_alias202
+__mod_alias201
+__mod_alias200
+__mod_alias199
+__mod_alias198
+__mod_alias197
+__mod_alias196
+__mod_alias195
+__mod_alias194
+__mod_alias193
+__mod_alias192
+__mod_alias191
+__mod_alias190
+__mod_alias189
+__mod_alias188
+__mod_alias187
+__mod_alias186
+__mod_alias185
+__mod_alias184
+__mod_alias183
+__mod_alias182
+__mod_alias181
+__mod_alias180
+__mod_alias179
+__mod_alias178
+__mod_alias177
+__mod_alias176
+__mod_alias175
+__mod_alias174
+__mod_alias173
+__mod_alias172
+__mod_alias171
+__mod_alias170
+__mod_alias169
+__mod_alias168
+__mod_alias167
+__mod_alias166
+__mod_alias165
+__mod_alias164
+__mod_alias163
+__mod_alias162
+__mod_alias161
+__mod_alias160
+__mod_alias159
+__mod_alias158
+__mod_alias157
+__mod_alias156
+__mod_alias155
+__mod_alias154
+__mod_alias153
+__mod_alias152
+__mod_alias151
+__mod_alias150
+__mod_alias149
+__mod_alias148
+__mod_alias147
+__mod_alias146
+__mod_alias145
+__mod_alias144
+__mod_alias143
+__mod_alias142
+__mod_alias141
+__mod_alias140
+__mod_alias139
+__mod_alias138
+__mod_alias137
+__mod_alias136
+__mod_alias135
+__mod_alias134
+__mod_alias133
+__mod_alias132
+__mod_alias131
+__mod_alias130
+__mod_alias129
+__mod_alias128
+__mod_alias127
+__mod_alias126
+__mod_alias125
+__mod_alias124
+__mod_alias123
+__mod_alias122
+__mod_alias121
+__mod_alias120
+__mod_alias119
+__mod_alias118
+__mod_alias117
+__mod_alias116
+__mod_alias115
+__mod_alias114
+__mod_alias113
+__mod_alias112
+__mod_alias111
+__mod_alias110
+__mod_alias109
+__mod_alias108
+__mod_alias107
+__mod_alias106
+__mod_alias105
+__mod_alias104
+__mod_alias103
+__mod_alias102
+__mod_alias101
+__mod_alias100
+__mod_alias99
+__mod_alias98
+__mod_alias97
+__mod_alias96
+__mod_alias95
+__mod_alias94
+__mod_alias93
+__mod_alias92
+__mod_alias91
+__mod_alias90
+__mod_alias89
+__mod_alias88
+__mod_alias87
+__mod_alias86
+__mod_alias85
+__mod_alias84
+__mod_alias83
+__mod_alias82
+__mod_alias81
+__mod_alias80
+__mod_alias79
+__mod_alias78
+__mod_alias77
+__mod_alias76
+__mod_alias75
+__mod_alias74
+__mod_alias73
+__mod_alias72
+__mod_alias71
+__mod_alias70
+__mod_alias69
+__mod_alias68
+__mod_alias67
+__mod_alias66
+__mod_alias65
+__mod_alias64
+__mod_alias63
+__mod_alias62
+__mod_alias61
+__mod_alias60
+__mod_alias59
+__mod_alias58
+__mod_alias57
+__mod_alias56
+__mod_alias55
+__mod_alias54
+__mod_alias53
+__mod_alias52
+__mod_alias51
+__mod_alias50
+__mod_alias49
+__mod_alias48
+__mod_alias47
+__mod_alias46
+__mod_alias45
+__mod_alias44
+__mod_alias43
+__mod_alias42
+__mod_alias41
+__mod_alias40
+__mod_alias39
+__mod_alias38
+__mod_alias37
+__mod_alias36
+__mod_alias35
+__mod_alias34
+__mod_alias33
+__mod_alias32
+__mod_alias31
+__mod_alias30
+__mod_alias29
+__mod_alias28
+__mod_alias27
+__mod_alias26
+__mod_alias25
+__mod_alias24
+__mod_alias23
+__mod_alias22
+__module_depends
+__mod_vermagic5
+usb_alloc_urb
+scsi_report_device_reset
+__udelay
+usb_stor_bulk_srb
+usb_free_urb
+usb_stor_bulk_transfer_sg
+usb_stor_CB_transport
+__this_module
+blk_max_low_pfn
+param_get_string
+snprintf
+complete
+usb_stor_Bulk_reset
+scsi_remove_host
+usb_storage_usb_ids
+finish_wait
+usb_register_driver
+scsi_report_bus_reset
+usb_stor_port_reset
+usb_stor_Bulk_max_lun
+usb_sg_init
+cleanup_module
+param_set_uint
+prepare_to_wait
+memcpy
+kthread_create
+kfree
+kthread_should_stop
+__wake_up
+init_waitqueue_head
+scsi_eh_prep_cmnd
+param_set_copystring
+init_module
+usb_stor_probe1
+wake_up_process
+dev_driver_string
+usb_stor_clear_halt
+wait_for_completion_interruptible_timeout
+usb_stor_CB_reset
+usb_sg_cancel
+usb_stor_stop_transport
+usb_stor_ctrl_transfer
+usb_stor_pre_reset
+__mod_usb_device_table
+option_ms_init
+schedule_timeout
+schedule
+param_get_uint
+usb_reset_device
+usb_stor_transparent_scsi_command
+kmem_cache_alloc
+sierra_ms_init
+usb_submit_urb
+blk_queue_bounce_limit
+usb_stor_pad12_command
+usb_stor_huawei_e220_init
+device_create_file
+blk_queue_update_dma_alignment
+scsi_host_put
+usb_stor_report_bus_reset
+fill_inquiry_response
+usb_stor_probe2
+usb_stor_host_template
+mutex_lock
+warn_slowpath_null
+scsi_scan_host
+usb_control_msg
+usb_usual_ignore_device
+usb_stor_invoke_transport
+wait_for_completion_interruptible
+kthread_stop
+sscanf
+scsi_add_host
+printk
+__mutex_init
+usb_deregister
+usb_lock_device_for_reset
+memset
+scsi_eh_restore_cmnd
+usb_stor_euscsi_init
+wait_for_completion
+usb_stor_disconnect
+usb_stor_Bulk_transport
+usb_unlink_urb
+sprintf
+usb_stor_sense_invalidCDB
+mutex_unlock
+sg_next
+usb_kill_urb
+usb_buffer_free
+usb_stor_ufi_command
+blk_queue_max_sectors
+usb_stor_control_msg
+simple_strtoul
+usb_reset_endpoint
+malloc_sizes
+usb_stor_post_reset
+usb_stor_report_device_reset
+usb_stor_access_xfer_buf
+autoremove_wake_function
+usb_stor_bulk_transfer_buf
+usb_stor_set_xfer_buf
+usb_stor_ucr61s2b_init
+schedule_timeout_uninterruptible
+strlen
+usb_sg_wait
+scsi_host_alloc
+mem_map
+complete_and_exit
+usb_buffer_alloc
+scsi_get_host_dev

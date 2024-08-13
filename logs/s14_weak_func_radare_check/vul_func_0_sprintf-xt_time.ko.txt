@@ -1,0 +1,11 @@
+[*] Binary protection state of xt_time.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function sprintf tear down of xt_time.ko
+
+
+[*] Function sprintf used 0 times xt_time.ko
+

@@ -1,0 +1,11 @@
+[*] Binary protection state of pppd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function popen tear down of pppd
+
+
+[*] Function popen used 0 times pppd
+

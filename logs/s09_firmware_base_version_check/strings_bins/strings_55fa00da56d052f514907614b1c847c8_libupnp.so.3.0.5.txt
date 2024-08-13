@@ -1,0 +1,858 @@
+_gp_disp
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+pthread_rwlock_wrlock
+pthread_rwlock_unlock
+malloc
+TPJobInit
+TPJobSetFreeFunction
+TimerThreadSchedule
+inet_addr
+socket
+__errno_location
+__glibc_strerror_r
+setsockopt
+strlen
+sendto
+usleep
+shutdown
+sprintf
+strcpy
+pthread_rwlock_rdlock
+ListHead
+strncmp
+TPJobSetPriority
+ThreadPoolAdd
+ListNext
+ListDelNode
+strcat
+memset
+strdup
+ListAddTail
+select
+ixmlNodeList_item
+ixmlNode_getNodeName
+ixmlNodeList_free
+ixmlElement_getElementsByTagName
+ixmlNode_getFirstChild
+ixmlNode_getNodeValue
+strcasecmp
+strncasecmp
+fcntl64
+strstr
+strchr
+strncpy
+recvfrom
+inet_ntoa
+bind
+ixmlDocument_getElementsByTagNameNS
+ixmlNode_getNamespaceURI
+ixmlNode_getLocalName
+strcmp
+snprintf
+ixmlParseBufferEx
+ixmlFreeDOMString
+ixmlElement_getElementsByTagNameNS
+ixmlPrintNode
+ixmlDocument_free
+ixmlNode_getNextSibling
+ixmlCloneDOMString
+atoi
+accept
+getsockname
+listen
+ThreadPoolAddPersistent
+ixmlNode_getNodeType
+ixmlNodeList_length
+memcpy
+realloc
+memmove
+TimerThreadRemove
+memcmp
+recv
+send
+ListInit
+ListDestroy
+ListFind
+strtol
+__ctype_tolower
+sscanf
+__ctype_b
+connect
+fopen64
+fseeko64
+fread
+fclose
+uname
+gmtime
+strrchr
+pthread_mutex_lock
+pthread_mutex_unlock
+pthread_mutex_init
+pthread_mutex_destroy
+stat64
+asctime
+__ctype_toupper
+fwrite
+inet_pton
+gethostbyname_r
+UpnpSdkClientRegistered
+UpnpSdkDeviceRegistered
+UpnpSdkInit
+UpnpEnable
+UpnpGetStatus
+UpnpGetServerPort
+UpnpGetServerIpAddress
+UpnpDisable
+UpnpRemoveAllVirtualDirs
+UpnpUnRegisterRootDevice
+UpnpRegisterClient
+UpnpUnRegisterClient
+UpnpFinish
+TimerThreadShutdown
+ThreadPoolShutdown
+pthread_rwlock_destroy
+UpnpSendAdvertisement
+UpnpSearchAsync
+UpnpSetMaxSubscriptions
+UpnpSetMaxSubscriptionTimeOut
+UpnpSubscribeAsync
+UpnpThreadDistribution
+UpnpSubscribe
+UpnpUnSubscribe
+UpnpUnSubscribeAsync
+UpnpRenewSubscription
+UpnpRenewSubscriptionAsync
+UpnpNotify
+UpnpNotifyExt
+UpnpAcceptSubscription
+UpnpAcceptSubscriptionExt
+UpnpSendAction
+UpnpSendActionEx
+UpnpSendActionAsync
+UpnpSendActionExAsync
+UpnpGetServiceVarStatusAsync
+UpnpGetServiceVarStatus
+UpnpOpenHttpPost
+UpnpWriteHttpPost
+UpnpCloseHttpPost
+UpnpOpenHttpGet
+UpnpOpenHttpGetProxy
+UpnpOpenHttpGetEx
+UpnpCancelHttpGet
+UpnpCloseHttpGet
+UpnpReadHttpGet
+UpnpHttpGetProgress
+UpnpDownloadUrlItem
+UpnpDownloadXmlDoc
+UpnpRegisterRootDevice2
+ixmlDocument_getElementsByTagName
+UpnpRegisterRootDevice
+ixmlNode_getChildNodes
+ioctl
+UpnpSetWebServerRootDir
+UpnpAddVirtualDir
+UpnpRemoveVirtualDir
+UpnpEnableWebserver
+UpnpInit
+srand
+pthread_rwlock_init
+TPAttrInit
+TPAttrSetMaxThreads
+TPAttrSetMinThreads
+TPAttrSetJobsPerThread
+TPAttrSetIdleTime
+TPAttrSetMaxJobsTotal
+ThreadPoolInit
+TimerThreadInit
+UpnpIsWebserverEnabled
+UpnpSetVirtualDirCallbacks
+UpnpFree
+UpnpSetContentLength
+UpnpSetMaxContentLength
+UpnpGetErrorMessage
+UpnpResolveURL
+ixmlDocument_createElement
+ixmlDocument_createTextNode
+ixmlNode_appendChild
+UpnpMakeAction
+UpnpMakeActionResponse
+UpnpAddToActionResponse
+UpnpAddToAction
+UpnpAddToPropertySet
+UpnpCreatePropertySet
+gettimeofday
+gethostname
+ixmlNode_setNodeValue
+ixmlElement_free
+ixmlPrintDocument
+libthreadutil.so.2
+libixml.so.2
+libpthread.so.0
+libc.so.0
+libgcc_s_5281.so.1
+libupnp.so.3
+/mnt/slave/workspace/soho5_1042/rtl819x/users/nas/media_server/tmp_inst/lib
+GLIBC_2.0
+$'9(
+$! D
+$B D
+ P!$
+ !*"
+4Bfg
+@ !$
+ 0!'
+$Y-`'
+0!$Y-`'
+ 8!$
+'9-`
+@(!'
+ !$Y-`$
+0!$Y-`$
+$'9-`
+$'9-`
+$'9-`
+ 0!'
+0$Y-`'
+0!$Y-`'
+`0!$
+  !$
+  !$
+@@!'
+@8!'
+)B0B
+  !'
+ !$B
+ !$B
+ !$B
+ !$B
+0!&d
+$'9V
+	&EV
+  !'9V
+@ !$
+ '9ad
+ '9ad
+@ !$
+@(!'
+X'9_P
+$'9_P
+'9_P
+@(!'
+  !'9q
+!'9q
+ '9sP
+'9sP
+4'9t<
+'9sP
+ $Rr
+4$Pt<
+@(!'
+`H!$
+`(!'9t
+@ !8C
+@(!'
+$B  
+$c $
+$B (
+(!'9t
+@ !8C
+@ !$
+@ !'9t
+  !$
+@0!'
+@ !4
+`(!$
+@ !0B
+  !'
+8!&(
+@0!$
+ !'9
+@(!$
+@8!$
+@ !$
+@ !$
+(!$S
+`0!$
+@ !$
+ (!$
+`0!$
+@ !$
+  !$
+  !$
+`0!$
+@ !'9
+@ !$
+(&F!
+e&C!
+@ !$
+@ !$
+p !$
+  !$
+0!$P
+ (!'
+@ !$
+` !'
+@8!&
+@ !$
+@ !$
+` !'
+@8!&
+@ !$
+@ !$
+` !$
+0!&R
+(!$C
+  !$
+@(!'
+  !$
+@ !$
+ (!'
+@P!$
+  !$
+` !.
+@ !8b
+$Q*L
+&$B)
+$B*L
+$B*p
+	&$-
+ &$-
+!&D-
+$B" 
+	&$-
+	&$-
+$B*p
+` !$
++(+$c
+@#%'
+` !$
+@(!&d
+@ !,B
+	&d-
+ #&F
+ 0!&
+H !%
+` !$
+@ !$
+$'9G
+x'9Dd
+|'9Dd
+R !$
+$'9_
+@ !$
+@ !$
+@0!$
+@ !$
+@8!'9_
+  !$
+  !$
+ 0!$
+ 0!$
+` !$
+  !$
+D'9p0
+D'9p0
+$'9q
+H'9q
+ 0!$
+  !$
+  !$
+ 0!$
+E(!&
+@(!$D
+@(!&
+`(!&
+@ !:#
+@ !$
+ !,B
+ !,B
+ !&E
+ !*"
+@ !$
+@8!$
+@8!$
+`8!$
+`8!$
+@0!'
+@0!'
+`8!'9
+`8!'9
+24BTv
+gE4B#
+' !$
+!4Bp
+!4BF
+!4B[
+!4Bq
+!4BC
+!4B%b
+!4BZQ
+!4cL
+!4c9B
+!4ca"
+!4c8
+!4cK`
+!4c~
+!4c'
+!4c0
+!4B|
+!4BVe
+!4B"D
+!4B#
+!4BY
+(@!4B]
+!4B~O
+!4BC
+!4B~
+@!4B
+"H!<
+	H!4B
+@0!'9
+C0#,b
+(!&9
+ 1C?
+$'9(0
+ "ssdp:discover"
+CACHE-CONTROL: max-age=
+RsdcDscsscSXcsscsscc
+EXT:
+LOCATION: 
+redsonic
+ST: 
+USN: 
+ssdp:alive
+ssdp:byebye
+QsssdcsdcsscsscsscSXcsscc
+HOST: 
+239.255.255.250
+NT: 
+NTS: 
+%s::upnp:rootdevice
+upnp:rootdevice
+%s::%s
+%imax-age = %d%0
+ssdp:alive
+ssdp:byebye
+$M-SEARCH * HTTP/1.1
+HOST: %s:%d
+239.255.255.250
+MAN: "ssdp:discover"
+MX: %d
+ST: %s
+deviceType
+service
+serviceType
+uuid:schemas
+:device
+uuid:%s
+urn%s
+uuid
+urn:
+:service:
+:device:
+::upnp:rootdevice
+:all
+:rootdevice
+uuid:
+239.255.255.250:1900
+239.255.255.250
+CONTENT-TYPE: text/xml; charset="utf-8"
+Invalid Action
+Action Failed
+Invalid Var
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<s:Body>
+<s:Fault>
+<faultcode>s:Client</faultcode>
+<faultstring>UPnPError</faultstring>
+<detail>
+<UPnPError xmlns="urn:schemas-upnp-org:control-1-0">
+<errorCode>
+</errorCode>
+<errorDescription>
+</errorDescription>
+</UPnPError>
+</detail>
+</s:Fault>
+</s:Body>
+</s:Envelope>
+RNsDsSXccsssss
+EXT:
+redsonic
+http://schemas.xmlsoap.org/soap/envelope/
+Body
+urn:schemas-upnp-org:control-1-0
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body>
+</s:Body> </s:Envelope>
+%q%i ; ns = %s
+-SOAPACTION
+QueryStateVariable
+XML error
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<s:Body>
+<u:QueryStateVariableResponse xmlns:u="urn:schemas-upnp-org:control-1-0">
+<return>
+</return>
+</u:QueryStateVariableResponse>
+</s:Body>
+</s:Envelope>
+RNsDsSXccsss
+User-Agent
+%.*s
+RNsDsSXcc
+bbbb
+Out of memory
+%s:%s%0
+MAN: "http://schemas.xmlsoap.org/soap/envelope/"; ns=01
+SOAPACTION:
+Envelope
+Body
+QueryStateVariableResponse
+return
+Fault
+detail
+UPnPError
+errorCode
+errorDescription
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<s:Body>
+ <%s:%s
+</s:Body>
+</s:Envelope>
+qNssssbscUcbbb
+SOAPACTION: "
+Response
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<s:Body>
+</s:Body>
+</s:Envelope>
+<s:Header>
+</s:Header>
+qNssssbscUcbbbbbbb
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<s:Body>
+<u:QueryStateVariable xmlns:u="urn:schemas-upnp-org:control-1-0">
+<u:varName>
+</u:varName>
+</u:QueryStateVariable>
+</s:Body>
+</s:Envelope>
+QsbcNssUccsss
+HOST: 
+SOAPACTION: "urn:schemas-upnp-org:control-1-0#QueryStateVariable"
+ShutDown
+127.0.0.1
+serviceList
+service
+serviceType
+serviceId
+SCPDURL
+controlURL
+eventSubURL
+device
+root
+URLBase
+ACCEPT
+ACCEPT-CHARSET
+ACCEPT-ENCODING
+ACCEPT-LANGUAGE
+ACCEPT-RANGES
+CACHE-CONTROL
+CALLBACK
+CONTENT-ENCODING
+CONTENT-LANGUAGE
+CONTENT-LENGTH
+CONTENT-LOCATION
+CONTENT-RANGE
+CONTENT-TYPE
+DATE
+HOST
+IF-RANGE
+LOCATION
+RANGE
+SERVER
+SOAPACTION
+TIMEOUT
+TRANSFER-ENCODING
+USER-AGENT
+HEAD
+M-POST
+M-SEARCH
+NOTIFY
+POST
+SUBSCRIBE
+UNSUBSCRIBE
+ 	()<>@,;:\"/[]?={}
+%ihttp%w/%w%L%c
+%d . %d %d
+ : %R%c
+chunked
+%x%L%c
+1l%s	%S%w%c
+%s	%S	%ihttp%w/%w%L%c
+%d . %d
+http
+%s/%s, UPnP/1.0, Portable SDK for UPnP devices/1.6.6
+TRANSFER-ENCODING: chunked
+%s%s
+TransferMode.DLNA.ORG: 
+%lld
+DATE: 
+Accept-Ranges: bytes
+%s%s, %02d %s %d %02d:%02d:%02d GMT%s
+CONNECTION: close
+CONTENT-LENGTH: 
+SERVER: 
+USER-AGENT: 
+X-User-Agent: 
+HTTP/%d.%d %d 
+</h1></body></html>
+%s%d %s%s
+<html><body><h1>
+text/html
+NTcs
+ssbsdsdc
+ HTTP/
+Qsbc
+HOST: 
+CONTENT-TYPE: 
+QsbcGDCUc
+Range: bytes=%d-%d
+RSCB
+QsbcDCUc
+QsbcDCUTNc
+QsbcDCUTKc
+QsbcDCUTc
+Internal Server Error
+Not Implemented
+Bad Gateway
+Service Unavailable
+Gateway Timeout
+HTTP Version Not Supported
+Bad Request
+Unauthorized
+Payment Required
+Forbidden
+Not Found
+Method Not Allowed
+Not Acceptable
+Proxy Authentication Required
+Request Timeout
+Conflict
+Gone
+Length Required
+Precondition Failed
+Request Entity Too Large
+Request-URI Too Long
+Unsupported Media Type
+Requested Range Not Satisfiable
+Expectation Failed
+Multiple Choices
+Moved Permanently
+Found
+See Other
+Not Modified
+Use Proxy
+Temporary Redirect
+Created
+Accepted
+Non-Authoratative Information
+No Content
+Reset Content
+Partial Content
+Continue
+Switching Protocols
+audio
+video
+image
+application
+text
+aiff
+aifc
+aiff
+aiff
+aiff
+x-ms-asf
+x-ms-asf
+basic
+msvideo
+x-director
+x-director
+x-director
+html
+html
+html
+java-archive
+jfif
+pjpeg
+jpeg
+jpeg
+jpeg
+jpeg
+x-javascript
+midi
+mpegurl
+midi
+midi
+midi
+quicktime
+mp2v
+x-mpeg2
+mpeg
+mpeg
+mpeg
+mpeg
+mpeg
+mpeg
+mpv2
+x-mpeg2
+jpeg
+pjpeg
+jpeg
+html
+scpls
+quicktime
+x-pn-realaudio
+x-pn-realaudio
+shtml
+html
+midi
+basic
+futuresplash
+streamingmedia
+x-shockwave-flash
+x-tcl
+text
+plain
+tiff
+tiff
+tiff
+plain
+basic
+x-ms-wax
+x-ms-wm
+x-ms-wma
+x-ms-wmv
+x-ms-wvx
+x-xbitmap
+x-compress
+octet-stream
+%s/%s
+%lld%lld
+bytes
+CONTENT-RANGE: bytes %lld-%lld/%lld
+CONTENT-RANGE: bytes 0-%lld/%lld
+TransferMode.DLNA.ORG
+User-Agent
+NSPlayer
+Xbox
+trailers
+process_request
+text/xml
+index.html
+/index.html
+RTGKDstcSXcCc
+LAST-MODIFIED: 
+redsonic
+RNTGDstcSXcCc
+RKTDstcSXcCc
+RNTDstcSMcXcCc
+RNTDstcSXcCc
+RTDstcSMcXcCc
+%s, %d: add transfer stream mode===
+RTDstcSXcCc
+text/html
+RTDSXcCc
+%itext%w/%wxml
+;/?:@&=+$,{}
+-_.!~*'()
+<e:propertyset xmlns:e="urn:schemas-upnp-org:event-1-0">
+<e:property>
+<%s>%s</%s>
+</e:property>
+</e:propertyset>
+SID: 
+ssscsdcc
+SEQ: 
+CONTENT-TYPE: text/xml
+CONTENT-LENGTH: %zu
+NT: upnp:event
+NTS: upnp:propchange
+CONTENT-TYPE: text/xml
+CONTENT-LENGTH: %ld
+NT: upnp:event
+NTS: upnp:propchange
+TIMEOUT: Second-infinite
+TIMEOUT: Second-%d
+redsonic
+RDSNXcsscscc
+upnp:event
+%iSecond-%d%0
+Second-infinite
+uuid:%s
+SID: 
+qsscUc
+infinite
+TIMEOUT: Second-
+qsscsscc
+qsssdscscsscc
+CALLBACK: <http://
+NT: upnp:event
+%iSecond-%d%0
+Second-infinite
+uuid:%s
+%d%0
+upnp:event
+upnp:propchange
+description.xml
+.xml
+device
+serviceList
+UPNP_E_SUCCESS
+UPNP_E_INVALID_HANDLE
+UPNP_E_INVALID_PARAM
+UPNP_E_OUTOF_HANDLE
+UPNP_E_OUTOF_CONTEXT
+UPNP_E_OUTOF_MEMOR
+UPNP_E_INIT
+UPNP_E_BUFFER_TOO_SMALL
+UPNP_E_INVALID_DESC
+UPNP_E_INVALID_URL
+UPNP_E_INVALID_SID
+UPNP_E_INVALID_DEVICE
+UPNP_E_INVALID_SERVICE
+UPNP_E_BAD_RESPONSE
+UPNP_E_BAD_REQUEST
+UPNP_E_INVALID_ACTION
+UPNP_E_FINISH
+UPNP_E_INIT_FAILED
+UPNP_E_BAD_HTTPMSG
+UPNP_E_NETWORK_ERROR
+UPNP_E_SOCKET_WRITE
+UPNP_E_SOCKET_READ
+UPNP_E_SOCKET_BIND
+UPNP_E_SOCKET_CONNECT
+UPNP_E_OUTOF_SOCKET
+UPNP_E_LISTEN
+UPNP_E_EVENT_PROTOCOL
+UPNP_E_SUBSCRIBE_UNACCEPTED
+UPNP_E_UNSUBSCRIBE_UNACCEPTED
+UPNP_E_NOTIFY_UNACCEPTED
+UPNP_E_INTERNAL_ERROR
+UPNP_E_INVALID_ARGUMENT
+UPNP_E_OUTOF_BOUNDS
+Unknown Error
+<u:%sResponse xmlns:u="%s">
+</u:%sResponse>
+<u:%s xmlns:u="%s">
+</u:%s>
+<e:propertyset xmlns:e="urn:schemas-upnp-org:event-1-0"></e:propertyset>
+e:property
+%8.8x-%4.4x-%4.4x-%2.2x%2.2x-%2.2x%2.2x%2.2x%2.2x%2.2x%2.2x
+%s:%d
+URLBase
+http://

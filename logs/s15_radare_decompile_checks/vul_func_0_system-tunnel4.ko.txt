@@ -1,0 +1,11 @@
+[*] Binary protection state of tunnel4.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function system tear down of tunnel4.ko
+
+
+[*] Function system used 0 times tunnel4.ko
+

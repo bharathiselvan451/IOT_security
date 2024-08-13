@@ -1,0 +1,11 @@
+[*] Binary protection state of tp_domain.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function sprintf tear down of tp_domain.ko
+
+
+[*] Function sprintf used 0 times tp_domain.ko
+

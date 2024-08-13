@@ -1,0 +1,1545 @@
+/lib/ld-uClibc.so.0
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+unix_error_packet
+set_message
+max_send
+Client
+send_smb
+memcpy
+strcmp
+StrCaseCmp
+ms_has_wild
+Connections
+strequal
+strlen
+strrchr_m
+StrCpy
+pstrcpy
+TellDir
+ReadDirName
+case_sensitive
+mask_match
+strcat
+dos_mode
+dir_check_ftype
+smb_roundup
+put_long_date
+memset
+srvstr_push_fn
+put_dos_date2
+SeekDir
+align_string
+volume_label
+Realloc
+sys_disk_free
+__udivdi3
+lp_servicename
+str_checksum
+local_machine
+srvstr_get_path
+unix_convert
+check_name
+__errno_location
+set_bad_path_error
+chain_fnum
+Files
+check_dir
+lstat64
+sprintf
+string_replace
+fstat64
+dos_PutUniCode
+lseek64
+cached_error_packet
+make_unix_date2
+null_mtime
+file_utime
+set_filelen
+set_delete_on_close_internal
+find_free_file
+open_nt_file_shared
+interpret_long_date
+open_file_shared
+dos_chmod
+close_file
+strchr_m
+mv_internals
+dptr_close
+exit_server
+receive_next_smb
+Protocol
+malloc
+unix_mode
+dptr_fetch_lanman2
+dptr_create
+dptr_path
+string_set
+dptr_wcard
+string_sub
+strdup
+dptr_set_wcard
+dptr_set_attr
+lp_dontdescend
+dptr_attr
+lp_fake_oplocks
+SearchDir
+lp_veto_files
+OpenDir
+is_in_path
+CloseDir
+lp_recursive_veto_delete
+recursive_rmdir
+resolve_wildcards
+file_exist
+map_nt_error_from_unix
+m_pid
+kill
+short_case_preserve
+strcsequal
+can_rename
+sys_rename
+string_init
+dircounter
+opendir
+readdirname
+closedir
+skip_string
+ubi_dlInsert
+ubi_dlRemove
+lp_delete_readonly
+calloc
+current_user
+mkdir_wrapper
+unix_ERR_class
+unix_ERR_code
+unix_ERR_ntstatus
+fd_get_already_open
+fd_attempt_reopen
+gettimeofday
+check_for_pipe
+fd_get_new
+fd_attempt_open
+fd_attempt_close
+strstr
+lp_share_modes
+check_share_mode
+unlock_share_entry
+ntstatus_to_dos
+truncate_unless_locked
+get_share_modes
+set_share_mode
+del_share_mode
+get_remote_arch
+__umoddi3
+se_map_generic
+file_generic_mapping
+open_directory
+get_create_time
+get_allocation_size
+chain_reply
+smb_setlen
+name_len
+name_extract
+fstrcpy
+remote_machine
+trim_string
+strlower_m
+lp_security
+reload_services
+reopen_logs
+add_session_user
+make_connection
+max_recv
+pull_string_fn
+set_message_end
+close_cnum
+set_remote_arch
+lp_encrypted_passwords
+remove_from_common_flags2
+global_client_caps
+sub_set_smb_name
+lp_guestaccount
+map_username
+Get_Pwnam
+check_hosts_equiv
+register_vuid
+sesssetup_user
+StrnCpy
+ra_lanman_string
+add_signature
+sam_logon_in_ssb
+password_ok
+lp_servicenumber
+get_home_dir
+lp_add_home
+password_ok_ntlmv2
+samlogon_user
+directory_exist
+put_dos_date3
+make_unix_date3
+set_filetime
+__cmpdi2
+__floatdidf
+__muldf3
+__adddf3
+__fixunsdfdi
+unix_format
+get_dir_entry
+make_dir_struct
+dptr_fill
+dptr_fetch
+strnorm
+dptr_zero
+get_valid_user_struct
+invalidate_vuid
+mktemp
+check_file_sharing
+can_delete
+transfer_file
+is_locked
+read_file
+do_lock
+chain_size
+sendfile_wrapper
+read_smb_length
+new_write_file
+sync_file
+do_unlock
+smb_echo_count
+dptr_closepath
+rmdir_internals
+lp_no_set_dir
+remove_share_oplock
+lp_readbmpx
+strncmp
+push_ascii
+lp_comment
+standard_sub
+lp_pathname
+lp_numservices
+lp_browseable
+lp_snum_ok
+push_ascii_fstring
+find_service
+show_msg
+strnequal
+api_commands
+send_trans_reply
+StrnCaseCmp
+generate_random_buffer
+setup_groups
+lp_unix_realname
+getpwnam
+__ctype_b
+__ctype_toupper
+crypt
+E_P24
+memcmp
+last_challenge
+get_smbpwd_entry
+push_ucs2_allocate
+strupper_w
+hmac_md5_init_limK_to_64
+hmac_md5_update
+hmac_md5_final
+lp_passwordlevel
+getspnam
+lp_null_passwords
+strhasupper
+smb_password_check
+strhaslower
+lp_valid_users
+lp_invalid_users
+user_in_list
+lp_onlyuser
+lp_username
+fopen64
+fgets
+strtok
+lp_hosts_equiv
+client_name
+lp_use_rhosts
+user_ok
+lp_guest_only
+lp_guest_ok
+lp_revalidate
+getgrnam
+geteuid
+getegid
+setgid
+ChDir
+OriginalDir
+setegid
+setresuid
+setresgid
+getuid
+getgid
+unbecome_user
+setgroups
+lp_force_group
+GetWd
+sigemptyset
+sigaddset
+sigaction
+am_parent
+lp_map_hidden
+lp_create_mode
+lp_force_create_mode
+lp_map_archive
+lp_dir_mode
+lp_force_dir_mode
+lp_map_system
+lp_hide_dot_files
+lp_alternate_permissions
+in_group
+fchmod
+unbecome_root
+sys_utime
+lp_dos_filetimes
+lp_strip_dot
+use_mangled_map
+DirCacheCheck
+safe_strcat_fn
+DirCacheAdd
+statvfs64
+lp_maxdisksize
+lp_widelinks
+reduce_name
+lp_symlinks
+unix_clean_name
+max_file_fd_used
+FileFd
+fsync
+string_free
+sys_getpid
+ftruncate64
+lp_postscript
+pread64
+pwrite_data
+real_write_file
+smb_last_time
+lp_defaultcase
+case_default
+lp_preservecase
+lp_shortpreservecase
+lp_casemangle
+case_mangle
+lp_casesensitive
+lp_magicchar
+magic_char
+lp_mangled_map
+lp_defaultservice
+lp_add_service
+unix_dos_nt_errmap
+dos_to_ntstatus
+waitpid
+receive_message_or_smb
+lp_loaded
+lp_file_list_changed
+lp_killunused
+snum_used
+lp_load
+servicesf
+load_interfaces
+set_socket_options
+user_socket_options
+become_service
+lp_configfile
+BlockSignals
+sys_select_signal
+initgroups
+getgroups
+lp_readraw
+lp_writeraw
+lp_maxmux
+TimeDiff
+put_dos_date
+generate_next_challenge
+myworkgroup
+standard_sub_basic
+gidtoname
+lp_lockdir
+fcntl_lock
+file_size
+client_addr
+process_exists
+fseek
+fread
+fwrite
+DirCacheFlush
+lp_max_connections
+yield_connection
+lp_status
+dptr_closecnum
+free_namearray
+TIME_ZONE
+munmap
+TZ_FD
+locking_end
+last_inbuf
+DEBUGLEVEL
+supported_protocols
+lp_maxprotocol
+lp_minprotocol
+remote_proto
+myhostname
+timer_create
+timer_settime
+timer_delete
+check_access
+strupper_m
+authorise_login
+validated_username
+lp_readonly
+lp_readlist
+lp_writelist
+lp_admin_users
+lp_force_user
+claim_connection
+set_namearray
+lp_hide_files
+lp_veto_oplocks
+smb_messages
+last_message
+reply_unknown
+become_guest
+memmove
+construct_reply_common
+reply_special
+smb_read_error
+dptr_idlecnum
+server_client
+send_keepalive
+InBuffer
+OutBuffer
+lp_maxxmit
+TimeInit
+lp_deadtime
+construct_reply
+atoi
+pidfile_pid
+append_log
+debugf
+setup_logging
+load_case_tables
+fault_setup
+CatchSignal
+umask
+init_uid
+getopt
+optarg
+get_myname
+init_dptrs
+TimeZoneInit
+is_a_socket
+become_daemon
+iface_count
+lp_interfaces
+sys_select
+accept
+sys_fork
+lp_bind_interfaces_only
+iface_n_ip
+open_socket_in
+set_blocking
+listen
+close_low_fds
+reset_globals_after_fork
+locking_init
+lp_rootdir
+close_sockets
+pidfile_create
+lp_socket_address
+interpret_addr
+chroot
+killkids
+do_smbpasswd
+reply_mkdir
+reply_rmdir
+reply_open
+reply_mknew
+reply_close
+reply_flush
+reply_unlink
+reply_mv
+reply_getatr
+reply_setatr
+reply_read
+reply_write
+reply_lock
+reply_unlock
+reply_ctemp
+reply_chkpth
+reply_exit
+reply_lseek
+reply_lockread
+reply_writeunlock
+reply_readbraw
+reply_readbmpx
+reply_writebraw
+reply_writebmpx
+reply_writebs
+reply_setattrE
+reply_getattrE
+reply_lockingX
+reply_trans
+reply_ioctl
+reply_copy
+reply_echo
+reply_writeclose
+reply_open_and_X
+reply_read_and_X
+reply_write_and_X
+reply_trans2
+reply_transs2
+reply_findclose
+reply_findnclose
+reply_tcon
+reply_tdis
+reply_sesssetup_and_X
+reply_ulogoffX
+reply_tcon_and_X
+reply_dskattr
+reply_search
+reply_fclose
+reply_nttrans
+reply_nttranss
+reply_ntcreate_and_X
+reply_ntcancel
+reply_sends
+reply_sendstrt
+reply_sendend
+reply_sendtxt
+reply_nt1
+reply_lanman2
+reply_lanman1
+reply_coreplus
+reply_corep
+lp_hostsdeny
+lp_hostsallow
+strchr
+lp_string
+use_getwd_cache
+tmpdir
+file_modtime
+pm_process
+sscanf
+lp_do_parameter
+bLoaded
+lp_auto_services
+lp_serverstring
+lp_announce_as
+lp_time_server
+init_iconv
+lp_volume
+extra_time_offset
+__fgetc_unlocked
+fgetc
+gotalarm
+gotalarm_sig
+fcntl64
+do_pw_lock
+lp_smb_passwd_file
+setvbuf
+pw_file_lock
+feof
+ferror
+strncpy
+pw_file_unlock
+fprintf
+sysv_shm_open
+lp_locking
+lp_strict_locking
+locking_shm_init
+semop
+lp_shmem_size
+semget
+semctl
+shmget
+shmat
+shmctl
+__floatsidf
+__fixdfsi
+getenv
+getsockopt
+next_token
+setsockopt
+strstr_m
+chdir
+getcwd
+ino_list
+array_promote
+sys_read
+sys_write
+passive
+pwrite64
+sys_pwrite
+read_with_timeout
+read_data
+receive_smb
+write_socket
+name_ptr
+setsid
+fstatfs64
+__eqdf2
+__gtdf2
+__ltdf2
+realloc
+lp_readsize
+bind
+putip
+getpeername
+inet_ntoa
+sys_gethostbyname
+gethostbyaddr
+Get_Hostbyname
+inet_addr
+gethostname
+getgrgid
+timestring
+automount_server
+sigprocmask
+readdir64
+sys_fcntl_ptr
+sendfile64
+trim_char
+alpha_strcpy_fn
+chown
+mmap64
+smb_iconv
+strlen_w
+smb_iconv_close
+smb_iconv_open
+convert_string
+push_ucs2
+strrchr
+strnlen
+__ctype_tolower
+strpbrk
+calloc_array
+strcasecmp
+snprintf
+swab
+gmtime
+localtime
+serverzone
+__subdf3
+__gedf2
+__ledf2
+__fixunsdfsi
+LocalTime
+mktime
+make_unix_date
+strftime
+lp_usernamelevel
+lp_username_map
+fgets_slash
+MD5Init
+MD5Update
+MD5Final
+interpret_addr2
+ipzero
+allones_ip
+loopback_ip
+ip_equal
+last_iface
+mdfour
+E_P16
+ftell
+fileno
+libcrypt.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+librt.so.0
+libc.so.0
+__cxa_atexit
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+GCC_3.0
+GLIBC_2.0
+('9jP
+$'9	`
+ $!W
+ $BW
+ $BWd
+`0!<
+ #$B
+('9n
+`(!'
+('9n
+@ !'
+U@#$
+@8!$
+U@#%
+8!'9kL
+@(!$T
+@(!$T
+ !&B
+,'9kL
+'9kL
+@(!$
+'9}(
+#H%'
+x%0B
+DP%$
+EP%0
+'9kL
+($Pop)
+'9kL
+0'9op
+'9kL
+` !&E
+` !&E
+00B@
+` !$
+` !'
+  !&1
+  !&1
+@(!$B
+(!'9
+ (!$B
+@(!$B
+(!$B
+@(!$
+@ !<
+8!3"
+@ !'
+ !0v
+  !$
+ (!'9
+(!'9
+` !'
+ 0!'
+ 0!'
+` !'
+` !'
+`0!'
+ 0!$B
+  !$
+@ !$
+ (!6
+  !'
+@ !'
+ !2e
+ !&&
+@(!$
+X8#$
+` !$
+@(!$
+  !$
+  !$
+ !$B
+@@$c
+@0!$
+8%1I
+b(%$
+ 0!$
+ (!$
+ 0!$
+f0%'
+f0%'
+@%-i
+ `!1
+`(!&
+  !4
+  !4
+  !4
+  !4
+@ !&
+00B@
+ (!'
+ 0!'
+@ !'
+  !$
+f0%'
+  !$
+ !$v
+@(!$
+ (!$
+C(%.
+@X!$
+  !$
+@(!$
+@(!$
+@(!$
+ (!'9
+(!,B
+(!,B
+  !$
+8!$p
+N !$B
+B]L$B
+&%X 
+&$X 
+!&$X 
+&$X 
+@ !(C
+` !$
+	&$\ 
+`(!$
+@(!'
+  !$
+  !&E
+` !,P
+@(!'
+@(!&$
+` !'
+	61@
+ !2"
+ !6#
+,$eA
+00B@
+$$WA
+	$eA
+	$EA
+ $cWh
+@ !$
+@0!'
+0$0q
+P!*B
+$&fA
+$$B5
+  !'
+@ !$
+@(!'
+4EBB
+4cBB
+@ !4IBB
+!8cBB
+@(!<
+@ !$C
+`(!$
+  !$
+  !$
+`0!$
+  !$
+@0!$
+@ !6"
+`(!&D
+ &&A
+4&%A
+(!&&A
+ 8!$
+	&EA
+	&EA
+$ !&EA
+ !&EB
+$cBd
+0'9R
+0'9R
+	$EA
+@ !'
+	$eA
+@ !'
+	$EA
+` !2
+b0$'
+ %&n
+#'9`4
+0'9`4
+ '9Wl
+0$Yk
+0$Yk
+u4R:
+@ !$
+@ !$
+	&FD$
+$$cDP
+	&FD$
+(!&U
+ !&eA
+	&eA
+	&eA
+ !&eA
+@ !'
+!B2E
+@ !$
+!B2E
+	&En
+	&eE
+	&En
+0!'9
+ff4cfg&
+F !(
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+$$DNd
+!$Bn
+ !$Bn
+ @&Eo
+` !'9
+@(!$
+@(!$
+@(!$
+!$Bn
+$$cN
+(!'9
+` !'9
+@ !$
+	&eO
+	&eO
+4&dn
+X&dn
+@ !<
+ $BWp
+`0!'9
+`0!'9
+!$SP 
+@ !'
+ !$B
+ !&s
+@ !<
+p !$
+  !$
+(#$P
+@ !(C
+44BA
+ $CQ
+	&%Q
+	&%Q
+,&%Q
+ !&eQ
+0!&$Q
+8!0f
+` !&P
+`8!$
+@ !$
+B !<
+@ !$
+@ !4
+@(!$
+  !$
+$$cRL
+  !&1
+  !<
+@ !$
+$cTl
+ 0!&
+@ !$
+`$BT
+(!&c
+!B0B
+!B0c
+0!$B
+@ !'
+@ !$
+  !$
+H(!%
+nX%1
+8$YR0
+$URl
+4'9R0
+'9R0
+0$YR0
+`0!&
+ H!$
+ $YR0
+$YR0
+@!$	
+ !$FT
+!$SS
+ 0!&
+@(!&&
+@ !'
+$$PZ
+$$CT
+$$CT
+$'9jP
+4'9_
+4'9_
+4'9_
+D'9`
+4'9`
+&9_d
+$$V_d
+ (!&
+ (!$
+@0!'
+*$TU
+&9_d
+4'9Z
+4'9Z
+$TjP$s
+ *0B
+4'9jP
+4'9_
+4'9_
+4'9_
+ (!'9o
+ !2b
+(!$Vo
+!'9o
+(!'9q
+ 0!$
+4'9o
+ '9r
+ 0!$
+4'9t
+ !'9r
+!$Ro
+4$QoH
+(!&1
+8!'9
+ $BWx
+(!&1
+4'9o
+`8!0h
+P'9q
+@ !$
+@ !$
+@ !$
+$BUD&$UL
+&$UL
+&$UL
+` !$
+@8!&R
+$BUP
+$UUL<
+p0#$
+ &e,<
+&d,<
+(!&f,<
+4$Sw
+8!'9j
+!$ToH
+$PUL<
+!&EU\
+ &EU\
+p$cUX$
+ !'9t
+@8!'
+ 0!'
+0%&1
+94P$W
+`(!$
+Q !$
+"4X<
+24BTv'
+(!&Y
+@0!$H
+4Bf@4c
+0!4Uu
+(!4t:
+!@0c
+	9B1
+@8!$
+@ !(C
+ !,B
+	&FV
+	$E4
+  !$
+	$D4
+4cTv
+0!4B
+!4Bp
+!4BF
+!4B[
+!4Bq
+!4BC
+%4c%b
+%4cZQ
+%4cL
+%4c9B
+%4ca"
+%4c8
+%4cK`
+%4c~
+%4c'
+%4c0
+!4B|
+!4BVe
+!4B"D
+!4B#
+!4BY
+!4B]
+!4B~O
+!4BC
+!4B~
+(!4B
+ 0!&p
+H@#$
+@ !&9
+ !&y
+`0!<
+  !,B
+  !$
+@ !$
+@ !4
+!$SV
+	$RV
+*'96
+6$$c6
+ '9WX
+('9i
+::$DATA
+invalid params in reply_trans2
+data overflow in trans2
+????????.???
+????????
+.???
+(%s)
+????????.???
+%s/%s
+.+,;=[].
+RNetShareEnum
+RNetShareGetInfo
+possible attack
+Windows 2002 5.1
+Windows Server 2003 5.2
+homes
+null
+(%s)
+???????????
+TMXXXXXX
+/TMXXXXXX
+????????.???
+%s/%s
+reply_readbraw: socket write fail
+send_file_readX sendfile failed
+send_file_readX: fake_sendfile failed
+secondary writebraw failed
+B13BWz
+B13BWzWWWzB9B
+B13BWzWWWzB9BB9BWzWWzWW
+IPC$
+WrLeh
+zWrLh
+send_trans_reply: send_smb failed.
+\PIPE
+LANMAN
+<Full Name>
+NO_PLUS
+%s/.rhosts
+ 	,;:
+Failed to restore gid
+Failed to restore uid
+SMBmkdir
+SMBrmdir
+SMBopen
+SMBcreate
+SMBclose
+SMBflush
+SMBunlink
+SMBmv
+SMBgetatr
+SMBsetatr
+SMBread
+SMBwrite
+SMBlock
+SMBunlock
+SMBctemp
+SMBmknew
+SMBchkpth
+SMBexit
+SMBlseek
+SMBlockread
+SMBwriteunlock
+SMBreadbraw
+SMBreadBmpx
+SMBreadBs
+SMBwritebraw
+SMBwriteBmpx
+SMBwriteBs
+SMBwritec
+SMBsetattrE
+SMBgetattrE
+SMBlockingX
+SMBtrans
+SMBtranss
+SMBioctl
+SMBioctls
+SMBcopy
+SMBmove
+SMBecho
+SMBwriteclose
+SMBopenX
+SMBreadX
+SMBwriteX
+SMBtrans2
+SMBtranss2
+SMBfindclose
+SMBfindnclose
+SMBtcon
+SMBtdis
+SMBnegprot
+SMBsesssetupX
+SMBulogoffX
+SMBtconX
+SMBdskattr
+SMBsearch
+SMBffirst
+SMBfunique
+SMBfclose
+SMBnttrans
+SMBnttranss
+SMBntcreateX
+SMBntcancel
+SMBsplopen
+SMBsplwr
+SMBsplclose
+SMBsplretq
+SMBsends
+SMBsendb
+SMBfwdname
+SMBcancelf
+SMBgetmac
+SMBsendstrt
+SMBsendend
+SMBsendtxt
+NT LANMAN 1.0
+NT LM 0.12
+POSIX 2
+LM1.2X002
+LANMAN2
+Samba
+DOS LM1.2X002
+LANMAN1.0
+LANMAN1
+MICROSOFT NETWORKS 3.0
+MICROSOFT NETWORKS 1.03
+COREPLUS
+PC NETWORK PROGRAM 1.0
+CORE
+pipe/
+.com
+.dll
+.exe
+.sym
+homes
+SO_KEEPALIVE
+.LCK
+STATUS.
+Windows for Workgroups 3.1a
+DOS LANMAN2.1
+Password server loop!
+LANMAN2.1
+XENIX CORE
+xtimer_create failed
+timer_settime failed
+timer_delete failed
+caught signal
+IPC$
+ADMIN$
+SMBunknown
+Non-SMB packet
+connection denied
+%s/%s.pid
+/tmp/samba/var
+s:Dp:P:a:
+WORKGROUP
+normal exit
+smbd
+EXCEPT
+FAIL
+LOCAL
+unknown
+debuglevel
+log level
+syslog
+syslog only
+protocol
+security
+max disk size
+lpq cache time
+announce as
+encrypt passwords
+getwd cache
+read bmpx
+read raw
+write raw
+use rhosts
+load printers
+null passwords
+strip dot
+interfaces
+bind interfaces only
+password server
+socket options
+netbios name
+netbios aliases
+log file
+config file
+smb passwd file
+hosts equiv
+preload
+auto services
+server string
+lock dir
+lock directory
+root directory
+root dir
+root
+default service
+default
+passwd program
+passwd chat
+valid chars
+workgroup
+username map
+character set
+logon script
+logon path
+logon drive
+logon home
+remote announce
+remote browse sync
+socket address
+homedir map
+announce version
+max log size
+mangled stack
+max mux
+max xmit
+max packet
+packet size
+password level
+username level
+keepalive
+deadtime
+time offset
+read size
+shared mem size
+coding system
+os level
+max ttl
+max wins ttl
+min wins ttl
+lm announce
+lm interval
+dns proxy
+wins support
+wins proxy
+wins server
+preferred master
+prefered master
+local master
+domain master
+domain logons
+browse list
+unix realname
+NIS homedir
+time server
+-valid
+comment
+copy
+include
+exec
+preexec
+alternate permissions
+revalidate
+default case
+case sensitive
+casesignames
+preserve case
+short preserve case
+mangle case
+mangling char
+browseable
+browsable
+available
+path
+directory
+username
+user
+users
+guest account
+invalid users
+valid users
+admin users
+read list
+write list
+volume
+force user
+force group
+group
+read only
+write ok
+writeable
+writable
+max connections
+create mask
+create mode
+force create mode
+directory mask
+directory mode
+force directory mode
+set directory
+status
+hide dot files
+delete veto files
+veto files
+hide files
+veto oplock files
+guest only
+only guest
+guest ok
+public
+postscript
+map system
+map hidden
+map archive
+locking
+strict locking
+share modes
+oplocks
+only user
+mangled names
+fake oplocks
+lpq command
+lprm command
+lppause command
+lpresume command
+hosts allow
+allow hosts
+hosts deny
+deny hosts
+dont descend
+mangled map
+delete readonly
+dos filetimes
+lower
+upper
+False
+True
+Auto
+win95
+SHARE
+USER
+SERVER
+LANMAN2
+LANMAN1
+CORE
+COREPLUS
+CORE+
+true
+Home directory of %s
+homes
+xglobal
+globals
+/tmp/samba/private/smbpasswd
+*old*password* %o\n *new*password* %n\n *new*password* %n\n *changed*
+WORKGROUP
+/usr/bin/smbpasswd
+/tmp/samba/var/locks
+0.0.0.0
+SMB %s
+tp-link 1.0
+%d.%d
+\\%N\%U
+\\%N\%U\profile
+ 	,;:
+IPC$
+IPC Service (%s)
+nobody
+0123456789ABCDEF
+NO PASSWORD
+Share mode memory usage (bytes):
+   %d(%d%%) free + %d(%d%%) used + %d(%d%%) overhead = %d(100%%) total
+SO_KEEPALIVE
+SO_REUSEADDR
+SO_BROADCAST
+TCP_NODELAY
+IPTOS_LOWDELAY
+IPTOS_THROUGHPUT
+SO_SNDBUF
+SO_RCVBUF
+SO_SNDLOWAT
+SO_RCVLOWAT
+SO_SNDTIMEO
+SO_RCVTIMEO
+TMPDIR
+/tmp
+/../
+/dev/null
+ 	,;:
+0.0.0.0
+UNKNOWN
+localhost
+255.255.255.255
+tp-link 1.0
+CIFSFS
+WfWg
+Win95
+WinNT
+Win2K
+WinXP
+Win2K3
+Samba
+. -_
+/dev/urandom
+KGS!@#$%
+%s/%s
+/etc/samba/lib
+upcase.dat
+lowcase.dat
+UTF-16LE
+ASCII
+UTF8
+ASSCII
+.!#$%&'()_-@^`~
+valid.dat
+smb %s
+tp-link 1.0
+LINUX
+<>*?"
+UCS-2LE
+UTF-16LE
+UCS-2BE
+UTF-16BE
+UTF8
+UTF-8
+ASCII
+ISO-8859-1
+UCS2-HEX
+%04x
+@%04x
+/tmp/samba/var/timezone
+%m/%d/%Y %T
+ 	,;:
+0.0.0.0
+255.255.255.255
+127.0.0.1
+0123456789ABCDEF
+/tmp/samba/private/smbpasswd
+%s:%u:
+%02X
+%s:%s:%s
+SMB password file
+NO PASSWORD
+/tmp/samba/smb.conf
+UNKNOWN
+UNKNOWN

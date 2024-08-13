@@ -1,0 +1,6 @@
+[+] Search areas for command injections
+=================================================================
+The command injection module scans directories and files used for web scripts on a Linux system, checking for potential command injection vulnerabilities by searching for executable scripts and performing queries within these files. This module is in a very early state.
+
+[-] No directories or files used for web scripts found
+[-] Wed Jul 31 21:21:07 EDT 2024 - S100_command_inj_check nothing reported

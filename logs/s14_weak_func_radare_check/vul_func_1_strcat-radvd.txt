@@ -1,0 +1,57 @@
+[*] Binary protection state of radvd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of radvd
+
+addiu v0, zero, 0x100
+subu v1, v0, v1
+lw v0, 0x1dc(fp)
+addiu v0, v0, 2
+sltu v0, v1, v0
+beqz v0, 0x408cb4
+nop
+addiu v0, fp, 0x28
+addiu a0, zero, 3
+lw a1, -0x7fd8(gp)
+addiu a1, a1, 0x21b4
+lw a2, 0x200(fp)
+move a3, v0
+lw t9, -sym.flog(gp)
+jalr t9
+nop
+b 0x408d5c
+lw gp, 0x18(fp)
+lb v0, 0xd8(fp)
+beqz v0, 0x408ce0
+nop
+addiu v0, fp, 0xd8
+move a0, v0
+lw a1, -0x7fd8(gp)
+addiu a1, a1, 0x21e4
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+nop
+lw gp, 0x18(fp)
+addiu a0, fp, 0xd8
+lw v1, 0x68(fp)
+lw v0, 0x1d8(fp)
+addu v0, v1, v0
+addiu v0, v0, 8
+move a1, v0
+lw a2, 0x1dc(fp)
+lw t9, -sym.imp.strncat(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+lw v1, 0x1d8(fp)
+lw v0, 0x1dc(fp)
+addu v0, v1, v0
+b 0x408b90
+sw v0, 0x1d8(fp)
+lw v0, 0x58(fp)
+
+[*] Function strcat used 1 times radvd
+

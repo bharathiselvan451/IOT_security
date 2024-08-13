@@ -1,0 +1,2307 @@
+/lib/ld-uClibc.so.0
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+bb_applet_name
+run_applet_by_name
+bb_error_msg_and_die
+been_there_done_that
+get_terminal_width_height
+bb_msg_full_version
+applets
+bb_strlen
+memmove
+memset
+usage_messages
+stderr
+strcmp
+bsearch
+find_applet_by_name
+bb_show_usage
+busybox_main
+getuid
+getgid
+geteuid
+setgid
+setuid
+test_main
+arping_main
+brctl_main
+cat_main
+chmod_main
+date_main
+df_main
+echo_main
+grep_main
+false_main
+getty_main
+ifconfig_main
+init_main
+insmod_main
+kill_main
+klogd_main
+logger_main
+login_main
+logread_main
+ls_main
+lsmod_main
+msh_main
+ps_main
+reboot_main
+rm_main
+rmmod_main
+route_main
+sleep_main
+syslogd_main
+tftp_main
+true_main
+udhcpc_main
+udhcpd_main
+umount_main
+vconfig_main
+bb_getopt_ulflags
+optind
+bb_wfopen_input
+fileno
+bb_copyfd_eof
+bb_fclose_nonstdin
+bb_parse_mode
+chmod
+bb_perror_msg
+recursive_action
+bb_opt_complementaly
+putenv
+bb_perror_msg_and_die
+localtime
+strchr
+sscanf
+bb_msg_invalid_date
+mktime
+bb_msg_memory_exhausted
+stime
+putchar
+strncmp
+strftime
+bb_printf
+setmntent
+bb_path_mtab_file
+getmntent
+endmntent
+find_mount_point
+bb_error_msg
+statfs64
+__udivdi3
+find_real_root_device_name
+bb_fflush_stdout_and_exit
+bb_process_escape_sequence
+__stdout
+__fputc_unlocked
+fputc
+lstat64
+xmalloc
+xcalloc
+ctime
+bb_mode_string
+xreadlink
+atoi
+isatty
+bb_xstrdup
+opendir
+strrchr
+readdir64
+concat_path_file
+closedir
+bb_get_last_path_component
+remove_file
+bb_xgetularg10
+bb_perror_nomsg_and_die
+__errno_location
+bb_skip_whitespace
+getegid
+getgroups
+xrealloc
+bb_xfopen
+bb_get_chomped_line_from_file
+llist_add_to
+fopen64
+xregcomp
+strstr
+regexec
+regfree
+fclose
+vsnprintf
+openlog
+syslog
+closelog
+device_open
+bb_full_write
+tcgetattr
+tcsetattr
+sigemptyset
+sigaddset
+sigprocmask
+signal
+setsid
+waitpid
+tcgetpgrp
+getpid
+strpbrk
+bb_default_login_shell
+strcat
+strcpy
+strsep
+execv
+reboot
+pause
+sync
+kill
+execl
+access
+safe_strncpy
+fgets
+getenv
+chdir
+wait
+kill_init
+find_pid_by_name
+fstat64
+mmap64
+syscall
+strerror
+bb_xprint_file_by_name
+getopt
+fflush
+gettimeofday
+finish
+memcpy
+sendto
+alarm
+memcmp
+inet_ntoa
+ether_ntoa
+optarg
+inet_aton
+gethostbyname2
+setsockopt
+bind
+connect
+getsockname
+sigaction
+catcher
+recvfrom
+recv_pack
+if_indextoname
+br_get_state_name
+br_dump_bridge_id
+br_show_timer
+br_dump_port_info
+br_add_bridge
+br_del_bridge
+if_nametoindex
+br_add_interface
+br_del_interface
+__fixdfsi
+__floatsidf
+__subdf3
+__muldf3
+br_set_ageing_time
+br_set_bridge_priority
+br_set_bridge_forward_delay
+br_set_gc_interval
+br_set_bridge_hello_time
+br_set_bridge_max_age
+br_find_port
+br_set_path_cost
+br_set_port_priority
+br_set_stp_state
+br_dump_info
+br_dump_interface_list
+br_read_fdb
+qsort
+__dump_fdb_entry
+br_init
+br_command_lookup
+fputs
+br_find_bridge
+br_cmd_addbr
+br_cmd_addif
+br_cmd_delbr
+br_cmd_delif
+br_cmd_setageing
+br_cmd_setbridgeprio
+br_cmd_setfd
+br_cmd_setgcint
+br_cmd_sethello
+br_cmd_setmaxage
+br_cmd_setpathcost
+br_cmd_setportprio
+br_cmd_show
+br_cmd_showmacs
+br_cmd_showstp
+br_cmd_stp
+interface_opt_a
+display_interfaces
+safe_strtoi
+bb_INET_default
+inet_pton
+hostent
+create_icmp_socket
+xgethostbyname
+fscanf
+feof
+INET_rresolve
+INET6_rresolve
+displayroutes
+bb_xferror_stdout
+bb_xgetularg10_bnd
+INET6_resolve
+INET_resolve
+sysconf
+bb_lookup_port
+bb_full_read
+select
+strcasecmp
+if_nameindex
+if_freenameindex
+br_socket_fd
+br_device_ioctl32
+br_device_ioctl
+__tv_to_jiffies
+__jiffies_to_tv
+__copy_fdb
+br_ioctl
+br_read_port_info
+br_read_info
+br_make_port_list
+br_nuke_bridge
+br_get_version
+br_make_bridge_list
+msglogd
+run_script
+send_release
+client_config
+background
+getopt_long
+inet_addr
+start_log_and_pid
+read_interface
+udhcp_logging
+udhcp_sp_setup
+dhcp_ipc_fork
+uptime
+listen_socket
+udhcp_sp_fd_set
+random_xid
+set_runtime_dhcp_flags
+invert_runtime_dhcp_flags
+send_discover
+get_runtime_dhcp_flags
+send_renew
+send_selecting
+get_packet
+get_raw_packet
+get_option
+arpping
+send_decline
+udhcp_sp_read
+srand
+init_header
+add_simple_option
+add_option_string
+end_option
+dhcp_options
+kernel_packet
+usleep
+checksum
+msgget
+msgrcv
+dhcp_ipc_rcv
+udhcp_sp_ipc_inform
+msgsnd
+tp_ipc_send
+update_info
+shmget
+shmat
+server_config
+leases_shm
+getIpByMac
+sendACK
+reservedIp
+check_ip
+sendNAK
+read_config
+find_option
+dhcps_shm_init
+write_leases
+find_lease_by_chaddr
+sendOffer
+find_lease_by_yiaddr
+lease_expired
+check_and_ack
+send_inform
+bb_msg_can_not_create_raw_socket
+recv
+strtok
+option_lengths
+attach_option
+ether_aton
+addStaticLease
+strspn
+__ctype_b
+clear_lease
+oldest_expired_lease
+add_lease
+blank_host_name
+blank_chaddr
+find_address
+sysinfo
+pidfile_acquire
+daemon
+pidfile_write_release
+vprintf
+setlinebuf
+unlink
+lockf64
+fdopen
+socketpair
+u_signal_names
+procps_scan
+safe_strtoul
+bb_value_to_baud
+setenv
+dup2
+fcntl64
+chown
+init_chardata
+print_login_issue
+print_login_prompt
+__ctype_tolower
+ttyname
+setpgrp
+getpwnam
+bb_path_securetty_file
+correct_password
+difftime
+__ltdf2
+bb_path_nologin_file
+__fgetc_unlocked
+fgetc
+change_identity
+setup_environment
+bb_path_motd_file
+run_shell
+scantree
+longjmp
+abort
+execve
+umask
+times
+__divdf3
+globv
+func
+lseek64
+safe_read
+cmdedit_read_input
+mkstemp64
+_setjmp
+vfork
+creat64
+pipe
+klogctl
+my_getpwuid
+facilitynames
+prioritynames
+shmdt
+semget
+semop
+shmctl
+semctl
+memchr
+circ_message
+vdprintf
+localLogLevel
+remoteLogLevel
+ipcsyslog_cleanup
+gethostname
+ipcsyslog_init
+bb_msg_perm_denied_are_you_root
+bb_simplify_path
+nfsmount
+get_kernel_revision
+strcspn
+bb_xstrndup
+bb_herror_msg
+pmap_getmaps
+clntudp_create
+clnttcp_create
+authunix_create_default
+xdr_mountres3
+xdr_fhstatus
+xdr_dirpath
+clnt_perror
+clnt_pcreateerror
+bindresvport
+pmap_getport
+xdr_u_int
+xdr_opaque
+xdr_string
+xdr_bytes
+xdr_fhandle3
+xdr_array
+xdr_int
+xdr_enum
+xdr_mountstat3
+xdr_mountres3_ok
+umount
+umount2
+realpath
+initgroups
+endgrent
+change_identity_e2str
+last_char_is
+bb_xasprintf
+bb_msg_write_error
+getspnam
+bb_askpass
+crypt
+getprotobyname
+bb_verror_msg
+bb_default_error_retval
+safe_write
+bb_vherror_msg
+getnetbyname
+__h_errno_location
+gethostbyaddr
+getnetbyaddr
+getaddrinfo
+freeaddrinfo
+inet_ntop
+getnameinfo
+get_name
+uname
+getdomainname
+my_getug
+bb_vperror_msg
+bb_xfflush_stdout
+bb_wfopen
+bb_xprint_and_close_file
+getpagesize
+fread
+concat_subpath_file
+bb_ask_confirmation
+rmdir
+clearenv
+xgetcwd
+strncasecmp
+herror
+getservbyname
+bb_herror_msg_and_die
+regerror
+bb_applet_long_options
+bb_msg_standard_input
+bb_baud_to_value
+bb_xferror
+bb_msg_standard_output
+bb_vfprintf
+bb_xgetularg_bnd
+safe_strtol
+vasprintf
+isspace
+__stdin
+bb_xgetularg_bnd_sfx
+libmsglog.so
+_DYNAMIC_LINKING
+__RLD_MAP
+__start
+_GLOBAL_OFFSET_TABLE_
+__data_start
+libcrypt.so.0
+libc.so.0
+__environ
+__cxa_atexit
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GLIBC_2.0
+$'9W
+('9L
+$E^L
+($E^P
+@ !<
+0!$B_ &
+@0!$H
+@H!'
+`0!&p
+`0!'
+<$Si`
+$'9p,
+@H!2
+@ !$
+#(*0
+8$0h
+ X!4U
+p4Q?
+ $8B
+$'9n
+$$Yp,
+@ !$
+$'9q
+$'9st
+(!$RpT
+$'9o
+@ !'9q
+$'9st
+(!$Yq
+$'9n
+$$Yp,
+@(!$
+$$Yq
+$'9st
+  !$Q
+  !$Q
+  !$Q
+  !$Q
+  !$Q
+  !$Q
+  !'
+  !'
+@ !'
+  !'
+@ !$
+` !$
+L2"@
+P61`
+` !&
+`(!$
+20!&
+@0!$y
+@0!$y
+@0!$
+ (!$
+  !'
+ 0!$
+ 0!$
+ !'9
+  !&R
+@(!$
+@(!$
+@0!$
+ !$C
+(!$	
+0#4cM
+@ !&
+(!0F
+@ !0F
+@ !&
+(!&T
+@(!'
+0!&'
+@(!$
+@ !$c
+  !$
+@ !4
+CP%'
+`H!$c
+C(!&p
+4cB@
+!C$B
+ !0B
+ 0!'
+ 0!4Lfg
+@ !'9
+  !$
+ !4B
+ !$c
+@ !$
+,'94`
+,'94`
+@8!'
+,'94`
+,'96
+,'94`
+,'96
+'94`
+$'94`
+,'94`
+,'94`
+_'96
+,'94
+,'95
+P !$
+`(!$f
+!'9I
+,'9K8
+,'9K8
+@ !$
+('9I
+,'9K8
+@8!'
+4BSc
+@ !$
+  !&E
+  !&E
+(*%J
+@ !4
+8!(B
+('9n0
+ !$Sn0
+@ !'
+@ !&
+,'9n0
+`0!$
+`(!$
+  !&
+` !$
+(!,b
+` !$
+(!,b
+@8!$
+(!'9
+` !$
+@8!$
+(!,b
+(!'9
+@ !(
+8!$	
+8!$	
+8!$	
+` !$c
+Q(!(
+4BSc
+(!$b
+4BSc
+@ !$
+@ !4
+  !$
+ 0!$
+  !$
+  !&
+ !&e
+0!0B
+0!6"
+0!$B
+(!$c
+  !$C
+  !$
+@0!$
+  !$
+@ !$
+  !$
+FIt$d
+CIl$
+DIt$
+(!'9
+0!(b
+@ !$
+0!'9
+(!$C
+ !'93D
+ !'9[d
+0'9 
+0$B^
+0'9 
+0!'9
+ !'9
+` !$c
+'9R$
+8!$c
+$'9 
+ !$B
+0'9S
+@ !&E
+@(!'9
+ $D4
+@ !$c<
+0$c<
+ !&y
+(!'9
+ !'9
+@ !$
+  !$
+$BId$i
+$BH$
+@ !<
+(!'9
+E0#$
+@!&1
+@ !8B
+0'9!l
+0'9$
+0&2&
+F&9&
+p&1&
+0'91
+@(!$
+0'91
+@(!$
+CH $
+EId$B
+@Id$
+0'9&
+0'9*\
+0'90
+0'90
+0'9&
+!'9*\
+0'91
+0'9&
+"'93D
+@ !&
+"'93D
+ !$b
+@ !'93D
+"'93D
+ !'9
+ #'9
+@(!$
+ !'9
+(!'9
+0'9*\
+H '9
+ !'9E
+0'9T 
+0'92
+ !'9*\
+0'9T
+'9R$
+0'9T
+0$R2
+H $B
+*\$T2
+0'9R$
+0'9R$
+0'9U
+0'92
+0'92
+0'9F
+0!'9
+0&YH
+0'91
+0!$B
+ 0!$
+0'9*\
+0&yP
+0'91
+@0!'9
+0'9*\
+'9*\
+ (!$
+0!'9
+&Y*\
+  !'9
+0&Y*\
+?h'9R$
+0'92
+'9R$$B
+0'92
+8!$B
+!'9*\
+0'91
+0'9R$
+0'92
+0$P*\
+0$RR$
+0'91
+@ !$
+0'91
+0'9U
+0'9 
+` !'9[d
+0'9 
+@ !$
+0!'9
+ !$B?l
+0'9S
+I|$D
+(!'9
+'9!l
+@ !'9
+0'9_p
+0'9l 
+0'9m
+@J<<
+0'9p
+0'9m
+EJ@$
+0'9q
+0'9l 
+$'9n
+0'9n
+0'9t 
+BJL'9l 
+#$R@
+ !'9vx
+@0!4
+0'9u
+0'9u
+  !'
+0'9n
+dJ<'9q
+EJH'9q
+0'9q
+bJ\$
+QJP&yp
+0'9n
+0'9n
+0'9t
+0'9t
+|'9vx
+0'9q
+'9uD
+'9t 
+0'9m
+JH(b
+!'9l 
+0#&$
+ (!&
+0'9m
+0'9n
+ !$BI
+T !$B
+0'9st
+`(!'
+6$EG
+6$EG
+6DEG
+6DEG
+6DEG
+# !$
+2 !$
+ !,B
+,$B_
+&D_T
+&F_T&'
+(!&F_T&'
+%pOT
+ (!'9
+` !$
+@ !$E
+ !.R
+ !.R
+ !.R
+`@!$
+`!,K
+@(!4
+` !$
+@ !$
+!$Qa
+ $Ba
+0!(C
+$Bbx
+ !&1
+@0!'
+ (!4
+ (!4
+ (!4
+ (!4
+ (!$
+@!$J
+@0B@
+ $P	8
+('9	
+('9	
+@8!$
+@8!$
+@ !$
+H!$B
+ &$C
+ !'%
+@ !$
+` !$
+` !$
+@ !'
+0!$Hb
+ &P,
+ &Y,
+ $P,
+  !$
+@ !$
+@ !$
+0!$C
+ (!$
+$'9V
+ applet not found
+Usage: busybox [function] [arguments]...
+   or: [function] [arguments]...
+	BusyBox is a multi-call binary that combines many common Unix
+	utilities into a single executable.  Most people will create a
+	link to busybox for each function they wish to use and BusyBox
+	will act like whatever it was invoked as!
+Currently defined functions:
+%s%s
+arping
+brctl
+busybox
+chmod
+date
+echo
+egrep
+false
+fgrep
+getty
+grep
+ifconfig
+init
+insmod
+kill
+klogd
+linuxrc
+logger
+login
+logread
+lsmod
+mount
+ping
+reboot
+rmmod
+route
+sleep
+syslogd
+test
+tftp
+true
+udhcpc
+udhcpd
+umount
+vconfig
+[-fqbDUA] [-c count] [-w timeout] [-I device] [-s sender] target
+Ping hosts by ARP requests/replies.
+Options:
+	-f		Quit on first ARP reply
+	-q		Be quiet
+	-b		Keep broadcasting, don't go unicast
+	-D		Duplicated address detection mode
+	-U		Unsolicited ARP mode, update your neighbours
+	-A		ARP answer mode, update your neighbours
+	-c count	Stop after sending count ARP request packets
+	-w timeout	Time to wait for ARP reply, in seconds
+	-I device	Outgoing interface name, default is eth0
+	-s sender	Set specific sender IP address
+	target		Target IP address of ARP request
+COMMAND [OPTIONS]
+Create, delete and configue ethernet bridge.
+Commands:
+	addbr		<bridge>		add bridge
+	addif		<bridge> <device>	add interface to bridge
+	delbr		<bridge>		delete bridge
+	delif		<bridge> <device>	delete interface from bridge
+	show					show a list of bridges
+	showmacs	<bridge>		show a list of mac addrs
+	showstp		<bridge>		show bridge stp info
+	setageing	<bridge> <time>		set ageing time
+	setbridgeprio	<bridge> <prio>		set bridge priority
+	setfd		<bridge> <time>		set bridge forward delay
+	setgcint	<bridge> <time>		set garbage collection interval
+	sethello	<bridge> <time>		set hello time
+	setmaxage	<bridge> <time>		set max message age
+	setpathcost	<bridge> <port> <cost>	set path cost
+	setportprio	<bridge> <port> <prio>	set port priority
+	stp		<bridge> <state>	turn stp on/off
+[-u] [FILE]...
+Concatenates FILE(s) and prints them to stdout.
+Options:
+	-u	ignored since unbuffered i/o is always used
+[-R] MODE[,MODE]... FILE...
+Each MODE is one or more of the letters ugoa, one of the
+symbols +-= and one or more of the letters rwxst.
+Options:
+	-R	Changes files and directories recursively.
+[OPTION]... [MMDDhhmm[[CC]YY][.ss]] [+FORMAT]
+Displays the current time in the given FORMAT, or sets the system date.
+Options:
+	-R		Outputs RFC-822 compliant date string
+	-d STRING	Displays time described by STRING, not `now'
+	-s		Sets time described by STRING
+	-r FILE		Displays the last modification time of FILE
+	-u		Prints or sets Coordinated Universal Time
+[-k] [FILESYSTEM ...]
+Print the filesystem space used and space available.
+Options:
+	-k	print sizes in kilobytes(compatibility)
+[ARG ...]
+Prints the specified ARGs to stdout
+Return an exit code of FALSE (1).
+[OPTIONS]... baud_rate,... line [termtype]
+Opens a tty, prompts for a login name, then invokes /bin/login
+Options:
+	-h		Enable hardware (RTS/CTS) flow control.
+	-i		Do not display /etc/issue before running login.
+	-L		Local line, so do not do carrier detect.
+	-m		Get baud rate from modem's CONNECT status message.
+	-w		Wait for a CR or LF before sending /etc/issue.
+	-n		Do not prompt the user for a login name.
+	-f issue_file	Display issue_file instead of /etc/issue.
+	-l login_app	Invoke login_app instead of /bin/login.
+	-t timeout	Terminate after timeout if no username is read.
+	-I initstring	Sets the init string to send before anything else.
+	-H login_host	Log login_host into the utmp file as the hostname.
+[-ihHnqvs] PATTERN [FILEs...]
+Search for PATTERN in each FILE or standard input.
+Options:
+	-H	prefix output lines with filename where match was found
+	-h	suppress the prefixing filename on output
+	-i	ignore case distinctions
+	-l	list names of files that match
+	-n	print line number with output lines
+	-q	be quiet. Returns 0 if result was found, 1 otherwise
+	-v	select non-matching lines
+	-s	suppress file open/read error messages
+[-a] <interface> [<address>]
+configure a network interface
+Options:
+[add <address>[/<prefixlen>]]
+[del <address>[/<prefixlen>]]
+	[[-]broadcast [<address>]]  [[-]pointopoint [<address>]]
+	[netmask <address>]  [dstaddr <address>]
+	[hw ether <address>]  [metric <NN>]  [mtu <NN>]
+	[[-]trailers]  [[-]arp]  [[-]allmulti]
+	[multicast]  [[-]promisc]  [txqueuelen <NN>]  [[-]dynamic]
+	[up|down] ...
+Init is the parent of all processes.
+[OPTION]... MODULE [symbol=value]...
+Loads the specified kernel modules into the kernel.
+Options:
+	-f	Force module to load into the wrong kernel version.
+	-k	Make module autoclean-able.
+	-v	verbose output
+	-q	quiet output
+	-L	Lock to prevent simultaneous loads of a module
+	-o NAME	Set internal module name to NAME
+	-x	do not export externs
+[-signal] process-id [process-id ...]
+Send a signal (default is SIGTERM) to the specified process(es).
+Options:
+	-l	List all signal names and numbers.
+[-c n] [-n]
+Kernel logger.
+Options:
+	-c n	Sets the default log level of console messages to n.
+	-n	Run as a foreground process.
+[OPTION]... [MESSAGE]
+Write MESSAGE to the system log.  If MESSAGE is omitted, log stdin.
+Options:
+	-s	Log to stderr as well as the system log.
+	-t TAG	Log using the specified tag (defaults to user name).
+	-p PRIORITY	Enter the message with the specified priority.
+		This may be numerical or a ``facility.level'' pair.
+[OPTION]... [username] [ENV=VAR ...]
+Begin a new session on the system
+Options:
+	-f	Do not authenticate (user already authenticated)
+	-h	Name of the remote host for this login.
+	-p	Preserve environment.
+[OPTION]...
+Shows the messages from syslogd (using circular buffer).
+Options:
+	-f		output data as the log grows
+[-1AacCdeilnLrSsTtuvwxXk] [filenames...]
+List directory contents
+Options:
+	-1	list files in a single column
+	-A	do not list implied . and ..
+	-a	do not hide entries starting with .
+	-C	list entries by columns
+	-c	with -l: show ctime
+	-d	list directory entries instead of contents
+	-e	list both full date and full time
+	-i	list the i-node for each file
+	-l	use a long listing format
+	-n	list numeric UIDs and GIDs instead of names
+	-L	list entries pointed to by symbolic links
+	-r	sort the listing in reverse order
+	-S	sort the listing by file size
+	-s	list the size of each file, in blocks
+	-T NUM	assume Tabstop every NUM columns
+	-t	with -l: show modification time
+	-u	with -l: show access time
+	-v	sort the listing by version
+	-w NUM	assume the terminal is NUM columns wide
+	-x	list entries by lines instead of by columns
+	-X	sort the listing by extension
+List the currently loaded kernel modules.
+[flags] DEVICE NODE [-o options,more-options]
+Mount a filesystem.  Autodetection of filesystem type requires the
+/proc filesystem be already mounted.
+Flags:
+	-a:		Mount all filesystems in fstab.
+	-o option:	One of many filesystem options, listed below.
+	-r:		Mount the filesystem read-only.
+	-t fs-type:	Specify the filesystem type.
+	-w:		Mount for reading and writing (default).
+Options for use with the "-o" flag:
+	async/sync:	Writes are asynchronous / synchronous.
+	atime/noatime:	Enable / disable updates to inode access times.
+	dev/nodev:	Allow use of special device files / disallow them.
+	exec/noexec:	Allow use of executable files / disallow them.
+	suid/nosuid:	Allow set-user-id-root programs / disallow them.
+	remount:	Re-mount a mounted filesystem, changing its flags.
+	ro/rw:		Mount for read-only / read-write.
+	bind:		Use the linux 2.4.x "bind" feature.
+There are EVEN MORE flags that are specific to each filesystem.
+You'll have to see the written documentation for those filesystems.
+[OPTION]... host
+Send ICMP ECHO_REQUEST packets to network hosts.
+Options:
+	-c COUNT	Send only COUNT pings.
+	-s SIZE		Send SIZE data bytes in packets (default=56).
+	-q		Quiet mode, only displays output at start
+			and when finished.
+Report process status
+	This version of ps accepts no options.
+[-d<delay>]
+Reboot the system.
+Options:
+	-d		delay interval for rebooting.
+[OPTION]... FILE...
+Remove (unlink) the FILE(s).  You may use '--' to
+indicate that all following arguments are non-options.
+Options:
+	-i		always prompt before removing each destination
+	-f		remove existing destinations, never prompt
+	-r or -R	remove the contents of directories recursively
+[OPTION]... [MODULE]...
+Unloads the specified kernel modules from the kernel.
+Options:
+	-a	Remove all unused modules (recursively)
+[{add|del|delete}]
+Edit the kernel's routing tables.
+Options:
+	-n		Dont resolve names.
+	-e		Display other/more information.
+	-A inet{6}	Select address family.
+Pause for N seconds.
+[OPTION]...
+Linux system and kernel logging utility.
+Note that this version of syslogd ignores /etc/syslog.conf.
+Options:
+	-m MIN		Minutes between MARK lines (default=20, 0=off)
+	-n		Run as a foreground process
+	-O FILE		Use an alternate log file (default=/var/log/messages)
+	-S		Make logging output smaller.
+	-R HOST[:PORT]	Log to IP or hostname on PORT (default PORT=514/UDP)
+	-L		Log locally and via network logging (default is network only)
+	-C [size(KiB)]	Log to a circular buffer (read the buffer using logread)
+EXPRESSION
+  or   [ EXPRESSION ]
+Checks file types and compares values returning an exit
+code determined by the value of EXPRESSION.
+[OPTION]... HOST [PORT]
+Transfers a file from/to a tftp server using "octet" mode.
+Options:
+	-l FILE	Local FILE.
+	-r FILE	Remote FILE.
+	-g	Get file.
+	-p	Put file.
+Return an exit code of TRUE (0).
+[-Cfbnqv] [-c CLIENTID] [-H HOSTNAME] [-i INTERFACE]
+[-p pidfile] [-r IP] [-s script]
+	-c,	--clientid=CLIENTID	Set client identifier
+	-C,	--clientid-none	Suppress default client identifier
+	-H,	--hostname=HOSTNAME	Client hostname
+	-h,	                   	Alias for -H
+	-f,	--foreground	Do not fork after getting lease
+	-b,	--background	Fork to background if lease cannot be immediately negotiated.
+	-i,	--interface=INTERFACE	Interface to use (default: eth0)
+	-n,	--now	Exit with failure if lease cannot be immediately negotiated.
+	-p,	--pidfile=file	Store process ID of daemon in file
+	-q,	--quit	Quit after obtaining lease
+	-r,	--request=IP	IP address to request (default: none)
+	-s,	--script=file	Run file at dhcp events (default: /usr/share/udhcpc/default.script)
+	-v,	--version	Display version
+[configfile]
+[flags] FILESYSTEM|DIRECTORY
+Unmount file systems
+Flags:
+	-a	Unmount all file systems
+	-r	Try to remount devices as read-only if mount is busy
+	-f	Force umount (i.e., unreachable NFS server)
+COMMAND [OPTIONS] ...
+vconfig lets you create and remove virtual ethernet devices.
+Options:
+	add             [interface-name] [vlan_id]
+	rem             [vlan-name]
+	set_flag        [interface-name] [flag-num]       [0 | 1]
+	set_egress_map  [vlan-name]      [skb_priority]   [vlan_qos]
+	set_ingress_map [vlan-name]      [skb_priority]   [vlan_qos]
+	set_name_type   [name-type]
+Usage: %s %s
+No help available.
+--help
+This applet requires root priviledges!
+invalid mode: %s
+d~ds:s~ds
+Rs:ud:r:
+TZ=UTC0
+File '%s' not found.
+%d:%d:%d
+%d:%d
+%d.%d-%d:%d:%d
+%d.%d-%d:%d
+%d.%d.%d-%d:%d:%d
+%d.%d.%d-%d:%d
+%2d%2d%2d%2d%d
+cannot set date
+%a, %d %b %Y %H:%M:%S GMT
+%a, %d %b %Y %H:%M:%S %z
+%a %b %e %H:%M:%S %Z %Y
+%Y.%m.%d-%H:%M:%S
+1k-blocks
+Filesystem%11s%-15sUsed Available Use%% Mounted on
+%s: can't find mount point.
+rootfs
+/dev/root
+%-21s%9ld %9ld %9ld %3ld%% %s
+Cadil1gnsxAkcetuSXrvLT:w:
+%7ld 
+%4lld 
+%-10s 
+%4ld 
+%-8d %-8d
+%4d, %3d 
+%9lld 
+%24.24s 
+%6.6s 
+%5.5s 
+ %4.4s 
+ -> 
+f-i:i-f
+fiRr
+cannot remove `.' or `..'
+%s: %s
+%s: out of range
+%s: bad number
+argument expected
+,closing paren expected
+missing ]
+unknown operand
+%s%c
+%i%c
+H-h:e*:f*:C-AB
+lnqvscFiHhe:f:LA:B:CE
+invalid context length argument
+HOME=/
+PATH=/usr/bin:/bin:/usr/sbin:/sbin
+SHELL=/bin/sh
+USER=root
+sysinit
+respawn
+askfirst
+wait
+once
+ctrlaltdel
+shutdown
+restart
+/dev/console
+Please press Enter to activate this console. 
+device '%s' does not exist.
+Bummer, can't open %s
+Can't fork!
+~`!$^&*()=|\{}[];"'<>?
+exec 
+Starting pid %d, console %s: '%s'
+Bummer, could not run '%s': %m
+The system is going down NOW !!
+Sending SIGTERM to all processes.
+Sending SIGKILL to all processes.
+Please stand by while rebooting the system.
+The system is halted. Press Reset or turn off power
+exec of '%s' failed: %m
+/dev/null
+Memory allocation failure
+/etc/inittab
+/sbin/reboot
+/bin/umount -a -r
+/sbin/swapoff -a
+/sbin/init
+/dev/tty2
+/dev/tty3
+/dev/tty4
+/etc/init.d/rcS
+/dev/
+Bad inittab entry: %s
+Reloading /etc/inittab
+linuxrc
+CONSOLE
+console
+/dev/ttyS%d
+/dev/tty%d
+/dev/tty0
+TERM
+linux
+TERM=vt102
+TERM=linux
+init started:  %s
+single
+init
+Process '%s' (pid %d) exited.  Scheduling it for restart.
+init
+linuxrc
+no process killed
+cannot open module `%s'
+cannot mmap `%s'
+Invalid module format
+Unknown symbol in module
+Module has wrong symbol version
+Invalid parameters
+cannot insert `%s': %s (%li)
+Module                  Size  Used by
+/proc/modules
+rmmod
+Sent %d probes (%d broadcast(s))
+Received %d repl%s
+%d request(s)
+%s%d broadcast(s)
+Unicast
+Broadcast
+reply
+request
+%s from 
+[%s]
+for %s 
+for 
+ %ld.%03ldms
+ UNSOLICITED?
+eth0
+Interface name `%s' must be less than %d
+h?bfDUAqc:w:s:I:
+socket
+Interface %s not found
+SIOCGIFFLAGS
+Interface %s is down
+Interface %s is not ARPable
+invalid or unknown target %s
+invalid source address %s
+WARNING: interface %s is ignored
+WARNING: setsockopt(SO_DONTROUTE)
+connect
+bind
+getsockname
+Interface "%s" is not ARPable (no ll address)
+ARPING to %s
+unknown
+ from %s via %s
+no src address in the non-DAD mode
+recvfrom
+addbr
+addif
+delbr
+delif
+setageing
+setbridgeprio
+setfd
+setgcint
+sethello
+setmaxage
+setpathcost
+setportprio
+show
+showmacs
+showstp
+%.2x%.2x.%.2x%.2x%.2x%.2x%.2x%.2x
+%4i.%.2i
+							%s
+%s (%i)
+ port id		%.4x			
+state			%s
+ designated root	
+	path cost		%4i
+ designated bridge	
+	message age timer	
+ designated port	%.4x
+			forward delay timer	
+ designated cost	%4i
+			hold timer		
+ flags			
+CONFIG_PENDING 
+TOPOLOGY_CHANGE_ACK 
+ STP is disabled for this interface
+ bridge id		
+ designated root	
+ root port		%4i			
+path cost		%4i
+ max age		
+			bridge max age		
+ hello time		
+			bridge hello time	
+ forward delay		
+			bridge forward delay	
+ ageing time		
+			gc interval		
+ hello timer		
+			tcn timer		
+ topology change timer	
+			gc timer		
+TOPOLOGY_CHANGE 
+TOPOLOGY_CHANGE_DETECTED 
+device %s already exists; can't create bridge with the same name
+br_add_bridge
+bridge %s doesn't exist; can't delete it
+bridge %s is still up; can't delete it
+br_del_bridge
+interface %s does not exist!
+device %s is already a member of a bridge; can't enslave it to bridge %s.
+device %s is a bridge device itself; can't enslave a bridge device to a bridge device.
+br_add_interface
+device %s is not a slave of %s
+br_del_interface
+can't find port %s in bridge %s
+bridge name	bridge id		STP enabled	interfaces
+%s		
+	%s		
+%3i	
+%.2x:%.2x:%.2x:%.2x:%.2x:%.2x	
+port	mac addr		local	ageing timer
+never heard of command [%s]
+this option requires a bridge name as argument
+bridge %s doesn't exist!
+incorrect number of arguments for command
+SIOCSIFMETRIC
+SIOCSIFMTU
+SIOCSIFTXQLEN
+SIOCSIFDSTADDR
+SIOCSIFNETMASK
+SIOCSIFBRDADDR
+SIOCSIFHWADDR
+SIOCSIFADDR
+SIOCDIFADDR
+metric
+txqueuelen
+dstaddr
+netmask
+broadcast
+pointopoint
+trailers
+promisc
+multicast
+allmulti
+dynamic
+down
+socket
+socket6
+SIOGIFINDEX
+ether
+invalid hw-addr %s
+SIOCGIFFLAGS
+SIOCSIFFLAGS
+--- %s ping statistics ---
+%ld packets transmitted, 
+%ld packets received, 
+%ld duplicates, 
+%ld%% packet loss
+round-trip min/avg/max = %lu.%lu/%lu.%lu/%lu.%lu ms
+sendto
+ping wrote %d chars; %d expected
+unknown address type; only AF_INET is currently supported.
+PING %s (%s): %d data bytes
+recvfrom
+%d bytes from %s: icmp_seq=%u
+ ttl=%d
+ time=%lu.%lu ms
+ (DUP!)
+Echo Reply
+Destination Unreachable
+Source Quench
+Redirect (change route)
+Echo Request
+Time Exceeded
+Parameter Problem
+Timestamp Request
+Timestamp Reply
+Information Request
+Information Reply
+Address Mask Request
+Address Mask Reply
+unknown ICMP type
+Warning: Got ICMP %d (%s)
+delete
+GHRDMDAC
+metric
+netmask
+gateway
+window
+irtt
+device
+	 reject
+!mod
+"dyn
+#reinstate
+#net
+#host
+/proc/net/route
+  MSS Window  irtt
+Metric Ref    Use
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags %s Iface
+%*[^
+%63s%lx%lx%X%d%d%d%lx%d%d%d
+fscanf
+%-16s%-16s%-16s%-6s
+%5d %-5d %6d %s
+%-6d %-2d %7d %s
+-net
+-host
+A:ne
+inet
+inet6
+/proc/net/ipv6_route
+Kernel IPv6 routing table
+%-44s%-40sFlags Metric Ref    Use Iface
+Destination
+Next Hop
+%32s%x%*s%x%32s%x%x%x%x%s
+%s/%d
+%-43s %-39s %-5s %-6d %-2d %7d %-8s
+default
+resolving %s
+SIOGIFINDEX
+gateway %s is a NETWORK
+netmask %.8x and host route conflict
+bogus netmask %s
+netmask and route address conflict
+socket
+SIOC[ADD|DEL]RT
+Undefined error
+File not found
+Access violation
+Disk full or allocation error
+Illegal TFTP operation
+Unknown transfer ID
+File already exists
+No such user
+gpl:r:
+local file
+socket
+read
+write
+too long remote-filename
+send
+octet
+recvfrom
+timeout
+last timeout
+select
+server says: %s
+VLAN_PLUS_VID
+VLAN_PLUS_VID_NO_PAD
+DEV_PLUS_VID
+DEV_PLUS_VID_NO_PAD
+set_name_type
+set_flag
+set_egress_map
+set_ingress_map
+/proc/net/vlan/config
+open %s
+if_name >= %d chars
+socket or ioctl error for %s
+disabled
+listening
+learning
+forwarding
+blocking
+<INVALID STATE>
+eth0
+/usr/share/udhcpc/default.script
+DHCPC perform a DHCP renew
+deconfig
+lDHCPC Unicasting a release of %s to %s
+release
+DHCPC Entering released state
+clientid
+clientid-none
+foreground
+background
+hostname
+interface
+pidfile
+quit
+request
+script
+unicast
+version
+c:CfbH:h:i:np:qr:s:uv
+udhcpcd, version %s
+0.9.9-pre
+udhcpc
+FATAL: couldn't listen on socket, %m
+No lease, failing.
+DHCPC Send DISCOVER with request ip %X and unicast flag %d
+leasefail
+DHCPC DHCP Service unavailable, recv no OFFER
+No lease, forking to background.
+DHCPC Send REQUEST to server %x with request ip %x
+Lease lost, entering init state
+DHCPC Broadcast REQUEST with request ip %x
+DHCPC Recv OFFER from server %x with ip %x
+No lease time with ACK, using 1 hour lease
+DHCPC: offered address is in use (got ARP reply), Send decline
+Lease of %s obtained, lease time %ld
+DHCPC Recv ACK from server %x with ip %x lease time %ld
+renew
+bound
+Received DHCP NAK
+DHCPC Recv NAK from server %x with ip %x
+sig:%d
+unicast renew
+broadcast renew
+DHCPC: Error after mac clone, can't read WAN interface information
+DHCPC: mac clone, re-read WAN interface information
+Received SIGTERM
+/dev/urandom
+Could not load seed from /dev/urandom: %m
+MSFT 5.0
+Sending discover...
+Sending select for %s...
+Sending renew...
+Sending release...
+received bogus message (bad magic) -- ignoring
+msgget
+IPC:this msg is not for dhcpc
+IPC:incorrect magic
+IPC:unsupported version
+httpd_ipc_send:msg too log
+msqid:%d mtype:%d
+busybox:msgsnd
+renew
+bound
+deconfig
+DHCPC: parse classless static route option error
+DHCPC: get %d static route from classless static route option(121)
+DHCPC: parse Microsoft classless static route option error
+DHCPC: get %d static route from Microsoft classless static route option(249)
+DHCPC: parse static route option error
+DHCPC: get %d static route from static route option(33)
+DHCPC:GET ip:%x mask:%x gateway:%x dns1:%x dns2:%x static route:%x
+shmget
+two many clients
+DHCPS:REQUEST ip %x, static ip %x
+DHCPS:REQUEST ip %x is reserved as a static ip
+DHCPS:REQUEST ip %x already reserved by someone
+DHCPS:REQUEST ip %x is not in the address pool
+/etc/udhcpd.conf
+udhcpd
+max_leases value (%lu) not sane, setting to %lu instead
+FATAL: couldn't create server socket, %m
+Received a SIGUSR1
+Received a SIGUSR2, now DHCP SERVER restart
+errno:%d
+Received a SIGTERM
+DHCPS:Recv DISCOVER from %02X:%02X:%02X:%02X:%02X:%02X
+send OFFER failed
+DHCPS:Recv REQUEST from %02X:%02X:%02X:%02X:%02X:%02X
+DHCPS:Wrong Server id or request an invalid ip
+DHCPS:Server id not found and request an invalid ip
+DHCPS:Server id and requested ip not found
+DHCPS:%x %x
+DHCPS:REQUEST ip %x already reserved by %02X:%02X:%02X:%02X:%02X:%02X
+DHCPS:Recv DECLINE from %02X:%02X:%02X:%02X:%02X:%02X
+DHCPS:Recv RELEASE from %02X:%02X:%02X:%02X:%02X:%02X
+DHCPS:Recv INFORM from %02X:%02X:%02X:%02X:%02X:%02X
+unsupported DHCP message (%02x) -- ignoring
+Could not setsocketopt on raw socket
+start
+192.168.1.100
+192.168.1.199
+interface
+eth0
+option
+max_leases
+remaining
+auto_time
+7200
+decline_time
+3600
+conflict_time
+offer_time
+min_lease
+lease_file
+/var/lib/misc/udhcpd.leases
+pidfile
+/var/run/udhcpd.pid
+notify_file
+siaddr
+0.0.0.0
+sname
+boot_file
+static_lease
+, 	/-
+unable to open config file: %s
+Failure parsing line %d of %s
+%s belongs to someone, reserving it for %ld seconds
+Unknown
+DHCPS:lease host name not found
+DHCPS:no ip addresses to give, OFFER abandoned
+DHCPS:lease pool is full, OFFER abandoned
+DHCPS:Send OFFER with ip %s
+DHCPS:Send NAK
+DHCPS:Send ACK to %s
+lease host name not found
+EMERGENCY!
+ALERT!
+critical!
+warning
+error
+info
+debug
+fork
+%s, 
+/dev/null
+%s (v%s) started
+0.9.9-pre
+buf = %08X, len=%d
+%02X 
+- %02X 
+%02X 
+bogus packet, option fields too long.
+Option 0x%02x did not fit into the packet!
+MSFT 98
+received bogus message, ignoring
+Unable to open pidfile %s: %m
+udhcp_sp_ipc_inform send
+SIOCGIFADDR failed, is the interface up and configured?: %m
+SIOCGIFINDEX failed!: %m
+SIOCGIFHWADDR failed!: %m
+socket failed!: %m
+%2d) %-16s
+bad signal name '%s'
+Bad PID '%s'
+Could not kill pid '%d'
+  PID  Uid     VmSize Stat Command
+%5d %-8s        %s 
+%5d %-8s %6ld %s 
+[%s]
+bad speed: %s
+too many alternate speeds
+/bin/login
+tty1
+/etc/issue
+bad timeout value: %s
+I:LH:f:hil:mt:wn
+TERM
+/dev
+/dev: chdir() failed: %m
+/dev/%s: %m
+/dev/%s: not a character device
+/dev/%s: cannot open as standard input: %m
+%s: not open for read/write
+%s: dup problem: %m
+%s: ioctl: %m
+%s: read: %m
+%s: input overrun
+%s: ioctl: TCSETA: %m
+%s: can't exec %s: %m
+Login timed out after %d seconds.
+-f permission denied
+f:h:p
+/dev/
+UNKNOWN
+ on `%.100s' from `%.200s'
+ on `%.100s'
+login
+Login incorrect
+invalid password for `%s'%s
+System closed for routine maintenance.
+[Disconnect bypassed -- root login allowed.]
+/dev/%s
+unable to determine TTY name, got %s
+root login %s
+PLACEHOLDER
+TCOM
+TPAREN
+TPIPE
+TLIST
+TAND
+TFOR
+TCASE
+TWHILE
+TUNTIL
+TELIF
+TPAT
+TBRACE
+TASYNC
+TDOT
+case
+esac
+while
+done
+then
+else
+elif
+until
+break
+continue
+eval
+exec
+exit
+export
+help
+login
+newgrp
+read
+readonly
+shift
+times
+trap
+umask
+wait
+Signal 0
+Hangup
+Quit
+Illegal instruction
+Trace/BPT trap
+Abort
+Bus error
+Floating Point Exception
+Killed
+SIGUSR1
+SIGSEGV
+SIGUSR2
+Alarm clock
+Terminated
+getcell(0)
+not contig
+command line too complicated
+no Shell
+argument list too long
+not found
+cannot execute
+Built-in commands:
+-------------------
+%s%s
+%dm%fs %dm%fs
+%dm%fs %dm%fs
+.msh_XXXXXX
+: cannot redirect shell command
+open
+create
+: illegal >& argument
+here file
+: cannot 
+/dev/null
+out of string space
+can't create pipe - try again
+: bad number
+trap: bad signal number
+bad break/continue level
+: no home directory
+: bad directory
+Shell input nested too deeply
+too many files open in shell
+: cannot open
+: not found
+ is read-only
+: bad identifier
+export 
+readonly 
+unclosed ${
+no closing `
+nothing to shift
+Usage: read name ...
+input line too long
+here document `
+' unclosed
+0123456789
+`$ '"	;&<>()|^
+word too long
+"'`$
+syntax error
+no closing 
+string in ${} too long
+=-+?
+cannot use ${...=...} with $n
+missing value for 
+unset variable: 
+unclosed ${
+$`'"
+Signal 
+ - core dumped
+SHELL
+HOME
+PATH
+/sbin:/bin:/usr/sbin:/usr/bin
+/bin:/usr/bin
+BusyBox v1.01 (2013.09.23-07:32+0000) Built-in shell (msh)
+Enter 'help' for a list of built-in commands.
+.profile
+/etc/profile
+[%dD
+[%dA
+[%dC
+ `"#$%^&*()=+{}[]:;'|\<>
+PATH
+exit
+Kernel log daemon exiting.
+daemon
+kernel
+klogd started: BusyBox v1.01 (2013.09.23-07:32+0000)
+klogd: Error return from sys_sycall: %d - %m.
+unknown facility name: %s
+unknown priority name: %s
+p:st:
+Can't find circular buffer
+Can't get access to circular buffer from syslogd
+Can't get access to semaphone(s) for circular buffer from syslogd
+semop[SMrdn]
+semop[SMrup]
+<empty syslog>
+auth
+authpriv
+cron
+daemon
+kern
+mail
+mark
+news
+security
+syslog
+user
+uucp
+local0
+local1
+local2
+local3
+local4
+local5
+local6
+local7
+alert
+crit
+debug
+emerg
+error
+info
+none
+notice
+panic
+warn
+warning
+/var/log/messages
+Exiting Syslogd!
+get share memory success.
+shmget
+atttach share memary succeed. addr:%d.
+shmat
+semget
+allocated share memory 
+Buffer already allocated just grab the semaphore?
+semop[SMwdn]
+Weird! Can't find the terminator token??? 
+Weird! Can't find the terminator token from the beginning??? 
+semop[SMwup]
+/dev/console
+Bummer, can't print: 
+cannot create socket
+<%d>
+%s.%s
+<%d> %s
+%s %s %s %s %3i
+System log daemon exiting.
+m:nO:s:Sb:R:l:r:LC
+/var/log
+Couldn't get file descriptor for socket /var/log
+Could not connect to socket /var/log
+Could not set permission on /var/log
+select error
+Receive message:%s.
+UNIX socket error
+async
+atime
+defaults
+noauto
+diratime
+exec
+noatime
+nodev
+nodiratime
+noexec
+nosuid
+remount
+suid
+sync
+bind
+move
+%s is write-protected, mounting read-only
+auto
+o:rt:wafnv
+/dev/root
+%s on %s type %s (%s)
+rootfs
+/etc/fstab
+Cannot read /etc/fstab
+swap
+nfsmount failed
+/etc/filesystems
+/proc/filesystems
+Mounting %s on %s failed
+Can't find %s in /etc/fstab
+unknown nfs status return value: %d
+excessively long host:dir argument
+warning: multiple hostnames not supported
+directory to mount not in host:dir format
+got bad hp->h_length
+excessively long option argument
+%s%saddr=%s
+rsize
+wsize
+timeo
+retrans
+acregmin
+acregmax
+acdirmin
+acdirmax
+actimeo
+retry
+port
+mountport
+mounthost
+mountprog
+mountvers
+nfsprog
+nfsvers
+vers
+proto
+Warning: Unrecognized proto= option.
+namlen
+Warning: Option namlen is not supported.
+addr
+unknown nfs mount parameter: %s=%d
+soft
+hard
+intr
+posix
+lock
+Warning: option nolock is not supported.
+unknown nfs mount option: %s%s
+NFSv%d not supported!
+got bad hp->h_length?
+mount
+%s:%s failed, reason given by server: %s
+NFS over TCP is not supported.
+nfs socket
+nfs bindresvport
+nfs connect
+rootfs
+/dev/root
+forced umount of %s failed!
+%s busy - remounted read-only
+Cannot remount %s read-only
+Cannot open %s
+proc
+Couldn't umount %s on %s: %s
+cannot set groups
+cannot set group id
+cannot set user id
+%s%s%s
+no valid shadow password
+Password: 
+icmp
+could not stat '/'
+/dev
+could not open '/dev'
+/dev/root
+default
+getaddrinfo: %s: %d
+default
+getnameinfo failed
+unspec
+UNSPEC
+inet6
+IPv6
+inet
+DARPA Internet
+%n%Lu%u%u%u%u%n%n%n%Lu%u%u%u%u%u
+%Lu%Lu%u%u%u%u%n%n%Lu%Lu%u%u%u%u%u
+%Lu%Lu%u%u%u%u%u%u%Lu%Lu%u%u%u%u%u%u
+BROADCAST 
+DEBUG 
+LOOPBACK 
+POINTOPOINT 
+NOTRAILERS 
+RUNNING 
+NOARP 
+PROMISC 
+ALLMULTI 
+SLAVE 
+MASTER 
+MULTICAST 
+unknown
+10base2
+10baseT
+100baseT
+100baseTX
+100baseFX
+Point-Point Protocol
+ether
+Ethernet
+loop
+Local Loopback
+[NONE SET]
+[UNKNOWN]
+%02X-
+/proc/net
+No usable address families found.
+warning: no inet socket available
+SIOCGIFCONF
+/proc/net/dev
+Warning: cannot open %s. Limited output.
+compressed
+bytes
+Device not found
+%s: error fetching interface information: %s
+%02X:%02X:%02X:%02X:%02X:%02X
+X bytes:%Lu (%Lu.%u %sB)%s
+%-9.9s Link encap:%s  
+HWaddr %s  
+Media:%s
+(auto)
+          %s addr:%s 
+ P-t-P:%s 
+ Bcast:%s 
+ Mask:%s
+/proc/net/if_inet6
+%s:%s:%s:%s:%s:%s:%s:%s
+          inet6 addr: %s/%d
+ Scope:
+Global
+Link
+Site
+Compat
+Host
+Unknown
+%4s%4s%4s%4s%4s%4s%4s%4s %02x %02x %02x %02x %20s
+          
+[NO FLAGS] 
+ MTU:%d  Metric:%d
+RX packets:%Lu errors:%lu dropped:%lu overruns:%lu frame:%lu
+             compressed:%lu
+TX packets:%Lu errors:%lu dropped:%lu overruns:%lu carrier:%lu
+          collisions:%lu 
+compressed:%lu 
+txqueuelen:%d 
+          R
+Interrupt:%d 
+Base address:0x%lx 
+Memory:%lx-%lx 
+DMA chan:%x 
+socket
+cannot get system information
+%H:%M:%S
+%A, %d %B %Y
+ login: 
+rwxSTst
+?pc?d?b?-?l?s???
+/proc/mounts
+augo
+rwxXst
+abfnrtv\
+/proc
+Can't open /proc
+/proc/%d
+/proc/%d/stat
+%*s (%15c
+%c %d %*s %*s %*s %*s %*s %*s %*s %*s %*s %*s %*s %*s %*s %*s %ld %*s %*s %*s %*s %ld
+/proc/%d/cmdline
+unable to stat `%s'
+cannot remove `%s'
+%s: is a directory
+%s: descend into directory `%s'? 
+unable to open `%s'
+unable to close `%s'
+%s: remove directory `%s'? 
+%s: remove `%s'? 
+unable to remove `%s'
+cannot run %s
+unable to cd to %s' for user %s'
+cannot cd to home directory or /
+warning: cannot change to home directory
+TERM
+HOME
+SHELL
+USER
+LOGNAME
+/bin:/usr/bin
+/usr/sbin:/bin:/usr/bin:/sbin
+PATH
+EXIT
+QUIT
+ABRT
+KILL
+SEGV
+PIPE
+ALRM
+TERM
+USR1
+USR2
+CHLD
+CONT
+STOP
+TSTP
+TTIN
+TTOU
+TRAP
+POLL
+XCPU
+XFSZ
+VTALRM
+PROF
+WINCH
+%s: 
+%s%s
+Unable to connect to remote host (%s)
+getcwd()
+xregcomp: %s
+BusyBox v1.01 (2013.09.23-07:32+0000) multi-call binary
+memory exhausted
+invalid date `%s'
+Write Error
+can`t create raw socket
+permission denied. (are you root?)
+/etc/nologin
+/etc/securetty
+/etc/motd
+standard input
+-/bin/sh
+bb_xstrndup bug
+bb_xasprintf
+unknown %cid %ld
+standard output
+A7, 
+A`P@
+/dev/console
+subnet
+timezone
+router
+timesvr
+namesvr
+logsvr
+cookiesvr
+lprsvr
+!	hostname
+bootsize
+domain
+swapsvr
+rootpath
+ipttl
+broadcast
+srouter
+5!ntpsrv
+!*vsinfo
+5+wins
+1,nbnt
+.nbs
+5/requestip
+2lease
+3dhcptype
+5serverid
+6message
+8maxsize
+9tftp
+Bbootfile
+Ccsrouter
+5ymscsrouter5

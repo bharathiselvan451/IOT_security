@@ -1,0 +1,11 @@
+[*] Binary protection state of libupnp.so.3.0.5
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  PIE enabled  RPATH        No RUNPATH   No Symbols
+
+
+[*] Function system tear down of libupnp.so.3.0.5
+
+
+[*] Function system used 0 times libupnp.so.3.0.5
+

@@ -1,0 +1,38 @@
+[+] Binary firmware file analyzer
+=================================================================
+The firmware bin file check module conducts an analysis of binary firmware files, extracting key details like checksums and entropy, generating visual entropy graphs and identifying specific firmware types such as UEFI/BIOS, AVM or D-Link encrypted
+
+[*] Entropy testing with binwalk ... 
+
+DECIMAL       HEXADECIMAL     ENTROPY
+--------------------------------------------------------------------------------
+0             0x0             Falling entropy edge (0.504150)
+8192          0x2000          Rising entropy edge (1.000000)
+24576         0x6000          Falling entropy edge (0.328857)
+143360        0x23000         Rising entropy edge (1.000000)
+1130496       0x114000        Falling entropy edge (0.006348)
+1183744       0x121000        Rising entropy edge (1.000000)
+3899392       0x3B8000        Falling entropy edge (0.823242)
+
+[*] Details of the firmware file:
+    -rw-rw-r-- 1 linuxbrew linuxbrew 7.9M Jul 31 20:31 /firmware
+    /firmware: firmware 1042 v1 TP-LINK Technologies ver. 1.0, version 3.15.7, 8258048 bytes or less, at 0x200 998400 bytes , at 0x100000 7077888 bytes 
+
+00000000  01 00 00 00 54 50 2d 4c  49 4e 4b 20 54 65 63 68  |....TP-LINK Tech|
+00000010  6e 6f 6c 6f 67 69 65 73  00 00 00 00 76 65 72 2e  |nologies....ver.|
+00000020  20 31 2e 30 00 00 00 00  00 00 00 00 00 00 00 00  | 1.0............|
+00000030  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+00000040  10 42 00 01 00 00 00 01  00 00 00 00 09 6d 6c aa  |.B...........ml.|
+00000050  c2 78 4d 3c 4c 52 f7 2c  45 76 d0 85 00 00 00 00  |.xM<LR.,Ev......|
+00000060  3f b7 71 42 1b f8 19 1d  54 cc e6 b3 5c 54 c2 99  |?.qB....T...\T..|
+00000070  00 00 00 00 00 02 00 00  80 50 00 00 00 7e 02 00  |.........P...~..|
+00000080  00 00 02 00 00 0f 3c 00  00 10 00 00 00 6c 00 00  |......<......l..|
+00000090  00 00 00 00 00 00 62 f8  00 03 00 0f 00 07 00 00  |......b.........|
+
+[*] SHA512 checksum: 7c0968f5dee31c6af0fb1bf26719c45f492831dcf1bbd5fc3f6b970eccb3191ca48d4c35dd0a08810ad935b5294d61908eeca16c12854536873fca6a1a12b9df
+
+[*] Entropy of firmware file:
+    4.607654 bits per byte.
+
+[*] Visualized firmware file (first 2000 bytes):
+

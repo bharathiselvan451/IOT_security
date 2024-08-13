@@ -1,0 +1,1571 @@
+/lib/ld-uClibc.so.0
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+stderr
+get_u32
+strcmp
+get_tc_lib
+snprintf
+malloc
+strlen
+strcpy
+_dlsym
+strncpy
+fwrite
+matches
+do_qdisc
+do_class
+do_filter
+do_action
+do_tcmonitor
+show_stats
+tc_core_init
+rtnl_open
+cmdlineno
+stdin
+getcmdline
+makeargs
+force
+rtnl_close
+show_details
+show_raw
+freopen
+__errno_location
+strerror
+show_pretty
+use_iec
+exit
+fputc
+memset
+check_size_table_opts
+ll_init_map
+ll_name_to_index
+rtnl_talk
+get_qdisc_handle
+get_tc_classid
+parse_size_table
+parse_estimator
+tc_calc_size_table
+incomplete_command
+duparg
+invarg
+get_qdisc_kind
+parse_rtattr
+print_tcstats_attr
+fflush
+ll_index_to_name
+print_size_table
+rtnl_dump_request
+stdout
+rtnl_dump_filter
+print_qdisc
+perror
+tc_qdisc_modify
+tc_qdisc_list
+filter_qdisc
+filter_classid
+filter_ifindex
+print_class
+tc_class_modify
+tc_class_list
+ll_proto_a2n
+get_filter_kind
+f_proto
+ll_proto_n2a
+print_filter
+tc_filter_modify
+tc_filter_list
+getenv
+strtod
+strcasecmp
+__muldf3
+__fixunsdfsi
+strchr
+get_rate
+get_integer
+__floatsidf
+__gedf2
+__divdf3
+__adddf3
+tc_core_tick2time
+sprint_time
+get_size
+__subdf3
+__ltdf2
+__gtdf2
+sscanf
+__iproute2_user_hz_internal
+__get_user_hz
+__udivdi3
+memcpy
+sprint_rate
+sprint_size
+print_tcstats2_attr
+fopen
+rtnl_from_file
+accept_tcmsg
+rtnl_listen
+police_action_a2n
+get_size_and_cell
+tc_calc_rtable
+tc_calc_xmittime
+get_police_result
+get_u16
+get_linklayer
+act_parse_police
+tc_calc_xmitsize
+police_action_n2a
+police_action_util
+get_time
+tc_setup_estimator
+gact_ld
+get_action_kind
+new_cmd
+tab_flush
+batch_c
+tc_print_one_action
+tc_print_action
+parse_action
+tc_action_modify
+tc_action_gd
+tc_act_list_or_flush
+act_usage
+__ctype_b
+vfprintf
+ematch_err
+ematch_argc
+bstr_print
+fputs
+ematch_argv
+ematch_parse
+ematch_root
+fgets
+fclose
+em_parse_error
+addraw_l
+calloc
+strdup
+putchar
+print_ematch_tree
+stpcpy
+ematch_debug
+ematch_char
+ematch_nerrs
+ematch_lloc
+ematch_lval
+ematch_lex
+ematch_error
+ematch_in
+ematch_text
+ematch__flush_buffer
+fileno
+isatty
+ematch_lineno
+ematch_out
+ematch_leng
+ematch__flex_debug
+ematch_alloc
+ematch_realloc
+ematch__switch_to_buffer
+ematch__scan_buffer
+ematch__scan_bytes
+ematch__create_buffer
+bstr_alloc
+ematch_restart
+ematch_free
+ematch__delete_buffer
+ematch_pop_buffer_state
+prio_print_opt
+addattr_nest_compat
+addattr_nest_compat_end
+get_unsigned
+__parse_rtattr_nested_compat
+memcmp
+parse_at
+get_prefix_1
+mask2bits
+inet_ntop
+get_u32_handle
+sprint_u32_handle
+sprint_tc_classid
+tc_print_police
+strtol
+parse_ematch
+print_ematch
+__iproute2_hz_internal
+__get_hz
+exit_tryhelp
+sprintf
+strtoull
+string_to_number_ll
+string_to_number_l
+lib_dir
+string_to_number
+getopt_long
+optarg
+optind
+build_st
+print_tm
+ll_idx_n2a
+if_nametoindex
+rtnl_wilddump_request
+ll_remember_index
+socket
+setsockopt
+rcvbuf
+bind
+getsockname
+rtnl_open_byproto
+recv
+sendmsg
+recvmsg
+rtnl_dump_filter_l
+fread
+ftell
+addattr_nest
+addattr_nest_end
+inet_pton
+dnet_pton
+get_addr_1
+atoi
+fscanf
+sysconf
+ipx_ntop
+dnet_ntop
+resolve_hosts
+gethostbyaddr
+rt_addr_n2a
+sethostent
+gettimeofday
+localtime
+asctime
+getline
+strcat
+strstr
+strtok
+__cmpdi2
+__floatdidf
+__fixunsdfdi
+tc_core_time2tick
+tc_align_to_atm
+tc_adjust_size
+sprint_linklayer
+gact_action_util
+ipt_action_util
+mirred_action_util
+nat_action_util
+pedit_action_util
+skbedit_action_util
+cmp_ematch_util
+meta_ematch_util
+nbyte_ematch_util
+u32_ematch_util
+p_pedit_icmp
+p_pedit_ip
+p_pedit_ip6
+p_pedit_tcp
+p_pedit_udp
+atm_qdisc_util
+cbq_qdisc_util
+drr_qdisc_util
+dsmark_qdisc_util
+bfifo_qdisc_util
+pfifo_qdisc_util
+pfifo_fast_qdisc_util
+gred_qdisc_util
+hfsc_qdisc_util
+htb_qdisc_util
+htb2_qdisc_util
+ingress_qdisc_util
+multiq_qdisc_util
+netem_qdisc_util
+prio_qdisc_util
+sfq_qdisc_util
+tbf_qdisc_util
+basic_filter_util
+cgroup_filter_util
+flow_filter_util
+fw_filter_util
+route_filter_util
+rsvp_filter_util
+rsvp6_filter_util
+tcindex_filter_util
+u32_filter_util
+libresolv.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+libdl.so.0
+libm.so.0
+libc.so.0
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+ematch_get_in
+get_addr32
+duparg2
+get_percent
+get_rate_and_cell
+_gp_disp
+print_timestamp
+bstrtoul
+get_s16
+ematch_push_buffer_state
+ematch_get_text
+parse_rtattr_byindex
+get_u8
+ematch_set_lineno
+tc_core_time2big
+dotted_to_addr
+get_addr
+tc_core_time2ktime
+sprint_qdisc_handle
+ll_index_to_addr
+format_host
+hexstring_a2n
+sprint_percent
+rta_addattr_l
+__start
+ematch_get_leng
+get_jiffies
+rta_addattr32
+ematch_lex_destroy
+tc_core_ktime2time
+ll_index_to_flags
+exit_error
+ematch_get_out
+ematch_set_in
+addr_to_dotted
+ematch_set_debug
+hexstring_n2a
+get_u64
+rtnl_send_check
+ematch_get_debug
+sprint_ticks
+ematch__scan_string
+ematch_set_out
+ll_index_to_type
+xtables_register_target
+rtnl_send
+get_s8
+inet_addr_match
+__data_start
+ematch_get_lineno
+get_prefix
+missarg
+GCC_3.0
+GLIBC_2.0
+$'9<`
+ '9	@
+$Bu@
+$!u@
+0!$g
+@8!$
+ 8!<
+$$B=H
+Pu`<
+@8!$
+ 8!<
+$$B=
+$c>D
+Pud<
+$'9B
+$'9B
+(!6f
+8!6%
+$'9I
+ (!4c
+$'9I
+@(!$
+ $UI
+$'9I
+  !&
+$'9^
+$'9^
+ !&1
+ !&1
+$'9^
+$'9^
+@ !&
+$'9q 
+$'9q 
+ !&1
+ !&1
+$'9q 
+$'9q 
+$B!d<
+	$Pi
+`8!&
+@ !<
+`(!$
+ (!.B
+@8!$
+ $c#
+$B#|
+H!$b
+P!$b
+&E%T
+ $c&
+`(!$
+@ !&1
+@ !&1
+@ !&1
+@ !&1
+@ !&1
+	&E( 
+	&D( 
+	&E+D
+	&E+D
+ 8!<
+b.<$d.<
+ !$B
+$E.p
+@ !&
+@8!&1
+ 8!$
+ !$B
+`(!$c
+0!$B
+ !$g
+(!$c
+&&14
+&e1,
+ $G18
+&$14
+	$D1<
+&&14
+&e1,
+$F1@
+ $ckx
+@ !$
+h$B2T
+@ !'9
+@8!'
+ $Bk|
+ $Bk|
+@(!$
+&b18
+&F14
+ 8!$
+ 8!$
+@&e6d
+0!$	
+$B5P
+ $B6
+ $c6
+ $B4H
+@8!$
+	 !$u
+`0!$
+ $B4H
+$B44
+ $B4
+ $c7
+$P44
+@8!$B3
+!$B5
+ $B5h
+#&c3
+ $B44
+ $B3
+|$P3
+@8!&d7
+ $B4 
+ !'9
+ !'9
+y&c3
+ $B4 
+($B3
+ $M?
+ '19
+ $r9l
+ $P9
+El8$
+fl4$Q
+@(!'9
+ $K?
+ $q9l
+`p!$X9
+ $o9
+ $L:
+!$D9
+ '$:
+lL$B
+  !$B
+C(!'9
+ '$?
+8!$J9l
+ $K9
+lL$B
+@(!<
+|$W'p
+$^*@&
+@ !&
+!$bD$
+	&EE
+ $FE
+$FE0
+  !'
+  !'
+8$0p
+('98
+&eG@
+0!&1
+	&eG@
+ '98
+ '99
+ !'98
+('98
+($Q9
+('9<
+@0!'
+8!'9;\
+@0!'
+8!'9<
+@0!'
+8!'9>
+@0!'
+<'9@
+ !&b
+@0!'
+D'9Bp
+@0!'
+<'9@
+@0!'
+('9>
+@0!'
+0'9F
+ !&b
+@0!'
+D'9Bp
+ !&b
+@0!'
+('9>
+ !&b
+@0!'
+('9>
+ !&b
+@0!'
+@0!'
+ !&b
+@0!'
+8!'9;\
+@0!'
+ !&b
+@0!'
+*'9<
+ !&b
+@0!'
+('9<
+@0!'
+ !&b
+@0!'
+('9D
+@0!'
+ !&"
+@0!'
+@0!'
+('9<
+@0!'
+@ !$
+<'99
+@ !$
+@0!'
+(!$S
+@0!'
+)'9>
+(!$S
+@0!'
+ $cI
+@8!$
+ $FH
+$FIl
+ $cI
+@8!$
+ $FH
+$FIl
+$HG@
+ $HJP
+` !$c
+ '9H
+$EJp
+ !$B
+0!&1
+` !$
+` !$
+` !$
+` !$
+` !$
+ 0!'
+('93
+@$FML$
+@$FJP
+ (!&D
+@ !$B
+	&%N
+ !$B
+('9pP
+	&eP
+('9w
+('9~
+	&eU
+	&EU
+	&DU
+('9~
+	&EU
+` !$
+` !$
+	&EU
+	&EU
+	&EV
+	&EV
+('9~
+@ !&1
+@ !&1
+@ !&1
+y'9~
+b'9~
+('9~
+@ !<
+@$Pm
+p !&
+ $BYd
+&%Y|
+5(#$B
+('%Y
+	$eY
+@ !'9
+$BYd$
+!$Rv
+@ !4
+@ !(B
+`(!$
+b8$$
+@(!'
+`0!&
+@ !&
+` !$
+P!$B
+D@!$B
+H!$B
+ P!$d
+P!$B
+D@!$B
+`0!$
+H!$B
+ P!$d
+(!$F
+ *,B
+r0*$B
+(*,B
+(!$b
+@ !$
+  !'
+@(!'
+  !$
+S0!$
+@ !$
+@8!$
+ $ba
+@8!$
+4cB@
+0$Ba
+ !$B
+	&eb
+T&eb
+$In0
+$Qn0
+$0!$E
+#0!$E
+@(!*
+d8&1
+	&ed8
+	&Ed<
+ &Dd<
+	&EdL
+ &DdL
+	&Edl
+ &Ddl
+	&Ed
+ &Dd
+&Dd<
+&DdL
+&Ddl
+$'9;
+ 091226
+[Unknown qdisc, optlen=%u] 
+Unknown qdisc "%s", hence option "%s" is unparsable
+fh %08x [Unknown filter, optlen=%u] 
+fh %08x 
+Unparsable filter ID "%s"
+Unknown filter "%s", hence option "%s" is unparsable
+%s/q_%s.so
+%s_qdisc_util
+%s/f_%s.so
+%s_filter_util
+Usage: tc [ OPTIONS ] OBJECT { COMMAND | help }
+       tc [-force] -batch filename
+where  OBJECT := { qdisc | class | filter | action | monitor }
+       OPTIONS := { -s[tatistics] | -d[etails] | -r[aw] | -p[retty] | -b[atch] [filename] }
+qdisc
+class
+filter
+actions
+monitor
+help
+Object "%s" is unknown, try "tc help".
+-stats
+Command failed %s:%d
+-statistics
+-details
+-raw
+Cannot open file "%s" for reading: %s
+-pretty
+-Version
+-iec
+Cannot open rtnetlink
+-help
+-force
+-batch
+Option "%s" is unknown, try "tc -help".
+tc utility, iproute2-ss%s
+Usage: tc qdisc [ add | del | replace | change | show ] dev STRING
+       [ handle QHANDLE ] [ root | ingress | parent CLASSID ]
+       [ estimator INTERVAL TIME_CONSTANT ]
+       [ stab [ help | STAB_OPTIONS] ]
+       [ [ QDISC_KIND ] [ help | OPTIONS ] ]
+       tc qdisc show [ dev STRING ] [ingress]
+Where:
+QDISC_KIND := { [p|b]fifo | tbf | prio | cbq | red | etc. }
+OPTIONS := ... try tc qdisc add <desired QDISC_KIND> help
+STAB_OPTIONS := ... try tc qdisc add stab help
+handle
+root
+ingress
+parent
+help
+Garbage instead of arguments "%s ...". Try "tc qdisc help".
+estimator
+stab
+Cannot find device "%s"
+qdisc '%s' does not support option parsing
+invalid qdisc ID
+Error: "root" is duplicate parent ID
+invalid parent ID
+failed to calculate size table.
+Error: "ingress" is a duplicate parent ID
+qdisc %s %x: 
+refcnt %d 
+pfifo_fast
+prio
+Not a qdisc
+dev %s 
+parent %s 
+root 
+deleted 
+[cannot parse qdisc parameters]
+print_qdisc: NULL kind
+Wrong len %d
+Duplicate parent ID
+Cannot send dump request
+Dump terminated
+What is "%s"? Try "tc qdisc help".
+change
+replace
+link
+delete
+list
+show
+Command "%s" is unknown, try "tc qdisc help".
+Usage: tc class [ add | del | change | replace | show ] dev STRING
+       [ classid CLASSID ] [ root | parent CLASSID ]
+       [ [ QDISC_KIND ] [ help | OPTIONS ] ]
+       tc class show [ dev STRING ] [ root | parent CLASSID ]
+Where:
+QDISC_KIND := { prio | cbq | etc. }
+OPTIONS := ... try tc class add <desired QDISC_KIND> help
+Error: Qdisc "%s" is classless.
+classid
+handle
+root
+parent
+help
+Garbage instead of arguments "%s ...". Try "tc class help".
+estimator
+Cannot find device "%s"
+invalid class ID
+Error: try "classid" instead of "handle"
+invalid parent ID
+Error: "root" is duplicate parent ID.
+class %s %s 
+parent %s 
+[cannot parse class parameters]
+Not a class
+leaf %x: 
+dev %s 
+root 
+deleted 
+print_class: NULL kind
+Wrong len %d
+qdisc
+invalid qdisc ID
+Cannot send dump request
+Dump terminated
+Error: "root" is duplicate parent ID
+What is "%s"? Try "tc class help".
+change
+replace
+delete
+list
+show
+Command "%s" is unknown, try "tc class help".
+Usage: tc filter [ add | del | change | replace | show ] dev STRING
+       [ pref PRIO ] protocol PROTO
+       [ estimator INTERVAL TIME_CONSTANT ]
+       [ root | classid CLASSID ] [ handle FILTERID ]
+       [ [ FILTER_TYPE ] [ help | OPTIONS ] ]
+       tc filter show [ dev STRING ] [ root | parent CLASSID ]
+Where:
+FILTER_TYPE := { rsvp | u32 | fw | route | etc. }
+FILTERID := ... format depends on classifier, see there
+OPTIONS := ... try tc filter add <desired FILTER_KIND> help
+root
+parent
+handle
+help
+Garbage instead of arguments "%s ...". Try "tc filter help".
+preference
+invalid priority value
+Cannot find device "%s"
+priority
+protocol
+Must specify filter type when using "handle"
+Error: "root" is duplicate parent ID
+Invalid parent ID
+estimator
+We have an error talking to the kernel
+invalid protocol
+filter 
+dev %s 
+parent %s 
+pref %u 
+root 
+Not a filter
+deleted 
+protocol %s 
+[cannot parse parameters]
+print_filter: NULL kind
+Wrong len %d
+Cannot send dump request
+Dump terminated
+invalid parent ID
+invalid preference
+ What is "%s"? Try "tc filter help"
+change
+replace
+delete
+list
+show
+Command "%s" is unknown, try "tc filter help".
+Kibit
+kbit
+mibit
+mbit
+gibit
+gbit
+tibit
+tbit
+KiBps
+KBps
+MiBps
+MBps
+GiBps
+GBps
+TiBps
+TBps
+TC_LIB_DIR
+/usr/lib//tc/
+none
+root
+%x:%x
+%.0fMibit
+%.0fMbit
+%.0fKibit
+%.0fKbit
+%.0fbit
+secs
+msec
+msecs
+usec
+usecs
+%.1fs
+%.1fms
+%uus
+%gKb
+%gMb
+%g%%
+stolen
+continue
+pass
+reclassify
+drop
+pipe
+shot
+%d%c
+ethernet
+adsl
+unspec
+unknown
+ expires %u sec
+ used %u sec
+ installed %u sec
+%sSent %llu bytes %u pkt
+ (dropped %u, overlimits %u requeues %u) 
+%srate %s %upps 
+backlog %s %up requeues %u 
+%sSent %llu bytes %u pkts (dropped %u, overlimits %u) 
+rate 
+backlog 
+%up 
+%upps 
+Unknown message: length %08d type %08x flags %08x
+file
+help
+Usage: tc monitor
+Cannot fopen
+Argument "%s" is unknown, try "tc monitor help".
+Illegal "%s"
+pipe
+continue
+pass
+reclassify
+drop
+shot
+%d%c
+index
+burst
+buffer
+maxburst
+minburst
+rate
+Illegal "index"
+avrate
+"mtu" is required, if "peakrate" is requested.
+Double "buffer/burst" spec
+"burst" requires "rate".
+"peakrate" requires "rate".
+peakrate
+TBF: failed to calculate rate table.
+POLICE: failed to calculate peak rate table.
+Double "mtu/minburst" spec
+Double "mpu" spec
+Double "peakrate" spec
+Double "rate" spec
+Double "avrate" spec
+action
+conform-exceed
+Illegal "action"
+overhead
+linklayer
+help
+Usage: ... police rate BPS burst BYTES[/BYTES] [ mtu BYTES[/BYTES] ]
+                [ peakrate BPS ] [ avrate BPS ] [ overhead BYTES ]
+                [ linklayer TYPE ] [ ACTIONTERM ]
+Old Syntax ACTIONTERM := action <EXCEEDACT>[/NOTEXCEEDACT] 
+New Syntax ACTIONTERM := conform-exceed <EXCEEDACT>[/NOTEXCEEDACT] 
+Where: *EXCEEDACT := pipe | ok | reclassify | drop | continue 
+Where:  pipe is only valid for new syntax 
+ police 0x%x 
+rate %s 
+burst %s 
+mtu %s 
+action %s
+/%s 
+overhead %ub 
+ref %d bind %d
+[NULL police tbf]
+avrate %s 
+peakrate %s 
+[%08x] 
+[truncated police tbf]
+Usage: ... estimator INTERVAL TIME-CONST
+  INTERVAL is interval between measurements
+  TIME-CONST is averaging time constant
+Example: ... est 1sec 8sec
+help
+[estimator i=%u e=%u]
+estimator
+invalid estimator interval
+invalid estimator time constant
+Error: estimator parameters are out of range.
+usage: tc actions <ACTSPECOP>*
+Where: 	ACTSPECOP := ACR | GD | FL
+	ACR := add | change | replace <ACTSPEC>* 
+	GD := get | delete | <ACTISPEC>*
+	FL := ls | list | flush | <ACTNAMESPEC>
+	ACTNAMESPEC :=  action <ACTNAME>
+	ACTISPEC := <ACTNAMESPEC> <INDEXSPEC>
+	ACTSPEC := action <ACTDETAIL> [INDEXSPEC]
+	INDEXSPEC := index <32 bit indexvalue>
+	ACTDETAIL := <ACTNAME> <ACTPARAMS>
+		Example ACTNAME is gact, mirred etc
+		Each action has its own parameters (ACTPARAMS)
+[Unknown action, optlen=%u] 
+Unknown action "%s", hence option "%s" is unparsable
+Unknown action "%s"
+m_%s.so
+%s_action_util
+gact
+noact
+change
+replace
+delete
+help
+action
+bad action empty %d
+parse_action: bad value (%d:%s)!
+bad action parsing
+ %s 
+	Action statistics:
+NULL Action!
+	action order %d: 
+Error printing action
+Flushed table 
+Added action 
+deleted action 
+print_action: NULL kind
+Wrong len %d
+index
+We have an error talking to the kernel
+Error: non existent action: %s
+Dump terminated
+Error: no index specified action: %s
+Illegal "index"
+Illegal "action"
+bad action %s
+We have an error flushing
+Cannot send dump request
+Command "%s" is unknown, try "tc actions help".
+list
+show
+flush
+em_%s.so
+%s_ematch_util
+%02x
+: %s
+... 
+>>%s<< 
+... %s(
+%s%s
+... 
+)...
+Usage: EXPR
+where: EXPR  := TERM [ { and | or } EXPR ]
+       TERM  := [ not ] { MATCH | '(' EXPR ')' }
+       MATCH := module '(' ARGS ')'
+       ARGS := ARG1 ARG2 ...
+Example: a(x y) and not (b(x) or c(x y z))
+/etc/iproute2/ematch_map
+%d %s
+Parse error
+ematch map %s corrupted at %s
+Unknown ematch "%s"
+Error: Unable to find ematch "%s" in %s
+Please assign a unique ID to the ematch kind the suggested entry is:
+	%d	%s
+[unknown ematch %d]
+NOT 
+AND 
+Ematch tree header size mismatch
+Missing ematch tree header
+Missing ematch tree list
+ AND 
+ OR 
+$$&(02;BLNSU[\
+$end
+error
+$undefined
+ERROR
+ATTRIBUTE
+$accept
+input
+expr
+match
+args
+relation
+invert
+token %s (
+%d.%d-%d.%d
+nterm %s (
+Stack now
+syntax error, unexpected %s
+, expecting %s
+ or %s
+Deleting
+Error: popping
+Reducing stack by rule %d (line %lu):
+   $%d = 
+Cleanup: discarding lookahead
+Cleanup: popping
+Entering state %d
+Now at end of input.
+Error: discarding
+Next token is
+Stack size increased to %lu
+Starting parse
+syntax error
+memory exhausted
+-> $$ =
+Shifting
+Reading a token: 
+out of dynamic memory in ematch_ensure_buffer_stack()
+out of dynamic memory in ematch__scan_buffer()
+bad buffer in ematch__scan_bytes()
+out of dynamic memory in ematch__scan_bytes()
+out of dynamic memory in ematch__create_buffer()
+error: invalid octale escape sequence
+error: octal escape sequence out of range
+fatal error - scanner input buffer overflow
+fatal flex scanner internal error--end of buffer missed
+match argument too long.
+fatal flex scanner internal error--no action found
+out of dynamic memory in yy_get_next_buffer()
+error: hexadecimal escape sequence out of range
+pfifo_fast
+pfifo
+bfifo
+Usage: ... [p|b]fifo [ limit NUMBER ]
+limit
+help
+What is "%s"?
+Illegal "limit"
+limit %s
+limit %up
+Usage: ... sfq [ limit NUMBER ] [ perturb SECS ] [ quantum BYTES ]
+quantum
+Illegal "limit"
+perturb
+Illegal "perturb"
+limit
+Illegal "limit", must be > 1
+help
+What is "%s"?
+limit %up 
+quantum %s 
+flows %u/%u 
+perturb %dsec 
+ allot %d 
+prio
+Usage: ... prio bands NUMBER priomap P1 P2...[multiqueue]
+bands
+priomap
+multiqueue
+help
+Illegal "bands"
+What is "%s"?
+Error: duplicate priomap
+Illegal "priomap" element
+"priomap" index > TC_PRIO_MAX=%u
+"priomap" element is out of bands
+bands %u priomap 
+ multiqueue: %s 
+Usage: ... u32 [ match SELECTOR ... ] [ link HTID ] [ classid CLASSID ]
+               [ police POLICE_SPEC ] [ offset OFFSET_SPEC ]
+               [ ht HTID ] [ hashkey HASHKEY_SPEC ]
+               [ sample SAMPLE ]
+or         u32 divisor DIVISOR
+Where: SELECTOR := SAMPLE SAMPLE ...
+       SAMPLE := { ip | ip6 | udp | tcp | icmp | u{32|16|8} | mark } SAMPLE_ARGS [divisor DIVISOR]
+       FILTERID := X:Y:Z
+NOTE: CLASSID is parsed at hexadecimal input.
+none
+[%08x] 
+nexthdr+
+%hhx:%hhx:%hhx:%hhx:%hhx:%hhx
+parse_ether_addr: improperly formed address '%s'
+dsfield
+priority
+icmp
+type
+protocol
+flowlabel
+dport
+sport
+precedence
+code
+mark
+Illegal "mark" (impossible combination)
+ether
+icmp_type
+Illegal "mark" mask
+nofrag
+firstfrag
+Unknown match: ether %s
+Illegal "mark" value
+icmp_code
+match IP dst
+  %s %s/%d
+  match sport %u
+  match IP ihl %u
+  match IP protocol %d
+  match sport %u, match dport %u
+match IP src
+  match IP dsfield %#x
+  match dport %u
+  match %08x/%08x at %s%d
+match
+offset
+plus
+mask
+shift
+hashkey
+"order" contradicts "handle"
+divisor
+classid
+flowid
+offset "at" must be even
+Illegal "offset"
+Illegal "match"
+Illegal filter ID
+Illegal "hashkey"
+order
+Illegal "order"
+link
+sample
+indev
+Illegal "ht"
+"ht" must be a hash table.
+Illegal indev
+action
+Illegal "action"
+police
+Illegal "police"
+help
+What is "%s"?
+Illegal sample "divisor"
+"sample" must contain exactly ONE key.
+Illegal "sample"
+Illegal "link"
+"link" must be a hash table.
+Illegal "classid"
+Illegal "divisor"
+key ht %x bkt %x 
+ (rule hit %llu success %llu)
+  Invalid mark (kernel&iproute2 mismatch)
+ (success %llu ) 
+??? 
+fh %s 
+order %d 
+%sflowid %s 
+link %s 
+ht divisor %d 
+  input dev %s
+  mark 0x%04x 0x%04x (success %d)
+    hash mask %08x at %d 
+ eat 
+    offset 
+terminal flowid ??? 
+plus %d 
+%04x>>%d at %d 
+Broken perf counters 
+Usage: ... fw [ classid CLASSID ] [ police POLICE_SPEC ]
+       POLICE_SPEC := ... look at TBF
+       CLASSID := X:Y
+NOTE: CLASSID is parsed as hexadecimal input.
+classid
+flowid
+police
+action
+Illegal fw "action"
+indev
+Illegal "police"
+Illegal "classid"
+Illegal "handle"
+Illegal "handle" mask
+Illegal indev
+help
+What is "%s"?
+handle 0x%x/0x%x 
+handle 0x%x 
+input dev %s 
+classid %s 
+Usage: ... basic [ match EMATCH_TREE ] [ police POLICE_SPEC ]
+                 [ action ACTION_SPEC ] [ classid CLASSID ]
+Where: SELECTOR := SAMPLE SAMPLE ...
+       FILTERID := X:Y:Z
+NOTE: CLASSID is parsed as hexadecimal input.
+match
+classid
+flowid
+Illegal handle "%s", must be numeric.
+action
+Illegal "action"
+Illegal "ematch"
+police
+Illegal "police"
+Illegal "classid"
+help
+What is "%s"?
+handle 0x%x 
+flowid %s 
+htb2
+Usage: ... qdisc add ... htb [default N] [r2q N]
+ default  minor id of class to which unclassified packets are sent {0}
+ r2q      DRR quantums are computed as rate in Bps/r2q {10}
+ debug    string of 16 numbers each 0-3 {0}
+... class add ... htb rate R1 [burst B1] [mpu B] [overhead O]
+                      [prio P] [slot S] [pslot PS]
+                      [ceil R2] [cburst B2] [mtu MTU] [quantum Q]
+ rate     rate allocated to this class (class can still borrow)
+ burst    max bytes burst which can be accumulated during idle period {computed}
+ mpu      minimum packet size used in rate computations
+ overhead per-packet size overhead used in rate computations
+ linklay  adapting to a linklayer e.g. atm
+ ceil     definite upper class rate (no borrows) {rate}
+ cburst   burst but for ceil {computed}
+ mtu      max packet size we create rate map for {1600}
+ prio     priority of leaf; lower are served first {0}
+ quantum  how much bytes to serve from leaf at once {use r2q}
+TC HTB version %d.%d
+Illegal "%s"
+default
+debug
+What is "%s"?
+prio
+overhead
+linklayer
+quantum
+"rate" is required.
+htb: failed to calculate rate table.
+htb: failed to calculate ceil rate table.
+burst
+buffer
+maxburst
+cburst
+cbuffer
+cmaxburst
+ceil
+rate
+Double "ceil" spec
+Double "rate" spec
+help
+rate %s 
+ceil %s 
+burst %s 
+cburst %s 
+buffer [%08x] cbuffer [%08x] 
+r2q %d default %x direct_packets_stat %u
+burst %s/%u mpu %s overhead %s 
+cburst %s/%u mpu %s overhead %s 
+level %d 
+ ver %d.%d
+prio %d 
+quantum %d 
+ lended: %u borrowed: %u giants: %u
+ tokens: %d ctokens: %d
+jump
+NF_IP_PRE_ROUTING
+NF_IP_LOCAL_IN
+NF_IP_FORWARD
+NF_IP_LOCAL_OUT
+NF_IP_POST_ROUTING
+mangle
+tc-ipt
+Try `%s -h' or '%s --help' for more information.
+%s v%s: 
+Perhaps iptables or your kernel needs to be upgraded.
+%d.%d.%d.%d
+iptables: calloc failed
+IPTABLES_LIB_DIR
+/usr/local/lib/iptables
+action
+tablename: %s hook: %s
+	target: 
+ index %d
+ failed to find target %s
+bad arguements to ipt %d vs %d 
+index
+ %s error 
+ ipt Parser BAD!! (%s)
+Illegal "index"
+[NULL ipt table name ] assuming mangle 
+ hook: %s 
+	target 
+ [NULL ipt target index ]
+tablename: %s 
+	index %d
+ ref %d bind %d
+[NULL ipt hook name ]
+	[NULL ipt target parameters ] 
+if%d
+Cannot send dump request
+Dump terminated
+Wrong address family %d
+Wrong address length %d
+Cannot open netlink socket
+SO_SNDBUF
+SO_RCVBUF
+Cannot bind netlink socket
+Cannot getsockname
+ERROR truncated
+!!!Remnant of size %d
+Message truncated
+netlink receive error %s (%d)
+EOF on netlink
+RTNETLINK answers
+Truncated message
+Unexpected reply!!!
+sender address length == %d
+Cannot talk to rtnetlink
+!!!malformed message: len=%d
+Sender address length == %d
+rtnl_from_file: fread
+!!!malformed message: len=%d @%lu
+rtnl-from_file: truncated message
+addattr32: Error! max allowed bound %d exceeded
+addattr_l ERROR: message exceeded bound of %d
+addraw_l ERROR: message exceeded bound of %d
+rta_addattr32: Error! max allowed bound %d exceeded
+rta_addattr_l: Error! max allowed bound %d exceeded
+!!!Deficit %d, rta_len=%d
+default
+Error: "%s" may be inet address, but it is not allowed in this context.
+Error: an inet address is expected rather than "%s".
+Error: "%s" may be inet prefix, but it is not allowed in this context.
+Error: an inet prefix is expected rather than "%s".
+Error: an IP address is expected rather than "%s"
+Command line is not complete. Try option "help"
+Error: argument "%s" is required
+Error: argument "%s" is wrong: %s
+Error: duplicate "%s": "%s" is the second value.
+Error: either "%s" is duplicate, or "%s" is a garbage.
+PROC_NET_PSCHED
+%*08x%*08x%08x%08x
+PROC_ROOT
+/proc/net/psched
+%s/net/psched
+secs
+msec
+msecs
+usec
+usecs
+nsec
+nsecs
+jiffies
+%02x
+Timestamp: %s %lu usec
+Out of memory
+Too many arguments to command
+loop
+pupat
+ieeepup
+ieeepupat
+dna_dl
+dna_rc
+dna_rt
+diag
+cust
+rarp
+atalk
+aarp
+ipv6
+ppp_disc
+ppp_ses
+atmmpoa
+atmfate
+802_3
+ax25
+802_2
+snap
+ddcmp
+wan_ppp
+ppp_mp
+localtalk
+ppptalk
+tr_802_2
+mobitex
+control
+irda
+econet
+tipc
+802.1Q
+ipv4
+[%d]
+/proc/net/psched
+%08x%08x%08x
+help
+invalid mpu
+overhead
+invalid overhead
+tsize
+invalid table size
+linklayer
+invalid linklayer
+invalid mtu
+Usage: ... stab [ mtu BYTES ] [ tsize SLOTS ] [ mpu BYTES ] 
+                [ overhead BYTES ] [ linklayer TYPE ] ...
+   mtu       : max packet size we create rate map for {2047}
+   tsize     : how many slots should size table have {512}
+   mpu       : minimum packet size used in rate computations
+   overhead  : per-packet size overhead used in rate computations
+   linklayer : adapting to a linklayer e.g. atm
+Example: ... stab overhead 20 linklayer atm
+tsize %u 
+linklayer %s 
+overhead %d 
+mpu %u 
+mtu %u 
+gact_action_util
+ipt_action_util
+mirred_action_util
+nat_action_util
+pedit_action_util
+police_action_util
+skbedit_action_util
+cmp_ematch_util
+meta_ematch_util
+nbyte_ematch_util
+u32_ematch_util
+p_pedit_icmp
+p_pedit_ip
+p_pedit_ip6
+p_pedit_tcp
+p_pedit_udp
+atm_qdisc_util
+cbq_qdisc_util
+drr_qdisc_util
+dsmark_qdisc_util
+bfifo_qdisc_util
+pfifo_qdisc_util
+pfifo_fast_qdisc_util
+gred_qdisc_util
+hfsc_qdisc_util
+htb_qdisc_util
+htb2_qdisc_util
+ingress_qdisc_util
+multiq_qdisc_util
+netem_qdisc_util
+prio_qdisc_util
+red_qdisc_util
+rr_qdisc_util
+sfq_qdisc_util
+tbf_qdisc_util
+basic_filter_util
+cgroup_filter_util
+flow_filter_util
+fw_filter_util
+route_filter_util
+rsvp_filter_util
+rsvp6_filter_util
+tcindex_filter_util
+u32_filter_util
+police
+basic
+Bcx?

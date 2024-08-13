@@ -1,0 +1,104 @@
+[*] Binary protection state of ushare
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function system tear down of ushare
+
+addu gp, gp, t9
+lw t9, -sym.imp.pthread_mutex_unlock(gp)
+lw a0, -obj.inRebuildingList(gp)
+jr t9
+nop
+lui gp, 5
+addiu gp, gp, 0x3aac
+addu gp, gp, t9
+addiu sp, sp, -0xe8
+sw ra, 0xe4(sp)
+sw fp, 0xe0(sp)
+sw s7, 0xdc(sp)
+sw s6, 0xd8(sp)
+sw s5, 0xd4(sp)
+sw s4, 0xd0(sp)
+sw s3, 0xcc(sp)
+sw s2, 0xc8(sp)
+sw s1, 0xc4(sp)
+sw s0, 0xc0(sp)
+sw gp, 0x10(sp)
+addiu v0, zero, -1
+sw a0, 0xe8(sp)
+move fp, a1
+lw a0, -0x7fe0(gp)
+addiu s7, zero, -1
+[31mlw t9, -sym.imp.system(gp)[0m
+addiu a0, a0, -0x6ffc
+jalr t9
+sw v0, 0xb8(sp)
+lw gp, 0x10(sp)
+lw t9, -sym.imp.pthread_mutex_init(gp)
+lw a0, -obj.inRebuildingList(gp)
+jalr t9
+move a1, zero
+lw gp, 0x10(sp)
+lw t9, -sym.imp.fork(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+beq v0, s7, 0x40f22c
+nop
+bnez v0, 0x40f5a0
+nop
+lw t9, -sym.imp.setsid(gp)
+jalr t9
+nop
+--
+addiu a2, v0, 2
+lw gp, 0x18(sp)
+beqz v0, 0x40f738
+nop
+lw a2, -0x7fe0(gp)
+lw t9, -sym.imp.puts(gp)
+b 0x40f634
+addiu a0, a2, -0x6efc
+lw a0, -0x7fe0(gp)
+lw t9, -sym.imp.puts(gp)
+b 0x40f634
+addiu a0, a0, -0x6ee0
+lw a1, -0x7fe0(gp)
+lw t9, -sym.imp.puts(gp)
+b 0x40f634
+addiu a0, a1, -0x6ec0
+lw t9, -sym.imp.listen(gp)
+lw a0, (s3)
+jalr t9
+addiu a1, zero, 1
+addiu a3, zero, -1
+lw gp, 0x18(sp)
+beq v0, a3, 0x40f774
+nop
+lw t1, -0x7fe0(gp)
+[31mlw t9, -sym.imp.system(gp)[0m
+jalr t9
+addiu a0, t1, -0x6e90
+lw gp, 0x18(sp)
+b 0x40f644
+addiu v0, zero, 1
+lw t0, -0x7fe0(gp)
+lw t9, -sym.imp.puts(gp)
+b 0x40f634
+addiu a0, t0, -0x6e68
+lui gp, 5
+addiu gp, gp, 0x343c
+addu gp, gp, t9
+addiu sp, sp, -0xc8
+sw ra, 0xc0(sp)
+sw s5, 0xbc(sp)
+sw s4, 0xb8(sp)
+sw s3, 0xb4(sp)
+sw s2, 0xb0(sp)
+sw s1, 0xac(sp)
+sw s0, 0xa8(sp)
+
+[*] Function system used 2 times ushare
+

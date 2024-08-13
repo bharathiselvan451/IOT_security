@@ -1,0 +1,12 @@
+[+] Lighttpd web server analysis
+=================================================================
+This module tests for lighttpd configuration files and binaries
+The configuration files are analysed for configuration issues.
+
+The tests of these configuration files is based on the following sources:
+    - Lighttpd - Docs_SSL
+    - Alpine Linux - Lighttpd Advanced security
+    - Hardening guide for lighttpd 1.4.26 on redhat Linux
+
+[-] No Lighttpd related configuration files found
+[-] Wed Jul 31 21:01:44 EDT 2024 - S36_lighttpd nothing reported

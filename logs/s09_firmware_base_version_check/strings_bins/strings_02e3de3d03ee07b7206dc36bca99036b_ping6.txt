@@ -1,0 +1,381 @@
+/lib/ld-uClibc.so.0
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+memset
+if_nametoindex
+stderr
+fprintf
+ni_query
+puts
+niquery_options
+ni_flag
+ni_subject_type
+ni_subject_len
+getaddrinfo
+malloc
+memcpy
+ni_subject
+free
+freeaddrinfo
+strncmp
+strcspn
+strrchr
+strlen
+__ctype_b
+__ctype_tolower
+MD5_Init
+MD5_Update
+MD5_Final
+sprintf
+strcat
+fwrite
+ntransmitted
+ident
+timing
+outpack
+gettimeofday
+datalen
+mx_dup_ck
+rcvd_tbl
+ni_nonce
+build_niquery
+build_echo
+sendto
+confirm
+sendmsg
+whereto
+__stdout
+__dn_expand
+fputc
+__fputc_unlocked
+inet_ntop
+__errno_location
+strerror
+pr_niquery_reply_addr
+pr_niquery_reply_name
+setsockopt
+perror
+gethostbyaddr
+__cmsg_nxthdr
+memcmp
+print_timestamp
+fflush
+gather_statistics
+pr_echo_reply
+pr_niquery_reply
+pipesize
+acked
+working_recverr
+nerrors
+recvmsg
+abort
+socket
+getuid
+setuid
+source
+preload
+getopt
+optarg
+niquery_option_handler
+common_options
+sscanf
+tclass
+strcmp
+pmtudisc
+strchr
+strdup
+device
+inet_pton
+flowlabel
+optind
+srcrt
+inet6_srcrt_space
+inet6_srcrt_init
+inet6_srcrt_add
+rand
+ni_group
+memchr
+hostname
+sock_setbufs
+if_name2index
+connect
+getsockname
+close
+interval
+bind
+setup
+main_loop
+atoi
+deadline
+maxpacket
+putchar
+lingertime
+__mulsf3
+__fixsfsi
+setbuf
+sndbuf
+strtoul
+mark
+npackets
+exiting
+status_snapshot
+nreceived
+setitimer
+tmax
+cur_time
+send_probe
+receive_error_msg
+confirm_flag
+rtt_addend
+getsockopt
+getpid
+sigaction
+start_time
+isatty
+ioctl
+__divdi3
+nrepeats
+tsum
+tmin
+tsum2
+nchecksum
+__moddi3
+pinger
+__schedule_exit
+poll
+parse_reply
+install_filter
+status
+sched_yield
+finish
+md5_block_data_order
+libresolv.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+libc.so.0
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GLIBC_2.0
+GCC_3.0
+@ !&1
+  !,B
+$'94
+$'94
+$'94
+$'94
+$'94
+@(!$
+$'9$
+  !$
+$'9$
+  !'
+@ !<
+  !$
+  !4
+$'94
+$'9/
+@0!,C
+@8!'
+/4B 
+b4BM
+b4cM
+C0!(
+b8#$
+@ !4
+@ !(b
+T$BX
+@ !4
+@ !4
+4BB@$c
+b4BM
+>*"'
+0!&"
+b61M
+44BM
+4BB@
+bX#$
+4BB@
+gE4B#
+24BTv
+$ 4Bp
+04BF
+y4BC
+4B%b
+&^4BZQ
+EZ4B
+go4B
+*4BL
+4B9B
+4Ba"
+4BK`
+4BVe
+)4B"D
+C*4B
+e[4BY
+4B~O
+S4B~
+ name
+fqdn
+ipv6
+ipv6-all
+ipv6-compatible
+ipv6-linklocal
+ipv6-sitelocal
+ipv6-global
+ipv4
+ipv4-all
+subject-ipv6
+subject-ipv4
+ping: unknown iface %s
+Qtype conflict
+Subject type conflict
+Unknown host: %s
+ff02::2:%02x%02x:%02x%02x
+ping6: label too long for subject: %s
+ping6: scope too long: %s
+Usage: ping6 [-LUdfnqrvVaAD] [-c count] [-i interval] [-w deadline]
+             [-p pattern] [-s packetsize] [-t ttl] [-I interface]
+             [-M pmtudisc-hint] [-S sndbuf] [-F flowlabel] [-Q tclass]
+             [[-N nodeinfo-option] ...]
+             [hop1 ...] destination
+unknown icmp type
+Parameter problem: 
+code %d 
+at %u
+Destination unreachable: 
+Echo request
+Echo reply
+Packet too big: mtu=%u
+, code=%d
+MLD Query
+MLD Reduction
+Port unreachable
+Address unreachable
+Beyond scope of source address
+Administratively prohibited
+No route
+MLD Report
+Time exceeded: 
+code %d
+Unknown code %d
+Hop limit
+Wrong header field 
+Defragmentation failure
+Unknown option 
+Unknown header 
+ icmp_seq=%u
+\%03o
+ parse error (truncated)
+ parse error (too short)
+ (truncated)
+ unexpeced error in inet_ntop(%s)
+ unknown code(%02x)
+ unknown
+ refused
+ unknown qtype(0x%02x)
+WARNING: failed to install socket filter
+From %s: 
+ping: packet too short (%d bytes)
+From %s: icmp_seq=%u 
+ping: local error: %s
+ping: local error: Message too long, mtu=%u
+From %s icmp_seq=%u 
+h?VQ:I:M:aUc:dfi:w:l:S:np:qrs:vLt:AW:Bm:DF:N:
+ping6 utility, iputils-ss%s
+dont
+want
+Flow labels are not supported.
+can't disable multicast loopback
+WARNING: your kernel is veeery old. No problems.
+ping: bind icmp socket
+setsockopt(IPV6_TCLASS)
+ping: setuid
+can't receive hop limit
+setsockopt(RAW_CHECKSUM) failed - try to continue.
+setsockopt(SO_BINDTODEVICE)
+ping: invalid source address %s
+ping: out of memory
+unknown host
+no room for options
+srcrt_space failed
+ping: wrong value for -M: do, dont, want are valid ones.
+ping: icmp open socket
+ping: IPV6_MTU_DISCOVER
+PING %s(%s) 
+from %s %s: 
+%d data bytes
+setsockopt(ICMP6_FILTER)
+scope discrepancy among the nodes
+ping: out of memory.
+can't set unicast hop limit
+can't set multicast hop limit
+, flow 0x%05x, 
+socket
+getsockname
+connect
+ping: multicast ping does not fragment.
+ping: multicast ping with too short interval.
+ping: bad wait time.
+ping: ttl %u out of range
+ping: packet size too large: %d
+%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x
+PATTERN: 0x
+%02x
+ping utility, iputils-ss%s
+ping: bad sndbuf value.
+mark cannot be negative
+ping: cannot set preload to value > 3
+ping: bad number of packets to transmit.
+ping: patterns must be specified as hex digits.
+ping: bad timing interval.
+ping: bad preload value, should be 1..%d
+ping: illegal negative packet size %d.
+ping: bad linger time.
+[%lu.%06lu] 
+ping: sendmsg
+WARNING: probably, rcvbuf is not enough to hold preload.
+Warning: Failed to set mark %d
+Warning: no SO_TIMESTAMP support, falling back to SIOCGSTAMP
+ping: cannot flood; minimal interval, allowed for user, is %dms
+ping: illegal preload and/or interval
+%ld/%ld packets, %d%% loss
+, min/avg/ewma/max = %ld.%03ld/%lu.%03ld/%d.%03d/%ld.%03ld ms
+Warning: time of day goes back (%ldus), taking countermeasures.
+%d bytes from %s:
+ ttl=%d
+ time=%ld.%02ld ms
+ time=%ld ms
+ (truncated)
+ (BAD CHECKSUM!)
+ (DUP!)
+wrong data byte #%d should be 0x%x but was 0x%x
+#%d	
+ time=%ld.%03ld ms
+ time=%ld.%01ld ms
+--- %s ping statistics ---
+%ld packets transmitted, 
+%ld received
+rtt min/avg/max/mdev = %ld.%03ld/%lu.%03ld/%ld.%03ld/%ld.%03ld ms
+, +%ld duplicates
+, +%ld corrupted
+, +%ld errors
+, %d%% packet loss
+, time %ldms
+%sipg/ewma %d.%03d/%d.%03d ms
+%spipe %d
+ping: recvmsg
+MD5 part of OpenSSL 1.0.0d 8 Feb 2011
+@(#) Copyright (c) 1989 The Regents of the University of California.
+ All rights reserved.
+s20101006
+s20101006

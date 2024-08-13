@@ -1,0 +1,272 @@
+/lib/ld-uClibc.so.0
+_init
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+bind
+getsockname
+gethostbyname
+login
+new_phase
+handle_heartbeats
+sleep
+closesocket
+inet_addr
+MD5Init
+MD5Update
+MD5Final
+strlen
+memcpy
+genmd5
+socketerror
+connect
+start_transaction
+add_field_INT2
+add_field_string
+send_transaction
+receive_transaction
+extract_valueINT2
+extract_valuestring
+makecredentials
+add_field_data
+add_field_INT4
+strcpy
+strcat
+strcspn
+strncpy
+inet_ntoa
+localtime
+asctime
+receive_udp_transaction
+send_udp_transaction
+add_trans_data
+add_int2field
+add_string
+add_data
+add_int4field
+memset
+dump_transaction
+send
+dump_sent_transaction
+sendto
+recv
+dump_recv_transaction
+select
+recvfrom
+check_hb_packet
+read_INT2
+locate_parm
+read_INT4
+msglogd
+dosyslog
+exit
+debug_level
+vsprintf
+debug
+logout
+closelog
+new_phase_hook
+puts
+onsignal
+httpd_pid
+strncmp
+send_phase
+fork
+setsid
+getpid
+fopen
+fprintf
+fclose
+openlog
+atoi
+usage
+stderr
+perror
+ondisconnected
+noncritical
+onconnected
+mainloop
+sigqueue
+__errno_location
+strerror
+libmsglog.so
+_DYNAMIC_LINKING
+__RLD_MAP
+__start
+_GLOBAL_OFFSET_TABLE_
+__data_start
+libc.so.0
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GLIBC_2.0
+ '9S`
+$!`d
+$B`d
+$B`D
+@ !$
+@ !&%
+`(!$
+`(!$
+`(!$
+@0!$
+`(!$
+`(!$
+@ !$
+@ !$
+`(!$
+`(!$
+`(!$
+@0!$
+`(!$
+@0!$
+  !$
+  !$
+  !$
+  !$
+	&'/
+ !$B
+	&eY
+@8!$
+`0!$
+@ !$
+@ !$
+`(!$
+`(!$
+`(!$
+`(!$
+`0!$
+`(!$
+`(!$
+`0!$
+`(!$
+`(!&'
+`(!&'
+`(!&'
+`(!$
+@ !$
+@8!$
+ (!$F
+gE4BTv4c#
+( !%
+H(!%
+!4Bp
+!4BF
+!4B[
+!4Bq
+!4BC
+!4B%b
+!4BZQ
+%4cL
+!4c9B
+%4ca"
+%4c8
+%4cK`
+%4c~
+!4c'
+%4c0
+!4B|
+!4BVe
+8!4B"D
+!4B#
+8!4B
+!4BY
+@!4B]
+!4B~O
+@!4BC
+!4B~
+/H!<
+8H!4B
+f8#$D
+P0#&
+& !$
+  !&
+& !&
+P0#$
+&99\
+d0#$
+(!&99\
+ '99
+  !&s
+  !&s
+  !&s
+p&F^
+'9`8
+ whocares
+notme
+Auth host = %s:%d
+Listening on port %d
+Using local address %s
+Error binding auth socket
+Cant connect to auth server
+T_MSG_PROTOCOL_NEG_RESP - error transaction type (%d)
+T_MSG_PROTOCOL_NEG_RESP - Unsupported protocol (%d)
+Error binding auth socket 2
+T_MSG_PROTOCOL_NEG_RESP - Login failure: unknown
+Error connecting auth socket 2
+T_MSG_AUTH_RESP - error transaction type (%d)
+T_MSG_PROTOCOL_NEG_RESP - Login failure: invalid protocol
+T_MSG_PROTOCOL_NEG_RESP - Login failure: software version
+T_MSG_AUTH_RESP - no hashmethod provided
+T_MSG_LOGIN_RESP - error transaction type (%d)
+Will accept heartbeats from %s = %s
+Logged on as %s - successful at %s
+T_MSG_LOGIN_RESP - Login failure: other error
+T_MSG_AUTH_RESP - no nonce supplied
+T_MSG_LOGIN_RESP - Login failure: username not known
+T_MSG_LOGIN_RESP - Login failure: Account disabled
+T_MSG_LOGIN_RESP - Login failure: incorrect password
+Timed out waiting for heartbeat - logging on
+Badly structured packet received - discarding
+Unknown heartbeat message %d 
+Responded to heartbeat at %s
+Socket closed - shutting down
+Restart request - unimplemented
+Error binding logout auth socket
+Error connecting logout auth socket
+logic error
+Login failure: username not known
+Login failure: incorrect password
+Login failure: disabled
+Login failure: other error
+Logged out successful at %s
+Auth: no nonce
+AUTH: no hashmethod
+Sending parm %d value %s
+Sending parm %d value %d
+%d:%02x 
+Sent transaction:
+Received transaction:
+Incorrect transaction type %d
+Incorrect transaction length %d
+Received a heartbeat from unexpected source %s:%d
+Heartbeats arriving too quickly - discarding
+Received parm %d value %d
+Received parm %d value %s
+Critical error: %s
+Signal caught
+wrong input, no usage and exit:-)
+sm-server
+/usr/local/etc/bpalogin.conf
+user
+/var/run/bpalogin.pid
+bpalogin
+BPALogin v2.0.2 - portable BigPond Broadband login client
+Password has not been set
+password
+authserver
+authdomain
+httpd-pid
+BPALogin v2.0.2 - portable BigPond Broadband login client
+bpalogin: Failed to create pid file %s
+Could not run BPALogin in the background
+Username has not been set
+Send phase error
+%.100s - %.80s

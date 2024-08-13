@@ -1,0 +1,11 @@
+[*] Binary protection state of sch_sfq.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcpy tear down of sch_sfq.ko
+
+
+[*] Function strcpy used 0 times sch_sfq.ko
+

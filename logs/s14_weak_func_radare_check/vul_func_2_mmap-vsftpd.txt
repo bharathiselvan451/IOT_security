@@ -1,0 +1,54 @@
+[*] Binary protection state of vsftpd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function mmap tear down of vsftpd
+
+[31mlw t9, -sym.ptrace_sandbox_permit_mmap(gp)[0m
+lw s3, -obj.tunable_idle_session_timeout(gp)
+jalr t9
+move a0, s0
+lw gp, 0x10(sp)
+nop
+lw t9, -sym.ptrace_sandbox_permit_mprotect(gp)
+nop
+jalr t9
+move a0, s0
+lw gp, 0x10(sp)
+nop
+lw t9, -sym.ptrace_sandbox_permit_brk(gp)
+nop
+jalr t9
+move a0, s0
+lw gp, 0x10(sp)
+nop
+lw t9, -sym.ptrace_sandbox_permit_read(gp)
+nop
+jalr t9
+--
+[31mlw t9, -sym.imp.mmap(gp)[0m
+addiu s0, zero, -1
+move a1, a0
+sw s0, 0x10(sp)
+sw zero, 0x14(sp)
+move a0, zero
+addiu a2, zero, 3
+jalr t9
+addiu a3, zero, 0x802
+lw gp, 0x18(sp)
+nop
+lw t9, -sym.die(gp)
+beq v0, s0, 0x424ddc
+move s1, v0
+move v0, s1
+lw ra, 0x28(sp)
+lw s1, 0x24(sp)
+lw s0, 0x20(sp)
+jr ra
+addiu sp, sp, 0x30
+lw a0, -0x7fe4(gp)
+
+[*] Function mmap used 2 times vsftpd
+

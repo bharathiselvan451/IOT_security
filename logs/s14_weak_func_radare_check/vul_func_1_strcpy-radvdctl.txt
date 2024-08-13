@@ -1,0 +1,57 @@
+[*] Binary protection state of radvdctl
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of radvdctl
+
+lw gp, 0x18(sp)
+b 0x402480
+sw s1, 0xb0(sp)
+lw v0, -0x7f40(gp)
+move a1, zero
+lw t9, -sym.imp.strtoul(gp)
+addiu a2, zero, 0xa
+lw a0, (v0)
+jalr t9
+addiu s1, zero, 1
+addiu a2, zero, 0xde
+lw gp, 0x18(sp)
+move a3, v0
+sw v0, 0x40(sp)
+lw a0, -segment.LOAD0(gp)
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.printf(gp)
+addiu a0, a0, 0x38b4
+jalr t9
+addiu a1, a1, 0x35a0
+lw gp, 0x18(sp)
+b 0x402480
+sw s1, 0xa4(sp)
+lw v0, -0x7f40(gp)
+addiu s0, sp, 0x58
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+move a0, s0
+lw a1, (v0)
+jalr t9
+addiu s1, zero, 1
+move a3, s0
+lw gp, 0x18(sp)
+addiu a2, zero, 0x137
+lw a0, -segment.LOAD0(gp)
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.printf(gp)
+addiu a0, a0, 0x38d4
+jalr t9
+addiu a1, a1, 0x35a0
+lw gp, 0x18(sp)
+b 0x402480
+sw s1, 0xc4(sp)
+lw v0, -0x7f40(gp)
+move a1, zero
+lw t9, -sym.imp.strtoul(gp)
+addiu a2, zero, 0xa
+
+[*] Function strcpy used 1 times radvdctl
+

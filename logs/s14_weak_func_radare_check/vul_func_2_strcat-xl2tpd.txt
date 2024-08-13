@@ -1,0 +1,63 @@
+[*] Binary protection state of xl2tpd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of xl2tpd
+
+lw gp, 0x28(sp)
+b 0x407964
+nop
+lw a1, -0x7fe0(gp)
+move a0, zero
+lw t9, -sym.add_opt(gp)
+addiu s0, sp, 0xd8
+addiu a1, a1, -0x6b58
+jalr t9
+addiu s5, s3, 0x290
+lw gp, 0x28(sp)
+move a0, v0
+lw a1, -0x7fe0(gp)
+lw t9, -sym.add_opt(gp)
+jalr t9
+addiu a1, a1, -0x6b50
+lw gp, 0x28(sp)
+move a0, v0
+lw s6, -0x7fe0(gp)
+lw t9, -sym.add_opt(gp)
+jalr t9
+addiu a1, s6, -0x6aa4
+move a0, s0
+lw gp, 0x28(sp)
+move a1, s5
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+move s1, v0
+move a0, s0
+lw gp, 0x28(sp)
+lw a1, -0x7fe0(gp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+addiu a1, a1, -0x6a9c
+move a0, s1
+lw gp, 0x28(sp)
+lw t9, -sym.add_opt(gp)
+jalr t9
+move a1, s0
+lw v1, 0x28c(s3)
+lw gp, 0x28(sp)
+beqz v1, 0x408158
+move s1, v0
+lw v0, 0x1dc(v1)
+bnez v0, 0x40930c
+nop
+lw t9, -sym.imp.inet_ntoa(gp)
+addiu s0, sp, 0x38
+lw a0, 0x24(v1)
+jalr t9
+addiu s4, sp, 0x88
+addiu a2, zero, 0x50
+
+[*] Function strcat used 2 times xl2tpd
+

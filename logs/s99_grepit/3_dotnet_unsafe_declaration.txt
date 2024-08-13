@@ -1,0 +1,13 @@
+[*] Searching (args for grep: ) for unsafe\s.
+[*] Grepit state info - comment: If you declare a variable 'unsafe' in .NET you can do pointer arythmetic and therefore introduce buffer overflows etc. again
+[*] Grepit state info - Filename 3_dotnet_unsafe_declaration.txt
+[*] Grepit state info - Example: int unsafe bla
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: unsafe\s
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m-[m[32m331[m[36m-[mfuse: cannot get old signal handlerfuse: cannot set signal handlerfuse: fuse_remove_signal_handlers: unknown session
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m-[m[32m332[m[36m-[mntfs-3g-mount%s: could not determine username
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m-[m[32m333[m[36m-[mpriv drop: setresgid faileddropping group privilege failedpriv drop: setresuid faileddropping user privilege failedpriv restore: getresuid failedpriv restore: setresuid failedrestoring privilege failedpriv restore: getresgid failedpriv restore: setresgid failedrestoring group privilege failed/etc/mtabr%s: failed to open %s: %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m:[m[32m334[m[36m:[mfusefuse.rwrosuidnosuiddevnodevexecnoexecasyncsyncatimenoatimedirsync%s: [01;31munsafe [moption '%s' ignored
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g[m[36m-[m[32m335[m[36m-[m,%s%s: failed to allocate memory

@@ -1,0 +1,6 @@
+[+] Search certificates
+=================================================================
+This module tries to identify certificate files and checks the validity of the identified certificates.
+
+[-] No certification files found
+[-] Wed Jul 31 21:02:42 EDT 2024 - S60_cert_file_check nothing reported

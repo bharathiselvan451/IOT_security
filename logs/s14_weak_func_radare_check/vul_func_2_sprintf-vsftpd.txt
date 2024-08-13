@@ -1,0 +1,104 @@
+[*] Binary protection state of vsftpd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of vsftpd
+
+lw t9, -sym.vsf_sysutil_fork_newnet(gp)
+lw v1, (v0)
+nop
+beqz v1, 0x419118
+nop
+lw t9, -sym.vsf_sysutil_fork(gp)
+nop
+jalr t9
+nop
+lw gp, 0x18(sp)
+beqz v0, 0x419518
+nop
+lw t9, -sym.priv_sock_set_parent_context(gp)
+nop
+jalr t9
+move a0, fp
+lw gp, 0x18(sp)
+nop
+lw v0, -obj.tunable_ssl_enable(gp)
+nop
+lw v1, (v0)
+nop
+bnez v1, 0x4194fc
+nop
+lw a1, -0x7fe4(gp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+lw a2, 0x430(sp)
+addiu a1, a1, -0x62c4
+jalr t9
+addiu a0, sp, 0xa8
+lw gp, 0x18(sp)
+addiu v0, zero, -1
+sw v0, 0x3f0(sp)
+lw v0, -0x7fe4(gp)
+lw t9, -sym.imp.fopen(gp)
+addiu a0, sp, 0xa8
+jalr t9
+addiu a1, v0, -0x62b0
+lw gp, 0x18(sp)
+beqz v0, 0x41932c
+move s1, v0
+lw t9, -sym.imp.memset(gp)
+addiu s4, sp, 0xe8
+move a0, s4
+move a1, zero
+jalr t9
+--
+sll v0, v1, 0x18
+sra v0, v0, 0x18
+beqz v0, 0x419268
+nop
+bne v0, a2, 0x419230
+sll v0, v1, 0x18
+lbu v0, -0x62ac(s5)
+addiu a0, s5, -0x62ac
+sb zero, (a1)
+beqz v0, 0x4192ac
+move a1, s6
+move v1, v0
+addiu a2, zero, 0x20
+sll v0, v1, 0x18
+sra v0, v0, 0x18
+beq v0, a2, 0x41929c
+addiu a0, a0, 1
+sb v1, (a1)
+addiu a1, a1, 1
+lbu v1, (a0)
+nop
+bnez v1, 0x419288
+sll v0, v1, 0x18
+sb zero, (a1)
+lw a1, -0x7fe4(gp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+move a0, s2
+addiu a1, a1, -0x62a4
+jalr t9
+move a2, s3
+lw gp, 0x18(sp)
+move a0, s2
+lw t9, -sym.imp.access(gp)
+nop
+jalr t9
+move a1, zero
+lw gp, 0x18(sp)
+beqz v0, 0x419404
+move a0, s2
+lw t9, -sym.imp.fgets(gp)
+addiu v0, zero, -1
+sw v0, 0x3f4(sp)
+move a0, s4
+addiu a1, zero, 0xff
+jalr t9
+move a2, s1
+
+[*] Function sprintf used 2 times vsftpd
+

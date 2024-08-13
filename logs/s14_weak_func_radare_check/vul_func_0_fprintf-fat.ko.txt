@@ -1,0 +1,11 @@
+[*] Binary protection state of fat.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function fprintf tear down of fat.ko
+
+
+[*] Function fprintf used 0 times fat.ko
+

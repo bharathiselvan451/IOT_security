@@ -1,0 +1,10 @@
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/init.d/rcS line 16:[0m
+[0mexport PATH=$PATH:/etc/ath[0m
+[32m            ^---^ SC2086 (info): Double quote to prevent globbing and word splitting.[0m
+
+[1mDid you mean: [0m
+export PATH="$PATH":/etc/ath
+
+For more information:
+  https://www.shellcheck.net/wiki/SC2086 -- Double quote to prevent globbing ...

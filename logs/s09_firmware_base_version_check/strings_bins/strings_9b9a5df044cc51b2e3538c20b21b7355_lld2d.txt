@@ -1,0 +1,1058 @@
+/lib/ld-uClibc.so.0
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+memset
+strncpy
+ioctl
+__errno_location
+strerror
+xmalloc
+g_wl_interface
+g_Progname
+snprintf
+strtol
+kill
+getpid
+strlen
+htons
+socket
+bind
+packetio_recv_handler
+event_add_io
+warn
+memcpy
+fopen
+g_buf
+fgets
+__ctype_b
+strchr
+fclose
+ferror
+fork
+exit
+setsid
+chdir
+umask
+g_trace_flags
+dbgprintf
+htonl
+g_osl
+perror
+g_interface
+cpy_hton64
+g_icon_path
+fstat
+uname
+util_copy_ascii_to_ucs2
+g_jumbo_icon_path
+g_short_reorder_buffer
+my_radio
+get_wireless_mode
+get_bssid
+g_hwaddr
+stderr
+strcpy
+getline
+sscanf
+strcmp
+xfree
+strrchr
+isConfTest
+strstr
+getopt
+optarg
+atoi
+optind
+strdup
+g_smE_state
+g_smT_state
+g_sessions
+g_band
+osl_init
+g_rxbuf
+g_emitbuf
+g_txbuf
+g_re_txbuf
+seeslist_new
+g_sees
+g_rcvd_pkt_len
+g_rtxseqnum
+g_re_tx_len
+g_generation
+g_sequencenum
+g_opcode
+g_ctc_packets
+g_ctc_bytes
+g_block_timer
+g_charge_timer
+g_emit_timer
+g_hello_timer
+event_init
+qos_init
+osl_interface_open
+osl_get_hwaddr
+util_use_syslog
+osl_become_daemon
+osl_write_pidfile
+osl_drop_privs
+event_mainloop
+gettimeofday
+select
+vsyslog
+vfprintf
+openlog
+rand
+__floatsidf
+__divdf3
+__adddf3
+__muldf3
+__fixdfsi
+g_re_tx_opcode
+g_ethernet_hdr
+g_this_event
+g_totalPause
+g_neededPackets
+g_neededBytes
+g_base_hdr
+ntohs
+osl_write
+tx_write
+g_tx_len
+__assert
+fmt_base
+g_topo_session
+tlv_write_info
+seeslist_dequeue
+seeslist_is_empty
+tlv_write_tlv
+osl_read
+g_discover_hdr
+g_hello_hdr
+g_qltlv_hdr
+qosrcvpkt
+state_process_packet
+state_block_timeout
+event_add
+random_uniform
+state_hello_delay_timeout
+state_process_timeout
+smS_process_event
+smE_process_event
+smT_process_event
+event_cancel
+state_inactivity_timeout
+g_emit_remaining
+g_emitdesc
+state_emit_timeout
+restart_inactivity_timer
+packetio_invalidate_retxbuf
+osl_set_promisc
+band_InitStats
+band_ChooseHelloTime
+band_UpdateStats
+packetio_tx_hello
+OnlyCompleteSessions
+band_IncreaseLoad
+band_ResetNi
+SessionTableIsEmpty
+g_emit_seqnum
+state_charge_timeout
+packetio_tx_flat
+seeslist_enqueue
+packetio_tx_queryresp
+Tlvs
+packetio_tx_qltlvResp
+seeslist_clear
+set_emit_timer
+packetio_tx_ack
+packetio_tx_emitee
+lseek
+g_info
+get_hostid
+get_net_flags
+get_physical_medium
+get_ssid
+get_ipv4addr
+get_ipv6addr
+get_max_op_rate
+get_link_speed
+get_tsc_ticks_per_sec
+get_icon_image
+get_machine_name
+get_support_info
+get_friendly_name
+get_hw_id
+get_qos_flags
+get_wl_physical_medium
+get_accesspt_assns
+get_jumbo_icon
+get_sees_max
+get_component_tbl
+strcat
+strtoul
+g_rbytes
+g_rpkts
+g_tbytes
+g_tpkts
+g_QosSessions
+g_qos_inactivity_timer
+g_samples_remaining
+g_next_sample
+g_perf_samples
+g_perf_timestamp
+g_sample_count
+g_qos_CTA_timer
+g_qprb_hdr
+g_qinit_hdr
+g_LinkSpeed
+g_TimeStampFreq
+g_pktio_timestamp
+g_reorder_buffer
+__udivdi3
+g_snap_hdr
+libc.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GLIBC_2.0
+$'9&
+$Bp@
+$!i$
+$Bi$
+$!p@
+@(!$
+`(!$
+@(!'
+@ !$
+$'9' 
+@(!$
+$'9/
+$'9/
+$'92
+$'94
+ $B!
+ $B!
+ $B!
+ $B!
+ $B!
+ $B!
+ $B(L
+@(!$
+ $B(
+@(!$
+4cB@
+4D=`
+@ !$
+4DB@
+`(!$
+ $B.
+ $c.
+ $B.
+$'9M
+$'9M
+ $c/
+ $B/
+ $B/
+ $c/
+$'9M
+$'9N<
+$Bpd
+$Bph
+$Bpl
+$Bp`
+$!p`
+$Bp`
+$!p`
+$Bpd
+$Bpd
+$Bph
+$Bpl
+$Bpd
+$Bpd
+$Bph
+$Bpl
+$Bpd
+$Bpd
+$Bpd
+$Bpd
+$Bp`
+$Bp`
+$Bp`
+$Bp`
+$Bp`
+$Bp`
+4BB@
+$Bp`
+$Bp`
+$Bp`
+$Bp`
+$Bp`
+$Bp`
+$!p`
+$Bpd
+$Bpd
+$Bpd
+$Bph
+$Bpd
+$Bpl
+ $B6
+ $c6
+ $B9
+ $B7
+ $B7
+b !$
+$'9|X
+b0%0
+$'9|X
+$'9|X
+$'9|X
+$'9|X
+b(!$
+$'9|X
+$'9}
+ $B@
+$'9kt
+$'9l
+$'9pL
+$'9n
+4BB@
+4BB@
+4BB@
+4BB@
+4BB@
+4BB@
+4BB@
+ $BJ 
+ $BM@
+4BB@
+4BB@
+4BB@
+4BB@
+ $BPD
+ $BPh
+ $BP
+ff4Bfg
+@(!$
+@(!$
+@(!$
+@ !$
+@ !$
+@ !$
+@(!$
+@ !$
+@ !$
+@(!$
+4BB@
+ $BZ
+ $cZ
+@(!$
+@(!$
+@(!$
+@(!$
+4BB@
+4BB@
+4cB@
+`0!$
+`(!$
+`0!$
+`(!$
+@(!$
+`0!$
+`0!$
+@(!$
+@(!$
+@(!$
+@(!$
+@(!$
+@(!$
+@(!$
+@(!$
+@ !$
+D0%0
+D0%0
+`0!$
+`0!$
+@ !<
+ $B\
+$'9%
+ Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+if_get_index: for interface %s: %s
+/var/run/%s-%.10s.pid
+osl_write_pidfile: opening pidfile %s for read: %s
+osl_write_pidfile: read of pre-existing %s failed: %s
+osl_write_pidfile: couldn't parse "%s" as a pid (from file %s); aborting
+osl_write_pidfile: %s contains pid %d which is still running; aborting
+osl_write_pidfile: open %s for write/create: %s
+osl_write_pidfile: writing my PID to lockfile %s: %s
+osl_interface_open: open %s failed: %s
+osl_interface_open: binding to interface %s (index %d): %s
+osl_set_promisc: couldn't get interface flags for %s: %s
+osl_set_promisc: couldn't set interface flags for %s: %s
+get_hwaddr: FAILED creating request socket for '%s' : %s
+get_hwaddr(%d,%s): FAILED : %s
+get_hwaddr: was expecting addr type to be Ether, not type %d
+osl_get_hw_addr: expected an ethernet address on our interface
+/proc/net/dev
+foreach_interface: open("/proc/net/dev") for read failed: %s; not able to determine hostId, so no support for multiple NICs.
+foreach_interface: parse error reading /proc/net/dev: missing colon
+foreach_interface: error during reading of /proc/net/dev
+osl_become_daemon: fork to drop process group leadership failed: %s
+osl_become_daemon: setsid failed?!: %s
+osl_become_daemon: fork to lose group leadership (again) failed: %s
+osl_become_daemon: chdir("/") failed: %s
+get_hostid(): FAILED picking lowest address.
+get_hostid(): FAILED, because chosen hostid = broadcast address
+get_hostid: hostid=%02x:%02x:%02x:%02x:%02x:%02x
+get_wireless_mode: FAILED creating request socket for '%s' : %s
+get_wireless_mode: get associated Access Point MAC failed: Error %d, %s
+STget_bssid: get associated Access Point MAC failed: %s
+get_bssid: expecting Ethernet address back, not sa_family=%d
+get_ssid
+get_ipv4addr: FAILED creating request socket for '%s' : %s
+get_ipv4addr(%d,%s): FAILED : %s
+get_icon_image: reading iconfile %s FAILED : %s
+get_icon_image: stat-ing iconfile %s FAILED : %s
+get_jumbo_icon: reading iconfile %s FAILED : %s
+get_jumbo_icon: stat-ing iconfile %s FAILED : %s
+Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+usage: %s [-d] [-t TRACELEVEL] INTERFACE [WIRELESS-IF]
+	Runs a link-layer topology discovery daemon on INTERFACE (eg eth0)
+	-d : don't background, and log moderate tracing to stdout (debug mode)
+	-t TRACELEVEL : select tracing by adding together:
+		0x01 : BAND network load control calculations
+		0x02 : packet dump of protocol exchange
+		0x04 : Charge mechanism for protection against denial of service
+		0x08 : system information TLVs (type-length-value)
+		0x10 : State-Machine transitions for smS, smE, and smT
+		0x20 : Qos/qWave extensions
+/etc/icon.ico
+/etc/lld2d.conf
+%s = %s
+icon
+/etc/
+jumbo-icon
+line ignored - var does not match a known string
+line ignored - var or val was missing or no equals
+conftest
+%s: -t TRACELEVEL: parse error in "%s"
+eth0
+eth1
+%s: no interface-name argument; '%s' assumed.
+%s: error: missing INTERFACE name argument
+Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+event_add_io: no free IO slots (all %d used)
+event_remove_io: fd %d is unknown; ignoring
+event_mainloop: select: %s
+Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+%s: ERROR: 
+%s: warning: 
+xmalloc: allocation of %d bytes failed
+Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+verify_discover: frame with truncated Discover header (len=%d src=%02x:%02x:%02x:%02x:%02x:%02x dst=%02x:%02x:%02x:%02x:%02x:%02x); ignoring
+rx_hello: frame with truncated Hello header (len=%d src=%02x:%02x:%02x:%02x:%02x:%02x dst=%02x:%02x:%02x:%02x:%02x:%02x); ignoring
+query-ltlv-rcvd: frame with truncated qltlv header (len=%d src=%02x:%02x:%02x:%02x:%02x:%02x dst=%02x:%02x:%02x:%02x:%02x:%02x); ignoring
+TimedProbe
+validate_emit: frame with truncated Emit header (len=%d src=%02x:%02x:%02x:%02x:%02x:%02x dst=%02x:%02x:%02x:%02x:%02x:%02x); ignoring
+validate_emit: emitee_desc from %02x:%02x:%02x:%02x:%02x:%02x with unknown type=%d; ignoring whole Emit request
+validate_emit: emitee_desc with src=%02x:%02x:%02x:%02x:%02x:%02x is invalid; ignoring whole Emit request
+validate_emit: emitee_desc with dst=%02x:%02x:%02x:%02x:%02x:%02x is invalid; ignoring whole Emit request
+validate_emit: Emit contains emitee_descs with total pausetime %ums > %ums; ignoring whole Emit request
+validate_emit: numdescs=%d but only %d descs in frame
+packetio_tx_write: write to socket failed: %s
+packetio_tx_write: socket write for %d bytes, but %d went out
+tx_rtxpacket
+g_rtxseqnum != 0
+../src/packetio.c
+packetio_tx_qltlvResp: no mapping session when qLTLV was received. No response is being sent.
+packetio_recv_handler: error on read: %s
+packetio_recv_handler: runt frame (%d bytes < %d); ignoring
+packetio_recv_handler: frame with truncated Base header (len=%d src=%02x:%02x:%02x:%02x:%02x:%02x dst=%02x:%02x:%02x:%02x:%02x:%02x); ignoring
+packetio_recv_handler: got version %d protocol frame; ignoring
+packetio_recv_handler: g_opcode=%d is out of range; ignoring
+packetio_recv_handler: broadcast of g_opcode %d (from realsrc=%02x:%02x:%02x:%02x:%02x:%02x) is illegal; dropping
+packetio_recv_handler: g_opcode %d with seq=%u (from realsrc=%02x:%02x:%02x:%02x:%02x:%02x) is illegal; dropping
+packetio_recv_handler: g_opcode %d (from realsrc=%02x:%02x:%02x:%02x:%02x:%02xmust have seqnum
+packetio_recv_handler: mis-matched opcode when matched sequence number: got opcode %d, expecting %d; ignoring
+packetio_recv_handler: mis-matched sequence number: got %d, expecting %d; ignoring
+Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+band_InitStats
+InitStats: Ni=%u r=%u
+g_block_timer == ((void *)0)
+../src/band.c
+UpdateStats: Ni=%u r=%u
+UpdateStats: block timer still running?!?
+ChooseHelloTime: delay=%u; 
+will hello at %ld.%06ld
+idle this block, so no Hello
+IncreaseLoad: Ni=%u r=%u
+Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+state_process_packet: no room to create new session. Packet dropped.
+set_emit_timer
+g_emit_remaining > 0
+../src/state.c
+g_emit_timer == ((void *)0)
+Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+rx_discover: truncated frame: ended at station %d, but numstations claimed %d
+Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+smE (quiescent): Rcvd Discover from an existing session. Discarded.
+smE (Quiescent): Killing a block timeout that should already be dead!
+Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+ProcessEmits
+g_emit_remaining == 0
+../src/mapping.c
+smT (Quiescent): Ignored packet w/ unknown opcode: %d
+Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+write_lg_icon_t: lseek to byte %d on the iconfile FAILED, errno: %s
+write_lg_icon_t: read of the jumbo iconfile FAILED, errno: %s
+write_icon_file_t: lseek to byte %d on the iconfile FAILED, errno: %s
+write_icon_file_t: read of the iconfile FAILED, errno: %s
+write-assns-list: No list was generated, empty list written
+write-assns-list: Offset too big, empty list written
+tlv_write_tlv: FAILED initializing 'unset' TLV %d (NULL get_fn)
+tlv_write_tlv: FAILED getting 'static' or 'dynamic' TLV %d (NULL get_fn)
+Topology-Discovery
+Quick-Discovery
+QoS-Diagnostics
+QosInsufficientResources
+QosBusy
+QosModerationNotAvailable
+Invalid-Error
+QosInitializeSink
+QosReady
+QosProbe
+QosQuery
+QosQueryResp
+QosReset
+QosError
+QosAck
+QosCounterSnapshot
+QosCounterResult
+QosCounterLease
+Invalid-Opcode
+Discover
+Hello
+Emit
+Train
+Probe
+Query
+QueryResp
+Reset
+Charge
+Flat
+QueryLargeTlv
+QueryLargeTlvResp
+PacketRcvd
+DiscoverRcvd
+EmitRcvd
+ResetRcvd
+BlockTimeout
+ChargeTimeout
+EmitTimeout
+HelloDelayTimeout
+InactivityTimeout
+InvalidPacket
+/proc/net/dev
+0 0 0 0 0 0
+get_raw_samples: using dummy values due to parse error!
+get_raw_samples: failed reading /proc/dev for device statistics!
+get_raw_samples: failed opening /proc/dev for device statistics!
+qos_initsink: frame with truncated InitializeSink header (len=%d src=%02x:%02x:%02x:%02x:%02x:%02x dst=%02x:%02x:%02x:%02x:%02x:%02x); ignoring
+packetio_recv_handler: no session active for %02x:%02x:%02x:%02x:%02x:%02x; ignoring...
+qospktrcv: g_opcode=%d is out of range for QoS msg; ignoring
+qospktrcv: g_opcode=%d must be sequenced; ignoring
+qospktrcv: g_opcode=%d must be directed; ignoring
+qospktrcv: QosCounterLease must not be sequenced; ignoring
+qospktrcv: QosCounterLease must be broadcasted; ignoring
+RELEASE 1.2

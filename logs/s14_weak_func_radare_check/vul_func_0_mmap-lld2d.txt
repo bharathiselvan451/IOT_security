@@ -1,0 +1,11 @@
+[*] Binary protection state of lld2d
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function mmap tear down of lld2d
+
+
+[*] Function mmap used 0 times lld2d
+

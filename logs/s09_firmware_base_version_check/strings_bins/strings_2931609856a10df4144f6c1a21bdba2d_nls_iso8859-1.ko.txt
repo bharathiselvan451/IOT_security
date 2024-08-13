@@ -1,0 +1,46 @@
+iso8859-1
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+license=Dual BSD/GPL
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+nls_iso8859_1
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.uni2char
+.rel.text.char2uni
+.rel.init.text
+.rel.exit.text
+.rel.rodata
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+nls_iso8859-1.c
+init_nls_iso8859_1
+exit_nls_iso8859_1
+__mod_license258
+table
+uni2char
+char2uni
+charset2lower
+charset2upper
+charset2uni
+page_uni2charset
+page00
+nls_iso8859-1.mod.c
+__module_depends
+__mod_vermagic5
+__this_module
+register_nls
+cleanup_module
+init_module
+unregister_nls

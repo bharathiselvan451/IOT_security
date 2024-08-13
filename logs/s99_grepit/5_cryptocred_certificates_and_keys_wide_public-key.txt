@@ -1,0 +1,13 @@
+[*] Searching (args for grep: -i) for PUBLIC.{0,20}KEY.
+[*] Grepit state info - comment: Wide search for certificate and keys specifics of base64 encoded format
+[*] Grepit state info - Filename 5_cryptocred_certificates_and_keys_wide_public-key.txt
+[*] Grepit state info - Example: public key
+[*] Grepit state info - False positive example: public String getBlaKey
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: PUBLIC.{0,20}KEY
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m786[m[36m-[m/tmp/reinit_wscdwscd: init_wlan() failed!wscd: start_upnp() failed!/tmp/wscd_cancel1234567890WSC_CONFIGBYEXTREG=%d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m787[m[36m-[mflash set WSC_CONFIGBYEXTREG %d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m788[m[36m-[mflash set %s WSC_CONFIGBYEXTREG %d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m:[m[32m789[m[36m:[m00000000WFA-SimpleConfig-Registrar-1-0WFA-SimpleConfig-Enrollee-1-0KeyWrapAuthenticatorSSIDMAC AddressAuthenticationTypeEncryptionTypeNetworkKeyIndexNetworkKeyWEPTransmitKeyEnrolleeNonceRegistrarNonceUUID-R[01;31mPublicKey[mAuthenticationTypeFlagsEncryptionTypeFlagsConnectionTypeFlagsConfigMethodsManufactureModelNameModelNumberSerailNumberDeviceNameRFBandAssociationStateDevicePasswordIDConfigurationErrorOSVersionWFA-SimpleConfig-Enrollee-1-0WFA-SimpleConfig-Registrar-1-0%02x:%02x:%02x:%02x:%02x:%02xUUID-EMACAddressSimpleConfigStateRegistarNonceE-Hash1E-Hash2E-S1E-S200000000R-Hash1R-Hash2R-S1R-S2NetworkIndexLD
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd[m[36m-[m[32m790[m[36m-[m<< Rec UPnP SetSelectedRegistrar msg>>

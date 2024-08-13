@@ -1,0 +1,22 @@
+[+] Static binary firmware versions detection
+=================================================================
+This module extracts version and license details from the extracted firmware.
+On Linux based systems all binaries are analysed for version details.
+On Non Linux systems all files are analysed for version details.
+
+[+] Version information found BPALogin v2.0.2 - portable BigPond Broadband login client in binary /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/bpalogin (-rwxrwxr-x 501 502) (license: GPL-2.0-only) (static).
+[+] Version information found BusyBox v1.01  in binary /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox (-rwxr-xr-x 501 502) (license: GPL-2.0-only) (static).
+[+] Version information found BusyBox v1.01 (2013.09.23-07:32+0000) multi-call binary in binary /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox (-rwxr-xr-x 501 502) (license: GPL-2.0-only) (static).
+[+] Version information found BusyBox v1.01 (2013.09.23-07:32+0000) Built-in shell in binary /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox (-rwxr-xr-x 501 502) (license: GPL-2.0-only) (static).
+[+] Version information found 1.4.5 in binary /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables (-rwxrwxr-x 501 502) (license: GPL-2.0-only) (static).
+[+] Version information found part of OpenSSL 0.9.8b- in binary /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd (-rwxrwxr-x 501 502) (license: OpenSSL OR Apache-2.0) (static).
+[+] Version information found part of OpenSSL 1.0.0d  in binary /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ping6 (-rwxrwxr-x 501 502) (license: OpenSSL OR Apache-2.0) (static).
+[+] Version information found vsftpd: version 2.3.2 in binary /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd (-rwxrwxr-x 501 502) (license: GPL-2.0-only) (static).
+[+] Version information found xl2tpd version xl2tpd-1.1.12 started in binary /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/xl2tpd (-rwxrwxr-x 501 502) (license: unknown) (static).
+[+] Version information found inflate 1.1.4 Copyright 1995-2002 Mark Adler in binary /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd (-rwxrwxr-x 501 502) (license: Zlib) (static).
+
+-----------------------------------------------------------------
+The software inventory was detected with static analysis mechanism on all identified binaries.
+The shown details should be checked for known vulnerabilities and software components that are outdated and not maintained anymore.
+
+-----------------------------------------------------------------

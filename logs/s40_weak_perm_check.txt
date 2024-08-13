@@ -1,0 +1,16 @@
+[+] Search files with weak permissions
+=================================================================
+The weak perm checking module scans for weak file permissions in the firmware path.
+
+[-] No setuid files found
+[-] No setgid files found
+[-] No world writable files found
+[+] Found 1 weak shadow files:
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/shadow (-rw-rw-r-- 501 502)
+[-] No rc.d files with weak permissions found
+[+] Found 3 init.d files not belonging to root:
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/init.d/iptables-stop (-rwxr-xr-x 501 502)
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/init.d/rc.modules (-rwxr-xr-x 501 502)
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/init.d/rcS (-rwxr-xr-x 501 502)
+
+[*] Statistics:4

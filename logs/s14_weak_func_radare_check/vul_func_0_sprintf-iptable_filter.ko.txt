@@ -1,0 +1,11 @@
+[*] Binary protection state of iptable_filter.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function sprintf tear down of iptable_filter.ko
+
+
+[*] Function sprintf used 0 times iptable_filter.ko
+

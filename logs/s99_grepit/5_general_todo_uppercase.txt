@@ -1,0 +1,12 @@
+[*] Searching (args for grep: ) for TODO.
+[*] Grepit state info - comment: TODOs, unfinished and insecure things?
+[*] Grepit state info - Filename 5_general_todo_uppercase.txt
+[*] Grepit state info - Example: TODO:
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: TODO
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/init.d/rc.modules[m[36m-[m[32m1[m[36m-[m#!/bin/sh
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/init.d/rc.modules[m[36m-[m[32m2[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/init.d/rc.modules[m[36m:[m[32m3[m[36m:[m# [01;31mTODO[m: generate this file when building the image
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/init.d/rc.modules[m[36m-[m[32m4[m[36m-[m

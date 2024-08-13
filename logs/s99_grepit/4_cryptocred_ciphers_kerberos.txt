@@ -1,0 +1,32 @@
+[*] Searching (args for grep: -i) for kerberos.
+[*] Grepit state info - comment: Kerberos. Security depends heavily on usage and what is secured.
+[*] Grepit state info - Filename 4_cryptocred_ciphers_kerberos.txt
+[*] Grepit state info - Example: Kerberos
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: kerberos
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m-[m[32m52[m[36m-[mwww		80/tcp		http	# WorldWideWeb HTTP
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m-[m[32m53[m[36m-[mwww		80/udp			# HyperText Transfer Protocol
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m-[m[32m54[m[36m-[mlink		87/tcp		ttylink
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m55[m[36m:[m[01;31mkerberos[m	88/tcp		krb5	# [01;31mKerberos[m v5
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m56[m[36m:[m[01;31mkerberos[m	88/udp
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m-[m[32m57[m[36m-[msupdup		95/tcp
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m-[m[32m165[m[36m-[mrfe		5002/udp		# Actually uses UDP only
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m-[m[32m166[m[36m-[m#
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m-[m[32m167[m[36m-[m#
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m168[m[36m:[m# [01;31mKerberos[m (Project Athena/MIT) services
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m169[m[36m:[m# Note that these are for [01;31mKerberos[m v4, and are unofficial.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m-[m[32m170[m[36m-[m#
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m171[m[36m:[mklogin		543/tcp			# [01;31mKerberos[m `rlogin'
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m172[m[36m:[mkshell		544/tcp		krcmd	# [01;31mKerberos[m `rsh'
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m173[m[36m:[m[01;31mkerberos[m-adm	749/tcp			# [01;31mKerberos[m `kadmin' (v5)
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m174[m[36m:[m[01;31mkerberos[m4	750/udp		kdc	# [01;31mKerberos[m (server) udp
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m175[m[36m:[m[01;31mkerberos[m4	750/tcp		kdc	# [01;31mKerberos[m (server) tcp
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m176[m[36m:[m[01;31mkerberos[m-master	751/udp			# [01;31mKerberos[m admin server udp
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m177[m[36m:[m[01;31mkerberos[m-master	751/tcp			# [01;31mKerberos[m admin server tcp
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m178[m[36m:[mkrbupdate	760/tcp		kreg	# BSD [01;31mKerberos[m registration
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m179[m[36m:[mkpasswd		761/tcp		kpwd	# BSD [01;31mKerberos[m `passwd'
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m:[m[32m180[m[36m:[meklogin		2105/tcp		# [01;31mKerberos[m encrypted `rlogin'
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/services[m[36m-[m[32m181[m[36m-[m#

@@ -1,0 +1,11 @@
+[*] Binary protection state of radvdctl
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of radvdctl
+
+
+[*] Function fprintf used 0 times radvdctl
+

@@ -1,0 +1,122 @@
+_GLOBAL_OFFSET_TABLE_
+_gp_disp
+__libc_stack_end
+_dl_debug_state
+_dl_handles
+_dl_symbol_tables
+_dl_loaded_modules
+_dl_progname
+_dl_free_function
+_dl_malloc_function
+_dl_debug_addr
+_dl_pagesize
+_dl_errno
+_dl_secure
+_dl_ldsopath
+_dl_preload
+_dl_library_path
+_dl_parse_lazy_relocation_information
+_dl_run_init_array
+_dl_app_init_array
+_dl_run_fini_array
+_dl_app_fini_array
+_dl_getenv
+_dl_unsetenv
+_dl_parse_dynamic_info
+_dl_unmap_cache
+_dl_free
+_dl_lookup_hash
+_dl_perform_mips_global_got_relocations
+_dl_dprintf
+_dl_protect_relro
+_dl_map_cache
+_dl_malloc
+_dl_strdup
+_dl_add_elf_hash_table
+_dl_load_elf_shared_library
+_dl_internal_error_number
+_dl_load_shared_library
+_dl_error_number
+_dl_parse_relocation_information
+_dl_fixup
+_dl_get_ready_to_run
+_dl_elf_main
+__dl_runtime_resolve
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+ld-uClibc.so.0
+EP8$
+ !'9
+@ !&c
+ !&B
+` !$B
+ !&B
+BP8$
+gP4$
+BP8,B
+EP8$
+C($'
+`(!$B
+@(!$C
+@ !$
+4BLF
+0%0c
+d(#$
+` !$
+(#$D
+0%0c
+` !$
+` !$
+!$DM
+8!'9-X
+(!'9-X
+8!'9-X
+$P-X
+$PN,
+`8!$
+Q8$B
+$BL@$B
+DQ8$
+"Q8$
+dt4E
+4BLF
+e(!4
+ld-uClibc.so.0
+mmap of a spare page failed!
+overflow
+(null)
+%s: cannot apply additional memory protection after relocation
+/etc/ld.so.cache
+%s:%i: can't map '%s'
+ld.so-
+1.7.0
+%s: cache '%s' is corrupt
+%s: mmap of a spare page failed!
+%s: '%s' is not an ELF file
+%s: '%s' is not an ELF executable for MIPS
+%s: '%s' has more than one dynamic section
+%s: '%s' is missing a dynamic section
+/lib:/usr/lib
+%s: 
+symbol '%s': 
+can't handle reloc type %x
+LD_PRELOAD
+LD_LIBRARY_PATH
+LD_DEBUG
+LD_DEBUG_OUTPUT
+LD_TRACE_LOADED_OBJECTS
+TMPDIR
+Standalone execution is not supported yet
+LD_BIND_NOW
+LD_PRELOAD
+LD_LIBRARY_PATH
+LD_TRACE_LOADED_OBJECTS
+	%s => not found
+%s: can't load library '%s'
+	%s => %s (%x)
+__environ
+malloc
+%s: can't resolve symbol '%s'

@@ -1,0 +1,847 @@
+[*] Binary protection state of iptables
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of iptables
+
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables @ 0x4071bc */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) fcn.004071bc ()                  | void fcn_004071bc () {
+    0x004071bc lui gp, 9                     |     
+    0x004071c0 addiu gp, gp, -0x3ebc         |     
+    0x004071c4 addu gp, gp, t9               |     gp += t9;
+    0x004071c8 addiu sp, sp, -0x1050         |     
+    0x004071cc sw ra, 0x104c(sp)             |     *(var_104ch) = ra;
+    0x004071d0 sw s6, 0x1048(sp)             |     *(var_1048h) = s6;
+    0x004071d4 sw s5, 0x1044(sp)             |     *(var_1044h) = s5;
+    0x004071d8 sw s4, 0x1040(sp)             |     *(var_1040h) = s4;
+    0x004071dc sw s3, 0x103c(sp)             |     *(var_103ch) = s3;
+    0x004071e0 sw s2, 0x1038(sp)             |     *(var_1038h) = s2;
+    0x004071e4 sw s1, 0x1034(sp)             |     *(var_1034h) = s1;
+    0x004071e8 sw s0, 0x1030(sp)             |     *(var_1030h) = s0;
+    0x004071ec sw gp, 0x10(sp)               |     *(var_10h) = gp;
+    0x004071f0 lw t9, -0x7ee8(gp)            |     t9 = sym.iptc_is_chain;
+    0x004071f4 move s1, a1                   |     s1 = a1;
+    0x004071f8 move s2, a0                   |     s2 = a0;
+    0x004071fc move a0, a1                   |     a0 = a1;
+    0x00407200 lw a1, 0x1060(sp)             |     a1 = *(arg_1060h);
+    0x00407204 move s0, a2                   |     s0 = a2;
+    0x00407208 move s4, a3                   |     s4 = a3;
+    0x0040720c jalr t9                       |     t9 ();
+    0x00407210 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x00407214 lw t9, -0x7b6c(gp)            |     t9 = sym.xtables_find_target;
+    0x00407218 move a0, s1                   |     a0 = s1;
+                                             |     if (v0 == 0) {
+    0x0040721c bnez v0, 0x407228             |         
+    0x00407220 addiu a1, zero, 2             |         a1 = 2;
+    0x00407224 b 0x407234                    |         
+                                             |     } else {
+    0x00407228 lw a0, -0x7fd4(gp)            |         a0 = *((gp - 8181));
+    0x0040722c addiu a1, zero, 3             |         a1 = 3;
+    0x00407230 addiu a0, a0, 0x6a7c          |         a0 += 0x6a7c;
+                                             |     }
+    0x00407234 jalr t9                       |     t9 ();
+    0x00407238 nop                           |     
+    0x0040723c andi v1, s4, 0x100            |     v1 = s4 & 0x100;
+    0x00407240 move s5, v0                   |     s5 = v0;
+    0x00407244 lhu v0, 0x58(s2)              |     v0 = *((s2 + 44));
+    0x00407248 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040724c lbu s3, 0x52(s2)              |     s3 = *((s2 + 82));
+    0x00407250 addu s6, s2, v0               |     s6 = s2 + v0;
+                                             |     if (v1 != 0) {
+    0x00407254 beqz v1, 0x407288             |         
+    0x00407258 andi v0, s4, 0x10             |         v0 = s4 & 0x10;
+                                             |         if (v0 != 0) {
+    0x0040725c beqz v0, 0x407270             |             
+    0x00407260 nop                           |             
+    0x00407264 lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x00407268 addiu a0, v0, 0x6a80          |             a0 = v0 + 0x6a80;
+    0x0040726c b 0x407278                    |             
+                                             |         } else {
+    0x00407270 lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x00407274 addiu a0, v0, 0x6a84          |             a0 = v0 + 0x6a84;
+                                             |         }
+    0x00407278 lw t9, -0x7b84(gp)            |         t9 = sym.imp.printf;
+    0x0040727c move a1, s0                   |         a1 = s0;
+    0x00407280 jalr t9                       |         t9 ();
+    0x00407284 lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |     }
+    0x00407288 andi v0, s4, 2                |     v0 = s4 & 2;
+    0x0040728c andi v0, s4, 0x20             |     v0 = s4 & 0x20;
+                                             |     if (v0 == 0) {
+    0x00407290 bnez v0, 0x4072cc             |         
+    0x00407294 lw v0, -0x7fd8(gp)            |         v0 = *(gp);
+    0x00407298 lw a1, 0x64(s2)               |         a1 = *((s2 + 25));
+    0x0040729c addiu s0, v0, 0x6fb8          |         s0 = v0 + 0x6fb8;
+    0x004072a0 lw a0, 0x60(s2)               |         a0 = *((s2 + 24));
+    0x004072a4 move t9, s0                   |         t9 = s0;
+    0x004072a8 move a2, s4                   |         a2 = s4;
+    0x004072ac jalr t9                       |         t9 ();
+    0x004072b0 lw a1, 0x6c(s2)               |         a1 = *((s2 + 27));
+    0x004072b4 move t9, s0                   |         t9 = s0;
+    0x004072b8 lw a0, 0x68(s2)               |         a0 = *((s2 + 26));
+    0x004072bc move a2, s4                   |         a2 = s4;
+    0x004072c0 jalr t9                       |         t9 ();
+    0x004072c4 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x004072c8 andi v0, s4, 0x20             |         v0 = s4 & 0x20;
+                                             |     }
+    0x004072cc andi v0, s4, 0x10             |     v0 = s4 & 0x10;
+                                             |     if (v0 == 0) {
+    0x004072d0 bnez v0, 0x407300             |         
+                                             |         if (v0 != 0) {
+    0x004072d4 beqz v0, 0x4072e8             |             
+    0x004072d8 nop                           |             
+    0x004072dc lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x004072e0 addiu a0, v0, 0x6a8c          |             a0 = v0 + 0x6a8c;
+    0x004072e4 b 0x4072f0                    |             
+                                             |         } else {
+    0x004072e8 lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x004072ec addiu a0, v0, 0x6a90          |             a0 = v0 + 0x6a90;
+                                             |         }
+    0x004072f0 lw t9, -0x7b84(gp)            |         t9 = sym.imp.printf;
+    0x004072f4 move a1, s1                   |         a1 = s1;
+    0x004072f8 jalr t9                       |         t9 ();
+    0x004072fc lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |     }
+    0x00407300 lw s0, -0x7b88(gp)            |     s0 = *((gp - 7906));
+    0x00407304 lw a1, (s0)                   |     a1 = *(s0);
+    0x00407308 lw v0, 0x34(a1)               |     v0 = *((a1 + 13));
+                                             |     if (v0 != 0) {
+    0x0040730c beqz v0, 0x40735c             |         
+    0x00407310 nop                           |         
+    0x00407314 lw a0, 0x10(a1)               |         a0 = *((a1 + 4));
+    0x00407318 lw v0, 0x1c(a1)               |         v0 = *((a1 + 7));
+    0x0040731c sltu v0, a0, v0               |         v0 = (a0 < v0) ? 1 : 0;
+                                             |         if (v0 != 0) {
+    0x00407320 beqz v0, 0x40734c             |             
+    0x00407324 nop                           |             
+    0x00407328 addiu v0, a0, 1               |             v0 = a0 + 1;
+    0x0040732c sw v0, 0x10(a1)               |             *((a1 + 4)) = v0;
+    0x00407330 addiu v0, zero, 0x21          |             v0 = 0x21;
+    0x00407334 lbu v1, 0x53(s2)              |             v1 = *((s2 + 83));
+    0x00407338 andi v1, v1, 0x40             |             v1 &= 0x40;
+    0x0040733c sltiu v1, v1, 1               |             v1 = (v1 < 1) ? 1 : 0;
+    0x00407340 subu v0, v0, v1               |             __asm ("subu v0, v0, v1");
+    0x00407344 sb v0, (a0)                   |             *(a0) = v0;
+    0x00407348 b 0x40737c                    |             goto label_0;
+                                             |         }
+    0x0040734c lbu v0, 0x53(s2)              |         v0 = *((s2 + 83));
+    0x00407350 lw t9, -0x7fa4(gp)            |         t9 = sym.imp.__fputc_unlocked;
+    0x00407354 andi v0, v0, 0x40             |         v0 &= 0x40;
+    0x00407358 b 0x407368                    |         
+                                             |     } else {
+    0x0040735c lbu v0, 0x53(s2)              |         v0 = *((s2 + 83));
+    0x00407360 lw t9, -0x7ea0(gp)            |         t9 = sym.imp.fputc;
+    0x00407364 andi v0, v0, 0x40             |         v0 &= 0x40;
+                                             |     }
+    0x00407368 addiu v1, zero, 0x20          |     v1 = 0x20;
+    0x0040736c addiu a0, zero, 0x21          |     a0 = 0x21;
+                                             |     if (v0 != 0) {
+    0x00407370 movz a0, v1, v0               |         a0 = v1;
+                                             |     }
+    0x00407374 jalr t9                       |     t9 ();
+    0x00407378 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             | label_0:
+    0x0040737c lw t9, -0x7fd8(gp)            |     t9 = *(gp);
+    0x00407380 andi s1, s4, 1                |     s1 = s4 & 1;
+    0x00407384 lbu a0, 0x51(s2)              |     a0 = *((s2 + 81));
+    0x00407388 addiu t9, t9, 0x6920          |     t9 += 0x6920;
+    0x0040738c move a1, s1                   |     a1 = s1;
+    0x00407390 jalr t9                       |     t9 ();
+    0x00407394 move a1, v0                   |     a1 = v0;
+    0x00407398 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040739c andi v0, s4, 0x10             |     v0 = s4 & 0x10;
+                                             |     if (a1 != 0) {
+    0x004073a0 beqz a1, 0x4073cc             |         
+                                             |         if (v0 != 0) {
+    0x004073a4 beqz v0, 0x4073b8             |             
+    0x004073a8 nop                           |             
+    0x004073ac lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x004073b0 addiu a0, v0, 0x6a8c          |             a0 = v0 + 0x6a8c;
+    0x004073b4 b 0x4073c0                    |             
+                                             |         } else {
+    0x004073b8 lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x004073bc addiu a0, v0, 0x6a98          |             a0 = v0 + 0x6a98;
+                                             |         }
+    0x004073c0 lw t9, -0x7b84(gp)            |         t9 = sym.imp.printf;
+    0x004073c4 b 0x4073f0                    |         goto label_1;
+    0x004073c8 nop                           |         
+                                             |     }
+                                             |     if (v0 != 0) {
+    0x004073cc beqz v0, 0x4073e0             |         
+    0x004073d0 nop                           |         
+    0x004073d4 lw v0, -0x7fd4(gp)            |         v0 = *((gp - 8181));
+    0x004073d8 addiu a0, v0, 0x6aa0          |         a0 = v0 + 0x6aa0;
+    0x004073dc b 0x4073e8                    |         
+                                             |     } else {
+    0x004073e0 lw v0, -0x7fd4(gp)            |         v0 = *((gp - 8181));
+    0x004073e4 addiu a0, v0, 0x6aa8          |         a0 = v0 + 0x6aa8;
+                                             |     }
+    0x004073e8 lw t9, -0x7b84(gp)            |     t9 = sym.imp.printf;
+    0x004073ec lhu a1, 0x50(s2)              |     a1 = *((s2 + 40));
+                                             | label_1:
+    0x004073f0 jalr t9                       |     t9 ();
+    0x004073f4 nop                           |     
+    0x004073f8 andi v0, s4, 8                |     v0 = s4 & 8;
+    0x004073fc lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x00407400 andi v0, s4, 0x40             |     v0 = s4 & 0x40;
+                                             |     if (v0 != 0) {
+    0x00407404 beqz v0, 0x407558             |         
+    0x00407408 andi v0, s4, 0x10             |         v0 = s4 & 0x10;
+                                             |         if (v0 != 0) {
+    0x0040740c beqz v0, 0x40742c             |             
+    0x00407410 nop                           |             
+    0x00407414 lw a0, -0x7fd4(gp)            |             a0 = *((gp - 8181));
+    0x00407418 lw t9, -0x7f5c(gp)            |             t9 = sym.imp.fputs;
+    0x0040741c lw a1, (s0)                   |             a1 = *(s0);
+    0x00407420 addiu a0, a0, 0x6ab0          |             a0 += 0x6ab0;
+    0x00407424 jalr t9                       |             t9 ();
+    0x00407428 lw gp, 0x10(sp)               |             gp = *(var_10h);
+                                             |         }
+    0x0040742c lw s0, -0x7b88(gp)            |         s0 = *((gp - 7906));
+    0x00407430 lw a1, (s0)                   |         a1 = *(s0);
+    0x00407434 lw v0, 0x34(a1)               |         v0 = *((a1 + 13));
+                                             |         if (v0 != 0) {
+    0x00407438 beqz v0, 0x407488             |             
+    0x0040743c nop                           |             
+    0x00407440 lw v1, 0x10(a1)               |             v1 = *((a1 + 4));
+    0x00407444 lw v0, 0x1c(a1)               |             v0 = *((a1 + 7));
+    0x00407448 sltu v0, v1, v0               |             v0 = (v1 < v0) ? 1 : 0;
+                                             |             if (v0 != 0) {
+    0x0040744c beqz v0, 0x407478             |                 
+    0x00407450 nop                           |                 
+    0x00407454 addiu v0, v1, 1               |                 v0 = v1 + 1;
+    0x00407458 sw v0, 0x10(a1)               |                 *((a1 + 4)) = v0;
+    0x0040745c lbu v0, 0x53(s2)              |                 v0 = *((s2 + 83));
+    0x00407460 andi v0, v0, 0x20             |                 v0 &= 0x20;
+    0x00407464 addiu a0, zero, 0x21          |                 a0 = 0x21;
+                                             |                 if (v0 == 0) {
+    0x00407468 bnez v0, 0x407470             |                     
+    0x0040746c addiu a0, zero, 0x2d          |                     a0 = 0x2d;
+                                             |                 }
+    0x00407470 sb a0, (v1)                   |                 *(v1) = a0;
+    0x00407474 b 0x4074a8                    |                 goto label_2;
+                                             |             }
+    0x00407478 lbu v0, 0x53(s2)              |             v0 = *((s2 + 83));
+    0x0040747c lw t9, -0x7fa4(gp)            |             t9 = sym.imp.__fputc_unlocked;
+    0x00407480 andi v0, v0, 0x20             |             v0 &= 0x20;
+    0x00407484 b 0x407494                    |             
+                                             |         } else {
+    0x00407488 lbu v0, 0x53(s2)              |             v0 = *((s2 + 83));
+    0x0040748c lw t9, -0x7ea0(gp)            |             t9 = sym.imp.fputc;
+    0x00407490 andi v0, v0, 0x20             |             v0 &= 0x20;
+                                             |         }
+    0x00407494 addiu v1, zero, 0x2d          |         v1 = 0x2d;
+    0x00407498 addiu a0, zero, 0x21          |         a0 = 0x21;
+                                             |         if (v0 != 0) {
+    0x0040749c movz a0, v1, v0               |             a0 = v1;
+                                             |         }
+    0x004074a0 jalr t9                       |         t9 ();
+    0x004074a4 lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             | label_2:
+    0x004074a8 lw a1, (s0)                   |         a1 = *(s0);
+    0x004074ac lw v0, 0x34(a1)               |         v0 = *((a1 + 13));
+    0x004074b0 andi v1, s3, 1                |         v1 = s3 & 1;
+                                             |         if (v0 != 0) {
+    0x004074b4 beqz v0, 0x4074ec             |             
+    0x004074b8 lw a0, 0x10(a1)               |             a0 = *((a1 + 4));
+    0x004074bc lw v0, 0x1c(a1)               |             v0 = *((a1 + 7));
+    0x004074c0 lw t9, -0x7fa4(gp)            |             t9 = sym.imp.__fputc_unlocked;
+    0x004074c4 sltu v0, a0, v0               |             v0 = (a0 < v0) ? 1 : 0;
+    0x004074c8 addiu v0, zero, 0x2d          |             v0 = 0x2d;
+                                             |             if (v0 != 0) {
+    0x004074cc beqz v0, 0x4074f4             |                 
+    0x004074d0 addiu v0, a0, 1               |                 v0 = a0 + 1;
+    0x004074d4 addiu a2, zero, 0x66          |                 a2 = 0x66;
+    0x004074d8 sw v0, 0x10(a1)               |                 *((a1 + 4)) = v0;
+                                             |                 if (v1 == 0) {
+    0x004074dc bnez v1, 0x4074e4             |                     
+    0x004074e0 addiu a2, zero, 0x2d          |                     a2 = 0x2d;
+                                             |                 }
+    0x004074e4 sb a2, (a0)                   |                 *(a0) = a2;
+    0x004074e8 b 0x407504                    |                 
+                                             |             } else {
+    0x004074ec lw t9, -0x7ea0(gp)            |                 t9 = sym.imp.fputc;
+    0x004074f0 addiu v0, zero, 0x2d          |                 v0 = 0x2d;
+                                             |             }
+    0x004074f4 addiu a0, zero, 0x66          |             a0 = 0x66;
+                                             |             if (v1 != 0) {
+    0x004074f8 movz a0, v0, v1               |                 a0 = v0;
+                                             |             }
+    0x004074fc jalr t9                       |             t9 ();
+    0x00407500 lw gp, 0x10(sp)               |             gp = *(var_10h);
+                                             |         }
+    0x00407504 lw a1, (s0)                   |         a1 = *(s0);
+    0x00407508 lw v0, 0x34(a1)               |         v0 = *((a1 + 13));
+                                             |         if (v0 != 0) {
+    0x0040750c beqz v0, 0x407544             |             
+    0x00407510 nop                           |             
+    0x00407514 lw a0, 0x10(a1)               |             a0 = *((a1 + 4));
+    0x00407518 lw v0, 0x1c(a1)               |             v0 = *((a1 + 7));
+    0x0040751c sltu v0, a0, v0               |             v0 = (a0 < v0) ? 1 : 0;
+    0x00407520 addiu v1, a0, 1               |             v1 = a0 + 1;
+                                             |             if (v0 != 0) {
+    0x00407524 beqz v0, 0x407538             |                 
+    0x00407528 addiu v0, zero, 0x20          |                 v0 = 0x20;
+    0x0040752c sb v0, (a0)                   |                 *(a0) = v0;
+    0x00407530 sw v1, 0x10(a1)               |                 *((a1 + 4)) = v1;
+    0x00407534 b 0x407554                    |                 goto label_3;
+                                             |             }
+    0x00407538 lw t9, -0x7fa4(gp)            |             t9 = sym.imp.__fputc_unlocked;
+    0x0040753c b 0x407548                    |             goto label_4;
+    0x00407540 nop                           |             
+                                             |         }
+    0x00407544 lw t9, -0x7ea0(gp)            |         t9 = sym.imp.fputc;
+                                             | label_4:
+    0x00407548 addiu a0, zero, 0x20          |         a0 = 0x20;
+    0x0040754c jalr t9                       |         t9 ();
+    0x00407550 lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             | label_3:
+    0x00407554 andi v0, s4, 0x40             |         v0 = s4 & 0x40;
+                                             |     }
+                                             |     if (v0 != 0) {
+    0x00407558 beqz v0, 0x407688             |         
+    0x0040755c nop                           |         
+    0x00407560 lbu v0, 0x53(s2)              |         v0 = *((s2 + 83));
+    0x00407564 andi v0, v0, 1                |         v0 &= 1;
+    0x00407568 addiu v0, zero, 0x21          |         v0 = 0x21;
+                                             |         if (v0 != 0) {
+    0x0040756c beqz v0, 0x40757c             |             
+    0x00407570 sb v0, 0x1018(sp)             |             *(var_1018h) = v0;
+    0x00407574 sb zero, 0x1019(sp)           |             *(var_1019h) = 0;
+    0x00407578 b 0x407580                    |             
+                                             |         } else {
+    0x0040757c sb zero, 0x1018(sp)           |             *(var_1018h) = 0;
+                                             |         }
+    0x00407580 lb v0, 0x10(s2)               |         v0 = *((s2 + 16));
+    0x00407584 addiu a0, sp, 0x1018          |         a0 = sp + 0x1018;
+                                             |         if (v0 != 0) {
+    0x00407588 beqz v0, 0x407598             |             
+[31m    0x0040758c lw t9, -0x7d18(gp)            |             t9 = sym.imp.strcat;[0m
+    0x00407590 addiu a1, s2, 0x10            |             a1 = s2 + 0x10;
+    0x00407594 b 0x4075b8                    |             
+                                             |         } else {
+[31m    0x00407598 lw t9, -0x7d18(gp)            |             t9 = sym.imp.strcat;[0m
+                                             |             if (s1 != 0) {
+    0x0040759c beqz s1, 0x4075b0             |                 
+    0x004075a0 nop                           |                 
+    0x004075a4 lw a1, -0x7fd4(gp)            |                 a1 = *((gp - 8181));
+    0x004075a8 addiu a1, a1, 0x6ab8          |                 a1 += 0x6ab8;
+    0x004075ac b 0x4075b8                    |                 
+                                             |             } else {
+    0x004075b0 lw a1, -0x7fd4(gp)            |                 a1 = *((gp - 8181));
+    0x004075b4 addiu a1, a1, 0x6abc          |                 a1 += 0x6abc;
+                                             |             }
+                                             |         }
+    0x004075b8 andi s1, s4, 0x10             |         s1 = s4 & 0x10;
+    0x004075bc jalr t9                       |         t9 ();
+    0x004075c0 lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |         if (s1 != 0) {
+    0x004075c4 beqz s1, 0x4075d8             |             
+    0x004075c8 nop                           |             
+    0x004075cc lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x004075d0 addiu a0, v0, 0x6ac0          |             a0 = v0 + 0x6ac0;
+    0x004075d4 b 0x4075e0                    |             
+                                             |         } else {
+    0x004075d8 lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x004075dc addiu a0, v0, 0x6ac8          |             a0 = v0 + 0x6ac8;
+                                             |         }
+    0x004075e0 lw t9, -0x7b84(gp)            |         t9 = sym.imp.printf;
+    0x004075e4 addiu s0, sp, 0x1018          |         s0 = sp + 0x1018;
+    0x004075e8 move a1, s0                   |         a1 = s0;
+    0x004075ec jalr t9                       |         t9 ();
+    0x004075f0 lbu v0, 0x53(s2)              |         v0 = *((s2 + 83));
+    0x004075f4 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x004075f8 andi v0, v0, 2                |         v0 &= 2;
+    0x004075fc addiu v0, zero, 0x21          |         v0 = 0x21;
+                                             |         if (v0 != 0) {
+    0x00407600 beqz v0, 0x407610             |             
+    0x00407604 sb v0, 0x1018(sp)             |             *(var_1018h) = v0;
+    0x00407608 sb zero, 0x1019(sp)           |             *(var_1019h) = 0;
+    0x0040760c b 0x407614                    |             
+                                             |         } else {
+    0x00407610 sb zero, 0x1018(sp)           |             *(var_1018h) = 0;
+                                             |         }
+    0x00407614 lb v0, 0x20(s2)               |         v0 = *((s2 + 32));
+    0x00407618 andi v0, s4, 1                |         v0 = s4 & 1;
+                                             |         if (v0 != 0) {
+    0x0040761c beqz v0, 0x407630             |             
+[31m    0x00407620 lw t9, -0x7d18(gp)            |             t9 = sym.imp.strcat;[0m
+    0x00407624 move a0, s0                   |             a0 = s0;
+    0x00407628 addiu a1, s2, 0x20            |             a1 = s2 + 0x20;
+    0x0040762c b 0x407650                    |             
+                                             |         } else {
+[31m    0x00407630 lw t9, -0x7d18(gp)            |             t9 = sym.imp.strcat;[0m
+    0x00407634 move a0, s0                   |             a0 = s0;
+                                             |             if (v0 != 0) {
+    0x00407638 beqz v0, 0x407648             |                 
+    0x0040763c lw a1, -0x7fd4(gp)            |                 a1 = *((gp - 8181));
+    0x00407640 addiu a1, a1, 0x6ab8          |                 a1 += 0x6ab8;
+    0x00407644 b 0x407650                    |                 
+                                             |             } else {
+    0x00407648 lw a1, -0x7fd4(gp)            |                 a1 = *((gp - 8181));
+    0x0040764c addiu a1, a1, 0x6abc          |                 a1 += 0x6abc;
+                                             |             }
+                                             |         }
+    0x00407650 jalr t9                       |         t9 ();
+    0x00407654 nop                           |         
+    0x00407658 lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |         if (s1 != 0) {
+    0x0040765c beqz s1, 0x407670             |             
+    0x00407660 nop                           |             
+    0x00407664 lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x00407668 addiu a0, v0, 0x6ad0          |             a0 = v0 + 0x6ad0;
+    0x0040766c b 0x407678                    |             
+                                             |         } else {
+    0x00407670 lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x00407674 addiu a0, v0, 0x6ad8          |             a0 = v0 + 0x6ad8;
+                                             |         }
+    0x00407678 lw t9, -0x7b84(gp)            |         t9 = sym.imp.printf;
+    0x0040767c addiu a1, sp, 0x1018          |         a1 = sp + 0x1018;
+    0x00407680 jalr t9                       |         t9 ();
+    0x00407684 lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |     }
+    0x00407688 lw s0, -0x7b88(gp)            |     s0 = *((gp - 7906));
+    0x0040768c lw a1, (s0)                   |     a1 = *(s0);
+    0x00407690 lw v0, 0x34(a1)               |     v0 = *((a1 + 13));
+                                             |     if (v0 != 0) {
+    0x00407694 beqz v0, 0x4076e4             |         
+    0x00407698 nop                           |         
+    0x0040769c lw a0, 0x10(a1)               |         a0 = *((a1 + 4));
+    0x004076a0 lw v0, 0x1c(a1)               |         v0 = *((a1 + 7));
+    0x004076a4 sltu v0, a0, v0               |         v0 = (a0 < v0) ? 1 : 0;
+                                             |         if (v0 != 0) {
+    0x004076a8 beqz v0, 0x4076d4             |             
+    0x004076ac nop                           |             
+    0x004076b0 addiu v0, a0, 1               |             v0 = a0 + 1;
+    0x004076b4 sw v0, 0x10(a1)               |             *((a1 + 4)) = v0;
+    0x004076b8 addiu v0, zero, 0x21          |             v0 = 0x21;
+    0x004076bc lbu v1, 0x53(s2)              |             v1 = *((s2 + 83));
+    0x004076c0 andi v1, v1, 8                |             v1 &= 8;
+    0x004076c4 sltiu v1, v1, 1               |             v1 = (v1 < 1) ? 1 : 0;
+    0x004076c8 subu v0, v0, v1               |             __asm ("subu v0, v0, v1");
+    0x004076cc sb v0, (a0)                   |             *(a0) = v0;
+    0x004076d0 b 0x407704                    |             goto label_5;
+                                             |         }
+    0x004076d4 lbu v0, 0x53(s2)              |         v0 = *((s2 + 83));
+    0x004076d8 lw t9, -0x7fa4(gp)            |         t9 = sym.imp.__fputc_unlocked;
+    0x004076dc andi v0, v0, 8                |         v0 &= 8;
+    0x004076e0 b 0x4076f0                    |         
+                                             |     } else {
+    0x004076e4 lbu v0, 0x53(s2)              |         v0 = *((s2 + 83));
+    0x004076e8 lw t9, -0x7ea0(gp)            |         t9 = sym.imp.fputc;
+    0x004076ec andi v0, v0, 8                |         v0 &= 8;
+                                             |     }
+    0x004076f0 addiu v1, zero, 0x20          |     v1 = 0x20;
+    0x004076f4 addiu a0, zero, 0x21          |     a0 = 0x21;
+                                             |     if (v0 != 0) {
+    0x004076f8 movz a0, v1, v0               |         a0 = v1;
+                                             |     }
+    0x004076fc jalr t9                       |     t9 ();
+    0x00407700 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             | label_5:
+    0x00407704 lw v0, 8(s2)                  |     v0 = *((s2 + 2));
+    0x00407708 andi v0, s4, 1                |     v0 = s4 & 1;
+                                             |     if (v0 == 0) {
+    0x0040770c bnez v0, 0x407748             |         
+                                             |         if (v0 == 0) {
+    0x00407710 bnez v0, 0x407748             |             
+    0x00407714 nop                           |             
+    0x00407718 andi v0, s4, 0x10             |             v0 = s4 & 0x10;
+                                             |             if (v0 != 0) {
+    0x0040771c beqz v0, 0x407730             |                 
+    0x00407720 nop                           |                 
+    0x00407724 lw v0, -0x7fd4(gp)            |                 v0 = *((gp - 8181));
+    0x00407728 addiu a0, v0, 0x6a8c          |                 a0 = v0 + 0x6a8c;
+    0x0040772c b 0x407738                    |                 
+                                             |             } else {
+    0x00407730 lw v0, -0x7fd4(gp)            |                 v0 = *((gp - 8181));
+    0x00407734 addiu a0, v0, 0x6ae0          |                 a0 = v0 + 0x6ae0;
+                                             |             }
+    0x00407738 lw a1, -0x7fd4(gp)            |             a1 = *((gp - 8181));
+    0x0040773c lw t9, -0x7b84(gp)            |             t9 = sym.imp.printf;
+    0x00407740 addiu a1, a1, 0x6ae8          |             a1 += 0x6ae8;
+    0x00407744 b 0x4077c4                    |             
+                                             |         }
+                                             |     } else {
+    0x00407748 lw t9, -0x7c94(gp)            |         t9 = sym.xtables_ipaddr_to_numeric;
+                                             |         if (v0 == 0) {
+    0x0040774c bnez v0, 0x407758             |             
+    0x00407750 nop                           |             
+    0x00407754 lw t9, -0x7e90(gp)            |             t9 = sym.xtables_ipaddr_to_anyname;
+                                             |         }
+    0x00407758 move a0, s2                   |         a0 = s2;
+    0x0040775c jalr t9                       |         t9 ();
+    0x00407760 addiu a0, sp, 0x18            |         a0 = sp + 0x18;
+    0x00407764 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00407768 lw t9, -0x7b68(gp)            |         t9 = sym.imp.strcpy;
+    0x0040776c move a1, v0                   |         a1 = v0;
+    0x00407770 jalr t9                       |         t9 ();
+    0x00407774 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00407778 lw t9, -0x7e54(gp)            |         t9 = sym.xtables_ipmask_to_numeric;
+    0x0040777c addiu a0, s2, 8               |         a0 = s2 + 8;
+    0x00407780 jalr t9                       |         t9 ();
+    0x00407784 addiu a0, sp, 0x18            |         a0 = sp + 0x18;
+    0x00407788 lw gp, 0x10(sp)               |         gp = *(var_10h);
+[31m    0x0040778c lw t9, -0x7d18(gp)            |         t9 = sym.imp.strcat;[0m
+    0x00407790 move a1, v0                   |         a1 = v0;
+    0x00407794 jalr t9                       |         t9 ();
+    0x00407798 andi v0, s4, 0x10             |         v0 = s4 & 0x10;
+    0x0040779c lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |         if (v0 != 0) {
+    0x004077a0 beqz v0, 0x4077b4             |             
+    0x004077a4 nop                           |             
+    0x004077a8 lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x004077ac addiu a0, v0, 0x6a8c          |             a0 = v0 + 0x6a8c;
+    0x004077b0 b 0x4077bc                    |             
+                                             |         } else {
+    0x004077b4 lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x004077b8 addiu a0, v0, 0x6ae0          |             a0 = v0 + 0x6ae0;
+                                             |         }
+    0x004077bc lw t9, -0x7b84(gp)            |         t9 = sym.imp.printf;
+    0x004077c0 addiu a1, sp, 0x18            |         a1 = sp + 0x18;
+                                             |     }
+    0x004077c4 jalr t9                       |     t9 ();
+    0x004077c8 nop                           |     
+    0x004077cc lw a1, (s0)                   |     a1 = *(s0);
+    0x004077d0 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x004077d4 lw v0, 0x34(a1)               |     v0 = *((a1 + 13));
+                                             |     if (v0 != 0) {
+    0x004077d8 beqz v0, 0x407828             |         
+    0x004077dc nop                           |         
+    0x004077e0 lw a0, 0x10(a1)               |         a0 = *((a1 + 4));
+    0x004077e4 lw v0, 0x1c(a1)               |         v0 = *((a1 + 7));
+    0x004077e8 sltu v0, a0, v0               |         v0 = (a0 < v0) ? 1 : 0;
+                                             |         if (v0 != 0) {
+    0x004077ec beqz v0, 0x407818             |             
+    0x004077f0 nop                           |             
+    0x004077f4 addiu v0, a0, 1               |             v0 = a0 + 1;
+    0x004077f8 sw v0, 0x10(a1)               |             *((a1 + 4)) = v0;
+    0x004077fc addiu v0, zero, 0x21          |             v0 = 0x21;
+    0x00407800 lbu v1, 0x53(s2)              |             v1 = *((s2 + 83));
+    0x00407804 andi v1, v1, 0x10             |             v1 &= 0x10;
+    0x00407808 sltiu v1, v1, 1               |             v1 = (v1 < 1) ? 1 : 0;
+    0x0040780c subu v0, v0, v1               |             __asm ("subu v0, v0, v1");
+    0x00407810 sb v0, (a0)                   |             *(a0) = v0;
+    0x00407814 b 0x407848                    |             goto label_6;
+                                             |         }
+    0x00407818 lbu v0, 0x53(s2)              |         v0 = *((s2 + 83));
+    0x0040781c lw t9, -0x7fa4(gp)            |         t9 = sym.imp.__fputc_unlocked;
+    0x00407820 andi v0, v0, 0x10             |         v0 &= 0x10;
+    0x00407824 b 0x407834                    |         
+                                             |     } else {
+    0x00407828 lbu v0, 0x53(s2)              |         v0 = *((s2 + 83));
+    0x0040782c lw t9, -0x7ea0(gp)            |         t9 = sym.imp.fputc;
+    0x00407830 andi v0, v0, 0x10             |         v0 &= 0x10;
+                                             |     }
+    0x00407834 addiu v1, zero, 0x20          |     v1 = 0x20;
+    0x00407838 addiu a0, zero, 0x21          |     a0 = 0x21;
+                                             |     if (v0 != 0) {
+    0x0040783c movz a0, v1, v0               |         a0 = v1;
+                                             |     }
+    0x00407840 jalr t9                       |     t9 ();
+    0x00407844 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             | label_6:
+    0x00407848 lw v0, 0xc(s2)                |     v0 = *((s2 + 3));
+    0x0040784c andi v0, s4, 1                |     v0 = s4 & 1;
+                                             |     if (v0 == 0) {
+    0x00407850 bnez v0, 0x40788c             |         
+                                             |         if (v0 == 0) {
+    0x00407854 bnez v0, 0x40788c             |             
+    0x00407858 nop                           |             
+    0x0040785c andi v0, s4, 0x10             |             v0 = s4 & 0x10;
+                                             |             if (v0 != 0) {
+    0x00407860 beqz v0, 0x407874             |                 
+    0x00407864 nop                           |                 
+    0x00407868 lw v0, -0x7fd4(gp)            |                 v0 = *((gp - 8181));
+    0x0040786c addiu a0, v0, 0x6af4          |                 a0 = v0 + 0x6af4;
+    0x00407870 b 0x40787c                    |                 
+                                             |             } else {
+    0x00407874 lw v0, -0x7fd4(gp)            |                 v0 = *((gp - 8181));
+    0x00407878 addiu a0, v0, 0x6ae0          |                 a0 = v0 + 0x6ae0;
+                                             |             }
+    0x0040787c lw a1, -0x7fd4(gp)            |             a1 = *((gp - 8181));
+    0x00407880 lw t9, -0x7b84(gp)            |             t9 = sym.imp.printf;
+    0x00407884 addiu a1, a1, 0x6ae8          |             a1 += 0x6ae8;
+    0x00407888 b 0x407908                    |             
+                                             |         }
+                                             |     } else {
+    0x0040788c lw t9, -0x7c94(gp)            |         t9 = sym.xtables_ipaddr_to_numeric;
+    0x00407890 addiu a0, s2, 4               |         a0 = s2 + 4;
+                                             |         if (v0 == 0) {
+    0x00407894 bnez v0, 0x40789c             |             
+    0x00407898 lw t9, -0x7e90(gp)            |             t9 = sym.xtables_ipaddr_to_anyname;
+                                             |         }
+    0x0040789c jalr t9                       |         t9 ();
+    0x004078a0 nop                           |         
+    0x004078a4 addiu a0, sp, 0x18            |         a0 = sp + 0x18;
+    0x004078a8 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x004078ac lw t9, -0x7b68(gp)            |         t9 = sym.imp.strcpy;
+    0x004078b0 move a1, v0                   |         a1 = v0;
+    0x004078b4 jalr t9                       |         t9 ();
+    0x004078b8 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x004078bc lw t9, -0x7e54(gp)            |         t9 = sym.xtables_ipmask_to_numeric;
+    0x004078c0 addiu a0, s2, 0xc             |         a0 = s2 + 0xc;
+    0x004078c4 jalr t9                       |         t9 ();
+    0x004078c8 addiu a0, sp, 0x18            |         a0 = sp + 0x18;
+    0x004078cc lw gp, 0x10(sp)               |         gp = *(var_10h);
+[31m    0x004078d0 lw t9, -0x7d18(gp)            |         t9 = sym.imp.strcat;[0m
+    0x004078d4 move a1, v0                   |         a1 = v0;
+    0x004078d8 jalr t9                       |         t9 ();
+    0x004078dc andi v0, s4, 0x10             |         v0 = s4 & 0x10;
+    0x004078e0 lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |         if (v0 != 0) {
+    0x004078e4 beqz v0, 0x4078f8             |             
+    0x004078e8 nop                           |             
+    0x004078ec lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x004078f0 addiu a0, v0, 0x6af4          |             a0 = v0 + 0x6af4;
+    0x004078f4 b 0x407900                    |             
+                                             |         } else {
+    0x004078f8 lw v0, -0x7fd4(gp)            |             v0 = *((gp - 8181));
+    0x004078fc addiu a0, v0, 0x6ae0          |             a0 = v0 + 0x6ae0;
+                                             |         }
+    0x00407900 lw t9, -0x7b84(gp)            |         t9 = sym.imp.printf;
+    0x00407904 addiu a1, sp, 0x18            |         a1 = sp + 0x18;
+                                             |     }
+    0x00407908 jalr t9                       |     t9 ();
+    0x0040790c nop                           |     
+    0x00407910 andi v0, s4, 0x10             |     v0 = s4 & 0x10;
+    0x00407914 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             |     if (v0 != 0) {
+    0x00407918 beqz v0, 0x407938             |         
+    0x0040791c nop                           |         
+    0x00407920 lw a0, -0x7fd4(gp)            |         a0 = *((gp - 8181));
+    0x00407924 lw t9, -0x7f5c(gp)            |         t9 = sym.imp.fputs;
+    0x00407928 lw a1, (s0)                   |         a1 = *(s0);
+    0x0040792c addiu a0, a0, 0x6afc          |         a0 += 0x6afc;
+    0x00407930 jalr t9                       |         t9 ();
+    0x00407934 lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |     }
+    0x00407938 lbu v0, 0x52(s2)              |     v0 = *((s2 + 82));
+    0x0040793c andi v0, v0, 2                |     v0 &= 2;
+                                             |     if (v0 != 0) {
+    0x00407940 beqz v0, 0x40795c             |         
+    0x00407944 nop                           |         
+    0x00407948 lw a0, -0x7fd4(gp)            |         a0 = *((gp - 8181));
+    0x0040794c lw t9, -0x7b84(gp)            |         t9 = sym.imp.printf;
+    0x00407950 addiu a0, a0, 0x6b00          |         a0 += 0x6b00;
+    0x00407954 jalr t9                       |         t9 ();
+    0x00407958 lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |     }
+    0x0040795c lhu v0, 0x58(s2)              |     v0 = *((s2 + 44));
+    0x00407960 addiu s3, zero, 0x70          |     s3 = 0x70;
+                                             |     do {
+    0x00407964 sltu v0, s3, v0               |         v0 = (s3 < v0) ? 1 : 0;
+    0x00407968 addu s1, s2, s3               |         s1 = s2 + s3;
+                                             |         if (v0 == 0) {
+    0x0040796c beqz v0, 0x407a04             |             goto label_7;
+                                             |         }
+    0x00407970 move a2, zero                 |         a2 = 0;
+    0x00407974 lw t9, -0x7e3c(gp)            |         t9 = sym.xtables_find_match;
+    0x00407978 addiu s0, s1, 2               |         s0 = s1 + 2;
+    0x0040797c move a0, s0                   |         a0 = s0;
+    0x00407980 addiu a1, zero, 2             |         a1 = 2;
+    0x00407984 jalr t9                       |         t9 ();
+    0x00407988 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x0040798c move a1, s1                   |         a1 = s1;
+                                             |         if (v0 != 0) {
+    0x00407990 beqz v0, 0x4079d0             |             
+    0x00407994 lw t9, -0x7b84(gp)            |             t9 = sym.imp.printf;
+    0x00407998 move a0, s2                   |             a0 = s2;
+    0x0040799c move v1, t9                   |             v1 = t9;
+    0x004079a0 lw t9, 0x28(v0)               |             t9 = *((v0 + 10));
+    0x004079a4 andi a2, s4, 1                |             a2 = s4 & 1;
+                                             |             if (t9 != 0) {
+    0x004079a8 beqz t9, 0x4079bc             |                 
+    0x004079ac jalr t9                       |                 t9 ();
+    0x004079b0 nop                           |                 
+    0x004079b4 b 0x4079f0                    |                 goto label_8;
+    0x004079b8 nop                           |                 
+                                             |             }
+    0x004079bc lw a0, -0x7fd4(gp)            |             a0 = *((gp - 8181));
+    0x004079c0 move t9, v1                   |             t9 = v1;
+    0x004079c4 lw a1, 8(v0)                  |             a1 = *((v0 + 2));
+    0x004079c8 addiu a0, a0, 0x6a8c          |             a0 += 0x6a8c;
+    0x004079cc b 0x4079e8                    |             
+                                             |         } else {
+    0x004079d0 lw a0, -0x7fd4(gp)            |             a0 = *((gp - 8181));
+    0x004079d4 move a1, s0                   |             a1 = s0;
+    0x004079d8 lb v0, 2(s1)                  |             v0 = *((s1 + 2));
+    0x004079dc lw t9, -0x7b84(gp)            |             t9 = sym.imp.printf;
+    0x004079e0 addiu a0, a0, 0x6b08          |             a0 += 0x6b08;
+                                             |             if (v0 == 0) {
+    0x004079e4 beqz v0, 0x4079f4             |                 goto label_9;
+                                             |             }
+                                             |         }
+    0x004079e8 jalr t9                       |         t9 ();
+    0x004079ec nop                           |         
+                                             | label_8:
+    0x004079f0 lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             | label_9:
+    0x004079f4 lhu v1, (s1)                  |         v1 = *(s1);
+    0x004079f8 lhu v0, 0x58(s2)              |         v0 = *((s2 + 44));
+    0x004079fc addu s3, s3, v1               |         s3 += v1;
+    0x00407a00 b 0x407964                    |         
+                                             |     } while (1);
+                                             | label_7:
+    0x00407a04 addiu v0, zero, 0x20          |     v0 = 0x20;
+                                             |     if (s5 != 0) {
+    0x00407a08 beqz s5, 0x407a30             |         
+    0x00407a0c lw t9, 0x28(s5)               |         t9 = *((s5 + 10));
+    0x00407a10 andi v0, s4, 0x80             |         v0 = s4 & 0x80;
+                                             |         if (t9 == 0) {
+    0x00407a14 beqz t9, 0x407a54             |             goto label_10;
+                                             |         }
+    0x00407a18 move a0, s2                   |         a0 = s2;
+    0x00407a1c move a1, s6                   |         a1 = s6;
+    0x00407a20 andi a2, s4, 1                |         a2 = s4 & 1;
+    0x00407a24 jalr t9                       |         t9 ();
+    0x00407a28 b 0x407a4c                    |         goto label_11;
+    0x00407a2c nop                           |         
+                                             |     }
+    0x00407a30 lhu a1, (s6)                  |     a1 = *(s6);
+    0x00407a34 addiu a1, a1, -0x20           |     a1 += -0x20;
+                                             |     if (a1 != v0) {
+    0x00407a38 beq a1, v0, 0x407a50          |         
+    0x00407a3c lw a0, -0x7fd4(gp)            |         a0 = *((gp - 8181));
+    0x00407a40 lw t9, -0x7b84(gp)            |         t9 = sym.imp.printf;
+    0x00407a44 addiu a0, a0, 0x6b1c          |         a0 += 0x6b1c;
+    0x00407a48 jalr t9                       |         t9 ();
+                                             | label_11:
+    0x00407a4c lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |     }
+    0x00407a50 andi v0, s4, 0x80             |     v0 = s4 & 0x80;
+                                             |     if (v0 == 0) {
+                                             | label_10:
+    0x00407a54 bnez v0, 0x407ab0             |         
+    0x00407a58 nop                           |         
+    0x00407a5c lw v0, -0x7b88(gp)            |         v0 = *((gp - 7906));
+    0x00407a60 lw a1, (v0)                   |         a1 = *(v0);
+    0x00407a64 lw v0, 0x34(a1)               |         v0 = *((a1 + 13));
+                                             |         if (v0 != 0) {
+    0x00407a68 beqz v0, 0x407aa0             |             
+    0x00407a6c nop                           |             
+    0x00407a70 lw a0, 0x10(a1)               |             a0 = *((a1 + 4));
+    0x00407a74 lw v0, 0x1c(a1)               |             v0 = *((a1 + 7));
+    0x00407a78 sltu v0, a0, v0               |             v0 = (a0 < v0) ? 1 : 0;
+    0x00407a7c addiu v1, a0, 1               |             v1 = a0 + 1;
+                                             |             if (v0 != 0) {
+    0x00407a80 beqz v0, 0x407a94             |                 
+    0x00407a84 addiu v0, zero, 0xa           |                 v0 = 0xa;
+    0x00407a88 sb v0, (a0)                   |                 *(a0) = v0;
+    0x00407a8c sw v1, 0x10(a1)               |                 *((a1 + 4)) = v1;
+    0x00407a90 b 0x407ab0                    |                 goto label_12;
+                                             |             }
+    0x00407a94 lw t9, -0x7fa4(gp)            |             t9 = sym.imp.__fputc_unlocked;
+    0x00407a98 b 0x407aa4                    |             goto label_13;
+    0x00407a9c nop                           |             
+                                             |         }
+    0x00407aa0 lw t9, -0x7ea0(gp)            |         t9 = sym.imp.fputc;
+                                             | label_13:
+    0x00407aa4 addiu a0, zero, 0xa           |         a0 = 0xa;
+    0x00407aa8 jalr t9                       |         t9 ();
+    0x00407aac lw gp, 0x10(sp)               |         gp = *(var_10h);
+                                             |     }
+                                             | label_12:
+    0x00407ab0 lw ra, 0x104c(sp)             |     ra = *(var_104ch);
+    0x00407ab4 lw s6, 0x1048(sp)             |     s6 = *(var_1048h);
+    0x00407ab8 lw s5, 0x1044(sp)             |     s5 = *(var_1044h);
+    0x00407abc lw s4, 0x1040(sp)             |     s4 = *(var_1040h);
+    0x00407ac0 lw s3, 0x103c(sp)             |     s3 = *(var_103ch);
+    0x00407ac4 lw s2, 0x1038(sp)             |     s2 = *(var_1038h);
+    0x00407ac8 lw s1, 0x1034(sp)             |     s1 = *(var_1034h);
+    0x00407acc lw s0, 0x1030(sp)             |     s0 = *(var_1030h);
+    0x00407ad0 addiu sp, sp, 0x1050          |     
+    0x00407ad4 jr ra                         |     return v1;
+                                             | }
+    ; assembly                                       | /* r2dec pseudo code output */
+                                                     | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables @ 0x4346ec */
+                                                     | #include <stdint.h>
+                                                     |  
+    ; (fcn) sym.xtables_ip6mask_to_numeric ()        | void xtables_ip6mask_to_numeric () {
+    0x004346ec lui gp, 6                             |     
+    0x004346f0 addiu gp, gp, -0x13ec                 |     
+    0x004346f4 addu gp, gp, t9                       |     gp += t9;
+    0x004346f8 addiu sp, sp, -0x20                   |     
+    0x004346fc sw ra, 0x1c(sp)                       |     *(var_1ch) = ra;
+    0x00434700 sw s0, 0x18(sp)                       |     *(var_18h) = s0;
+    0x00434704 sw gp, 0x10(sp)                       |     *(var_10h) = gp;
+    0x00434708 move a2, zero                         |     a2 = 0;
+    0x0043470c lw a1, (a0)                           |     a1 = *(a0);
+    0x00434710 lw a3, 4(a0)                          |     a3 = *((a0 + 1));
+    0x00434714 lw t0, 8(a0)                          |     t0 = *((a0 + 2));
+    0x00434718 lw t1, 0xc(a0)                        |     t1 = *((a0 + 3));
+                                                     |     do {
+    0x0043471c srl v0, a3, 0x1f                      |         v0 = a3 >> 0x1f;
+                                                     |         if (a1 >= 0) {
+    0x00434720 bgez a1, 0x434750                     |             goto label_0;
+                                                     |         }
+    0x00434724 sll a1, a1, 1                         |         a1 <<= 1;
+    0x00434728 srl v1, t0, 0x1f                      |         v1 = t0 >> 0x1f;
+    0x0043472c or a1, a1, v0                         |         a1 |= v0;
+    0x00434730 sll a3, a3, 1                         |         a3 <<= 1;
+    0x00434734 srl v0, t1, 0x1f                      |         v0 = t1 >> 0x1f;
+    0x00434738 sll t0, t0, 1                         |         t0 <<= 1;
+    0x0043473c or a3, a3, v1                         |         a3 |= v1;
+    0x00434740 or t0, t0, v0                         |         t0 |= v0;
+    0x00434744 addiu a2, a2, 1                       |         a2++;
+    0x00434748 sll t1, t1, 1                         |         t1 <<= 1;
+    0x0043474c b 0x43471c                            |         
+                                                     |     } while (1);
+                                                     |     if (a1 == 0) {
+                                                     | label_0:
+    0x00434750 bnez a1, 0x434770                     |         
+    0x00434754 nop                                   |         
+                                                     |         if (a3 != 0) {
+    0x00434758 bnez a3, 0x434770                     |             goto label_1;
+                                                     |         }
+    0x0043475c nop                                   |         
+                                                     |         if (t0 != 0) {
+    0x00434760 bnez t0, 0x434770                     |             goto label_1;
+                                                     |         }
+    0x00434764 nop                                   |         
+    0x00434768 addiu v0, zero, -1                    |         v0 = -1;
+                                                     |         if (t1 == 0) {
+    0x0043476c beqz t1, 0x434778                     |             goto label_2;
+                                                     |         }
+                                                     |     }
+                                                     | label_1:
+    0x00434770 addiu a2, zero, -1                    |     a2 = -1;
+    0x00434774 addiu v0, zero, -1                    |     v0 = -1;
+                                                     | label_2:
+    0x00434778 lw s0, -0x7fd0(gp)                    |     s0 = *((gp - 8180));
+    0x0043477c addiu v0, zero, 0x2f00                |     v0 = 0x2f00;
+                                                     |     if (a2 == v0) {
+    0x00434780 bne a2, v0, 0x4347ac                  |         
+    0x00434784 lw t9, -0x7c60(gp)                    |         t9 = sym.xtables_ip6addr_to_numeric;
+    0x00434788 sh v0, -0x3114(s0)                    |         *((s0 - 6282)) = v0;
+    0x0043478c jalr t9                               |         t9 ();
+    0x00434790 addiu a0, s0, -0x3114                 |         a0 = s0 + -0x3114;
+    0x00434794 lw gp, 0x10(sp)                       |         gp = *(var_10h);
+[31m    0x00434798 lw t9, -0x7d18(gp)                    |         t9 = sym.imp.strcat;[0m
+    0x0043479c move a1, v0                           |         a1 = v0;
+    0x004347a0 jalr t9                               |         t9 ();
+    0x004347a4 addiu v0, s0, -0x3114                 |         v0 = s0 + -0x3114;
+    0x004347a8 b 0x4347c4                            |         
+                                                     |     } else {
+    0x004347ac lw a1, -0x7fe0(gp)                    |         a1 = *((gp - 8184));
+    0x004347b0 addiu a0, s0, -0x3114                 |         a0 = s0 + -0x3114;
+    0x004347b4 lw t9, -0x7e5c(gp)                    |         t9 = sym.imp.sprintf;
+                                                     |         /* esilref: '/&d' */
+    0x004347b8 addiu a1, a1, 0x68b4                  |         a1 += 0x68b4;
+    0x004347bc jalr t9                               |         t9 ();
+    0x004347c0 addiu v0, s0, -0x3114                 |         v0 = s0 + -0x3114;
+                                                     |     }
+    0x004347c4 lw gp, 0x10(sp)                       |     gp = *(var_10h);
+    0x004347c8 lw ra, 0x1c(sp)                       |     ra = *(var_1ch);
+    0x004347cc lw s0, 0x18(sp)                       |     s0 = *(var_18h);
+    0x004347d0 addiu sp, sp, 0x20                    |     
+    0x004347d4 jr ra                                 |     return v0;
+                                                     | }
+
+[*] Function strcat used 7 times iptables
+

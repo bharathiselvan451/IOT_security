@@ -1,0 +1,10 @@
+[*] Searching (args for grep: ) for Eaeflnr-u.
+[*] Grepit state info - comment: RFC 4627 includes a parser regex example http://www.ietf.org/rfc/rfc4627.txt and it is insecure as explained in the 'the tangled web' book, as it allows incrementing and decrementing of certain variables.
+[*] Grepit state info - Filename 2_js_insecure_JSON_parser.txt
+[*] Grepit state info - Example: var my_JSON_object = !(/[^,:{}\[\]0-9.\-+Eaeflnr-u 
+	]/.test( var my_JSON_object = !(/[^,:{}\[\]0-9.\-+Eaeflnr-u 
+	]/.test(eval(
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: Eaeflnr-u
+

@@ -1,0 +1,974 @@
+/lib/ld-uClibc.so.0
+@2xo
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+strchr
+ntfs_inode_update_times
+ntfs_attr_get_free_bits
+fuse_get_context
+ntfs_allowed_access
+strdup
+strrchr
+ntfs_pathname_to_inode
+ntfs_inode_close
+free
+__errno_location
+strsep
+ntfs_mbstoucs
+AT_UNNAMED
+memset
+ntfs_make_symlink
+NTFS_INDEX_I30
+ntfs_attr_open
+ntfs_attr_close
+ntfs_malloc
+ntfs_attr_pread
+ntfs_get_owner_mode
+__divdi3
+strncpy
+strcpy
+ntfs_ucstombs
+memcpy
+ntfs_readdir
+ntfs_attr_pwrite
+ntfs_attr_pclose
+ntfs_efs_fixup_attribute
+ntfs_attr_truncate
+ntfs_set_mode
+ntfs_set_owner
+ntfs_forbidden_chars
+ntfs_inherited_id
+ntfs_alloc_securid
+ntfs_create_device
+ntfs_create_symlink
+ntfs_create
+ntfs_set_owner_mode
+ntfs_inode_close_in_dir
+ntfs_attr_add
+ntfs_link
+ntfs_delete
+ntfs_attr_remove
+strlen
+snprintf
+ntfs_check_empty_dir
+ntfs_device_sync
+ntfs_attr_map_whole_runlist
+__udivdi3
+ntfs_rl_vcn_to_lcn
+__umoddi3
+strcmp
+nf_ns_user_prefix_len
+nf_ns_user_prefix
+strncmp
+nf_ns_system_prefix_len
+nf_ns_system_prefix
+nf_ns_security_prefix_len
+nf_ns_security_prefix
+nf_ns_trusted_prefix_len
+nf_ns_trusted_prefix
+xattr_ntfs_3g
+strcat
+ntfs_attr_get_search_ctx
+ntfs_fuse_listxattr_common
+ntfs_attr_put_search_ctx
+ntfs_attr_lookup
+ntfs_xattr_system_type
+ntfs_xattr_system_getxattr
+ntfs_allowed_as_owner
+ntfs_xattr_system_setxattr
+ntfs_xattr_system_removexattr
+ntfs_close_secure
+ntfs_umount
+ntfs_calloc
+getuid
+getgid
+ntfs_mount
+ntfs_set_shown_files
+ntfs_volume_check_hiberfile
+ntfs_volume_error
+umask
+fopen64
+fgets
+strstr
+fclose
+geteuid
+fork
+execl
+waitpid
+nanosleep
+EXEC_NAME
+fuse_opt_add_arg
+fuse_mount
+fuse_opt_free_args
+sysconf
+ntfs_strappend
+fuse_new
+fuse_get_session
+fuse_set_signal_handlers
+fuse_destroy
+fuse_unmount
+daemon
+drop_privs
+ntfs_set_locale
+ntfs_log_handler_stderr
+ntfs_log_set_handler
+ntfs_parse_options
+parse_mount_options
+ntfs_check_if_mounted
+getcwd
+restore_privs
+ntfs_open_secure
+ntfs_build_mapping
+fuse_loop
+ntfs_mount_error
+realloc
+optionlist
+sscanf
+ntfs_set_char_encoding
+ntfs_log_set_levels
+opterr
+getopt_long
+optarg
+ntfs_realpath_canonicalize
+fprintf
+abort
+__assert
+pthread_mutex_lock
+pthread_mutex_unlock
+memmove
+fuse_req_userdata
+pthread_self
+pthread_kill
+gettimeofday
+pthread_cond_timedwait
+pthread_cond_broadcast
+fuse_req_interrupt_func
+pthread_cond_destroy
+pthread_cond_init
+fuse_fs_getattr
+fuse_fs_rename
+fuse_fs_fgetattr
+pthread_getspecific
+pthread_setspecific
+pthread_key_create
+strerror
+pthread_key_delete
+fuse_req_ctx
+fuse_reply_err
+fuse_reply_entry
+fuse_fs_init
+fuse_fs_destroy
+pthread_rwlock_rdlock
+__nedf2
+pthread_rwlock_unlock
+fuse_reply_none
+fuse_reply_attr
+fuse_fs_chmod
+fuse_fs_chown
+fuse_fs_ftruncate
+fuse_fs_truncate
+fuse_fs_utimens
+fuse_fs_access
+fuse_fs_readlink
+fuse_reply_readlink
+fuse_fs_create
+fuse_fs_release
+fuse_fs_mknod
+fuse_fs_mkdir
+pthread_rwlock_wrlock
+fuse_fs_unlink
+fuse_fs_rmdir
+fuse_fs_symlink
+fuse_fs_link
+fuse_reply_create
+fuse_fs_open
+fuse_reply_open
+fuse_fs_read
+fuse_reply_buf
+fuse_fs_write
+fuse_reply_write
+fuse_fs_fsync
+pthread_mutex_init
+fuse_fs_opendir
+fuse_fs_releasedir
+pthread_mutex_destroy
+fuse_add_direntry
+fuse_fs_readdir
+fuse_fs_fsyncdir
+fuse_fs_statfs
+fuse_reply_statfs
+fuse_fs_setxattr
+fuse_fs_getxattr
+fuse_reply_xattr
+fuse_fs_listxattr
+fuse_fs_removexattr
+fuse_fs_flush
+fuse_fs_lock
+fuse_reply_lock
+fuse_fs_bmap
+fuse_reply_bmap
+fuse_session_loop
+fuse_session_exit
+fuse_req_interrupted
+sigaction
+perror
+sigemptyset
+fuse_fs_new
+fuse_opt_parse
+fuse_lowlevel_new
+fuse_session_add_chan
+pthread_rwlock_init
+fuse_session_destroy
+pthread_rwlock_destroy
+fuse_session_next_chan
+fuse_chan_bufsize
+fuse_session_exited
+fuse_chan_recv
+fuse_session_process
+fuse_session_reset
+fuse_chan_send
+fuse_dirent_size
+fuse_add_dirent
+__gtdf2
+__ltdf2
+__fixunsdfsi
+__floatsidf
+__adddf3
+__subdf3
+__gedf2
+__muldf3
+fuse_session_new
+fuse_opt_add_opt
+fuse_opt_insert_arg
+fuse_chan_destroy
+fuse_session_remove_chan
+getpwuid
+getegid
+setresgid
+setresuid
+getresuid
+getresgid
+fuse_mnt_add_mount
+setmntent
+getmntent
+endmntent
+sprintf
+uname
+fuse_mnt_check_fuseblk
+lstat64
+fstat64
+fchdir
+setgroups
+umount2
+fuse_mnt_resolve_path
+fuse_mnt_umount
+fuse_kern_mount
+fuse_kern_chan_new
+fuse_kern_unmount
+fuse_chan_fd
+poll
+fusermount
+setuid
+mkdtemp
+realpath
+fuse_chan_session
+writev
+getpagesize
+fuse_chan_new
+libntfs-3g.so.83
+_DYNAMIC_LINKING
+__RLD_MAP
+__start
+_GLOBAL_OFFSET_TABLE_
+__data_start
+libpthread.so.0
+libc.so.0
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+/usr/local/lib
+GCC_3.0
+GLIBC_2.0
+('94@
+$'9A
+ $!x
+ $Bx
+ $Bst
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+('9?
+('99
+F !$
+F !$
+,,B 	
+In4Btx
+BL4BK
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+('9T
+In4Btx
+CH4BR
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+('9T
+In4Btx
+LN4BK
+('9@
+('9R
+('9R
+('9R
+('9@
+ %0b
+ %0b
+ %0b
+ %0b
+$$cOH
+$$BOH
+@ !<
+g4Bi
+$$cOH
+$$BOH
+('9?
+,,B 	
+In4Btx
+LN4BK
+('9@
+('94
+@(!'
+('95T
+('9@
+('9?
+('9@
+('9?
+F !$
+('95T
+('9@
+('9?
+('95T
+('9@
+('9?
+('9@
+('9?
+('95T
+('9@
+('9lX
+('9lX
+('94
+('99
+('95T
+('9@
+('94
+('99
+('95T
+('9@
+('9?
+('99
+('9@
+('9@
+('95T
+('9@
+('9t
+('9{
+('9@
+('9?
+('9t
+('9{
+('9~
+('9~
+('94
+('9t
+('94
+('94
+('95T
+('95T
+('9@
+('9@
+('9@
+('9@
+('9@
+('9?
+$$BOP
+('9?
+('9@
+('9?
+('94
+('9t
+('94
+('94
+('95T
+('9@
+$$cOh
+$$BOh
+ %0b
+ %0b
+ %0b
+ %0b
+('94
+('9@
+('94
+('99
+('9:
+('9@
+('9@
+('94
+('99
+('9;
+('9@
+('9@
+F !$
+('9@
+('94
+('99
+('9;
+('9@
+('9@
+('94
+('99
+('9;
+('9@
+('9@
+('99
+('98
+('9T
+$$BS4
+$$BSD
+$$cSD
+$$BS
+$$BS
+$$BS
+$$BT 
+ ,B 
+$$cV
+$$BW
+@ !'
+@ !'
+`0!$
+$$BZ0
+,'9=H
+,'9=H
+$$BZ
+$$BZ
+$$BZ
+$$BZ
+$$c[X
+$$B[X
+$$c[X
+$$B[X
+,'9Q
+,'9Q
+,'9M
+,'9V
+,'9M
+$$BZ0
+,'9M
+,'9a
+,'9a
+,'9d|
+,'9d|
+,'9j
+,'9jP
+,'9j
+$%)[`
+,'9s@
+,'9k
+$$B[h
+$$BZ
+,'9u
+,'9=H
+,'9u
+,'9s@
+,'9h
+,'9tx
+,'9{
+,'9{
+,'9s@
+,'9k
+ $cy
+$$c`
+$$B`
+$$c`
+$$B`
+@(!$
+$$ca
+$$Ba
+$$ca
+<,B 
+ $Bzt
+$$Bd4
+ $Bzt
+ $Bzp
+ $Bzp
+ $Bz`
+ $cz`
+@ !$
+@ !$
+`(!'
+$$Bj
+ $B|d
+ $B|d
+ $B|l
+ $B|h
+ $B|p
+ $B|d
+ $B|l
+ $B|h
+ $B|d
+$$Bk
+@ !$
+$'9	`
+$$clP
+$$Bj
+$$BmX
+ $c|P
+ $B|P
+ $B}P
+ $B}P
+ $B}X
+ $B}T
+ $B}T
+$$Bp|
+$$Bo
+$'9&
+@ !$
+ $B}P
+ $B}X
+ $B}T
+ $B}P
+$'9+D
+$$Bp
+$$Bp
+$'900
+$$Bq
+$$cq
+$$Bq
+$$Bqp
+$$Bqt
+$'900
+$$Bq
+$$Br`
+$$Brd
+ $B~
+ $c~
+ '9sh
+('93
+ ntfs-3g
+%s %s %s %d - Third Generation NTFS Driver
+		Configuration type %d, XATTRS are on, POSIX ACLS are off
+Copyright (C) 2005-2007 Yura Pakhuchiy
+Copyright (C) 2006-2009 Szabolcs Szakacsits
+Copyright (C) 2007-2011 Jean-Pierre Andre
+Copyright (C) 2009 Erik Larsson
+Usage:    %s [-o option[,...]] <device|image_file> <mount_point>
+Options:  ro (read-only mount), remove_hiberfile, uid=, gid=,
+          umask=, fmask=, dmask=, streams_interface=.
+          Please see the details in the manual (type: man ntfs-3g).
+Example: ntfs-3g /dev/sda1 /mnt/windows
+unsupported reparse point
+.ntfs-3g-
+%s%s%010d
+ntfs.streams.list
+/hiberfil.sys
+HINT: You should be root, or make ntfs-3g setuid root, or load the FUSE
+      kernel module as root ('modprobe fuse' or 'insmod <path_to>/fuse.ko'      or insmod <path_to>/fuse.o'). Make also sure that the fuse device      exists. It's usually either /dev/fuse or /dev/misc/fuse.
+WARNING: Deficient Linux kernel detected. Some driver features are
+         not available (swap file on NTFS, boot from NTFS by LILO), and
+         unmount is not safe unless it's made sure the ntfs-3g process
+         naturally terminates after calling 'umount'. If you wish this
+         message to disappear then you should upgrade to at least kernel
+         version 2.6.20, or request help from your distribution to fix
+         the kernel problem. The below web page has more information:
+         http://tuxera.com/community/ntfs-3g-faq/#fuse26
+/tmp/dev/fuse
+/dev/misc
+/dev/misc/fuse
+/proc/filesystems
+fuseblk
+fuse
+/sbin/modprobe
+fuse
+,blkdev,blksize=%u
+-ouse_ino,kernel_cache,attr_timeout=0
+-odebug
+/dev/null
+Could not open file $Secure
+,default_permissions
+User mapping built
+Global ownership and permissions enforced
+Ownership and permissions disabled
+ntfs-3g.
+user.
+system.
+security.
+	trusted.
+user.ntfs.efsinfo
+allow_other,nonempty,
+noatime
+atime
+relatime
+delay_mtime
+fake_rw
+fsname
+no_def_opts
+default_permissions
+permissions
+umask
+fmask
+dmask
+show_sys_files
+hide_hid_files
+hide_dot_files
+ignore_case
+windows_names
+compression
+nocompression
+silent
+recover
+norecover
+remove_hiberfile
+sync
+big_writes
+locale
+nfconv
+nonfconv
+streams_interface
+user_xattr
+noauto
+debug
+no_detach
+remount
+blksize
+inherit
+addsecurids
+staticgrps
+usermapping
+xattrmapping
+efs_raw
+none
+xattr
+openxattr
+windows
+default_permissions,
+relatime,
+atime,
+noatime,
+fsname=
+$-o:hnvV
+options
+help
+no-mtab
+verbose
+version
+fuse internal error: node %llu not found
+fuse internal error: unable to unhash node: %llu
+delete_node
+delete: %llu
+!node->name
+fuse.c
+unref_node
+node->refctr > 0
+forget_node
+node->nlookup >= nlookup
+fuse: hidden file got created during hiding
+.fuse_hidden%08x%08x
+   NODEID: %lu
+fuse: failed to allocate thread specific data
+fuse: failed to create thread specific key: %s
+LOOKUP %s
+FORGET %llu/%lu
+ACCESS %s 0%o
+MKNOD %s
+MKDIR %s
+UNLINK %s
+RMDIR %s
+SYMLINK %s
+RENAME %s -> %s
+LINK %s
+fuse_do_release
+node->open_count > 0
+  CREATE[%llu] flags: 0x%x %s
+OPEN[%llu] flags: 0x%x %s
+READ[%llu] %lu bytes from %llu
+   READ[%llu] %u bytes
+fuse: read too many bytes
+PAGE
+WRITE%s[%llu] %lu bytes to %llu
+   WRITE%s[%llu] %u bytes
+fuse: wrote too many bytes
+FSYNC[%llu]
++FLUSH
+RELEASE%s[%llu] flags: 0x%x
+FLUSH[%llu]
+--help
+debug
+hard_remove
+use_ino
+readdir_ino
+direct_io
+kernel_cache
+umask=
+umask=%o
+uid=
+uid=%d
+gid=
+gid=%d
+entry_timeout=%lf
+attr_timeout=%lf
+ac_attr_timeout=%lf
+ac_attr_timeout=
+negative_timeout=%lf
+intr
+intr_signal=%d
+    -o hard_remove         immediate removal (don't hide files)
+    -o use_ino             let filesystem set inode numbers
+    -o readdir_ino         try to fill in d_ino in readdir
+    -o direct_io           use direct I/O
+    -o kernel_cache        cache files in kernel
+    -o umask=M             set file permissions (octal)
+    -o uid=N               set file owner
+    -o gid=N               set file group
+    -o entry_timeout=T     cache timeout for names (1.0s)
+    -o negative_timeout=T  cache timeout for deleted names (0.0s)
+    -o attr_timeout=T      cache timeout for attributes (1.0s)
+    -o ac_attr_timeout=T   auto cache timeout for attributes (attr_timeout)
+    -o intr                allow requests to be interrupted
+    -o intr_signal=NUM     signal to send on interrupt (%i)
+fuse: cannot get old signal handler
+fuse: cannot set interrupt signal handler
+fuse: warning: library too old, some operations may not not work
+fuse: failed to allocate fuse_fs object
+fuse: failed to allocate fuse object
+utime_omit_ok: %i
+fuse: memory allocation failed
+fuse: failed to allocate read buffer
+fuse: bad error value: %i
+   unique: %llu, error: %i (%s), outsize: %i
+INTERRUPT: %llu
+INIT: %u.%u
+flags=0x%08x
+max_readahead=0x%08x
+fuse: unsupported protocol version: %u.%u
+fuse: warning: buffer size too small: %zu
+   INIT: %u.%u
+   flags=0x%08x
+   max_readahead=0x%08x
+   max_write=0x%08x
+LOOKUP
+FORGET
+GETATTR
+SETATTR
+READLINK
+SYMLINK
+MKNOD
+MKDIR
+UNLINK
+RMDIR
+RENAME
+LINK
+OPEN
+READ
+WRITE
+STATFS
+RELEASE
+FSYNC
+SETXATTR
+GETXATTR
+LISTXATTR
+REMOVEXATTR
+FLUSH
+INIT
+OPENDIR
+READDIR
+RELEASEDIR
+FSYNCDIR
+GETLK
+SETLK
+SETLKW
+ACCESS
+CREATE
+INTERRUPT
+BMAP
+DESTROY
+unique: %llu, opcode: %s (%i), nodeid: %lu, insize: %zu
+fuse: failed to allocate request
+debug
+allow_root
+max_write=%u
+max_readahead=%u
+async_read
+sync_read
+max_read=
+--help
+--version
+using FUSE kernel interface version %i.%i
+    -o max_write=N         set maximum size of write requests
+    -o max_readahead=N     set maximum readahead
+    -o async_read          perform reads asynchronously (default)
+    -o sync_read           perform reads synchronously
+fuse: unknown option `%s'
+fuse: warning: library too old, some operations may not work
+fuse: failed to allocate fuse object
+fuse: memory allocation failed
+fuse_opt_add_arg
+!args->argv || args->allocated
+fuse_opt.c
+fuse_opt_insert_arg
+pos <= args->argc
+fuse: missing argument after `%s'
+process_opt_param
+format[0] == '%'
+fuse: invalid parameter in option `%s'
+fuse: failed to allocate session
+fuse_session_add_chan
+se->ch == ((void *)0)
+fuse_session.c
+ch->se == ((void *)0)
+fuse_session_remove_chan
+se->ch == ch
+fuse_session_next_chan
+ch == ((void *)0) || ch == se->ch
+fuse: failed to allocate channel
+fuse: cannot get old signal handler
+fuse: cannot set signal handler
+fuse: fuse_remove_signal_handlers: unknown session
+ntfs-3g-mount
+%s: could not determine username
+priv drop: setresgid failed
+dropping group privilege failed
+priv drop: setresuid failed
+dropping user privilege failed
+priv restore: getresuid failed
+priv restore: setresuid failed
+restoring privilege failed
+priv restore: getresgid failed
+priv restore: setresgid failed
+restoring group privilege failed
+/etc/mtab
+%s: failed to open %s: %s
+fuse
+fuse.
+suid
+nosuid
+nodev
+exec
+noexec
+async
+sync
+atime
+noatime
+dirsync
+%s: unsafe option '%s' ignored
+%s: failed to allocate memory
+user=
+fsname=
+blkdev
+rootmode=
+user_id=
+group_id=
+large_read
+%u.%u
+%s: note: 'large_read' mount option is deprecated for %i.%i kernels
+fd=%i,rootmode=%o,user_id=%i,group_id=%i
+fuseblk
+fd=%i,rootmode=%o,user_id=%i
+%s: 'fuseblk' support missing
+%s: mount failed: %s
+User doesn't have privilege to mount. For more information
+please see: http://tuxera.com/community/ntfs-3g-faq/#unprivileged
+%s: failed to access mountpoint %s: %s
+%s: failed to open current directory: %s
+%s: failed to chdir to mountpoint: %s
+%s: mountpoint %s not owned by user
+%s: user has no write access to mountpoint %s
+%s: mountpoint %s is no longer a regular file
+/proc/self/fd/%i
+%s: mountpoint %s is not a directory or a regular file
+/tmp/dev/fuse
+%s: fuse device is missing, try 'modprobe fuse' as root
+%s: too many mounted FUSE filesystems (%d+)
+priv drop: setgroups failed
+%s: failed to unmount %s: %s
+allow_other
+allow_root
+blkdev
+fsname=%s
+fsname=
+large_read
+blksize=
+default_permissions
+context=
+max_read=
+user=
+suid
+nosuid
+nodev
+exec
+noexec
+async
+sync
+dirsync
+atime
+noatime
+--help
+--version
+fuse: internal error, can't find mount flag
+-oallow_root
+fuse: 'allow_other' and 'allow_root' options are mutually exclusive
+/etc/mtab
+%s: fork: %s
+/tmp/fusermountXXXXXX
+%s: failed to create temporary directory
+%s: failed to chdir to %s: %s
+/bin/mount
+%s: failed to execute /bin/mount: %s
+%s: failed to unmount %s: %s
+/bin/umount
+%s: failed to execute /bin/umount: %s
+%s: waitpid: %s
+%s: invalid mountpoint '%s'
+%s: failed to allocate memory
+%s: bad mount point %s: %s
+%s%s
+%s/%s
+/proc/filesystems
+fuseblk
+fuse_kern_chan_receive
+se != ((void *)0)
+fuse_kern_chan.c
+fuse: reading device
+short read on fuse device
+fuse_kern_chan_send
+fuse: writing device

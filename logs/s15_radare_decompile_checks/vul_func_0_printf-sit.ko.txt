@@ -1,0 +1,11 @@
+[*] Binary protection state of sit.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function printf tear down of sit.ko
+
+
+[*] Function printf used 0 times sit.ko
+

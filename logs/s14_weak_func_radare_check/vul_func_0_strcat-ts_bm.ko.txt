@@ -1,0 +1,11 @@
+[*] Binary protection state of ts_bm.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcat tear down of ts_bm.ko
+
+
+[*] Function strcat used 0 times ts_bm.ko
+

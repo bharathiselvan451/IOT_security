@@ -1,0 +1,3307 @@
+/lib/ld-uClibc.so.0
+@/xo
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+stderr
+fputs
+__xpg_basename
+strcmp
+iptables_main
+iptables_save_main
+iptables_restore_main
+iptables_xml_main
+exit
+fopen64
+xt_params
+fgets
+strlen
+fclose
+iptc_init
+xtables_modprobe_program
+xtables_load_ko
+__errno_location
+iptc_strerror
+ctime
+iptc_first_chain
+iptc_builtin
+iptc_get_policy
+iptc_next_chain
+iptc_first_rule
+print_rule
+iptc_next_rule
+iptc_free
+iptables_globals
+xtables_init_all
+init_extensions
+optarg
+getopt_long
+optind
+strdup
+line
+stdin
+iptc_commit
+strtok
+strncpy
+for_each_chain
+iptc_is_chain
+iptc_flush_entries
+iptc_create_chain
+sscanf
+memset
+iptc_set_policy
+strchr
+strncmp
+do_command
+fflush
+__stdout
+__fputc_unlocked
+fputc
+putchar
+xtables_set_params
+iptables_xml_globals
+getprotobynumber
+xtables_chain_protos
+xtables_free_opts
+vfprintf
+xtables_strtoui
+xtables_find_match
+__ctype_b
+__udivdi3
+xtables_find_target
+strcat
+xtables_ipaddr_to_numeric
+xtables_ipaddr_to_anyname
+strcpy
+xtables_ipmask_to_numeric
+xtables_malloc
+iptc_zero_entries
+iptc_delete_chain
+iptc_get_target
+uname
+xtables_matches
+xtables_targets
+opterr
+print_extension_helps
+xtables_check_inverse
+__ctype_tolower
+xtables_parse_protocol
+xtables_calloc
+xtables_set_revision
+xtables_merge_options
+xtables_parse_interface
+optopt
+xtables_ipparse_multiple
+memcpy
+iptc_append_entry
+iptc_delete_entry
+iptc_delete_num_entry
+iptc_replace_entry
+iptc_insert_entry
+iptc_get_references
+iptc_rename_chain
+dump_entries
+iptables_exit_error
+abort
+socket
+getsockopt
+iptc_read_counter
+iptc_zero_counter
+iptc_set_counter
+setsockopt
+libxt_CLASSIFY_init
+libxt_cluster_init
+libxt_comment_init
+libxt_connbytes_init
+libxt_connlimit_init
+libxt_connmark_init
+libxt_CONNMARK_init
+libxt_CONNSECMARK_init
+libxt_conntrack_init
+libxt_dccp_init
+libxt_dscp_init
+libxt_DSCP_init
+libxt_esp_init
+libxt_hashlimit_init
+libxt_helper_init
+libxt_iprange_init
+libxt_length_init
+libxt_limit_init
+libxt_mac_init
+libxt_mark_init
+libxt_MARK_init
+libxt_multiport_init
+libxt_NFLOG_init
+libxt_NFQUEUE_init
+libxt_NOTRACK_init
+libxt_owner_init
+libxt_physdev_init
+libxt_pkttype_init
+libxt_policy_init
+libxt_quota_init
+libxt_rateest_init
+libxt_RATEEST_init
+libxt_recent_init
+libxt_sctp_init
+libxt_SECMARK_init
+libxt_socket_init
+libxt_standard_init
+libxt_state_init
+libxt_statistic_init
+libxt_string_init
+libxt_tcp_init
+libxt_tcpmss_init
+libxt_TCPMSS_init
+libxt_TCPOPTSTRIP_init
+libxt_time_init
+libxt_tos_init
+libxt_TOS_init
+libxt_TPROXY_init
+libxt_TRACE_init
+libxt_u32_init
+libxt_udp_init
+libipt_addrtype_init
+libipt_ah_init
+libipt_CLUSTERIP_init
+libipt_DNAT_init
+libipt_ecn_init
+libipt_ECN_init
+libipt_icmp_init
+libipt_LOG_init
+libipt_MASQUERADE_init
+libipt_MIRROR_init
+libipt_multiurl_init
+libipt_NETMAP_init
+libipt_realm_init
+libipt_REDIRECT_init
+libipt_REJECT_init
+libipt_SAME_init
+libipt_set_init
+libipt_SET_init
+libipt_SNAT_init
+libipt_TRIGGER_init
+libipt_ttl_init
+libipt_TTL_init
+libipt_ULOG_init
+libipt_unclean_init
+libipt_wlanwarn_init
+xtables_register_target
+xtables_register_match
+xtables_save_string
+xtables_register_matches
+xtables_param_act
+xtables_register_targets
+strncasecmp
+xtables_ipparse_any
+strcasecmp
+xtables_ip6parse_any
+xtables_ip6addr_to_numeric
+xtables_ip6addr_to_anyname
+xtables_parse_port
+getservbyport
+atoi
+xtables_numeric_to_ipaddr
+xtables_numeric_to_ip6addr
+strtol
+getpwnam
+getgrnam
+getpwuid
+getgrgid
+xtables_ip6mask_to_numeric
+strtoull
+strtod
+__muldf3
+__fixunsdfsi
+__floatsidf
+__adddf3
+__gedf2
+__divdf3
+__subdf3
+__gtdf2
+__ctype_toupper
+atof
+__ltdf2
+mktime
+perror
+snprintf
+localtime
+sprintf
+get_kernel_version
+xtables_numeric_to_ipmask
+xtables_service_to_port
+strsep
+trigger
+getenv
+basic_exit_err
+xtables_init
+xtables_set_nfproto
+xtables_insmod
+xtables_strtoul
+getservbyname
+gethostbyaddr
+getnetbyaddr
+getnetbyname
+gethostbyname
+strrchr
+xtables_realloc
+inet_ntop
+getnameinfo
+inet_pton
+getaddrinfo
+freeaddrinfo
+memcmp
+strcspn
+strpbrk
+fwrite
+getprotobyname
+libm.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+libc.so.0
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+_gp_disp
+__start
+xtables_ip6parse_multiple
+__data_start
+GLIBC_2.0
+('910
+,'9V0
+$$Bp
+	$R3
+F(!$
+@ !$
+('93
+('93
+	&%`
+@8!$
+@8!$
+X&%`
+,\8B
+@(X'
+($Y9
+@ !$c
+('9G
+('9F
+!'9J0
+,$PI
+,$PJ
+'9J0
+!$Bct
+'9MX
+('9MX
+$Vc|
+('9I
+'9MX
+'9MX
+@(!&
+$Bct
+|$Vc
+('9I
+('9I
+!$Bct
+('9I
+|$Bct
+('9I
+,$Bc
+('9I@
+('9G
+('9LL
+'9LL
+('9I
+!@$c
+` !$
+,<&s
+$YMX
+!'3MX
+('9I@
+('9I
+('9I
+('9MX
+'9N 
+ !'9
+!'9N 
+`0!$H
+!$Bf
+ (!'
+('9i
+@ !<
+($Rkx
+@8!$
+#'9i 
+('9k@
+('9k@
+@0!2
+)$Dj$
+&$Dj,
+!$Dj4
+$Dj<
+$DjD
+$DjL
+$DjT
+$Dj\
+	$Djd2
+$Djl
+,$Djt
+,$Dj
+d$Po
+,$Dj
+Q'9i 
+,$Dj
+,$Dj
+,$Dj
+,$Dj
+,$Dj
+@ !'
+@(!2
+,$Dj
+,$Dj
+@(!2
+,$Dj
+ !&s
+,$Ej|
+,$Ej|
+($P~
+,$Rj|
+,$Ej|
+$$Bj|
+0!'9k
+('9m`
+0!'9k
+('9kx
+0!'9k
+('9k
+'9m`
+('9k
+('9k
+0!'9k
+('9kx
+0!'9k
+('9kx
+('9n
+('9n
+('9n
+('9n
+('9n
+ '9n
+('9n
+('9k@
+	&Ew
+('9k@
+('9k@
+('9i
+yx0b
+,$By
+,$By
+ !,B
+('9k@
+@0!$
+	$Dj|$
+D !'
+@8!$
+('9z
+@ !$
+('9z
+('9z
+('9z
+{h2B
+,$D{
+,$D{
+,$D{
+,$D{
+,$Dj
+,$Dj
+,$Dj
+,$D|
+,$D|
+('9q
+  !$
+'9}H
+('9i
+@ !$
+@ !$
+0!'9
+@0!<
+@0!'9
+` !'
+0!'9
+(!'9
+  !$B
+8!'9
+(!&#
+0!'9
+  !&"
+ 8!'9
+F0#$Q
+	$E~
+,$E~
+,$C~
+,$C~
+  !$
+ !'9
+B !$
+  !'9
+(#'9
+f !$
+(#'9
+  !$
+  !$B
+(!'9
+ (!$B
+  !$B
+ !'9
+@P!'
+c !$
+`(!'9
+ 8!$F
+8!$Q
+ 0!$
+ 0!$
+@ !$
+ '9	 
+ '9	D
+'9	 
+'9	D
+(!$r
+0(#'9!<
+4'9!<
+0(#'9$D
+4'9$D
+4'9&h
+4'9&h
+4'9&h
+4'9"
+4'9"
+4'9%D
+4'9%D
+@0!'9-
+@0!'9-
+'97T
+'97T
+@ !'
+@(!'
+4'9<
+4'9@8
+4'9@8
+4'9@8
+4'9@8
+4'9>H
+4'9<
+4'9?@
+4'9?@
+4'9?@
+`8!&
+4'9?@
+4'9>H
+4'9A<
+4'9A<
+4'9D
+4'9D
+$cu8
+ $cu8
+$Bvt
+` !$
+4'9_l
+4'9_l
+4'9_l
+@0!$
+@0!$
+@0!$
+'9dp
+'9dp
+'9dp
+4'9f
+ '9nt
+ '9nt
+4'9v
+4'9w(
+4'9v
+4'9w(
+ '9z
+ '9z
+4'9v
+4'9w(
+4'9v
+4'9w(
+ '9~D
+ '9~D
+@(!$
+@(!$
+@0!$
+@0!$
+`0!$
+yd$E
+@ !(E
+  !$
+`(!&%
+`(!&%
+`(!&%
+@0!$
+(!'9
+@0!<
+(!'9
+@0!<
+(!'9
+@0!<
+(!'9
+@0!<
+@(!<
+@(!<
+@(!<
+@(!<
+8!$Q
+  !,B
+"0$$
+"0$$
+ !$Q
+ !$Q
+ !$Q
+ $B|
+"(!$
+(!0c
+(!0c
+H0B@
+g4B@
+H0B 
+g4B 
+b $0c
+H0b 
+@(!$
+&0b@
+H0b@
+@(!&R
+(!&d
+0+'9
+@(!&R
+(!&d
+0+'9
+ (!'9
+ (!'9
+ !$P
+$'9	
+8'9	
+,'9	
+8'9	
+'9"P
+'9"P
+!B0B
+P@#&J
+,'9+
+ !&$
+@8!,B
+'93t
+'93t
+8'95
+8'95
+ '9>
+ !,B
+@0!,B
+`(!$
+@ !&
+!$SI
+'9H|
+'9H|
+H'9J
+H'9J
+ $POh
+ !$PP
+8'9P
+8'9P
+8'9V
+8'9V
+8'9V
+@(!$
+@(!$
+8'9Y
+8'9Y
+D'9Z
+D'9Z
+  !'
+,'9e
+ !$B
+4'9e
+8'9np
+8'9m
+8'9l0
+8'9l0
+8'9m
+8'9np
+ $Ql0
+@ !$P
+8'9sP
+8'9sP
+ '9t
+ '9t
+@ !$P
+8'9{ 
+8'9{ 
+ '9|
+8'9|
+h&F!
+	&F!
+h&F!
+h&f!
+	&f!
+h&E 
+h&&!
+	&&!
+h&E 
+h&E 
+h&&!
+@(!$
+Q(#'
+$P'`
+ $P'd
+ $F,(
+ $R-
+ $E-
+@0!$
+$c2H
+1p0b
+ $C0T$
+$C0H
+$C0h
+ $C2
+ !'9
+ (!$B
+0!$d
+ $E=
+  !$B
+@(!$C
+@0!,B
+@ !$B
+@ !$
+@ !,B
+@ !$
+ $ER
+ $ER
+ $FR
+@ !$
+@ !,B
+U\&1
+$BS$
+ $BS,
+$EV(
+ $EUT
+$fUX
+ $FU\
+V,*"
+W\$S
+ !'9
+@ !<
+ $Bc
+@ !$
+0#&d
+@ !$
+0#&d
+	$Pe
+@8!&	
+ 0!$
+ $Qe\
+T'91
+T'91
+	&ef@
+&hf@
+ !,B
+$Q30
+	&ef@
+&hf@
+ !,B
+$R3X
+  !$
+P !&
+,'9=
+,'9=
+H0!$
+$y@t
+$y@t
+ $bh
+$y@t
+$y@t
+ $bh
+H!$B
+$yJ$$D
+ $bh
+ !'9H0
+` !$U
+ !-%
+$yJ$
+$yJ$
+ $bh
+'9H0
+H!$B
+	&EiD
+&EiD
+$'9p
+('90p
+ ERROR: This should not happen.
+iptables
+iptables-save
+iptables-restore
+iptables-xml
+ERROR: No subcommand given.
+main
+save
+restore
+iptables multi-purpose version: unknown subcommand "%s"
+binary
+counters
+dump
+table
+modprobe
+/proc/net/ip_tables_names
+Badly formed tablename `%s'
+Cannot initialize: %s
+# Generated by iptables-save v%s on %s
+1.4.5
+:%s 
+[%llu:%llu]
+- [0:0]
+Binary NYI
+COMMIT
+# Completed on %s
+iptables-save
+%s/%s Failed to initialize xtables
+bcdt:
+Unknown arguments found on commandline
+binary
+counters
+verbose
+test
+help
+noflush
+modprobe
+table
+iptables-restore
+%s/%s Failed to initialize xtables
+Usage: %s [-b] [-c] [-v] [-t] [-h]
+	   [ --binary ]
+	   [ --counters ]
+	   [ --verbose ]
+	   [ --test ]
+	   [ --help ]
+	   [ --noflush ]
+	   [ --table=<TABLE> ]
+          [ --modprobe=<command>]
+bcvthnM:T:
+Can't open %s: %s
+Unknown arguments found on commandline
+COMMIT
+%s: line %u table name invalid
+%s: unable to initialize table '%s'
+%s: line %u chain name invalid
+error flushing chain '%s':%s
+error creating chain '%s':%s
+%s: line %u policy invalid
+[%llu:%llu]
+invalid policy counters for chain '%s'
+Can't set policy `%s' on `%s' line %u: %s
+Bad line %u: need :
+Bad line %u: need ]
+--set-counters
+--table
+Line %u seems to have a -t table option.
+Parameter too long!
+%s: line %u failed
+%s: COMMIT expected at line %u
+iptables-xml
+1.4.5
+verbose
+combine
+help
+&#%d;
+&amp;
+&lt;
+&gt;
+&quot;
+<!-- 
+ -->
+%s="
+%s="%lld" 
+    </chain>
+    <chain 
+name
+policy
+packet-count
+byte-count
+  </table>
+--jump
+--goto
+match
+%s<%s 
+        
+type
+%s%s
+</%s>
+goto
+call
+          
+--module
+ invert="1"
+xptables-xml
+Usage: %s [-c] [-v] [-h]
+          [--combine ]
+	   [ --verbose ]
+	   [ --help ]
+Can't open %s: %s
+Unknown arguments found on commandline
+<iptables-rules version="1.0">
+<!-- line %d 
+COMMIT
+%s: line %u table name invalid
+  <table 
+%s: line %u policy invalid
+[%llu:%llu]
+%s: line %u chain name invalid
+Bad line %u: need :
+Bad line %u: need ]
+--table
+Line %u seems to have a -t table option.
+ACCEPT
+DROP
+QUEUE
+RETURN
+Combine action from next rule
+      <rule 
+      </rule>
+       <conditions>
+       </conditions>
+       <actions>
+       </actions>
+%s: line %u failed
+%s: COMMIT expected at line %u
+</iptables-rules>
+filter
+iptables
+%s/%s Failed to initialize xtables
+iptables: %s. Run `dmesg' for more information.
+iptables: %s.
+1.4.5
+append
+delete
+insert
+replace
+list
+list-rules
+flush
+zero
+new-chain
+delete-chain
+rename-chain
+policy
+source
+destination
+protocol
+in-interface
+jump
+table
+match
+numeric
+out-interface
+verbose
+exact
+fragments
+version
+help
+line-numbers
+modprobe
+set-counters
+goto
+IDDRALFZNXPES
+nsdpjvxiof0cError occurred at line: %d
+Try `%s -h' or '%s --help' for more information.
+%s v%s: 
+Perhaps iptables or your kernel needs to be upgraded.
+unexpected ! flag
+Cannot use -%c with -%c
+Invalid rule number `%s'
+Invalid target name (too short)
+Invalid target name `%s' (%u chars max)
+Invalid target name `%s'
+multiple -%c flags not allowed
+cannot have ! before -%c
+%lluT 
+%4lluT 
+%lluG 
+%4lluG 
+%lluM 
+%4lluM 
+%lluK 
+%4lluK 
+%5llu 
+%llu 
+%8llu 
+%-4u 
+%-9s 
+%-5s
+%hu 
+%-5hu
+opt 
+in %s 
+ %-6s 
+out %s 
+%-6s 
+%-19s 
+anywhere
+-> %s
+[goto] 
+UNKNOWN match `%s' 
+[%u bytes of unknown target data] 
+Flushing chain `%s'
+Zeroing chain `%s'
+Deleting chain `%s'
+%s-%c 
+%s%s %u.%u.%u.%u
+/32 
+/%u 
+/%u.%u.%u.%u 
+[%llu:%llu] 
+-A %s 
+%s-p %s 
+%s-p %u 
+%s-f 
+-m %s 
+Can't find library for match `%s'
+-c %llu %llu 
+-%c %s 
+Can't find library for target `%s'
+Target `%s' is missing save function
+%d.%d.%d
+Unable to retrieve kernel version.
+-%c requires a rule number
+chain name not allowed to start with `%c'
+chain name may not clash with target name
+-%c requires old-chain-name and new-chain-name
+-%c requires a chain and a policy
+%s v%s
+Usage: %s -[AD] chain rule-specification [options]
+       %s -I chain [rulenum] rule-specification [options]
+       %s -R chain rulenum rule-specification [options]
+       %s -D chain rulenum [options]
+       %s -[LS] [chain [rulenum]] [options]
+       %s -[FZ] [chain] [options]
+       %s -[NX] chain
+       %s -E old-chain-name new-chain-name
+       %s -P chain target [options]
+       %s -h (print this help information)
+Commands:
+Either long or short options are allowed.
+  --append  -A chain		Append to chain
+  --delete  -D chain		Delete matching rule from chain
+  --delete  -D chain rulenum
+				Delete rule rulenum (1 = first) from chain
+  --insert  -I chain [rulenum]
+				Insert in chain as rulenum (default 1=first)
+  --replace -R chain rulenum
+				Replace rule rulenum (1 = first) in chain
+  --list    -L [chain [rulenum]]
+				List the rules in a chain or all chains
+  --list-rules -S [chain [rulenum]]
+				Print the rules in a chain or all chains
+  --flush   -F [chain]		Delete all rules in  chain or all chains
+  --zero    -Z [chain]		Zero counters in chain or all chains
+  --new     -N chain		Create a new user-defined chain
+  --delete-chain
+            -X [chain]		Delete a user-defined chain
+  --policy  -P chain target
+				Change policy on chain to target
+  --rename-chain
+            -E old-chain new-chain
+				Change chain name, (moving any references)
+Options:
+[!] --proto	-p proto	protocol: by number or name, eg. `tcp'
+[!] --source	-s address[/mask][...]
+				source specification
+[!] --destination -d address[/mask][...]
+				destination specification
+[!] --in-interface -i input name[+]
+				network interface name ([+] for wildcard)
+ --jump	-j target
+				target for rule (may load target extension)
+  --goto      -g chain
+                              jump to chain with no return
+  --match	-m match
+				extended match (may load extension)
+  --numeric	-n		numeric output of addresses and ports
+[!] --out-interface -o output name[+]
+				network interface name ([+] for wildcard)
+  --table	-t table	table to manipulate (default: `filter')
+  --verbose	-v		verbose mode
+  --line-numbers		print line numbers when listing
+  --exact	-x		expand numbers (display exact values)
+[!] --fragment	-f		match second or further fragments only
+  --modprobe=<command>		try to insert modules using this command
+  --set-counters PKTS BYTES	set the counter during insert/append
+[!] --version	-V		print package version.
+rule would never match protocol
+unexpected ! flag before --match
+unexpected ! flag before --table
+Not %s ;-)
+%s v%s
+-%c requires packet and byte counter
+%llu
+-%c packet counter not numeric
+-%c byte counter not numeric
+multiple consecutive ! not allowed
+Bad argument `%s'
+can't alloc memory!
+option `%s' requires an argument
+unknown option `%s'
+Unknown arg `%s'
+-A:D:R:I:L::S::M:F::Z::N:X::E:P:Vh::o:p:s:d:j:i:fbvnt:m:xc:g:
+DROP
+The "nat" table is not intended for filtering, the use of DROP is therefore inhibited.
+unknown arguments found on commandline
+no command specified
+nothing appropriate following !
+0.0.0.0/0
+! not allowed with multiple source or destination IP addresses
+Replacement rule does not specify a unique address
+You need to supply the `-%c' option for this command
+Illegal option `-%c' with this command
+chain name `%s' too long (must be under %i chars)
+can't initialize iptables table `%s': %s
+PREROUTING
+INPUT
+POSTROUTING
+OUTPUT
+Can't use -%c with %s
+Warning: using chain %s, not extension
+goto '%s' is not a chain
+Chain %s
+ (policy %s
+packets, 
+bytes
+ (ERROR obtaining refs)
+ (%u references)
+%-4s 
+%5s 
+pkts
+%8s 
+%10s 
+target
+ prot 
+ %-19s 
+ %s 
+-P %s %s
+ -c %llu %llu
+-N %s
+%s does not take any options
+PREROUTING
+INPUT
+FORWARD
+OUTPUT
+POSTROUTING
+ERROR: NULL pointer chain_index[%d]
+ERROR: %d not a valid bsearch type
+ERROR
+libiptc v%s. %u bytes.
+libxtables.so.2
+Table `%s'
+Hooks: pre/in/fwd/out/post = %x/%x/%x/%x/%x
+Underflows: pre/in/fwd/out/post = %x/%x/%x/%x/%x
+ERROR: offset %u not an entry!
+Entry %u (%lu):
+SRC IP: %u.%u.%u.%u/%u.%u.%u.%u
+DST IP: %u.%u.%u.%u/%u.%u.%u.%u
+Interface: `%s'/
+to `%s'/
+Protocol: %u
+Flags: %02X
+Invflags: %02X
+Counters: %llu packets, %llu bytes
+Cache: %08X
+Match name: `%s'
+Target name: `%s' [%u]
+RETURN
+UNKNOWN
+NF_QUEUE
+NF_DROP
+NF_ACCEPT
+verdict=%s
+verdict=%u
+error=`%s'
+QUEUE
+ACCEPT
+DROP
+ERROR: %d not a valid target)
+ERROR: bad type %i
+Permission denied (you must be root)
+Module is wrong version
+Table does not exist (do you need to insmod?)
+Chain is not empty
+Can't delete built-in chain
+Can't delete chain with references left
+Chain already exists
+Index of insertion too big
+Index of replacement too big
+Index of deletion too big
+Index of counter too big
+Loop found in table
+Target problem
+Bad rule (does a matching rule exist in that chain?)
+Bad built-in chain name
+Bad policy name
+Incompatible with this kernel
+iptables who? (do you need to insmod?)
+Will be implemented real soon.  I promise ;)
+Memory allocation problem
+No chain/target/match by that name
+libxtables.so.2
+CLASSIFY
+set-class
+CLASSIFY target options:
+--set-class MAJOR:MINOR    Set skb->priority value (always hexadecimal!)
+%x:%x
+Bad class value `%s'
+CLASSIFY: Can't specify --set-class twice
+CLASSIFY: Parameter --set-class is required
+CLASSIFY set 
+%x:%x 
+--set-class %.4x:%.4x 
+libxtables.so.2
+cluster
+cluster-total-nodes
+cluster-local-node
+cluster-local-nodemask
+cluster-hash-seed
+cluster match options:
+  --cluster-total-nodes <num>		Set number of total nodes in cluster
+  [!] --cluster-local-node <num>	Set the local node number
+  [!] --cluster-local-nodemask <num>	Set the local node mask
+  --cluster-hash-seed <num>		Set seed value of the Jenkins hash
+Can only specify `--cluster-total-nodes' once
+Unable to parse `%s' in `--cluster-total-nodes'
+Can only specify `--cluster-local-node' once
+You cannot use `--cluster-local-nodemask' and `--cluster-local-node'
+Unable to parse `%s' in `--cluster-local-node'
+Can only specify `--cluster-hash-seed' once
+Unable to parse `%s'
+cluster match: `--cluster-local-node' must be <= `--cluster-total-nodes'
+cluster match: `--cluster-local-nodemask' too big for `--cluster-total-nodes'
+cluster match: `--cluster-total-nodes' is missing
+cluster match: `--cluster-hash-seed' is missing
+cluster match: `--cluster-local-node' or`--cluster-local-nodemask' is missing
+cluster 
+!node_mask=0x%08x 
+node_mask=0x%08x 
+total_nodes=%u hash_seed=0x%08x 
+! --cluster-local-nodemask 0x%08x 
+--cluster-local-nodemask 0x%08x 
+--cluster-total-nodes %u --cluster-hash-seed 0x%08x 
+libxtables.so.2
+comment
+comment match options:
+--comment COMMENT             Attach a comment to a rule
+Sorry, you can't have an inverted comment
+COMMENT must be shorter than %i characters
+COMMENT match: You must specify `--comment'
+/* %s */ 
+--comment 
+libxtables.so.2
+connbytes
+connbytes-dir
+connbytes-mode
+connbytes match options:
+ [!] --connbytes from:[to]
+     --connbytes-dir [original, reply, both]
+     --connbytes-mode [packets, bytes, avgpkt]
+Bad range "%s"
+%llu should be less than %llu
+original
+reply
+both
+Unknown --connbytes-dir `%s'
+packets
+bytes
+avgpkt
+Unknown --connbytes-mode `%s'
+You must specify `--connbytes'`--connbytes-dir' and `--connbytes-mode'
+bytes 
+packets 
+avgpkt 
+unknown 
+reply 
+original 
+both 
+connbytes ! %llu:%llu 
+connbytes %llu:%llu 
+connbytes mode 
+connbytes direction 
+! --connbytes %llu:%llu 
+--connbytes %llu:%llu 
+--connbytes-mode 
+--connbytes-dir 
+libxtables.so.2
+connlimit
+connlimit-above
+connlimit-mask
+connlimit match options:
+[!] --connlimit-above n        match if the number of existing                                connections is (not) above n
+    --connlimit-mask n         group hosts using mask
+--connlimit-above may be given only once
+--connlimit-mask may be given only once
+--connlimit-mask must be between 0 and 128
+--connlimit-mask must be between 0 and 32
+You must specify "--connlimit-above"
+#conn/%u %s %u 
+%s--connlimit-above %u --connlimit-mask %u 
+libxtables.so.2
+connmark
+mark
+connmark match options:
+[!] --mark value[/mask]    Match ctmark value with optional mask
+--mark
+Bad MARK value "%s"
+0x%x/0x%x 
+0x%x 
+connmark: The --mark option is required
+CONNMARK match 
+connmark match 
+--mark 
+libxtables.so.2
+CONNMARK
+set-xmark
+set-mark
+and-mark
+or-mark
+xor-mark
+save-mark
+restore-mark
+ctmask
+nfmask
+mask
+CONNMARK target options:
+  --set-mark value[/mask]       Set conntrack mark value
+  --save-mark [--mask mask]     Save the packet nfmark in the connection
+  --restore-mark [--mask mask]  Restore saved nfmark value
+CONNMARK target options:
+  --set-xmark value[/ctmask]    Zero mask bits and XOR ctmark with value
+  --save-mark [--ctmask mask] [--nfmask mask]
+                                Copy ctmark to nfmark using masks
+  --restore-mark [--ctmask mask] [--nfmask mask]
+                                Copy nfmark to ctmark using masks
+  --set-mark value[/mask]       Set conntrack mark value
+  --save-mark [--mask mask]     Save the packet nfmark in the connection
+  --restore-mark [--mask mask]  Restore saved nfmark value
+  --and-mark value              Binary AND the ctmark with bits
+  --or-mark value               Binary OR  the ctmark with bits
+  --xor-mark value              Binary XOR the ctmark with bits
+Bad MARK value "%s"
+CONNMARK target: Can't specify --set-mark twice
+CONNMARK target: Can't specify --save-mark twice
+CONNMARK target: Can't specify --restore-mark twice
+CONNMARK target: Can't specify --mask without a operation
+Bad MASK value "%s"
+--set-xmark/--set-mark
+--and-mark
+--or-mark
+--xor-mark
+CONNMARK: --save-mark or --restore-mark is required for --nfmask
+--nfmask
+CONNMARK: --save-mark or --restore-mark is required for --ctmask
+--ctmask
+CONNMARK: --save-mark or --restore-mark is required for --mask
+--mask
+CONNMARK target: No operation specified
+0x%lx
+%s0x%lx
+CONNMARK save 
+CONNMARK set 
+CONNMARK restore 
+mask 
+ERROR: UNKNOWN CONNMARK MODE 
+CONNMARK and 0x%x 
+CONNMARK or 0x%x 
+CONNMARK xor 0x%x 
+CONNMARK xset 0x%x/0x%x 
+CONNMARK save mask 0x%x 
+CONNMARK save nfmask 0x%x ctmask ~0x%x 
+CONNMARK restore mask 0x%x 
+CONNMARK restore ctmask 0x%x nfmask ~0x%x 
+ERROR: UNKNOWN CONNMARK MODE
+--save-mark 
+--set-mark 
+--restore-mark 
+--mask 
+--save-mark --nfmask 0x%x --ctmask 0x%x 
+--set-xmark 0x%x/0x%x 
+--restore-mark --nfmask 0x%x --ctmask 0x%x 
+libxtables.so.2
+CONNSECMARK
+save
+restore
+CONNSECMARK target options:
+  --save                   Copy security mark from packet to conntrack
+  --restore                Copy security mark from connection to packet
+CONNSECMARK target: Can't specify --save twice
+CONNSECMARK target: Can't specify --restore twice
+CONNSECMARK target: parameter required
+CONNSECMARK target: only one flag of --save or --restore is allowed
+save 
+restore 
+CONNSECMARK target: invalid mode %hhu
+CONNSECMARK 
+libxtables.so.2
+conntrack
+ctstate
+ctproto
+ctorigsrc
+ctorigdst
+ctreplsrc
+ctrepldst
+ctstatus
+ctexpire
+ctorigsrcport
+ctorigdstport
+ctreplsrcport
+ctrepldstport
+ctdir
+conntrack match options:
+[!] --ctstate {INVALID|ESTABLISHED|NEW|RELATED|UNTRACKED|SNAT|DNAT}[,...]
+                               State(s) to match
+[!] --ctproto proto            Protocol to match; by number or name, e.g. "tcp"
+[!] --ctorigsrc address[/mask]
+[!] --ctorigdst address[/mask]
+[!] --ctreplsrc address[/mask]
+[!] --ctrepldst address[/mask]
+                               Original/Reply source/destination address
+[!] --ctorigsrcport port
+[!] --ctorigdstport port
+[!] --ctreplsrcport port
+[!] --ctrepldstport port
+                               TCP/UDP/SCTP orig./reply source/destination port
+[!] --ctstatus {NONE|EXPECTED|SEEN_REPLY|ASSURED|CONFIRMED}[,...]
+                               Status(es) to match
+[!] --ctexpire time[:time]     Match remaining lifetime in seconds against
+                               value or range of values (inclusive)
+    --ctdir {ORIGINAL|REPLY}   Flow direction of packet
+INVALID
+ESTABLISHED
+RELATED
+UNTRACKED
+SNAT
+DNAT
+NONE
+EXPECTED
+SEEN_REPLY
+ASSURED
+CONFIRMED
+expire value invalid: "%s"
+"--ctstate" requires a list of states with no spaces, e.g. ESTABLISHED,RELATED
+Bad ctstate "%s"
+rule would never match protocol
+multiple IP addresses not allowed
+Bad ctstatus "%s"
+expire min. range value `%lu' greater than max. range value `%lu'
+conntrack: rule would never match protocol
+--expires
+expire min. range value "%u" greater than max. range value "%u"
+--ctorigsrcport
+--ctorigdstport
+--ctreplsrcport
+--ctrepldstport
+--ctdir
+ORIGINAL
+REPLY
+conntrack: At least one option is required
+%sINVALID
+%sNEW
+%sRELATED
+%sESTABLISHED
+%sUNTRACKED
+%sSNAT
+%sDNAT
+%sEXPECTED
+%sSEEN_REPLY
+%sASSURED
+%sCONFIRMED
+%sNONE
+anywhere 
+anywhere
+%sctstate 
+%sctproto 
+%sctorigsrc 
+%sctorigdst 
+%sctreplsrc 
+%sctrepldst 
+%sctstatus 
+%sctexpire 
+%lu 
+%lu:%lu 
+%sctproto %u 
+%sctorigsrcport %u 
+%sctorigdstport %u 
+%sctreplsrcport %u 
+%sctrepldstport %u 
+%u:%u 
+%sctdir REPLY
+%sctdir ORIGINAL
+libxtables.so.2
+dccp
+source-port
+sport
+destination-port
+dport
+dccp-types
+dccp-option
+REQUEST
+RESPONSE
+DATA
+DATAACK
+CLOSEREQ
+CLOSE
+RESET
+SYNC
+SYNCACK
+INVALID
+dccp match options
+[!] --source-port port[:port]                          match source port(s)
+ --sport ...
+[!] --destination-port port[:port]                     match destination port(s)
+ --dport ...
+invalid portrange (min > max)
+Only one `--source-port' allowed
+Only one `--destination-port' allowed
+Only one `--dccp-types' allowed
+Unknown DCCP type `%s'
+Only one `--dccp-option' allowed
+Bad DCCP option "%s"
+s:%s
+dccp 
+option=%s%u 
+--sport %u:%u 
+--sport %u 
+--dport %u:%u 
+--dport %u 
+--dccp-type 
+--dccp-option %s%u 
+libxtables.so.2
+dscp
+dscp-class
+AF11
+AF12
+AF13
+AF21
+AF22
+AF23
+AF31
+AF32
+AF33
+AF41
+AF42
+AF43
+dscp match options
+[!] --dscp value		Match DSCP codepoint with numerical value
+  		                This value can be in decimal (ex: 32)
+               		or in hex (ex: 0x20)
+[!] --dscp-class name		Match the DiffServ class. This value may
+				be any of the BE,EF, AFxx or CSx classes
+				These two options are mutually exclusive !
+DSCP match: Only use --dscp ONCE!
+Invalid dscp `%s'
+DSCP `%d` out of range
+DSCP match: Only use --dscp-class ONCE!
+Invalid DSCP value `%s'
+DSCP match: Parameter --dscp is required
+DSCP match %s0x%02x
+%s--dscp 0x%02x 
+libxtables.so.2
+DSCP
+set-dscp
+set-dscp-class
+AF11
+AF12
+AF13
+AF21
+AF22
+AF23
+AF31
+AF32
+AF33
+AF41
+AF42
+AF43
+DSCP target options
+  --set-dscp value		Set DSCP field in packet header to value
+  		                This value can be in decimal (ex: 32)
+               		or in hex (ex: 0x20)
+  --set-dscp-class class	Set the DSCP field in packet header to the
+				value represented by the DiffServ class value.
+				This class may be EF,BE or any of the CSxx
+				or AFxx classes.
+				These two options are mutually exclusive !
+DSCP target: Only use --set-dscp ONCE!
+Invalid dscp `%s'
+DSCP `%d` out of range
+DSCP target: Only use --set-dscp-class ONCE!
+Invalid DSCP value `%s'
+DSCP target: Parameter --set-dscp is required
+DSCP set 
+0x%02x 
+--set-dscp 0x%02x 
+libxtables.so.2
+espspi
+esp match options:
+[!] --espspi spi[:spi]
+				match spi (range)
+ESP no valid digits in spi `%s'
+spi `%s' specified too big: would overflow
+ESP error parsing spi `%s'
+Only one `--espspi' allowed
+Invalid ESP spi range: %s
+esp 
+%s:%s%u 
+%ss:%s%u:%u 
+Unknown invflags: 0x%X 
+%s--espspi 
+%u:%u 
+libxtables.so.2
+hashlimit
+hashlimit-upto
+hashlimit-above
+hashlimit-srcmask
+hashlimit-dstmask
+hashlimit-burst
+hashlimit-htable-size
+hashlimit-htable-max
+hashlimit-htable-gcinterval
+hashlimit-htable-expire
+hashlimit-mode
+hashlimit-name
+hour
+hashlimit match options:
+--hashlimit <avg>		max average match rate
+                                [Packets per second unless followed by 
+                                /sec /minute /hour /day postfixes]
+--hashlimit-mode <mode>		mode is a comma-separated list of
+					dstip,srcip,dstport,srcport
+--hashlimit-name <name>		name for /proc/net/ipt_hashlimit/
+[--hashlimit-burst <num>]	number to match in a burst, default %u
+[--hashlimit-htable-size <num>]	number of hashtable buckets
+[--hashlimit-htable-max <num>]	number of hashtable entries
+[--hashlimit-htable-gcinterval]	interval between garbage collection runs
+[--hashlimit-htable-expire]	after which time are idle entries expired?
+hashlimit match options:
+  --hashlimit-upto <avg>           max average match rate
+                                   [Packets per second unless followed by 
+                                   /sec /minute /hour /day postfixes]
+  --hashlimit-above <avg>          min average match rate
+  --hashlimit-mode <mode>          mode is a comma-separated list of
+                                   dstip,srcip,dstport,srcport (or none)
+  --hashlimit-srcmask <length>     source address grouping prefix length
+  --hashlimit-dstmask <length>     destination address grouping prefix length
+  --hashlimit-name <name>          name for /proc/net/ipt_hashlimit
+  --hashlimit-burst <num>	    number to match in a burst, default %u
+  --hashlimit-htable-size <num>    number of hashtable buckets
+  --hashlimit-htable-max <num>     number of hashtable entries
+  --hashlimit-htable-gcinterval    interval between garbage collection runs
+  --hashlimit-htable-expire        after which time are idle entries expired?
+second
+minute
+Rate too fast "%s"
+dstip
+srcip
+srcport
+dstport
+--hashlimit
+bad rate `%s'
+--hashlimit-burst
+bad --hashlimit-burst `%s'
+--hashlimit-htable-size
+bad --hashlimit-htable-size: `%s'
+--hashlimit-htable-max
+bad --hashlimit-htable-max: `%s'
+--hashlimit-htable-gcinterval
+bad --hashlimit-htable-gcinterval: `%s'
+--hashlimit-htable-expire
+bad --hashlimit-htable-expire: `%s'
+--hashlimit-mode
+bad --hashlimit-mode: `%s'
+--hashlimit-name
+Zero-length name?
+hashlimit does not support invert
+--hashlimit-upto
+--hashlimit-above
+--hashlimit-srcmask
+--hashlimit-dstmask
+You have to specify --hashlimit
+You have to specify --hashlimit-mode
+You have to specify --hashlimit-name
+You have to specify --hashlimit-upto or --hashlimit-above
+%u/%s 
+limit: avg 
+burst %u 
+mode 
+htable-size %u 
+htable-max %u 
+htable-gcinterval %u 
+htable-expire %u 
+limit: above 
+limit: up to 
+srcmask %u 
+dstmask %u 
+--hashlimit 
+--hashlimit-burst %u 
+--hashlimit-mode 
+--hashlimit-name %s 
+--hashlimit-htable-size %u 
+--hashlimit-htable-max %u 
+--hashlimit-htable-gcinterval %u 
+--hashlimit-htable-expire %u 
+--hashlimit-above 
+--hashlimit-upto 
+--hashlimit-srcmask %u 
+--hashlimit-dstmask %u 
+libxtables.so.2
+helper
+helper match options:
+[!] --helper string        Match helper identified by string
+helper match: Only use --helper ONCE!
+helper match: You must specify `--helper'
+helper match %s"%s" 
+%s--helper 
+libxtables.so.2
+iprange
+src-range
+dst-range
+iprange match options:
+[!] --src-range ip-ip        Match source IP in the specified range
+[!] --dst-range ip-ip        Match destination IP in the specified range
+iprange match: Bad IP address "%s"
+iprange match: Only use --src-range ONCE!
+iprange match: Only use --dst-range ONCE!
+--src-range
+--dst-range
+iprange match: You must specify `--src-range' or `--dst-range'
+%u.%u.%u.%u-%u.%u.%u.%u 
+source IP range 
+destination IP range 
+-%s 
+--src-range 
+--dst-range 
+--src-range %s
+--dst-range %s
+libxtables.so.2
+length
+length match options:
+[!] --length length[:length]    Match packet length against value or range
+                                of values (inclusive)
+length invalid: "%s"
+length: `--length' may only be specified once
+length min. range value `%u' greater than max. range value `%u'
+length: You must specify `--length'
+length %s
+%u:%u 
+%s--length 
+libxtables.so.2
+limit
+limit-burst
+hour
+limit match options:
+--limit avg			max average match rate: default 3/hour
+                                [Packets per second unless followed by 
+                                /sec /minute /hour /day postfixes]
+--limit-burst number		number to match in a burst, default %u
+second
+minute
+Rate too fast "%s"
+3/hour
+bad rate `%s'
+bad --limit-burst `%s'
+limit does not support invert
+%u/%s 
+limit: avg 
+burst %u 
+--limit 
+--limit-burst %u 
+libxtables.so.2
+mac-source
+mac-destination
+mac match options:
+[!] --mac-source XX:XX:XX:XX:XX:XX
+				Match source MAC address
+ --mac-destination [!] XX:XX:XX:XX:XX:XX
+				Match destination MAC address
+Bad mac address "%s"
+Bad mac address `%s'
+mac match: Only use --mac-source ONCE!
+mac match: Only use --mac-destination ONCE!
+%02X
+:%02X
+You must specify `--mac-source' or `--mac-destination'
+source MAC  
+destination MAC 
+--mac-source 
+--mac-destination 
+libxtables.so.2
+mark
+mark match options:
+[!] --mark value[/mask]    Match nfmark value with optional mask
+--mark
+Bad MARK value "%s"
+0x%x/0x%x 
+0x%x 
+mark match: The --mark option is required
+mark match 
+MARK match 
+--mark 
+libxtables.so.2
+MARK
+set-xmark
+set-mark
+and-mark
+or-mark
+xor-mark
+MARK target options:
+  --set-mark value                   Set nfmark value
+  --and-mark value                   Binary AND the nfmark with value
+  --or-mark  value                   Binary OR  the nfmark with value
+MARK target options:
+  --set-xmark value[/mask]  Clear bits in mask and XOR value into nfmark
+  --set-mark value[/mask]   Clear bits in mask and OR value into nfmark
+  --and-mark bits           Binary AND the nfmark with bits
+  --or-mark bits            Binary OR the nfmark with bits
+  --xor-mask bits           Binary XOR the nfmark with bits
+Bad MARK value "%s"
+MARK target: Can't specify --set-mark twice
+MARK target: kernel too old for --and-mark
+MARK target: kernel too old for --or-mark
+MARK target: Parameter --set/and/or-mark is required
+--set-xmark/--set-mark
+--and-mark
+--or-mark
+--xor-mark
+MARK: One of the --set-xmark, --{and,or,xor,set}-mark options is required
+0x%lx 
+MARK set 
+--set-mark 
+MARK and 
+MARK or 
+MARK and 0x%x 
+MARK or 0x%x 
+MARK xor 0x%x 
+MARK xset 0x%x/0x%x 
+--and-mark 
+--or-mark 
+--set-xmark 0x%x/0x%x 
+libxtables.so.2
+multiport
+source-ports
+sports
+destination-ports
+dports
+ports
+multiport match options:
+ --source-ports port[,port,port...]
+ --sports ...
+				match source port(s)
+ --destination-ports port[,port,port...]
+ --dports ...
+				match destination port(s)
+ --ports port[,port,port]
+				match both source and destination port(s)
+ NOTE: this kernel does not support port ranges in multiport.
+multiport match options:
+[!] --source-ports port[,port:port,port...]
+ --sports ...
+				match source port(s)
+[!] --destination-ports port[,port:port,port...]
+ --dports ...
+				match destination port(s)
+[!] --ports port[,port:port,port]
+				match both source and destination port(s)
+udplite
+sctp
+dccp
+strdup failed
+too many ports specified
+invalid portrange specified
+multiport only works with TCP, UDP, UDPLITE, SCTP and DCCP
+multiport needs `-p tcp', `-p udp', `-p udplite', `-p sctp' or `-p dccp'
+multiport does not support invert
+multiport can only have one option
+multiport expection an option
+multiport 
+sports 
+dports 
+ports 
+ERROR 
+--sports 
+--dports 
+--ports 
+libxtables.so.2
+NFLOG
+nflog-group
+nflog-prefix
+nflog-range
+nflog-threshold
+NFLOG target options:
+ --nflog-group NUM		NETLINK group used for logging
+ --nflog-range NUM		Number of byte to copy
+ --nflog-threshold NUM		Message threshold of in-kernel queue
+ --nflog-prefix STRING		Prefix string for log messages
+Can't specify --nflog-group twice
+Unexpected `!' after --nflog-group
+--nflog-group can not be negative
+Can't specify --nflog-prefix twice
+Unexpected `!' after --nflog-prefix
+No prefix specified for --nflog-prefix
+--nflog-prefix too long, max %Zu characters
+Newlines are not allowed in --nflog-prefix
+Can't specify --nflog-range twice
+Invalid --nflog-range, must be >= 0
+Can't specify --nflog-threshold twice
+Invalid --nflog-threshold, must be >= 1
+%snflog-prefix 
+%snflog-group %u 
+%snflog-range %u 
+%snflog-threshold %u 
+libxtables.so.2
+NFQUEUE
+queue-num
+queue-balance
+NFQUEUE target options
+  --queue-num value		Send packet to QUEUE number <value>.
+  		                Valid queue numbers are 0-65535
+  --queue-balance first:last	Balance flows between queues <value> to <value>.
+Invalid queue number `%s'
+NFQUEUE target: Only use --queue-num ONCE!
+NFQUEUE target: --queue-balance not supported (kernel too old?)
+Bad range "%s"
+%u should be less than %u
+NFQUEUE num %u
+NFQUEUE balance %u:%u
+--queue-num %u 
+--queue-balance %u:%u 
+libxtables.so.2
+NOTRACK
+libxtables.so.2
+owner
+uid-owner
+gid-owner
+socket-exists
+pid-owner
+sid-owner
+cmd-owner
+owner match options:
+[!] --uid-owner userid       Match local UID
+[!] --gid-owner groupid      Match local GID
+[!] --pid-owner processid    Match local PID
+[!] --sid-owner sessionid    Match local SID
+[!] --cmd-owner name         Match local command name
+NOTE: PID, SID and command matching are broken on SMP
+owner match options:
+[!] --uid-owner userid       Match local UID
+[!] --gid-owner groupid      Match local GID
+[!] --pid-owner processid    Match local PID
+[!] --sid-owner sessionid    Match local SID
+NOTE: PID and SID matching are broken on SMP
+owner match options:
+[!] --uid-owner userid[-userid]      Match local UID
+[!] --gid-owner groupid[-groupid]    Match local GID
+[!] --socket-exists                  Match if socket exists
+--uid-owner
+--gid-owner
+--pid-owner
+--sid-owner
+--sid-value
+--cmd-owner
+owner match: command "%s" too long, max. %zu characters
+--socket-exists
+owner: At least one of --uid-owner, --gid-owner or --socket-exists is required
+%.*s 
+ %u-%u 
+owner UID match
+owner GID match
+owner PID match
+owner SID match
+owner CMD match
+owner socket exists
+libxtables.so.2
+physdev
+physdev-in
+physdev-out
+physdev-is-in
+physdev-is-out
+physdev-is-bridged
+physdev match options:
+ [!] --physdev-in inputname[+]		bridge port name ([+] for wildcard)
+ [!] --physdev-out outputname[+]	bridge port name ([+] for wildcard)
+ [!] --physdev-is-in			arrived on a bridge device
+ [!] --physdev-is-out			will leave on a bridge device
+ [!] --physdev-is-bridged		it's a bridged packet
+multiple use of the same physdev option is not allowed
+PHYSDEV: no physdev option specified
+PHYSDEV match
+%s --physdev-is-in
+%s --physdev-in %s
+%s --physdev-is-out
+%s --physdev-out %s
+%s --physdev-is-bridged
+%s--physdev-is-in 
+%s--physdev-in %s 
+%s--physdev-is-out 
+%s--physdev-out %s 
+%s--physdev-is-bridged 
+libxtables.so.2
+pkttype
+pkt-type
+unicast
+to us
+broadcast
+to all
+multicast
+to group
+bcast
+mcast
+host
+pkttype match options:
+[!] --pkt-type packettype    match packet type
+Valid packet types:
+	%-14s		%s
+Bad packet type '%s'
+You must specify "--pkt-type"
+PKTTYPE %s= 
+%s--pkt-type 
+libxtables.so.2
+policy
+strict
+reqid
+tunnel-src
+tunnel-dst
+proto
+mode
+next
+policy match options:
+  --dir in|out			match policy applied during decapsulation/
+				policy to be applied during encapsulation
+  --pol none|ipsec		match policy
+  --strict 			match entire policy instead of single element
+				at any position
+[!] --reqid reqid		match reqid
+[!] --spi spi			match SPI
+[!] --proto proto		match protocol (ah/esp/ipcomp)
+[!] --mode mode 		match mode (transport/tunnel)
+[!] --tunnel-src addr/mask	match tunnel source
+[!] --tunnel-dst addr/mask	match tunnel destination
+  --next 			begin next element in policy
+policy match: double --dir option
+policy match: can't invert --dir option
+policy_match: invalid dir "%s"
+policy match: can't invert --policy option
+none
+ipsec
+policy match: invalid policy "%s"
+policy match: double --strict option
+policy match: can't invert --strict option
+policy match: double --reqid option
+--spi
+policy match: double --spi option
+policy match: double --tunnel-src option
+policy match: double --tunnel-dst option
+policy match: name resolves to multiple IPs
+policy match: double --proto option
+policy match: protocol must ah/esp/ipcomp
+policy match: double --mode option
+transport
+tunnel
+policy match: invalid mode "%s"
+policy match: can't invert --next option
+policy match: maximum policy depth reached
+policy match: no parameters given
+policy match: neither --in nor --out specified
+policy match: policy none but --strict given
+policy match: policy none but policy given
+policy match: multiple elements but no --strict
+policy match: empty policy element
+policy match: --tunnel-src/--tunnel-dst is only valid in tunnel mode
+%sreqid %u 
+%sspi 0x%x 
+%sproto 
+%smode 
+transport 
+tunnel 
+??? 
+%stunnel-dst %s%s 
+%stunnel-src %s%s 
+%sdir in 
+%sdir out 
+%spol none 
+%spol ipsec 
+%sstrict 
+policy match 
+[%u] 
+--next 
+libxtables.so.2
+quota
+quota match options:
+ --quota quota			quota (bytes)
+quota: %llu bytes
+--quota %llu 
+quota: unexpected '!'
+quota invalid: '%s'
+libxtables.so.2
+rateest
+rateest1
+rateest2
+rateest-bps1
+rateest-pps1
+rateest-bps2
+rateest-pps2
+rateest-bps
+rateest-pps
+rateest-delta
+rateest-lt
+rateest-gt
+rateest-eq
+Kibit
+kbit
+mibit
+mbit
+gibit
+gbit
+tibit
+tbit
+KiBps
+KBps
+MiBps
+MBps
+GiBps
+GBps
+TiBps
+TBps
+rateest match options:
+ --rateest1 name		Rate estimator name
+ --rateest2 name		Rate estimator name
+ --rateest-delta		Compare difference(s) to given rate(s)
+ --rateest-bps1 [bps]		Compare bps
+ --rateest-pps1 [pps]		Compare pps
+ --rateest-bps2 [bps]		Compare bps
+ --rateest-pps2 [pps]		Compare pps
+ [!] --rateest-lt		Match if rate is less than given rate/estimator
+ [!] --rateest-gt		Match if rate is greater than given rate/estimator
+ [!] --rateest-eq		Match if rate is equal to given rate/estimator
+rateest: can't specify --rateest1 twice
+rateest: rateest can't be inverted
+rateest: can't specify --rateest2 twice
+rateest: can't specify --rateest-bps1 twice
+rateest: can't specify --rateest-pps1 twice
+rateest: rateest-bps can't be inverted
+rateest: can't specify --rateest-bps2 twice
+rateest: could not parse rate `%s'
+rateest: rateest-pps can't be inverted
+rateest: can't specify --rateest-pps2 twice
+rateest: could not parse pps `%s'
+rateest: rateest-delta can't be inverted
+rateest: can't specify --rateest-delta twice
+rateest: can't specify lt/gt/eq twice
+rateest match: you need to specify some flags
+%.0fMbit 
+%.0fKbit 
+%.0fbit 
+%slt 
+%seq 
+%sgt 
+rateest match 
+delta 
+bps 
+pps 
+--rateest1 %s 
+--rateest-bps 
+--rateest-pps 
+--rateest-
+--rateest2 %s 
+--rateest %s 
+libxtables.so.2
+RATEEST
+rateest-name
+rateest-interval
+rateest-ewmalog
+RATEEST target options:
+  --rateest-name name		Rate estimator name
+  --rateest-interval sec	Rate measurement interval in seconds
+  --rateest-ewmalog value	Rate measurement averaging time constant
+secs
+msec
+msecs
+usec
+usecs
+%.1fs 
+%.1fms 
+%uus 
+RATEEST: can't specify --rateest-name twice
+RATEEST: can't specify --rateest-interval twice
+RATEEST: bad interval value `%s'
+RATEEST: can't specify --rateest-ewmalog twice
+RATEEST: bad ewmalog value `%s'
+RATEEST: no name specified
+RATEEST: no interval specified
+RATEEST: no ewmalog specified
+RATEEST: interval value is too large
+RATEEST: ewmalog value is out of range
+%sname %s 
+%sinterval 
+%sewmalog 
+--rateest-
+libxtables.so.2
+recent
+rcheck
+update
+seconds
+hitcount
+remove
+rttl
+name
+rsource
+rdest
+recent match options:
+[!] --set                       Add source address to list, always matches.
+[!] --rcheck                    Match if source address in list.
+[!] --update                    Match if source address in list, also update last-seen time.
+[!] --remove                    Match if source address in list, also removes that address from list.
+    --seconds seconds           For check and update commands above.
+                                Specifies that the match will only occur if source address last seen within
+                                the last 'seconds' seconds.
+    --hitcount hits             For check and update commands above.
+                                Specifies that the match will only occur if source address seen hits times.
+                                May be used in conjunction with the seconds option.
+    --rttl                      For check and update commands above.
+                                Specifies that the match will only occur if the source address and the TTL
+                                match between this packet and the one which was set.
+                                Useful if you have problems with people spoofing their source address in order
+                                to DoS you via this module.
+    --name name                 Name of the recent list to be used.  DEFAULT used if none given.
+    --rsource                   Match/Save the source address of each packet in the recent list table (default).
+    --rdest                     Match/Save the destination address of each packet in the recent list table.
+xt_recent by: Stephen Frost <sfrost@snowman.net>.  http://snowman.net/projects/ipt_recent/
+DEFAULT
+recent: only one of `--set', `--rcheck' `--update' or `--remove' may be set
+Lrecent: you must specify one of `--set', `--rcheck' `--update' or `--remove'
+recent: --rttl may only be used with --rcheck or --update
+recent: 
+SET 
+CHECK 
+UPDATE 
+REMOVE 
+seconds: %d 
+hit_count: %d 
+TTL-Match 
+name: %s 
+side: source 
+side: dest
+--set 
+--rcheck 
+--update 
+--remove 
+--seconds %d 
+--hitcount %d 
+--rttl 
+--name %s 
+--rsource 
+--rdest 
+libxtables.so.2
+sctp
+source-port
+sport
+destination-port
+dport
+chunk-types
+DATA
+-----UBE
+INIT
+--------
+INIT_ACK
+SACK
+HEARTBEAT
+HEARTBEAT_ACK
+ABORT
+-------T
+SHUTDOWN
+SHUTDOWN_ACK
+ERROR
+COOKIE_ECHO
+COOKIE_ACK
+ECN_ECNE
+ECN_CWR
+SHUTDOWN_COMPLETE
+ASCONF
+ASCONF_ACK
+sctp match options
+[!] --source-port port[:port]                          match source port(s)
+ --sport ...
+[!] --destination-port port[:port]                     match destination port(s)
+ --dport ...
+[!] --chunk-types (all|any|none) (chunktype[:flags])+	match if all, any or none of
+						        chunktypes are present
+chunktypes - DATA INIT INIT_ACK SACK HEARTBEAT HEARTBEAT_ACK ABORT SHUTDOWN SHUTDOWN_ACK ERROR COOKIE_ECHO COOKIE_ACK ECN_ECNE ECN_CWR SHUTDOWN_COMPLETE ASCONF ASCONF_ACK ALL NONE
+invalid portrange (min > max)
+Only one `--source-port' allowed
+Only one `--destination-port' allowed
+Only one `--chunk-types' allowed
+--chunk-types requires two args
+ONLY
+Match type has to be one of "ALL", "ANY" or "ONLY"
+NONE
+Unknown sctp chunk `%s'
+Number of chunk types with flags exceeds currently allowed limit.Increasing this limit involves changing IPT_NUM_SCTP_FLAGS andrecompiling both the kernel space and user space modules
+Invalid flags for chunk type %d
+s:%s
+any 
+all 
+only 
+Never reach herer
+NONE 
+ALL 
+0x%04X
+sctp 
+--sport %u:%u 
+--sport %u 
+--dport %u:%u 
+--dport %u 
+--chunk-types 
+libxtables.so.2
+SECMARK
+selctx
+SECMARK target options:
+  --selctx value                     Set the SELinux security context
+SECMARK target: Can't specify --selctx twice
+SECMARK target: Maximum length %u exceeded by --selctx parameter (%zu)
+SECMARK target: parameter required
+selctx %s 
+SECMARK target: invalid mode %hhu
+SECMARK 
+libxtables.so.2
+socket
+libxtables.so.2
+standard
+standard match options:
+(If target is DROP, ACCEPT, RETURN or nothing)
+libxtables.so.2
+state
+state match options:
+ [!] --state [INVALID|ESTABLISHED|NEW|RELATED|UNTRACKED][,...]
+				State(s) to match
+INVALID
+ESTABLISHED
+RELATED
+UNTRACKED
+"--state" requires a list of states with no spaces, e.g. ESTABLISHED,RELATED
+Bad state "%s"
+You must specify "--state"
+%sINVALID
+%sNEW
+%sRELATED
+%sESTABLISHED
+%sUNTRACKED
+state 
+--state 
+libxtables.so.2
+statistic
+mode
+probability
+every
+packet
+statistic match options:
+ --mode mode                    Match mode (random, nth)
+ random mode:
+ --probability p		 Probability
+ nth mode:
+ --every n			 Match every nth packet
+ --packet p			 Initial counter value (0 <= p <= n-1, default 0)
+double --mode
+random
+Bad mode "%s"
+double --probability
+--probability must be between 0 and 1
+double --every
+cannot parse --every `%s'
+--every cannot be 0
+double --packet
+cannot parse --packet `%s'
+no mode specified
+both nth and random parameters given
+--probability can only be used in random mode
+--every can only be used in nth mode
+--packet can only be used in nth mode
+--packet can only be used with --every
+the --packet p must be 0 <= p <= n-1
+%smode random %sprobability %f 
+%smode nth %severy %u 
+%spacket %u 
+statistic 
+libxtables.so.2
+string
+from
+algo
+hex-string
+icase
+string match options:
+--from                       Offset to start searching from
+--to                         Offset to stop searching
+--algo                       Algorithm
+--icase                      Ignore case (default: 0)
+[!] --string string          Match a string in a packet
+[!] --hex-string string      Match a hex string in a packet
+Can't specify multiple --from
+Can't specify multiple --to
+Can't specify multiple --algo
+ALGO too long "%s"
+Can't specify multiple --string
+string match: too long '%s'
+string match: too many string specified (MAX = %d)
+Can't specify multiple --hex-string
+Kernel doesn't support --icase
+LSTRING match: You must specify `--string' or `--hex-string'
+STRING match: You must specify `--algo'
+STRING match %s
+ALGO name %s 
+FROM %u 
+TO %u 
+ICASE 
+libxtables.so.2
+source-port
+sport
+destination-port
+dport
+tcp-flags
+tcp-option
+NONE
+tcp match options:
+[!] --tcp-flags mask comp	match when TCP flags & mask == comp
+				(Flags: SYN ACK FIN RST URG PSH ALL NONE)
+[!] --syn			match when only SYN flag set
+				(equivalent to --tcp-flags SYN,RST,ACK,FIN SYN)
+[!] --source-port port[:port]
+ --sport ...
+				match source port(s)
+[!] --destination-port port[:port]
+ --dport ...
+				match destination port(s)
+[!] --tcp-option number        match if TCP option set
+invalid portrange (min > max)
+Unknown TCP flag `%s'
+Only one `--source-port' allowed
+Only one `--destination-port' allowed
+SYN,RST,ACK,FIN
+Only one of `--syn' or `--tcp-flags'  allowed
+--tcp-flags requires two args.
+Only one `--tcp-option' allowed
+Bad TCP option "%s"
+s:%s
+tcp 
+option=%s%u 
+flags:%s
+0x%02X/0x%02X 
+Unknown invflags: 0x%X 
+--sport %u:%u 
+--sport %u 
+--dport %u:%u 
+--dport %u 
+--tcp-option %u 
+--tcp-flags 
+libxtables.so.2
+tcpmss
+tcpmss match options:
+[!] --mss value[:value]	Match TCP MSS range.
+				(only valid for TCP SYN or SYN/ACK packets)
+Invalid mss `%s' specified
+Only one `--mss' allowed
+tcpmss match: You must specify `--mss'
+tcpmss match %s
+%u:%u 
+%s--mss 
+libxtables.so.2
+TCPMSS
+set-mss
+clamp-mss-to-pmtu
+TCPMSS target mutually-exclusive options:
+  --set-mss value               explicitly set MSS option to specified value
+  --clamp-mss-to-pmtu           automatically clamp MSS value to (path_MTU - %d)
+Bad TCPMSS value "%s"
+TCPMSS target: Only one option may be specified
+TCPMSS target: At least one parameter is required
+TCPMSS clamp to PMTU 
+TCPMSS set %u 
+--clamp-mss-to-pmtu 
+--set-mss %u 
+libxtables.so.2
+TCPOPTSTRIP
+strip-options
+wscale
+Window scale
+Maximum Segment Size
+sack-permitted
+SACK permitted
+sack
+Selective ACK
+timestamp
+Timestamp
+MD5 signature
+TCPOPTSTRIP target options:
+  --strip-options value     strip specified TCP options denoted by value
+                            (separated by comma) from TCP header
+  Instead of the numeric value, you can also use the following names:
+    %-14s    strip "%s" option
+You can specify --strip-options only once
+Bad TCP option value "%s"
+Option value may not be 0 or 1
+Option "%s" already specified
+TCPOPTSTRIP: --strip-options parameter required
+TCPOPTSTRIP options 
+--strip-options 
+libxtables.so.2
+time
+datestart
+datestop
+timestart
+timestop
+weekdays
+monthdays
+localtz
+time match options:
+    --datestart time     Start and stop time, to be given in ISO 8601
+    --datestop time      (YYYY[-MM[-DD[Thh[:mm[:ss]]]]])
+    --timestart time     Start and stop daytime (hh:mm[:ss])
+    --timestop time      (between 00:00:00 and 23:59:59)
+[!] --monthdays value    List of days on which to match, separated by comma
+                         (Possible days: 1 to 31; defaults to all)
+[!] --weekdays value     List of weekdays on which to match, sep. by comma
+                         (Possible days: Mon,Tue,Wed,Thu,Fri,Sat,Sun or 1 to 7
+                         Defaults to all weekdays.)
+    --localtz/--utc      Time is interpreted as UTC/local time
+mktime
+mktime returned an error
+Invalid date "%s" specified. Should be YYYY[-MM[-DD[Thh[:mm[:ss]]]]]
+invalid time "%s" specified, should be hh:mm[:ss] format and within the boundaries
+%.*s
+Cannot specify --datestart twice
+Unexpected "!" with --datestart
+Cannot specify --datestop more than once
+unexpected "!" with --datestop
+Cannot specify --timestart more than once
+Unexpected "!" with --timestart
+Cannot specify --timestop more than once
+Unexpected "!" with --timestop
+Cannot specify --monthdays more than once
+%s is not a valid day for --monthdays
+Cannot specify --weekdays more than once
+No, the week does NOT begin with Sunday.
+%s is not a valid day specifier
+Can only specify exactly one of --localtz or --utc
+%s %04u-%02u-%02uT%02u:%02u:%02u 
+%04u-%02u-%02u %02u:%02u:%02u 
+TIME 
+from %02u:%02u:%02u 
+to %02u:%02u:%02u 
+starting from 
+until date 
+UTC 
+--timestart %02u:%02u:%02u 
+--timestop %02u:%02u:%02u 
+--monthdays 
+--weekdays 
+--datestart
+--datestop
+--utc 
+libxtables.so.2
+Minimize-Delay
+Maximize-Throughput
+Maximize-Reliability
+Minimize-Cost
+Normal-Service
+Illegal value: "%s"
+Symbolic name "%s" is unknown
+%s%s 
+tos match options:
+[!] --tos value[/mask]    Match Type of Service/Priority field value
+[!] --tos symbol          Match TOS field (IPv4 only) by symbol
+                          Accepted symbolic names for value are:
+                          (0x%02x) %2u %s
+--tos
+tos: Your kernel is too old to support anything besides /0xFF as a mask.
+tos: --tos parameter required
+tos match 
+0x%02x 
+0x%02x/0x%02x 
+--tos 0x%02x 
+--tos 0x%02x/0x%02x 
+libxtables.so.2
+set-tos
+and-tos
+or-tos
+xor-tos
+Minimize-Delay
+Maximize-Throughput
+Maximize-Reliability
+Minimize-Cost
+Normal-Service
+Illegal value: "%s"
+Symbolic name "%s" is unknown
+%s%s 
+TOS target options:
+  --set-tos value     Set Type of Service/Priority field to value
+  --set-tos symbol    Set TOS field (IPv4 only) by symbol
+                      Accepted symbolic names for value are:
+                        (0x%02x) %2u %s
+TOS target v%s options:
+  --set-tos value[/mask]  Set Type of Service/Priority field to value
+                          (Zero out bits in mask and XOR value into TOS)
+  --set-tos symbol        Set TOS field (IPv4 only) by symbol
+                          (this zeroes the 4-bit Precedence part!)
+                          Accepted symbolic names for value are:
+                            (0x%02x) %2u %s
+  --and-tos bits          Binary AND the TOS value with bits
+  --or-tos  bits          Binary OR the TOS value with bits
+  --xor-tos bits          Binary XOR the TOS value with bits
+--set-tos
+tos match: Your kernel is too old to support anything besides /0xFF as a mask.
+--and-tos
+--or-tos
+--xor-tos
+TOS: The --set-tos parameter is required
+TOS set 
+0x%02x 
+TOS and 0x%02x 
+TOS or 0x%02x 
+TOS xor 0x%02x 
+TOS set 0x%02x/0x%02x 
+--set-tos 0x%02x 
+--set-tos 0x%02x/0x%02x 
+libxtables.so.2
+TPROXY
+on-port
+on-ip
+tproxy-mark
+TPROXY target options:
+  --on-port port		    Redirect connection to port, or the original port if 0
+  --on-ip ip			    Optionally redirect to the given IP
+  --tproxy-mark value[/mask]	    Mark packets with the given value/mask
+--on-port
+--on-ip
+--tproxy-mark
+TPROXY target: Parameter --on-port is required
+TPROXY redirect %s:%u mark 0x%x/0x%x
+--on-port %u 
+--on-ip %s 
+--tproxy-mark 0x%x/0x%x 
+libxtables.so.2
+TRACE
+libxtables.so.2
+u32 match options:
+[!] --u32 tests
+		tests := location "=" value | tests "&&" location "=" value
+		value := range | value "," range
+		range := number | number ":" number
+		location := number | location operator number
+		operator := "&" | "<<" | ">>" | "@"
+0x%x
+0x%x:0x%x
+u32: at char %d: expected number
+u32: at char %d: error reading number
+u32: abrupt end of input after location specifier
+u32: test ended with no value specified
+u32: at char %u: too many "&&"s
+u32: at char %u: location spec missing
+u32: at char %u: a second '<' was expected
+u32: at char %u: a second '>' was expected
+u32: at char %u: operator expected
+u32: at char %u: too many operators
+u32: at char %u: a second '&' was expected
+u32: at char %u: value spec missing
+u32: at char %u: expected "," or "&&"
+u32: at char %u: too many ","s
+u32 
+--u32 
+libxtables.so.2
+source-port
+sport
+destination-port
+dport
+udp match options:
+[!] --source-port port[:port]
+ --sport ...
+				match source port(s)
+[!] --destination-port port[:port]
+ --dport ...
+				match destination port(s)
+invalid portrange (min > max)
+Only one `--source-port' allowed
+Only one `--destination-port' allowed
+s:%s
+udp 
+Unknown invflags: 0x%X 
+--sport %u:%u 
+--sport %u 
+--dport %u:%u 
+--dport %u 
+libxtables.so.2
+addrtype
+src-type
+dst-type
+limit-iface-in
+limit-iface-out
+UNSPEC
+UNICAST
+LOCAL
+BROADCAST
+ANYCAST
+MULTICAST
+BLACKHOLE
+UNREACHABLE
+PROHIBIT
+THROW
+XRESOLVE
+                                %s
+Address type match options:
+ [!] --src-type type[,...]      Match source address type
+ [!] --dst-type type[,...]      Match destination address type
+Valid types:           
+Address type match options:
+ [!] --src-type type[,...]      Match source address type
+ [!] --dst-type type[,...]      Match destination address type
+     --limit-iface-in           Match only on the packet's incoming device
+     --limit-iface-out          Match only on the packet's incoming device
+Valid types:           
+addrtype: bad type `%s'
+addrtype: bad type "%s"
+addrtype: can't specify src-type twice
+addrtype: can't specify dst-type twice
+addrtype: can't specify limit-iface-in twice
+addrtype: can't specify limit-iface-out twice
+addrtype: you must specify --src-type or --dst-type
+addrtype: you can't specify both --limit-iface-in and --limit-iface-out
+%s%s
+ADDRTYPE match 
+src-type 
+dst-type 
+limit-in 
+limit-out 
+--src-type 
+--dst-type 
+--limit-iface-in 
+--limit-iface-out 
+libxtables.so.2
+ahspi
+ah match options:
+[!] --ahspi spi[:spi]
+				match spi (range)
+AH no valid digits in spi `%s'
+spi `%s' specified too big: would overflow
+AH error parsing spi `%s'
+Only one `--ahspi' allowed
+s:%s
+Unknown invflags: 0x%X 
+%s--ahspi 
+%u:%u 
+libxtables.so.2
+CLUSTERIP
+hashmode
+clustermac
+total-nodes
+local-node
+hash-init
+CLUSTERIP target options:
+  --new			 Create a new ClusterIP
+  --hashmode <mode>		 Specify hashing mode
+					sourceip
+					sourceip-sourceport
+					sourceip-sourceport-destport
+  --clustermac <mac>		 Set clusterIP MAC address
+  --total-nodes <num>		 Set number of total nodes in cluster
+  --local-node <num>		 Set the local node number
+  --hash-init <num>		 Set init value of the Jenkins hash
+Can only specify "--new" once
+Can only specify hashmode combined with "--new"
+Can only specify hashmode once
+sourceip
+sourceip-sourceport
+sourceip-sourceport-destport
+Unknown hashmode "%s"
+Can only specify MAC combined with "--new"
+Can only specify MAC once
+Bad mac address "%s"
+Bad mac address `%s'
+MAC has to be a multicast ethernet address
+Can only specify total node number once
+Can only specify node number combined with "--new"
+Can only specify local node number once
+Can only specify hash init value combined with "--new"
+Can specify hash init value only once
+Unable to parse "%s"
+CLUSTERIP target: Invalid parameter combination
+unknown-error
+%02X:%02X:%02X:%02X:%02X:%02X
+CLUSTERIP hashmode=%s clustermac=%s total_nodes=%u local_node=%u hash_init=%u
+--new --hashmode %s --clustermac %s --total-nodes %d --local-node %d --hash-init %u
+libxtables.so.2
+DNAT
+to-destination
+random
+persistent
+DNAT target options:
+ --to-destination <ipaddr>[-<ipaddr>][:port-port]
+				Address to map destination to.
+[--random] [--persistent]
+Out of memory
+Unexpected `!' after --to-destination
+Multiple --to-destination not supported
+Need TCP, UDP, SCTP or DCCP with port specification
+Invalid port:port syntax - use dash
+Port `%s' not valid
+Port range `%s' funky
+Bad IP address "%s"
+You must specify --to-destination
+-%hu
+random 
+persistent 
+--to-destination 
+--random 
+--persistent 
+libxtables.so.2
+ecn-tcp-cwr
+ecn-tcp-ece
+ecn-ip-ect
+ECN match options
+[!] --ecn-tcp-cwr 		Match CWR bit of TCP header
+[!] --ecn-tcp-ece		Match ECE bit of TCP header
+[!] --ecn-ip-ect [0..3]	Match ECN codepoint in IPv4 header
+ECN match: can only use parameter ONCE!
+ECN match: Value out of range
+ECN match: some option required
+ECN match 
+ECE 
+CWR 
+ECT=%d 
+--ecn-tcp-ece 
+--ecn-tcp-cwr 
+--ecn-ip-ect %d
+libxtables.so.2
+ecn-tcp-remove
+ecn-tcp-cwr
+ecn-tcp-ece
+ecn-ip-ect
+ECN target options
+  --ecn-tcp-remove		Remove all ECN bits from TCP header
+ECN target: Only use --ecn-tcp-remove ONCE!
+ECN target: Only use --ecn-tcp-cwr ONCE!
+ECN target: Only use --ecn-tcp-ece ONCE!
+ECN target: Only use --ecn-ip-ect ONCE!
+ECN target: Value out of range
+ECN target: Parameter --ecn-tcp-remove is required
+ECN 
+TCP remove 
+ECE=%u 
+CWR=%u 
+ECT codepoint=%u 
+--ecn-tcp-remove 
+--ecn-tcp-ece %d 
+--ecn-tcp-cwr %d 
+--ecn-ip-ect %d 
+libxtables.so.2
+icmp
+icmp-type
+echo-reply
+pong
+destination-unreachable
+network-unreachable
+host-unreachable
+protocol-unreachable
+port-unreachable
+fragmentation-needed
+source-route-failed
+network-unknown
+host-unknown
+network-prohibited
+host-prohibited
+TOS-network-unreachable
+TOS-host-unreachable
+communication-prohibited
+host-precedence-violation
+precedence-cutoff
+source-quench
+redirect
+network-redirect
+host-redirect
+TOS-network-redirect
+TOS-host-redirect
+echo-request
+ping
+router-advertisement
+router-solicitation
+time-exceeded
+ttl-exceeded
+ttl-zero-during-transit
+ttl-zero-during-reassembly
+parameter-problem
+ip-header-bad
+required-option-missing
+timestamp-request
+timestamp-reply
+address-mask-request
+address-mask-reply
+icmp match options:
+[!] --icmp-type typename	match icmp type
+[!] --icmp-type type[/code]	(or numeric type or type/code)
+Valid ICMP Types:
+   %s
+ (%s)
+(icmp match: only use --icmp-type once!
+Ambiguous ICMP type `%s': `%s' or `%s'?
+Invalid ICMP type `%s'
+Invalid ICMP code `%s'
+icmp 
+%s%s 
+type %u
+ code %u 
+ codes %u-%u 
+Unknown invflags: 0x%X 
+--icmp-type %u
+--icmp-type any 
+libxtables.so.2
+log-level
+log-prefix
+log-tcp-sequence
+log-tcp-options
+log-ip-options
+log-uid
+alert
+crit
+debug
+emerg
+error
+info
+notice
+panic
+warning
+LOG target options:
+ --log-level level		Level of logging (numeric or see syslog.conf)
+ --log-prefix prefix		Prefix log messages with this prefix.
+ --log-tcp-sequence		Log TCP sequence numbers.
+ --log-tcp-options		Log TCP options.
+ --log-ip-options		Log IP options.
+ --log-uid			Log UID owning the local socket.
+Can't specify --log-level twice
+Unexpected `!' after --log-level
+log-level `%s' ambiguous
+log-level `%s' unknown
+Can't specify --log-prefix twice
+Unexpected `!' after --log-prefix
+Maximum prefix length %u for --log-prefix
+No prefix specified for --log-prefix
+Newlines not allowed in --log-prefix
+Can't specify --log-tcp-sequence twice
+Can't specify --log-tcp-options twice
+Can't specify --log-ip-options twice
+Can't specify --log-uid twice
+LOG 
+flags %u level %u 
+level %s 
+UNKNOWN level %u 
+tcp-sequence 
+tcp-options 
+ip-options 
+uid 
+unknown-flags 
+prefix `%s' 
+--log-prefix 
+--log-level %d 
+--log-tcp-sequence 
+--log-tcp-options 
+--log-ip-options 
+--log-uid 
+libxtables.so.2
+MASQUERADE
+to-ports
+random
+MASQUERADE target options:
+ --to-ports <port>[-<port>]
+				Port (range) to map to.
+ --random
+				Randomize source port.
+Need TCP, UDP, SCTP or DCCP with port specification
+Unexpected `!' after --to-ports
+Port "%s" not valid
+Port `%s' not valid
+Port range `%s' funky
+masq ports: 
+-%hu
+random 
+--to-ports %hu
+--random 
+libxtables.so.2
+MIRROR
+libxtables.so.2
+multiurl
+urls
+multiurl v%s options:
+  www.baidu.com,sina,gov            Match urls
+0.0.1
+Sorry, you can't have an inverted comment
+multiurl match: too long '%s'
+multiurl match: too many url specified (MAX = %d)
+multiurl can only have one option
+multiurl expection an option --urls
+multiurl 
+--urls 
+libxtables.so.2
+NETMAP
+NETMAP target options:
+  --%s address[/mask]
+				Network address to map to.
+Unexpected `!' after --%s
+Bad IP address "%s"
+Bad netmask "%s"
+Netmask needed
+Bad network address "%s"
+NETMAP needs --%s
+--%s 
+libxtables.so.2
+realm
+realm match options:
+[!] --realm value[/mask]
+				Match realm
+/etc/iproute2/rt_realms
+libipt_realm: malloc failed
+Bad realm value `%s'
+Realm `%s' not found
+0x%lx/0x%lx 
+0x%lx 
+realm 
+--realm 
+realm match: You must specify `--realm'
+libxtables.so.2
+REDIRECT
+to-ports
+random
+REDIRECT target options:
+ --to-ports <port>[-<port>]
+				Port (range) to map to.
+Need TCP, UDP, SCTP or DCCP with port specification
+Unexpected `!' after --to-ports
+IP address not permitted
+Port "%s" not valid
+Port `%s' not valid
+Port range `%s' funky
+redir ports 
+-%hu
+random 
+--to-ports 
+--random 
+libxtables.so.2
+REJECT
+reject-with
+icmp-net-unreachable
+net-unreach
+ICMP network unreachable
+icmp-host-unreachable
+host-unreach
+ICMP host unreachable
+icmp-proto-unreachable
+proto-unreach
+ICMP protocol unreachable
+icmp-port-unreachable
+port-unreach
+ICMP port unreachable (default)
+icmp-net-prohibited
+net-prohib
+ICMP network prohibited
+icmp-host-prohibited
+host-prohib
+ICMP host prohibited
+tcp-reset
+tcp-rst
+TCP RST packet
+icmp-admin-prohibited
+admin-prohib
+ICMP administratively prohibited (*)
+REJECT target options:
+--reject-with type              drop input packet and send back
+                                a reply packet according to type:
+Valid reject types:
+    %-25s	%s
+    %-25s	alias
+(*) See man page or read the INCOMPATIBILITES file for compatibility issues.
+Unexpected `!' after --reject-with
+echo-reply
+echoreply
+--reject-with echo-reply no longer supported
+unknown reject type "%s"
+reject-with %s 
+--reject-with %s 
+libxtables.so.2
+SAME
+nodst
+random
+SAME target options:
+ --to <ipaddr>-<ipaddr>
+				Addresses to map source to.
+				 May be specified more than
+				  once for multiple ranges.
+ --nodst
+				Don't use destination-ip in
+				           source selection
+ --random
+				Randomize source port
+Too many ranges specified, maximum is %i ranges.
+Unexpected `!' after --to
+Bad IP address "%s"
+Bad IP range "%s-%s"
+Can't specify --nodst twice
+SAME needs --to
+same:
+-%s 
+nodst 
+random 
+--to %s
+--nodst 
+--random 
+libxtables.so.2
+match-set
+Can't open socket to ipset.
+Kernel module ip_set is not loaded in.
+set match options:
+ [!] --match-set name flags
+		 'name' is the set name from to match,
+		 'flags' are the comma separated list of
+		 'src' and 'dst' specifications.
+--match-set can be specified only once
+--match-set requires two args.
+setname `%s' too long, max %d characters.
+Problem when communicating with ipset, errno=%d.
+Incorrect return size from kernel during ipset lookup, (want %zu, got %zu)
+Set %s doesn't exist.
+You must spefify (the comma separated list of) 'src' or 'dst'.
+Can't follow bindings deeper than %i.
+You must specify `--match-set' with proper arguments
+Set id %i in kernel doesn't exist.
+%s%s %s
+%s%s
+--match-set
+libxtables.so.2
+add-set
+del-set
+Can't open socket to ipset.
+Kernel module ip_set is not loaded in.
+SET target options:
+ --add-set name flags
+ --del-set name flags
+		add/del src/dst IP/port from/to named sets,
+		where flags are the comma separated list of
+		'src' and 'dst' specifications.
+--%s can be specified only once
+Unexpected `!' after --%s
+--%s requires two args.
+setname `%s' too long, max %d characters.
+Problem when communicating with ipset, errno=%d.
+Incorrect return size from kernel during ipset lookup, (want %zu, got %zu)
+Set %s doesn't exist.
+You must spefify (the comma separated list of) 'src' or 'dst'.
+Can't follow bindings deeper than %i.
+You must specify either `--add-set' or `--del-set'
+Set id %i in kernel doesn't exist.
+%s %s
+%s%s
+--add-set
+--del-set
+libxtables.so.2
+SNAT
+to-source
+random
+persistent
+SNAT target options:
+ --to-source <ipaddr>[-<ipaddr>][:port-port]
+				Address to map source to.
+[--random] [--persistent]
+Out of memory
+Unexpected `!' after --to-source
+Multiple --to-source not supported
+Need TCP, UDP, SCTP or DCCP with port specification
+Invalid port:port syntax - use dash
+Port `%s' not valid
+Port range `%s' funky
+Bad IP address "%s"
+You must specify --to-source
+-%hu
+random 
+persistent 
+--to-source 
+--random 
+--persistent 
+libxtables.so.2
+TRIGGER
+trigger-type
+trigger-proto
+trigger-match
+trigger-relate
+Port range `%s' invalid
+dnat
+unknown type `%s' specified
+unknown protocol `%s' specified
+Unexpected `!' after --trigger-match
+Unexpected `!' after --trigger-relate
+TRIGGER 
+type:dnat 
+type:in 
+type:out 
+tcp 
+udp 
+match:%hu
+-%hu
+relate:%hu
+libxtables.so.2
+ttl-eq
+ttl-lt
+ttl-gt
+ttl match options:
+  --ttl-eq value	Match time to live value
+  --ttl-lt value	Match TTL < value
+  --ttl-gt value	Match TTL > value
+ttl: Expected value between 0 and 255
+ttl: unexpected `!'
+Can't specify TTL option twice
+TTL match: You must specify one of `--ttl-eq', `--ttl-lt', `--ttl-gt
+TTL match 
+TTL == 
+TTL != 
+TTL < 
+TTL > 
+--ttl-eq 
+! --ttl-eq 
+--ttl-lt 
+--ttl-gt 
+libxtables.so.2
+ttl-set
+ttl-dec
+ttl-inc
+TTL target options
+  --ttl-set value		Set TTL to <value 0-255>
+  --ttl-dec value		Decrement TTL by <value 1-255>
+  --ttl-inc value		Increment TTL by <value 1-255>
+Can't specify TTL option twice
+TTL: You must specify a value
+TTL: unexpected `!'
+TTL: Expected value between 0 and 255
+TTL: decreasing by 0?
+TTL: increasing by 0?
+TTL: You must specify an action
+--ttl-inc 
+--ttl-set 
+--ttl-dec 
+TTL 
+increment by 
+set to 
+decrement by 
+libxtables.so.2
+ULOG
+ulog-nlgroup
+ulog-prefix
+ulog-cprange
+ulog-qthreshold
+ULOG target options:
+ --ulog-nlgroup nlgroup		NETLINK group used for logging
+ --ulog-cprange size		Bytes of each packet to be passed
+ --ulog-qthreshold		Threshold of in-kernel queue
+ --ulog-prefix prefix		Prefix log messages with this prefix.
+Can't specify --ulog-nlgroup twice
+Unexpected `!' after --ulog-nlgroup
+--ulog-nlgroup has to be between 1 and 32
+Can't specify --ulog-prefix twice
+Unexpected `!' after --ulog-prefix
+Maximum prefix length %u for --ulog-prefix
+No prefix specified for --ulog-prefix
+Newlines not allowed in --ulog-prefix
+Can't specify --ulog-cprange twice
+Negative copy range?
+Can't specify --ulog-qthreshold twice
+Negative or zero queue threshold ?
+Maximum queue length exceeded
+--ulog-prefix 
+--ulog-nlgroup 
+--ulog-cprange %u 
+--ulog-qthreshold %u 
+ULOG 
+copy_range %u nlgroup 
+prefix `%s' 
+queue_threshold %u 
+libxtables.so.2
+unclean
+libxtables.so.2
+wlanwarn
+this target catchs the ip header and tcp header of packet, and return to user spaceby user getsockopt() on a socket
+wlanWarn check
+wlanWarn save
+warn-page
+sctp
+udplite
+icmp
+icmpv6
+ipv6-icmp
+ipv6-mh
+ip6_tables
+libip6t_
+ip_tables
+libipt_
+%s v%s: 
+XTABLES_LIBDIR
+IPTABLES_LIB_DIR
+IP6TABLES_LIB_DIR
+IPTABLES_LIB_DIR is deprecated, use XTABLES_LIBDIR.
+IP6TABLES_LIB_DIR is deprecated, use XTABLES_LIBDIR.
+/lib/libexec/xtables
+xtables_set_nfproto
+libxtables: unhandled NFPROTO in %s
+xtables_set_params
+%s: Illegal global params
+ip[6]tables: calloc failed
+ip[6]tables: malloc failed
+ip[6]tables: realloc failed
+invalid port/service `%s' specified
+interface name `%s' must be shorter than IFNAMSIZ (%i)
+Warning: weird character in interface `%s' (No aliases, :, ! or *).
+icmp6
+Couldn't find match `%s'
+ACCEPT
+DROP
+QUEUE
+RETURN
+standard
+Couldn't find target `%s'
+Could not determine whether revision %u is supported, assuming it is.
+Could not open socket to kernel: %s
+getsockopt failed strangely: %s
+%s: match %s<%u> is missing a version
+libxtables.so.2
+%s: match "%s" has version "%s", but "%s" is required.
+%s: target `%s' has invalid name
+%s: BUG: match %s has invalid protocol family
+%s: match `%s' already registered.
+%s: match `%s' has invalid size %u.
+%s: target %s<%u> is missing a version
+%s: target "%s" has version "%s", but "%s" is required.
+%s: BUG: target %s has invalid protocol family
+%s: target `%s' already registered.
+%s: target `%s' has invalid size %u.
+%s: "%s" option may only be specified once
+%s: "%s" option cannot be inverted
+%s: Bad value for "%s" option: "%s"
+%s: At most one action is possible
+%u.%u.%u.%u
+host/network `%s' not found
+invalid mask `%s' specified
+0.0.0.0
+_-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+Using intrapositioned negation (`--option ! this`) is deprecated in favor of extrapositioned (`! --option this`).
+Multiple `!' flags not allowed
+no argument following `!'
+unknown protocol `%s' specified
+x     x   x x     x   xxxxxxx xxxxxxx     x   x x     x   x  xxxx  xxx xxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxx xxxxx xxxxxxxxxxx xxxxxx

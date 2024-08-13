@@ -1,0 +1,11 @@
+[*] Binary protection state of nls_iso8859-1.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcpy tear down of nls_iso8859-1.ko
+
+
+[*] Function strcpy used 0 times nls_iso8859-1.ko
+

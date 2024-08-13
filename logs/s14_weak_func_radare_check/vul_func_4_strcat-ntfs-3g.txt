@@ -1,0 +1,162 @@
+[*] Binary protection state of ntfs-3g
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       RPATH        No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of ntfs-3g
+
+move s0, v0
+lw a0, 0x38(fp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+addu v0, s0, v0
+addiu v0, v0, 1
+move a0, v0
+lw t9, -sym.imp.ntfs_malloc(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x1c(fp)
+lw v0, 0x1c(fp)
+beqz v0, 0x409ef8
+nop
+lw a0, 0x1c(fp)
+lw a1, -obj.xattr_ntfs_3g(gp)
+lw t9, -sym.imp.strcpy(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x1c(fp)
+lw a1, 0x38(fp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x1c(fp)
+lw a1, 0x40(fp)
+lw t9, -sym.imp.ntfs_mbstoucs(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x18(fp)
+lw a0, 0x1c(fp)
+lw t9, -sym.imp.free(gp)
+jalr t9
+nop
+b 0x409f2c
+lw gp, 0x10(fp)
+addiu v0, zero, -1
+b 0x409f2c
+sw v0, 0x18(fp)
+lw a0, 0x38(fp)
+--
+addiu a0, a0, -0x7cf0
+lw a0, (a0)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+move v1, v0
+addiu v0, zero, 0xfff
+subu v1, v0, v1
+lw v0, -0x7fe8(gp)
+addiu v0, v0, -0x7ce0
+lw v0, (v0)
+lw a0, 0x78(v0)
+move a1, v1
+lw t9, -sym.imp.getcwd(gp)
+jalr t9
+nop
+beqz v0, 0x40cad0
+lw gp, 0x10(fp)
+lw v0, -0x7fe8(gp)
+addiu v0, v0, -0x7ce0
+lw v0, (v0)
+lw a0, 0x78(v0)
+lw a1, -0x7fdc(gp)
+addiu a1, a1, 0x4f70
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw v0, -0x7fe8(gp)
+addiu v0, v0, -0x7ce0
+lw v0, (v0)
+lw a0, 0x78(v0)
+lw a1, -0x7fe8(gp)
+addiu a1, a1, -0x7cf0
+lw a1, (a1)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw v0, -0x7fe8(gp)
+addiu v0, v0, -0x7ce0
+lw v0, (v0)
+lw v0, 0x78(v0)
+bnez v0, 0x40caf4
+nop
+addiu v0, zero, 0x14
+b 0x40d1a8
+sw v0, 0xd4(fp)
+lw v0, -0x7fe8(gp)
+addiu v0, v0, -0x7ce0
+lw v0, (v0)
+sw zero, 0x90(v0)
+lw v0, -0x7fe8(gp)
+addiu v0, v0, -0x7ce0
+lw v0, (v0)
+sw zero, 0x94(v0)
+--
+sw v0, 0x24(fp)
+lw a0, 0x20(fp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, 0x38(fp)
+lw a1, -0x7fdc(gp)
+addiu a1, a1, 0x6b88
+move a2, v0
+lw t9, -0x7fdc(gp)
+addiu t9, t9, 0x7f8
+jalr t9
+nop
+lw gp, 0x10(fp)
+move v1, v0
+addiu v0, zero, -1
+bne v1, v0, 0x420bcc
+nop
+addiu v0, zero, -1
+b 0x420bec
+sw v0, 0x24(fp)
+lw v0, 0x38(fp)
+lw a0, (v0)
+lw a1, 0x20(fp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw zero, 0x24(fp)
+lw v0, 0x24(fp)
+move sp, fp
+lw ra, 0x2c(sp)
+lw fp, 0x28(sp)
+jr ra
+addiu sp, sp, 0x30
+lui gp, 5
+addiu gp, gp, -0xdf4
+addu gp, gp, t9
+addiu sp, sp, -0x28
+sw ra, 0x24(sp)
+sw fp, 0x20(sp)
+move fp, sp
+sw gp, 0x10(sp)
+sw a0, 0x28(fp)
+sw a1, 0x2c(fp)
+
+[*] Function strcat used 4 times ntfs-3g
+

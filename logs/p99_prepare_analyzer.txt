@@ -1,0 +1,22 @@
+[+] Analysis preparation
+=================================================================
+The analyzer preparation module performs essential checks and preparations to ensure successful firmware analysis.
+
+[*] Quick check if it is a real Linux system
+[+] Your firmware looks like a regular Linux system.
+[*] Unique files auto detection for /logs/firmware (could take some time)
+[*] Found 369 unique files.
+[*] Unique binary auto detection for /logs/firmware (could take some time)
+[*] Found 108 unique executables.
+[*] Unique and limited file array generation for /logs/firmware (could take some time)
+[*] Architecture auto detection (could take some time)
+    Architecture  Count
+    MIPS          108
+
+    Endianness  Count
+    Big endian          108
+
+    Detected architecture and endianness of the firmware: MIPS / EB
+
+[!] Check with cwe-checker is disabled!
+[!] Enable it with the -c switch.

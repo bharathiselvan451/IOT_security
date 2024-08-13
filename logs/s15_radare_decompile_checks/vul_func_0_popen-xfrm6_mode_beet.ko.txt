@@ -1,0 +1,11 @@
+[*] Binary protection state of xfrm6_mode_beet.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function popen tear down of xfrm6_mode_beet.ko
+
+
+[*] Function popen used 0 times xfrm6_mode_beet.ko
+

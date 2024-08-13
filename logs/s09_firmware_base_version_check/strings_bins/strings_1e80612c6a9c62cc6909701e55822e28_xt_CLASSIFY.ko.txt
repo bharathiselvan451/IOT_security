@@ -1,0 +1,45 @@
+mangle
+alias=ip6t_CLASSIFY
+alias=ipt_CLASSIFY
+description=Xtables: Qdisc classification
+license=GPL
+author=Patrick McHardy <kaber@trash.net>
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+CLASSIFY
+xt_CLASSIFY
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.text.classify_tg
+.rel.init.text
+.rel.exit.text
+.rodata
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+xt_CLASSIFY.c
+classify_tg_init
+classify_tg_exit
+__mod_alias27
+__mod_alias26
+__mod_description25
+__mod_license24
+__mod_author23
+classify_tg_reg
+classify_tg
+xt_CLASSIFY.mod.c
+__module_depends
+__mod_vermagic5
+__this_module
+cleanup_module
+init_module
+xt_register_target
+xt_unregister_target

@@ -1,0 +1,9 @@
+binary/file;version_rule;version_detected;csv_rule;license;static/emulation;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox;NA;busybox:1.01;NA;GPL-2.0-only;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables;NA;iptables:1.4.5;NA;GPL-2.0-only;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd;NA;openssl:openssl:0.9.8b;NA;OpenSSL OR Apache-2.0;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd;NA;zlib:1.1.4;NA;Zlib;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/bpalogin;NA;bpalogin:2.0.2;NA;GPL-2.0-only;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ping6;NA;openssl:openssl:1.0.0d;NA;OpenSSL OR Apache-2.0;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd;NA;vsftpd_project:vsftpd:2.3.2;NA;GPL-2.0-only;static;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/xl2tpd;NA;xl2tpd:1.1.12;NA;unknown;static;

@@ -1,0 +1,11 @@
+[*] Binary protection state of usbmon.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcat tear down of usbmon.ko
+
+
+[*] Function strcat used 0 times usbmon.ko
+

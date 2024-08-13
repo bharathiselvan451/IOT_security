@@ -1,0 +1,11 @@
+[*] Binary protection state of ntfs.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function sprintf tear down of ntfs.ko
+
+
+[*] Function sprintf used 0 times ntfs.ko
+

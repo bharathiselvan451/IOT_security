@@ -1,0 +1,14 @@
+[*] Searching (args for grep: ) for malloc\(.
+[*] Grepit state info - comment: malloc. Rather rare bug, but see issues CVE-2010-0041 and CVE-2010-0042. Uninitialized memory access issues? Could also happen in java/android native code. Also developers should check return codes.
+[*] Grepit state info - Filename 5_c_malloc.txt
+[*] Grepit state info - Example: malloc(
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: malloc\(
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m5431[m[36m-[mRxFiFo Overflow: %d
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m5432[m[36m-[m%s
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m5433[m[36m-[m%03X:	%02X
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m:[m[32m5434[m[36m:[m8192get_stainfoЀdpdbackup_sta%s: k[01;31mmalloc([m) failed!
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m:[m[32m5435[m[36m:[m%s: k[01;31mmalloc([msta) failed!
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m5436[m[36m-[mrestore_backup_sta%s: alloc_stainfo() failed!

@@ -1,0 +1,245 @@
+[*] Binary protection state of tc
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of tc
+
+jr ra
+addiu sp, sp, 0x130
+lw ra, 0x12c(sp)
+move v0, v1
+lw s2, 0x128(sp)
+lw s1, 0x124(sp)
+lw s0, 0x120(sp)
+jr ra
+addiu sp, sp, 0x130
+lw t9, -sym.imp.strlen(gp)
+move a0, s1
+sw zero, (v0)
+sw zero, 4(v0)
+sw zero, 8(v0)
+sw zero, 0xc(v0)
+sw zero, 0x10(v0)
+sw zero, 0x14(v0)
+jalr t9
+sw zero, 0x18(v0)
+lw gp, 0x18(sp)
+lw t9, -sym.imp.malloc(gp)
+jalr t9
+addiu a0, v0, 1
+move a1, s1
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+move a0, v0
+lw gp, 0x18(sp)
+sw v0, 4(s0)
+lw v0, -segment.LOAD0(gp)
+lw v1, -segment.LOAD0(gp)
+addiu v0, v0, 0x3d48
+sw v0, 8(s0)
+addiu v1, v1, 0x3cf0
+lw v0, 0x7560(s2)
+sw v1, 0xc(s0)
+move v1, s0
+sw v0, (s0)
+sw s0, 0x7560(s2)
+lw ra, 0x12c(sp)
+move v0, v1
+lw s2, 0x128(sp)
+lw s1, 0x124(sp)
+lw s0, 0x120(sp)
+jr ra
+--
+bnez v0, 0x412120
+move a1, s1
+lw v0, -0x7e84(gp)
+addiu a1, zero, 1
+lw a0, -0x7fe0(gp)
+addiu a2, zero, 0x19
+lw t9, -sym.imp.fwrite(gp)
+lw a3, (v0)
+jalr t9
+addiu a0, a0, 0x4120
+lw gp, 0x10(sp)
+lw v1, -0x7fe8(gp)
+b 0x411f34
+sw zero, 0x75b4(v1)
+lw a1, -0x7fe8(gp)
+sw zero, 0x75b4(a1)
+b 0x411f5c
+sw zero, 0x10(a0)
+lw a0, -0x7fe8(gp)
+lw t9, -0x7fe8(gp)
+lw v0, 0x6c34(a0)
+lw v1, 0x6c38(t9)
+sll v0, v0, 2
+addu v0, v0, v1
+lw a2, (v0)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw a0, 4(a2)
+jalr t9
+addu a0, a0, s4
+lw gp, 0x10(sp)
+lw v1, (s6)
+lw t9, -sym.imp.strlen(gp)
+lw a0, (v1)
+jalr t9
+nop
+lw gp, 0x10(sp)
+addiu v0, v0, 1
+lw a0, -0x7fe8(gp)
+lw a1, -0x7fe8(gp)
+lw v1, 0x6c34(a0)
+lw a0, 0x6c38(a1)
+sll v1, v1, 2
+addu v1, v1, a0
+addiu a0, zero, 0x20
+lw a1, (v1)
+lw t9, -0x7fe8(gp)
+--
+lw s1, 0x3c(sp)
+lw s0, 0x38(sp)
+jr ra
+addiu sp, sp, 0x50
+lui gp, 5
+addiu gp, gp, 0x5828
+addu gp, gp, t9
+addiu sp, sp, -0x30
+sw ra, 0x28(sp)
+sw s1, 0x24(sp)
+sw s0, 0x20(sp)
+sw gp, 0x10(sp)
+addiu v0, zero, -1
+move s0, a0
+move v1, a1
+beqz a0, 0x4197f4
+sw zero, 0x18(sp)
+lw v0, 0x2c(s0)
+move a2, a1
+lw t9, -sym.imp.calloc(gp)
+addiu a0, zero, 1
+addiu s1, v0, 0x20
+beqz v1, 0x419808
+move a1, s1
+sw v1, 0x54(s0)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+addiu a0, a2, 2
+jalr t9
+addiu a1, s0, 4
+move v0, zero
+lw gp, 0x10(sp)
+lw ra, 0x28(sp)
+lw s1, 0x24(sp)
+lw s0, 0x20(sp)
+jr ra
+addiu sp, sp, 0x30
+jalr t9
+nop
+addiu a1, sp, 0x18
+lw gp, 0x10(sp)
+move a2, v0
+beqz v0, 0x41987c
+move a0, v0
+sw v0, 0x54(s0)
+sh s1, (v0)
+lw t9, 0x38(s0)
+--
+move s0, v0
+lw v0, (s1)
+lw v1, 4(s2)
+sw v0, (s0)
+sw v1, 4(s0)
+sw s0, (s1)
+lhu v1, 2(s2)
+lw a1, 0x1c(sp)
+sw v1, 8(s0)
+lw v0, 8(s2)
+beqz a1, 0x41a43c
+sw v0, 0x10(s0)
+lhu v0, (a1)
+addiu a2, zero, 0x14
+lw t9, -sym.imp.memcpy(gp)
+addiu a1, a1, 4
+addiu v0, v0, -4
+addiu a0, s0, 0x14
+sltiu v1, v0, 0x15
+movn a2, v0, v1
+jalr t9
+sw v0, 0xc(s0)
+lw gp, 0x10(sp)
+lw a1, 0x24(sp)
+addiu a0, s0, 0x28
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+addiu a1, a1, 4
+move a0, zero
+lw gp, 0x10(sp)
+move v0, a0
+lw ra, 0x7c(sp)
+lw s2, 0x78(sp)
+lw s1, 0x74(sp)
+lw s0, 0x70(sp)
+jr ra
+addiu sp, sp, 0x80
+sw zero, 0xc(s0)
+sw zero, 0x14(s0)
+sw zero, 0x18(s0)
+sw zero, 0x1c(s0)
+sw zero, 0x20(s0)
+b 0x41a404
+sw zero, 0x24(s0)
+bnez s0, 0x41a3c0
+nop
+--
+jalr t9
+move a1, s1
+lw gp, 0x10(sp)
+beqz v0, 0x41a790
+nop
+lw s0, (s0)
+bnez s0, 0x41a734
+addiu a0, s0, 0x28
+addiu s3, s3, 1
+slti v0, s3, 0x10
+bnez v0, 0x41a728
+addiu s2, s2, 4
+lw t9, -sym.imp.if_nametoindex(gp)
+move a0, s1
+lw ra, 0x2c(sp)
+lw s4, 0x28(sp)
+lw s3, 0x24(sp)
+lw s2, 0x20(sp)
+lw s1, 0x1c(sp)
+lw s0, 0x18(sp)
+jr t9
+addiu sp, sp, 0x30
+lw v0, 4(s0)
+move a1, s1
+lw a0, -0x7fe8(gp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+sw v0, 0x7610(s4)
+jalr t9
+addiu a0, a0, 0x7600
+lw v1, 4(s0)
+lw gp, 0x10(sp)
+lw ra, 0x2c(sp)
+move v0, v1
+lw s4, 0x28(sp)
+lw s3, 0x24(sp)
+lw s2, 0x20(sp)
+lw s1, 0x1c(sp)
+lw s0, 0x18(sp)
+jr ra
+addiu sp, sp, 0x30
+lui gp, 5
+addiu gp, gp, 0x47d8
+addu gp, gp, t9
+addiu sp, sp, -0x28
+sw ra, 0x24(sp)
+sw s0, 0x20(sp)
+
+[*] Function strcpy used 5 times tc
+

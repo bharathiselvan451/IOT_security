@@ -1,0 +1,16 @@
+[+] Check lua scripts for security issues
+=================================================================
+The Lua check module conducts security and coding checks on Lua scripts.
+
+
+
+==> LUA linter checks module
+-----------------------------------------------------------------
+
+
+
+==> LUA Security checks module
+-----------------------------------------------------------------
+
+[*] Statistics:0:0
+[-] Wed Jul 31 20:56:06 EDT 2024 - S23_lua_check nothing reported

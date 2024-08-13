@@ -1,0 +1,11 @@
+[*] Binary protection state of xt_multiport.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function sprintf tear down of xt_multiport.ko
+
+
+[*] Function sprintf used 0 times xt_multiport.ko
+

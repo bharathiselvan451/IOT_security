@@ -1,0 +1,1858 @@
+[*] Binary protection state of ushare
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of ushare
+
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare @ 0x406ef8 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) fcn.00406ef8 ()                  | void fcn_00406ef8 () {
+    0x00406ef8 lui gp, 6                     |     
+    0x00406efc addiu gp, gp, -0x4338         |     
+    0x00406f00 addu gp, gp, t9               |     gp += t9;
+    0x00406f04 addiu sp, sp, -0xf8           |     
+    0x00406f08 sw ra, 0xf4(sp)               |     *(var_f4h) = ra;
+    0x00406f0c sw fp, 0xf0(sp)               |     *(var_f0h) = fp;
+    0x00406f10 sw s7, 0xec(sp)               |     *(var_ech) = s7;
+    0x00406f14 sw s6, 0xe8(sp)               |     *(var_e8h) = s6;
+    0x00406f18 sw s5, 0xe4(sp)               |     *(var_e4h) = s5;
+    0x00406f1c sw s4, 0xe0(sp)               |     *(var_e0h) = s4;
+    0x00406f20 sw s3, 0xdc(sp)               |     *(var_dch) = s3;
+    0x00406f24 sw s2, 0xd8(sp)               |     *(var_d8h) = s2;
+    0x00406f28 sw s1, 0xd4(sp)               |     *(var_d4h) = s1;
+    0x00406f2c sw s0, 0xd0(sp)               |     *(var_d0h) = s0;
+    0x00406f30 sw gp, 0x20(sp)               |     *(var_20h) = gp;
+    0x00406f34 lw v1, -0x7fe8(gp)            |     v1 = *((gp - 8186));
+    0x00406f38 move fp, a1                   |     fp = a1;
+    0x00406f3c sw a0, 0xf8(sp)               |     *(arg_f8h) = a0;
+    0x00406f40 lw a0, -0x5f24(v1)            |     a0 = *((v1 - 6089));
+    0x00406f44 slti v0, a0, 0xbb8            |     v0 = (a0 < 0xbb8) ? 1 : 0;
+    0x00406f48 sw a2, 0x100(sp)              |     *(arg_100h) = a2;
+                                             |     if (v0 == 0) {
+    0x00406f4c beqz v0, 0x407184             |         goto label_9;
+                                             |     }
+                                             |     if (a1 == 0) {
+    0x00406f50 beqz a1, 0x407184             |         goto label_9;
+                                             |     }
+    0x00406f54 nop                           |     
+    0x00406f58 move a0, a2                   |     a0 = a2;
+                                             |     if (a2 == 0) {
+    0x00406f5c beqz a2, 0x407184             |         goto label_9;
+                                             |     }
+    0x00406f60 lw t9, -0x7c84(gp)            |     t9 = sym.imp.scandir64;
+    0x00406f64 lw a3, -0x7cdc(gp)            |     a3 = *((gp - 7991));
+    0x00406f68 addiu a1, sp, 0xc8            |     a1 = sp + 0xc8;
+    0x00406f6c move a2, zero                 |     a2 = 0;
+    0x00406f70 jalr t9                       |     t9 ();
+    0x00406f74 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00406f78 sw v0, 0xcc(sp)               |     *(var_cch) = v0;
+                                             |     if (v0 < 0) {
+    0x00406f7c bltz v0, 0x4073f0             |         goto label_10;
+                                             |     }
+    0x00406f80 lw a2, 0xcc(sp)               |     a2 = *(var_cch);
+    0x00406f84 move s7, zero                 |     s7 = 0;
+                                             |     if (a2 <= 0) {
+    0x00406f88 blez a2, 0x407170             |         goto label_11;
+                                             |     }
+                                             | label_0:
+    0x00406f8c lw t1, -0x7fe8(gp)            |     t1 = *((gp - 8186));
+    0x00406f90 lw t0, -0x5f24(t1)            |     t0 = *((t1 - 6089));
+    0x00406f94 slti a3, t0, 0xbb8            |     a3 = (t0 < 0xbb8) ? 1 : 0;
+    0x00406f98 sll s4, s7, 2                 |     s4 = s7 << 2;
+                                             |     if (a3 == 0) {
+    0x00406f9c beqz a3, 0x407170             |         goto label_11;
+                                             |     }
+    0x00406fa0 lw t5, 0xc8(sp)               |     t5 = *(var_c8h);
+    0x00406fa4 addiu t2, zero, 0x2e          |     t2 = 0x2e;
+    0x00406fa8 addu t4, s4, t5               |     t4 = s4 + t5;
+    0x00406fac lw s1, (t4)                   |     s1 = *(t4);
+    0x00406fb0 lb t3, 0x13(s1)               |     t3 = *((s1 + 19));
+                                             |     if (t3 == t2) {
+    0x00406fb4 beq t3, t2, 0x4071b4          |         goto label_12;
+                                             |     }
+    0x00406fb8 nop                           |     
+    0x00406fbc lw t9, -0x7f70(gp)            |     t9 = sym.imp.strlen;
+    0x00406fc0 lw a0, 0x100(sp)              |     a0 = *(arg_100h);
+    0x00406fc4 jalr t9                       |     t9 ();
+    0x00406fc8 nop                           |     
+    0x00406fcc addiu a0, s1, 0x13            |     a0 = s1 + 0x13;
+    0x00406fd0 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00406fd4 lw t9, -0x7f70(gp)            |     t9 = sym.imp.strlen;
+    0x00406fd8 move s5, v0                   |     s5 = v0;
+    0x00406fdc jalr t9                       |     t9 ();
+    0x00406fe0 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00406fe4 addu s2, s5, v0               |     s2 = s5 + v0;
+    0x00406fe8 lw t9, -0x7d20(gp)            |     t9 = sym.imp.malloc;
+    0x00406fec addiu a0, s2, 2               |     a0 = s2 + 2;
+    0x00406ff0 jalr t9                       |     t9 ();
+    0x00406ff4 lw s3, 0xc8(sp)               |     s3 = *(var_c8h);
+    0x00406ff8 move a0, v0                   |     a0 = v0;
+    0x00406ffc lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00407000 move s2, v0                   |     s2 = v0;
+    0x00407004 addu s1, s4, s3               |     s1 = s4 + s3;
+    0x00407008 lw t7, (s1)                   |     t7 = *(s1);
+    0x0040700c lw s0, -0x7fd8(gp)            |     s0 = *((gp - 8182));
+[31m    0x00407010 lw t9, -0x7ed0(gp)            |     t9 = sym.imp.sprintf;[0m
+    0x00407014 addiu a3, t7, 0x13            |     a3 = t7 + 0x13;
+    0x00407018 lw a2, 0x100(sp)              |     a2 = *(arg_100h);
+    0x0040701c addiu a1, s0, 0x6cb0          |     a1 = s0 + 0x6cb0;
+    0x00407020 jalr t9                       |     t9 ();
+    0x00407024 addiu a0, zero, 3             |     a0 = 3;
+    0x00407028 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x0040702c move a2, s2                   |     a2 = s2;
+    0x00407030 lw t6, -0x7fd8(gp)            |     t6 = *((gp - 8182));
+    0x00407034 lw t9, -0x7d5c(gp)            |     t9 = sym.print_log;
+    0x00407038 addiu a1, t6, 0x6cb8          |     a1 = t6 + 0x6cb8;
+    0x0040703c jalr t9                       |     t9 ();
+    0x00407040 move a0, s2                   |     a0 = s2;
+    0x00407044 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00407048 lw t9, -0x7cb8(gp)            |     t9 = sym.imp.stat64;
+    0x0040704c addiu a1, sp, 0x28            |     a1 = sp + 0x28;
+    0x00407050 jalr t9                       |     t9 ();
+    0x00407054 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00407058 addiu ra, zero, 0x4000        |     ra = 0x4000;
+                                             |     if (v0 < 0) {
+    0x0040705c bltz v0, 0x4073b8             |         goto label_13;
+                                             |     }
+    0x00407060 lw a0, 0x40(sp)               |     a0 = *(var_40h);
+    0x00407064 andi v0, a0, 0xf000           |     v0 = a0 & 0xf000;
+    0x00407068 move t2, zero                 |     t2 = 0;
+                                             |     if (v0 == ra) {
+    0x0040706c beq v0, ra, 0x4072fc          |         goto label_14;
+                                             |     }
+    0x00407070 lw a0, 0xc8(sp)               |     a0 = *(var_c8h);
+    0x00407074 addu t5, s4, a0               |     t5 = s4 + a0;
+    0x00407078 lw a2, (t5)                   |     a2 = *(t5);
+    0x0040707c addiu s6, a2, 0x13            |     s6 = a2 + 0x13;
+                                             |     if (fp == 0) {
+    0x00407080 beqz fp, 0x407134             |         goto label_15;
+                                             |     }
+    0x00407084 addu t2, s4, a0               |     t2 = s4 + a0;
+                                             |     if (s2 == 0) {
+    0x00407088 beqz s2, 0x407138             |         goto label_4;
+                                             |     }
+    0x0040708c move a0, s2                   |     a0 = s2;
+                                             |     if (s6 == 0) {
+    0x00407090 beqz s6, 0x407138             |         goto label_4;
+                                             |     }
+    0x00407094 lw t9, -0x7d84(gp)            |     t9 = sym.imp.strrchr;
+    0x00407098 addiu a1, zero, 0x2e          |     a1 = 0x2e;
+    0x0040709c jalr t9                       |     t9 ();
+    0x004070a0 lw gp, 0x20(sp)               |     gp = *(var_20h);
+                                             |     if (v0 == 0) {
+    0x004070a4 beqz v0, 0x407124             |         goto label_16;
+                                             |     }
+    0x004070a8 nop                           |     
+    0x004070ac addiu s3, v0, 1               |     s3 = v0 + 1;
+    0x004070b0 addiu t6, zero, -1            |     t6 = -1;
+                                             |     if (s3 == 0) {
+    0x004070b4 beqz s3, 0x407124             |         goto label_16;
+                                             |     }
+    0x004070b8 lw s1, -0x7d58(gp)            |     s1 = *(gp);
+    0x004070bc lw t7, (s1)                   |     t7 = *(s1);
+    0x004070c0 move v0, zero                 |     v0 = 0;
+                                             |     if (t7 == t6) {
+    0x004070c4 beq t7, t6, 0x407128          |         goto label_8;
+                                             |     }
+    0x004070c8 addiu s5, zero, -1            |     s5 = -1;
+                                             |     do {
+    0x004070cc lw t9, -0x7dd8(gp)            |         t9 = sym.mime_get_extension;
+    0x004070d0 move a0, s1                   |         a0 = s1;
+    0x004070d4 jalr t9                       |         t9 ();
+    0x004070d8 move a0, s1                   |         a0 = s1;
+    0x004070dc lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x004070e0 lw t9, -0x7dd8(gp)            |         t9 = sym.mime_get_extension;
+    0x004070e4 move s0, v0                   |         s0 = v0;
+    0x004070e8 jalr t9                       |         t9 ();
+    0x004070ec move a0, s0                   |         a0 = s0;
+    0x004070f0 lw gp, 0x20(sp)               |         gp = *(var_20h);
+    0x004070f4 lw t9, -0x7e38(gp)            |         t9 = sym.imp.strcasecmp;
+    0x004070f8 move a1, s3                   |         a1 = s3;
+                                             |         if (v0 == 0) {
+    0x004070fc beqz v0, 0x407124             |             goto label_16;
+                                             |         }
+    0x00407100 jalr t9                       |         t9 ();
+    0x00407104 nop                           |         
+    0x00407108 lw gp, 0x20(sp)               |         gp = *(var_20h);
+                                             |         if (v0 == 0) {
+    0x0040710c beqz v0, 0x4073e0             |             goto label_17;
+                                             |         }
+    0x00407110 nop                           |         
+    0x00407114 addiu s1, s1, 0xc             |         s1 += 0xc;
+    0x00407118 lw t8, (s1)                   |         t8 = *(s1);
+    0x0040711c bne t8, s5, 0x4070cc          |         
+                                             |     } while (t8 != s5);
+    0x00407120 nop                           |     
+                                             | label_16:
+    0x00407124 move v0, zero                 |     v0 = 0;
+                                             | label_8:
+    0x00407128 move a1, s6                   |     a1 = s6;
+                                             |     if (v0 != 0) {
+    0x0040712c bnez v0, 0x4071e8             |         goto label_18;
+                                             |     }
+                                             | label_2:
+    0x00407130 lw a0, 0xc8(sp)               |     a0 = *(var_c8h);
+                                             | label_15:
+    0x00407134 addu t2, s4, a0               |     t2 = s4 + a0;
+                                             | label_4:
+    0x00407138 lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+    0x0040713c lw a0, (t2)                   |     a0 = *(t2);
+    0x00407140 jalr t9                       |     t9 ();
+    0x00407144 nop                           |     
+    0x00407148 move a0, s2                   |     a0 = s2;
+    0x0040714c lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00407150 lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+                                             | label_7:
+    0x00407154 addiu s7, s7, 1               |     s7++;
+    0x00407158 jalr t9                       |     t9 ();
+    0x0040715c lw s2, 0xcc(sp)               |     s2 = *(var_cch);
+    0x00407160 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00407164 slt s4, s7, s2                |     s4 = (s7 < s2) ? 1 : 0;
+                                             |     if (s4 != 0) {
+    0x00407168 bnez s4, 0x406f8c             |         goto label_0;
+                                             |     }
+    0x0040716c nop                           |     
+                                             | label_11:
+    0x00407170 lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+    0x00407174 lw a0, 0xc8(sp)               |     a0 = *(var_c8h);
+                                             | label_1:
+    0x00407178 jalr t9                       |     t9 ();
+    0x0040717c nop                           |     
+    0x00407180 lw gp, 0x20(sp)               |     gp = *(var_20h);
+                                             | label_9:
+    0x00407184 lw ra, 0xf4(sp)               |     ra = *(var_f4h);
+    0x00407188 lw fp, 0xf0(sp)               |     fp = *(var_f0h);
+    0x0040718c lw s7, 0xec(sp)               |     s7 = *(var_ech);
+    0x00407190 lw s6, 0xe8(sp)               |     s6 = *(var_e8h);
+    0x00407194 lw s5, 0xe4(sp)               |     s5 = *(var_e4h);
+    0x00407198 lw s4, 0xe0(sp)               |     s4 = *(var_e0h);
+    0x0040719c lw s3, 0xdc(sp)               |     s3 = *(var_dch);
+    0x004071a0 lw s2, 0xd8(sp)               |     s2 = *(var_d8h);
+    0x004071a4 lw s1, 0xd4(sp)               |     s1 = *(var_d4h);
+    0x004071a8 lw s0, 0xd0(sp)               |     s0 = *(var_d0h);
+    0x004071ac addiu sp, sp, 0xf8            |     
+    0x004071b0 jr ra                         |     return v0;
+                                             | label_12:
+    0x004071b4 lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+    0x004071b8 move a0, s1                   |     a0 = s1;
+    0x004071bc addiu s7, s7, 1               |     s7++;
+    0x004071c0 jalr t9                       |     t9 ();
+    0x004071c4 lw s2, 0xcc(sp)               |     s2 = *(var_cch);
+    0x004071c8 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x004071cc slt s4, s7, s2                |     s4 = (s7 < s2) ? 1 : 0;
+                                             |     if (s4 != 0) {
+    0x004071d0 bnez s4, 0x406f8c             |         goto label_0;
+                                             |     }
+    0x004071d4 nop                           |     
+    0x004071d8 lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+    0x004071dc lw a0, 0xc8(sp)               |     a0 = *(var_c8h);
+    0x004071e0 b 0x407178                    |     goto label_1;
+    0x004071e4 nop                           |     
+                                             | label_18:
+    0x004071e8 lw s1, -0x7fdc(gp)            |     s1 = *(gp);
+    0x004071ec lw s5, 0x64(sp)               |     s5 = *(var_64h);
+    0x004071f0 move a2, s2                   |     a2 = s2;
+    0x004071f4 lw s3, 0x60(sp)               |     s3 = *(var_60h);
+    0x004071f8 addiu t9, s1, 0x6710          |     t9 = s1 + 0x6710;
+    0x004071fc lw a0, 0xf8(sp)               |     a0 = *(arg_f8h);
+    0x00407200 move a3, fp                   |     a3 = fp;
+    0x00407204 sw s5, 0x14(sp)               |     *(var_14h) = s5;
+    0x00407208 sw s3, 0x10(sp)               |     *(var_10h) = s3;
+    0x0040720c sw zero, 0x18(sp)             |     *(var_18h) = 0;
+    0x00407210 jalr t9                       |     t9 ();
+    0x00407214 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00407218 move s1, v0                   |     s1 = v0;
+                                             |     if (v0 == 0) {
+    0x0040721c beqz v0, 0x407130             |         goto label_2;
+                                             |     }
+                                             |     if (fp == 0) {
+    0x00407220 beqz fp, 0x407130             |         goto label_2;
+                                             |     }
+    0x00407224 nop                           |     
+    0x00407228 lw a0, 0x14(fp)               |     a0 = *(arg_14h);
+    0x0040722c lw v0, (a0)                   |     v0 = *(a0);
+    0x00407230 move v1, a0                   |     v1 = a0;
+                                             |     if (v0 == 0) {
+    0x00407234 beqz v0, 0x407250             |         goto label_19;
+                                             |     }
+                                             | label_3:
+    0x00407238 addiu v1, v1, 4               |     v1 += 4;
+                                             |     if (v0 == s1) {
+    0x0040723c beq v0, s1, 0x407130          |         goto label_2;
+                                             |     }
+    0x00407240 lw v0, (v1)                   |     v0 = *(v1);
+                                             |     if (v0 != 0) {
+    0x00407244 bnez v0, 0x407238             |         goto label_3;
+                                             |     }
+    0x00407248 nop                           |     
+    0x0040724c lw v0, (a0)                   |     v0 = *(a0);
+                                             | label_19:
+    0x00407250 move s0, zero                 |     s0 = 0;
+    0x00407254 addiu v1, a0, 4               |     v1 = a0 + 4;
+    0x00407258 b 0x407268                    |     
+                                             |     while (v0 != 0) {
+    0x0040725c lw v0, (v1)                   |         v0 = *(v1);
+    0x00407260 addiu s0, s0, 1               |         s0++;
+    0x00407264 addiu v1, v1, 4               |         v1 += 4;
+    0x00407268 addiu v0, s0, 1               |         v0 = s0 + 1;
+    0x0040726c bnez v0, 0x40725c             |         
+                                             |     }
+                                             | label_6:
+    0x00407270 lw t9, -0x7e40(gp)            |     t9 = sym.imp.realloc;
+    0x00407274 sll s0, v0, 2                 |     s0 = v0 << 2;
+    0x00407278 addiu a1, s0, 4               |     a1 = s0 + 4;
+    0x0040727c jalr t9                       |     t9 ();
+    0x00407280 addiu a0, zero, 8             |     a0 = 8;
+    0x00407284 lw t0, 0x10(fp)               |     t0 = *(arg_10h);
+    0x00407288 addu a1, s0, v0               |     a1 = s0 + v0;
+    0x0040728c lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00407290 addiu v1, t0, 1               |     v1 = t0 + 1;
+    0x00407294 lw t9, -0x7d20(gp)            |     t9 = sym.imp.malloc;
+    0x00407298 sw s1, -4(a1)                 |     *((a1 - 1)) = s1;
+    0x0040729c sw v1, 0x10(fp)               |     *(arg_10h) = v1;
+    0x004072a0 sw zero, (a1)                 |     *(a1) = 0;
+    0x004072a4 sw v0, 0x14(fp)               |     *(arg_14h) = v0;
+    0x004072a8 jalr t9                       |     t9 ();
+    0x004072ac lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x004072b0 move a0, v0                   |     a0 = v0;
+    0x004072b4 lw ra, 0xf8(sp)               |     ra = *(arg_f8h);
+    0x004072b8 lw s6, (s1)                   |     s6 = *(s1);
+    0x004072bc lw t9, -0x7e24(gp)            |     t9 = sym.rbsearch;
+    0x004072c0 lw a1, 0x1c(ra)               |     a1 = *((ra + 7));
+    0x004072c4 sw s6, (v0)                   |     *(v0) = s6;
+    0x004072c8 sw s1, 4(v0)                  |     *((v0 + 1)) = s1;
+    0x004072cc jalr t9                       |     t9 ();
+    0x004072d0 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x004072d4 addiu a0, zero, 1             |     a0 = 1;
+                                             |     if (v0 != 0) {
+    0x004072d8 bnez v0, 0x407130             |         goto label_2;
+                                             |     }
+    0x004072dc lw t1, -0x7fd8(gp)            |     t1 = *((gp - 8182));
+    0x004072e0 lw t9, -0x7d5c(gp)            |     t9 = sym.print_log;
+    0x004072e4 addiu a1, t1, 0x6cbc          |     a1 = t1 + 0x6cbc;
+    0x004072e8 jalr t9                       |     t9 ();
+    0x004072ec lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x004072f0 lw a0, 0xc8(sp)               |     a0 = *(var_c8h);
+    0x004072f4 addu t2, s4, a0               |     t2 = s4 + a0;
+    0x004072f8 b 0x407138                    |     goto label_4;
+                                             | label_14:
+    0x004072fc lw a3, 0xc8(sp)               |     a3 = *(var_c8h);
+    0x00407300 lw v1, -0x7fdc(gp)            |     v1 = *(gp);
+    0x00407304 move t1, zero                 |     t1 = 0;
+    0x00407308 addu t3, s4, a3               |     t3 = s4 + a3;
+    0x0040730c addiu t0, zero, 1             |     t0 = 1;
+    0x00407310 lw a1, (t3)                   |     a1 = *(t3);
+    0x00407314 move a2, s2                   |     a2 = s2;
+    0x00407318 lw a0, 0xf8(sp)               |     a0 = *(arg_f8h);
+    0x0040731c move a3, fp                   |     a3 = fp;
+    0x00407320 sw t2, 0x14(sp)               |     *(var_14h) = t2;
+    0x00407324 addiu a1, a1, 0x13            |     a1 += 0x13;
+    0x00407328 sw t1, 0x10(sp)               |     *(var_10h) = t1;
+    0x0040732c addiu t9, v1, 0x6710          |     t9 = v1 + 0x6710;
+    0x00407330 sw t0, 0x18(sp)               |     *(var_18h) = t0;
+    0x00407334 jalr t9                       |     t9 ();
+    0x00407338 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x0040733c move s1, v0                   |     s1 = v0;
+                                             |     if (v0 == 0) {
+    0x00407340 beqz v0, 0x407130             |         goto label_2;
+                                             |     }
+    0x00407344 lw t4, -0x7fdc(gp)            |     t4 = *(gp);
+    0x00407348 move a1, v0                   |     a1 = v0;
+    0x0040734c lw a0, 0xf8(sp)               |     a0 = *(arg_f8h);
+    0x00407350 addiu t9, t4, 0x6ef8          |     t9 = t4 + 0x6ef8;
+    0x00407354 move a2, s2                   |     a2 = s2;
+    0x00407358 jalr t9                       |     t9 ();
+    0x0040735c lw gp, 0x20(sp)               |     gp = *(var_20h);
+                                             |     if (fp == 0) {
+    0x00407360 beqz fp, 0x407130             |         goto label_2;
+                                             |     }
+    0x00407364 nop                           |     
+    0x00407368 lw a0, 0x14(fp)               |     a0 = *(arg_14h);
+    0x0040736c lw v0, (a0)                   |     v0 = *(a0);
+    0x00407370 move v1, a0                   |     v1 = a0;
+                                             |     if (v0 == 0) {
+    0x00407374 beqz v0, 0x407390             |         goto label_20;
+                                             |     }
+                                             | label_5:
+    0x00407378 addiu v1, v1, 4               |     v1 += 4;
+                                             |     if (v0 == s1) {
+    0x0040737c beq v0, s1, 0x407130          |         goto label_2;
+                                             |     }
+    0x00407380 lw v0, (v1)                   |     v0 = *(v1);
+                                             |     if (v0 != 0) {
+    0x00407384 bnez v0, 0x407378             |         goto label_5;
+                                             |     }
+    0x00407388 nop                           |     
+    0x0040738c lw v0, (a0)                   |     v0 = *(a0);
+                                             | label_20:
+    0x00407390 move s0, zero                 |     s0 = 0;
+    0x00407394 addiu v1, a0, 4               |     v1 = a0 + 4;
+    0x00407398 b 0x4073a8                    |     
+                                             |     while (v0 != 0) {
+    0x0040739c lw v0, (v1)                   |         v0 = *(v1);
+    0x004073a0 addiu s0, s0, 1               |         s0++;
+    0x004073a4 addiu v1, v1, 4               |         v1 += 4;
+    0x004073a8 addiu v0, s0, 1               |         v0 = s0 + 1;
+    0x004073ac bnez v0, 0x40739c             |         
+                                             |     }
+    0x004073b0 b 0x407270                    |     goto label_6;
+    0x004073b4 nop                           |     
+                                             | label_13:
+    0x004073b8 lw t8, 0xc8(sp)               |     t8 = *(var_c8h);
+    0x004073bc lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+    0x004073c0 addu s6, s4, t8               |     s6 = s4 + t8;
+    0x004073c4 lw a0, (s6)                   |     a0 = *(s6);
+    0x004073c8 jalr t9                       |     t9 ();
+    0x004073cc nop                           |     
+    0x004073d0 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x004073d4 lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+    0x004073d8 move a0, s2                   |     a0 = s2;
+    0x004073dc b 0x407154                    |     goto label_7;
+                                             | label_17:
+    0x004073e0 addiu v0, zero, 1             |     v0 = 1;
+                                             |     if (s1 != 0) {
+    0x004073e4 bnez s1, 0x407128             |         goto label_8;
+                                             |     }
+    0x004073e8 move v0, zero                 |     v0 = 0;
+    0x004073ec b 0x407128                    |     goto label_8;
+                                             | label_10:
+    0x004073f0 lw a1, -0x7fd8(gp)            |     a1 = *((gp - 8182));
+    0x004073f4 lw t9, -0x7d00(gp)            |     t9 = sym.imp.perror;
+    0x004073f8 addiu a0, a1, 0x6ce0          |     a0 = a1 + 0x6ce0;
+    0x004073fc jalr t9                       |     t9 ();
+    0x00407400 lw gp, 0x20(sp)               |     gp = *(var_20h);
+    0x00407404 b 0x407184                    |     goto label_9;
+    0x00407408 nop                           |     
+                                             | }
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare @ 0x40d970 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) fcn.0040d970 ()                  | void fcn_0040d970 () {
+    0x0040d970 lui gp, 5                     |     
+    0x0040d974 addiu gp, gp, 0x5250          |     
+    0x0040d978 addu gp, gp, t9               |     gp += t9;
+    0x0040d97c addiu sp, sp, -0xe0           |     
+    0x0040d980 sw ra, 0xd8(sp)               |     *(var_d8h) = ra;
+    0x0040d984 sw s3, 0xd4(sp)               |     *(var_d4h) = s3;
+    0x0040d988 sw s2, 0xd0(sp)               |     *(var_d0h) = s2;
+    0x0040d98c sw s1, 0xcc(sp)               |     *(var_cch) = s1;
+    0x0040d990 sw s0, 0xc8(sp)               |     *(var_c8h) = s0;
+    0x0040d994 sw gp, 0x40(sp)               |     *(var_40h) = gp;
+    0x0040d998 move a1, zero                 |     a1 = 0;
+    0x0040d99c lw t9, -0x7e80(gp)            |     t9 = sym.imp.memset;
+    0x0040d9a0 addiu s0, sp, 0x48            |     s0 = sp + 0x48;
+    0x0040d9a4 move s1, a0                   |     s1 = a0;
+    0x0040d9a8 addiu a2, zero, 0x80          |     a2 = 0x80;
+    0x0040d9ac move a0, s0                   |     a0 = s0;
+    0x0040d9b0 jalr t9                       |     t9 ();
+    0x0040d9b4 lw gp, 0x40(sp)               |     gp = *(var_40h);
+    0x0040d9b8 addiu v0, zero, -1            |     v0 = -1;
+                                             |     if (s1 == 0) {
+    0x0040d9bc beqz s1, 0x40d9e8             |         goto label_1;
+                                             |     }
+    0x0040d9c0 lw v0, (s1)                   |     v0 = *(s1);
+    0x0040d9c4 addiu v0, zero, -1            |     v0 = -1;
+                                             |     if (v0 == 0) {
+    0x0040d9c8 beqz v0, 0x40d9e8             |         goto label_1;
+                                             |     }
+    0x0040d9cc lw v1, 0x34(s1)               |     v1 = *((s1 + 13));
+                                             |     if (v1 == 0) {
+    0x0040d9d0 beqz v1, 0x40d9e8             |         goto label_1;
+                                             |     }
+    0x0040d9d4 nop                           |     
+    0x0040d9d8 lw a0, 0x38(s1)               |     a0 = *((s1 + 14));
+    0x0040d9dc move a0, s0                   |     a0 = s0;
+                                             |     if (a0 != 0) {
+    0x0040d9e0 bnez a0, 0x40da04             |         goto label_6;
+                                             |     }
+    0x0040d9e4 addiu v0, zero, -1            |     v0 = -1;
+                                             |     do {
+                                             | label_1:
+    0x0040d9e8 lw ra, 0xd8(sp)               |         ra = *(var_d8h);
+    0x0040d9ec lw s3, 0xd4(sp)               |         s3 = *(var_d4h);
+    0x0040d9f0 lw s2, 0xd0(sp)               |         s2 = *(var_d0h);
+    0x0040d9f4 lw s1, 0xcc(sp)               |         s1 = *(var_cch);
+    0x0040d9f8 lw s0, 0xc8(sp)               |         s0 = *(var_c8h);
+    0x0040d9fc addiu sp, sp, 0xe0            |         
+    0x0040da00 jr ra                         |         return v0;
+                                             | label_6:
+    0x0040da04 lw a3, -0x7fe0(gp)            |         a3 = *((gp - 8184));
+[31m    0x0040da08 lw t9, -0x7ed0(gp)            |         t9 = sym.imp.sprintf;[0m
+    0x0040da0c lw a2, 0x10(s1)               |         a2 = *((s1 + 4));
+    0x0040da10 addiu a1, a3, -0x7bbc         |         a1 = a3 + -0x7bbc;
+    0x0040da14 jalr t9                       |         t9 ();
+    0x0040da18 lbu a1, 0x46(s1)              |         a1 = *((s1 + 70));
+    0x0040da1c lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040da20 move a3, s0                   |         a3 = s0;
+                                             |         if (a1 != 0) {
+    0x0040da24 bnez a1, 0x40dcec             |             goto label_7;
+                                             |         }
+    0x0040da28 lw t9, -0x7f70(gp)            |         t9 = sym.imp.strlen;
+    0x0040da2c lw a0, (s1)                   |         a0 = *(s1);
+    0x0040da30 jalr t9                       |         t9 ();
+    0x0040da34 nop                           |         
+    0x0040da38 lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040da3c lw a0, 0x10(s1)               |         a0 = *((s1 + 4));
+    0x0040da40 lw t9, -0x7f70(gp)            |         t9 = sym.imp.strlen;
+    0x0040da44 move s2, v0                   |         s2 = v0;
+    0x0040da48 jalr t9                       |         t9 ();
+    0x0040da4c lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040da50 sll v0, v0, 1                 |         v0 <<= 1;
+    0x0040da54 lw a0, 0x14(s1)               |         a0 = *((s1 + 5));
+    0x0040da58 lw t9, -0x7f70(gp)            |         t9 = sym.imp.strlen;
+    0x0040da5c addu s0, s2, v0               |         s0 = s2 + v0;
+    0x0040da60 jalr t9                       |         t9 ();
+    0x0040da64 lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040da68 sll a3, v0, 1                 |         a3 = v0 << 1;
+    0x0040da6c lw a0, 8(s1)                  |         a0 = *((s1 + 2));
+    0x0040da70 lw t9, -0x7f70(gp)            |         t9 = sym.imp.strlen;
+    0x0040da74 addu s3, s0, a3               |         s3 = s0 + a3;
+    0x0040da78 jalr t9                       |         t9 ();
+    0x0040da7c lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040da80 lw a0, 0x34(s1)               |         a0 = *((s1 + 13));
+    0x0040da84 lw t9, -0x7f70(gp)            |         t9 = sym.imp.strlen;
+    0x0040da88 addu s2, s3, v0               |         s2 = s3 + v0;
+    0x0040da8c jalr t9                       |         t9 ();
+    0x0040da90 lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040da94 addu a2, s2, v0               |         a2 = s2 + v0;
+    0x0040da98 addiu s0, a2, 0x687           |         s0 = a2 + 0x687;
+    0x0040da9c lw t9, -0x7d20(gp)            |         t9 = sym.imp.malloc;
+    0x0040daa0 move a0, s0                   |         a0 = s0;
+    0x0040daa4 jalr t9                       |         t9 ();
+    0x0040daa8 move a2, s0                   |         a2 = s0;
+    0x0040daac lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040dab0 move a0, v0                   |         a0 = v0;
+    0x0040dab4 move a1, zero                 |         a1 = 0;
+    0x0040dab8 lw t9, -0x7e80(gp)            |         t9 = sym.imp.memset;
+    0x0040dabc move s2, v0                   |         s2 = v0;
+    0x0040dac0 jalr t9                       |         t9 ();
+    0x0040dac4 move a0, s2                   |         a0 = s2;
+    0x0040dac8 lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040dacc lw t1, 0x10(s1)               |         t1 = *((s1 + 4));
+    0x0040dad0 lw t8, -0x7fe0(gp)            |         t8 = *((gp - 8184));
+    0x0040dad4 lw t7, 0x14(s1)               |         t7 = *((s1 + 5));
+    0x0040dad8 move a3, t1                   |         a3 = t1;
+    0x0040dadc lw ra, 8(s1)                  |         ra = *((s1 + 2));
+    0x0040dae0 addiu s3, t8, -0x7ba4         |         s3 = t8 + -0x7ba4;
+    0x0040dae4 lw s0, 0x34(s1)               |         s0 = *((s1 + 13));
+    0x0040dae8 lw a1, -0x7fe0(gp)            |         a1 = *((gp - 8184));
+    0x0040daec lw a2, (s1)                   |         a2 = *(s1);
+[31m    0x0040daf0 lw t9, -0x7ed0(gp)            |         t9 = sym.imp.sprintf;[0m
+    0x0040daf4 addiu a1, a1, -0x7b94         |         a1 += -0x7b94;
+    0x0040daf8 sw ra, 0x18(sp)               |         *(var_18h) = ra;
+    0x0040dafc sw t7, 0x1c(sp)               |         *(var_1ch) = t7;
+    0x0040db00 sw s3, 0x20(sp)               |         *(var_20h) = s3;
+    0x0040db04 sw s0, 0x24(sp)               |         *(var_24h) = s0;
+    0x0040db08 sw t7, 0x10(sp)               |         *(var_10h) = t7;
+    0x0040db0c sw t1, 0x14(sp)               |         *(var_14h) = t1;
+    0x0040db10 jalr t9                       |         t9 ();
+    0x0040db14 lw gp, 0x40(sp)               |         gp = *(var_40h);
+                                             | label_0:
+    0x0040db18 lw v1, -0x7fe0(gp)            |         v1 = *((gp - 8184));
+    0x0040db1c addiu a0, zero, 1             |         a0 = 1;
+    0x0040db20 lw t9, -0x7d5c(gp)            |         t9 = sym.print_log;
+    0x0040db24 addiu a1, v1, -0x751c         |         a1 = v1 + -0x751c;
+    0x0040db28 jalr t9                       |         t9 ();
+    0x0040db2c lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040db30 lw a0, 0x38(s1)               |         a0 = *((s1 + 14));
+    0x0040db34 lw t9, -0x7c70(gp)            |         t9 = sym.imp.UpnpInit;
+    0x0040db38 lhu a1, 0x3c(s1)              |         a1 = *((s1 + 30));
+    0x0040db3c jalr t9                       |         t9 ();
+    0x0040db40 nop                           |         
+    0x0040db44 lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040db48 addiu a0, zero, 2             |         a0 = 2;
+                                             |         if (v0 != 0) {
+    0x0040db4c bnez v0, 0x40de7c             |             goto label_8;
+                                             |         }
+    0x0040db50 lw t9, -0x7f48(gp)            |         t9 = sym.imp.UpnpSetMaxContentLength;
+    0x0040db54 addiu a0, zero, 0x1000        |         a0 = 0x1000;
+    0x0040db58 jalr t9                       |         t9 ();
+    0x0040db5c lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040db60 addiu a0, zero, 1             |         a0 = 1;
+                                             |         if (v0 != 0) {
+    0x0040db64 bnez v0, 0x40ddb8             |             goto label_9;
+                                             |         }
+                                             | label_3:
+    0x0040db68 lbu a0, 0x50(s1)              |         a0 = *((s1 + 80));
+    0x0040db6c addiu a0, zero, 1             |         a0 = 1;
+                                             |         if (a0 != 0) {
+    0x0040db70 bnez a0, 0x40dd9c             |             goto label_10;
+                                             |         }
+                                             | label_2:
+    0x0040db74 lbu t3, 0x46(s1)              |         t3 = *((s1 + 70));
+                                             |         if (t3 != 0) {
+    0x0040db78 bnez t3, 0x40ddd4             |             goto label_11;
+                                             |         }
+    0x0040db7c nop                           |         
+                                             | label_4:
+    0x0040db80 lw t9, -0x7ee8(gp)            |         t9 = sym.imp.UpnpGetServerPort;
+    0x0040db84 jalr t9                       |         t9 ();
+    0x0040db88 nop                           |         
+    0x0040db8c lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040db90 lw t9, -0x7fb4(gp)            |         t9 = sym.imp.UpnpGetServerIpAddress;
+    0x0040db94 sh v0, 0x3c(s1)               |         *((s1 + 30)) = v0;
+    0x0040db98 jalr t9                       |         t9 ();
+    0x0040db9c addiu a0, zero, 1             |         a0 = 1;
+    0x0040dba0 lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040dba4 move a2, v0                   |         a2 = v0;
+    0x0040dba8 lhu a3, 0x3c(s1)              |         a3 = *((s1 + 30));
+    0x0040dbac lw t6, -0x7fe0(gp)            |         t6 = *((gp - 8184));
+    0x0040dbb0 lw t9, -0x7d5c(gp)            |         t9 = sym.print_log;
+    0x0040dbb4 addiu a1, t6, -0x74f8         |         a1 = t6 + -0x74f8;
+    0x0040dbb8 jalr t9                       |         t9 ();
+    0x0040dbbc lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040dbc0 lw t9, -0x7e78(gp)            |         t9 = sym.imp.UpnpEnableWebserver;
+    0x0040dbc4 addiu a0, zero, 1             |         a0 = 1;
+    0x0040dbc8 jalr t9                       |         t9 ();
+    0x0040dbcc lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040dbd0 lw t9, -0x7c78(gp)            |         t9 = sym.imp.UpnpSetVirtualDirCallbacks;
+    0x0040dbd4 lw a0, -0x7da8(gp)            |         a0 = *(gp);
+    0x0040dbd8 jalr t9                       |         t9 ();
+    0x0040dbdc nop                           |         
+    0x0040dbe0 lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040dbe4 addiu a0, zero, 2             |         a0 = 2;
+                                             |         if (v0 != 0) {
+    0x0040dbe8 bnez v0, 0x40de98             |             goto label_12;
+                                             |         }
+    0x0040dbec lw t7, -0x7fe0(gp)            |         t7 = *((gp - 8184));
+    0x0040dbf0 lw t9, -0x7f84(gp)            |         t9 = sym.imp.UpnpAddVirtualDir;
+    0x0040dbf4 addiu a0, t7, -0x74d0         |         a0 = t7 + -0x74d0;
+    0x0040dbf8 jalr t9                       |         t9 ();
+    0x0040dbfc lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040dc00 addiu s0, s1, 0x30            |         s0 = s1 + 0x30;
+                                             |         if (v0 != 0) {
+    0x0040dc04 bnez v0, 0x40dea8             |             goto label_13;
+                                             |         }
+    0x0040dc08 lw a1, -0x7fd8(gp)            |         a1 = *((gp - 8182));
+    0x0040dc0c lw t9, -0x7dfc(gp)            |         t9 = sym.imp.UpnpRegisterRootDevice2;
+    0x0040dc10 addiu a0, zero, 2             |         a0 = 2;
+    0x0040dc14 addiu s3, a1, -0x29d0         |         s3 = a1 + -0x29d0;
+    0x0040dc18 move a2, zero                 |         a2 = 0;
+    0x0040dc1c move a1, s2                   |         a1 = s2;
+    0x0040dc20 addiu a3, zero, 1             |         a3 = 1;
+    0x0040dc24 sw s3, 0x10(sp)               |         *(var_10h) = s3;
+    0x0040dc28 sw zero, 0x14(sp)             |         *(var_14h) = 0;
+    0x0040dc2c sw s0, 0x18(sp)               |         *(var_18h) = s0;
+    0x0040dc30 jalr t9                       |         t9 ();
+    0x0040dc34 lw gp, 0x40(sp)               |         gp = *(var_40h);
+                                             |         if (v0 != 0) {
+    0x0040dc38 bnez v0, 0x40de48             |             goto label_14;
+                                             |         }
+    0x0040dc3c nop                           |         
+    0x0040dc40 lw t9, -0x7ce8(gp)            |         t9 = sym.imp.UpnpUnRegisterRootDevice;
+    0x0040dc44 lw a0, 0x30(s1)               |         a0 = *((s1 + 12));
+    0x0040dc48 jalr t9                       |         t9 ();
+    0x0040dc4c nop                           |         
+    0x0040dc50 lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040dc54 move a2, zero                 |         a2 = 0;
+                                             |         if (v0 != 0) {
+    0x0040dc58 bnez v0, 0x40debc             |             goto label_15;
+                                             |         }
+    0x0040dc5c lw t9, -0x7dfc(gp)            |         t9 = sym.imp.UpnpRegisterRootDevice2;
+    0x0040dc60 addiu a0, zero, 2             |         a0 = 2;
+    0x0040dc64 sw s3, 0x10(sp)               |         *(var_10h) = s3;
+    0x0040dc68 move a1, s2                   |         a1 = s2;
+    0x0040dc6c sw s0, 0x18(sp)               |         *(var_18h) = s0;
+    0x0040dc70 sw zero, 0x14(sp)             |         *(var_14h) = 0;
+    0x0040dc74 addiu a3, zero, 1             |         a3 = 1;
+    0x0040dc78 jalr t9                       |         t9 ();
+    0x0040dc7c lw gp, 0x40(sp)               |         gp = *(var_40h);
+                                             |         if (v0 != 0) {
+    0x0040dc80 bnez v0, 0x40de48             |             goto label_14;
+                                             |         }
+    0x0040dc84 nop                           |         
+    0x0040dc88 lw s0, -0x7fe0(gp)            |         s0 = *((gp - 8184));
+    0x0040dc8c addiu a0, zero, 1             |         a0 = 1;
+    0x0040dc90 lw t9, -0x7d5c(gp)            |         t9 = sym.print_log;
+    0x0040dc94 addiu a1, s0, -0x74c8         |         a1 = s0 + -0x74c8;
+    0x0040dc98 jalr t9                       |         t9 ();
+    0x0040dc9c lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040dca0 lw a0, 0x30(s1)               |         a0 = *((s1 + 12));
+    0x0040dca4 lw t9, -0x7cfc(gp)            |         t9 = sym.imp.UpnpSendAdvertisement;
+    0x0040dca8 addiu a1, zero, 0x708         |         a1 = 0x708;
+    0x0040dcac jalr t9                       |         t9 ();
+    0x0040dcb0 addiu a0, zero, 1             |         a0 = 1;
+    0x0040dcb4 lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040dcb8 lw s3, -0x7fe0(gp)            |         s3 = *((gp - 8184));
+    0x0040dcbc lw t9, -0x7d5c(gp)            |         t9 = sym.print_log;
+    0x0040dcc0 addiu a1, s3, -0x749c         |         a1 = s3 + -0x749c;
+    0x0040dcc4 jalr t9                       |         t9 ();
+    0x0040dcc8 lw gp, 0x40(sp)               |         gp = *(var_40h);
+                                             |         if (s2 != 0) {
+    0x0040dccc beqz s2, 0x40dce4             |             
+    0x0040dcd0 nop                           |             
+    0x0040dcd4 lw t9, -0x7fc0(gp)            |             t9 = sym.imp.free;
+    0x0040dcd8 move a0, s2                   |             a0 = s2;
+    0x0040dcdc jalr t9                       |             t9 ();
+    0x0040dce0 lw gp, 0x40(sp)               |             gp = *(var_40h);
+                                             |         }
+    0x0040dce4 move v0, zero                 |         v0 = 0;
+    0x0040dce8 b 0x40d9e8                    |         
+                                             |     } while (1);
+                                             | label_7:
+    0x0040dcec lw t5, -0x7fe0(gp)            |     t5 = *((gp - 8184));
+    0x0040dcf0 lw t3, -0x7fe0(gp)            |     t3 = *((gp - 8184));
+    0x0040dcf4 lw t6, 8(s1)                  |     t6 = *((s1 + 2));
+    0x0040dcf8 addiu t4, t5, -0x746c         |     t4 = t5 + -0x746c;
+    0x0040dcfc addiu t2, t3, -0x7ba4         |     t2 = t3 + -0x7ba4;
+    0x0040dd00 lw t1, 0x14(s1)               |     t1 = *((s1 + 5));
+    0x0040dd04 lw t0, 0x34(s1)               |     t0 = *((s1 + 13));
+    0x0040dd08 lw a0, (s1)                   |     a0 = *(s1);
+    0x0040dd0c move a2, t1                   |     a2 = t1;
+    0x0040dd10 lw a1, 0x10(s1)               |     a1 = *((s1 + 4));
+    0x0040dd14 lw v1, -0x7fe0(gp)            |     v1 = *((gp - 8184));
+    0x0040dd18 lw ra, -0x7fe0(gp)            |     ra = *((gp - 8184));
+    0x0040dd1c lw s3, -0x7fe0(gp)            |     s3 = *((gp - 8184));
+    0x0040dd20 addiu v0, v1, -0x7468         |     v0 = v1 + -0x7468;
+    0x0040dd24 lw s0, -0x7fe0(gp)            |     s0 = *((gp - 8184));
+    0x0040dd28 addiu t8, ra, -0x7458         |     t8 = ra + -0x7458;
+    0x0040dd2c sw t6, 0x10(sp)               |     *(var_10h) = t6;
+    0x0040dd30 addiu s2, s3, -0x7444         |     s2 = s3 + -0x7444;
+    0x0040dd34 lw t6, -0x7fe0(gp)            |     t6 = *((gp - 8184));
+    0x0040dd38 addiu t7, s0, -0x7434         |     t7 = s0 + -0x7434;
+    0x0040dd3c sw t4, 0x14(sp)               |     *(var_14h) = t4;
+    0x0040dd40 sw t2, 0x1c(sp)               |     *(var_1ch) = t2;
+    0x0040dd44 addiu t5, t6, -0x7424         |     t5 = t6 + -0x7424;
+    0x0040dd48 lw t4, -0x7fe0(gp)            |     t4 = *((gp - 8184));
+    0x0040dd4c lw t2, -0x7fe0(gp)            |     t2 = *((gp - 8184));
+    0x0040dd50 lw t9, -0x7eb0(gp)            |     t9 = sym.dlna_dms_description_get;
+    0x0040dd54 addiu t3, t4, -0x7410         |     t3 = t4 + -0x7410;
+    0x0040dd58 sw t0, 0x20(sp)               |     *(var_20h) = t0;
+    0x0040dd5c addiu t0, t2, -0x7400         |     t0 = t2 + -0x7400;
+    0x0040dd60 sw s2, 0x2c(sp)               |     *(var_2ch) = s2;
+    0x0040dd64 sw v0, 0x24(sp)               |     *(var_24h) = v0;
+    0x0040dd68 sw t8, 0x28(sp)               |     *(var_28h) = t8;
+    0x0040dd6c sw t7, 0x30(sp)               |     *(var_30h) = t7;
+    0x0040dd70 sw t5, 0x34(sp)               |     *(var_34h) = t5;
+    0x0040dd74 sw t3, 0x38(sp)               |     *(var_38h) = t3;
+    0x0040dd78 sw t0, 0x3c(sp)               |     *(var_3ch) = t0;
+    0x0040dd7c sw t1, 0x18(sp)               |     *(var_18h) = t1;
+    0x0040dd80 jalr t9                       |     t9 ();
+    0x0040dd84 move s2, v0                   |     s2 = v0;
+    0x0040dd88 lw gp, 0x40(sp)               |     gp = *(var_40h);
+    0x0040dd8c addiu v0, zero, -1            |     v0 = -1;
+                                             |     if (s2 != 0) {
+    0x0040dd90 bnez s2, 0x40db18             |         goto label_0;
+                                             |     }
+    0x0040dd94 b 0x40d9e8                    |     goto label_1;
+    0x0040dd98 nop                           |     
+                                             | label_10:
+    0x0040dd9c lw t2, -0x7fe0(gp)            |     t2 = *((gp - 8184));
+    0x0040dda0 lw t9, -0x7d5c(gp)            |     t9 = sym.print_log;
+    0x0040dda4 addiu a1, t2, -0x73fc         |     a1 = t2 + -0x73fc;
+    0x0040dda8 jalr t9                       |     t9 ();
+    0x0040ddac lw gp, 0x40(sp)               |     gp = *(var_40h);
+    0x0040ddb0 b 0x40db74                    |     goto label_2;
+    0x0040ddb4 nop                           |     
+                                             | label_9:
+    0x0040ddb8 lw t0, -0x7fe0(gp)            |     t0 = *((gp - 8184));
+    0x0040ddbc lw t9, -0x7d5c(gp)            |     t9 = sym.print_log;
+    0x0040ddc0 addiu a1, t0, -0x73d0         |     a1 = t0 + -0x73d0;
+    0x0040ddc4 jalr t9                       |     t9 ();
+    0x0040ddc8 lw gp, 0x40(sp)               |     gp = *(var_40h);
+    0x0040ddcc b 0x40db68                    |     goto label_3;
+    0x0040ddd0 nop                           |     
+                                             | label_11:
+    0x0040ddd4 lw t5, -0x7fe0(gp)            |     t5 = *((gp - 8184));
+    0x0040ddd8 addiu a0, zero, 1             |     a0 = 1;
+    0x0040dddc lw t9, -0x7d5c(gp)            |     t9 = sym.print_log;
+    0x0040dde0 addiu a1, t5, -0x73b0         |     a1 = t5 + -0x73b0;
+    0x0040dde4 jalr t9                       |     t9 ();
+    0x0040dde8 lw gp, 0x40(sp)               |     gp = *(var_40h);
+    0x0040ddec lw t9, -0x7ca0(gp)            |     t9 = sym.dlna_init;
+    0x0040ddf0 jalr t9                       |     t9 ();
+    0x0040ddf4 nop                           |     
+    0x0040ddf8 lw gp, 0x40(sp)               |     gp = *(var_40h);
+    0x0040ddfc move a0, v0                   |     a0 = v0;
+    0x0040de00 lbu t4, 0x51(s1)              |     t4 = *((s1 + 81));
+    0x0040de04 lw t9, -0x7ea4(gp)            |     t9 = sym.dlna_set_verbosity;
+    0x0040de08 sltu a1, zero, t4             |     a1 = (0 < t4) ? 1 : 0;
+    0x0040de0c sw v0, 0x48(s1)               |     *((s1 + 18)) = v0;
+    0x0040de10 jalr t9                       |     t9 ();
+    0x0040de14 lw gp, 0x40(sp)               |     gp = *(var_40h);
+    0x0040de18 lw a0, 0x48(s1)               |     a0 = *((s1 + 18));
+    0x0040de1c lw t9, -0x7f94(gp)            |     t9 = sym.dlna_set_extension_check;
+    0x0040de20 addiu a1, zero, 1             |     a1 = 1;
+    0x0040de24 jalr t9                       |     t9 ();
+    0x0040de28 lw gp, 0x40(sp)               |     gp = *(var_40h);
+    0x0040de2c lw a0, 0x48(s1)               |     a0 = *((s1 + 18));
+    0x0040de30 lw t9, -0x7df4(gp)            |     t9 = sym.dlna_register_all_media_profiles;
+    0x0040de34 jalr t9                       |     t9 ();
+    0x0040de38 nop                           |     
+    0x0040de3c lw gp, 0x40(sp)               |     gp = *(var_40h);
+    0x0040de40 b 0x40db80                    |     goto label_4;
+    0x0040de44 nop                           |     
+                                             | label_14:
+    0x0040de48 lw a2, -0x7fe0(gp)            |     a2 = *((gp - 8184));
+    0x0040de4c addiu a0, zero, 2             |     a0 = 2;
+    0x0040de50 lw t9, -0x7d5c(gp)            |     t9 = sym.print_log;
+    0x0040de54 addiu a1, a2, -0x7388         |     a1 = a2 + -0x7388;
+                                             |     do {
+                                             | label_5:
+    0x0040de58 jalr t9                       |         t9 ();
+    0x0040de5c nop                           |         
+    0x0040de60 lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040de64 lw t9, -0x7fc0(gp)            |         t9 = sym.imp.free;
+    0x0040de68 move a0, s2                   |         a0 = s2;
+    0x0040de6c jalr t9                       |         t9 ();
+    0x0040de70 lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040de74 addiu v0, zero, -1            |         v0 = -1;
+    0x0040de78 b 0x40d9e8                    |         goto label_1;
+                                             | label_8:
+    0x0040de7c lw s1, -0x7fe0(gp)            |         s1 = *((gp - 8184));
+    0x0040de80 lw t9, -0x7d5c(gp)            |         t9 = sym.print_log;
+    0x0040de84 addiu a1, s1, -0x7368         |         a1 = s1 + -0x7368;
+    0x0040de88 jalr t9                       |         t9 ();
+    0x0040de8c lw gp, 0x40(sp)               |         gp = *(var_40h);
+    0x0040de90 addiu v0, zero, -1            |         v0 = -1;
+    0x0040de94 b 0x40d9e8                    |         goto label_1;
+                                             | label_12:
+    0x0040de98 lw t1, -0x7fe0(gp)            |         t1 = *((gp - 8184));
+    0x0040de9c lw t9, -0x7d5c(gp)            |         t9 = sym.print_log;
+    0x0040dea0 addiu a1, t1, -0x7344         |         a1 = t1 + -0x7344;
+    0x0040dea4 b 0x40de58                    |         
+                                             |     } while (1);
+                                             | label_13:
+    0x0040dea8 lw t8, -0x7fe0(gp)            |     t8 = *((gp - 8184));
+    0x0040deac addiu a0, zero, 2             |     a0 = 2;
+    0x0040deb0 lw t9, -0x7d5c(gp)            |     t9 = sym.print_log;
+    0x0040deb4 addiu a1, t8, -0x731c         |     a1 = t8 + -0x731c;
+    0x0040deb8 b 0x40de58                    |     goto label_5;
+                                             | label_15:
+    0x0040debc lw ra, -0x7fe0(gp)            |     ra = *((gp - 8184));
+    0x0040dec0 addiu a0, zero, 2             |     a0 = 2;
+    0x0040dec4 lw t9, -0x7d5c(gp)            |     t9 = sym.print_log;
+    0x0040dec8 addiu a1, ra, -0x72ec         |     a1 = ra + -0x72ec;
+    0x0040decc b 0x40de58                    |     goto label_5;
+                                             | }
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare @ 0x40e2c8 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) fcn.0040e2c8 ()                  | void fcn_0040e2c8 () {
+    0x0040e2c8 lui gp, 5                     |     
+    0x0040e2cc addiu gp, gp, 0x48f8          |     
+    0x0040e2d0 addu gp, gp, t9               |     gp += t9;
+    0x0040e2d4 addiu sp, sp, -0x50           |     
+    0x0040e2d8 sw ra, 0x48(sp)               |     *(var_48h) = ra;
+    0x0040e2dc sw s1, 0x44(sp)               |     *(var_44h) = s1;
+    0x0040e2e0 sw s0, 0x40(sp)               |     *(var_40h) = s0;
+    0x0040e2e4 sw gp, 0x18(sp)               |     *(var_18h) = gp;
+    0x0040e2e8 move a2, zero                 |     a2 = 0;
+    0x0040e2ec move s0, a0                   |     s0 = a0;
+    0x0040e2f0 addiu a1, zero, 2             |     a1 = 2;
+    0x0040e2f4 lw t9, -0x7d3c(gp)            |     t9 = sym.imp.socket;
+    0x0040e2f8 addiu a0, zero, 2             |     a0 = 2;
+    0x0040e2fc move v0, zero                 |     v0 = 0;
+                                             |     if (s0 == 0) {
+    0x0040e300 beqz s0, 0x40e3d4             |         goto label_0;
+                                             |     }
+    0x0040e304 jalr t9                       |     t9 ();
+    0x0040e308 nop                           |     
+    0x0040e30c move a1, s0                   |     a1 = s0;
+    0x0040e310 lw gp, 0x18(sp)               |     gp = *(var_18h);
+    0x0040e314 move s1, v0                   |     s1 = v0;
+    0x0040e318 lw t9, -0x7c74(gp)            |     t9 = sym.imp.strcpy;
+    0x0040e31c move v1, t9                   |     v1 = t9;
+    0x0040e320 lw t9, -0x7d00(gp)            |     t9 = sym.imp.perror;
+    0x0040e324 addiu a0, sp, 0x20            |     a0 = sp + 0x20;
+                                             |     if (v0 < 0) {
+    0x0040e328 bltz v0, 0x40e3e8             |         goto label_1;
+                                             |     }
+    0x0040e32c move t9, v1                   |     t9 = v1;
+    0x0040e330 jalr t9                       |     t9 ();
+    0x0040e334 nop                           |     
+    0x0040e338 addiu v0, zero, 2             |     v0 = 2;
+    0x0040e33c lw gp, 0x18(sp)               |     gp = *(var_18h);
+    0x0040e340 ori a1, zero, 0x8915          |     a1 = 0x8915;
+    0x0040e344 move a0, s1                   |     a0 = s1;
+    0x0040e348 addiu a2, sp, 0x20            |     a2 = sp + 0x20;
+    0x0040e34c lw t9, -0x7c7c(gp)            |     t9 = sym.imp.ioctl;
+    0x0040e350 sh v0, 0x30(sp)               |     *(var_30h) = v0;
+    0x0040e354 jalr t9                       |     t9 ();
+    0x0040e358 lw gp, 0x18(sp)               |     gp = *(var_18h);
+    0x0040e35c lw t9, -0x7d20(gp)            |     t9 = sym.imp.malloc;
+    0x0040e360 move a1, t9                   |     a1 = t9;
+    0x0040e364 lw t9, -0x7d00(gp)            |     t9 = sym.imp.perror;
+    0x0040e368 addiu a0, zero, 0x10          |     a0 = 0x10;
+                                             |     if (v0 < 0) {
+    0x0040e36c bltz v0, 0x40e400             |         goto label_2;
+                                             |     }
+    0x0040e370 move t9, a1                   |     t9 = a1;
+    0x0040e374 jalr t9                       |     t9 ();
+    0x0040e378 nop                           |     
+    0x0040e37c lw a2, 0x34(sp)               |     a2 = *(var_34h);
+    0x0040e380 move a0, v0                   |     a0 = v0;
+    0x0040e384 lw gp, 0x18(sp)               |     gp = *(var_18h);
+    0x0040e388 move s0, v0                   |     s0 = v0;
+    0x0040e38c srl t2, a2, 8                 |     t2 = a2 >> 8;
+    0x0040e390 andi t0, a2, 0xff             |     t0 = a2 & 0xff;
+    0x0040e394 lw a1, -0x7fe0(gp)            |     a1 = *((gp - 8184));
+    0x0040e398 andi t1, t2, 0xff             |     t1 = t2 & 0xff;
+[31m    0x0040e39c lw t9, -0x7ed0(gp)            |     t9 = sym.imp.sprintf;[0m
+    0x0040e3a0 srl a3, a2, 0x10              |     a3 = a2 >> 0x10;
+    0x0040e3a4 addiu a1, a1, -0x7cb0         |     a1 += -0x7cb0;
+    0x0040e3a8 srl a2, a2, 0x18              |     a2 >>= 0x18;
+    0x0040e3ac sw t1, 0x10(sp)               |     *(var_10h) = t1;
+    0x0040e3b0 andi a3, a3, 0xff             |     a3 &= 0xff;
+    0x0040e3b4 sw t0, 0x14(sp)               |     *(var_14h) = t0;
+    0x0040e3b8 jalr t9                       |     t9 ();
+    0x0040e3bc lw gp, 0x18(sp)               |     gp = *(var_18h);
+    0x0040e3c0 lw t9, -0x7fac(gp)            |     t9 = sym.imp.close;
+    0x0040e3c4 move a0, s1                   |     a0 = s1;
+    0x0040e3c8 jalr t9                       |     t9 ();
+    0x0040e3cc move v0, s0                   |     v0 = s0;
+    0x0040e3d0 lw gp, 0x18(sp)               |     gp = *(var_18h);
+                                             |     do {
+                                             | label_0:
+    0x0040e3d4 lw ra, 0x48(sp)               |         ra = *(var_48h);
+    0x0040e3d8 lw s1, 0x44(sp)               |         s1 = *(var_44h);
+    0x0040e3dc lw s0, 0x40(sp)               |         s0 = *(var_40h);
+    0x0040e3e0 addiu sp, sp, 0x50            |         
+    0x0040e3e4 jr ra                         |         return v0;
+                                             | label_1:
+    0x0040e3e8 lw a0, -0x7fe0(gp)            |         a0 = *((gp - 8184));
+    0x0040e3ec addiu a0, a0, -0x7260         |         a0 += -0x7260;
+    0x0040e3f0 jalr t9                       |         t9 ();
+    0x0040e3f4 lw gp, 0x18(sp)               |         gp = *(var_18h);
+    0x0040e3f8 move v0, zero                 |         v0 = 0;
+    0x0040e3fc b 0x40e3d4                    |         
+                                             |     } while (1);
+                                             | label_2:
+    0x0040e400 lw v1, -0x7fe0(gp)            |     v1 = *((gp - 8184));
+    0x0040e404 addiu a0, v1, -0x7268         |     a0 = v1 + -0x7268;
+    0x0040e408 jalr t9                       |     t9 ();
+    0x0040e40c lw gp, 0x18(sp)               |     gp = *(var_18h);
+    0x0040e410 lw t9, -0x7fac(gp)            |     t9 = sym.imp.close;
+    0x0040e414 move a0, s1                   |     a0 = s1;
+    0x0040e418 jalr t9                       |     t9 ();
+    0x0040e41c lw gp, 0x18(sp)               |     gp = *(var_18h);
+    0x0040e420 move v0, zero                 |     v0 = 0;
+    0x0040e424 b 0x40e3d4                    |     goto label_0;
+                                             | }
+    ; assembly                                   | /* r2dec pseudo code output */
+                                                 | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare @ 0x412460 */
+                                                 | #include <stdint.h>
+                                                 |  
+    ; (fcn) sym.dlna_dms_description_get ()      | void dlna_dms_description_get () {
+    0x00412460 lui gp, 5                         |     
+    0x00412464 addiu gp, gp, 0x760               |     
+    0x00412468 addu gp, gp, t9                   |     gp += t9;
+    0x0041246c addiu sp, sp, -0x80               |     
+    0x00412470 sw ra, 0x7c(sp)                   |     *(var_7ch) = ra;
+    0x00412474 sw fp, 0x78(sp)                   |     *(var_78h) = fp;
+    0x00412478 sw s7, 0x74(sp)                   |     *(var_74h) = s7;
+    0x0041247c sw s6, 0x70(sp)                   |     *(var_70h) = s6;
+    0x00412480 sw s5, 0x6c(sp)                   |     *(var_6ch) = s5;
+    0x00412484 sw s4, 0x68(sp)                   |     *(var_68h) = s4;
+    0x00412488 sw s3, 0x64(sp)                   |     *(var_64h) = s3;
+    0x0041248c sw s2, 0x60(sp)                   |     *(var_60h) = s2;
+    0x00412490 sw s1, 0x5c(sp)                   |     *(var_5ch) = s1;
+    0x00412494 sw s0, 0x58(sp)                   |     *(var_58h) = s0;
+    0x00412498 sw gp, 0x48(sp)                   |     *(var_48h) = gp;
+    0x0041249c sw a0, 0x80(sp)                   |     *(arg_80h) = a0;
+    0x004124a0 move s2, a1                       |     s2 = a1;
+    0x004124a4 move s3, a2                       |     s3 = a2;
+    0x004124a8 lw s5, 0x90(sp)                   |     s5 = *(arg_90h);
+    0x004124ac lw s6, 0x94(sp)                   |     s6 = *(arg_94h);
+    0x004124b0 lw s7, 0x98(sp)                   |     s7 = *(arg_98h);
+    0x004124b4 lw fp, 0x9c(sp)                   |     fp = *(arg_9ch);
+    0x004124b8 lw s1, 0xa0(sp)                   |     s1 = *(arg_a0h);
+    0x004124bc move s4, a3                       |     s4 = a3;
+                                                 |     if (a0 != 0) {
+    0x004124c0 beqz a0, 0x412748                 |         
+    0x004124c4 move v0, zero                     |         v0 = 0;
+                                                 |         if (a1 == 0) {
+    0x004124c8 beqz a1, 0x41274c                 |             goto label_0;
+                                                 |         }
+                                                 |         if (a2 == 0) {
+    0x004124cc beqz a2, 0x41274c                 |             goto label_0;
+                                                 |         }
+    0x004124d0 nop                               |         
+                                                 |         if (a3 == 0) {
+    0x004124d4 beqz a3, 0x41274c                 |             goto label_0;
+                                                 |         }
+    0x004124d8 nop                               |         
+                                                 |         if (s5 == 0) {
+    0x004124dc beqz s5, 0x41274c                 |             goto label_0;
+                                                 |         }
+    0x004124e0 nop                               |         
+                                                 |         if (s6 == 0) {
+    0x004124e4 beqz s6, 0x41274c                 |             goto label_0;
+                                                 |         }
+    0x004124e8 nop                               |         
+                                                 |         if (s7 == 0) {
+    0x004124ec beqz s7, 0x41274c                 |             goto label_0;
+                                                 |         }
+    0x004124f0 nop                               |         
+                                                 |         if (fp == 0) {
+    0x004124f4 beqz fp, 0x41274c                 |             goto label_0;
+                                                 |         }
+    0x004124f8 nop                               |         
+                                                 |         if (s1 == 0) {
+    0x004124fc beqz s1, 0x41274c                 |             goto label_0;
+                                                 |         }
+    0x00412500 nop                               |         
+    0x00412504 lw v0, 0xbc(sp)                   |         v0 = *(arg_bch);
+                                                 |         if (v0 == 0) {
+    0x00412508 beqz v0, 0x412748                 |             goto label_1;
+                                                 |         }
+    0x0041250c nop                               |         
+    0x00412510 lw v1, 0xa4(sp)                   |         v1 = *(arg_a4h);
+                                                 |         if (v1 == 0) {
+    0x00412514 beqz v1, 0x412748                 |             goto label_1;
+                                                 |         }
+    0x00412518 nop                               |         
+    0x0041251c lw a1, 0xa8(sp)                   |         a1 = *(arg_a8h);
+                                                 |         if (a1 == 0) {
+    0x00412520 beqz a1, 0x412748                 |             goto label_1;
+                                                 |         }
+    0x00412524 nop                               |         
+    0x00412528 lw a2, 0xac(sp)                   |         a2 = *(arg_ach);
+                                                 |         if (a2 == 0) {
+    0x0041252c beqz a2, 0x412748                 |             goto label_1;
+                                                 |         }
+    0x00412530 nop                               |         
+    0x00412534 lw a3, 0xb0(sp)                   |         a3 = *(arg_b0h);
+    0x00412538 move v0, zero                     |         v0 = 0;
+                                                 |         if (a3 == 0) {
+    0x0041253c beqz a3, 0x41274c                 |             goto label_0;
+                                                 |         }
+    0x00412540 lw t0, 0xb4(sp)                   |         t0 = *(arg_b4h);
+                                                 |         if (t0 == 0) {
+    0x00412544 beqz t0, 0x41274c                 |             goto label_0;
+                                                 |         }
+    0x00412548 nop                               |         
+    0x0041254c lw t1, 0xb8(sp)                   |         t1 = *(arg_b8h);
+                                                 |         if (t1 == 0) {
+    0x00412550 beqz t1, 0x41274c                 |             goto label_0;
+                                                 |         }
+    0x00412554 nop                               |         
+    0x00412558 lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x0041255c jalr t9                           |         t9 ();
+    0x00412560 nop                               |         
+    0x00412564 move a0, s2                       |         a0 = s2;
+    0x00412568 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x0041256c lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x00412570 move s0, v0                       |         s0 = v0;
+    0x00412574 jalr t9                           |         t9 ();
+    0x00412578 move a0, s3                       |         a0 = s3;
+    0x0041257c lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x00412580 lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x00412584 addu s0, s0, v0                   |         s0 += v0;
+    0x00412588 jalr t9                           |         t9 ();
+    0x0041258c move a0, s4                       |         a0 = s4;
+    0x00412590 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x00412594 lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x00412598 addu s0, s0, v0                   |         s0 += v0;
+    0x0041259c jalr t9                           |         t9 ();
+    0x004125a0 move a0, s5                       |         a0 = s5;
+    0x004125a4 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x004125a8 lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x004125ac addu s0, s0, v0                   |         s0 += v0;
+    0x004125b0 jalr t9                           |         t9 ();
+    0x004125b4 move a0, s6                       |         a0 = s6;
+    0x004125b8 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x004125bc lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x004125c0 addu s0, s0, v0                   |         s0 += v0;
+    0x004125c4 jalr t9                           |         t9 ();
+    0x004125c8 move a0, s7                       |         a0 = s7;
+    0x004125cc lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x004125d0 lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x004125d4 addu s0, s0, v0                   |         s0 += v0;
+    0x004125d8 jalr t9                           |         t9 ();
+    0x004125dc move a0, fp                       |         a0 = fp;
+    0x004125e0 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x004125e4 lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x004125e8 addu s0, s0, v0                   |         s0 += v0;
+    0x004125ec jalr t9                           |         t9 ();
+    0x004125f0 move a0, s1                       |         a0 = s1;
+    0x004125f4 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x004125f8 lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x004125fc addu s0, s0, v0                   |         s0 += v0;
+    0x00412600 jalr t9                           |         t9 ();
+    0x00412604 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x00412608 lw a0, 0xbc(sp)                   |         a0 = *(arg_bch);
+    0x0041260c lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x00412610 addu s0, s0, v0                   |         s0 += v0;
+    0x00412614 jalr t9                           |         t9 ();
+    0x00412618 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x0041261c lw a0, 0xa4(sp)                   |         a0 = *(arg_a4h);
+    0x00412620 lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x00412624 addu s0, s0, v0                   |         s0 += v0;
+    0x00412628 jalr t9                           |         t9 ();
+    0x0041262c lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x00412630 lw a0, 0xa8(sp)                   |         a0 = *(arg_a8h);
+    0x00412634 lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x00412638 addu s0, s0, v0                   |         s0 += v0;
+    0x0041263c jalr t9                           |         t9 ();
+    0x00412640 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x00412644 lw a0, 0xac(sp)                   |         a0 = *(arg_ach);
+    0x00412648 lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x0041264c addu s0, s0, v0                   |         s0 += v0;
+    0x00412650 jalr t9                           |         t9 ();
+    0x00412654 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x00412658 lw a0, 0xb0(sp)                   |         a0 = *(arg_b0h);
+    0x0041265c lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x00412660 addu s0, s0, v0                   |         s0 += v0;
+    0x00412664 jalr t9                           |         t9 ();
+    0x00412668 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x0041266c lw a0, 0xb4(sp)                   |         a0 = *(arg_b4h);
+    0x00412670 lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x00412674 addu s0, s0, v0                   |         s0 += v0;
+    0x00412678 jalr t9                           |         t9 ();
+    0x0041267c lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x00412680 lw a0, 0xb8(sp)                   |         a0 = *(arg_b8h);
+    0x00412684 lw t9, -0x7f70(gp)                |         t9 = sym.imp.strlen;
+    0x00412688 addu s0, s0, v0                   |         s0 += v0;
+    0x0041268c jalr t9                           |         t9 ();
+    0x00412690 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x00412694 addu a0, s0, v0                   |         a0 = s0 + v0;
+    0x00412698 addiu s0, a0, 0x60d               |         s0 = a0 + 0x60d;
+    0x0041269c lw t9, -0x7d20(gp)                |         t9 = sym.imp.malloc;
+    0x004126a0 move a0, s0                       |         a0 = s0;
+    0x004126a4 jalr t9                           |         t9 ();
+    0x004126a8 move a2, s0                       |         a2 = s0;
+    0x004126ac lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x004126b0 move a0, v0                       |         a0 = v0;
+    0x004126b4 move a1, zero                     |         a1 = 0;
+    0x004126b8 lw t9, -0x7e80(gp)                |         t9 = sym.imp.memset;
+    0x004126bc sw v0, 0x50(sp)                   |         *(var_50h) = v0;
+    0x004126c0 jalr t9                           |         t9 ();
+    0x004126c4 move a3, s2                       |         a3 = s2;
+    0x004126c8 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x004126cc lw s0, 0xa4(sp)                   |         s0 = *(arg_a4h);
+    0x004126d0 lw s2, -0x7fe0(gp)                |         s2 = *((gp - 8184));
+    0x004126d4 lw t7, 0xa8(sp)                   |         t7 = *(arg_a8h);
+    0x004126d8 lw t6, 0xac(sp)                   |         t6 = *(arg_ach);
+                                                 |         /* esilref: '<?xml version="1.0" encoding="utf-8"?><root xmlns="urn:schemas-upnp-org:device-1-0">  <specVersion>    <major>1</major>    <minor>0</minor>  </specVersion>  <device>    <deviceType>urn:schemas-upnp-org:device:MediaServer:1</deviceType>    <friendlyName>&s' */
+    0x004126dc addiu a1, s2, -0x6730             |         a1 = s2 + -0x6730;
+    0x004126e0 lw t5, 0xb0(sp)                   |         t5 = *(arg_b0h);
+    0x004126e4 lw t4, 0xb4(sp)                   |         t4 = *(arg_b4h);
+    0x004126e8 lw t3, 0xb8(sp)                   |         t3 = *(arg_b8h);
+    0x004126ec lw t2, 0xbc(sp)                   |         t2 = *(arg_bch);
+[31m    0x004126f0 lw t9, -0x7ed0(gp)                |         t9 = sym.imp.sprintf;[0m
+    0x004126f4 lw a2, 0x80(sp)                   |         a2 = *(arg_80h);
+    0x004126f8 lw a0, 0x50(sp)                   |         a0 = *(var_50h);
+    0x004126fc sw s3, 0x10(sp)                   |         *(var_10h) = s3;
+    0x00412700 sw s4, 0x14(sp)                   |         *(var_14h) = s4;
+    0x00412704 sw s5, 0x18(sp)                   |         *(var_18h) = s5;
+    0x00412708 sw s6, 0x1c(sp)                   |         *(var_1ch) = s6;
+    0x0041270c sw s7, 0x20(sp)                   |         *(var_20h) = s7;
+    0x00412710 sw fp, 0x24(sp)                   |         *(var_24h) = fp;
+    0x00412714 sw s1, 0x28(sp)                   |         *(var_28h) = s1;
+    0x00412718 sw s0, 0x2c(sp)                   |         *(var_2ch) = s0;
+    0x0041271c sw t7, 0x30(sp)                   |         *(var_30h) = t7;
+    0x00412720 sw t6, 0x34(sp)                   |         *(var_34h) = t6;
+    0x00412724 sw t5, 0x38(sp)                   |         *(var_38h) = t5;
+    0x00412728 sw t4, 0x3c(sp)                   |         *(var_3ch) = t4;
+    0x0041272c sw t3, 0x40(sp)                   |         *(var_40h) = t3;
+    0x00412730 sw t2, 0x44(sp)                   |         *(var_44h) = t2;
+    0x00412734 jalr t9                           |         t9 ();
+    0x00412738 lw gp, 0x48(sp)                   |         gp = *(var_48h);
+    0x0041273c lw v0, 0x50(sp)                   |         v0 = *(var_50h);
+    0x00412740 b 0x41274c                        |         goto label_0;
+    0x00412744 nop                               |         
+                                                 |     }
+                                                 | label_1:
+    0x00412748 move v0, zero                     |     v0 = 0;
+                                                 | label_0:
+    0x0041274c lw ra, 0x7c(sp)                   |     ra = *(var_7ch);
+    0x00412750 lw fp, 0x78(sp)                   |     fp = *(var_78h);
+    0x00412754 lw s7, 0x74(sp)                   |     s7 = *(var_74h);
+    0x00412758 lw s6, 0x70(sp)                   |     s6 = *(var_70h);
+    0x0041275c lw s5, 0x6c(sp)                   |     s5 = *(var_6ch);
+    0x00412760 lw s4, 0x68(sp)                   |     s4 = *(var_68h);
+    0x00412764 lw s3, 0x64(sp)                   |     s3 = *(var_64h);
+    0x00412768 lw s2, 0x60(sp)                   |     s2 = *(var_60h);
+    0x0041276c lw s1, 0x5c(sp)                   |     s1 = *(var_5ch);
+    0x00412770 lw s0, 0x58(sp)                   |     s0 = *(var_58h);
+    0x00412774 addiu sp, sp, 0x80                |     
+    0x00412778 jr ra                             |     return v0;
+                                                 | }
+    ; assembly                                   | /* r2dec pseudo code output */
+                                                 | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare @ 0x411e80 */
+                                                 | #include <stdint.h>
+                                                 |  
+    ; (fcn) sym.dlna_write_protocol_info ()      | void dlna_write_protocol_info () {
+    0x00411e80 lui gp, 5                         |     
+    0x00411e84 addiu gp, gp, 0xd40               |     
+    0x00411e88 addu gp, gp, t9                   |     gp += t9;
+    0x00411e8c addiu sp, sp, -0x418              |     
+    0x00411e90 sw ra, 0x414(sp)                  |     *(var_414h) = ra;
+    0x00411e94 sw s4, 0x410(sp)                  |     *(var_410h) = s4;
+    0x00411e98 sw s3, 0x40c(sp)                  |     *(var_40ch) = s3;
+    0x00411e9c sw s2, 0x408(sp)                  |     *(var_408h) = s2;
+    0x00411ea0 sw s1, 0x404(sp)                  |     *(var_404h) = s1;
+    0x00411ea4 sw s0, 0x400(sp)                  |     *(var_400h) = s0;
+    0x00411ea8 sw gp, 0x38(sp)                   |     *(var_38h) = gp;
+    0x00411eac lw t0, 0x42c(sp)                  |     t0 = *(arg_42ch);
+    0x00411eb0 move s2, a1                       |     s2 = a1;
+    0x00411eb4 move s3, a2                       |     s3 = a2;
+    0x00411eb8 lw v1, (t0)                       |     v1 = *(t0);
+    0x00411ebc sltiu v0, v1, 0x1d                |     v0 = (v1 < 0x1d) ? 1 : 0;
+    0x00411ec0 move s4, a3                       |     s4 = a3;
+                                                 |     if (v0 != 0) {
+    0x00411ec4 bnez v0, 0x411f94                 |         goto label_2;
+                                                 |     }
+    0x00411ec8 lw v0, -0x7d94(gp)                |     v0 = *(gp);
+    0x00411ecc addiu a2, zero, 1                 |     a2 = 1;
+    0x00411ed0 lw s0, (v0)                       |     s0 = *(v0);
+                                                 |     if (a0 == a2) {
+    0x00411ed4 beq a0, a2, 0x411fb0              |         goto label_3;
+                                                 |     }
+    0x00411ed8 nop                               |     
+                                                 |     do {
+    0x00411edc lw v1, 4(t0)                      |         v1 = *((t0 + 1));
+    0x00411ee0 sltiu t0, v1, 0x22                |         t0 = (v1 < 0x22) ? 1 : 0;
+                                                 |         if (t0 != 0) {
+    0x00411ee4 bnez t0, 0x411fe0                 |             goto label_4;
+                                                 |         }
+    0x00411ee8 nop                               |         
+                                                 | label_0:
+    0x00411eec lw v0, -0x7eb8(gp)                |         v0 = *(gp);
+    0x00411ef0 lw t9, -0x7dbc(gp)                |         t9 = sym.imp.strcat;
+    0x00411ef4 lw a1, (v0)                       |         a1 = *(v0);
+    0x00411ef8 addiu a0, sp, 0x40                |         a0 = sp + 0x40;
+    0x00411efc jalr t9                           |         t9 ();
+    0x00411f00 move a0, s0                       |         a0 = s0;
+    0x00411f04 lw gp, 0x38(sp)                   |         gp = *(var_38h);
+    0x00411f08 lw t6, -0x7fe0(gp)                |         t6 = *((gp - 8184));
+    0x00411f0c lw t9, -0x7eb4(gp)                |         t9 = sym.imp.strcmp;
+                                                 |         /* esilref: 'wav' */
+    0x00411f10 addiu a1, t6, -0x6c44             |         a1 = t6 + -0x6c44;
+    0x00411f14 jalr t9                           |         t9 ();
+    0x00411f18 lw gp, 0x38(sp)                   |         gp = *(var_38h);
+                                                 |         if (v0 != 0) {
+    0x00411f1c bnez v0, 0x412020                 |             goto label_5;
+                                                 |         }
+    0x00411f20 nop                               |         
+                                                 | label_1:
+    0x00411f24 lw t8, -0x7fe0(gp)                |         t8 = *((gp - 8184));
+    0x00411f28 addiu s1, sp, 0x240               |         s1 = sp + 0x240;
+    0x00411f2c lw t9, -0x7dbc(gp)                |         t9 = sym.imp.strcat;
+    0x00411f30 move a1, s1                       |         a1 = s1;
+                                                 |         /* esilref: ':DLNA.ORG_OP=01' */
+    0x00411f34 addiu s4, t8, -0x6970             |         s4 = t8 + -0x6970;
+    0x00411f38 addiu a0, sp, 0x40                |         a0 = sp + 0x40;
+    0x00411f3c lw t7, 0xc(s4)                    |         t7 = *((s4 + 3));
+    0x00411f40 lw s3, -0x6970(t8)                |         s3 = *((t8 - 6748));
+    0x00411f44 lw s2, 4(s4)                      |         s2 = *((s4 + 1));
+    0x00411f48 lw s0, 8(s4)                      |         s0 = *((s4 + 2));
+    0x00411f4c sw s3, 0x240(sp)                  |         *(var_240h) = s3;
+    0x00411f50 sw s2, 0x244(sp)                  |         *(var_244h) = s2;
+    0x00411f54 sw s0, 0x248(sp)                  |         *(var_248h) = s0;
+    0x00411f58 sw t7, 0x24c(sp)                  |         *(var_24ch) = t7;
+    0x00411f5c jalr t9                           |         t9 ();
+    0x00411f60 lw gp, 0x38(sp)                   |         gp = *(var_38h);
+    0x00411f64 lw t9, -0x7e6c(gp)                |         t9 = sym.imp.strdup;
+    0x00411f68 addiu a0, sp, 0x40                |         a0 = sp + 0x40;
+    0x00411f6c jalr t9                           |         t9 ();
+    0x00411f70 lw gp, 0x38(sp)                   |         gp = *(var_38h);
+    0x00411f74 lw ra, 0x414(sp)                  |         ra = *(var_414h);
+    0x00411f78 lw s4, 0x410(sp)                  |         s4 = *(var_410h);
+    0x00411f7c lw s3, 0x40c(sp)                  |         s3 = *(var_40ch);
+    0x00411f80 lw s2, 0x408(sp)                  |         s2 = *(var_408h);
+    0x00411f84 lw s1, 0x404(sp)                  |         s1 = *(var_404h);
+    0x00411f88 lw s0, 0x400(sp)                  |         s0 = *(var_400h);
+    0x00411f8c addiu sp, sp, 0x418               |         
+    0x00411f90 jr ra                             |         return v0;
+                                                 | label_2:
+    0x00411f94 sll a1, v1, 2                     |         a1 = v1 << 2;
+    0x00411f98 addiu a2, zero, 1                 |         a2 = 1;
+    0x00411f9c lw v1, -0x7d94(gp)                |         v1 = *(gp);
+    0x00411fa0 addu v0, a1, v1                   |         v0 = a1 + v1;
+    0x00411fa4 lw s0, (v0)                       |         s0 = *(v0);
+    0x00411fa8 bne a0, a2, 0x411edc              |         
+                                                 |     } while (a0 != a2);
+    0x00411fac nop                               |     
+                                                 | label_3:
+    0x00411fb0 lw t3, -0x7fe0(gp)                |     t3 = *((gp - 8184));
+                                                 |     /* esilref: 'http-get:*:' */
+    0x00411fb4 addiu t2, t3, -0x6960             |     t2 = t3 + -0x6960;
+    0x00411fb8 lw a3, 8(t2)                      |     a3 = *((t2 + 2));
+    0x00411fbc lw a0, -0x6960(t3)                |     a0 = *((t3 - 6744));
+    0x00411fc0 lw t1, 4(t2)                      |     t1 = *((t2 + 1));
+    0x00411fc4 sw a0, 0x40(sp)                   |     *(var_40h) = a0;
+    0x00411fc8 sw t1, 0x44(sp)                   |     *(var_44h) = t1;
+    0x00411fcc sw a3, 0x48(sp)                   |     *(var_48h) = a3;
+    0x00411fd0 lw v1, 4(t0)                      |     v1 = *((t0 + 1));
+    0x00411fd4 sltiu t0, v1, 0x22                |     t0 = (v1 < 0x22) ? 1 : 0;
+                                                 |     if (t0 == 0) {
+    0x00411fd8 beqz t0, 0x411eec                 |         goto label_0;
+                                                 |     }
+    0x00411fdc nop                               |     
+                                                 | label_4:
+    0x00411fe0 lw t5, -0x7eb8(gp)                |     t5 = *(gp);
+    0x00411fe4 sll t4, v1, 2                     |     t4 = v1 << 2;
+    0x00411fe8 lw t9, -0x7dbc(gp)                |     t9 = sym.imp.strcat;
+    0x00411fec addu v0, t4, t5                   |     v0 = t4 + t5;
+    0x00411ff0 lw a1, (v0)                       |     a1 = *(v0);
+    0x00411ff4 addiu a0, sp, 0x40                |     a0 = sp + 0x40;
+    0x00411ff8 jalr t9                           |     t9 ();
+    0x00411ffc move a0, s0                       |     a0 = s0;
+    0x00412000 lw gp, 0x38(sp)                   |     gp = *(var_38h);
+    0x00412004 lw t6, -0x7fe0(gp)                |     t6 = *((gp - 8184));
+    0x00412008 lw t9, -0x7eb4(gp)                |     t9 = sym.imp.strcmp;
+                                                 |     /* esilref: 'wav' */
+    0x0041200c addiu a1, t6, -0x6c44             |     a1 = t6 + -0x6c44;
+    0x00412010 jalr t9                           |     t9 ();
+    0x00412014 lw gp, 0x38(sp)                   |     gp = *(var_38h);
+                                                 |     if (v0 == 0) {
+    0x00412018 beqz v0, 0x411f24                 |         goto label_1;
+                                                 |     }
+    0x0041201c nop                               |     
+                                                 | label_5:
+    0x00412020 lw t4, -0x7fe0(gp)                |     t4 = *((gp - 8184));
+    0x00412024 addiu s1, sp, 0x240               |     s1 = sp + 0x240;
+    0x00412028 lw t0, -0x7fe0(gp)                |     t0 = *((gp - 8184));
+    0x0041202c move a3, s2                       |     a3 = s2;
+    0x00412030 lw t2, -0x7fe0(gp)                |     t2 = *((gp - 8184));
+                                                 |     /* esilref: 'DLNA.ORG_CI' */
+    0x00412034 addiu a0, t4, -0x6954             |     a0 = t4 + -0x6954;
+    0x00412038 lw v1, -0x7fe0(gp)                |     v1 = *((gp - 8184));
+                                                 |     /* esilref: 'DLNA.ORG_OP' */
+    0x0041203c addiu t3, t0, -0x6948             |     t3 = t0 + -0x6948;
+    0x00412040 lw ra, 0x428(sp)                  |     ra = *(arg_428h);
+                                                 |     /* esilref: 'DLNA.ORG_PN' */
+    0x00412044 addiu t1, t2, -0x693c             |     t1 = t2 + -0x693c;
+    0x00412048 lw a1, -0x7fe0(gp)                |     a1 = *((gp - 8184));
+                                                 |     /* esilref: 'DLNA.ORG_FLAGS' */
+    0x0041204c addiu v0, v1, -0x6930             |     v0 = v1 + -0x6930;
+    0x00412050 lw a2, -0x7fe0(gp)                |     a2 = *((gp - 8184));
+[31m    0x00412054 lw t9, -0x7ed0(gp)                |     t9 = sym.imp.sprintf;[0m
+                                                 |     /* esilref: ':&s=&d;&s=&d;&s=&.2x;&s=&s;&s=&.8x&.24x' */
+    0x00412058 addiu a1, a1, -0x6920             |     a1 += -0x6920;
+    0x0041205c sw ra, 0x2c(sp)                   |     *(var_2ch) = ra;
+                                                 |     /* esilref: 'DLNA.ORG_PS' */
+    0x00412060 addiu a2, a2, -0x68f8             |     a2 += -0x68f8;
+    0x00412064 sw t3, 0x18(sp)                   |     *(var_18h) = t3;
+    0x00412068 sw t1, 0x20(sp)                   |     *(var_20h) = t1;
+    0x0041206c sw a0, 0x10(sp)                   |     *(var_10h) = a0;
+    0x00412070 move a0, s1                       |     a0 = s1;
+    0x00412074 sw s3, 0x14(sp)                   |     *(var_14h) = s3;
+    0x00412078 sw s4, 0x1c(sp)                   |     *(var_1ch) = s4;
+    0x0041207c sw s0, 0x24(sp)                   |     *(var_24h) = s0;
+    0x00412080 sw v0, 0x28(sp)                   |     *(var_28h) = v0;
+    0x00412084 sw zero, 0x30(sp)                 |     *(var_30h) = 0;
+    0x00412088 jalr t9                           |     t9 ();
+    0x0041208c move a1, s1                       |     a1 = s1;
+    0x00412090 lw gp, 0x38(sp)                   |     gp = *(var_38h);
+    0x00412094 lw t9, -0x7dbc(gp)                |     t9 = sym.imp.strcat;
+    0x00412098 addiu a0, sp, 0x40                |     a0 = sp + 0x40;
+    0x0041209c jalr t9                           |     t9 ();
+    0x004120a0 lw gp, 0x38(sp)                   |     gp = *(var_38h);
+    0x004120a4 lw t9, -0x7e6c(gp)                |     t9 = sym.imp.strdup;
+    0x004120a8 addiu a0, sp, 0x40                |     a0 = sp + 0x40;
+    0x004120ac jalr t9                           |     t9 ();
+    0x004120b0 lw gp, 0x38(sp)                   |     gp = *(var_38h);
+    0x004120b4 lw ra, 0x414(sp)                  |     ra = *(var_414h);
+    0x004120b8 lw s4, 0x410(sp)                  |     s4 = *(var_410h);
+    0x004120bc lw s3, 0x40c(sp)                  |     s3 = *(var_40ch);
+    0x004120c0 lw s2, 0x408(sp)                  |     s2 = *(var_408h);
+    0x004120c4 lw s1, 0x404(sp)                  |     s1 = *(var_404h);
+    0x004120c8 lw s0, 0x400(sp)                  |     s0 = *(var_400h);
+    0x004120cc addiu sp, sp, 0x418               |     
+    0x004120d0 jr ra                             |     return v0;
+                                                 | }
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare @ 0x40e880 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) sym.initUshare ()                | void initUshare () {
+    0x0040e880 lui gp, 5                     |     
+    0x0040e884 addiu gp, gp, 0x4340          |     
+    0x0040e888 addu gp, gp, t9               |     gp += t9;
+    0x0040e88c addiu sp, sp, -0x40           |     
+    0x0040e890 sw ra, 0x38(sp)               |     *(var_38h) = ra;
+    0x0040e894 sw s7, 0x34(sp)               |     *(var_34h) = s7;
+    0x0040e898 sw s6, 0x30(sp)               |     *(var_30h) = s6;
+    0x0040e89c sw s5, 0x2c(sp)               |     *(var_2ch) = s5;
+    0x0040e8a0 sw s4, 0x28(sp)               |     *(var_28h) = s4;
+    0x0040e8a4 sw s3, 0x24(sp)               |     *(var_24h) = s3;
+    0x0040e8a8 sw s2, 0x20(sp)               |     *(var_20h) = s2;
+    0x0040e8ac sw s1, 0x1c(sp)               |     *(var_1ch) = s1;
+    0x0040e8b0 sw s0, 0x18(sp)               |     *(var_18h) = s0;
+    0x0040e8b4 sw gp, 0x10(sp)               |     *(var_10h) = gp;
+    0x0040e8b8 lw v0, -0x7fd8(gp)            |     v0 = *((gp - 8182));
+    0x0040e8bc move s0, a0                   |     s0 = a0;
+    0x0040e8c0 addiu t9, v0, -0x2d50         |     t9 = v0 + -0x2d50;
+    0x0040e8c4 move s1, a1                   |     s1 = a1;
+    0x0040e8c8 jalr t9                       |     t9 ();
+    0x0040e8cc addiu v1, zero, 1             |     v1 = 1;
+    0x0040e8d0 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040e8d4 lw s7, -0x7e7c(gp)            |     s7 = *(gp);
+    0x0040e8d8 sw v0, (s7)                   |     *(s7) = v0;
+                                             |     if (v0 == 0) {
+    0x0040e8dc beqz v0, 0x40eb48             |         goto label_11;
+                                             |     }
+    0x0040e8e0 lw t9, -0x7cd0(gp)            |     t9 = sym.setup_iconv;
+    0x0040e8e4 jalr t9                       |     t9 ();
+    0x0040e8e8 nop                           |     
+    0x0040e8ec move a1, s0                   |     a1 = s0;
+    0x0040e8f0 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040e8f4 lw a0, (s7)                   |     a0 = *(s7);
+    0x0040e8f8 lw t9, -0x7eec(gp)            |     t9 = sym.parse_command_line;
+    0x0040e8fc move a2, s1                   |     a2 = s1;
+    0x0040e900 jalr t9                       |     t9 ();
+    0x0040e904 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             |     if (v0 < 0) {
+    0x0040e908 bltz v0, 0x40edf8             |         goto label_13;
+                                             |     }
+    0x0040e90c nop                           |     
+    0x0040e910 lw t9, -0x7ddc(gp)            |     t9 = sym.parse_config_file;
+    0x0040e914 lw a0, (s7)                   |     a0 = *(s7);
+    0x0040e918 jalr t9                       |     t9 ();
+    0x0040e91c nop                           |     
+    0x0040e920 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             |     if (v0 < 0) {
+    0x0040e924 bltz v0, 0x40eb78             |         goto label_14;
+                                             |     }
+    0x0040e928 nop                           |     
+    0x0040e92c lw a0, (s7)                   |     a0 = *(s7);
+    0x0040e930 lw s1, -0x7e7c(gp)            |     s1 = *(gp);
+    0x0040e934 lw v0, (a0)                   |     v0 = *(a0);
+                                             |     if (v0 != 0) {
+    0x0040e938 bnez v0, 0x40ebc0             |         goto label_15;
+                                             |     }
+    0x0040e93c nop                           |     
+                                             | label_1:
+    0x0040e940 lw s4, -0x7eac(gp)            |     s4 = *(gp);
+    0x0040e944 lw v1, 0x10(a0)               |     v1 = *((a0 + 4));
+    0x0040e948 addiu a2, s4, 4               |     a2 = s4 + 4;
+    0x0040e94c sw a2, (a0)                   |     *(a0) = a2;
+                                             |     if (v1 != 0) {
+    0x0040e950 bnez v1, 0x40ebe8             |         goto label_16;
+                                             |     }
+                                             | label_2:
+    0x0040e954 lw v1, 0x14(a0)               |     v1 = *((a0 + 5));
+    0x0040e958 addiu t1, s4, 0x24            |     t1 = s4 + 0x24;
+    0x0040e95c sw t1, 0x10(a0)               |     *((a0 + 4)) = t1;
+                                             |     if (v1 != 0) {
+    0x0040e960 bnez v1, 0x40ec0c             |         goto label_17;
+                                             |     }
+                                             | label_3:
+    0x0040e964 lw v0, 8(a0)                  |     v0 = *((a0 + 2));
+    0x0040e968 addiu s0, s4, 0x44            |     s0 = s4 + 0x44;
+    0x0040e96c sw s0, 0x14(a0)               |     *((a0 + 5)) = s0;
+                                             |     if (v0 != 0) {
+    0x0040e970 bnez v0, 0x40ec30             |         goto label_18;
+                                             |     }
+                                             | label_4:
+    0x0040e974 lw v1, 0xc(a0)                |     v1 = *((a0 + 3));
+    0x0040e978 addiu t2, s4, 0x74            |     t2 = s4 + 0x74;
+    0x0040e97c sw t2, 8(a0)                  |     *((a0 + 2)) = t2;
+                                             |     if (v1 != 0) {
+    0x0040e980 bnez v1, 0x40ec54             |         goto label_19;
+                                             |     }
+                                             | label_5:
+    0x0040e984 lw a0, 0x18(a0)               |     a0 = *((a0 + 6));
+                                             |     if (a0 != 0) {
+    0x0040e988 bnez a0, 0x40ec78             |         goto label_20;
+                                             |     }
+    0x0040e98c nop                           |     
+                                             | label_6:
+    0x0040e990 lw t4, 0x8c(s4)               |     t4 = *((s4 + 35));
+    0x0040e994 move s2, zero                 |     s2 = 0;
+                                             |     if (t4 <= 0) {
+    0x0040e998 blez t4, 0x40ea04             |         goto label_21;
+                                             |     }
+    0x0040e99c move s3, s4                   |     s3 = s4;
+    0x0040e9a0 move s1, zero                 |     s1 = 0;
+    0x0040e9a4 addiu s6, s4, 0xa4            |     s6 = s4 + 0xa4;
+    0x0040e9a8 addiu s5, s4, 0x94            |     s5 = s4 + 0x94;
+    0x0040e9ac b 0x40e9c0                    |     
+                                             |     while (t5 == 0) {
+    0x0040e9b0 lw t8, 0x8c(s3)               |         t8 = *((s3 + 35));
+    0x0040e9b4 slt t7, s2, t8                |         t7 = (s2 < t8) ? 1 : 0;
+                                             |         if (t7 == 0) {
+    0x0040e9b8 beqz t7, 0x40ea04             |             goto label_21;
+                                             |         }
+    0x0040e9bc nop                           |         
+                                             | label_0:
+    0x0040e9c0 addu t6, s1, s4               |         t6 = s1 + s4;
+    0x0040e9c4 addu a1, s1, s6               |         a1 = s1 + s6;
+    0x0040e9c8 lb t5, 0xa4(t6)               |         t5 = *((t6 + 164));
+    0x0040e9cc addu a2, s1, s5               |         a2 = s1 + s5;
+    0x0040e9d0 addiu s2, s2, 1               |         s2++;
+    0x0040e9d4 lw t9, -0x7d8c(gp)            |         t9 = sym.content_add;
+    0x0040e9d8 addiu s1, s1, 0xac            |         s1 += 0xac;
+    0x0040e9dc beqz t5, 0x40e9b0             |         
+                                             |     }
+    0x0040e9e0 lw s0, (s7)                   |     s0 = *(s7);
+    0x0040e9e4 lw a0, 0x18(s0)               |     a0 = *((s0 + 6));
+    0x0040e9e8 jalr t9                       |     t9 ();
+    0x0040e9ec nop                           |     
+    0x0040e9f0 lw t8, 0x8c(s3)               |     t8 = *((s3 + 35));
+    0x0040e9f4 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040e9f8 slt t7, s2, t8                |     t7 = (s2 < t8) ? 1 : 0;
+    0x0040e9fc sw v0, 0x18(s0)               |     *((s0 + 6)) = v0;
+                                             |     if (t7 != 0) {
+    0x0040ea00 bnez t7, 0x40e9c0             |         goto label_0;
+                                             |     }
+                                             | label_21:
+    0x0040ea04 lw s0, (s7)                   |     s0 = *(s7);
+    0x0040ea08 lw s2, -0x7e7c(gp)            |     s2 = *(gp);
+    0x0040ea0c lw s1, 0x18(s0)               |     s1 = *((s0 + 6));
+                                             |     if (s1 == 0) {
+    0x0040ea10 beqz s1, 0x40edcc             |         goto label_22;
+                                             |     }
+    0x0040ea14 nop                           |     
+                                             | label_10:
+    0x0040ea18 lbu s4, 0x50(s0)              |     s4 = *((s0 + 80));
+                                             |     if (s4 != 0) {
+    0x0040ea1c bnez s4, 0x40ed44             |         goto label_23;
+                                             |     }
+    0x0040ea20 nop                           |     
+                                             | label_9:
+    0x0040ea24 lbu a1, 0x52(s0)              |     a1 = *((s0 + 82));
+                                             |     if (a1 != 0) {
+    0x0040ea28 bnez a1, 0x40ed28             |         goto label_24;
+                                             |     }
+    0x0040ea2c nop                           |     
+                                             | label_8:
+    0x0040ea30 lw a3, -0x7fd8(gp)            |     a3 = *((gp - 8182));
+    0x0040ea34 lw a0, 4(s0)                  |     a0 = *((s0 + 1));
+    0x0040ea38 addiu t9, a3, -0x2130         |     t9 = a3 + -0x2130;
+    0x0040ea3c jalr t9                       |     t9 ();
+    0x0040ea40 nop                           |     
+    0x0040ea44 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             |     if (v0 == 0) {
+    0x0040ea48 beqz v0, 0x40ecdc             |         goto label_25;
+                                             |     }
+    0x0040ea4c nop                           |     
+    0x0040ea50 lw s3, (s2)                   |     s3 = *(s2);
+    0x0040ea54 lw a2, -0x7fd8(gp)            |     a2 = *((gp - 8182));
+    0x0040ea58 lw a0, 4(s3)                  |     a0 = *((s3 + 1));
+    0x0040ea5c addiu t9, a2, -0x1ec4         |     t9 = a2 + -0x1ec4;
+    0x0040ea60 jalr t9                       |     t9 ();
+    0x0040ea64 nop                           |     
+    0x0040ea68 lw s1, (s2)                   |     s1 = *(s2);
+    0x0040ea6c sw v0, 0x34(s3)               |     *((s3 + 13)) = v0;
+    0x0040ea70 lw t0, 0x34(s1)               |     t0 = *((s1 + 13));
+    0x0040ea74 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040ea78 move a0, s1                   |     a0 = s1;
+                                             |     if (t0 == 0) {
+    0x0040ea7c beqz t0, 0x40ece0             |         goto label_12;
+                                             |     }
+    0x0040ea80 lw t2, -0x7fd8(gp)            |     t2 = *((gp - 8182));
+    0x0040ea84 lw a0, 4(s1)                  |     a0 = *((s1 + 1));
+    0x0040ea88 addiu t9, t2, -0x1d38         |     t9 = t2 + -0x1d38;
+    0x0040ea8c jalr t9                       |     t9 ();
+    0x0040ea90 nop                           |     
+    0x0040ea94 lw a0, (s2)                   |     a0 = *(s2);
+    0x0040ea98 sw v0, 0x38(s1)               |     *((s1 + 14)) = v0;
+    0x0040ea9c lw t1, 0x38(a0)               |     t1 = *((a0 + 14));
+    0x0040eaa0 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             |     if (t1 == 0) {
+    0x0040eaa4 beqz t1, 0x40ece0             |         goto label_12;
+                                             |     }
+    0x0040eaa8 nop                           |     
+    0x0040eaac lbu t3, 0x52(a0)              |     t3 = *((a0 + 82));
+    0x0040eab0 move a0, zero                 |     a0 = 0;
+                                             |     if (t3 != 0) {
+    0x0040eab4 bnez t3, 0x40ec94             |         goto label_26;
+                                             |     }
+    0x0040eab8 lw t5, -0x7fe0(gp)            |     t5 = *((gp - 8184));
+    0x0040eabc lw t4, -0x7fe0(gp)            |     t4 = *((gp - 8184));
+    0x0040eac0 lw s2, -0x7fe0(gp)            |     s2 = *((gp - 8184));
+                                             |     /* esilref: '&s (version &s), a lightweight UPnP A/V and DLNA Media Server.
+' */
+    0x0040eac4 addiu a0, t5, -0x71c0         |     a0 = t5 + -0x71c0;
+    0x0040eac8 lw t9, -0x7c90(gp)            |     t9 = sym.imp.printf;
+                                             |     /* esilref: 'uShare' */
+    0x0040eacc addiu a1, t4, -0x7cc0         |     a1 = t4 + -0x7cc0;
+                                             |     /* esilref: '1.1a' */
+    0x0040ead0 addiu a2, s2, -0x7180         |     a2 = s2 + -0x7180;
+    0x0040ead4 jalr t9                       |     t9 ();
+    0x0040ead8 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             | label_7:
+    0x0040eadc lw t8, -0x7fd8(gp)            |     t8 = *((gp - 8182));
+    0x0040eae0 addiu a0, zero, 2             |     a0 = 2;
+    0x0040eae4 lw t9, -0x7e04(gp)            |     t9 = sym.imp.signal;
+    0x0040eae8 addiu a1, t8, -0x1bd8         |     a1 = t8 + -0x1bd8;
+    0x0040eaec jalr t9                       |     t9 ();
+    0x0040eaf0 addiu a0, zero, 1             |     a0 = 1;
+    0x0040eaf4 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040eaf8 lw t7, -0x7fd8(gp)            |     t7 = *((gp - 8182));
+    0x0040eafc lw t9, -0x7e04(gp)            |     t9 = sym.imp.signal;
+    0x0040eb00 addiu a1, t7, -0x1b74         |     a1 = t7 + -0x1b74;
+    0x0040eb04 jalr t9                       |     t9 ();
+    0x0040eb08 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040eb0c lw a0, (s7)                   |     a0 = *(s7);
+    0x0040eb10 lw t6, -0x7fd8(gp)            |     t6 = *((gp - 8182));
+    0x0040eb14 addiu t9, t6, -0x2690         |     t9 = t6 + -0x2690;
+    0x0040eb18 jalr t9                       |     t9 ();
+    0x0040eb1c nop                           |     
+    0x0040eb20 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             |     if (v0 < 0) {
+    0x0040eb24 bltz v0, 0x40ee18             |         goto label_27;
+                                             |     }
+    0x0040eb28 nop                           |     
+    0x0040eb2c lw s6, -0x7e7c(gp)            |     s6 = *(gp);
+    0x0040eb30 lw t9, -0x7d70(gp)            |     t9 = sym.build_metadata_list;
+    0x0040eb34 lw a0, (s6)                   |     a0 = *(s6);
+    0x0040eb38 jalr t9                       |     t9 ();
+    0x0040eb3c nop                           |     
+    0x0040eb40 move v1, zero                 |     v1 = 0;
+    0x0040eb44 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             | label_11:
+    0x0040eb48 lw ra, 0x38(sp)               |     ra = *(var_38h);
+    0x0040eb4c move v0, v1                   |     v0 = v1;
+    0x0040eb50 lw s7, 0x34(sp)               |     s7 = *(var_34h);
+    0x0040eb54 lw s6, 0x30(sp)               |     s6 = *(var_30h);
+    0x0040eb58 lw s5, 0x2c(sp)               |     s5 = *(var_2ch);
+    0x0040eb5c lw s4, 0x28(sp)               |     s4 = *(var_28h);
+    0x0040eb60 lw s3, 0x24(sp)               |     s3 = *(var_24h);
+    0x0040eb64 lw s2, 0x20(sp)               |     s2 = *(var_20h);
+    0x0040eb68 lw s1, 0x1c(sp)               |     s1 = *(var_1ch);
+    0x0040eb6c lw s0, 0x18(sp)               |     s0 = *(var_18h);
+    0x0040eb70 addiu sp, sp, 0x40            |     
+    0x0040eb74 jr ra                         |     return v1;
+                                             | label_14:
+    0x0040eb78 lw a0, (s7)                   |     a0 = *(s7);
+    0x0040eb7c lw a1, -0x7ed8(gp)            |     a1 = *((gp - 8118));
+    0x0040eb80 lw a2, 0x54(a0)               |     a2 = *((a0 + 21));
+    0x0040eb84 lw a0, (a1)                   |     a0 = *(a1);
+                                             |     if (a2 == 0) {
+    0x0040eb88 bnez a2, 0x40eb98             |         
+    0x0040eb8c nop                           |         
+    0x0040eb90 lw a3, -0x7fe0(gp)            |         a3 = *((gp - 8184));
+                                             |         /* esilref: '/mnt/slave/workspace/soho5_1042/rtl819x/users/nas/media_server/tmp_inst/etc/ushare.conf' */
+    0x0040eb94 addiu a2, a3, -0x7178         |         a2 = a3 + -0x7178;
+                                             |     }
+    0x0040eb98 lw t0, -0x7fe0(gp)            |     t0 = *((gp - 8184));
+    0x0040eb9c lw t9, -0x7dac(gp)            |     t9 = sym.imp.fprintf;
+                                             |     /* esilref: 'Warning: can't parse file "&s".
+' */
+    0x0040eba0 addiu a1, t0, -0x7120         |     a1 = t0 + -0x7120;
+    0x0040eba4 jalr t9                       |     t9 ();
+    0x0040eba8 lw a0, (s7)                   |     a0 = *(s7);
+    0x0040ebac lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040ebb0 lw v0, (a0)                   |     v0 = *(a0);
+    0x0040ebb4 lw s1, -0x7e7c(gp)            |     s1 = *(gp);
+                                             |     if (v0 == 0) {
+    0x0040ebb8 beqz v0, 0x40e940             |         goto label_1;
+                                             |     }
+    0x0040ebbc nop                           |     
+                                             | label_15:
+    0x0040ebc0 lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+    0x0040ebc4 move a0, v0                   |     a0 = v0;
+    0x0040ebc8 jalr t9                       |     t9 ();
+    0x0040ebcc lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040ebd0 lw a0, (s7)                   |     a0 = *(s7);
+    0x0040ebd4 lw s4, -0x7eac(gp)            |     s4 = *(gp);
+    0x0040ebd8 lw v1, 0x10(a0)               |     v1 = *((a0 + 4));
+    0x0040ebdc addiu a2, s4, 4               |     a2 = s4 + 4;
+    0x0040ebe0 sw a2, (a0)                   |     *(a0) = a2;
+                                             |     if (v1 == 0) {
+    0x0040ebe4 beqz v1, 0x40e954             |         goto label_2;
+                                             |     }
+                                             | label_16:
+    0x0040ebe8 lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+    0x0040ebec move a0, v1                   |     a0 = v1;
+    0x0040ebf0 jalr t9                       |     t9 ();
+    0x0040ebf4 addiu t1, s4, 0x24            |     t1 = s4 + 0x24;
+    0x0040ebf8 lw a0, (s1)                   |     a0 = *(s1);
+    0x0040ebfc lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040ec00 lw v1, 0x14(a0)               |     v1 = *((a0 + 5));
+    0x0040ec04 sw t1, 0x10(a0)               |     *((a0 + 4)) = t1;
+                                             |     if (v1 == 0) {
+    0x0040ec08 beqz v1, 0x40e964             |         goto label_3;
+                                             |     }
+                                             | label_17:
+    0x0040ec0c lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+    0x0040ec10 move a0, v1                   |     a0 = v1;
+    0x0040ec14 addiu s0, s4, 0x44            |     s0 = s4 + 0x44;
+    0x0040ec18 jalr t9                       |     t9 ();
+    0x0040ec1c lw a0, (s1)                   |     a0 = *(s1);
+    0x0040ec20 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040ec24 lw v0, 8(a0)                  |     v0 = *((a0 + 2));
+    0x0040ec28 sw s0, 0x14(a0)               |     *((a0 + 5)) = s0;
+                                             |     if (v0 == 0) {
+    0x0040ec2c beqz v0, 0x40e974             |         goto label_4;
+                                             |     }
+                                             | label_18:
+    0x0040ec30 lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+    0x0040ec34 move a0, v0                   |     a0 = v0;
+    0x0040ec38 jalr t9                       |     t9 ();
+    0x0040ec3c addiu t2, s4, 0x74            |     t2 = s4 + 0x74;
+    0x0040ec40 lw a0, (s1)                   |     a0 = *(s1);
+    0x0040ec44 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040ec48 lw v1, 0xc(a0)                |     v1 = *((a0 + 3));
+    0x0040ec4c sw t2, 8(a0)                  |     *((a0 + 2)) = t2;
+                                             |     if (v1 == 0) {
+    0x0040ec50 beqz v1, 0x40e984             |         goto label_5;
+                                             |     }
+                                             | label_19:
+    0x0040ec54 lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+    0x0040ec58 move a0, v1                   |     a0 = v1;
+    0x0040ec5c jalr t9                       |     t9 ();
+    0x0040ec60 lw a0, (s1)                   |     a0 = *(s1);
+    0x0040ec64 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040ec68 sw s0, 0xc(a0)                |     *((a0 + 3)) = s0;
+    0x0040ec6c lw a0, 0x18(a0)               |     a0 = *((a0 + 6));
+                                             |     if (a0 == 0) {
+    0x0040ec70 beqz a0, 0x40e990             |         goto label_6;
+                                             |     }
+    0x0040ec74 nop                           |     
+                                             | label_20:
+    0x0040ec78 lw t9, -0x7fc0(gp)            |     t9 = sym.imp.free;
+    0x0040ec7c jalr t9                       |     t9 ();
+    0x0040ec80 nop                           |     
+    0x0040ec84 lw t3, (s1)                   |     t3 = *(s1);
+    0x0040ec88 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040ec8c sw zero, 0x18(t3)             |     *((t3 + 6)) = 0;
+    0x0040ec90 b 0x40e990                    |     goto label_6;
+                                             | label_26:
+    0x0040ec94 lw t9, -0x7f64(gp)            |     t9 = sym.imp.daemon;
+    0x0040ec98 move a1, zero                 |     a1 = 0;
+    0x0040ec9c jalr t9                       |     t9 ();
+    0x0040eca0 addiu a0, zero, -1            |     a0 = -1;
+    0x0040eca4 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             |     if (v0 != a0) {
+    0x0040eca8 bne v0, a0, 0x40eadc          |         goto label_7;
+                                             |     }
+    0x0040ecac nop                           |     
+    0x0040ecb0 lw t9, -0x7ca4(gp)            |     t9 = sym.imp.strerror;
+    0x0040ecb4 addiu a0, zero, -1            |     a0 = -1;
+    0x0040ecb8 jalr t9                       |     t9 ();
+    0x0040ecbc addiu a0, zero, 2             |     a0 = 2;
+    0x0040ecc0 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040ecc4 move a2, v0                   |     a2 = v0;
+    0x0040ecc8 lw s7, -0x7fe0(gp)            |     s7 = *((gp - 8184));
+    0x0040eccc lw t9, -0x7d5c(gp)            |     t9 = sym.print_log;
+                                             |     /* esilref: 'Error: failed to daemonize program : &s
+' */
+    0x0040ecd0 addiu a1, s7, -0x70fc         |     a1 = s7 + -0x70fc;
+    0x0040ecd4 jalr t9                       |     t9 ();
+    0x0040ecd8 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             | label_25:
+    0x0040ecdc lw a0, (s2)                   |     a0 = *(s2);
+                                             |     do {
+                                             | label_12:
+    0x0040ece0 lw s5, -0x7fd8(gp)            |         s5 = *((gp - 8182));
+                                             |         /* fcn.0040d3ec */
+    0x0040ece4 addiu t9, s5, -0x2c14         |         t9 = s5 + -0x2c14;
+    0x0040ece8 jalr t9                       |         t9 ();
+    0x0040ecec nop                           |         
+    0x0040ecf0 addiu v1, zero, 1             |         v1 = 1;
+    0x0040ecf4 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x0040ecf8 move v0, v1                   |         v0 = v1;
+    0x0040ecfc lw ra, 0x38(sp)               |         ra = *(var_38h);
+    0x0040ed00 lw s7, 0x34(sp)               |         s7 = *(var_34h);
+    0x0040ed04 lw s6, 0x30(sp)               |         s6 = *(var_30h);
+    0x0040ed08 lw s5, 0x2c(sp)               |         s5 = *(var_2ch);
+    0x0040ed0c lw s4, 0x28(sp)               |         s4 = *(var_28h);
+    0x0040ed10 lw s3, 0x24(sp)               |         s3 = *(var_24h);
+    0x0040ed14 lw s2, 0x20(sp)               |         s2 = *(var_20h);
+    0x0040ed18 lw s1, 0x1c(sp)               |         s1 = *(var_1ch);
+    0x0040ed1c lw s0, 0x18(sp)               |         s0 = *(var_18h);
+    0x0040ed20 addiu sp, sp, 0x40            |         
+    0x0040ed24 jr ra                         |         return v1;
+                                             | label_24:
+    0x0040ed28 lw t9, -0x7d68(gp)            |         t9 = sym.start_log;
+    0x0040ed2c jalr t9                       |         t9 ();
+    0x0040ed30 nop                           |         
+    0x0040ed34 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x0040ed38 lw s0, (s2)                   |         s0 = *(s2);
+    0x0040ed3c b 0x40ea30                    |         goto label_8;
+    0x0040ed40 nop                           |         
+                                             | label_23:
+    0x0040ed44 lw t9, -0x7f70(gp)            |         t9 = sym.imp.strlen;
+    0x0040ed48 lui s6, 1                     |         s6 = 0x10000;
+    0x0040ed4c lw a0, 8(s0)                  |         a0 = *((s0 + 2));
+    0x0040ed50 ori s5, s6, 0x86a0            |         s5 = s6 | 0x86a0;
+    0x0040ed54 jalr t9                       |         t9 ();
+    0x0040ed58 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x0040ed5c lw t9, -0x7d20(gp)            |         t9 = sym.imp.malloc;
+    0x0040ed60 addiu a0, v0, 0x24            |         a0 = v0 + 0x24;
+    0x0040ed64 jalr t9                       |         t9 ();
+    0x0040ed68 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x0040ed6c move s0, v0                   |         s0 = v0;
+    0x0040ed70 lw v1, (s2)                   |         v1 = *(s2);
+    0x0040ed74 move a0, v0                   |         a0 = v0;
+    0x0040ed78 lw ra, -0x7fe0(gp)            |         ra = *((gp - 8184));
+    0x0040ed7c lw v0, -0x7fe0(gp)            |         v0 = *((gp - 8184));
+[31m    0x0040ed80 lw t9, -0x7ed0(gp)            |         t9 = sym.imp.sprintf;[0m
+                                             |         /* esilref: 'Windows Media Connect Compatible' */
+    0x0040ed84 addiu a2, ra, -0x70d0         |         a2 = ra + -0x70d0;
+    0x0040ed88 lw a3, 8(v1)                  |         a3 = *((v1 + 2));
+                                             |         /* esilref: '&s (&s)' */
+    0x0040ed8c addiu a1, v0, -0x70ac         |         a1 = v0 + -0x70ac;
+    0x0040ed90 jalr t9                       |         t9 ();
+    0x0040ed94 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x0040ed98 lw s1, (s2)                   |         s1 = *(s2);
+    0x0040ed9c lw t9, -0x7e6c(gp)            |         t9 = sym.imp.strdup;
+    0x0040eda0 move a0, s0                   |         a0 = s0;
+    0x0040eda4 jalr t9                       |         t9 ();
+    0x0040eda8 move a0, s0                   |         a0 = s0;
+    0x0040edac lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x0040edb0 lw t9, -0x7fc0(gp)            |         t9 = sym.imp.free;
+    0x0040edb4 sw v0, 8(s1)                  |         *((s1 + 2)) = v0;
+    0x0040edb8 jalr t9                       |         t9 ();
+    0x0040edbc lw s0, (s2)                   |         s0 = *(s2);
+    0x0040edc0 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x0040edc4 sw s5, 0x28(s0)               |         *((s0 + 10)) = s5;
+    0x0040edc8 b 0x40ea24                    |         goto label_9;
+                                             | label_22:
+    0x0040edcc lw t9, -0x7d20(gp)            |         t9 = sym.imp.malloc;
+    0x0040edd0 addiu a0, zero, 0xc           |         a0 = 0xc;
+    0x0040edd4 jalr t9                       |         t9 ();
+    0x0040edd8 sw v0, 0x18(s0)               |         *((s0 + 6)) = v0;
+    0x0040eddc lw s0, (s7)                   |         s0 = *(s7);
+    0x0040ede0 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x0040ede4 lw s3, 0x18(s0)               |         s3 = *((s0 + 6));
+    0x0040ede8 sw zero, 8(s3)                |         *((s3 + 2)) = 0;
+    0x0040edec sw zero, (s3)                 |         *(s3) = 0;
+    0x0040edf0 sw zero, 4(s3)                |         *((s3 + 1)) = 0;
+    0x0040edf4 b 0x40ea18                    |         goto label_10;
+                                             | label_13:
+    0x0040edf8 lw v1, -0x7fd8(gp)            |         v1 = *((gp - 8182));
+    0x0040edfc lw a0, (s7)                   |         a0 = *(s7);
+                                             |         /* fcn.0040d3ec */
+    0x0040ee00 addiu t9, v1, -0x2c14         |         t9 = v1 + -0x2c14;
+    0x0040ee04 jalr t9                       |         t9 ();
+    0x0040ee08 nop                           |         
+    0x0040ee0c lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x0040ee10 move v1, zero                 |         v1 = 0;
+    0x0040ee14 b 0x40eb48                    |         goto label_11;
+                                             | label_27:
+    0x0040ee18 lw s0, (s7)                   |         s0 = *(s7);
+                                             |         if (s0 != 0) {
+    0x0040ee1c bnez s0, 0x40ee2c             |             goto label_28;
+                                             |         }
+    0x0040ee20 nop                           |         
+    0x0040ee24 move a0, s0                   |         a0 = s0;
+    0x0040ee28 b 0x40ece0                    |         
+                                             |     } while (1);
+                                             | label_28:
+    0x0040ee2c lw s4, -0x7fe0(gp)            |     s4 = *((gp - 8184));
+    0x0040ee30 addiu a0, zero, 1             |     a0 = 1;
+    0x0040ee34 lw t9, -0x7d5c(gp)            |     t9 = sym.print_log;
+                                             |     /* esilref: 'Stopping UPnP Service ...
+' */
+    0x0040ee38 addiu a1, s4, -0x71dc         |     a1 = s4 + -0x71dc;
+    0x0040ee3c jalr t9                       |     t9 ();
+    0x0040ee40 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040ee44 lw a0, 0x30(s0)               |     a0 = *((s0 + 12));
+    0x0040ee48 lw t9, -0x7ce8(gp)            |     t9 = sym.imp.UpnpUnRegisterRootDevice;
+    0x0040ee4c jalr t9                       |     t9 ();
+    0x0040ee50 nop                           |     
+    0x0040ee54 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040ee58 lw t9, -0x7df8(gp)            |     t9 = sym.imp.UpnpFinish;
+    0x0040ee5c jalr t9                       |     t9 ();
+    0x0040ee60 nop                           |     
+    0x0040ee64 lw s0, (s7)                   |     s0 = *(s7);
+    0x0040ee68 lw gp, 0x10(sp)               |     gp = *(var_10h);
+    0x0040ee6c move a0, s0                   |     a0 = s0;
+    0x0040ee70 b 0x40ece0                    |     goto label_12;
+                                             | }
+
+[*] Function sprintf used 7 times ushare
+

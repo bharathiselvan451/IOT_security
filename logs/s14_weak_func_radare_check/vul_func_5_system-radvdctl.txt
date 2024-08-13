@@ -1,0 +1,129 @@
+[*] Binary protection state of radvdctl
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function system tear down of radvdctl
+
+move s1, s3
+blez v1, 0x401e48
+move s3, zero
+lw s4, -segment.LOAD0(gp)
+lw s2, -segment.LOAD0(gp)
+b 0x401dbc
+nop
+sll s0, s3, 2
+move a0, s6
+lw a1, -segment.LOAD0(gp)
+addu v0, s0, s7
+lw t9, -sym.imp.sprintf(gp)
+lw a2, (v0)
+jalr t9
+addiu a1, a1, 0x3470
+addiu a2, zero, 0x2bd
+lw gp, 0x10(sp)
+move a3, s6
+lw a0, -segment.LOAD0(gp)
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.printf(gp)
+addiu a0, a0, 0x3478
+jalr t9
+addiu a1, a1, 0x3428
+lw gp, 0x10(sp)
+[31mlw t9, -sym.imp.system(gp)[0m
+jalr t9
+move a0, s6
+addiu v0, zero, 0xf
+lw gp, 0x10(sp)
+addu a2, s0, s7
+lw a3, 0x20c4(sp)
+lw t9, -sym.imp.kill(gp)
+beq a3, v0, 0x401e0c
+addiu a1, zero, 0xf
+lw a0, (a2)
+addiu a1, zero, 9
+jalr t9
+addiu s3, s3, 1
+lw gp, 0x10(sp)
+lw t9, -sym.imp.sleep(gp)
+jalr t9
+addiu a0, zero, 2
+lw gp, 0x10(sp)
+lw t9, -sym.imp.printf(gp)
+jalr t9
+--
+sw gp, 0x18(sp)
+move a1, zero
+lw t9, -sym.imp.memset(gp)
+addiu s0, sp, 0x20
+move a0, s0
+jalr t9
+addiu a2, zero, 0x80
+lw gp, 0x18(sp)
+lw t9, -sym.ractlStop(gp)
+lw s3, -segment.LOAD0(gp)
+jalr t9
+addiu s1, zero, 1
+move a0, s0
+lw gp, 0x18(sp)
+addiu v0, s3, 0x3518
+sw v0, 0x10(sp)
+lw a1, -segment.LOAD0(gp)
+lw a2, -segment.LOAD0(gp)
+lw a3, -segment.LOAD0(gp)
+addiu a1, a1, 0x3538
+lw t9, -sym.imp.sprintf(gp)
+addiu a2, a2, 0x3528
+jalr t9
+addiu a3, a3, 0x2f80
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.system(gp)[0m
+lw s2, -segment.LOAD0(gp)
+jalr t9
+move a0, s0
+lw gp, 0x18(sp)
+lw t9, -sym.imp.sleep(gp)
+lw s0, -segment.LOAD0(gp)
+jalr t9
+addiu a0, zero, 1
+lw gp, 0x18(sp)
+lw t9, -sym.imp.access(gp)
+addiu a0, s3, 0x3518
+jalr t9
+move a1, zero
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.system(gp)[0m
+beqz v0, 0x402400
+addiu a0, s2, 0x3548
+jalr t9
+nop
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.system(gp)[0m
+jalr t9
+addiu a0, s0, 0x3574
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.system(gp)[0m
+jalr t9
+addiu a0, sp, 0x20
+lw gp, 0x18(sp)
+lw t9, -sym.imp.sleep(gp)
+jalr t9
+addiu a0, zero, 1
+slti v1, s1, 3
+lw gp, 0x18(sp)
+bnez v1, 0x402398
+addiu s1, s1, 1
+lw ra, 0xb0(sp)
+lw s3, 0xac(sp)
+lw s2, 0xa8(sp)
+lw s1, 0xa4(sp)
+lw s0, 0xa0(sp)
+jr ra
+addiu sp, sp, 0xb8
+lui gp, 5
+addiu gp, gp, -0x683c
+addu gp, gp, t9
+
+[*] Function system used 5 times radvdctl
+

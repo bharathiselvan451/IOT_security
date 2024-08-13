@@ -1,0 +1,13 @@
+[*] Searching (args for grep: -i) for workaround.
+[*] Grepit state info - comment: Workarounds, maybe they work around security?
+[*] Grepit state info - Filename 6_general_workaround.txt
+[*] Grepit state info - Example: workaround: 
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: workaround
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m6146[m[36m-[mbr0Ooops, general query send failed!
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m6147[m[36m-[meth1eth0Ooops, static route udp out error!
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m6148[m[36m-[mOoops, groups full, why defines so little table?
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m:[m[32m6149[m[36m:[mnetipv4tcp_timestampstcp_window_scalingtcp_sacktcp_retrans_collapseip_default_ttlip_no_pmtu_discip_nonlocal_bindtcp_syn_retriestcp_synack_retriestcp_max_orphanstcp_max_tw_bucketsip_dynaddrtcp_keepalive_timetcp_keepalive_probestcp_keepalive_intvltcp_retries1tcp_retries2tcp_fin_timeouttcp_tw_recycletcp_abort_on_overflowtcp_stdurgtcp_rfc1337tcp_max_syn_backlogip_local_port_rangeigmp_max_membershipsigmp_max_msfinet_peer_thresholdinet_peer_minttlinet_peer_maxttlinet_peer_gc_mintimeinet_peer_gc_maxtimetcp_orphan_retriestcp_facktcp_reorderingtcp_ecntcp_dsacktcp_memtcp_wmemtcp_rmemtcp_app_wintcp_adv_win_scaletcp_tw_reusetcp_frtotcp_frto_responsetcp_low_latencytcp_no_metrics_savetcp_moderate_rcvbuftcp_tso_win_divisortcp_congestion_controltcp_abctcp_mtu_probingtcp_base_msstcp_[01;31mworkaround[m_signed_windowstcp_slow_start_after_idletcp_available_congestion_controltcp_allowed_congestion_controltcp_max_ssthreshudp_memudp_rmem_minudp_wmem_minicmp_echo_ignore_allicmp_echo_ignore_broadcastsicmp_ignore_bogus_error_responsesicmp_errors_use_inbound_ifaddricmp_ratelimiticmp_ratemaskrt_cache_rebuild_count
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m6150[m[36m-[mip_fib_haship_fib_alias%-127s

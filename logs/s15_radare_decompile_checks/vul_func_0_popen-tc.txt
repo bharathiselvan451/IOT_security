@@ -1,0 +1,11 @@
+[*] Binary protection state of tc
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function popen tear down of tc
+
+
+[*] Function popen used 0 times tc
+

@@ -1,0 +1,51 @@
+@0!$B
+D !$B
+`(!&
+return1
+Host: 
+license=GPL
+description=A module to match MultiURL in host section of http get!.
+author=ZJin
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+multiurl
+ipt_multiurl
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.url_strstr
+.rel.text.match
+.text.checkentry
+.rel.init.text
+.rel.exit.text
+.rodata
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+ipt_multiurl.c
+init
+fini
+__mod_license200
+__mod_description199
+__mod_author198
+multiurl_match
+match
+checkentry
+ipt_multiurl.mod.c
+__module_depends
+__mod_vermagic5
+xt_register_match
+__this_module
+cleanup_module
+init_module
+xt_unregister_match
+memcmp
+url_strstr
+strlen

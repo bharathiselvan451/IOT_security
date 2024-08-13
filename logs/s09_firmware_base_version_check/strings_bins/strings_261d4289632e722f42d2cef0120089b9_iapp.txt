@@ -1,0 +1,147 @@
+/lib/ld-uClibc.so.0
+_init
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+memset
+sendto
+perror
+fopen
+strcmp
+fgets
+sscanf
+fclose
+sprintf
+system
+inet_aton
+send
+recvfrom
+inet_ntoa
+strlen
+strncpy
+ioctl
+kill
+lockf
+daemon
+puts
+exit
+fdopen
+getpid
+fprintf
+optarg
+strncmp
+strcpy
+atoi
+getopt
+stat
+unlink
+mkfifo
+__errno_location
+strerror
+fcntl
+socket
+sleep
+setsockopt
+bind
+fwVersion
+putchar
+select
+read
+libc.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GLIBC_2.0
+ '9'p
+$B4`
+$!3$
+$B3$
+$!4`
++$V+
+  !$
+#30$
+D30$
+E30$
+D34&
+@ !$
+ $C/x
+b304
+b304
+B304
+B304
+b30$
+"30$
+@ !$
+B30'
+ /var/run/iapp.pid
+/proc/net/route
+sendto[IAPP-ADD]
+Broadcast %d byte IAPP frame of sta %02x%02x%02x%02x%02x%02x
+Open %s file error.
+%16s %128s %128s %X %d %d %d %128s %d %d %d
+E0000000
+route add -net 224.0.1.0 netmask 255.255.255.0 dev %s
+224.0.1.178
+inet_aton[IAPP-ADD]
+Multicast %d byte IAPP frame of sta %02x%02x%02x%02x%02x%02x
+send[L2 Update]
+Send %d byte L2 Update frame of sta %02x%02x%02x%02x%02x%02x
+recvfrom
+Received %d byte IAPP frame from %s
+Too short IAPP frame (len=%d)
+IAPP: version=%d command=%d id=%d len=%d
+Underflow IAPP frame (hlen=%d len=%d)
+Ignoring %d extra bytes from IAPP frame
+Invalid IAPP-ADD packet length %d (expected %d)
+Received IAPP-ADD for STA %02x%02x%02x%02x%02x%02x (seq# %d) from %s:%d
+Removing STA %02x%02x%02x%02x%02x%02x due to IAPP-ADD notification from %s
+delsta=%02x%02x%02x%02x%02x%02x
+%02x%02x%02x%02x%02x%02x
+Unknown IAPP command %d
+Unable to open pidfile %s
+fork iapp error!
+wlan
+Wrong interface
+Usage: iapp interface [-d debug_level] [-n d3|d5] [wlan0 ...]
+-d:n:
+wlan0
+/var/iapp.fifo
+mkfifo %s fifo error: %s!
+hapd->readfifo = %d
+F_GETFL: error
+F_SETFL: error
+Init fifo fail.
+iapp: ioctl(SIOCGIFINDEX) failed!
+iapp: ioctl(SIOCGIFADDR) failed!
+Invalid address family %i (SIOCGIFADDR)
+Got ip addr %s
+ioctl(SIOCGIFBRDADDR)
+Invalid address family %i (SIOCGIFBRDADDR)
+Got bdcst addr %s
+setsockopt[SOL_SOCKET,SO_BROADCAST]
+route delete -net 224.0.0.0 netmask 240.0.0.0 dev %s
+route add -net 224.0.0.0 netmask 240.0.0.0 dev %s
+setsockopt[IPPROTO_IP, IP_MULTICAST_LOOP]
+setsockopt[IPPROTO_IP, IP_MULTICAST_TTL]
+bind[UDP]
+socket[PF_PACKET,SOCK_RAW]
+bind[PACKET]
+/proc/rtl8180/status
+The WLAN driver is RTK_8180
+socket[PF_INET,SOCK_DGRAM]
+ioctl[%s,SIOCGIWNAME]
+The WLAN driver is RTK_8185
+IEEE 802.11f (IAPP) using interface %s (%s)
+using wlan interface:
+Fifo msg type: %d
+v1.7

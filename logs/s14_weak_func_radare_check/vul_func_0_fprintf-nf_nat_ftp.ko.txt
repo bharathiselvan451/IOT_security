@@ -1,0 +1,11 @@
+[*] Binary protection state of nf_nat_ftp.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function fprintf tear down of nf_nat_ftp.ko
+
+
+[*] Function fprintf used 0 times nf_nat_ftp.ko
+

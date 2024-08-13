@@ -1,0 +1,11 @@
+[*] Binary protection state of nls_cp850.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcat tear down of nls_cp850.ko
+
+
+[*] Function strcat used 0 times nls_cp850.ko
+

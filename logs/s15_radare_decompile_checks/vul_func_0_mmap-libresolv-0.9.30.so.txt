@@ -1,0 +1,11 @@
+[*] Binary protection state of libresolv-0.9.30.so
+
+  
+  	No RELRO       No Canary found   NX disabled  DSO          No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function mmap tear down of libresolv-0.9.30.so
+
+
+[*] Function mmap used 0 times libresolv-0.9.30.so
+

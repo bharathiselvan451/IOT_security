@@ -1,0 +1,23 @@
+[+] Check SSH
+=================================================================
+This module tries to identify ssh-related files and analyses found sshd configuration files with sshdcc - https://github.com/sektioneins/sshdcc.
+
+
+
+==> Search ssh files
+-----------------------------------------------------------------
+[-] No ssh configuration files found
+
+
+==> Check for possible lzma backdoor - CVE-2024-3094
+-----------------------------------------------------------------
+[-] No lzma implant identified.
+
+
+==> Check squid
+-----------------------------------------------------------------
+[-] No possible squid executable found
+[-] No squid configuration found.
+
+[*] Statistics:0:0
+[-] Wed Jul 31 21:03:17 EDT 2024 - S85_ssh_check nothing reported

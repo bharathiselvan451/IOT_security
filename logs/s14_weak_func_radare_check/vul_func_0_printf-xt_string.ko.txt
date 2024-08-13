@@ -1,0 +1,11 @@
+[*] Binary protection state of xt_string.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function printf tear down of xt_string.ko
+
+
+[*] Function printf used 0 times xt_string.ko
+

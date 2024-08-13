@@ -1,0 +1,11 @@
+[*] Binary protection state of libntfs-3g.so.83.0.0
+
+  
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function system tear down of libntfs-3g.so.83.0.0
+
+
+[*] Function system used 0 times libntfs-3g.so.83.0.0
+

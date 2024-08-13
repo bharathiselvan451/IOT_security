@@ -1,0 +1,11 @@
+[*] Binary protection state of tp_kernel_calls.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcpy tear down of tp_kernel_calls.ko
+
+
+[*] Function strcpy used 0 times tp_kernel_calls.ko
+

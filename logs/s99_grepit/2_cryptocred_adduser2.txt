@@ -1,0 +1,16 @@
+[*] Searching (args for grep: ) for adduser .
+[*] Grepit state info - comment: Adding a new user in bash scripts. Often found in bad-practice bash scripts or log files.
+[*] Grepit state info - Filename 2_cryptocred_adduser2.txt
+[*] Grepit state info - Example: adduser bla
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: adduser 
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6597[m[36m-[mclear NAS event: %x
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6598[m[36m-[mnasGetMntInfoListnasMntInfo() error.%d volume(s) found.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6599[m[36m-[mCurrent driver ID: %d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6600[m[36m:[mnasSetUserListpUserList is NULL.nasSetUserPasswd called /tmp/passwd/tmp/passwdopen error!sysuser failed.Execute sys[01;31madduser [m: %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6601[m[36m-[m%s -P %s -a %sExecute smbpasswd cmd: %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6602[m[36m-[mNAS user list take effect./tmp/vsftp/etc/passwdfopen() failed!loadPwdInfo() failure!%s:%s:%d:%d;passwd: %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m6603[m[36m:[msmbpasswd add user failed.sys[01;31madduser [mfailed.anonymous_enable=NO
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m6604[m[36m-[mlocal_enable=YES

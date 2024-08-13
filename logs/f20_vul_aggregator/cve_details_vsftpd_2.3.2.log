@@ -1,0 +1,9 @@
+[*] Vulnerability details for vsftpd / version 2.3.2 / source STAT:
+
+[0;32m	BIN NAME            :   BIN VERS    :   CVE ID            :  CVSS VALUE : EPSS :   SOURCE         :   EXPLOIT[0m
+[0;31m	vsftpd              :   2.3.2       :   CVE-2021-3618     :   7.4       :  0   :   STAT           :   No exploit available[0m
+[0;33m	vsftpd              :   2.3.2       :   CVE-2015-1419     :   5.0 (v2)  :  0   :   STAT           :   No exploit available[0m
+[0;35m	vsftpd              :   2.3.2       :   CVE-2011-0762     :   4.0 (v2)  :  25  :   STAT           :   Exploit (EDB ID: 16270 / MSF: vsftpd_232 (D) / PSS: 98796/Vsftpd-2.3.2-Denial-Of-Service.html (P) 98800/Vsftpd-2.3.2-Denial-Of-Service.html (D))[0m
+
+[+] Found 3 CVEs and 1 exploits (including POC's) in vsftpd with version 2.3.2 (source STAT).
+

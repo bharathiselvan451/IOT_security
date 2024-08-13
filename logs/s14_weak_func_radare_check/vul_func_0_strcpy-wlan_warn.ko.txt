@@ -1,0 +1,11 @@
+[*] Binary protection state of wlan_warn.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcpy tear down of wlan_warn.ko
+
+
+[*] Function strcpy used 0 times wlan_warn.ko
+

@@ -1,0 +1,11 @@
+[*] Binary protection state of br_filter.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function popen tear down of br_filter.ko
+
+
+[*] Function popen used 0 times br_filter.ko
+

@@ -1,0 +1,95 @@
+ 0!<
+`(!&
+0!$B
+R0!<
+0!$B
+@0!0c
+@ !<
+ !'9
+srckey=0x%x dstkey=0x%x 
+timeout=%u, stream_timeout=%u 
+license=GPL
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+nf_ct_gre_keymap_destroy
+nf_ct_gre_keymap_add
+nf_ct_gre_keymap_flush
+nf_conntrack_proto_gre
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.nf_ct_gre_keymap_flush
+.rel.text.nf_ct_gre_keymap_add
+.rel.text.nf_ct_gre_keymap_destroy
+.text.gre_invert_tuple
+.rel.text.gre_pkt_to_tuple
+.rel.text.gre_print_tuple
+.rel.text.gre_print_conntrack
+.rel.text.gre_packet
+.text.gre_new
+.rel.text.gre_destroy
+.rel.text.proto_gre_net_init
+.rel.text.proto_gre_net_exit
+.rel.init.text
+.rel.exit.text
+.rodata
+.modinfo
+.rel__ksymtab_gpl
+__ksymtab_strings
+.rel__ksymtab
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+nf_conntrack_proto_gre.c
+nf_ct_proto_gre_init
+nf_ct_proto_gre_fini
+__mod_license354
+__ksymtab_nf_ct_gre_keymap_destroy
+__kstrtab_nf_ct_gre_keymap_destroy
+__ksymtab_nf_ct_gre_keymap_add
+__kstrtab_nf_ct_gre_keymap_add
+__ksymtab_nf_ct_gre_keymap_flush
+__kstrtab_nf_ct_gre_keymap_flush
+proto_gre_net_ops
+proto_gre_net_init
+proto_gre_net_exit
+nf_conntrack_l4proto_gre4
+gre_pkt_to_tuple
+gre_invert_tuple
+gre_packet
+gre_new
+gre_destroy
+gre_print_tuple
+gre_print_conntrack
+proto_gre_net_id
+nf_conntrack_proto_gre.mod.c
+__module_depends
+__mod_vermagic5
+skb_copy_bits
+nf_conntrack_l4proto_register
+__this_module
+cleanup_module
+memcpy
+kfree
+init_module
+local_bh_enable
+register_pernet_gen_subsys
+unregister_pernet_gen_subsys
+kmem_cache_alloc
+local_bh_disable
+nf_ct_gre_keymap_destroy
+init_net
+nf_conntrack_l4proto_unregister
+memcmp
+nf_ct_gre_keymap_flush
+seq_printf
+malloc_sizes
+nf_ct_gre_keymap_add
+__nf_ct_refresh_acct
+net_assign_generic

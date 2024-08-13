@@ -1,0 +1,377 @@
+/lib/ld-uClibc.so.0
+_init
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+sockets_open
+perror
+exit
+getpid
+iw_message
+sleep
+RequestIndication
+memset
+sprintf
+strcmp
+write
+__errno_location
+strerror
+ProcessRequestEvent
+opendir
+strncmp
+sscanf
+readdir
+fopen
+fgets
+kill
+fclose
+setsid
+strcpy
+parsing_var_pid
+lockf
+daemon
+fdopen
+fprintf
+iw_init_sendBuf
+iw_init_fifo
+get_info
+RegisterPID
+signal
+fcntl
+pause
+stderr
+fputs
+strncpy
+ioctl
+get_range_info
+__ctype_b
+strlen
+strchr
+strtok
+operation_mode
+__ltsf2
+__extendsfdf2
+__gesf2
+__divdf3
+pr_ether
+__floatsidf
+__gedf2
+stdout
+print_retry_value
+print_key
+print_pm_value
+print_pm_mode
+print_stats
+putchar
+print_info
+strcasecmp
+malloc
+free
+strncasecmp
+check_addr_type
+in_addr
+index
+__muldf3
+__fixdfsi
+socket
+getnetbyname
+gethostbyname
+memcpy
+__h_errno_location
+in_inet
+in_ether
+vsnprintf
+libc.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GCC_3.0
+GLIBC_2.0
+$'9k`
+g8!$
+`$Wt
+tL&R
+@ !$
+  !$
+	&$s
+	&%s
+	&%y
+	&ey$
+	&ey$
+	&ey$
+	&ey$
+	&%y
+	&ey$&%y
+ !&ey$
+x0B@
+x0B 
+$'9(
+$'9(
+$'9(
+$'9(
+$'9(
+$'9(
+$'9(
+  !0C
+64B 
+64B@
+$'9(
+$'9(
+ !,B
+$'9(
+$'9(
+$'9(
+$'9(
+ !,B
+$'9(
+$'9(
+&e~P
+$'9(
+	&e~P
+$'9(
+$'9(
+$'9(
+$'9(
+$'9(
+"(!*
+$'9(
+$'9(
+$'9(
+$'9(
+$'9(
+$'9(
+@0!'
+T4BB?
+4BB?
+ 0!$
+@(!$
+ /var/run/iwcontrol.pid
+socket
+wait %s to create
+RequestIndication return Fail
+Receive Event %s
+ASSOCIATION_IND
+REASSOCIATION_IND
+AUTHENTICATION_IND
+REAUTHENTICATION_IND
+DEAUTHENTICATION_IND
+DISASSOCIATION_IND
+MIC_FAILURE
+EAPOL_START
+EAP_PACKET
+EAPOLSTART_PREAUTH
+EAP_PACKET_PREAUTH
+WPA2_MULTICAST_CIPHER
+WPA_MULTICAST_CIPHER
+AUTOCONF_ASSOC_IND
+AUTOCONF_ASSOC_CONFIRM
+AUTOCONF_PACKET
+AUTOCONF_LINK_IND
+WSC_PIN_IND
+WSC_PROBE_REQ_IND
+WSC_ASSOC_REQ_IE_IND
+Receive Invalid or Unhandled Event %d
+[iwcontrol]: %s
+Write FIFO: %s
+Write %d bytes
+/var/run
+Cannot open %s
+iwcontrol:/var/run/%s
+auth
+auth-%s.pid
+auth[%d].wlanName=%s
+iapp
+link_iapp =true
+autoconf
+autoconf-%s.pid
+autoconf[%d].wlanName=%s
+wscd
+wscd-wlan0-wlan1.pid
+next->d_name=%s
+wlan0
+wlan1
+wscd-%s.pid
+wscd[%d].wlanName=%s
+main
+/var/iapp.fifo
+wlan
+Register to %s
+poll
+Usage: %s [wlan0] [wlan1] ... 
+At least one wlan interface should be binded
+parsing pid failed
+Unable to open pidfile %s
+fork iwcontrol error!
+/var/auth-%s.fifo
+open auth fifo %s
+open iapp fifo %s
+/var/autoconf-%s.fifo
+open autoconfig fifo %s
+/var/wscd-%s.fifo
+open wscd fifo %s
+Socket fd return 0
+Only  %d Wlan interace is supported
+/dev/wl_chr%d
+iwcontrol RegisterPID to (wlan0)
+iwcontrol RegisterPID to (wlan1)
+Warning: unable to open an wl_chr device and PID registration fail.(wlan%d)(%d %s)
+Auto
+Ad-Hoc
+Managed
+Master
+Repeater
+Secondary
+Usage: iwconfig interface [essid {NN|on|off}]
+                          [nwid {NN|on|off}]
+                          [freq N.NNNN[k|M|G]]
+                          [channel N]
+                          [sens N]
+                          [nick N]
+                          [rate {N|auto|fixed}]
+                          [rts {N|auto|fixed|off}]
+                          [frag {N|auto|fixed|off}]
+                          [enc NNNN-NNNN]
+                          [power { period N|timeout N}]
+                          [txpower N {mW|dBm}]
+%-8.8s  no wireless extensions.
+/proc/net/wireless
+%-8.8s  %s  
+ESSID:"%s" [%d]  
+ESSID:"%s"  
+ESSID:off  
+Nickname:"%s"
+          
+NWID:off/any  
+NWID:%X  
+Mode:%s  
+Channel:%g  
+Frequency:%gGHz  
+Frequency:%gMHz  
+Frequency:%gkHz  
+Cell:
+Access Point:
+Bit Rate=
+Bit Rate:
+%gGb/s
+%gMb/s
+%gkb/s
+Sensitivity=
+Sensitivity:
+%d dBm  
+%d/%d  
+%d  
+Retry
+:off
+RTS thr:off   
+RTS thr=
+RTS thr:
+%d B   
+Fragment thr:off
+Fragment thr=
+Fragment thr:
+Encryption key:
+          
+ [%d]
+   Encryption mode:restricted
+   Encryption mode:open
+Power Management
+:off
+          
+Link 
+          Rx invalid nwid:%d  invalid crypt:%d  invalid misc:%d
+Nnk(
+socket
+SIOCGIFCONF: %s
+--help
+SIOCGIWNWID: %s
+SIOCGIWENCODE: %s
+Setting key : Malloc failed (string too long ?)
+SIOCGIWESSID: %s
+%-8.8s  Interface doesn't support MAC & IP addresses
+SIOCGIWRATE: %s
+SIOCGIWRTS: %s
+SIOCGIWFRAG: %s
+SIOCGIWPOWER: %s
+nwid
+domain
+SIOCSIWNWID: %s
+sens
+SIOCSIWSENS: %s
+-:;.,
+[%d]
+open
+restricted
+SIOCSIWENCODE(%d): %s
+essid
+ESSID too long (max %d): ``%s''
+SIOCSIWESSID: %s
+SIOCSIWAP: %s
+nick
+Name too long (max %d) : ``%s''
+SIOCSIWNICKN: %s
+rate
+auto
+fixed
+SIOCSIWRATE: %s
+SIOCSIWRTS: %s
+frag
+SIOCSIWFRAG: %s
+mode
+SIOCSIWMODE: %s
+power
+period
+timeout
+unicast
+multicast
+force
+repeat
+SIOCSIWPOWER(%d): %s
+Invalid argument : %s
+Warning : Device %s has been compiled with version %d
+of Wireless Extension, while we are using version %d.
+Warning : Device %s has been compiled with a different version
+of Wireless Extension than ours (we are using version %d).
+Some things may be broken...
+ (updated)
+Quality:%d/%d  Signal level:%d dBm  Noise level:%d dBm%s
+Quality:%d/%d  Signal level:%d/%d  Noise level:%d/%d%s
+Quality:%d  Signal level:%d  Noise level:%d%s
+%.2X
+ min
+ max
+ timeout:
+ period:
+%g  
+%gs  
+%gms  
+%dus  
+ mode:Unicast only received
+ mode:Multicast only received
+ mode:All packets received
+ mode:Force sending
+ mode:Repeat multicasts
+ lifetime:
+%gms
+%dus
+ limit:%d
+Interface %s doesn't support IP addresses
+Interface %s doesn't support MAC addresses
+%02X:%02X:%02X:%02X:%02X:%02X
+default
+Invalid interface address %s
+Arp failed for %s on %s... (%d)
+Try to ping the address before setting it.
+Invalid hardware address %s
+$$ %s $$: %s
+Message is %d bytes %x hex
+%2x 

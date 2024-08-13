@@ -1,0 +1,13 @@
+[*] Searching (args for grep: -i) for INSERT.{0,20}INTO.
+[*] Grepit state info - comment: SQL INSERT statement
+[*] Grepit state info - Filename 4_general_sql_insert.txt
+[*] Grepit state info - Example: INSERT INTO TABLE example VALUES(123);
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: INSERT.{0,20}INTO
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/auth[m[36m-[m[32m606[m[36m-[mSending FAILURE EAP packet to Supplicant<<<<<<<<<<<<<<<<<< TO supplicant Sending REQUEST / Identity EAP packet to SupplicantSending SUCCESS EAP packet to SupplicantInto InitializeInto DisconnectedInto ConnectingInto AuthenticatedInto AuthenticatingInto AbortingInto Force AuthInto Force Unauthn4n\nnnnoo$oL Executing Initialization Running Reauthentication Timer State Machine Running Backend Authentication State Machine Authenticator Key Transmit State Machine Running Controlled Directions State Machine Running Key Receive State Machine Null argument received.Calling the packet listener lib1x_do_authenticator: Called with Supplicant Role.Error, allocate memory failed for supplicant!<lib1x_insert_supp> Number of Supplicant = %d
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/auth[m[36m-[m[32m607[m[36m-[mlib1x_search_supp%s: got DOT11_EVENT_EAPOLSTART_PREAUTH
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/auth[m[36m-[m[32m608[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/auth[m[36m:[m[32m609[m[36m:[m[[01;31mInsert suppid=%d into[m table]
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/auth[m[36m-[m[32m610[m[36m-[mReceive Other Indcation from driver, Station is not in TableFind Supp[%d] in Table in EVENT_ASSOCIATION_IND

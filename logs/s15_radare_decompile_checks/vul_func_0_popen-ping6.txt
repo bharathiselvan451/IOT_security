@@ -1,0 +1,11 @@
+[*] Binary protection state of ping6
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function popen tear down of ping6
+
+
+[*] Function popen used 0 times ping6
+

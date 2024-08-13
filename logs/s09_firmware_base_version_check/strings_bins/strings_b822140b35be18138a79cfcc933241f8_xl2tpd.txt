@@ -1,0 +1,1028 @@
+/lib/ld-uClibc.so.0
+@/<o
+_init
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+libmsglog.so
+_DYNAMIC_LINKING
+__RLD_MAP
+__start
+_GLOBAL_OFFSET_TABLE_
+__data_start
+memset
+msglogd
+strlen
+strncpy
+vsnprintf
+l2tp_log
+events
+hello
+magic_lac_dial
+send_zlb
+dethrottle
+tunnels
+inet_ntoa
+lnslist
+laclist
+show_status
+waitpid
+kernel_support
+strcpy
+call_close
+gconfig
+unlink
+strdup
+malloc
+log_to_web
+fcntl
+server_socket
+fork
+free
+getPtyMaster
+tcgetattr
+tcsetattr
+__errno_location
+strerror
+control_fd
+execv
+_exit
+setenv
+dup2
+destroy_call
+new_call
+dial_no_tmp
+control_finish
+kill
+get_entropy
+bzero
+strncmp
+usage
+atoi
+getpid
+setsid
+write
+ioctl
+warn
+gethostbyname
+bcopy
+inetaddr
+fopen
+fgets
+sscanf
+fclose
+get_call
+l2tp_call
+deflac
+magic_lac_tunnel
+lac_call
+init_args
+time
+srand
+init_addr
+init_config
+uname
+init_tunnel_list
+init_network
+consider_pidfile
+signal
+death_handler
+child_handler
+status_handler
+null_handler
+init_scheduler
+mkfifo
+switch_io
+daemonize
+calloc
+network_thread
+strchr
+strtok
+strcasecmp
+lac_hangup
+perror
+lac_disconnect
+grantpt
+unlockpt
+ptsname
+strncat
+getPtyMaster_ptmx
+getPtyMaster_pty
+sprintf
+openlog
+init_log
+syslog
+stderr
+fprintf
+__stdout
+fputc
+__fputc_unlocked
+get_sys_entropy
+get_dev_entropy
+new_buf
+ppp_crc16_table
+new_outgoing
+add_message_type_avp
+add_control_hdr
+do_packet_dump
+control_xmit
+udp_xmit
+msgtypes
+memcmp
+set_error
+get_lns
+add_callid_avp
+global_serno
+add_serno_avp
+add_bearer_avp
+add_opt
+start_pppd
+opt_destroy
+add_txspeed_avp
+add_frame_avp
+add_rxspeed_avp
+strcat
+handle_challenge
+add_protocol_avp
+add_frame_caps_avp
+add_bearer_caps_avp
+add_firmware_avp
+add_hostname_avp
+add_vendor_avp
+add_tunnelid_avp
+add_avp_rws
+mk_challenge
+add_challenge_avp
+sleep
+add_minbps_avp
+add_maxbps_avp
+add_number_avp
+add_randvect_avp
+add_chalresp_avp
+get_addr
+pipe
+toss
+control_zlb
+new_payload
+add_payload_hdr
+add_fcs
+handle_avps
+wrong_length
+safe_copy
+stopccn_result_codes
+cdn_result_codes
+swaps
+decrypt_avp
+protocol_version_avp
+framing_caps_avp
+firmware_rev_avp
+assigned_tunnel_avp
+receive_window_size_avp
+assigned_call_avp
+call_serno_avp
+bearer_type_avp
+frame_type_avp
+packet_delay_avp
+dialed_number_avp
+dialing_number_avp
+sub_address_avp
+tx_speed_avp
+call_physchan_avp
+ignore_avp
+rand_vector_avp
+rx_speed_avp
+seq_reqd_avp
+deschedule
+unreserve_addr
+add_result_code_avp
+destroy_tunnel
+new_tunnel
+gethostname
+server
+bind
+getsockname
+setsockopt
+sendmsg
+build_fdset
+schedule_unlock
+select
+schedule_lock
+recycle_payload
+read_packet
+recycle_buf
+recvmsg
+do_control
+__cmsg_nxthdr
+handle_packet
+get_tunnel
+handle_special
+add_header
+memcpy
+alarm_handler
+sigemptyset
+sigaddset
+sigaction
+gettimeofday
+setitimer
+sigprocmask
+raise
+yesno
+filerr
+set_int
+set_boolean
+set_string
+strrchr
+set_range
+set_ip
+set_rand_dev
+set_rand_sys
+set_rand_egd
+feof
+words
+deflns
+new_lac
+new_lns
+parse_config
+set_listenaddr
+set_port
+set_rand_source
+set_authfile
+set_exclusive
+set_autodial
+set_redial
+set_rtimeout
+set_lns
+set_rmax
+set_accesscontrol
+set_userspace
+set_iprange
+set_debugavp
+set_debugnetwork
+set_debugpacket
+set_debugtunnel
+set_debugstate
+set_ipsec_saref
+set_lac
+set_assignip
+set_localaddr
+set_remoteaddr
+set_defaultroute
+set_lbit
+set_hbit
+set_papchap
+set_passwdauth
+set_authname
+set_hostname
+set_debug
+set_pppoptfile
+set_rws
+set_flow
+set_challenge
+uaddr
+get_secret
+MD5Init
+MD5Update
+MD5Final
+byteReverse
+MD5Transform
+libc.so.0
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GLIBC_2.0
+$'91
+('9{0
+@ !$
+(!&d
+ !&R
+ !&R
+ !&R
+ !&R
+ !&R
+@8!'
+$'9S
+$'9J
+$'9J
+$'9J
+`(!&
+@ !&
+ 8!$
+@(!$
+P !$
+@ !$
+@ !$
+(!$b
+@ !$
+ (!$
+  !$
+@8!$
+@ !&E
+  !<
+G8%$
+cX!1
+%0D@
+@8!&&
+#H!0
+%0D@
+G@!-
+b8%$
+@(!&D
+b(%0
+G8%$
+`(!0
+ !2F
+8!2e
+ !2e
+ 8!$
+@8!$
+@8!$
+ !&$
+@(!$
+  !,C
+4BB@
+4fB@
+ #$c
+44BB@
+@8!$
+@ !$
+@8!$
+@ !$
+@ !$
+@ !$
+ H!$
+@ !$
+  !$
+(!&R
+ 8!$
+@ !'
+ 8!$
+ 8!$
+('9\
+` !$
+` !&R
+ 0!&T
+@ !&E
+@(!$
+  !'
+4cTv
+0!4B
+!4Bp
+!4BF
+!4B[
+!4Bq
+!4BC
+%4c%b
+%4cZQ
+%4cL
+%4c9B
+%4ca"
+%4c8
+%4cK`
+%4c~
+%4c'
+%4c0
+!4B|
+!4BVe
+!4B"D
+!4B#
+!4BY
+!4B]
+!4B~O
+!4BC
+!4B~
+(!4B
+ 0!&p
+H@#$
+$'90@
+ ====== xl2tpd statistics ========
+ Scheduler entries:
+%d: Unknown event
+%d: HELLO to %d
+%d: Magic dial on %s
+%d: Send payload ZLB on call %d:%d
+%d: Dethrottle call %d:%d
+Total Events scheduled: %d
+Number of tunnels open: %d
+Tunnel %s, ID = %d (local), %d (remote) to %s:%d, control_seq_num = %d, control_rec_seq_num = %d, cLr = %d, call count = %d ref=%u/refhim=%u
+Call %s # %lu, ID = %d (local), %d (remote), serno = %u, data_seq_num = %d, data_rec_seq_num = %d, pLr = %d, tx = %u bytes (%u), rx= %u bytes (%u)
+==========Config File===========
+LNS entry %s
+(unnamed)
+LAC entry %s, LNS is/are:
+ [none]
+================================
+child_handler
+%s : pppd terminated for call %d by signal %d
+%s : pppd exited for call %d with code %d
+%s : pppd exited for call %d for unknown reason
+death_handler
+%s: Fatal signal %d received
+Server closing
+start_pppd
+/usr/sbin/pppd
+user
+password
+httpd-pid
+defaultroute
+default-asyncmap
+nopcomp
+noaccomp
+nobsdcomp
+nodeflate
+refuse-eap
+usepeerdns
+pppoxl2tp fd2:%d
+pppol2tp session fd:%d
+pppol2tp_init
+pppol2tp
+%s: Unable to set PPPoL2TP socket nonblock.
+%s: PPP already started on call!
+%s: file descriptor already assigned!
+failed to set nonblock: %s
+%s: Unable to allocate PPPoL2TP socket.
+%s: Exec of %s failed!
+%s: Unable to connect PPPoL2TP socket.
+%s: unable to allocate pty, abandoning!
+unable to open tty %s, cannot start pppd
+%s: unable to fork(), abandoning!
+CALLER_ID
+Fun:%s ,Line:%d, info:%d, %s
+destroy_tunnel
+%s: unable to locate tunnel in tunnel list
+%s: tunnel list is empty!
+Will redial in %d seconds
+lac_call
+%s: No such tunnel %d to generate call.
+Calling on tunnel %d
+%s: unable to create new call
+lac_hangup
+%s : No such call %d to hang up.
+%s :Hanging up call %d, Local: %d, Remote: %d
+Goodbye!
+open_controlfd
+%s: Unable to open %s for reading.
+Can not turn off nonblocking mode for controlfd: %s
+xl2tpd version:  %s
+xl2tpd-1.1.12
+Usage: xl2tpd [-c <config file>] [-s <secret file>] [-p <pid file>]  
+             [-C <control file>] [-D]
+/etc/l2tpd/l2tp-secrets
+/etc/l2tp/l2tpd.conf
+/etc/xl2tpd/l2tp-secrets
+/etc/xl2tpd/xl2tpd.conf
+/var/run/xl2tpd.pid
+/var/run/xl2tpd/l2tp-control
+--version
+daemonize
+/dev/null
+Redirect of stdin to /dev/null failed
+Redirect of stdout to /dev/null failed
+Redirect of stderr to /dev/null failed
+%s: Unable to fork ()
+consider_pidfile
+%s: There's already a xl2tpd server running.
+route_ctrl: %s
+No such tunnel %d to hang up.
+Disconnecting from %s, Local: %d, Remote: %d
+l2tp_call
+/proc/net/route
+%63s %x %x %X %*s %*s %d %x
+route_add: no route to host
+Connecting to host %s, port %d
+/proc/net/route: %s
+route_add: no memory
+route_add: not adding existing route
+Host name lookup failed for %s.
+%s: Unable to create tunnel to %s.
+magic_lac_tunnel
+%s: magic_lac_tunnel: called on NULL lac!
+%s: Unable to find hostname to dial for '%s'
+magic_lac_dial
+%s: LAC %s not active
+%s : called on NULL lac!
+%s: maximum retries exceeded.
+init
+xl2tpd version xl2tpd-1.1.12 started on %s PID:%d
+Written by Mark Spencer, Copyright (C) 1998, Adtran, Inc.
+Forked by Scott Balmos and David Stipp, (C) 2001
+Inherited by Jeff McAdams, (C) 2002
+Forked again by Xelerance (www.xelerance.com) (C) 2006
+Listening on IP address %s, port %d
+%s : Unable to determine host system
+%s: Unable to load config file
+Unknown command %c
+No such tunnel '%s'
+controlfd
+Session '%s' already active!
+Session '%s' not up
+	(getPtyMaster_pty
+pqrstuvwxyzabcde
+0123456789abcdef
+%s: No more free pseudo-tty's
+getPtyMaster_ptmx
+/dev/ptmx
+%s: unable to open /dev/ptmx to allocate pty
+%s: unable to grantpt() on pty
+%s: unable to unlockpt() on pty
+%s: unable to obtain name of slave tty
+getPtyMaster
+%s: failed to use pts -- using legacy ptys
+/dev/tty%c%c
+xl2tpd
+xl2tpd[%d]: %s
+bufferDump
+%02x 
+%s: buflen=%d, buffer[%d]: *%s*
+%s:             buffer[%d]: *%s*
+packet dump: 
+HEX: { 
+%.2X 
+ASCII: { 
+add_opt
+%s : Unable to allocate ppp option memory.  Expect a crash
+/dev/urandom
+get_entropy
+%s: EGD Randomness source not yet implemented
+%s: Invalid Randomness source specified (%d)
+control_finish
+/var/l2tp/
+Hello
+%s: Don't know how to finish a message of type %d
+Unimplemented message %d
+rcvd %s
+%s: Peer requested tunnel %d twice, ignoring second one.
+sent ICRQ
+%s: Connection closed to %s, serial %d (%s)
+passive
+-detach
+%s:%s
+Call established with %s, Local: %d, Remote: %d, Serial: %d
+Call established with %s, Local: %d, Remote: %d, Serial: %d (ref=%u/%u)
+sent ICRP
+file
+.options
+parameters: Local: %d , Remote: %d , Serial: %d , Pid: %d , Tunnelid: %d , Phoneid: %s
+%s: Connection closed to %s, port %d (%s), Local: %d, Remote: %d
+Connection established to %s, %d.  Local: %d, Remote: %d (ref=%u/%u).  LNS session is '%s'
+Connection established to %s, %d.  Local: %d, Remote: %d (ref=%u/%u).
+%s: Peer did not specify hostname.  Closing.
+Specify your hostname
+Deterministic Networks Inc.
+sent SCCRQ
+%s: Unable to determine call to be disconnected.
+refuse-pap
+refuse-chap
+auth
+login
+debug
+name
+sent ICCN
+%s: Peer requested call %d twice, ignoring second one.
+Invalid challenge authentication
+%s: Invalid authentication for host '%s'
+sent SCCCN
+defaultroute
+plugin
+passwordfd.so
+passwordfd
+require-chap
+sent SCCRP
+%s: Warning: Peer did not specify framing type
+%s: Warning: Peer did not specify transmit speed
+%s: Peer [Vendor:%s] [Firmware:%d (0x%.4x)] tried to disconnect with invalid TID (%d != %d)
+require-pap
+%s: Peer tried to disconnect with invalid CID (%d != %d)
+%s: Whoa...  non-ZLB with no message type!
+%s: Peer tried to disconnect without specifying result code.
+%s: Denied connection to unauthorized peer %s
+No Authorization
+%s: Peer did not specify assigned tunnel ID.  Closing.
+Specify your assigned tunnel ID
+%s: Peer did not specify framing capability.  Closing.
+Specify framing capability
+%s: No secret for '%s'
+No secret on our side
+This tunnel cannot accept calls
+%s: Peer tried to initiate call without call ID
+%s: Peer tried to disconnect without specifying call ID
+%s: Peer tried to disconnect without specifying tunnel ID
+%s: Peer tried to negotiate ICRP without specifying call ID
+No available IP address
+%s: Out of IP addresses on tunnel %d!
+%s: No secret for authenticating to '%s'
+No secret key on our end
+%s: malloc failed
+malloc failed
+No secret key on our side
+%s: No secret key for authenticating '%s'
+%s: Unable to create password pipe for pppd
+%s: Peer attempted ICCN on the actual tunnel, not the call
+%s: malloc failed for challenge
+check_control
+%s: Reported and actual sizes differ (%d != %d)
+%s: Received out of order control packet on tunnel %d (got %d, expected %d)
+%s: Control bit not set
+%s: Unknown version received
+%s: Received too small of packet
+%s: Length bit not set
+%s: Flow bit not set
+%s: L2F packet received
+%s: PPTP packet received
+check_payload
+%s: size mismatch (%d != %d)
+%s:Recieved to small of packet
+%s: Aempted to send payload on tunnel
+%s payload too small (%d < %d)
+%s Control bit set
+expand_payload
+%s: not enough space to decompress frame
+send_zlb
+%s: called on NULL call
+%s: called on call with NULL container
+write_packet
+%s: async write failed: %s
+%s: wrote no bytes of async packet
+%s: write returned LONGER than buffer length?
+%s: %s(%d)
+%s: short write (%d of %d bytes)
+%s: rx packet is too big after PPP encoding (size %u, max is %u)
+%s: tty is not open yet.
+handle_special
+%s: invalid control packet
+%s: ZLB for closed call
+handle_packet
+%s: invalid payload packet!
+%s: bad control packet!
+%s: unable to expand payload!
+%s: payload too small!
+%s: bad AVP handling!
+Reserved
+Call disconnected due to loss of carrier
+Call disconnected for the reason indicated in error code
+Call disconnected for administrative reasons
+Call failed due to lack of appropriate facilities being available (temporary condition)
+Call failed due to lack of appropriate facilities being available (permanent condition)
+Invalid destination
+Call failed due to no carrier detected
+Call failed due to lack of a dial tone
+Call was no established within time allotted by LAC
+Call was connected but no appropriate framing was detect
+General request to clear control connection
+General error--Error Code indicates the problem
+Control channel already exists
+Requester is not authorized to establish a control channel
+The protocol version of the requester is not supported--Error Code indicates the highest version supported
+Requester is being shut down
+Finite State Machine error
+Start-Control-Connection-Request
+Start-Control-Connection-Reply
+Start-Control-Connection-Connected
+Stop-Control-Connection-Notification
+Hello
+Outgoing-Call-Request
+Outgoing-Call-Reply
+Outgoing-Call-Connected
+Incoming-Call-Request
+Incoming-Call-Reply
+Incoming-Call-Connected
+Call-Disconnect-Notify
+WAN-Error-Notify
+Set-Link-Info
+Message Type
+Result Code
+Protocol Version
+Framing Capabilities
+Bearer Capabilities
+Tie Breaker
+Firmware Revision
+Host Name
+Vendor Name
+Assigned Tunnel ID
+Receive Window Size
+Challenge
+Q.931 Cause Code
+Challenge Response
+Assigned Call ID
+Call Serial Number
+Minimum BPS
+Maximum BPS
+Bearer Type
+Framing Type
+Packet Processing Delay
+Dialed Number
+Dialing Number
+Sub-Address
+Transmit Connect Speed
+Physical channel ID
+Initial Received LCP Confreq
+Last Sent LCP Confreq
+Last Received LCP Confreq
+Proxy Authen Type
+Proxy Authen Name
+Proxy Authen Challenge
+Proxy Authen ID
+Proxy Authen Response
+Call Errors
+ACCM
+Random Vector
+Private Group ID
+Receive Connect Speed
+Sequencing Required
+%s: expected at least %d, got %d
+%s: expected %d, got %d
+message_type_avp
+%s: unknown message type %d
+%s: message type %d (%s)
+%s: new incoming call
+%s: wrong size (%d != 8)
+%s: i don't know how to handle %s messages
+%s: attempting to negotiate SCCRP with state != SCCRQ!
+%s: attempting to negotiate SCCRQ with state != 0
+%s: attempting to negotiate ICRQ on a call!
+%s: attempting to negotiate OCCN when state != OCRQ
+%s: attempting to negotiate ICCN when state != ICRP
+%s: attempting to negotiate OCRP when state != OCRQ
+%s: attempting to negotiate SCCCN with state != SCCRP!
+%s: attempting to negotiate SLI when state != ICCN
+%s: attempting to negotiate ICRP when state != ICRQ
+%s: attempting to negotiate tunnel inside a call!
+%s: attempting to negotiate ICRQ when state != SCCCN
+%s: attempting to negotiate OCRP on tunnel!=SCCCN
+%s: attempting to negotiate ICRP on tunnel!=SCCCN
+%s: unable to create new call
+rand_vector_avp
+%s: Random Vector of %d octets
+%s: Random vector too large (%d > %d)
+%s: Random vector too small (%d < 0)
+ignore_avp
+%s : Ignoring AVP
+seq_reqd_avp
+%s: peer requires sequencing.
+%s: avp is incorrect size.  %d != 6
+%s: sequencing required not appropriate for %s!
+result_code_avp
+%s: result code not appropriate for %s.  Ignoring.
+%s: peer closing for reason %d (%s), error = %d (%s)
+%s: result code out of range (%d %d %d).  Ignoring.
+%s: avp is incorrect size.  %d < 10
+protocol_version_avp
+%s: protocol version not appropriate for %s.  Ignoring.
+%s: peer is using version %d, revision %d.
+%s: avp is incorrect size.  %d != 8
+framing_caps_avp
+%s: framing capabilities not appropriate for %s.  Ignoring.
+ async
+ sync
+%s: supported peer frames:%s%s
+%s: avp is incorrect size.  %d != 10
+Framming Capabilities
+bearer_caps_avp
+%s: bearer capabilities not appropriate for message %s.  Ignoring.
+ analog
+ digital
+%s: supported peer bearers:%s%s
+firmware_rev_avp
+%s: peer reports firmware version %d (0x%.4x)
+%s: firmware revision not appropriate for message %s.  Ignoring.
+bearer_type_avp
+%s: bearer type not appropriate for message %s.  Ignoring.
+%s: peer bears:%s
+digital
+frame_type_avp
+%s: peer uses:%s frames
+%s: frame type not appropriate for message %s.  Ignoring.
+sync
+Frame Type
+hostname_avp
+%s: peer reports hostname '%s'
+%s: truncating reported hostname (size is %d)
+%s: hostname not appropriate for message %s.  Ignoring.
+%s: avp is too small.  %d < 6
+Hostname
+dialing_number_avp
+%s: peer reports dialing number '%s'
+%s: truncating reported dialing number (size is %d)
+%s: dialing number not appropriate for message %s.  Ignoring.
+dialed_number_avp
+%s: peer reports dialed number '%s'
+%s: truncating reported dialed number (size is %d)
+%s: dialed number not appropriate for message %s.  Ignoring.
+sub_address_avp
+%s: peer reports subaddress '%s'
+%s: truncating reported sub address (size is %d)
+%s: sub_address not appropriate for message %s.  Ignoring.
+Sub-address
+vendor_avp
+%s: peer reports vendor '%s'
+%s: truncating reported vendor (size is %d)
+%s: vendor not appropriate for message %s.  Ignoring.
+Vendor
+challenge_avp
+%s: challenge avp found
+%s: challenge not appropriate for message %s.  Ignoring.
+challenge
+chalresp_avp
+%s: Challenge reply found
+%s: challenge response not appropriate for message %s.  Ignoring.
+%s: Challenge is not the right length (%d != %d)
+assigned_tunnel_avp
+%s: using peer's tunnel %d
+%s: avp is wrong size.  %d != 8
+%s: tunnel ID not appropriate for message %s.  Ignoring.
+assigned_call_avp
+%s:  Dunno what to do when it's state %s!
+%s: using peer's call %d
+%s: call ID not appropriate for message %s.  Ignoring.
+packet_delay_avp
+%s: peer's delay is %d 1/10's of a second
+%s: packet delay not appropriate for message %s.  Ignoring.
+call_serno_avp
+%s: peer is using old style serial number.  Will be invalid.
+%s: serial number is %d
+rx_speed_avp
+%s: receive baud rate is %d
+%s: rx connect speed not appropriate for message %s.  Ignoring.
+%s: avp is wrong size.  %d != 10
+Connect Speed (RX)
+tx_speed_avp
+%s: transmit baud rate is %d
+%s: tx connect speed not appropriate for message %s.  Ignoring.
+Connect Speed (tx)
+call_physchan_avp
+%s: physical channel is %d
+%s: physical channel not appropriate for message %s.  Ignoring.
+Physical Channel
+receive_window_size_avp
+%s: peer wants RWS of %d.  Will use flow control.
+%s: RWS not appropriate for message %s.  Ignoring.
+handle_avps
+%s:  dont know how to handle atribute %d.
+%s: %sAVP has reserved bits set.
+reserved bits set in AVP
+%s:  no handler for atribute %d (%s).
+%s: Unable to handle hidden %sAVP
+Invalid Hidden AVP
+%s: Bad exit status handling attribute %d (%s).
+Mandatory 
+%s: handling avp's for tunnel %d, call %d
+%s: AVP with too small of size (%d).
+AVP too small
+call
+%s:  dont know how to handle mandatory attribute %d.  Closing %s.
+mandatory attribute %d cannot be handled
+%s: AVP received with length > remaining packet length!
+Invalid AVP length
+mandatory 
+%s: First AVP was not message type.
+First AVP must be message type
+%s: negative overall packet length
+%s:  No handler for mandatory attribute %d (%s).  Closing %s.
+No handler for attr %d (%s)
+tunnel
+%s: Bad exit status handling attribute %d (%s) on mandatory packet.
+read_packet
+%s: Error %d (%s)
+%s: Too many errors.  Declaring call dead.
+%s: read overrun
+%s: got an escaped PPP_FLAG
+call_close
+%s: called on null call or containerless call
+%s: Call %d to %s disconnected
+Connection %d closed to %s, port %d (%s)
+get_call
+%s: can't find call %d in tunnel %d
+ (ref=%d/%d)
+Can not find tunnel %u (refhim=%u)
+%s: allocating new tunnel for host %s, port %d.
+%s: call ID specified, but no tunnel ID specified.  tossing.
+%s: unable to allocate new tunnel for host %s, port %d.
+init_network
+pppol2tp kernel fd:%d
+Using l2tp kernel support.
+Not looking for kernel support.
+setsockopt recvref: %s
+L2TP kernel support not detected.
+%s: Unable to bind socket: %s. Terminating.
+%s: Unable to read socket name.Terminating.
+%s: Unable to allocate socket. Terminating.
+sending with saref=%d
+udp_xmit failed with err=%d:%s
+control_xmit
+Maximum retries exceeded for tunnel %d.  Closing.
+Timeout
+Unable to deliver closing message for tunnel %d. Destroying anyway.
+%s: called on NULL buffer!
+build_fdset
+%s: closing down tunnel %d
+network_thread
+%s: received too small a packet
+%s: recv packet from %s, size = %d, tunnel = %d, call = %d ref=%u refhim=%u
+%s: no such call %d on tunnel %d.  Sending special ZLB
+%s: recvfrom returned error %d (%s)
+%s: bad packet
+%s: tossing read packet, error = %s (%d).  Closing call.
+%s: unable to find call or tunnel to handle packet.  call = %d, tunnel = %d Dumping.
+xelerance.com
+alarm_handler
+%s : Whoa... cnt = %d
+%s: Whoa...  Scheduling for <=0 time???
+listen-addr
+port
+rand source
+auth file
+exclusive
+autodial
+redial
+redial timeout
+max redials
+access control
+force userspace
+ip range
+no ip range
+debug avp
+debug network
+debug packet
+debug tunnel
+debug state
+ipsec saref
+no lac
+assign ip
+local ip
+remote ip
+defaultroute
+length bit
+hidden bit
+require pap
+require chap
+require authentication
+require auth
+refuse pap
+refuse chap
+refuse authentication
+refuse auth
+unix authentication
+unix auth
+name
+hostname
+ppp debug
+pppoptfile
+call rws
+tunnel rws
+flow bit
+challenge
+new_lns
+%s: Unable to allocate memory for new LNS
+new_lac
+%s: Unable to allocate memory for lac entry!
+true
+false
+%s must be 'yes' or 'no'
+%s must be a number
+'%s' not valid in this context
+rtimeout value must be at least 1
+receive window size for tunnels must be at least 1
+receive window size must be at least -1
+rmax value must be at least 1
+no filename specified for authentication
+format is '%s <host or ip> - <host or ip>'
+Unknown host %s
+start is greater than end!
+set_ip
+%s: host '%s' not found
+The "rand()" function call is not a very good sourceof randomness
+Enabling IPsec SAref processing for L2TP transport mode SAs
+set_rand_egd
+%s: not yet implemented!
+set_rand_source
+%s: %s not valid in context %d
+no randomness source specified
+%s: %s is not a valid randomness source
+default
+parse_config: line %d: Unknown field '%s'
+global
+parse_config: line %d: no '=' in data
+parse_config: line %d: data '%s' occurs with no context
+parse_config: line %d: %s
+parse_config: line %d: No closing bracket
+parse_config: line %d: unknown context '%s'
+init_config
+%s: Using old style config files %s and %s
+%s: Unable to open config file %s or %s
+get_secret
+%s: Invalid authentication info (no us), line %d
+%s: Invalid authentication info (nothem), line %d
+%s: Invalid authentication info (no secret), line %d
+%s : Unable to open '%s' for authentication
+handle_challenge
+%s: No LNS or LAC to handle challenge!
+%s: no secret found for us='%s' and them='%s'
+decrypt_avp: Hidden bit set, but no random vector specified!
+decrypt_avp: Decrypted length is too long (%d > %d)
+/dev/ptyXX

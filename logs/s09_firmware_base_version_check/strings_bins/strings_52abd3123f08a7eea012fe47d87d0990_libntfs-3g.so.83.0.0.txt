@@ -1,0 +1,2093 @@
+_GLOBAL_OFFSET_TABLE_
+_gp_disp
+_fini
+__start
+__uClibc_main
+__data_start
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+worldsid
+adminsid
+ntfs_sid_size
+ntfs_same_sid
+memcmp
+ntfs_is_user_sid
+ntfs_attr_size
+ntfs_valid_sid
+ntfs_valid_pattern
+memcpy
+ntfs_find_usid
+ntfs_find_gsid
+ntfs_find_user
+ntfs_find_group
+ntfs_valid_descr
+ntfs_inherit_acl
+ntfs_build_descr
+ntfs_malloc
+__errno_location
+ntfs_acl_owner
+ntfs_build_permissions
+strncmp
+strchr
+ntfs_log_early_error
+ntfs_read_mapping
+ntfs_free_mapping
+ntfs_do_user_mapping
+atoi
+getpwnam
+ntfs_do_group_mapping
+getgrnam
+AT_UNNAMED
+STREAM_SDS
+TXF_DATA
+NAttrCompressed
+NAttrSetCompressed
+NAttrClearCompressed
+NAttrEncrypted
+NAttrSetEncrypted
+NAttrClearEncrypted
+NAttrSparse
+NAttrSetSparse
+NAttrClearSparse
+ntfs_get_attribute_value_length
+ntfs_get_attribute_value
+ntfs_mapping_pairs_decompress
+ntfs_pread
+ntfs_attr_init
+ntfs_attr_open
+ntfs_calloc
+NTFS_INDEX_I30
+ntfs_ucsndup
+ntfs_attr_get_search_ctx
+ntfs_attr_lookup
+ntfs_attr_put_search_ctx
+ntfs_attr_close
+ntfs_attr_map_runlist
+ntfs_rl_vcn_to_lcn
+ntfs_attr_map_whole_runlist
+ntfs_attr_vcn_to_lcn
+__cmpdi2
+ntfs_attr_find_vcn
+ntfs_compressed_attr_pread
+memset
+ntfs_attr_pread
+ntfs_rl_pwrite
+ntfs_cluster_alloc
+ntfs_runlists_merge
+ntfs_rl_extend
+ntfs_cluster_free_from_rl
+ntfs_attr_pwrite
+ntfs_compressed_pwrite
+ntfs_pwrite
+ntfs_attr_update_mapping_pairs
+ntfs_attr_reinit_search_ctx
+ntfs_mft_records_write
+ntfs_attr_pclose
+ntfs_compressed_close
+__divdi3
+ntfs_attr_mst_pread
+ntfs_mst_post_read_fixup_warn
+ntfs_attr_mst_pwrite
+ntfs_mst_pre_write_fixup
+ntfs_mst_post_write_fixup
+ntfs_names_full_collate
+ntfs_attr_name_free
+ntfs_attr_name_get
+ntfs_ucstombs
+ntfs_names_are_equal
+ntfs_extent_inode_open
+ntfs_attr_position
+ntfs_attr_find_in_attrdef
+ntfs_attr_size_bounds_check
+ntfs_attr_can_be_resident
+ntfs_make_room_for_attr
+memmove
+ntfs_resident_attr_record_add
+ntfs_attrlist_entry_add
+ntfs_attr_record_resize
+ntfs_inode_mark_dirty
+ntfs_non_resident_attr_record_add
+ntfs_attr_record_rm
+ntfs_attrlist_entry_rm
+ntfs_mft_record_free
+ntfs_attrlist_need
+ntfs_attr_add
+ntfs_inode_attach_all_extents
+ntfs_inode_add_attrlist
+ntfs_mft_record_alloc
+ntfs_attr_rm
+ntfs_attr_set_flags
+ntfs_cluster_free
+ntfs_resident_attr_value_resize
+ntfs_attr_record_move_to
+ntfs_attr_record_move_away
+ntfs_attr_make_non_resident
+ntfs_get_size_for_mapping_pairs
+ntfs_mapping_pairs_build
+ntfs_inode_free_space
+ntfs_attr_force_non_resident
+ntfs_rl_pread
+ntfs_rl_sparse
+ntfs_rl_get_compressed_size
+ntfs_rl_truncate
+ntfs_attr_truncate
+ntfs_attr_truncate_solid
+ntfs_attr_readall
+ntfs_attr_data_read
+ntfs_attr_data_write
+ntfs_attr_exist
+ntfs_attr_remove
+ntfs_attr_get_free_bits
+ntfs_bit_set
+ntfs_bit_get
+ntfs_bit_get_and_set
+ntfs_bitmap_set_run
+ntfs_bitmap_clear_run
+ntfs_boot_sector_is_ntfs
+ntfs_boot_sector_parse
+ntfs_fetch_cache
+ntfs_enter_cache
+realloc
+ntfs_invalidate_cache
+ntfs_remove_cache
+ntfs_create_lru_caches
+ntfs_dir_inode_hash
+ntfs_inode_nidata_free
+ntfs_inode_nidata_hash
+ntfs_dir_lookup_hash
+ntfs_free_lru_caches
+ntfs_get_collate_function
+ntfs_cluster_free_basic
+ntfs_device_alloc
+strdup
+ntfs_device_free
+ntfs_device_sync
+ntfs_mst_pread
+ntfs_mst_post_read_fixup
+ntfs_mst_pwrite
+ntfs_cluster_read
+ntfs_cluster_write
+ntfs_device_size_get
+ntfs_device_partition_start_sector_get
+ntfs_device_heads_get
+ntfs_device_sectors_per_track_get
+ntfs_device_sector_size_get
+ntfs_device_block_size_set
+NTFS_INDEX_SII
+NTFS_INDEX_SDH
+NTFS_INDEX_O
+NTFS_INDEX_Q
+NTFS_INDEX_R
+strrchr
+strlen
+strcmp
+ntfs_inode_lookup_by_name
+ntfs_inode_lookup_by_mbsname
+ntfs_uppercase_mbs
+ntfs_mbstoucs
+ntfs_inode_update_mbsname
+ntfs_pathname_to_inode
+ntfs_inode_open
+ntfs_inode_close
+ntfs_name_locase
+ntfs_readdir
+ntfs_inode_invalidate
+ntfs_sd_add_everyone
+ntfs_index_add_filename
+ntfs_create
+ntfs_create_device
+ntfs_create_symlink
+ntfs_check_empty_dir
+ntfs_delete
+ntfs_index_remove
+ntfs_inode_update_times
+ntfs_delete_reparse_index
+ntfs_delete_object_id_index
+ntfs_possible_symlink
+ntfs_link
+ntfs_dir_parent_inode
+ntfs_get_ntfs_dos_name
+ntfs_name_upcase
+ntfs_index_ctx_get
+ntfs_index_lookup
+ntfs_index_entry_mark_dirty
+ntfs_index_ctx_put
+ntfs_collapsible_chars
+ntfs_inode_close_in_dir
+ntfs_set_ntfs_dos_name
+strncpy
+ntfs_forbidden_chars
+ntfs_remove_ntfs_dos_name
+ntfs_get_efs_info
+ntfs_efs_fixup_attribute
+ntfs_set_efs_info
+ntfs_index_ctx_reinit
+ntfs_ie_get_vcn
+ntfs_ie_filename_get
+ntfs_ie_filename_dump
+ntfs_ih_filename_dump
+ntfs_ie_add
+ntfs_index_rm
+ntfs_index_root_get
+ntfs_index_next
+ntfs_inode_base
+ntfs_inode_allocate
+ntfs_file_record_read
+ntfs_inode_real_close
+ntfs_inode_sync
+clock_gettime
+ntfs_inode_badclus_bad
+ntfs_str2ucs
+ntfs_ucsfree
+ntfs_inode_get_times
+ntfs_inode_set_times
+ntfs_check_logfile
+ntfs_is_logfile_clean
+ntfs_empty_logfile
+ntfs_log_handler_null
+ntfs_log_get_levels
+ntfs_log_set_levels
+ntfs_log_clear_levels
+ntfs_log_get_flags
+ntfs_log_set_flags
+ntfs_log_clear_flags
+ntfs_log_set_handler
+ntfs_log_redirect
+vfprintf
+ntfs_log_handler_fprintf
+strerror
+fflush
+ntfs_log_handler_stdout
+ntfs_log_handler_outerr
+ntfs_log_handler_stderr
+ntfs_log_parse_option
+ntfs_mft_records_read
+ntfs_mft_record_check
+ntfs_mft_record_layout
+ntfs_mft_record_format
+ntfs_mft_usn_dec
+ntfs_get_ntfs_object_id
+ntfs_set_ntfs_object_id
+ntfs_remove_ntfs_object_id
+snprintf
+fopen64
+fgets
+strcpy
+fclose
+ntfs_realpath_canonicalize
+realpath
+__ctype_b
+strcat
+ntfs_make_symlink
+ntfs_get_ntfs_reparse_data
+ntfs_set_ntfs_reparse_data
+ntfs_remove_ntfs_reparse_data
+ntfs_get_nr_significant_bytes
+ntfs_write_significant_bytes
+ntfs_guid_is_zero
+ntfs_guid_to_mbs
+ntfs_sid_to_mbs_size
+ntfs_sid_to_mbs
+ntfs_generate_guid
+random
+ntfs_security_hash
+sprintf
+ntfs_get_ntfs_acl
+ntfs_get_owner_mode
+ntfs_alloc_securid
+ntfs_set_owner_mode
+ntfs_allowed_as_owner
+ntfs_set_ntfs_acl
+ntfs_set_mode
+ntfs_allowed_access
+ntfs_set_owner
+ntfs_set_ownmod
+ntfs_inherited_id
+getgrgid
+getpwuid
+ntfs_build_mapping
+ntfs_get_ntfs_attrib
+ntfs_set_ntfs_attrib
+ntfs_open_secure
+ntfs_close_secure
+ntfs_get_file_security
+ntfs_set_file_security
+ntfs_get_file_attributes
+ntfs_set_file_attributes
+ntfs_read_directory
+ntfs_read_sds
+ntfs_read_sii
+ntfs_read_sdh
+ntfs_get_usid
+ntfs_get_gsid
+ntfs_get_user
+ntfs_get_group
+ntfs_initialize_file_security
+ntfs_check_if_mounted
+getuid
+ntfs_mount
+ntfs_volume_get_free_space
+getgid
+ntfs_umount
+ntfs_leave_file_security
+ntfs_ucsncmp
+ntfs_ucsncasecmp
+ntfs_ucsnlen
+ntfs_file_value_upcase
+_stdlib_mb_cur_max
+wctomb
+mbstowcs
+mbtowc
+ntfs_upcase_table_build
+ntfs_upcase_build_default
+ntfs_locase_table_build
+ntfs_set_char_encoding
+strstr
+setlocale
+ntfs_home
+ntfs_volume_alloc
+ntfs_volume_startup
+ntfs_volume_check_hiberfile
+ntfs_device_mount
+ntfs_logfile_reset
+ntfs_set_shown_files
+ntfs_set_ignore_case
+ntfs_device_unix_io_ops
+setmntent
+getmntent
+endmntent
+hasmntopt
+ntfs_version_is_supported
+ntfs_volume_write_flags
+ntfs_volume_error
+ntfs_mount_error
+ntfs_set_locale
+ntfs_volume_rename
+ntfs_xattr_system_type
+ntfs_xattr_system_getxattr
+ntfs_xattr_system_setxattr
+ntfs_xattr_system_removexattr
+fsync
+fcntl64
+lseek64
+pread64
+pwrite64
+fstat64
+ioctl
+libc.so.0
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+libntfs-3g.so.83
+GCC_3.0
+GLIBC_2.0
+ '9H
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+(%0b
+(%0b
+ %0b
+ %0b
+(%0b
+(%0b
+ %0b
+ %0b
+(%0b
+(%0b
+ %0b
+ %0b
+(%0b
+(%0b
+ %0b
+ %0b
+(%0b
+(%0b
+ '9Q
+ '9Q
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ '9``
+ '9``
+b0%0
+b0%0
+D0%$
+ %0b
+ %0b
+b0%0
+b0%0
+b0%0
+b0%0
+b0%0
+b0%0
+b0%0
+b0%0
+b0%0
+b0%0
+b0%0
+b0%0
+b0%0
+b0%0
+ '9p$
+(%0b
+(%0b
+ %0b
+ %0b
+ %0b
+ %0b
+ '9JT
+ %0b
+ %0b
+ '9JT
+ %0b
+ %0b
+ '9JT
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+(%0b
+(%0b
+@ !$B
+@ !$B
+`0!'
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+b0$0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+F !$
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+F !$
+ %0b
+ %0b
+t-b 
+@ !$B
+$'9	
+('9T
+('9O
+ %0b
+ %0b
+$'9S
+ %0b
+ %0b
+ %0b
+ %0b
+$'9S
+ %0b
+ %0b
+ %0b
+ %0b
+$'9S
+$'9"
+$'9	
+ %0b
+ %0b
+ %0b
+ %0b
+$'9S
+('9O
+$'9	
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+$'9d
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+$'9d
+$'9d
+$'9d
+$'9m
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+$'9d
+(%0b
+(%0b
+D0%0
+(%0b
+(%0b
+b0%0
+b0%0
+$'9d
+(%0b
+(%0b
+b(%0
+D0%0
+ %0b
+ %0b
+ %0b
+ %0b
+b0%0
+b0%0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+('9O
+ %0b
+ %0b
+b0%0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+(%0b
+(%0b
+(%0b
+(%0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+(%0b
+(%0b
+$'9d
+ %0b
+ %0b
+ %0b
+ %0b
+D0%0
+b0%0
+#(%0
+#(%<
+#(%0
+D0%0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+b0%0
+ %0b
+ %0b
+ %0b
+ %0b
+b0%0
+b0$0
+b0$0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+G !$
+('9O
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+F !$
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+b0%0
+(%0b
+(%0b
+b0%0
+H !$
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+b0%0
+b0%0
+b0$0
+b0%0
+b0%0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+('9B
+('9OL
+('988
+('9O
+('9O
+('9OL
+ww4Bww
+334B33
+ww4Bww
+334B33
+b $<
+('9a
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+#(%0
+#(%<
+#(%0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+b0%0
+D0%0
+,,B 
+` !$
+` !$
+F !$
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+!$B"
+@ !$B
+@ !$B
+@ !$B
+@ !$B
+,'9/
+,'9/
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+@ !$
+ %0b
+ %0b
+ %0b
+ %0b
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+,'9dH
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+,'9Y
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+`0!$
+,'9Y
+ %0b
+ %0b
+(%0b
+(%0b
+(%0b
+(%0b
+(%0b
+(%0b
+b0%0
+t,b`
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+#(%0
+#(%<
+#(%0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+b0%0
+`(!0
+,'9~
+,'9~
+,'9~
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+ %0b
+ %0b
+b0%0
+#(%0
+#(%<
+#(%0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+b0%0
+ %0b
+ %0b
+ %0b
+ %0b
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+` !$c
+ %0b
+ %0b
+(%0b
+(%0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+b0$0
+b0%0
+ %0b
+ %0b
+IN4BDX
+ %0b
+ %0b
+ %0b
+ %0b
+0'9) 
+0'9&
+0'9) 
+ %0b
+ %0b
+0'9+@
+0'9.
+0'90
+0'9/x
+0'9+@
+b0%0
+b0%0
+b !$
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+0'9@@
+F !$
+0'9B`
+0'9B`
+0'9@
+0'9@
+0'9E
+ %0b
+ %0b
+0'98
+ %0b
+ %0b
+ %0b
+ %0b
+0'98
+ %0b
+ %0b
+ %0b
+ %0b
+0'9 
+ %0b
+ %0b
+0'9At
+0'9.
+0'9*
+0'9R
+0'9F
+0'9*
+0'9I@
+0'9) 
+0'9LL
+b0%0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+0'9) 
+ %0b
+ %0b
+0'9 
+0'9Fd
+0'9*
+(%0b
+(%0b
+0'9[t
+0'9T
+b0%0
+0'9$4
+0'9^
+0'9 
+0'9!
+0'9 
+0'9*
+ %0b
+ %0b
+0'9]h
+0'9*
+0'9a
+0'9_
+0'9ad
+0'9/x
+ %0b
+ %0b
+ %0b
+ %0b
+0'9g4
+0'9a
+0'9_
+0'918
+0'9>
+0'9F
+0'9M`
+0'9Fd
+0'9ad
+0'9a
+0'9dX
+0'9Fd
+0'9O
+ %0b
+ %0b
+ %0b
+ %0b
+0'9]h
+0'9g4
+0'9!
+ %0b
+ %0b
+ %0b
+ %0b
+b0%0
+b0%0
+0'9%(
+0'9ad
+b0$0
+b0%0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+0'9[t
+0'9a
+0'9 
+0'9p
+0'918
+0'9Fd
+0'9ad
+0'9ad
+0'9/x
+0'9a
+0'9p
+0'9ad
+0'9r<
+0'9vD
+0'9uT
+0'9.
+@ !$B
+0'9/x
+0'90
+0'9$4
+0'9^
+0'9 
+ %0b
+ %0b
+0'9]h
+ %0b
+ %0b
+0'9g4
+0'9!
+0'9[t
+0'9vD
+0'9y@
+ %0b
+ %0b
+0'9[t
+0'9vD
+@0!'
+0'9) 
+0'9/x
+0'9) 
+0'9/x
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+G !$
+ %0b
+ %0b
+ %0b
+ %0b
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+ %0b
+ %0b
+ %0b
+ %0b
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+b0%0
+#(%0
+#(%<
+#(%0
+D0%0
+ %0b
+ %0b
+ %0b
+ %0b
+@ !<
+@ !<
+@0!0
+@ !0
+@0!<
+@ !<
+@0!0
+@ !0
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+4'9!`
+4'9!`
+4'9!`
+4'9"4
+4'9"4
+4'9"4
+4'9%P
+b !$
+4'9"4
+4'9(
+4'9"4
+b !$
+4'9(
+4'9(
+b !$
+4'9;
+4'9#x
+4'9#x
+4'9#x
+4'9#x
+ %0b
+ %0b
+ %0b
+ %0b
+CH4BKD
+CH4BKD
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+4'9F 
+4'9K
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+CH4BKD
+ %0b
+ %0b
+RS4BTR
+4'9S8
+RS4BTR
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+RC4BRD
+RS4BTR
+CH4BKD
+4'9U
+RS4BTR
+CH4BKD
+@ !$
+4,B 
+4'9k0
+4'9j
+FI4BLE
+ %0b
+ %0b
+b0%0
+b0%0
+b0%0
+(%0b
+(%0b
+b0%0
+b0%0
+b !$
+b0%0
+b0%0
+b(%0
+b0%0
+ %0b
+ %0b
+(%0b
+(%0b
+b0%0
+(%0b
+(%0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+FI4BLE
+#(%0
+#(%<
+#(%0
+ %0b
+ %0b
+ %0b
+ %0b
+FI4BLE
+#(%0
+#(%<
+#(%0
+b0$0
+b0%0
+BA4BAD
+HO4BLE
+ %0b
+ %0b
+ %0b
+ %0b
+@(!$
+@(!$
+@(!$
+ %0b
+ %0b
+ %0b
+ %0b
+@(!$
+@(!$
+@(!$
+@(!$
+@(!$
+@(!$
+@ !$
+@ !$
+@ !$
+ %0b
+ %0b
+ %0b
+ %0b
+@ !$
+8'9%L
+8'9%L
+8'9 
+8'9'(
+8'9)
+8'9)
+8'9.
+8'92
+ %0b
+ %0b
+ %0b
+ %0b
+`(!$
+ %0b
+ %0b
+ %0b
+ %0b
+`(!$
+8'9;L
+8'99p
+8'9=
+8'9;L
+8'9'(
+8'9=
+8'9>
+8'9=
+8'9;L
+8'99p
+8'9K`
+8'9M
+8'9K`
+8'9O
+8'9I
+8'9J
+8'9M
+8'9K`
+8'9O
+8'9I
+8'9J
+b !$
+8'9M
+8'9M
+8'9K`
+8'9O
+8'9O
+8'9I
+8'9J
+8'9K`
+8'9I
+8'9J
+8'9q
+8'9q
+8'9K`
+8'9I
+8'9Z
+8'9S
+8'9Pd
+8'9^
+b !$
+8'9K`
+b !$
+8'9K`
+b !$
+8'9q
+8'9a
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+b !$
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+b !$
+b !$
+b !$
+8'9q
+8'9r
+ %0b
+ %0b
+ff4Bfg
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+0$B@
+H$c@
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+@ !$
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+@ !$
+ %0b
+ %0b
+ %0b
+ %0b
+F !<
+F !<
+@ !$
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+@ !$
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+@ !$
+ %0b
+ %0b
+(%0b
+(%0b
+ %0b
+ %0b
+(%0b
+(%0b
+(%0b
+(%0b
+(%0b
+(%0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+%0B0(
+(%0b
+(%0b
+(%0b
+(%0b
+(%0b
+(%0b
+(%0b
+(%0b
+ %0b
+ %0b
+ %0b
+ %0b
+(%0b
+(%0b
+ %0b
+ %0b
+ %0b
+ %0b
+(%0b
+(%0b
+%0B0 
+%0B0(
+ %0b
+ %0b
+ %0b
+ %0b
+(%0b
+(%0b
+ %0b
+ %0b
+ %0b
+ %0b
+(%0b
+(%0b
+4B 	
+<'9!4
+ %0b
+ %0b
+4B 	
+<'9,4
+ %0b
+ %0b
+4B 	
+ %0b
+ %0b
+4B 	
+ %0b
+ %0b
+ %0b
+ %0b
+4B 	
+4B 	
+4B 	
+4B 	
+4B 	
+4B 	
+4B 	
+4B 	
+4B 	
+4B 	
+<'9_p
+@ !$
+@ !$
+<'9f0
+<'9g
+@(!$B
+`(!$c
+`(!$c
+<'9a
+<'9j
+<'9g
+@ !$
+@ !$
+@ !$
+@ !$
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+BA4BAD
+FI4BLE
+BA4BAD
+FI4BLE
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+FI4BLE
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+ %0b
+T0E?
+@ !$
+@ !$
+@(!$
+@ !$
+@ !$
+@(!$
+ '9H
+S-1-
+Bad mapping item "%s"
+Invalid user "%s"
+Invalid group "%s"
+NTFS    
+HINTS: Either the volume is a RAID/LDM but it wasn't setup yet,
+   or it was not setup correctly (e.g. by not using mdadm --build ...),
+   or a wrong device is tried to be mounted,
+   or the partition table is corrupt (partition is smaller than NTFS),
+   or the NTFS boot sector is corrupt (NTFS size is not valid).
+inode
+nidata
+lookup
+securid
+legacy
+Runs not adjacent
+Invalid hole
+Adjacent holes
+begin compressed write
+end compressed write
+end compressed close
+$Bad
+DEBUG: 
+TRACE: 
+QUIET: 
+INFO: 
+VERBOSE: 
+PROGRESS: 
+WARNING: 
+ERROR: 
+CRITICAL: 
+(%d) 
+%s(): 
+: %s
+--log-debug
+--log-verbose
+--log-quiet
+--log-trace
+  Leaving inconsistent metadata.  Run chkdsk.
+$ObjId
+/sys/block/%s/dm/name
+/dev/mapper/%s
+/dm-
+.NTFS-3G/
+$Reparse
+%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+S-%hhu-
+0x%llx
+/proc/%u/task/%u/status
+.NTFS-3G/UserMapping
+$Secure
+utf8
+UTF8
+utf-8
+UTF-8
+News, support and information:  http://tuxera.com
+The device '%s' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
+NTFS is either inconsistent, or there is a hardware fault, or it's a
+SoftRAID/FakeRAID hardware. In the first case run chkdsk /f on Windows
+then reboot into Windows twice. The usage of the /f parameter is very
+important! If the device is a SoftRAID/FakeRAID then first activate
+it and mount a different device under the /dev/mapper/ directory, (e.g.
+/dev/mapper/nvidia_eahaabcc1). Please see the 'dmraid' documentation
+for more details.
+The NTFS partition is hibernated. Please resume and shutdown Windows
+properly, or mount the volume read-only with the 'ro' mount option, or
+mount the volume read-write with the 'remove_hiberfile' mount option.
+For example type on the command line:
+            mount -t ntfs-3g -o remove_hiberfile %s %s
+Write access is denied because the disk wasn't safely powered
+off and the 'norecover' mount option was specified.
+Mount is denied because the NTFS volume is already exclusively opened.
+The volume may be already mounted, or another software may use it which
+could be identified for example by the help of the 'fuser' command.
+Either the device is missing or it's powered down, or you have
+SoftRAID hardware and must use an activated, different device under
+/dev/mapper/, (e.g. /dev/mapper/nvidia_eahaabcc1) to mount NTFS.
+Please see the 'dmraid' documentation for help.
+Please check '%s' and the ntfs-3g binary permissions,
+and the mounting user ID. More explanation is provided at
+http://tuxera.com/community/ntfs-3g-faq/#unprivileged
+hiberfil.sys
+hibr
+$MFT
+$MFTMirr
+$LogFile
+$Volume
+$AttrDef
+root directory
+$Bitmap
+$Boot
+$BadClus
+$Secure
+$UpCase
+$Extend
+system file
+mft record
+/etc/mtab
+ntfs-3g.
+user.
+system.ntfs_acl
+system.ntfs_attrib
+system.ntfs_attrib_be
+system.ntfs_efsinfo
+system.ntfs_reparse_data
+system.ntfs_object_id
+system.ntfs_dos_name
+system.ntfs_times
+system.ntfs_times_be
+system.ntfs_crtime
+system.ntfs_crtime_be
+system.posix_acl_access
+system.posix_acl_default
+user.ntfs.efsinfo
+Groups:

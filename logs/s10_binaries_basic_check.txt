@@ -1,0 +1,233 @@
+[+] Check binaries for critical functions
+=================================================================
+This module identifies the usage of critical binary functions in firmware via readelf.
+Examples of binary functions are system, strcpy, printf and strcat. These functions are listed in the configuration
+file config/functions.cfg.
+
+[*] Interesting functions: fprintf mmap popen printf sprintf strcat strcpy system
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libpthread-0.9.30.so (-rwxrwxr-x 501 502) found:
+    	12:	00000000	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+    	28:	00000000	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	100:	00000000	516	FUNC	GLOBAL	DEFAULT	UND	system
+    	167:	00000000	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	169:	00000000	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	271:	00000000	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	473:	0000d170	132	FUNC	GLOBAL	DEFAULT	UND	mmap
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libdl-0.9.30.so (-rwxr-xr-x 501 502) found:
+    	34:	00001880	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libm-0.9.30.so (-rwxrwxr-x 501 502) found:
+    	6:	00000000	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+    	13:	00000000	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	44:	00000000	516	FUNC	GLOBAL	DEFAULT	UND	system
+    	74:	00000000	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	76:	00000000	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	122:	00000000	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libuClibc-0.9.30.so (-rwxrwxr-x 501 502) found:
+    	16:	0001d150	36	FUNC	GLOBAL	DEFAULT	7	strcpy
+    	43:	00018e20	572	FUNC	GLOBAL	DEFAULT	7	popen
+    	45:	00018a10	80	FUNC	GLOBAL	DEFAULT	7	printf
+    	169:	0002c0c0	516	FUNC	WEAK	DEFAULT	7	system
+    	238:	00006930	132	FUNC	GLOBAL	DEFAULT	7	mmap
+    	305:	00018ab0	60	FUNC	GLOBAL	DEFAULT	7	fprintf
+    	315:	0001cfe0	52	FUNC	GLOBAL	DEFAULT	7	strcat
+    	539:	00018b30	72	FUNC	GLOBAL	DEFAULT	7	sprintf
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libthreadutil.so.2.2.3 (-rwxr-xr-x 501 502) found:
+    	81:	000043b0	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	100:	00004310	80	FUNC	GLOBAL	DEFAULT	UND	printf
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/librt-0.9.30.so (-rwxrwxr-x 501 502) found:
+    	6:	00000000	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+    	17:	00000000	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	73:	00000000	516	FUNC	GLOBAL	DEFAULT	UND	system
+    	121:	00000000	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	124:	00000000	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	219:	00000000	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libupnp.so.3.0.5 (-rwxr-xr-x 501 502) found:
+    	100:	0001f3e0	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	148:	0001f140	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	201:	0001ee90	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	211:	0001ee10	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libcrypt-0.9.30.so (-rwxrwxr-x 501 502) found:
+    	17:	00000000	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	81:	00000000	516	FUNC	GLOBAL	DEFAULT	UND	system
+    	115:	00000000	132	FUNC	GLOBAL	DEFAULT	UND	mmap
+    	148:	00000000	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	262:	00000000	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	354:	00004900	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	356:	000048e0	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libntfs-3g.so.83.0.0 (-rwxrwxr-x 501 502) found:
+    	197:	0007e8b0	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	283:	0007e780	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	287:	0007e760	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	410:	0007e5c0	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libmsglog.so (-rwxrwxr-x 501 502) found:
+    	28:	00000c90	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	42:	00000c10	80	FUNC	GLOBAL	DEFAULT	UND	printf
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare (-rwxr-xr-x 501 502) found:
+    	76:	00412ca0	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	145:	00412a90	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	149:	00412a80	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	185:	004129a0	112	FUNC	GLOBAL	DEFAULT	UND	system
+    	220:	00412880	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	227:	00412810	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd (-rwxrwxr-x 501 502) found:
+    	962:	0051cea0	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	1981:	0051c9f0	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	2011:	0051c9b0	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	2663:	0051c750	516	FUNC	GLOBAL	DEFAULT	UND	system
+    	3236:	0051c4d0	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	3348:	0051c470	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/dhcp6s (-rwxrwxr-x 501 502) found:
+    	164:	00421c10	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	265:	004219e0	80	FUNC	GLOBAL	DEFAULT	UND	printf
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/xl2tpd (-rwxrwxr-x 501 502) found:
+    	88:	00417ff0	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	188:	00417d80	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	190:	00417d60	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	302:	00417bd0	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	313:	00417ba0	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/radvd (-rwxrwxr-x 501 502) found:
+    	123:	00410800	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	126:	004107d0	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	213:	004105a0	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ip (-rwxrwxr-x 501 502) found:
+    	102:	0042e2b0	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	191:	0042e090	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	192:	0042e080	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	293:	0042de90	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	305:	0042de50	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/pppd (-rwxrwxr-x 501 502) found:
+    	205:	00442b80	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	413:	004427a0	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	542:	004425b0	516	FUNC	GLOBAL	DEFAULT	UND	system
+    	666:	004423e0	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	686:	004423a0	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/smbd (-rwxr-xr-x 501 502) found:
+    	171:	00441180	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	390:	00440dd0	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	399:	00440da0	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/bpalogin (-rwxrwxr-x 501 502) found:
+    	35:	00405630	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	73:	004054f0	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	74:	004054e0	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	112:	004053f0	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	116:	004053d0	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/dhcp6ctl (-rwxrwxr-x 501 502) found:
+    	57:	00403bd0	80	FUNC	GLOBAL	DEFAULT	UND	printf
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/radvdctl (-rwxrwxr-x 501 502) found:
+    	24:	00402e80	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	48:	00402d80	516	FUNC	GLOBAL	DEFAULT	UND	system
+    	60:	00402d20	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	61:	00402d10	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/ping6 (-rwxrwxr-x 501 502) found:
+    	62:	00409670	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	107:	00409530	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	108:	00409520	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	166:	004093c0	80	FUNC	GLOBAL	DEFAULT	UND	printf
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd (-rwxrwxr-x 501 502) found:
+    	223:	00427010	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	441:	00426cc0	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	513:	00426c10	132	FUNC	GLOBAL	DEFAULT	UND	mmap
+    	734:	004269f0	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/dhcp6c (-rwxrwxr-x 501 502) found:
+    	168:	00423240	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	281:	00423000	80	FUNC	GLOBAL	DEFAULT	UND	printf
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/tc (-rwxrwxr-x 501 502) found:
+    	149:	00420db0	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	258:	00420bf0	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	260:	00420be0	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	374:	00420a10	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	385:	004209d0	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/lld2d (-rwxrwxr-x 501 502) found:
+    	147:	00411c80	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	149:	00411c60	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	221:	00411b20	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	233:	00411b00	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iwcontrol (-rwxrwxr-x 501 502) found:
+    	36:	00406e80	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	66:	00406d30	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	97:	00406c10	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	100:	00406be0	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/auth (-rwxrwxr-x 501 502) found:
+    	101:	00424290	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	195:	00424100	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	314:	00423fe0	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	321:	00423fc0	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iptables (-rwxrwxr-x 501 502) found:
+    	99:	00435ac0	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	180:	00435920	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	183:	00435900	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	281:	004356d0	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	288:	004356b0	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iapp (-rwxrwxr-x 501 502) found:
+    	21:	00402a20	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	44:	004028d0	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	53:	00402870	516	FUNC	GLOBAL	DEFAULT	UND	system
+    	62:	00402810	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	64:	004027f0	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iwpriv (-rwxrwxr-x 501 502) found:
+    	28:	00405590	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	52:	00405480	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	73:	004053b0	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	77:	00405380	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/acltd (-rwxrwxr-x 501 502) found:
+    	49:	004019f0	100	FUNC	GLOBAL	DEFAULT	UND	printf
+    	50:	004019e0	48	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox (-rwxr-xr-x 501 502) found:
+    	157:	00435910	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	339:	00435390	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	344:	00435360	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	550:	00434df0	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	573:	00434d80	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ntfs-3g (-rwxr-xr-x 501 502) found:
+    	95:	00424990	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	182:	00424680	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	185:	00424660	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	304:	00424210	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/wscd (-rwxrwxr-x 501 502) found:
+    	86:	004370d0	72	FUNC	GLOBAL	DEFAULT	UND	sprintf
+    	196:	00436ef0	52	FUNC	GLOBAL	DEFAULT	UND	strcat
+    	198:	00436ed0	60	FUNC	GLOBAL	DEFAULT	UND	fprintf
+    	275:	00436df0	516	FUNC	GLOBAL	DEFAULT	UND	system
+    	341:	00436d50	80	FUNC	GLOBAL	DEFAULT	UND	printf
+    	353:	00436d30	36	FUNC	GLOBAL	DEFAULT	UND	strcpy
+
+[+] Interesting function in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/usbp (-rwxr-xr-x 501 502) found:
+    	44:	00401a90	516	FUNC	GLOBAL	DEFAULT	UND	system
+    	54:	00401a20	572	FUNC	GLOBAL	DEFAULT	UND	popen
+
+[*] Found 36 binaries with interesting functions in 108 files (vulnerable functions: fprintf mmap popen printf sprintf strcat strcpy system)

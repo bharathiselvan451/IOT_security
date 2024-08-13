@@ -1,0 +1,2801 @@
+/lib/ld-uClibc.so.0
+@d`o
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+libmsglog.so
+_DYNAMIC_LINKING
+__RLD_MAP
+__start
+_GLOBAL_OFFSET_TABLE_
+__data_start
+puts
+strlen
+link_stats_valid
+script_env
+reopen_log
+gethostname
+option_error
+umask
+getuid
+privileged
+script_setenv
+getgroups
+ngroups
+magic_init
+protocols
+tty_init
+progname
+setPhase
+parse_args
+new_phase
+req_unit
+set_ifunit
+devnam_fixed
+ipv6
+ipv6cp_protent
+user_len
+passwd_len
+fopen
+user
+fread
+ferror
+fclose
+the_channel
+debug
+setlogmask
+httpd_pid
+send_phase
+new_phase_hook
+geteuid
+ppp_available
+no_ppp_msg
+sys_check_options
+auth_check_options
+dump_options
+dryrun
+init_pr_log
+print_options
+end_pr_log
+fd_devnull
+sys_init
+nodetach
+updetach
+getlogin
+getpwuid
+syslog
+getpid
+demand
+open_ppp_loopback
+demand_conf
+do_callback
+need_holdoff
+unsuccess
+asked_to_quit
+bundle_eof
+bundle_terminating
+listen_time
+devfd
+status
+doing_callback
+demand_unblock
+add_fd
+get_loop_output
+remove_fd
+demand_block
+gettimeofday
+script_unsetenv
+lcp_open
+ccp_fsm
+kill_link
+lcp_close
+notice
+open_ccp_flag
+ccp_protent
+persist
+maxfail
+demand_discard
+holdoff_hook
+child_wait
+dbglog
+childwait_done
+__sigsetjmp
+sigprocmask
+got_sighup
+got_sigterm
+got_sigusr2
+wait_input
+sigemptyset
+sigaddset
+sigaction
+signal
+ifname
+detached
+pipe
+pidchange
+setsid
+chdir
+dup2
+log_default
+log_to_fd
+complete_read
+openlog
+fprintf
+linkname
+unlink
+__errno_location
+protocol_list
+inpacket_buf
+read_packet
+hungup
+lcp_lowerdown
+link_terminated
+dump_packet
+snoop_recv_hook
+lcp_fsm
+protocol_name
+lcp_sprotrej
+error_count
+phasechange
+print_link_stats
+exitnotify
+sendDetectFailed
+sys_cleanup
+fd_ppp
+remove_pidfiles
+link_connect_time
+get_ppp_stats
+malloc
+free
+kill
+sigreceived
+siglongjmp
+_exit
+sys_close
+closelog
+fork_notifier
+safe_fork
+record_child
+waitpid
+sleep
+getgid
+setgid
+setuid
+stderr
+fwrite
+execl
+perror
+getegid
+execve
+log_to_web
+sigqueue
+notify_wait_req_time_out
+novm
+strncmp
+s_env_nalloc
+realloc
+lcp_protent
+pap_protent
+chap_protent
+ipcp_protent
+ecp_protent
+eap_protent
+get_host_seed
+srand48
+mrand48
+untimeout
+fsm_lowerdown
+fsm_lowerup
+fsm_sdata
+outpacket_buf
+peer_mru
+memcpy
+memset
+lcp_wantoptions
+lcp_allowoptions
+fsm_init
+chap_mdtype_all
+fsm_open
+fsm_close
+ppp_send_config
+lax_recv
+ppp_recv_config
+fsm_input
+lcp_gotoptions
+special_flag
+fsm_protreject
+magic
+magic_record
+multilink
+noendpoint
+auth_reset
+lcp_loopbackfail
+lcp_hisoptions
+netif_set_mtu
+link_established
+link_down
+link_required
+lcp_echo_interval
+lcp_echo_fails
+lcp_lowerup
+sprintf
+sendto
+int_option
+ipcp_allowoptions
+ipcp_wantoptions
+inet_addr
+gethostbyname
+strchr
+option_priority
+bad_ip_adrs
+ip_ntoa
+remote_name
+strlcpy
+parse_dotted_ip
+netmask
+strtoul
+ipcp_fsm
+ipcp_gotoptions
+ip_choose_hook
+ipcp_hisoptions
+disable_defaultip
+GetMask
+sifaddr
+sifup
+sifnpmode
+sifdefaultroute
+sifproxyarp
+auth_ip_addr
+sifvjcomp
+system
+demand_rexmit
+reset_link_stats
+np_up
+ip_up_notifier
+ip_up_hook
+update_link_stats
+ip_down_notifier
+ip_down_hook
+np_down
+sifdown
+cifproxyarp
+cifdefaultroute
+cifaddr
+np_finished
+baud_rate
+ipparam
+run_program
+strcpy
+sendDetectMsg
+setipaddr
+upap
+auth_withpeer_fail
+auth_peer_fail
+check_passwd
+auth_number
+remote_number
+auth_peer_success
+auth_withpeer_success
+get_lan_mac
+print_string
+chap_md5_init
+chapms_init
+drand48
+__muldf3
+__fixunsdfsi
+chap_max_transmits
+chap_timeout_time
+explicit_remote
+chap_verify_hook
+chap_rechallenge_time
+get_secret
+MD5_Update
+strtol
+ccp_wantoptions
+ccp_allowoptions
+ccp_gotoptions
+ccp_hisoptions
+ccp_flags_set
+ccp_test
+ccp_fatal_error
+ecp_fsm
+ecp_wantoptions
+ecp_gotoptions
+ecp_allowoptions
+ecp_hisoptions
+strncpy
+strdup
+seteuid
+fgets
+override_value
+getgrnam
+ppp_devnam
+pap_logout_hook
+clean_check
+link_down_notifier
+upper_layers_down
+auth_required
+uselogin
+our_name
+eap_authpeer
+chap_auth_peer
+upap_authpeer
+eap_authwithpeer
+chap_auth_with_peer
+upap_authwithpeer
+auth_done
+auth_up_notifier
+options_from_list
+start_networks
+continue_networks
+peer_authname
+idle_time_hook
+idle_time_limit
+maxconnect
+maxoctets
+maxoctets_timeout
+maxoctets_dir
+get_idle_time
+usehostname
+allow_any_ip
+have_route_to
+refuse_pap
+refuse_chap
+refuse_mschap
+refuse_mschap_v2
+refuse_eap
+pap_auth_hook
+strcmp
+cryptpap
+getpwnam
+endpwent
+getspnam
+endspent
+logwtmp
+lseek
+null_auth_hook
+pap_passwd_hook
+pap_check_hook
+chap_check_hook
+chap_passwd_hook
+getnetbyname
+allowed_address_hook
+strncasecmp
+fileno
+fstat
+getword
+privileged_option
+option_source
+options_from_file
+strstr
+general_options
+auth_options
+current_option
+vslprintf
+__fgetc_unlocked
+fgetc
+__ctype_b
+toupper
+ungetc
+strncat
+domain
+kdebugflag
+pppoe_init
+pppol2tp_init
+pptp_plugin_init
+holdoff_specified
+tune_kernel
+connect_delay
+framemax
+framelen
+pend_q
+escape_flag
+flush_flag
+loop_frame
+pend_qtail
+msglogd
+strerror
+ctime
+vslp_printer
+strrchr
+atoi
+ioctl
+new_style_driver
+ppp_dev_fd
+sync_serial
+generic_establish_ppp
+fcntl
+tcflush
+generic_disestablish_ppp
+cfg_bundle
+speeds
+setdtr
+tcgetattr
+modem
+crtscts
+inspeed
+cfsetospeed
+cfsetispeed
+cfgetospeed
+tcsetattr
+default_device
+snoop_send_hook
+select
+loop_chars
+getmntent
+route_fd
+strtok
+strcasecmp
+inet_ntoa
+delete_conflict_host_route
+get_pty
+uname
+sscanf
+utmpname
+setutent
+getutent
+pututline
+endutent
+updwtmp
+fchown
+fchmod
+strlcat
+devstat
+xmit_accm
+add_notifier
+tty_channel
+notty
+ptycommand
+pty_socket
+using_pty
+isatty
+ttyname
+options_for_tty
+lockflag
+privopen
+record_file
+set_up_tty
+callback_script
+tty_options
+initializer
+device_script
+disconnect_tty
+welcomer
+disconnect_script
+tty_close_fds
+unlock
+tty_set_xaccm
+tty_send_config
+restore_tty
+relock
+charshunt_pid
+max_data_rate
+__fputc_unlocked
+fputc
+__floatsidf
+__divdf3
+__adddf3
+__fixdfsi
+fflush
+tty_process_extra_options
+tty_check_options
+tty_establish_ppp
+tty_disestablish_ppp
+tty_do_send_config
+tty_recv_config
+cleanup_tty
+eap_states
+MD5_Init
+MD5_Final
+memcmp
+random_bytes
+chap_register_digest
+getsockname
+getsockopt
+pppol2tp_channel
+setsockopt
+pppol2tp_send_accm_hook
+pppol2tp_ip_updown_hook
+add_options
+MD4Update
+ChapMS
+ChapMS2
+DesSetkey
+DesEncrypt
+SHA1_Init
+SHA1_Update
+SHA1_Final
+MD4Init
+MD4Final
+ChallengeHash
+GenerateAuthenticatorResponse
+setkey
+encrypt
+ipv6cp_wantoptions
+inet_pton
+llv6_ntoa
+eui64_ntoa
+ipv6cp_fsm
+ipv6cp_allowoptions
+ipv6cp_gotoptions
+ipv6cp_hisoptions
+ether_to_eui64
+sif6addr
+no_ifaceid_neg
+cif6addr
+ipv6cp_save_ip
+parsePacket
+parseForHostUniq
+putchar
+bufinfo
+Eth_PPPOE_Discovery
+sendPacket
+receivePacket
+packetIsForMe
+printErr
+fatalSys
+parsePADOTags
+parsePADSTags
+openInterface
+sendPADI
+waitForPADO
+sendPADR
+waitForPADS
+Eth_PPPOE_Session
+rp_fatal
+send
+sysErr
+dumpPacket
+etherType
+localtime
+strftime
+dumpHex
+ppp_session_number
+discovery
+pppoe_channel
+strDup
+pppd_pppoe_service
+sendPADT
+pptp_server
+pptp_client
+pptp_timeout
+call_ID
+pptp_phone
+localbind
+callmgr_name_unixsock
+pppd_pid
+pptp_sock
+callmgr_main
+pptp_channel
+callmgr_env
+pptp_conn_closure_get
+pptp_call_closure_get
+vector_contains
+vector_remove
+pptp_call_get_ids
+__assert
+_warn
+dirnamex
+make_valid_path
+listen
+inet_aton
+open_inetsock
+open_unixsock
+file2fd
+callmgr_sighandler
+callmgr_do_nothing
+pptp_conn_open
+vector_create
+pptp_conn_closure_put
+pptp_conn_established
+pptp_fd_set
+pptp_dispatch
+vector_search
+vector_size
+vector_get_Nth
+pptp_call_close
+pptp_conn_close
+pptp_conn_destroy
+vector_destroy
+close_inetsock
+close_unixsock
+accept
+pptp_call_open
+call_callback
+pptp_call_closure_put
+vector_insert
+pptp_call_destroy
+sigpipe_close
+sigpipe_fd
+memmove
+pptp_write_some
+idle_wait
+setitimer
+get_quirk_index
+pptp_fixups
+pptp_send_ctrl_packet
+pptp_set_link
+ctrlp_disp
+sigpipe_read
+pptp_read_some
+pptp_make_packet
+pptp_dispatch_packet
+vector_scan
+sigpipe_create
+sigpipe_assign
+orckit_atur3_build_hook
+orckit_atur3_start_ctrl_conn_hook
+orckit_atur3_set_link_hook
+vsnprintf
+log_string
+sigpipe_handler
+stripslash
+mkdir
+libcrypt.so.0
+libc.so.0
+__environ
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GLIBC_2.0
+$'9f 
+('9# 
+$'9y
+$!?D
+$&1w$
+$'9w$
+$&sw$
+$&1w$
+$B/@
+$!/@
+$!/@
+ !&E
+  !$
+  !$
+  !$
+4BB?
+4BB@
+$B?@
+$B?@
+$B?@
+@ !'
+  !$
+` !$
+$B?@
+$!?@
+$B?@
+$!?@
+$B?@
+$!?@
+  !'
+  !*B
+  !$
+@0!$
+($c>
+($c>
+($c?
+($c?T
+@ !$
+($c?t
+`(!'
+($c?
+($c@$
+0!(b
+($c@
+ (!$
+@ !$
+ 0!&
+`0!'
+(%&1
+(%&1
+($cF
+`0!'
+@8!'
+ %%k
+ %%k
+@0!'
+($cFx
+` !$c
+` !$c
+($cG
+@ !$
+@ !$
+$!G 
+ 8!&
+$BG$
+` !$d
+ %%J
+ %%J
+ %%J
+ %%J
+0#%J
+ %%J
+ %%J
+ %%J
+ %%J
+ %%J
+ %%J
+ %%J
+ %%J
+ %%J
+ %%J
+@8!'
+0#%k
+@0!'
+$!G$
+p4Bpp
+@4B@@
+$!G$
+  !$
+@4B@@
+@(!$
+,'98(
+$BGD
+$BGH
+$!GD
+,'9:
+,'98(
+$cGD
+$BGH
+$!GD
+,'9:
+$BG 
+$!G 
+$!GH
+$cGD
+$!GD
+,'9:
+$!GD
+,'9:
+  !$
+@ !'
+$!GH
+($cR@
+  !$
+,'9PT
+,'9PT
+,'9PT
+  !4
+  !4
+,'9I
+C !(
+,'9L0
+,'9N
+,'9O
+,'9S8
+,'9S8
+,'9S8
+(!&&
+($BU
+($BU
+ (!&
+$BGP
+,'9Z
+$!GP
+,'9Z
+&1GP
+,'9[
+q !$
+b $0b
+,$B_
+@0!$P
+@0!'
+Wp&g
+38!$
+(&RW
+(&RX
+,'9`
+,'9\
+,'9c
+&1GP
+gE4B#
+24BTv
+,'9l 
+F0#$
+,'9l 
+$ 4Bp
+04BF
+y4BC
+4B%b
+&^4BZQ
+EZ4B
+go4B
+*4BL
+4B9B
+4Ba"
+4BK`
+4BVe
+)4B"D
+C*4B
+e[4BY
+4B~O
+S4B~
+($BZ
+($BZ
+$cI`
+$cId
+$cId
+($c[
+@(!$
+@(!$
+$cId
+($c\
+($c\
+($B\
+($B\
+($c\d
+($c\p
+@(!$
+$cI`
+$cI`
+($c^ 
+($B\
+&1I`
+$cI`
+&1I`
+$BI`
+$BI|
+$!I|
+$BIt
+$BI|
+$BI|
+$cIp
+$BIp
+$BIp
+$BI|
+@ !$
+($Bj`
+@ !'
+@ !'
+@ !'
+($Bj
+` !$c
+($Bk
+.4BE
+`(!$
+$!It
+$!It
+@ !'
+(&skp
+` !'
+$cIx
+$cIx
+$BI|
+V !$
+` !'
+@ !$B
+$cIx
+$cIx
+@ !'
+  !'
+@ !'
+  !'
+($cwd
+($Bph
+%(!'
+(&sxX
+($cx
+ !&R
+($cyd
+($cz
+($Bz@
+0'9	
+($c{
+{H&&
+@ !$
+($c|T
+@ !&R
+@ !&R
+0'9	
+  !$
+ (!&
+($c~$
+0'9$(
+C !&
+0%&R
+@ !<
+@(!$
+0'9+
+@ !$
+@ !$
+0'9+
+0&1+
+@ !$
+0'9+
+0'9+
+0'9+
+0'9+
+0'9+
+0'9+
+0'9+
+  !$
+  !$
+@ !$
+@ !'
+  !'
+0'97p
+` !<
+$!k4
+  !$
+0'98h
+  !$
+@ !$
+0'97p
+0'9F`
+0'98h
+0'97p
+0'9;
+0'98h
+0'97p
+6et>
+6et>
+0'98h
+0'9F`
+0'98h
+0'97
+` !'
+0'9MX
+` !$
+0'9M
+@(!'
+$BkD
+@ !&1
+$ck4
+$Bk4
+$!k4
+  !&#
+0'97
+0'98h
+0'97
+0'97
+0'97
+0'98h
+`(!$
+0'9c
+0'9aP
+0'9cX
+0&1f
+$Bo4
+0'9c
+0'9cX
+0'9c
+0'9cX
+ !0c
+0'9c
+0'9g
+$co4
+$co4
+0'97
+0'9s
+0'9aP
+@ !$
+@(!$
+@ !'
+@ !'
+$!o4
+@ !$
+$co4
+@ !4
+0'9z
+@ !4
+@ !4
+@ !4
+@ !(b
+`0!'
+`(!$
+@(!$
+ (!$
+0'98h
+$Bo4
+$co4
+0'9aP
+@ !$
+$co4
+$co4
+0'97
+@ !<
+  !<
+@ !$
+` !'
+@ !$
+0'9F`
+0'98h
+0'9;
+0'97p
+0'9;
+ (!$
+  !'
+ (!$
+@ !$
+ff4Bfg
+`(!$
+@(!$
+@(!$
+  !&
+%0#$
+  !4
+  !4
+@@!$
+  !'
+` !$
+` !$
+` !$
+` !$
+` !$
+  !&e
+  !'
+  !&e
+@(!$
+C !(
+ (!$
+ (!$
+gE4B#
+24BTv
+@(!$
+  !&
+  !&
+`(!$
+@ !'
+8'9%
+8'9&8
+8'9"
+ (!'
+8'9%
+8'9&8
+8'9"
+ (!$
+@(!$
+ (!$
+@(!$
+8'9%
+  !$
+`0!&
+8'9&
+8'9'|
+8'9,`
+gE4B#
+24BTv
+% !$
+  !&%
+8'90
+8&s0
+% !$
+F !&
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+@ !$
+0%$c
+8'9M
+8'9N
+8'9N
+8'9O
+8'9N
+8'9O
+  !$
+ (!'
+@8!&
+ 0!'
+ 0!'
+@8!'
+@0!'
+  !$
+8'9Wh
+8'9Wh
+8'9Wh
+8'9r
+8'9Wh
+8'9Wh
+8'9Wh
+8'9s
+8'9r
+8'9s
+8'9s
+8'9s
+@ !'
+`0!$
+`0!$
+`0!$
+  !$
+u #$
+U #$
+  !'
+@ !$
+@ !$
+  !4
+`(!'
+`(!'
+@0!-
+(!$p
+	8#$
+ 8!&
+@8!$
+ !,B
+ !,B
+@8!'
+@8!'
+@ !$
+@ !$
+!B0c
+`(!'
+@ !$
+  !$
+  !$
+)B2#
+@ !(B
+@ !(B
+ (!'
+@(!$
+@ !(B
+@ !(B
+@ !'9
+4B<M
+  !'
+4B<M$
+4B<M
+ 8!$
+4c<M
+` !'
++4B<M'
+` !$
+` !'
+0!&g
+4B<M
+*4c<M
++4B<M$
+  !'
+  !$
+  !'9
+(!'9
+  !'9
+H!$g
+H!$E
++4B<M$
+4I<M$
+H!$F
+@8!$
+@(!(B
+@ !'
+$'9e`
+ $Id: main.c,v 1.148 2004/11/13 12:05:48 paulus Exp $
+Sorry - this system lacks PPP kernel support
+main
+Couldn't get hostname: %m
+ORIG_UID
+%s %d ipv6 = %d
+%s %d protp->enabled_flag = 0x%x
+/tmp/pppoe_auth_info_ipv4
+/tmp/pppoe_auth_info_ipv6
+Failed to open %s
+read username error
+read password error
+Write failed to %s
+%s %d 
+must be root to run %s, since it is not setuid-root
+/dev/null
+Couldn't open %s: %m
+Critical shortage of file descriptors: dup failed: %m
+%s %d before call detach
+%s %d after call detach
+(unknown)
+pppd %s started by %s, uid %d
+2.4.3
+PPPLOGNAME
+DEVICE
+PPPD_PID
+Starting link
+CONNECT_TIME
+BYTES_SENT
+BYTES_RCVD
+User request
+kill link, while
+asked to quit, while
+PHASE_MASTER, while
+open ccp flag, while
+PHASE_NETWORK&&PHASE_RUNNING, while
+Waiting for %d child processes...
+  script %s, pid %d
+got_sighup || got_sigterm || got_sigusr2 || got_sigchld
+got_sighp, Hangup (SIGHUP)
+got_sigterm, Terminating on signal %d
+got_sigchld
+got_sigusr2
+Couldn't establish signal handler (%d): %m
+Using interface %s%d
+%s%d
+IFNAME
+Couldn't detach (fork failed: %m)
+pppd
+%s%s.pid
+/var/run/
+Failed to create pid file %s: %m
+%sppp%d.pid
+LINKNAME
+%sppp-%s.pid
+unable to delete pid file %s: %m
+OSI Network Layer
+Xerox NS IDP
+DECnet Phase IV
+Appletalk
+Novell IPX
+VJ compressed TCP/IP
+VJ uncompressed TCP/IP
+Bridging PDU
+Stream Protocol ST-II
+Banyan Vines
+AppleTalk EDDP
+AppleTalk SmartBuffered
+Multi-Link
+NETBIOS Framing
+Cisco Systems
+Ascom Timeplex
+Fujitsu Link Backup and Load Balancing (LBLB)
+DCA Remote Lan
+Serial Data Transport Protocol (PPP-SDTP)
+SNA over 802.2
+IP6 Header Compression
+Stampede Bridging
+single-link compression
+1st choice compression
+802.1d Hello Packets
+IBM Source Routing BPDU
+DEC LANBridge100 Spanning Tree
+Luxcom
+Sigma Network Systems
+Internet Protocol Control Protocol
+OSI Network Layer Control Protocol
+Xerox NS IDP Control Protocol
+DECnet Phase IV Control Protocol
+Appletalk Control Protocol
+Novell IPX Control Protocol
+Bridging NCP
+Stream Protocol Control Protocol
+Banyan Vines Control Protocol
+Multi-Link Control Protocol
+NETBIOS Framing Control Protocol
+Cisco Systems Control Protocol
+Fujitsu LBLB Control Protocol
+DCA Remote Lan Network Control Protocol (RLNCP)
+Serial Data Control Protocol (PPP-SDCP)
+SNA over 802.2 Control Protocol
+SNA Control Protocol
+IP6 Header Compression Control Protocol
+Stampede Bridging Control Protocol
+Single Link Compression Control Protocol
+Compression Control Protocol
+Link Control Protocol
+Password Authentication Protocol
+Link Quality Report
+Shiva Password Authentication Protocol
+CallBack Control Protocol (CBCP)
+Container Control Protocol
+Challenge Handshake Authentication Protocol
+Proprietary Authentication Protocol
+len < 0
+Modem hangup
+received short packet:%.*B
+rcvd
+Discarded non-LCP packet when LCP not open
+discarding proto 0x%x in phase %d
+Unsupported protocol '%s' (0x%x) received
+Unsupported protocol 0x%x received
+Exit.
+Connect time %d.%d minutes.
+Sent %u bytes, received %u bytes.
+Out of memory in timeout()!
+Failed to get time of day: %m
+YangXv:callout is NULL!
+Fatal signal %d
+fork failed: %m
+device_script
+/etc/ppp/connect-errors
+Failed to create child process: %m
+error waiting for (dis)connection process: %m
+%s %d ret = %d
+status = %d
+Child exited with code %d
+Child terminated abnormally, signal %d
+pppd: setuid failed
+/bin/sh
+pppd: could not exec /bin/sh
+Can't execute %s: %m
+Failed to create child process for %s: %m
+Script %s started (pid %d)
+losing track of %s process
+sending SIGTERM to process %d
+Child process %s (pid %d) terminated with signal %d
+Script %s finished (pid %d), status = 0x%x
+Error waiting for child process: %m
+send_phase
+%s %d pppd_phase = 0x%x
+In pppd the httpd-id is %d, set link phase is %d
+In pppd the httpd-id is %d, set link phase is 0x%x
+Send phase error
+notifier struct
+Virtual memory exhausted allocating %s
+%s=%s
+$Id: magic.c,v 1.11 2003/06/11 23:56:26 paulus Exp $
+$Id: fsm.c,v 1.23 2004/11/13 02:28:15 paulus Exp $
+!\%s: timeout sending Config-Requests
+Received bad configure-ack: %P
+Received bad configure-nak: %P
+Received bad configure-rej: %P
++L%s terminated by peer (%0.*v)
+%s terminated by peer
+%s: Rcvd Code-Reject for code %d, id %d
+$Id: lcp.c,v 1.74 2004/11/13 02:28:15 paulus Exp $
+-all
+Don't request/allow any LCP options
+noaccomp
+Disable address/control compression
+asyncmap
+Set asyncmap (for received packets)
+default-asyncmap
+Disable asyncmap negotiation
+nomagic
+Disable magic number negotiation (looped-back line detection)
+Set MRU (maximum received packet size) for negotiation
+default-mru
+Disable MRU negotiation (use default 1500)
+-mru
+Set our MTU
+nopcomp
+Disable protocol field compression
+passive
+Set passive mode
+silent
+Set silent mode
+lcp-echo-failure
+Set number of consecutive echo failures to indicate link failure
+lcp-echo-interval
+Set time in seconds between LCP echo requests
+lcp-restart
+Set time in seconds between LCP retransmissions
+lcp-max-terminate
+Set maximum number of LCP terminate-request transmissions
+lcp-max-configure
+Set maximum number of LCP configure-request transmissions
+lcp-max-failure
+Set limit on number of LCP configure-naks
+receive-all
+Accept all received control characters
+noendpoint
+Don't send or accept multilink endpoint discriminator
+Protocol-Reject for unsupported protocol 0x%x
+Received Protocol-Reject for LCP!
+Bug in lcp_addci: wrong length
+Unexpected Conf-Nak for EAP
+Serial line is looped back.
+Loopback detected
+P0No auth is possible
+a,Req
+TermReq
+TermAck
+CodeRej
+ProtRej
+EchoReq
+EchoRep
+DiscReq
+ code=0x%x
+mru=%d
+asyncmap=0x%x
+auth=
+chap
+-MD5
+-MS-v2
+0x%x
+quality 
+callback=
+CBCP
+magic=0x%x
+pcomp
+accomp
+mrru=%d
+ssnhf
+endpoint
+ magic=0x%x
+lPNo response to %d echo-requests
+Serial link appears to be disconnected.
+Peer not responding
+assertion lcp_echo_timer_running==0 failed
+lcp: received short Echo-Reply, length %d
+appear to have received our own echo-reply!
+$Id: ipcp.c,v 1.69 2004/11/13 12:03:26 paulus Exp $
+IPCP
+noip
+Disable IP and IPCP
+novj
+Disable VJ compression
+novjccomp
+Disable VJ connection-ID compression
+-vjccomp
+vj-max-slots
+Set maximum VJ header slots
+ipcp-accept-local
+Accept peer's address for us
+ipcp-accept-remote
+Accept peer's address for it
+ipparam
+Set ip script parameter
+noipdefault
+Don't use name for default IP adrs
+ms-dns
+DNS address for the peer's use
+ms-wins
+Nameserver for SMB over TCP/IP for peer
+ipcp-restart
+Set timeout for IPCP
+ipcp-max-terminate
+Set max #xmits for term-reqs
+ipcp-max-configure
+Set max #xmits for conf-reqs
+ipcp-max-failure
+Set max #conf-naks for IPCP
+defaultroute
+Add default route
+nodefaultroute
+disable defaultroute option
+-defaultroute
+proxyarp
+Add proxy ARP entry
+noproxyarp
+disable proxyarp option
+-proxyarp
+usepeerdns
+Ask peer for DNS address(es)
+netmask
+set netmask
+ipcp-no-addresses
+Disable old-style IP-Addresses usage
+ipcp-no-address
+Disable IP-Address usage
+IP addresses
+set local and remote IP addresses
+vj-max-slots value must be between 2 and 16
+invalid address parameter '%s' for ms-dns option
+invalid address parameter '%s' for ms-wins option
+unknown host: %s
+bad local IP address %s
+bad remote IP address %s
+invalid netmask value '%s'
+local  IP address %I
+remote IP address %I
+Peer refused to agree to our IP address
+Refused our IP address
+Could not determine local IP address
+Could not determine remote IP address: defaulting to %I
+IPLOCAL
+IPREMOTE
+DNS1
+DNS2
+USEPEERDNS
+Peer is not authorized to use remote address %I
+Unauthorized remote IP address
+ipcpup : ipcp_wantoptions[0].default_route = %d
+route del default
+delete old gateway
+Local IP address changed to %I
+OLDIPLOCAL
+Remote IP address changed to %I
+OLDIPREMOTE
+Interface configuration failed
+Interface failed to come up
+primary   DNS address %I
+secondary DNS address %I
+/tmp/ipcp_info
+Failed to create %s: %m
+%d %d %d %d
+Write failed to %s: %m
+/etc/ppp/ip-up
+/etc/ppp/ip-down
+/etc/ppp/resolv.conf
+nameserver %s
+TermReq
+TermAck
+CodeRej
+ code=0x%x
+addrs=%I
+compress 
+old-VJ
+0x%x
+addr=%I
+dns%d=%I
+ms-wins=%I
+ %.2x
+sendDetectMsg
+creat socket error
+%s %d 
+/tmp/pppd_detect
+/tmp/%08d_socket
+bind error
+%s %d bind error
+write buf error
+%s %d buf = %s
+sendDetectFailed
+%s %d detect pppd succeed and quit now, not send message! 
+%s %d send detect failed info
+$Id: upap.c,v 1.29 2002/12/04 23:03:33 paulus Exp $
+hide-password
+Don't output passwords to log
+show-password
+Show password string in debug log messages
+pap-restart
+Set retransmit timeout for PAP
+pap-max-authreq
+Set max number of transmissions for auth-reqs
+pap-timeout
+Set time limit for peer PAP authentication
+No response to PAP authenticate-requests
+PAP authentication failed due to protocol-reject
+PAP authentication of peer failed (protocol-reject)
+calling number %q is not authorized
+%.*v
+PAP peer authentication succeeded for %q
+PAP peer authentication failed for %q
+Remote message: %0.*v
+PAP authentication succeeded
+PAP authentication failed
+MSRAS-0-
+4BA05D
+AuthReq
+AuthAck
+AuthNak
+ code=0x%x
+ user=
+ password=
+(hidden)
+chap-restart
+Set timeout for CHAP
+chap-max-challenge
+Set max #xmits for challenge
+chap-interval
+Set interval for rechallenge
+CHAP: peer authentication already started!
+CHAP digest 0x%x requested but not available
+CHAP: authentication with peer already started!
+%.*v
+Peer %q failed CHAP authentication
+No CHAP secret found for authenticating %q
+No CHAP secret found for authenticating us to %q
+CHAP authentication succeeded
+CHAP authentication failed
+%s: %.*v
+Challenge
+Response
+Success
+Failure
+ code=0x%x
+%.2x
+), name = 
+ %.2x
+CHAP
+$Id: ccp.c,v 1.48 2004/11/13 02:28:15 paulus Exp $
+noccp
+Disable CCP negotiation
+-ccp
+bsdcomp
+Request BSD-Compress packet compression
+nobsdcomp
+don't allow BSD-Compress
+-bsdcomp
+deflate
+request Deflate compression
+nodeflate
+don't allow Deflate compression
+-deflate
+nodeflatedraft
+don't use draft deflate #
+predictor1
+request Predictor-1
+nopredictor1
+don't allow Predictor-1
+-predictor1
+Compressed
+invalid parameter '%s' for bsdcomp option
+bsdcomp option values must be 0 or %d .. %d
+%d,%d
+invalid parameter '%s' for deflate option
+deflate option values must be 0 or %d .. %d
+deflate option value of %d changed to %d to avoid zlib bug
+Compression disabled by peer.
+No compression negotiated
+(none)
+Deflate%s (%d/%d)
+(old#)
+Deflate%s (%d)
+BSD-Compress (%d/%d)
+BSD-Compress (%d)
+Predictor 1
+Predictor 2
+Method %d
+0%s compression enabled
+%s / %s compression enabled
+%s receive compression enabled
+%s transmit compression enabled
+ConfReq
+ConfAck
+ConfNak
+ConfRej
+TermReq
+TermAck
+CodeRej
+ResetReq
+ResetAck
+ code=0x%x
+deflate%s=%d
+ method=%d
+ check=%d
+bsd v%d=%d
+predictor=1
+predictor=2
+ %.2x
+Lost compression sync: disabling compression
+Lost compression sync
+$Id: ecp.c,v 1.4 2004/11/04 10:02:26 paulus Exp $
+noecp
+Disable ECP negotiation
+-ecp
+Encrypted
+$Id: auth.c,v 1.101 2004/11/12 10:30:51 paulus Exp $
+auth
+Require authentication from peer
+noauth
+Don't require peer to authenticate
+require-pap
+Require PAP authentication from peer
++pap
+require-chap
+Require CHAP authentication from peer
++chap
+require-mschap
+Require MS-CHAP authentication from peer
++mschap
+require-mschap-v2
+Require MS-CHAPv2 authentication from peer
++mschap-v2
+refuse-pap
+Don't agree to auth to peer with PAP
+-pap
+Don't allow PAP authentication with peer
+refuse-chap
+Don't agree to auth to peer with CHAP
+-chap
+Don't allow CHAP authentication with peer
+refuse-mschap
+Don't agree to auth to peer with MS-CHAP
+-mschap
+Don't allow MS-CHAP authentication with peer
+refuse-mschap-v2
+Don't agree to auth to peer with MS-CHAPv2
+-mschap-v2
+Don't allow MS-CHAPv2 authentication with peer
+require-eap
+Require EAP authentication from peer
+refuse-eap
+Don't agree to authenticate to peer with EAP
+name
+Set local name for authentication
+Get PAP user and password from file
+user
+Set name for auth with peer
+password
+Password for authenticating us to the peer
+usehostname
+Must use hostname for authentication
+remotename
+Set remote name for authentication
+login
+Use system password database for PAP
+papcrypt
+PAP passwords are encrypted
+privgroup
+Allow group members to use privileged options
+allow-ip
+Set IP address(es) which can be used without authentication
+remotenumber
+Set remote telephone number for authentication
+allow-number
+Set telephone number(s) which are allowed to connect
++ua file name
+unable to open user login data file %s
+unable to read user login data file %s
+passwd
+group %s is unknown
+allow-ip argument
+allow-number argument
+Connect: %s <--> %s
+Starting negotiation on %s
+Connection terminated.
+IFNAME
+/etc/ppp/auth-down
+LCP down
+peer refused to authenticate: terminating link
+peer refused to authenticate
+No secret found for PAP login
+peer from calling number %q authorized
+/etc/ppp/auth-up
+No network protocols running
+Authentication failed
+auth_peer_success: unknown protocol %x
+PEERNAME
+Failed to authenticate ourselves to peer
+auth_withpeer_success: unknown protocol %x
+Traffic limit reached. Limit: %u Used: %u
+Traffic limit
+Terminating connection due to lack of activity.
+Link inactive
+Connect time expired
+By default the remote system is required to authenticate itself
+(because this system has a default route to the internet)
+The remote system (%s) is required to authenticate itself
+The remote system is required to authenticate itself
+but I couldn't find any suitable secret (password) for it to use to do so.
+(None of the available passwords would let it use an IP address.)
+calling number %q is not authorized
+%.*v
+/etc/ppp/pap-secrets
+Can't open PAP password file %s: %m
+no PAP secret found for %s
+@login
+Login incorrect
+%d LOGIN FAILURES ON %s, %s
+login failed
+Login ok
+Password for %s has expired
+/dev/
+/var/log/lastlog
+user %s logged in
+/etc/ppp/chap-secrets
+/etc/ppp/srp-secrets
+Unable to obtain CHAP password for %s on %s from plugin
+Can't open chap secret file %s: %m
+Secret for %s on %s is too long
+Can't open srp secret file %s: %m
+invalid address length %v in auth. address list
+invalid address length syntax: %v
+unknown host %s in auth. address list
+interface unit %d too large for subnet %v
+cannot stat secret file %s: %m
+Warning - secret file %s has world and/or group access
+can't open indirect secret file %s
+no secret in indirect secret file %s
+authorized addresses
+$Id: options.c,v 1.95 2004/11/09 22:33:35 paulus Exp $
+debug
+Increase debugging level
+kdebug
+Set kernel driver debug level
+pppoe
+Do PPPoE
+httpd-pid
+Get httpd id which you send the signal
+special-flag
+Special dial flags
+user_len
+user name length
+passwd_len
+password length
+pppol2tp_init
+init pppol2tp plugin.
+ipv6
+Supports the IPv6 
+pptp
+init pptp plugin.
+nodetach
+Don't detach from controlling tty
+-detach
+updetach
+Detach from controlling tty once link is up
+holdoff
+Set time in seconds before retrying connection
+idle
+Set time in seconds before disconnecting idle link
+maxconnect
+Set connection time limit
+domain
+Add given domain name to hostname
+file
+Take options from a file
+call
+Take options from a privileged file
+persist
+Keep on reopening connection after close
+nopersist
+Turn off persist option
+demand
+Dial on demand
+--version
+Show version number
+--help
+Show brief listing of options
+logfile
+Append log messages to this file
+logfd
+Send log messages to this file descriptor
+nolog
+Don't send log messages to any file
+nologfd
+Don't send log messages to any file descriptor
+linkname
+Set logical name for link
+maxfail
+Maximum number of unsuccessful connection attempts to allow
+ktune
+Alter kernel settings as necessary
+noktune
+Don't alter kernel settings
+connect-delay
+Maximum time (in ms) to wait after connect script finishes
+unit
+PPP interface unit number to use if possible
+dump
+Print out option values after parsing all options
+dryrun
+Stop after parsing, printing, and checking options
+child-timeout
+Number of seconds to wait for child processes at exit
+maxoctets
+Set connection traffic limit
+mo-direction
+Set direction for limit traffic (sum,in,out,max)
+mo-timeout
+Check for traffic limit every N seconds
+pppd version %s
+Usage: %s [ options ], where options are:
+	<device>	Communicate over the named device
+	<speed>		Set the baud rate to <speed>
+	<loc>:<rem>	Set the local and/or remote interface IP
+			addresses.  Either one may be omitted.
+	asyncmap <n>	Set the desired async map to hex <n>
+	auth		Require authentication from peer
+        connect <p>     Invoke shell command <p> to set up the serial line
+	crtscts		Use hardware RTS/CTS flow control
+	defaultroute	Add default route through interface
+	file <f>	Take options from file <f>
+	modem		Use modem control lines
+	mru <n>		Set MRU value to <n> for negotiation
+See pppd(8) for more options.
+command line
+unrecognized option '%s'
+too few parameters for option %s
+Warning: can't open options file %s: %m
+Can't open options file %s: %m
+In file %s: unrecognized option '%s'
+In file %s: too few parameters for option '%s'
+.ppprc
+init file name
+%s/%s
+/dev/
+tty init file name
+%s%s
+/etc/ppp/options.
+secrets file
+In secrets file: unrecognized option '%s'
+In secrets file: too few parameters for option '%s'
+find_option
+%s %d opt->name = %s, opt->flags = 0x%x
+ option
+%s%s set in %s cannot be overridden
+%s%s from %s overrides command line
+%s%s cannot be changed after initialization
+using the %s%s requires root privilege
+%s%s is disabled
+the %s%s may not be changed in %s
+ zero or
+%s value must be%s >= %d
+%s value must be%s <= %d
+%s value must be%s between %d and %d
+%s value cannot be increased
+option argument
+d@option list entry
+ # oops: %d not %d
+%s %d
+??????
+%s %q
+		# (from %s)
+xxx # [don't know how to print value]
+# %s value (type %d??)
+		# (from %s)
+i pppd options in effect:
+2.4.3
+pppd version %s
+%s: %s
+Error reading %s: %m
+warning: word in file %s too long (%.20s...)
+invalid numeric parameter '%s' for %s option
+call option value may not contain .. or start with /
+call file name
+/etc/ppp/peers/
+Can't open log file %s: %m
+$Id: demand.c,v 1.19 2004/11/04 10:02:26 paulus Exp $
+demand frame
+Couldn't set up demand-dialled PPP interface: %m
+$Id: utils.c,v 1.24 2004/11/04 10:02:26 paulus Exp $
+%d.%d.%d.%d
+ [%s
+[%s data]
+%.8B ...
+%.*B
+[proto=0x%x]
+%.32B ...
+\%.3o
+%s %P
+dev/
+Can't create lock file %s: %m
+Can't read pid from lock file %s
+%s/LCK..%s
+/var/lock
+Can't open existing lock file %s: %m
+Removed stale lock on %s (pid %d)
+Couldn't remove stale lock on %s
+Device %s is locked by pid %d
+%10d
+Couldn't reopen lock file %s: %m
+socket
+eth0
+ioctl
+%02x%02x%02x
+Failed to set PPP kernel option flags: %m
+Couldn't create IP socket: %m(%d)
+ioctl(PPPIOCSDEBUG): %m (line %d)
+Couldn't make tty exclusive: %m
+ioctl(transfer ppp unit): %m, line %d
+Couldn't set tty to PPP discipline: %m
+Couldn't reset tty to normal line discipline: %m
+Yangxv:new style driver
+Couldn't get channel number: %m
+using channel %d
+/dev/ppp
+Couldn't reopen /dev/ppp: %m
+Couldn't attach to channel %d: %m
+Couldn't set /dev/ppp (channel) to nonblock: %m
+Couldn't attach to PPP unit %d: %m
+ioctl(PPPIOCGUNIT): %m (line %d)
+transfer_ppp failed: wanted unit %d, got %d
+Couldn't set device to non-blocking mode: %m
+tcflush failed: %m
+ioctl(TIOCSETD, N_TTY): %m (line %d)
+ioctl(TIOCNXCL): %m (line %d)
+Couldn't restore device fd flags: %m
+in make_ppp_unit, already had /dev/ppp open?
+Couldn't open /dev/ppp: %m
+Couldn't set /dev/ppp to nonblock: %m
+Couldn't allocate PPP unit %d as it is already in use
+Couldn't create new ppp unit: %m
+Couldn't set MRRU: %m
+Couldn't attach to interface unit %d: %m
+Couldn't connect to interface unit %d: %m
+all had bit 7 set to 1
+all had bit 7 set to 0
+all had odd parity
+all had even parity
+Receive serial link is not 8-bit clean:
+Problem: %s
+speed %d not supported
+tcgetattr: %m (line %d)
+Baud rate for %s is 0; need explicit baud rate
+tcsetattr: %m (line %d)
+sent
+write: warning: %m (%d)
+write: %m (%d)
+set timeout for wan detect
+select: %m
+internal error: file descriptor too large (%d)
+read: %m
+read /dev/ppp: %m
+eof on loopback
+read from loopback: %m(%d)
+ioctl(SIOCSIFMTU): %m (line %d)
+ioctl(SIOCGIFMTU): %m (line %d)
+Couldn't set transmit async character map: %m
+ioctl(set extended ACCM): %m (line %d)
+Couldn't set channel receive MRU: %m
+Couldn't set MRU in generic PPP layer: %m
+Couldn't set channel receive asyncmap: %m
+Couldn't get PPP statistics: %m
+Couldn't read compression error flags: %m
+/proc
+/etc/mtab
+ignore
+proc
+/net/route
+can't open routing table %s: %m
+iface
+destination
+gateway
+flags
+mask
+found conflict host route
+route del -host %s dev %s
+delete route:%s
+not replacing existing default route to %s [%I]
+default route ioctl(SIOCADDRT): %m
+route del default
+route add default gw %s dev ppp0
+manual add def route.
+def route dst use our.
+default route ioctl(SIOCDELRT): %m
+Cannot determine ethernet address for proxy ARP
+ioctl(SIOCSARP): %m
+/sys/net/ipv4/ip_forward
+Couldn't enable IP forwarding: %m
+ioctl(SIOCDARP): %m
+ioctl(SIOCGIFCONF): %m (line %d)
+found interface %s for proxy arp
+SIOCGIFHWADDR(%s): %m
+eth0
+Couldn't determine if PPP is supported (no free ptys)
+ioctl(TIOCSETD(PPP)): %m (line %d)
+This system lacks kernel support for PPP.  This could be because
+the PPP kernel module could not be loaded, or because PPP was not
+included in the kernel configuration.  If PPP was included as a
+module, try `/sbin/modprobe -v ppp'.  If that fails, check that
+ppp.o exists in /lib/modules/`uname -r`/net.
+See README.linux file in the ppp distribution for more details.
+%d.%d.%d
+pppd is unable to open the /dev/ppp device.
+You need to create the /dev/ppp device node by
+executing the following command as root:
+	mknod /dev/ppp c 108 0
+ppp0
+Couldn't read driver version: %m
+Sorry, couldn't verify kernel driver version
+2.4.3
+Sorry - PPP driver version %d.%d.%d is out of date
+/var/run/utmp
+/var/log/wtmp
+Couldn't set up TCP header compression: %m
+ioctl (SIOCGIFFLAGS): %m (line %d)
+ioctl(SIOCSIFFLAGS): %m (line %d)
+ioctl(SIOCSIFADDR): %m (line %d)
+ioctl(SIOCSIFADDR): Address already exists
+ioctl(SIOCSIFDSTADDR): %m (line %d)
+ppp's peer ip don't look good but we accept.
+ioctl(SIOCSIFNETMASK): %m (line %d)
+ioctl(SIOCADDRT) device route: %m (line %d)
+/sys/net/ipv4/ip_dynaddr
+Couldn't enable dynamic IP addressing: %m
+ioctl(SIOCDELRT) device route: %m (line %d)
+IPv6 socket creation failed: %m
+sif6addr: ioctl(SIOCGIFINDEX): %m (line %d)
+sif6addr: ioctl(SIOCSIFADDR): %m (line %d)
+sif6addr: ioctl(SIOCADDRT): %m (line %d)
+cif6addr: ioctl(SIOCGIFINDEX): %m (line %d)
+cif6addr: ioctl(SIOCDIFADDR): %m (line %d)
+cif6addr: ioctl(SIOCDIFADDR): No such address
+/dev/ptmx
+/dev/pts/%d
+Couldn't unlock pty slave %s: %m
+Couldn't open pty slave %s: %m
+/dev/pty%c%x
+couldn't set attributes on pty: %m
+couldn't get attributes on pty: %m
+No free pty for loopback
+couldn't set master loopback to nonblock: %m
+couldn't set slave loopback to nonblock: %m
+ioctl(TIOCSETD): %m (line %d)
+ioctl(PPPIOCSNPMODE, %d, %d): %m
+demand dialling is not supported by kernel driver version %d.%d.%d
+Warning: multilink is not supported by the kernel driver
+could not open IPv6 socket
+could not obtain hardware address for eth0
+device name
+Serial port device name
+tty speed
+Baud rate for serial port
+lock
+Lock serial device with UUCP-style lock file
+nolock
+Don't lock serial device
+init
+A program to initialize the device
+connect
+A program to set up a connection
+disconnect
+Program to disconnect serial device
+welcome
+Script to welcome client
+Script to run on pseudo-tty master side
+notty
+Input/output is not a tty
+socket
+Send and receive over socket, arg is host:port
+record
+Record characters sent/received to file
+crtscts
+Set hardware (RTS/CTS) flow control
+cdtrcts
+Set alternate hardware (DTR/CTS) flow control
+nocrtscts
+Disable hardware flow control
+-crtscts
+nocdtrcts
+xonxoff
+Set software (XON/XOFF) flow control
+modem
+Use modem control lines
+local
+Don't use modem control lines
+sync
+Use synchronous HDLC serial encoding
+datarate
+Maximum data rate in bytes/sec (with pty, notty or record option)
+escape
+List of character codes to escape on transmission
+/dev/
+Couldn't stat %s: %m
+%s is not a character device
+escape parameter contains invalid hex number '%s'
+can't escape character 0x%x
+oops # nothing escaped
+no device specified and stdin is not a tty
+Couldn't stat default device %s: %m
+demand-dialling is incompatible with notty
+connect script is required for demand-dialling
+%s option precludes specifying device name
+pty option is incompatible with notty option
+socket option is incompatible with pty and notty
+Couldn't allocate pseudo-tty
+Failed to open %s: %m
+Couldn't reset non-blocking mode on device: %m
+Couldn't create pipes for record option: %m
+Initializer script failed
+Serial port initialized.
+Connect script failed
+Serial connection established.
+Failed to reopen %s: %m
+SPEED
+Welcome script failed
+disconnect script failed
+Serial link disconnected.
+Can't parse host:port for socket destination
+%s: unknown host in socket option
+Can't create socket: %m
+Can't connect to %s: %m
+Can't fork process for character shunt: %m
+setuid failed
+pppd (charshunt)
+internal error: file descriptor too large (%d, %d, %d)
+Couldn't create record file %s: %m
+couldn't set pty master to nonblock: %m
+couldn't set %s to nonblock: %m
+stdin
+couldn't set stdout to nonblock: %m
+Error reading standard input: %m
+Error reading pseudo-tty master: %m
+select
+Error writing standard output: %m
+Error writing pseudo-tty master: %m
+Error writing record file: %m
+$Id: eap.c,v 1.4 2004/11/09 22:39:25 paulus Exp $
+eap-restart
+Set retransmit timeout for EAP Requests (server)
+eap-max-sreq
+Set max number of EAP Requests sent (server)
+eap-timeout
+Set time limit for peer EAP authentication
+eap-max-rreq
+Set max number of EAP Requests allows (client)
+eap-interval
+Set interval for EAP rechallenge
+ zCld
+wHTE#
+xa`'
+#mR_Tu
+sInitial
+Pending
+Closed
+Listen
+Identify
+SRP1
+SRP2
+SRP3
+MD5Chall
+Open
+SRP4
+BadAuth
+EAP: timeout waiting for Request from peer
+<TEAP: too many Requests sent
+EAP: no response to Requests
+Name
+EAP authentication failed due to Protocol-Reject
+EAP authentication of peer failed on Protocol-Reject
+EAP: received too many Request messages
+EAP: empty Request message discarded
+EAP: Identity prompt "%.*q"
+EAP: Notification "%.*q"
+EAP: unexpected Nak in Request; ignored
+EAP: received MD5-Challenge with no data
+EAP: MD5-Challenge with bad length %d (8..%d)
+EAP: trimming really long peer name down
+EAP: no MD5 secret for auth to %q
+EAP: unknown authentication type %d; Naking
+EAP: discarding Response %d; expected ID %d
+EAP: empty Response message discarded
+EAP discarding unwanted Identify "%.q"
+EAP: unauthenticated peer name "%.*q"
+EAP unexpected Notification; response discarded
+EAP: Nak Response with no suggested protocol
+EAP: peer requesting unknown Type %d
+EAP: unexpected MD5-Response
+EAP: received MD5-Response with no data
+EAP: MD5-Response with bad length %d
+EAP: no MD5 secret for auth of %q
+EAP: unknown Response type %d; ignored
+EAP unexpected success message in state %s (%d)
+Remote message: %0.*v
+EAP unexpected failure message in state %s (%d)
+EAP: peer reports authentication failure
+EAP: packet too short: %d < %d
+EAP: packet has illegal length field %d (%d..%d)
+EAP: unknown code %d received
+Request
+Response
+Success
+Failure
+Identity
+Notification
+MD5-Challenge
+Generic-Token
+KEA-Validate
+Defender
+Windows 2000
+Arcot
+Cisco
+Nokia
+ code=0x%x
+ (missing type)
+ type=0x%x
+ (Message 
+ (No message)
+ (Value%.*B)
+ (Name 
+ (No name)
+ (s%.*B)
+ (Default g=2)
+ (g%.*B)
+ (Default N)
+ (N%.*B)
+ (B%.*B)
+ f(%X)
+ (M2%.*B%s)
+ (PN%.*B)
+ (Challenge%.*B)
+ (missing hint)
+ (Suggested-type %02X
+ (%s)
+ (missing length)
+ (A%.*B)
+ (M1%.*B%s)
+ (Response%.*B%s)
+ (truncated)
+%8B...
+%.*B
+Access granted
+Access denied
+MSRASV5.10
+MSRAS-0-
+4BA05D
+pppol2tp
+FD for PPPoL2TP socket
+pppol2tp_lns_mode
+PPPoL2TP LNS behavior. Default off.
+pppol2tp_send_seq
+PPPoL2TP enable sequence numbers in transmitted data packets. Default off.
+pppol2tp_recv_seq
+PPPoL2TP enforce sequence numbers in received data packets. Default off.
+pppol2tp_reorderto
+PPPoL2TP data packet reorder timeout. Default 0 (no reordering).
+pppol2tp_debug_mask
+PPPoL2TP debug mask. Default: no debug.
+pppol2tp_ifname
+Set interface name of PPP interface
+pppol2tp_tunnel_id
+PPPoL2TP tunnel_id.
+pppol2tp_session_id
+PPPoL2TP session_id.
+Socket of not a PPPoX socket
+PPPoL2TP kernel driver not installed
+Given FD for PPPoL2TP socket invalid (%s)
+No PPPoL2TP FD specified
+%hu 
+recvseq 
+sendseq 
+lnsmode 
+reorderto 
+tid 
+sid 
+PPPoL2TP options: %s%s%s%s%s%s%s%s%sdebugmask %d
+setsockopt(PPPOL2TP_RECVSEQ): %m
+setsockopt(PPPOL2TP_DEBUG): %m
+setsockopt(PPPOL2TP_REORDERTO): %m
+setsockopt(PPPOL2TP_LNSMODE): %m
+setsockopt(PPPOL2TP_SENDSEQ): %m
+Overriding mtu %d to %d
+ppp%d: interface name %s
+Overriding mru %d to mtu value %d
+Couldn't set PPP MRU: %m
+Found option type %02x; len %d
+Turning off snooping: Network protocol %04x found.
+incoming
+Rejected ACCM negotiation; defaulting (%s)
+outgoing
+Found ACCM of %08x (%s)
+Telling L2TP: Send ACCM = %08x; Receive ACCM = %08x
+tunnel_id/session_id values not specified
+Enabling LCP snooping
+Kernel doesn't support ppp_generic - needed for PPPoL2TP
+%02x
+Error: MD4Update MD already done.
+Error: MD4Update called with illegal count value %d.
+$Id: chap_ms.c,v 1.33 2004/11/12 09:57:43 paulus Exp $
+Peer request for LANMAN auth not supported
+Access granted
+E=691 R=1 C=%0.*B V=0
+S=%s
+S=%s M=%s
+Access denied
+E=691 R=1 C=%0.*B V=0 M=%s
+MS-CHAPv2 Success packet is badly formed.
+MS-CHAPv2 mutual authentication failed.
+Out of memory in chapms_handle_failure
+E=646 Restricted logon hours
+E=647 Account disabled
+E=648 Password expired
+E=649 No dialin permission
+E=691 Authentication failure
+E=709 Error changing password
+Unknown MS-CHAP authentication failure: %.*v
+MS-CHAP authentication failed: %v
+Magic server to client signing constant
+Pad to make it do more than one iteration
+%02X
+$Id: ipv6cp.c,v 1.20 2004/11/13 02:28:15 paulus Exp $
+IPV6CP
+ipv6
+Set interface identifiers for IPV6
++ipv6
+Enable IPv6 and IPv6CP
+noipv6
+Disable IPv6 and IPv6CP
+-ipv6
+ipv6cp-accept-local
+Accept peer's interface identifier for us
+ipv6cp-use-ipaddr
+Use (default) IPv4 address as interface identifier
+ipv6cp-use-persistent
+Use uniquely-available persistent value for link local address
+ipv6cp-restart
+Set timeout for IPv6CP
+ipv6cp-max-terminate
+Set max #xmits for term-reqs
+ipv6cp-max-configure
+Set max #xmits for conf-reqs
+ipv6cp-max-failure
+Set max #conf-naks for IPv6CP
+IPV6
+Illegal interface identifier (local): %s
+Illegal interface identifier (remote): %s
+fe80::%s
+/tmp/pppoev6_link_local_ip
+local/remote LL address required for demand-dialling
+ipv6_demand_conf
+local  LL address %s
+remote LL address %s
+Could not determine remote LL address
+Could not determine local LL address
+local and remote LL addresses are equal
+LLLOCAL
+LLREMOTE
+Local LL address changed to %s
+Remote LL address changed to %s
+sif6addr failed
+Interface configuration failed
+sifup failed (IPV6)
+/etc/ppp/ipv6-up
+/etc/ppp/ipv6-down
+ConfReq
+ConfAck
+ConfNak
+ConfRej
+TermReq
+TermAck
+CodeRej
+ code=0x%x
+compress 
+0x%x
+local Peer Ipv6 Address = %s
+remote Peer Ipv6 Address = %s
+%s %s
+ ip=%s
+ %.2x
+$Id: eui64.c,v 1.6 2002/12/04 23:03:32 paulus Exp $
+%02x%02x:%02x%02x:%02x%02x:%02x%02x
+Got a Service-Name-Error tag: %.*s
+Got a Service-Name-Error tag: %.*s
+Got a Relay-ID:
+ %02x
+ AC-Name:%.*s
+Got a System-Error tag: %.*s
+Got a System-Error tag: %.*s
+Got a cookie:
+Access-Concentrator: %.*s
+Got a Generic-Error tag: %.*s
+Got a Generic-Error tag: %.*s
+       Service-Name: %.*s
+ Service-Name:%.*s
+PADO: System-Error: %.*s
+PADO: Generic-Error: %.*s
+PADO: Service-Name-Error: %.*s
+PADS: Service-Name: '%.*s'
+PADS: Service-Name-Error: %.*s
+PADS: Service-Name-Error: %.*s
+PADS: System-Error: %.*s
+PADS: System-Error: %.*s
+PADS: Generic-Error: %.*s
+PADS: Generic-Error: %.*s
+sent [PADI
+Would create too-long packet
+ Host-Uniq(0x%08x)
+ Service-Name:%s
+rcvd [PADO
+Bogus PPPoE length field (%u)
+Ignoring PADO packet from non-unicast MAC address
+select (waitForPADO)
+--------------------------------------------------
+ AC-MAC:%02x:%02x:%02x:%02x:%02x:%02x
+Ignoring PADO packet with no AC-Name tag
+Ignoring PADO packet with no Service-Name tag
+AC-Ethernet-Address: %02x:%02x:%02x:%02x:%02x:%02x
+sent [PADR
+rcvd [PADS
+ sess-id(%d)
+PPP session is %d
+Access concentrator used a session value of %x -- the AC is violating RFC 2516
+select (waitForPADS)
+Timeout waiting for PADO packets
+Timeout waiting for PADS packets
+Invalid ether type 0x%x
+Interface %.16s is not Ethernet
+Interface %.16s has MTU of %d -- should be %d.  You may have serious connection problems.
+ioctl(SIOCFIGINDEX): Could not get interface index
+bind
+socket
+setsockopt
+Interface %.16s has broadcast/multicast MAC address??
+ioctl(SIOCGIFMTU)
+ioctl(SIOCGIFHWADDR)
+Cannot create raw socket -- pppoe must be run as root.
+send (sendPacket)
+recv (receivePacket)
+Invalid PPPoE tag length (%u)
+Invalid PPPoE version (%d)
+Invalid PPPoE type (%d)
+Invalid PPPoE packet length (%u)
+pppoe: %s
+strdup failed
+Sent PADT
+Would create too-long packet
+SENT
+PADT: System-Error: %.*s
+PADT: Generic-Error: %.*s
+PADT: Service-Name-Error: %.*s
+PADT: Service-Name-Error: %.*s
+PADT: System-Error: %.*s
+PADT: Generic-Error: %.*s
+%02x 
+(PAP Authentication Frame -- Contents not dumped)
+%H:%M:%S
+%s.%03d %s PPPoE 
+Unknown (%x) 
+sess-id %d length %d
+SourceAddr %02x:%02x:%02x:%02x:%02x:%02x DestAddr %02x:%02x:%02x:%02x:%02x:%02x
+PADR 
+Session (%x) 
+PADT 
+SESS 
+PADI 
+Discovery (%x) 
+PADS 
+PADO 
+device name
+PPPoE device name
+rp_pppoe_service
+Desired PPPoE service name
+rp_pppoe_ac
+Desired PPPoE access concentrator name
+rp_pppoe_sess
+Attach to existing session (sessid:macaddr)
+rp_pppoe_verbose
+Be verbose about discovered access concentrators
+PPPoE Connect Device
+%d:%x:%x:%x:%x:%x:%x
+Illegal value for rp_pppoe_sess option
+%02X:%02X:%02X:%02X:%02X:%02X
+Unable to complete PPPoE Discovery
+Failed to create PPPoE socket: %m
+Failed to connect PPPoE socket: %d %m
+Couldn't increase MTU to %d
+Couldn't create IP socket: %m
+Couldn't set interface MTU to %d: %m
+Couldn't increase MRU to %d
+Failed to disconnect PPPoE socket: %d %m
+PPPoE DevName Hook, the name is %s
+nic-
+Interface %s not Ethernet
+make the channel with pppoe_channel
+Could not allocate memory for PPPoE session
+Linux kernel does not support PPPoE -- are you running 2.4.x?
+pppoe_init() success
+%.256s: %.256s
+RP-PPPoE: %.256s: %.256s
+RP-PPPoE: %.256s
+pptp_server
+PPTP Server
+pptp_client
+PPTP Client
+pptp_sock
+PPTP socket
+pptp_phone
+PPTP Phone number
+pptp_timeout
+timeout for waiting reordered packets and acks
+Call manager exited with error %d
+Could not launch call manager after %d tries.
+PPTP: unknown mode (you must specify pptp_server or pptp_client option)
+pptp (%s)
+PPTP: connect failed (%s)
+PPTP: connect failed.
+PPTP: failed to connect PPTP socket (%s)
+connect pppox pptp socket failed.
+PPTP: failed to bind PPTP socket (%s)
+bind pppox pptp socket failed.
+PPTP: Unknown host %s
+pptp server ip resolve failed!
+Could not create unix domain socket: %s
+fork() to launch call manager failed.
+pptp
+--call_id
+--phone
+--window
+pptp: call manager for %s
+PPTP: failed to setsockopt PPTP_SO_TIMEOUT (%s)
+PPTP: failed to create PPTP socket (%s)
+creat pppox pptp protocol socket failed.
+PPTP plugin version %s compiled for pppd-%s, linux-%s
+1.8.3
+2.4.3
+2.6.15
+call_callback
+call_callback
+pptp/pptp_callmgr.c
+Closing connection (call state)
+Unhandled call callback state [%d].
+lci != ((void *)0) && conninfo != ((void *)0)
+lci != ((void *)0)
+open_inetsock
+socket: %s
+bind: %s
+connect: %s
+/var/run/pptp/%s:%i
+open_unixsock
+Call manager for %s is already running.
+Could not make path to %s: %s
+route_ctrl
+route_ctrl: %s
+callmgr_main
+callmgr_main
+route_add
+--phone
+--window
+--call_id
+IP: %s
+control connection
+unix_sock
+/dev/null
+/proc/net/route
+%63s %x %x %X %*s %*s %d %x
+route_add: no route to host
+Closing connection (shutdown)
+/proc/net/route: %s
+route_add: not adding existing route
+route_add: no memory
+Closing connection (unhandled)
+retval
+Socket not accepted: %s
+Out of memory.
+No memory.
+Could not open connection.
+Usage: %s ip.add.ress.here [--phone <phone number>]
+Invalid IP address: %s
+Could not open control connection to %s
+Could not open unix socket for %s
+Could not fork.
+Unknown Result Code
+Lost Carrier
+General Error
+Administrative Shutdown
+(your) Request
+Connected
+No Carrier Detected
+Busy Signal
+No Dial Tone
+Time Out
+Not Accepted, Call is administratively prohibited
+Successful Channel Establishment
+Command Channel Already Exists
+Requester is not Authorized
+(None)
+No general error
+(Not-Connected)
+No control connection exists yet for this PAC-PNS pair
+(Bad-Format)
+Length is wrong or Magic Cookie value is incorrect
+(Bad-Value)
+One of the field values was out of range or reserved field was non-zero
+(No-Resource)
+Insufficient resources to handle this command now
+(Bad-Call ID)
+The Call ID is invalid in this context
+(PAC-Error)
+A generic vendor-specific error occured in the PAC
+invalid control message type
+Start-Control-Connection-Request
+Start-Control-Connection-Reply
+Stop-Control-Connection-Request
+Stop-Control-Connection-Reply
+Echo-Request
+Echo-Reply
+Outgoing-Call-Request
+Outgoing-Call-Reply
+Incoming-Call-Request
+Incoming-Call-Reply
+Incoming-Call-Connected
+Call-Clear-Request
+Call-Disconnect-Notify
+WAN-Error-Notify
+Set-Link-Info
+ctrlp_error
+pptp/pptp_ctrl.c
+Result code is %d '%s'. Error code is %d, Cause code is %d
+Result code is something else then "general error", so the following error is probably bogus.
+Error is '%s', Error message: '%s'
+Reply result code is %d '%s'. Error code is %d
+buffered
+sent
+%s %s
+pptp_call_destroy
+conn && conn->call
+call
+vector_contains(conn->call, call->call_id)
+pptp_conn_destroy
+conn->call != ((void *)0)
+conn != ((void *)0)
+pptp_fd_set
+pptp_write_some
+pptp_write_some
+write error: %s
+retval <= conn->write_size
+pptp_read_some
+pptp_read_some
+conn->read_size <= conn->read_alloc
+read error: %s
+read returned zero, peer has closed
+Out of memory
+pptp_send_ctrl_packet
+pptp_send_ctrl_packet
+buffer
+pptp_make_packet
+pptp_make_packet
+reserved0 field is not zero! (0x%x) Cisco feature? 
+%lu bad bytes thrown away.
+size != ((void *)0)
+buf != ((void *)0)
+Out of memory.
+logecho
+quest
+Echo Re%s received.
+no more Echo Reply/Request packets will be reported.
+pptp_call_get_ids
+call != ((void *)0)
+pptp_call_closure_put
+pptp_call_closure_get
+pptp_conn_closure_put
+pptp_conn_closure_get
+pptp_set_link
+calling the set_link hook failed (%d)
+pptp_call_close
+call->call_type == PPTP_CALL_PNS
+call->state.pns != PNS_IDLE
+pptp_conn_close
+pptp_conn_close
+Closing PPTP connection
+ctrlp_disp
+ctrlp_disp
+(header->magic) == 0x1A2B3C4D
+(header->length) == size
+(header->pptp_type) == 1
+rcvd invalid packet [type=%d length=%d]
+rcvd Unrecognized Packet
+rcvd Stop-Control-Connection-Reply
+rcvd Outgoing-Call-Request
+rcvd Start-Control-Connection-Reply
+pptp_conn_close(%d)
+rcvd Stop-Control-Connection-Request
+rcvd Outgoing-Call-Reply
+Ack!  How did this call_type get here?
+rcvd Call-disconnect-notification
+local
+cananian
+rcvd Start-Control-Connection-Request
+rcvd Call-Clear-Request
+Call closed (RQST) (call id %d)
+rcvd PPTP-Set-Link-Info
+  send_accm is %08lX, recv_accm is %08lX
+Non-zero Async Control Character Maps are not supported!
+Unexpected(?) Outgoing Call Reply will be ignored.
+PPTP_OUT_CALL_RPLY received for non-existant call: peer call ID (us)  %d call ID (them) %d.
+server connection ESTABLISHED.
+calling the start_ctrl_conn hook failed (%d)
+Our outgoing call request [callid %d] has not been accepted.
+Client connection established.
+Outgoing call established (call ID %u, peer's call ID %u).
+Negative reply received to our Start Control Connection Request
+pptp_dispatch_packet
+pptp_dispatch_packet
+Unknown PPTP control message type received: %u
+PPTP management message received, but not understood.
+pptp_dispatch
+pptp_handle_timer
+pptp_handle_timer
+call->state.pns == PNS_WAIT_DISCONNECT
+closing control connection due to missing echo reply
+pptp_call_open
+pptp_call_open
+conn->conn_state == CONN_ESTABLISHED
+calling the out_call_rqst hook failed (%d)
+pptp_conn_open
+local
+cananian
+BEZEQ_ISRAEL
+anon
+pptp
+%s %s[%s:%s:%d]: %s
+warn
+fatal
+vector_size
+pptp/vector.c
+v != ((void *)0)
+vector_contains
+vector_insert
+v->size < v->alloc
+!vector_contains(v, key)
+v != ((void *)0) && call != ((void *)0)
+vector_remove
+tmp >= v->item && tmp < v->item + v->size
+vector_search
+vector_scan
+x - l <= v->item[x].key - v->item[l].key
+r - x <= v->item[r].key - v->item[x].key
+key != ((void *)0)
+vector_get_Nth
+0 <= n && n < vector_size(v)
+`!RELAY_PPP1
+MS Win NT
+DYx 
+DcL 
+DpD 
+Dpp@
+Dq| 
+x0123456789abcdef
+2.4.3

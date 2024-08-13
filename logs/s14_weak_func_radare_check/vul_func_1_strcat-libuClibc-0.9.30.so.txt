@@ -1,0 +1,57 @@
+[*] Binary protection state of libuClibc-0.9.30.so
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of libuClibc-0.9.30.so
+
+addiu v1, zero, 0x19
+lw v0, 0x30(sp)
+sw zero, 0x14(sp)
+move a3, v0
+sra a2, v0, 0x1f
+addiu v0, zero, -0xa
+jalr t9
+sw v0, 0x10(sp)
+move a0, s2
+lw gp, 0x18(sp)
+move s0, v0
+subu v0, sp, v0
+addiu v1, zero, 0x22
+addiu v0, v0, 0x35
+lw a1, -0x7f24(gp)
+sltu v0, s4, v0
+lw t9, -sym.strcpy(gp)
+beqz v0, 0x2c598
+addiu a1, a1, -0x6980
+b 0x2c5c8
+addiu v0, zero, 0x22
+jalr t9
+nop
+move a0, s2
+lw gp, 0x18(sp)
+[31mlw t9, -sym.strcat(gp)[0m
+jalr t9
+move a1, s0
+move v1, zero
+lw gp, 0x18(sp)
+b 0x2c5cc
+sw s3, (s1)
+addiu v0, zero, 0x19
+sw v0, (s1)
+lw ra, 0x4c(sp)
+move v0, v1
+lw s4, 0x48(sp)
+lw s3, 0x44(sp)
+lw s2, 0x40(sp)
+lw s1, 0x3c(sp)
+lw s0, 0x38(sp)
+jr ra
+addiu sp, sp, 0x50
+lui gp, 5
+addiu gp, gp, 0x7120
+addu gp, gp, t9
+
+[*] Function strcat used 1 times libuClibc-0.9.30.so
+

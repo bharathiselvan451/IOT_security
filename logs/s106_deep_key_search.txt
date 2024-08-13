@@ -1,0 +1,8 @@
+[+] Deep analysis of files for interesting key material
+=================================================================
+The deep key searching module searches for specific patterns in files, allowing the detection of potentially significant key material.
+
+[*] Pattern: \-\-\-\-\-BEGIN\ .*AES KEY\-\-\-\-\-
+[*] Pattern: \-\-\-\-\-BEGIN\ .*PRIVATE KEY\-\-\-\-\-
+
+[-] Wed Jul 31 21:21:14 EDT 2024 - S106_deep_key_search nothing reported

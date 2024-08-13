@@ -1,0 +1,195 @@
+/lib/ld-uClibc.so.0
+_init
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+strlen
+warnx
+memcpy
+sscanf
+warn
+stderr
+fwrite
+exit
+getopt
+optind
+fopen
+fgets
+ferror
+base64_decodestring
+malloc
+fclose
+strcmp
+printf
+errx
+optarg
+time
+memset
+dhcp6_calc_mac
+free
+strtol
+getaddrinfo
+freeaddrinfo
+perror
+socket
+connect
+gai_strerror
+strchr
+memcmp
+read
+libc.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+strlcpy
+strlcat
+_GLOBAL_OFFSET_TABLE_
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GLIBC_2.0
+ '9;P
+$BF 
+$!F 
+@ !(B
+4BUV
+ $cC
+ $B?
+ $B?
+A$T?
+ $B?
+ $B@
+$T@$
+@0!&
+DF@$
+eFD$
+ $EC
+	&$Dp
+&#Dp
+4cTv
+0!4B
+!4Bp
+0$4B
+0&4B
+&4BF
+0&4B
+0&4B
+&4B[
+0&4B
+0&4Bq
+8&4BC
+&4c%b
+&4cZQ
+&4cL
+&4B9B
+&4Ba"
+&4B8
+&4BK`
+&4B~
+&4B'
+&4B0
+&4B|
+!4BVe
+(%4B"D
+0%4B
+%4B#
+(%4B
+0%4BY
+(%4B
+0%4B]
+%4B~O
+(%4B
+0%4BC
+8%4B~
+0%4B
+(!4B
+G8#$h
+ !&1!
+&y!T
+@ !&9!
+ !&y!T
+` !&
+(!."
+x!&P
+` !&
+ '9-
+@(!&
+  !$
+  !&
+ '9/
+!&y-
+ '9 
+ $Q/
+ !&y-
+ '93`
+ '93|
+ '93`
+ '93|
+x&%D
+ make_interface_object: failed
+make_interface_object: interface not specified
+%02x
+too long DUID (%d bytes)
+usage: dhcp6ctl [-C|-S] [-a ctladdr] [-k keyfile] [-p ctlport] command...
+main
+make_command
+CSa:k:p:
+reload
+remove
+start
+stop
+%s %d 
+interface
+make_stop_command failed
+failed to make command buffer
+5546
+/etc/dhcp6cctlkey
+failed to calculate MAC
+fopen: %s
+failed to setup message authentication
+command is too short
+5547
+/etc/dhcp6sctlkey
+make_command: local buffer is too short
+failed to decode base64 string
+-C and -S are exclusive
+fgets failed
+remove command is only for server
+setup_auth: malloc failed
+unknown command: %s
+binding
+IA_PD
+make_ia_object: failed
+failed to send complete command
+connect
+connect:
+make_start_command failed
+failed to get current time
+make_remove_command: command is too short
+client-only command is specified for a server
+redundant command argument after "%s"
+memory allocation failed
+start target not supported: %s
+stop target not supported: %s
+socket
+remove target not supported: %s
+make_binding_object: command is too short
+make_remove_command failed
+make_binding_object: failed
+unknown binding type: %s
+IA_NA
+command is too short for an IA spec
+IA type not supported: %s
+getaddrinfo failed: %s
+write command
+client
+failed to connect to the %s
+server
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=
+/dev/urandom

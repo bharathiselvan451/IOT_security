@@ -1,0 +1,11 @@
+[*] Binary protection state of ts_kmp.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function popen tear down of ts_kmp.ko
+
+
+[*] Function popen used 0 times ts_kmp.ko
+

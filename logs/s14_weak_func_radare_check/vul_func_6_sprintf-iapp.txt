@@ -1,0 +1,257 @@
+[*] Binary protection state of iapp
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of iapp
+
+lw t9, -sym.imp.fgets(gp)
+addiu s1, sp, 0x160
+move a0, s1
+addiu a1, zero, 0x3ff
+move a2, s0
+jalr t9
+addiu s2, sp, 0x560
+addiu s4, sp, 0x570
+lw gp, 0x38(sp)
+move a2, s2
+move a3, s4
+move a0, s1
+lw t9, -sym.imp.sscanf(gp)
+bnez v0, 0x400fa4
+move a1, s6
+lw t9, -sym.imp.fclose(gp)
+jalr t9
+move a0, s0
+lw gp, 0x38(sp)
+bnez s7, 0x4010d4
+nop
+lw v0, -0x7fe8(gp)
+move a0, s1
+lw a1, -segment.LOAD0(gp)
+lw a2, 0x3330(v0)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a1, a1, 0x2bec
+jalr t9
+addiu a2, a2, 0x1c
+lw gp, 0x38(sp)
+lw t9, -sym.imp.system(gp)
+jalr t9
+move a0, s1
+lw gp, 0x38(sp)
+lw t9, -sym.imp.memset(gp)
+addiu s0, sp, 0x150
+move a0, s0
+move a1, zero
+jalr t9
+addiu a2, zero, 0x10
+addiu v0, zero, 2
+lw gp, 0x38(sp)
+addiu a1, sp, 0x154
+sh v0, 0x150(sp)
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.inet_aton(gp)
+--
+lbu a3, 0x3a(sp)
+sw v1, 0x10(sp)
+sw t1, 0x14(sp)
+sw t0, 0x18(sp)
+jalr t9
+sw v0, 0x1c(sp)
+lw gp, 0x28(sp)
+lw a0, 0x3330(s2)
+addiu v0, zero, 1
+lw v1, (a0)
+bne v1, v0, 0x40167c
+addiu s0, sp, 0xc0
+lw t9, -sym.imp.memset(gp)
+move a0, s0
+move a1, zero
+addiu a2, zero, 0x20
+jalr t9
+addiu s1, sp, 0xe0
+move a0, s0
+lw gp, 0x28(sp)
+lbu t1, 0x3b(sp)
+lbu v1, 0x3c(sp)
+lbu t0, 0x3d(sp)
+lw a1, -segment.LOAD0(gp)
+lbu v0, 0x3a(sp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a1, a1, 0x2e74
+lbu a2, 0x38(sp)
+lbu a3, 0x39(sp)
+sw t1, 0x14(sp)
+sw v1, 0x18(sp)
+sw t0, 0x1c(sp)
+jalr t9
+sw v0, 0x10(sp)
+move a0, s0
+lw gp, 0x28(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+sw s0, 0xf0(sp)
+move a0, s1
+lw gp, 0x28(sp)
+addiu a2, zero, 0x10
+lw a1, 0x3330(s2)
+lw t9, -sym.imp.strncpy(gp)
+addiu a1, a1, 0x671
+jalr t9
+--
+lw gp, 0x28(sp)
+lw v0, 0x3330(s2)
+lw t9, -sym.imp.ioctl(gp)
+lw a0, 0x714(v0)
+b 0x4014d0
+ori a1, zero, 0x89f6
+lb v0, 0x671(a0)
+beqz v0, 0x401778
+addiu s0, sp, 0xc0
+lw t9, -sym.imp.memset(gp)
+move a0, s0
+move a1, zero
+addiu a2, zero, 0x20
+jalr t9
+addiu s1, sp, 0xe0
+move a0, s0
+lw gp, 0x28(sp)
+lbu t1, 5(s3)
+lbu t0, 7(s3)
+lbu v1, 6(s3)
+lbu v0, 4(s3)
+lw a1, -segment.LOAD0(gp)
+lbu a3, 3(s3)
+lbu a2, 2(s3)
+addiu a1, a1, 0x2e94
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+sw t1, 0x14(sp)
+sw t0, 0x1c(sp)
+sw v1, 0x18(sp)
+jalr t9
+sw v0, 0x10(sp)
+move a0, s0
+lw gp, 0x28(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+sw s0, 0xf0(sp)
+sll v1, s4, 4
+lw gp, 0x28(sp)
+move a0, s1
+lw a1, 0x3330(s2)
+addiu a2, zero, 0x10
+lw t9, -sym.imp.strncpy(gp)
+addu a1, a1, v1
+addiu a1, a1, 0x671
+jalr t9
+sh v0, 0xf4(sp)
+--
+bltz v0, 0x40220c
+addiu a1, zero, 1
+lw t9, -sym.imp.socket(gp)
+addiu a0, zero, 2
+lw s0, 0x3330(s4)
+jalr t9
+move a2, zero
+lw v1, 0x3330(s4)
+sw v0, 0x14(s0)
+lw v0, 0x14(v1)
+lw gp, 0x18(sp)
+bltz v0, 0x4023b0
+addiu a1, sp, 0x268
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.inet_aton(gp)
+jalr t9
+addiu a0, a0, 0x2c24
+lw v0, 0x268(sp)
+lw gp, 0x18(sp)
+sw zero, 0x6c(sp)
+sw v0, 0x68(sp)
+lw a1, -segment.LOAD0(gp)
+addiu s0, sp, 0x160
+lw a2, 0x3330(s3)
+move a0, s0
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a1, a1, 0x30f4
+jalr t9
+addiu a2, a2, 0x1c
+lw gp, 0x18(sp)
+lw t9, -sym.imp.system(gp)
+jalr t9
+move a0, s0
+move a0, s0
+lw gp, 0x18(sp)
+lw a2, 0x3330(s3)
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a2, a2, 0x1c
+jalr t9
+addiu a1, a1, 0x312c
+lw gp, 0x18(sp)
+lw t9, -sym.imp.system(gp)
+jalr t9
+move a0, s0
+move a1, zero
+lw v0, 0x3330(s3)
+addiu a2, zero, 0x23
+lw gp, 0x18(sp)
+addiu a3, sp, 0x68
+lw a0, 0x14(v0)
+addiu v0, zero, 8
+lw t9, -sym.imp.setsockopt(gp)
+jalr t9
+sw v0, 0x10(sp)
+lw gp, 0x18(sp)
+bltz v0, 0x4020b8
+addiu s0, zero, 4
+--
+jalr t9
+addiu a0, a0, 0x31f0
+lw gp, 0x18(sp)
+lw s0, -0x7fe8(gp)
+beqz v0, 0x402400
+addiu v1, zero, 2
+lw t9, -sym.imp.fclose(gp)
+jalr t9
+move a0, v0
+addiu v0, zero, 1
+lw v1, 0x3330(s0)
+lw gp, 0x18(sp)
+lw a0, 0x73c(v1)
+blez a0, 0x402428
+sw v0, (v1)
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.puts(gp)
+b 0x40241c
+addiu a0, a0, 0x3208
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.perror(gp)
+b 0x4023ec
+addiu a0, a0, 0x3224
+lw a1, -segment.LOAD0(gp)
+addiu s0, sp, 0x90
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addu a2, a2, s4
+move a0, s0
+addiu a1, a1, 0x3240
+jalr t9
+addiu a2, a2, 0x671
+move a0, s0
+lw gp, 0x18(sp)
+lw t9, -sym.imp.perror(gp)
+jalr t9
+nop
+lw gp, 0x18(sp)
+b 0x402740
+addiu v0, zero, -1
+lw v0, 0x3330(s0)
+lw a0, 0x73c(v0)
+blez a0, 0x402428
+sw v1, (v0)
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.puts(gp)
+addiu a0, a0, 0x3258
+
+[*] Function sprintf used 6 times iapp
+

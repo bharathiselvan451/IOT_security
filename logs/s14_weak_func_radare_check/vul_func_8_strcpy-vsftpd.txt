@@ -1,0 +1,187 @@
+[*] Binary protection state of vsftpd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of vsftpd
+
+beqz v1, 0x419834
+move a0, s7
+sll v0, v1, 0x18
+sra v0, v0, 0x18
+beqz v0, 0x41949c
+addiu a0, a0, 1
+sb v1, (a1)
+addiu a1, a1, 1
+lbu v1, (a0)
+nop
+bnez v1, 0x419488
+sll v0, v1, 0x18
+lb v0, 1(a0)
+nop
+bnez v0, 0x419488
+sll v0, v1, 0x18
+lw t9, -sym.imp.strstr(gp)
+sb zero, (a1)
+move a0, s7
+jalr t9
+move a1, s6
+lw gp, 0x18(sp)
+beqz v0, 0x419874
+nop
+sw zero, 0x3f4(sp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+addiu a0, sp, 0x98
+jalr t9
+move a1, s3
+lw gp, 0x18(sp)
+b 0x4191e0
+sw zero, 0x3f0(sp)
+lw t9, -sym.ssl_comm_channel_set_producer_context(gp)
+nop
+jalr t9
+move a0, fp
+lw gp, 0x18(sp)
+b 0x41915c
+nop
+lw t9, -sym.vsf_set_die_if_parent_dies(gp)
+sw zero, 0x48(sp)
+sw zero, 0x4c(sp)
+sw zero, 0x50(sp)
+sw zero, 0x58(sp)
+sw zero, 0x5c(sp)
+sw zero, 0x60(sp)
+--
+sw s6, 0x90(sp)
+sw s5, 0x8c(sp)
+sw s4, 0x88(sp)
+sw s3, 0x84(sp)
+sw s2, 0x80(sp)
+sw s1, 0x7c(sp)
+sw s0, 0x78(sp)
+sw gp, 0x10(sp)
+lw t9, -sym.vsf_sysutil_strlen(gp)
+move s0, a0
+jalr t9
+addiu s2, sp, 0x48
+lw gp, 0x10(sp)
+addiu a0, sp, 0x18
+addiu a1, zero, 0x2c
+lw t9, -sym.vsf_sysutil_memclr(gp)
+move s1, v0
+jalr t9
+addiu s5, sp, 0x60
+lw gp, 0x10(sp)
+sltiu v0, s1, 8
+addiu s3, sp, 0x50
+addiu s6, sp, 0x68
+addiu s4, sp, 0x58
+addiu s7, sp, 0x70
+[31mlw t9, -sym.vsf_sysutil_strcpy(gp)[0m
+move a0, s2
+move a1, s0
+beqz v0, 0x423acc
+addiu a2, zero, 5
+sltiu v0, s1, 0xe
+[31mlw t9, -sym.vsf_sysutil_strcpy(gp)[0m
+move a0, s5
+addiu a1, s0, 8
+beqz v0, 0x423b7c
+addiu a2, zero, 3
+lw t9, -sym.imp.mktime(gp)
+nop
+jalr t9
+addiu a0, sp, 0x18
+lw gp, 0x10(sp)
+lw ra, 0x98(sp)
+lw s7, 0x94(sp)
+lw s6, 0x90(sp)
+lw s5, 0x8c(sp)
+lw s4, 0x88(sp)
+lw s3, 0x84(sp)
+lw s2, 0x80(sp)
+lw s1, 0x7c(sp)
+lw s0, 0x78(sp)
+jr ra
+addiu sp, sp, 0xa0
+jalr t9
+nop
+lw gp, 0x10(sp)
+move a0, s3
+addiu a1, s0, 4
+[31mlw t9, -sym.vsf_sysutil_strcpy(gp)[0m
+nop
+jalr t9
+addiu a2, zero, 3
+lw gp, 0x10(sp)
+addiu a1, s0, 6
+addiu a2, zero, 3
+[31mlw t9, -sym.vsf_sysutil_strcpy(gp)[0m
+nop
+jalr t9
+move a0, s4
+lw gp, 0x10(sp)
+nop
+lw t9, -sym.vsf_sysutil_atoi(gp)
+nop
+jalr t9
+move a0, s2
+lw gp, 0x10(sp)
+addiu v0, v0, -0x76c
+move a0, s3
+lw t9, -sym.vsf_sysutil_atoi(gp)
+nop
+jalr t9
+sw v0, 0x2c(sp)
+lw gp, 0x10(sp)
+addiu v0, v0, -1
+move a0, s4
+lw t9, -sym.vsf_sysutil_atoi(gp)
+nop
+jalr t9
+sw v0, 0x28(sp)
+lw gp, 0x10(sp)
+sw v0, 0x24(sp)
+sltiu v0, s1, 0xe
+[31mlw t9, -sym.vsf_sysutil_strcpy(gp)[0m
+move a0, s5
+addiu a1, s0, 8
+bnez v0, 0x423a8c
+addiu a2, zero, 3
+jalr t9
+nop
+lw gp, 0x10(sp)
+move a0, s6
+addiu a1, s0, 0xa
+[31mlw t9, -sym.vsf_sysutil_strcpy(gp)[0m
+nop
+jalr t9
+addiu a2, zero, 3
+lw gp, 0x10(sp)
+addiu a1, s0, 0xc
+addiu a2, zero, 3
+[31mlw t9, -sym.vsf_sysutil_strcpy(gp)[0m
+nop
+jalr t9
+move a0, s7
+lw gp, 0x10(sp)
+nop
+lw t9, -sym.vsf_sysutil_atoi(gp)
+nop
+jalr t9
+move a0, s5
+lw gp, 0x10(sp)
+move a0, s6
+lw t9, -sym.vsf_sysutil_atoi(gp)
+nop
+jalr t9
+sw v0, 0x20(sp)
+lw gp, 0x10(sp)
+move a0, s7
+lw t9, -sym.vsf_sysutil_atoi(gp)
+nop
+jalr t9
+
+[*] Function strcpy used 8 times vsftpd
+

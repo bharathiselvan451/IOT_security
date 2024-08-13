@@ -1,0 +1,11 @@
+[*] Binary protection state of bpalogin
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function system tear down of bpalogin
+
+
+[*] Function system used 0 times bpalogin
+

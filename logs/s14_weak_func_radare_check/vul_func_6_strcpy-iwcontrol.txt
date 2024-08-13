@@ -1,0 +1,284 @@
+[*] Binary protection state of iwcontrol
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of iwcontrol
+
+move a1, s0
+lw s3, -0x7fe8(gp)
+jalr t9
+addiu a0, a0, 0x742c
+move a1, s0
+lw gp, 0x10(sp)
+addiu a2, zero, 4
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.strncmp(gp)
+bnez v0, 0x402170
+addiu a0, a0, 0x7434
+lw v0, -0x6fb0(s3)
+lw t9, -sym.imp.printf(gp)
+slti v0, v0, 0xa
+beqz v0, 0x402580
+nop
+jalr t9
+addiu s2, s2, 1
+lw gp, 0x10(sp)
+lw v1, -0x6fb0(s3)
+lw a0, -0x7fe8(gp)
+sll v0, v1, 2
+addu v0, v0, v1
+addiu a0, a0, -0x6668
+sll v0, v0, 2
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw a1, (s1)
+jalr t9
+addu a0, v0, a0
+lw v0, -0x6fb0(s3)
+lw gp, 0x10(sp)
+addiu v0, v0, 1
+b 0x4021a8
+sw v0, -0x6fb0(s3)
+lw a0, -segment.LOAD0(gp)
+move a1, s0
+jalr t9
+addiu a0, a0, 0x7444
+addiu v1, zero, 1
+lw gp, 0x10(sp)
+beqz v0, 0x4021a4
+sw v1, 0x54(sp)
+lw a0, -segment.LOAD0(gp)
+lw a1, (s5)
+lw t9, -sym.imp.printf(gp)
+b 0x40258c
+--
+move a1, zero
+addiu s0, sp, 0x7b8
+lw gp, 0x10(sp)
+move a0, s0
+move a1, s5
+lw t9, -sym.imp.strncpy(gp)
+jalr t9
+addiu a2, zero, 0x10
+move a0, s1
+lw gp, 0x10(sp)
+ori a1, zero, 0x8b01
+lw t9, -sym.imp.ioctl(gp)
+jalr t9
+move a2, s0
+lw gp, 0x10(sp)
+bgez v0, 0x402a10
+move a2, s5
+lw v0, -0x7f6c(gp)
+lw a1, -segment.LOAD0(gp)
+lw a0, (v0)
+lw t9, -sym.imp.fprintf(gp)
+jalr t9
+addiu a1, a1, 0x78e0
+b 0x403af0
+nop
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+move a0, s4
+jalr t9
+addiu a1, sp, 0x7c8
+move a0, s1
+lw gp, 0x10(sp)
+move a1, s5
+lw t9, -sym.get_range_info(gp)
+jalr t9
+addiu a2, sp, 0x578
+lw gp, 0x10(sp)
+bltz v0, 0x402a48
+addiu v0, zero, 1
+sw v0, 0x7b0(sp)
+lw t9, -sym.imp.strncpy(gp)
+move a0, s0
+move a1, s5
+jalr t9
+addiu a2, zero, 0x10
+move a0, s1
+lw gp, 0x10(sp)
+--
+sh v0, 0x434(sp)
+addiu v0, zero, 0x40
+sh v0, 0x434(sp)
+lw t9, -sym.imp.strncpy(gp)
+addiu s0, sp, 0x440
+lhu a2, 0x434(sp)
+move a1, s1
+move a0, s0
+jalr t9
+addiu s4, s4, 1
+addiu s2, s2, 4
+lw gp, 0x10(sp)
+b 0x404464
+sw s0, 0x430(sp)
+b 0x404438
+move s7, zero
+jalr t9
+move a0, s0
+lw gp, 0x10(sp)
+lw t9, -sym.imp.malloc(gp)
+jalr t9
+addiu a0, v0, 1
+lw gp, 0x10(sp)
+beqz v0, 0x403d88
+move s1, v0
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw a1, (s2)
+lw s6, -segment.LOAD0(gp)
+jalr t9
+move a0, v0
+move a0, s1
+lw gp, 0x10(sp)
+lw t9, -sym.imp.strtok(gp)
+jalr t9
+addiu a1, s6, 0x7d70
+lw gp, 0x10(sp)
+beqz v0, 0x404438
+move s0, v0
+lw a1, -segment.LOAD0(gp)
+move a0, s0
+lw t9, -sym.imp.sscanf(gp)
+addiu a2, sp, 0x4a8
+jalr t9
+addiu a1, a1, 0x7d78
+addiu v1, zero, 1
+lw gp, 0x10(sp)
+--
+b 0x4047c0
+sh v0, 0x436(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s0
+sltiu v0, v0, 0x21
+lw gp, 0x10(sp)
+bnez v0, 0x404754
+addiu v0, zero, 1
+lw v0, -0x7f6c(gp)
+move a3, s0
+lw a1, -segment.LOAD0(gp)
+addiu a2, zero, 0x20
+lw t9, -sym.imp.fprintf(gp)
+lw a0, (v0)
+jalr t9
+addiu a1, a1, 0x7db8
+lw gp, 0x10(sp)
+lw t9, -segment.LOAD0(gp)
+addiu t9, t9, 0x2810
+jalr t9
+nop
+lw gp, 0x10(sp)
+b 0x4047c0
+nop
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+move a1, s0
+addiu a0, sp, 0x480
+sh v0, 0x436(sp)
+jalr t9
+addiu s0, s4, 1
+slt v0, s0, s5
+lw gp, 0x10(sp)
+beqz v0, 0x4047c0
+addiu a2, sp, 0x4ac
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.sscanf(gp)
+lw a0, 4(s2)
+jalr t9
+addiu a1, a1, 0x7d7c
+addiu v1, zero, 1
+lw gp, 0x10(sp)
+bne v0, v1, 0x4047c0
+nop
+lw v1, 0x4ac(sp)
+blez v1, 0x4047c0
+--
+sw s1, 0x1c(sp)
+sw s0, 0x18(sp)
+sw gp, 0x10(sp)
+addiu v0, zero, 2
+move s1, a1
+move s2, a0
+sh v0, (a1)
+lw a1, -0x7fe0(gp)
+lw t9, -sym.imp.strcmp(gp)
+addiu a1, a1, -0x7d38
+jalr t9
+sh zero, 2(s1)
+move a0, s2
+lw gp, 0x10(sp)
+lw t9, -sym.imp.getnetbyname(gp)
+bnez v0, 0x406410
+addiu v1, zero, 1
+b 0x4064d8
+sw zero, 4(s1)
+jalr t9
+nop
+lw gp, 0x10(sp)
+move a1, v0
+lw t9, -sym.imp.gethostbyname(gp)
+move v0, t9
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+beqz a1, 0x406450
+move a0, s2
+lw v0, 0xc(a1)
+lw a1, (a1)
+jalr t9
+sw v0, 4(s1)
+lw gp, 0x10(sp)
+b 0x4064d8
+addiu v1, zero, 1
+move t9, v0
+jalr t9
+nop
+lw gp, 0x10(sp)
+move s0, v0
+lw t9, -sym.imp.__errno_location(gp)
+move v0, t9
+lw t9, -sym.imp.memcpy(gp)
+bnez s0, 0x4064a8
+addiu a0, s1, 4
+move t9, v0
+jalr t9
+nop
+lw gp, 0x10(sp)
+lw t9, -sym.imp.__h_errno_location(gp)
+jalr t9
+move s0, v0
+addiu v1, zero, -1
+lw v0, (v0)
+lw gp, 0x10(sp)
+b 0x4064d8
+sw v0, (s0)
+lw v0, 0x10(s0)
+lw a2, 0xc(s0)
+lw a1, (v0)
+jalr t9
+nop
+lw gp, 0x10(sp)
+lw a1, (s0)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+move a0, s2
+move v1, zero
+lw gp, 0x10(sp)
+lw ra, 0x24(sp)
+move v0, v1
+lw s2, 0x20(sp)
+lw s1, 0x1c(sp)
+lw s0, 0x18(sp)
+jr ra
+addiu sp, sp, 0x28
+lui gp, 5
+addiu gp, gp, -0x5464
+addu gp, gp, t9
+addiu sp, sp, -0x90
+sw ra, 0x88(sp)
+sw s3, 0x84(sp)
+sw s2, 0x80(sp)
+sw s1, 0x7c(sp)
+sw s0, 0x78(sp)
+
+[*] Function strcpy used 6 times iwcontrol
+

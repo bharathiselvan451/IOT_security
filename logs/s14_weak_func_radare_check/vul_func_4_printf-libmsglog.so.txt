@@ -1,0 +1,96 @@
+[*] Binary protection state of libmsglog.so
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function printf tear down of libmsglog.so
+
+jalr t9
+nop
+lw gp, 0x10(sp)
+lw ra, 0x18(sp)
+jr ra
+addiu sp, sp, 0x20
+nop
+nop
+lui gp, 5
+addiu gp, gp, -0x7c10
+addu gp, gp, t9
+addiu sp, sp, -0x2a0
+sw ra, 0x29c(sp)
+sw s4, 0x298(sp)
+sw s3, 0x294(sp)
+sw s2, 0x290(sp)
+sw s1, 0x28c(sp)
+sw s0, 0x288(sp)
+sw gp, 0x18(sp)
+move s0, a0
+addiu v0, a1, -1
+lw a0, -0x7fe0(gp)
+sltiu v0, v0, 9
+move s1, a1
+sltiu v1, s0, 8
+[31mlw t9, -sym.imp.printf(gp)[0m
+addiu a0, a0, 0xd20
+sw a3, 0x2ac(sp)
+beqz v0, 0xa4c
+move s4, a2
+lw t9, -sym.imp.memset(gp)
+addiu s2, sp, 0x20
+move a0, s2
+move v0, t9
+[31mlw t9, -sym.imp.printf(gp)[0m
+bnez v1, 0xa5c
+addiu a2, zero, 0x1f4
+lw a0, -0x7fe0(gp)
+addiu a0, a0, 0xd20
+jalr t9
+nop
+b 0xb78
+nop
+move t9, v0
+jalr t9
+move a1, zero
+addiu v0, s0, 0x30
+lw gp, 0x18(sp)
+addiu a3, s1, 0x30
+move a2, s0
+move a0, s2
+lw a1, -0x7fe0(gp)
+addiu s3, sp, 0x21a
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a1, a1, 0xd50
+jalr t9
+sw v0, 0x10(sp)
+lw gp, 0x18(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s2
+move a1, s4
+lw gp, 0x18(sp)
+addu a0, s2, v0
+[31mlw t9, -sym.imp.vsprintf(gp)[0m
+jalr t9
+addiu a2, sp, 0x2ac
+addiu a1, zero, 1
+lw gp, 0x18(sp)
+move a2, zero
+lw t9, -sym.imp.socket(gp)
+jalr t9
+addiu a0, zero, 1
+addiu a2, zero, 0x6c
+lw gp, 0x18(sp)
+move s1, v0
+move a0, s3
+lw t9, -sym.imp.strncpy(gp)
+lw a1, -0x7fe0(gp)
+move v1, t9
+lw t9, -sym.imp.puts(gp)
+bgez v0, 0xb08
+addiu a1, a1, 0xd5c
+lw a0, -0x7fe0(gp)
+b 0xb70
+
+[*] Function printf used 4 times libmsglog.so
+

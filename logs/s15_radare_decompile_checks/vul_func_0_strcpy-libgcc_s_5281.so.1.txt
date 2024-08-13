@@ -1,0 +1,11 @@
+[*] Binary protection state of libgcc_s_5281.so.1
+
+  
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of libgcc_s_5281.so.1
+
+
+[*] Function strcpy used 0 times libgcc_s_5281.so.1
+

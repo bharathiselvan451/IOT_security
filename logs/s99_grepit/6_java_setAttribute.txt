@@ -1,0 +1,31 @@
+[*] Searching (args for grep: ) for \.setAttribute\(.
+[*] Grepit state info - comment: setAttribute is usually used to set an attribute of a session object, untrusted data should not be added to a session object
+[*] Grepit state info - Filename 6_java_setAttribute.txt
+[*] Grepit state info - Example: session.setAttribute("abc", untrusted_input);
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: \.setAttribute\(
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/MediaServerFoldersCfgRpm.htm[m[36m-[m[32m204[m[36m-[m		{		
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/MediaServerFoldersCfgRpm.htm[m[36m-[m[32m205[m[36m-[m			folder_id = "t_folder_"+i;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/MediaServerFoldersCfgRpm.htm[m[36m-[m[32m206[m[36m-[m			href_value = 'MediaServerFoldersCfgRpm.htm?full_path='+ foldersInfo[0] + '/' + foldersInfo[4*i+ 4];
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/MediaServerFoldersCfgRpm.htm[m[36m:[m[32m207[m[36m:[m			document.getElementById(folder_id)[01;31m.setAttribute([m'href', href_value);
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/MediaServerFoldersCfgRpm.htm[m[36m-[m[32m208[m[36m-[m			document.getElementById(folder_id).style.color = 'blue';
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m111[m[36m-[m		else
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m112[m[36m-[m		{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m113[m[36m-[m			href_value = 'file://///'+ routerIpInfoArray[0]+'/Volume'+(i+1);
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m:[m[32m114[m[36m:[m			document.getElementById(disk_id)[01;31m.setAttribute([m'href', href_value);
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m115[m[36m-[m			document.getElementById(disk_id).style.color = 'blue';
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFolderAdvRpm.htm[m[36m-[m[32m177[m[36m-[m		{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFolderAdvRpm.htm[m[36m-[m[32m178[m[36m-[m			folder_id = "t_folder_"+0;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFolderAdvRpm.htm[m[36m-[m[32m179[m[36m-[m			href_value = 'NasFolderAdvRpm.htm?full_path='+ foldersInfo[0] + '/' + foldersInfo[4*i+ 8];
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFolderAdvRpm.htm[m[36m:[m[32m180[m[36m:[m			document.getElementById(folder_id)[01;31m.setAttribute([m'href', href_value);
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFolderAdvRpm.htm[m[36m-[m[32m181[m[36m-[m			document.getElementById(folder_id).style.color = 'blue';
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFolderAdvRpm.htm[m[36m-[m[32m187[m[36m-[m			{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFolderAdvRpm.htm[m[36m-[m[32m188[m[36m-[m				folder_id = "t_folder_"+i;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFolderAdvRpm.htm[m[36m-[m[32m189[m[36m-[m				href_value = 'NasFolderAdvRpm.htm?full_path='+ foldersInfo[0] + '/' + foldersInfo[4*i+ 8];
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFolderAdvRpm.htm[m[36m:[m[32m190[m[36m:[m				document.getElementById(folder_id)[01;31m.setAttribute([m'href', href_value);
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasFolderAdvRpm.htm[m[36m-[m[32m191[m[36m-[m				document.getElementById(folder_id).style.color = 'blue';

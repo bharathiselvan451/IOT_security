@@ -1,0 +1,9 @@
+[[0;32m+[0m][0;32m Found version details: 	bpalogin            :   2.0.2          :   CVEs: 0         :   Exploits: 0    :   Source: STAT           [0m
+[[0;32m+[0m][0;32m Found version details: 	xl2tpd              :   1.1.12         :   CVEs: 0         :   Exploits: 0    :   Source: STAT           [0m
+[[0;33m+[0m][0;33m Found version details: 	iptables            :   1.4.5          :   CVEs: 1         :   Exploits: 0    :   Source: STAT           [0m
+[[0;35m+[0m][0;35m Found version details: 	vsftpd              :   2.3.2          :   CVEs: 3         :   Exploits: 1    :   Source: STAT           [0m
+[[0;33m+[0m][0;33m Found version details: 	busybox             :   1.01           :   CVEs: 16        :   Exploits: 0    :   Source: STAT           [0m
+[[0;35m+[0m][0;35m Found version details: 	zlib                :   1.1.4          :   CVEs: 5         :   Exploits: 1    :   Source: STAT           [0m
+[[0;35m+[0m][0;35m Found version details: 	openssl             :   1.0.0d         :   CVEs: 69        :   Exploits: 6    :   Source: STAT           [0m
+[[0;35m+[0m][0;35m Found version details: 	openssl             :   0.9.8b         :   CVEs: 88        :   Exploits: 10   :   Source: STAT           [0m
+[[0;35m+[0m][0;35m Found version details: 	linux_kernel        :   2.6.30.9       :   CVEs: 1946      :   Exploits: 150  :   Source: STAT           [0m

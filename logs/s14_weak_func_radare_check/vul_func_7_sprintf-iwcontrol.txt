@@ -1,0 +1,327 @@
+[*] Binary protection state of iwcontrol
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of iwcontrol
+
+lw a1, -segment.LOAD0(gp)
+addiu a0, zero, 0x14
+lw t9, -sym.iw_message(gp)
+jalr t9
+addiu a1, a1, 0x7004
+lw gp, 0x10(sp)
+b 0x401b10
+move v0, zero
+lw s2, -0x7fe8(gp)
+addiu s1, s2, -0x6ca8
+lb v0, 5(s1)
+beqz v0, 0x401b10
+move v0, s4
+lw t9, -sym.imp.memset(gp)
+addiu a0, sp, 0x18
+move a1, zero
+jalr t9
+addiu a2, zero, 0x40
+lb v0, 5(s1)
+lw gp, 0x10(sp)
+addiu v1, v0, -3
+sltiu v0, v1, 0x38
+beqz v0, 0x401760
+sll v0, v1, 2
+lw v1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu v1, v1, 0x7210
+addu v0, v0, v1
+lw v0, (v0)
+addu v0, v0, gp
+jr v0
+nop
+lw a1, -segment.LOAD0(gp)
+addiu a0, sp, 0x18
+lw a2, -segment.LOAD0(gp)
+addiu s0, zero, 1
+addiu a1, a1, 0x7024
+b 0x40177c
+addiu a2, a2, 0x7038
+lw a1, -segment.LOAD0(gp)
+addiu a0, sp, 0x18
+lw a2, -segment.LOAD0(gp)
+addiu s0, zero, 1
+addiu a1, a1, 0x7024
+b 0x40177c
+addiu a2, a2, 0x7048
+--
+addiu a0, sp, 0x18
+lw a2, -segment.LOAD0(gp)
+addiu s5, zero, 1
+addiu a1, a1, 0x7024
+b 0x40177c
+addiu a2, a2, 0x7180
+lw a1, -segment.LOAD0(gp)
+addiu a0, sp, 0x18
+lw a2, -segment.LOAD0(gp)
+addiu s5, zero, 1
+addiu a1, a1, 0x7024
+b 0x40177c
+addiu a2, a2, 0x718c
+lw a1, -segment.LOAD0(gp)
+addiu a0, sp, 0x18
+lw a2, -segment.LOAD0(gp)
+addiu s5, zero, 1
+addiu a1, a1, 0x7024
+b 0x40177c
+addiu a2, a2, 0x71a0
+addiu v0, s2, -0x6ca8
+addiu a0, sp, 0x18
+lw a1, -segment.LOAD0(gp)
+move s0, zero
+lb a2, 5(v0)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a1, a1, 0x71b8
+jalr t9
+nop
+addiu a0, zero, 0x14
+lw gp, 0x10(sp)
+addiu a2, sp, 0x18
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.iw_message(gp)
+jalr t9
+addiu a1, a1, 0x71e0
+lw gp, 0x10(sp)
+beqz s0, 0x401a18
+nop
+lw s2, -0x7fe8(gp)
+lw v0, -0x6fbc(s2)
+beqz v0, 0x401898
+nop
+beqz s3, 0x401898
+nop
+blez v0, 0x401a08
+--
+move a0, s1
+addiu a1, zero, 2
+jalr t9
+move a2, zero
+lw gp, 0x10(sp)
+lw t9, -sym.imp.close(gp)
+jalr t9
+move a0, s1
+lw gp, 0x10(sp)
+lw a0, -0x7fe8(gp)
+lw s1, -0x7fe8(gp)
+lw t9, -sym.iw_init_sendBuf(gp)
+jalr t9
+addiu a0, a0, -0x6ca8
+lw v0, -0x6fb4(s1)
+lw gp, 0x10(sp)
+beqz v0, 0x4023e4
+nop
+blez v0, 0x4023e4
+move s2, zero
+move s0, zero
+lw a2, -0x7fe8(gp)
+addiu a0, sp, 0x18
+lw a1, -segment.LOAD0(gp)
+addiu s2, s2, 1
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a2, a2, -0x6da8
+addu a2, s0, a2
+jalr t9
+addiu a1, a1, 0x74ec
+addiu a0, zero, 0x14
+lw gp, 0x10(sp)
+addiu a2, sp, 0x18
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.iw_message(gp)
+jalr t9
+addiu a1, a1, 0x7500
+addiu a0, s3, -0x6db0
+lw gp, 0x10(sp)
+addu a0, s0, a0
+addiu a1, sp, 0x18
+lw t9, -sym.iw_init_fifo(gp)
+jalr t9
+addiu s0, s0, 0x18
+lw v0, -0x6fb4(s1)
+lw gp, 0x10(sp)
+--
+beqz v0, 0x402424
+move a2, s7
+lw a1, -segment.LOAD0(gp)
+addiu a0, zero, 0x14
+lw t9, -sym.iw_message(gp)
+jalr t9
+addiu a1, a1, 0x7514
+move a1, s7
+lw gp, 0x10(sp)
+lw a0, -0x7fe8(gp)
+lw t9, -sym.iw_init_fifo(gp)
+jalr t9
+addiu a0, a0, -0x6cc0
+lw gp, 0x10(sp)
+lw s1, -0x7fe8(gp)
+lw v0, -0x6fbc(s1)
+beqz v0, 0x4024b0
+nop
+blez v0, 0x4024b0
+move s2, zero
+move s0, zero
+lw a2, -0x7fe8(gp)
+addiu a0, sp, 0x18
+lw a1, -segment.LOAD0(gp)
+addiu s2, s2, 1
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a2, a2, -0x6598
+addu a2, s0, a2
+jalr t9
+addiu a1, a1, 0x7528
+addiu a0, zero, 0x14
+lw gp, 0x10(sp)
+addiu a2, sp, 0x18
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.iw_message(gp)
+jalr t9
+addiu a1, a1, 0x7540
+addiu a0, s4, -0x65a0
+lw gp, 0x10(sp)
+addu a0, s0, a0
+addiu a1, sp, 0x18
+lw t9, -sym.iw_init_fifo(gp)
+jalr t9
+addiu s0, s0, 0x18
+lw v0, -0x6fbc(s1)
+lw gp, 0x10(sp)
+slt v0, s2, v0
+bnez v0, 0x402440
+nop
+lw s1, -0x7fe8(gp)
+lw v0, -0x6fc0(s1)
+beqz v0, 0x40253c
+nop
+blez v0, 0x40253c
+move s2, zero
+move s0, zero
+lw a2, -0x7fe8(gp)
+addiu a0, sp, 0x18
+lw a1, -segment.LOAD0(gp)
+addiu s2, s2, 1
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a2, a2, -0x64a8
+addu a2, s0, a2
+jalr t9
+addiu a1, a1, 0x755c
+addiu a0, zero, 0x14
+lw gp, 0x10(sp)
+addiu a2, sp, 0x18
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.iw_message(gp)
+jalr t9
+addiu a1, a1, 0x7570
+addiu a0, s5, -0x64b0
+lw gp, 0x10(sp)
+addu a0, s0, a0
+addiu a1, sp, 0x18
+lw t9, -sym.iw_init_fifo(gp)
+jalr t9
+addiu s0, s0, 0x18
+lw v0, -0x6fc0(s1)
+lw gp, 0x10(sp)
+--
+lw t9, -sym.imp.strncmp(gp)
+jalr t9
+move a1, s0
+lw gp, 0x10(sp)
+bnez v0, 0x402630
+nop
+bnez s7, 0x4027bc
+nop
+addiu s7, zero, 1
+move s5, zero
+lw s1, -segment.LOAD0(gp)
+move a1, s0
+lw t9, -sym.imp.strncmp(gp)
+addiu a2, zero, 5
+jalr t9
+addiu a0, s1, 0x73e0
+lw gp, 0x10(sp)
+bnez v0, 0x402664
+nop
+bnez s6, 0x4027bc
+nop
+addiu s6, zero, 1
+addiu s5, zero, 1
+lw a1, -segment.LOAD0(gp)
+addiu s0, sp, 0x38
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+move a0, s0
+addiu a1, a1, 0x75c0
+jalr t9
+move a2, s5
+move a0, s0
+lw gp, 0x10(sp)
+addiu a1, zero, 2
+lw t9, -sym.imp.open(gp)
+jalr t9
+move a2, zero
+lw gp, 0x10(sp)
+lw s0, -0x7fe8(gp)
+bgez v0, 0x402754
+sw v0, -0x63c0(s0)
+lw t9, -sym.RegisterPID(gp)
+lw v0, -0x7fe8(gp)
+bnez s5, 0x4026e0
+nop
+addiu v0, v0, -0x6db0
+lw a0, 4(v0)
+--
+nop
+addiu a0, zero, -1
+lw gp, 0x10(sp)
+lw ra, 0x40(sp)
+move v0, a0
+lw s1, 0x3c(sp)
+lw s0, 0x38(sp)
+jr ra
+addiu sp, sp, 0x48
+lui gp, 5
+addiu gp, gp, -0x5170
+addu gp, gp, t9
+addiu sp, sp, -0x30
+sw ra, 0x2c(sp)
+sw s0, 0x28(sp)
+sw gp, 0x20(sp)
+lbu t1, 5(a0)
+lbu v0, 2(a0)
+lbu t0, 3(a0)
+lbu v1, 4(a0)
+lw s0, -0x7fe8(gp)
+lw a1, -0x7fe0(gp)
+lbu a2, (a0)
+lbu a3, 1(a0)
+addiu a1, a1, -0x7d58
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a0, s0, -0x63b0
+sw v0, 0x10(sp)
+sw t0, 0x14(sp)
+sw v1, 0x18(sp)
+jalr t9
+sw t1, 0x1c(sp)
+addiu v0, s0, -0x63b0
+lw gp, 0x20(sp)
+lw ra, 0x2c(sp)
+lw s0, 0x28(sp)
+jr ra
+addiu sp, sp, 0x30
+lui gp, 5
+addiu gp, gp, -0x51e4
+addu gp, gp, t9
+addiu sp, sp, -0x20
+sw ra, 0x18(sp)
+sw gp, 0x10(sp)
+addiu v0, zero, 1
+sh v0, (a1)
+
+[*] Function sprintf used 7 times iwcontrol
+

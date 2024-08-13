@@ -1,0 +1,11 @@
+[*] Binary protection state of auth
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function system tear down of auth
+
+
+[*] Function system used 0 times auth
+

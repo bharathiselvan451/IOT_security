@@ -1,0 +1,11 @@
+[*] Binary protection state of ehci-hcd.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function popen tear down of ehci-hcd.ko
+
+
+[*] Function popen used 0 times ehci-hcd.ko
+

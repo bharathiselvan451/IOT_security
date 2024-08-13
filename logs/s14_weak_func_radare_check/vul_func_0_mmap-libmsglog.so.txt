@@ -1,0 +1,11 @@
+[*] Binary protection state of libmsglog.so
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function mmap tear down of libmsglog.so
+
+
+[*] Function mmap used 0 times libmsglog.so
+

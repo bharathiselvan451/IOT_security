@@ -1,0 +1,11 @@
+[*] Binary protection state of httpd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function mmap tear down of httpd
+
+
+[*] Function mmap used 0 times httpd
+

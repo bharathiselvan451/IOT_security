@@ -1,0 +1,6 @@
+[+] Check for code patterns with yara
+=================================================================
+The YARA checking module checks for code patterns in firmware using YARA rules.
+
+[!] YARA checks disabled - enable it in your scanning profile with export YARA=1.
+[-] Wed Jul 31 21:42:01 EDT 2024 - S110_yara_check nothing reported

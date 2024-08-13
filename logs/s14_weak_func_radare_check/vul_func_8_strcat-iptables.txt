@@ -1,0 +1,286 @@
+[*] Binary protection state of iptables
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of iptables
+
+addiu v0, zero, 0x20
+sb v0, (a0)
+b 0x407554
+sw v1, 0x10(a1)
+lw t9, -sym.imp.__fputc_unlocked(gp)
+b 0x407548
+nop
+lw t9, -sym.imp.fputc(gp)
+jalr t9
+addiu a0, zero, 0x20
+lw gp, 0x10(sp)
+andi v0, s4, 0x40
+beqz v0, 0x407688
+nop
+lbu v0, 0x53(s2)
+andi v0, v0, 1
+beqz v0, 0x40757c
+addiu v0, zero, 0x21
+sb v0, 0x1018(sp)
+b 0x407580
+sb zero, 0x1019(sp)
+sb zero, 0x1018(sp)
+lb v0, 0x10(s2)
+beqz v0, 0x407598
+addiu a0, sp, 0x1018
+[31mlw t9, -sym.imp.strcat(gp)[0m
+b 0x4075b8
+addiu a1, s2, 0x10
+[31mlw t9, -sym.imp.strcat(gp)[0m
+beqz s1, 0x4075b0
+nop
+lw a1, -0x7fd4(gp)
+b 0x4075b8
+addiu a1, a1, 0x6ab8
+lw a1, -0x7fd4(gp)
+addiu a1, a1, 0x6abc
+jalr t9
+andi s1, s4, 0x10
+lw gp, 0x10(sp)
+beqz s1, 0x4075d8
+nop
+lw v0, -0x7fd4(gp)
+b 0x4075e0
+addiu a0, v0, 0x6ac0
+lw v0, -0x7fd4(gp)
+addiu a0, v0, 0x6ac8
+lw t9, -sym.imp.printf(gp)
+addiu s0, sp, 0x1018
+jalr t9
+move a1, s0
+lbu v0, 0x53(s2)
+lw gp, 0x10(sp)
+andi v0, v0, 2
+beqz v0, 0x407610
+addiu v0, zero, 0x21
+sb v0, 0x1018(sp)
+b 0x407614
+sb zero, 0x1019(sp)
+sb zero, 0x1018(sp)
+lb v0, 0x20(s2)
+beqz v0, 0x407630
+andi v0, s4, 1
+[31mlw t9, -sym.imp.strcat(gp)[0m
+move a0, s0
+b 0x407650
+addiu a1, s2, 0x20
+[31mlw t9, -sym.imp.strcat(gp)[0m
+beqz v0, 0x407648
+move a0, s0
+lw a1, -0x7fd4(gp)
+b 0x407650
+addiu a1, a1, 0x6ab8
+lw a1, -0x7fd4(gp)
+addiu a1, a1, 0x6abc
+jalr t9
+nop
+lw gp, 0x10(sp)
+beqz s1, 0x407670
+nop
+lw v0, -0x7fd4(gp)
+b 0x407678
+addiu a0, v0, 0x6ad0
+lw v0, -0x7fd4(gp)
+addiu a0, v0, 0x6ad8
+lw t9, -sym.imp.printf(gp)
+jalr t9
+addiu a1, sp, 0x1018
+--
+b 0x407738
+addiu a0, v0, 0x6a8c
+lw v0, -0x7fd4(gp)
+addiu a0, v0, 0x6ae0
+lw a1, -0x7fd4(gp)
+lw t9, -sym.imp.printf(gp)
+b 0x4077c4
+addiu a1, a1, 0x6ae8
+lw t9, -sym.xtables_ipaddr_to_numeric(gp)
+bnez v0, 0x407758
+nop
+lw t9, -sym.xtables_ipaddr_to_anyname(gp)
+jalr t9
+move a0, s2
+addiu a0, sp, 0x18
+lw gp, 0x10(sp)
+lw t9, -sym.imp.strcpy(gp)
+jalr t9
+move a1, v0
+lw gp, 0x10(sp)
+lw t9, -sym.xtables_ipmask_to_numeric(gp)
+jalr t9
+addiu a0, s2, 8
+addiu a0, sp, 0x18
+lw gp, 0x10(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+move a1, v0
+andi v0, s4, 0x10
+lw gp, 0x10(sp)
+beqz v0, 0x4077b4
+nop
+lw v0, -0x7fd4(gp)
+b 0x4077bc
+addiu a0, v0, 0x6a8c
+lw v0, -0x7fd4(gp)
+addiu a0, v0, 0x6ae0
+lw t9, -sym.imp.printf(gp)
+addiu a1, sp, 0x18
+jalr t9
+nop
+lw a1, (s0)
+lw gp, 0x10(sp)
+lw v0, 0x34(a1)
+beqz v0, 0x407828
+nop
+--
+b 0x40787c
+addiu a0, v0, 0x6af4
+lw v0, -0x7fd4(gp)
+addiu a0, v0, 0x6ae0
+lw a1, -0x7fd4(gp)
+lw t9, -sym.imp.printf(gp)
+b 0x407908
+addiu a1, a1, 0x6ae8
+lw t9, -sym.xtables_ipaddr_to_numeric(gp)
+bnez v0, 0x40789c
+addiu a0, s2, 4
+lw t9, -sym.xtables_ipaddr_to_anyname(gp)
+jalr t9
+nop
+addiu a0, sp, 0x18
+lw gp, 0x10(sp)
+lw t9, -sym.imp.strcpy(gp)
+jalr t9
+move a1, v0
+lw gp, 0x10(sp)
+lw t9, -sym.xtables_ipmask_to_numeric(gp)
+jalr t9
+addiu a0, s2, 0xc
+addiu a0, sp, 0x18
+lw gp, 0x10(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+move a1, v0
+andi v0, s4, 0x10
+lw gp, 0x10(sp)
+beqz v0, 0x4078f8
+nop
+lw v0, -0x7fd4(gp)
+b 0x407900
+addiu a0, v0, 0x6af4
+lw v0, -0x7fd4(gp)
+addiu a0, v0, 0x6ae0
+lw t9, -sym.imp.printf(gp)
+addiu a1, sp, 0x18
+jalr t9
+nop
+andi v0, s4, 0x10
+lw gp, 0x10(sp)
+beqz v0, 0x407938
+nop
+lw a0, -0x7fd4(gp)
+--
+lw a1, -0x7fe0(gp)
+lw t9, -sym.imp.printf(gp)
+bnez s1, 0x4140bc
+addiu a1, a1, -0x5e98
+b 0x414114
+nop
+lw t9, -sym.xtables_ipaddr_to_anyname(gp)
+beqz s1, 0x4140c4
+nop
+b 0x4140c8
+move t9, v1
+move a0, s0
+jalr t9
+nop
+addiu a0, sp, 0x18
+lw gp, 0x10(sp)
+lw t9, -sym.imp.strcpy(gp)
+jalr t9
+move a1, v0
+lw gp, 0x10(sp)
+lw t9, -sym.xtables_ipmask_to_numeric(gp)
+jalr t9
+move a0, s2
+addiu a0, sp, 0x18
+lw gp, 0x10(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+move a1, v0
+addiu a1, sp, 0x18
+lw gp, 0x10(sp)
+lw t9, -sym.imp.printf(gp)
+lw a0, -0x7fe0(gp)
+jalr t9
+addiu a0, a0, -0x5ea0
+lw gp, 0x10(sp)
+lw ra, 0x1024(sp)
+lw s2, 0x1020(sp)
+lw s1, 0x101c(sp)
+lw s0, 0x1018(sp)
+jr ra
+addiu sp, sp, 0x1028
+lui gp, 8
+addiu gp, gp, -0xe3c
+addu gp, gp, t9
+addiu sp, sp, -0x30
+sw ra, 0x28(sp)
+--
+srl v0, t1, 0x1f
+sll t0, t0, 1
+or a3, a3, v1
+or t0, t0, v0
+addiu a2, a2, 1
+b 0x43471c
+sll t1, t1, 1
+bnez a1, 0x434770
+nop
+bnez a3, 0x434770
+nop
+bnez t0, 0x434770
+nop
+beqz t1, 0x434778
+addiu v0, zero, -1
+addiu a2, zero, -1
+addiu v0, zero, -1
+lw s0, -0x7fd0(gp)
+bne a2, v0, 0x4347ac
+addiu v0, zero, 0x2f00
+lw t9, -sym.xtables_ip6addr_to_numeric(gp)
+jalr t9
+sh v0, -0x3114(s0)
+addiu a0, s0, -0x3114
+lw gp, 0x10(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+move a1, v0
+b 0x4347c4
+addiu v0, s0, -0x3114
+lw a1, -0x7fe0(gp)
+addiu a0, s0, -0x3114
+lw t9, -sym.imp.sprintf(gp)
+jalr t9
+addiu a1, a1, 0x68b4
+addiu v0, s0, -0x3114
+lw gp, 0x10(sp)
+lw ra, 0x1c(sp)
+lw s0, 0x18(sp)
+jr ra
+addiu sp, sp, 0x20
+lui gp, 6
+addiu gp, gp, -0x14d8
+addu gp, gp, t9
+addiu sp, sp, -0x20
+sw ra, 0x1c(sp)
+
+[*] Function strcat used 8 times iptables
+

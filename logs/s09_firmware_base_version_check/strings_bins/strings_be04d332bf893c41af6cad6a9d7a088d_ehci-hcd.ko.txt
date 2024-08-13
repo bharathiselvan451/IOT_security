@@ -1,0 +1,431 @@
+@(!<
+@(!$
+ %0B
+$ $2"
+0!$c
+(!$B
+$ $2"
+` !$B
+S0!<
+$ $2"
+@(!<
+0!&G
+$61 
+%2" 
+1B0C
+ %%#
+` !<
+` !0g
+@(!<
+ (!$
+0!'9
+ !8Q
+(!$b
+ !$B
+!4cM
+ 0!&)
+(!$B
+  !$
+ !'9
+@ !<
+@ !$B
+@ !$B
+@ !$B
+ (!<
+@ !&
+@ !$B
+ !&#
+ %0B
+@ !$B
+@ !&
+@ !$B
+ %0B
+@ !$B
+@ !&
+@ !$B
+  !2B
+%0b 
+@(!<
+  !<
+D,B@
+(!$B
+ !$B
+(!$B
+ !$B
+` !$B
+ (!@
+(!$B
+` !$B
+@ !$B
+(!$B
+0!$r	
+(!$B
+(!$B
+` !$
+$h$0D
+F($<
+	S$V
+ !$B
+(!$B
+KP!,
+`0!0g
+` !$
+#X$0
+(!$B
+@ !@
+ !$B
+(!$B
+` !0g
+(!$B
+ !$B
+` !$B
+eP!$
+`!$k
+@(!<
+@(!<
+@(!<
+`8!$B
+b4BM
+ !$H
+@!$B
+E($0C
+F0$<
+F0$<
+@ !<
+ !&C
+(!$B
+ 0!$B
+@0!$B
+(!$B
+0!$B
+@0!<
+ !$B
+(!$B
+ %0B
+`0!$B
+ !$B
+ !$B
+@(!<
+ !$B
+@(!$B
+ (!'9
+h%%)
+@8!<
+4cA]
+8!$B
+(!$B
+0!."
+  !@
+  !@
+@H!<
+ (!$B
+  !$B
+  !$B
+  !$B
+  !$B
+  !$B
+@(!<
+8!$B
+(!$B
+@ !@
+@ !<
+@(!<
+ !$B
+@(!$
+` !$
+@@!<
+@ !<
+@(!<
+8!$B
+  !$B
+  !<
+@ !<
+@(!<
+8!$B
+ !'9
+  !$B
+P%1B
+(%1B
+  !$B
+@ !<
+(!$B
+ignore_oc
+park
+log2_irq_thresh
+rtl8652-ehci
+RTL8652 On-Chip EHCI Host Controller
+ehci_hcd
+}}}}}}
+companion
+<3>%s %s: force halt; handhake %p %08x %08x -> %d
+<3>%s %s: port %d resume error %d
+<3>%s %s: port %d reset error %d
+drivers/usb/host/ehci-mem.c
+include/linux/usb.h
+<3>%s %s: invalid empty smask!
+<3>%s %s: frame %d tt sched overrun: %d usecs
+drivers/usb/host/ehci.h
+<6>%s %s: ep%d%s-iso rescheduled %lu times in %lu seconds
+, overcurrent ignored
+<6>%s %s: USB %x.%x started, EHCI %x.%02x%s
+<3>%s %s: fatal error
+<3>%s %s: can't reschedule qh %p, err %d
+(has tds)
+<3>%s %s: qh %p (#%02x) state %d%s
+<3>%s %s: Found HC with no IRQ. Check %s setup!
+<3>%s %s: Found HC with no register addr. Check %s setup!
+<3>%s %s: init %s fail, %d
+ehci_qtd
+ehci_qh
+ehci_itd
+ehci_sitd
+read synopsys=%x
+read synopsys2=%x
+EHCI already cleanup
+EHCI-HCD: already init 
+<6>%s: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+<4>Warning! ehci_hcd should always be loaded before uhci_hcd and ohci_hcd, not after
+Ehci-rtl8652.c: EHCI device already init
+EHCI-HCD: not init, cannot cleanup 
+alias=platform:rtl8652-ehci
+license=GPL
+author=David Brownell
+description=USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+parm=ignore_oc:ignore bogus hardware overcurrent indications
+parmtype=ignore_oc:bool
+parm=park:park setting; 1-3 back-to-back async packets
+parmtype=park:uint
+parm=log2_irq_thresh:log2 IRQ latency, 1-64 microframes
+parmtype=log2_irq_thresh:int
+depends=usbcore
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+ehci_hcd
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.timer_action
+.rel.text.handshake
+.rel.text.ehci_halt
+.rel.text.handshake_on_error_set_halt
+.rel.text.ehci_reset
+.rel.text.ehci_quiesce
+.rel.text.show_companion
+.rel.text.set_owner
+.rel.text.store_companion
+.rel.text.ehci_hub_status_data
+.rel.text.ehci_hub_control
+.rel.text.ehci_relinquish_port
+.text.ehci_port_handed_over
+.rel.text.ehci_qtd_alloc
+.rel.text.qh_destroy
+.rel.text.ehci_qh_alloc
+.rel.iram-rtkusb
+.rel.text.ehci_clear_tt_buffer_complete
+.rel.text.ehci_clear_tt_buffer
+.rel.text.qtd_list_free
+.rel.text.periodic_next_shadow
+.rel.text.periodic_usecs
+.text.same_tt
+.rel.text.tt_available
+.rel.text.enable_periodic
+.rel.text.disable_periodic
+.rel.text.intr_deschedule
+.rel.text.check_period
+.rel.text.check_intr_schedule
+.rel.text.qh_schedule
+.rel.text.qh_completions
+.rel.text.unlink_async
+.rel.text.iso_stream_put
+.rel.text.free_cached_itd_list
+.rel.text.ehci_mem_cleanup
+.rel.text.iso_stream_find
+.rel.text.iso_sched_alloc
+.rel.text.iso_sched_free
+.rel.text.iso_stream_schedule
+.rel.text.ehci_iaa_watchdog
+.rel.text.ehci_watchdog
+.rel.text.ehci_silence_controller
+.rel.text.ehci_shutdown
+.rel.text.ehci_stop
+.rel.text.ehci_run
+.rel.text.ehci_urb_dequeue
+.rel.text.ehci_endpoint_disable
+.text.ehci_get_frame
+.rel.text.usb_hcd_rtl8652_probe
+.rel.text.usb_hcd_rtl8652_remove
+.rel.text.ehci_rtl8652_setup
+.rel.text.ehci_rtl8652_drv_probe
+.rel.text.ehci_rtl8652_drv_remove
+.rel.text.ehci_rtl8652_cleanup
+.rel.init.text
+.rel.exit.text
+.rel.rodata
+.modinfo
+.rel__param
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+ehci-hcd.c
+ehci_hcd_init
+ehci_hcd_cleanup
+__mod_alias310
+__mod_license1055
+__mod_author1054
+__mod_description1053
+__mod_ignore_oc102
+__mod_ignore_octype101
+__param_ignore_oc
+__param_str_ignore_oc
+ignore_oc
+__mod_park97
+__mod_parktype96
+__param_park
+__param_str_park
+park
+__mod_log2_irq_thresh92
+__mod_log2_irq_threshtype91
+__param_log2_irq_thresh
+__param_str_log2_irq_thresh
+log2_irq_thresh
+ehci_rtl8652_driver
+ehci_rtl8652_drv_probe
+ehci_rtl8652_drv_remove
+ehci_rtl8652_hc_driver
+hcd_name
+ehci_irq
+ehci_rtl8652_setup
+ehci_run
+ehci_stop
+ehci_shutdown
+ehci_get_frame
+ehci_urb_enqueue
+ehci_urb_dequeue
+ehci_endpoint_disable
+ehci_hub_status_data
+ehci_hub_control
+ehci_relinquish_port
+ehci_port_handed_over
+ehci_clear_tt_buffer_complete
+max_tt_usecs
+dev_attr_companion
+show_companion
+store_companion
+usb_dev_host
+timer_action
+handshake
+ehci_halt
+handshake_on_error_set_halt
+ehci_reset
+ehci_quiesce
+set_owner
+retry.0
+ehci_qtd_alloc
+qh_destroy
+ehci_qh_alloc
+qtd_fill
+qh_refresh
+qh_link_async
+ehci_clear_tt_buffer
+ehci_urb_done
+qtd_list_free
+qh_urb_transaction
+qh_append_tds
+periodic_next_shadow
+periodic_usecs
+same_tt
+tt_available
+enable_periodic
+disable_periodic
+intr_deschedule
+check_period
+check_intr_schedule
+qh_schedule
+qh_completions
+unlink_async
+end_unlink_async
+start_unlink_async
+iso_stream_put
+free_cached_itd_list
+ehci_mem_cleanup
+smask_out.1
+iso_stream_find
+iso_sched_alloc
+iso_sched_free
+iso_stream_schedule
+ehci_iaa_watchdog
+ehci_work
+ehci_watchdog
+ehci_silence_controller
+ehci-hcd.mod.c
+__module_depends
+__mod_vermagic5
+usb_hcd_platform_shutdown
+__udelay
+ehci_rtl8652_cleanup
+dma_pool_create
+usb_hcd_unlink_urb_from_ep
+platform_driver_unregister
+__this_module
+param_get_bool
+__iounmap
+scnprintf
+cleanup_module
+param_set_uint
+kfree
+usb_disabled
+__release_region
+init_module
+dma_pool_alloc
+dev_driver_string
+param_get_uint
+msecs_to_jiffies
+kmem_cache_alloc
+usb_hcd_check_unlink_urb
+device_create_file
+usb_hcds_loaded
+dma_alloc_coherent
+down_write
+up_write
+platform_driver_register
+dma_pool_free
+platform_device_unregister
+mod_timer
+platform_get_resource
+usb_calc_bus_time
+warn_slowpath_null
+dma_free_coherent
+ehci_cf_port_reset_rwsem
+param_set_bool
+sscanf
+printk
+usb_hcd_rtl8652_remove
+usb_hcd_link_urb_to_ep
+memset
+usb_put_hcd
+usb_hub_clear_tt_buffer
+jiffies
+dma_pool_destroy
+param_set_int
+usb_hcd_giveback_urb
+init_timer_key
+usb_hcd_poll_rh_status
+usb_create_hcd
+malloc_sizes
+platform_device_register_simple
+usb_hcd_rtl8652_probe
+schedule_timeout_uninterruptible
+usb_remove_hcd
+iomem_resource
+del_timer
+param_get_int
+usb_add_hcd
+msleep
+__kmalloc
+__request_region
+device_remove_file

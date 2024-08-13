@@ -1,0 +1,11 @@
+[*] Binary protection state of scsi_wait_scan.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function sprintf tear down of scsi_wait_scan.ko
+
+
+[*] Function sprintf used 0 times scsi_wait_scan.ko
+

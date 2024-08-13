@@ -1,0 +1,58 @@
+@ !<
+`(!$T
+alias=ip_nat_pptp
+description=Netfilter NAT helper module for PPTP
+author=Harald Welte <laforge@gnumonks.org>
+license=GPL
+depends=nf_conntrack_pptp,nf_nat_proto_gre
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+nf_nat_pptp
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.pptp_nat_expected
+.rel.text.pptp_outbound_pkt
+.text.pptp_exp_gre
+.rel.text.pptp_inbound_pkt
+.rel.init.text
+.rel.exit.text
+.rel.rodata
+.modinfo
+.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+nf_nat_pptp.c
+nf_nat_helper_pptp_init
+nf_nat_helper_pptp_fini
+__mod_alias38
+__mod_description37
+__mod_author36
+__mod_license35
+pptp_nat_expected
+pptp_outbound_pkt
+pptp_exp_gre
+pptp_inbound_pkt
+nf_nat_pptp.mod.c
+__module_depends
+__mod_vermagic5
+nf_nat_pptp_hook_exp_gre
+__this_module
+cleanup_module
+init_module
+nf_nat_setup_info
+init_net
+synchronize_rcu
+nf_nat_pptp_hook_inbound
+nf_ct_expect_put
+nf_nat_pptp_hook_outbound
+nf_ct_expect_find_get
+nf_nat_pptp_hook_expectfn
+nf_nat_need_gre
+nf_nat_mangle_tcp_packet
+nf_ct_unexpect_related

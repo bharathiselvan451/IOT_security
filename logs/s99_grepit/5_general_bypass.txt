@@ -1,0 +1,13 @@
+[*] Searching (args for grep: -i) for bypass.
+[*] Grepit state info - comment: Bypass. Sounds suspicious, what do they bypass exactly?
+[*] Grepit state info - Filename 5_general_bypass.txt
+[*] Grepit state info - Example: bypass
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: bypass
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m1137[m[36m-[m-f permission deniedf:h:p/dev/UNKNOWN on `%.100s' from `%.200s' on `%.100s'login!rLogin incorrectinvalid password for `%s'%s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m1138[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m1139[m[36m-[mSystem closed for routine maintenance.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m:[m[32m1140[m[36m:[m[Disconnect [01;31mbypass[med -- root login allowed.]/dev/%sunable to determine TTY name, got %s
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m1141[m[36m-[mroot login %s

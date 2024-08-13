@@ -1,0 +1,11 @@
+[*] Binary protection state of pppol2tp.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function mmap tear down of pppol2tp.ko
+
+
+[*] Function mmap used 0 times pppol2tp.ko
+

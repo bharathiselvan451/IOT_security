@@ -1,0 +1,11 @@
+[*] Binary protection state of libdl-0.9.30.so
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	Partial RELRO  No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of libdl-0.9.30.so
+
+
+[*] Function sprintf used 0 times libdl-0.9.30.so
+

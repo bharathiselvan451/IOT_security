@@ -1,0 +1,22 @@
+[*] Vulnerability details for busybox / version 1.01 / source STAT:
+
+[0;32m	BIN NAME            :   BIN VERS    :   CVE ID            :  CVSS VALUE : EPSS :   SOURCE         :   EXPLOIT[0m
+[0;33m	busybox             :   1.01        :   CVE-2006-5050     :   5.0 (v2)  :  0   :   STAT           :   No exploit available[0m
+[0;33m	busybox             :   1.01        :   CVE-2011-2716     :   6.8 (v2)  :  0   :   STAT           :   No exploit available[0m
+[0;31m	busybox             :   1.01        :   CVE-2013-1813     :   7.2 (v2)  :  0   :   STAT           :   No exploit available[0m
+[0;31m	busybox             :   1.01        :   CVE-2011-5325     :   7.5       :  1   :   STAT           :   No exploit available[0m
+[0;31m	busybox             :   1.01        :   CVE-2016-2148     :   9.8       :  1   :   STAT           :   No exploit available[0m
+[0;33m	busybox             :   1.01        :   CVE-2018-20679    :   5.0 (v2)  :  0   :   STAT           :   No exploit available[0m
+[0;32m	busybox             :   1.01        :   CVE-2014-9645     :   2.1 (v2)  :  0   :   STAT           :   No exploit available[0m
+[0;31m	busybox             :   1.01        :   CVE-2019-5747     :   7.5       :  0   :   STAT           :   No exploit available[0m
+[0;31m	busybox             :   1.01        :   CVE-2017-16544    :   8.8       :  0   :   STAT           :   No exploit available[0m
+[0;31m	busybox             :   1.01        :   CVE-2018-1000517  :   9.8       :  0   :   STAT           :   No exploit available[0m
+[0;31m	busybox             :   1.01        :   CVE-2016-2147     :   7.5       :  8   :   STAT           :   No exploit available[0m
+[0;31m	busybox             :   1.01        :   CVE-2018-1000500  :   8.1       :  0   :   STAT           :   No exploit available[0m
+[0;31m	busybox             :   1.01        :   CVE-2022-48174    :   9.8       :  0   :   STAT           :   No exploit available[0m
+[0;33m	busybox             :   1.01        :   CVE-2015-9261     :   5.5       :  0   :   STAT           :   No exploit available[0m
+[0;31m	busybox             :   1.01        :   CVE-2016-6301     :   7.8 (v2)  :  4   :   STAT           :   No exploit available[0m
+[0;31m	busybox             :   1.01        :   CVE-2022-28391    :   8.8       :  1   :   STAT           :   No exploit available[0m
+
+[+] Found 16 CVEs and 0 exploits (including POC's) in busybox with version 1.01 (source STAT).
+

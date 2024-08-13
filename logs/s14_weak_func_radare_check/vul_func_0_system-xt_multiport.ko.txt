@@ -1,0 +1,11 @@
+[*] Binary protection state of xt_multiport.ko
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function system tear down of xt_multiport.ko
+
+
+[*] Function system used 0 times xt_multiport.ko
+

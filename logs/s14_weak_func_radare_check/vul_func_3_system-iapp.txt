@@ -1,0 +1,116 @@
+[*] Binary protection state of iapp
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function system tear down of iapp
+
+jalr t9
+addiu s2, sp, 0x560
+addiu s4, sp, 0x570
+lw gp, 0x38(sp)
+move a2, s2
+move a3, s4
+move a0, s1
+lw t9, -sym.imp.sscanf(gp)
+bnez v0, 0x400fa4
+move a1, s6
+lw t9, -sym.imp.fclose(gp)
+jalr t9
+move a0, s0
+lw gp, 0x38(sp)
+bnez s7, 0x4010d4
+nop
+lw v0, -0x7fe8(gp)
+move a0, s1
+lw a1, -segment.LOAD0(gp)
+lw a2, 0x3330(v0)
+lw t9, -sym.imp.sprintf(gp)
+addiu a1, a1, 0x2bec
+jalr t9
+addiu a2, a2, 0x1c
+lw gp, 0x38(sp)
+[31mlw t9, -sym.imp.system(gp)[0m
+jalr t9
+move a0, s1
+lw gp, 0x38(sp)
+lw t9, -sym.imp.memset(gp)
+addiu s0, sp, 0x150
+move a0, s0
+move a1, zero
+jalr t9
+addiu a2, zero, 0x10
+addiu v0, zero, 2
+lw gp, 0x38(sp)
+addiu a1, sp, 0x154
+sh v0, 0x150(sp)
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.inet_aton(gp)
+jalr t9
+addiu a0, a0, 0x2c24
+lw gp, 0x38(sp)
+bnez v0, 0x401130
+addiu a1, sp, 0xd0
+--
+jalr t9
+move a2, zero
+lw v1, 0x3330(s4)
+sw v0, 0x14(s0)
+lw v0, 0x14(v1)
+lw gp, 0x18(sp)
+bltz v0, 0x4023b0
+addiu a1, sp, 0x268
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.inet_aton(gp)
+jalr t9
+addiu a0, a0, 0x2c24
+lw v0, 0x268(sp)
+lw gp, 0x18(sp)
+sw zero, 0x6c(sp)
+sw v0, 0x68(sp)
+lw a1, -segment.LOAD0(gp)
+addiu s0, sp, 0x160
+lw a2, 0x3330(s3)
+move a0, s0
+lw t9, -sym.imp.sprintf(gp)
+addiu a1, a1, 0x30f4
+jalr t9
+addiu a2, a2, 0x1c
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.system(gp)[0m
+jalr t9
+move a0, s0
+move a0, s0
+lw gp, 0x18(sp)
+lw a2, 0x3330(s3)
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.sprintf(gp)
+addiu a2, a2, 0x1c
+jalr t9
+addiu a1, a1, 0x312c
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.system(gp)[0m
+jalr t9
+move a0, s0
+move a1, zero
+lw v0, 0x3330(s3)
+addiu a2, zero, 0x23
+lw gp, 0x18(sp)
+addiu a3, sp, 0x68
+lw a0, 0x14(v0)
+addiu v0, zero, 8
+lw t9, -sym.imp.setsockopt(gp)
+jalr t9
+sw v0, 0x10(sp)
+lw gp, 0x18(sp)
+bltz v0, 0x4020b8
+addiu s0, zero, 4
+lw v0, 0x3330(s3)
+lw t9, -sym.imp.setsockopt(gp)
+move a1, zero
+lw a0, 0x14(v0)
+addiu a2, zero, 0x22
+
+[*] Function system used 3 times iapp
+

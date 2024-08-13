@@ -1,0 +1,38 @@
+[+] Check bootloader and system startup
+=================================================================
+The Bootloader check module performs checks to identify the bootloader and system startup configuration.
+
+
+
+==> Scan for device tree blobs
+-----------------------------------------------------------------
+[-] No device tree blobs found
+
+
+==> Scan for bootloader
+-----------------------------------------------------------------
+[-] No Syslinux configuration file found
+[-] No Grub configuration file found
+[-] No Grub configuration file found
+[-] No Grub configuration check
+[-] No FreeBSD or DragonFly bootloader files found
+[-] No LILO configuration file found
+[-] No SILO configuration file found
+[-] No YABOOT configuration file found
+[-] No OpenBSD/bootstrap files found
+[-] No OpenBSD configuration file found
+[-] No U-Boot image found
+
+
+==> Scan for startup files
+-----------------------------------------------------------------
+[+] Found 3 startup files:
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/init.d (drwxrwxr-x 501 502)
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/init.d/rcS (-rwxr-xr-x 501 502)
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/inittab (-rw-rw-r-- 501 502)
+
+
+==> Check default run level
+-----------------------------------------------------------------
+[*] Check runlevel in /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/inittab (-rw-rw-r-- 501 502)
+[-] No default run level /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/etc/inittab (-rw-rw-r-- 501 502) found

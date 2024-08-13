@@ -1,0 +1,57 @@
+[*] Binary protection state of usbp
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function popen tear down of usbp
+
+sw ra, 0x330(sp)
+sw s5, 0x32c(sp)
+sw s4, 0x328(sp)
+sw s3, 0x324(sp)
+sw s2, 0x320(sp)
+sw s1, 0x31c(sp)
+sw s0, 0x318(sp)
+sw gp, 0x10(sp)
+move a1, zero
+lw t9, -sym.imp.memset(gp)
+addiu s4, sp, 0x118
+move a0, s4
+jalr t9
+addiu a2, zero, 0x100
+move a0, s4
+lw gp, 0x10(sp)
+addiu a1, zero, 0x100
+move s5, zero
+lw a2, -segment.LOAD0(gp)
+lw t9, -sym.imp.snprintf(gp)
+jalr t9
+addiu a2, a2, 0x1ddc
+move a0, s4
+lw gp, 0x10(sp)
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.popen(gp)[0m
+jalr t9
+addiu a1, a1, 0x1de4
+move s3, v0
+lw gp, 0x10(sp)
+beqz s3, 0x4014f0
+addiu v0, zero, -1
+lw t9, -sym.imp.memset(gp)
+addiu s0, sp, 0x18
+move a0, s0
+move a1, zero
+jalr t9
+addiu a2, zero, 0x100
+move a0, s0
+lw gp, 0x10(sp)
+addiu a1, zero, 0x100
+lw t9, -sym.imp.fgets(gp)
+jalr t9
+move a2, s3
+move a0, s0
+lw gp, 0x10(sp)
+
+[*] Function popen used 1 times usbp
+

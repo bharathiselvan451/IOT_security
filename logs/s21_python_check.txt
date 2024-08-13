@@ -1,0 +1,7 @@
+[+] Check python scripts for security issues
+=================================================================
+The Python checking module is designed to analyze Python scripts for security vulnerabilities, providing comprehensive logs and optional integration with ChatGPT for enhanced insights.
+
+
+[*] Statistics:0:0
+[-] Wed Jul 31 20:55:05 EDT 2024 - S21_python_check nothing reported

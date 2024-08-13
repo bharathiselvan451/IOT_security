@@ -1,0 +1,11 @@
+[*] Binary protection state of iapp
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of iapp
+
+
+[*] Function strcat used 0 times iapp
+

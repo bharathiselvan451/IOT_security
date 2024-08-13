@@ -1,0 +1,11 @@
+[*] Binary protection state of xfrm6_mode_tunnel.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function strcpy tear down of xfrm6_mode_tunnel.ko
+
+
+[*] Function strcpy used 0 times xfrm6_mode_tunnel.ko
+

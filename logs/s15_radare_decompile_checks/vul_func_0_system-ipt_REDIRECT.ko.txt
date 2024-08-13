@@ -1,0 +1,11 @@
+[*] Binary protection state of ipt_REDIRECT.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function system tear down of ipt_REDIRECT.ko
+
+
+[*] Function system used 0 times ipt_REDIRECT.ko
+

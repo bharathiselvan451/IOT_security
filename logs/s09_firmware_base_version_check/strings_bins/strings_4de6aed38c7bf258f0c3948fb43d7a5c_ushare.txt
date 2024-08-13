@@ -1,0 +1,881 @@
+/lib/ld-uClibc.so.0
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+strlen
+strcmp
+strdup
+malloc
+strtok_r
+strncmp
+strchr
+upnp_add_response
+buffer_appendf
+buffer_append
+UpnpGetServerIpAddress
+upnp_get_ui4
+upnp_get_string
+upnp_get_entry
+buffer_new
+mime_get_class
+dlna_write_protocol_info
+buffer_free
+sprintf
+mime_get_protocol
+dlna_profile_upnp_object_item
+memset
+strstr
+strncpy
+MIME_Type_List
+print_log
+strrchr
+atoi
+stat64
+access
+strndup
+ixmlCloneDOMString
+build_presentation_page
+process_cgi
+__errno_location
+read
+memcpy
+lseek64
+strerror
+free_metadata_list
+build_metadata_list
+sscanf
+content_del
+content_add
+nl_langinfo
+rbopenlist
+rbreadlist
+rbcloselist
+rbdestroy
+iconv_convert
+dlna_guess_media_profile2
+mime_get_extension
+strcasecmp
+upnp_entry_free
+strcpy
+rbfind
+scandir64
+alphasort64
+realloc
+rbsearch
+perror
+rbinit
+rb_compare
+folderRelationship
+mime_extention_list
+mime_protocol_list
+UpnpAddToActionResponse
+ixmlNode_getFirstChild
+ixmlNode_getNodeName
+ixmlNode_getNextSibling
+ixmlNode_getNodeValue
+cds_service_actions
+cms_service_actions
+msr_service_actions
+strcat
+vsnprintf
+exit
+stderr
+fwrite
+fopen64
+getline
+fclose
+getopt_long
+optarg
+display_headers
+putchar
+puts
+vsyslog
+stdout
+vfprintf
+openlog
+rb_null
+pthread_mutex_lock
+pthread_mutex_unlock
+pthread_join
+send
+ctrl_telnet_client_sendf
+memmove
+select
+recv
+accept
+socket
+setsockopt
+bind
+listen
+pipe
+pthread_create
+pthread_mutex_init
+pthread_cond_init
+pthread_cond_destroy
+pthread_mutex_destroy
+content_free
+dlna_uninit
+find_service_action
+ixmlPrintDocument
+ixmlFreeDOMString
+UpnpInit
+UpnpSetMaxContentLength
+UpnpGetServerPort
+UpnpEnableWebserver
+UpnpSetVirtualDirCallbacks
+virtual_dir_callbacks
+UpnpAddVirtualDir
+UpnpRegisterRootDevice2
+UpnpUnRegisterRootDevice
+UpnpSendAdvertisement
+dlna_dms_description_get
+dlna_init
+dlna_set_verbosity
+dlna_set_extension_check
+dlna_register_all_media_profiles
+ioctl
+pthread_cond_signal
+parse_config_file
+raise
+UpnpFinish
+setup_iconv
+parse_command_line
+gUshareInitInfo
+daemon
+start_log
+fork
+setsid
+dup2
+chdir
+printEntry
+inRebuildingList
+system
+initUshare
+pthread_cond_wait
+finish_iconv
+processHttpdReq
+ctrl_telnet_stop
+serverProcessInit
+setUshareInitInfo
+sleep
+fcntl64
+unlink
+gAutoScanDelay
+__libc_current_sigrtmin
+autoScan
+gTid
+timer_create
+timer_settime
+rebuild_list_lock
+rebuild_list_unlock
+UpnpGetStatus
+UpnpEnable
+UpnpDisable
+libixml.so.2
+_DYNAMIC_LINKING
+__RLD_MAP
+libthreadutil.so.2
+__start
+_GLOBAL_OFFSET_TABLE_
+__data_start
+libupnp.so.3
+librt.so.0
+dlna_profile_av_mpeg4_part2
+dlna_profile_av_wmv9
+dlna_profile_image_jpeg
+dlna_profile_image_png
+dlna_profile_audio_ac3
+dlna_profile_audio_amr
+dlna_profile_audio_atrac3
+dlna_profile_audio_lpcm
+dlna_profile_av_mpeg1
+dlna_profile_audio_mpeg4
+dlna_profile_audio_mp3
+dlna_profile_av_mpeg2
+dlna_profile_audio_wma
+dlna_profile_av_mpeg4_part10
+dlna_profile_image_bmp
+dlna_profile_image_gif
+dlna_profile_image_tif
+dlna_profile_audio_aif
+dlna_profile_audio_mp2
+dlna_profile_audio_ogg
+dlna_profile_audio_flac
+dlna_profile_audio_aiff
+dlna_profile_audio_wav
+dlna_profile_av_avi
+dlna_profile_av_vob
+dlna_profile_av_m4v
+dlna_profile_av_mkv
+dlna_profile_av_mov
+dlna_id_type_list
+dlna_mime_type_list
+libpthread.so.0
+libm.so.0
+libc.so.0
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GLIBC_2.0
+$'9'
+('9'
+%f/p
+/x$F/
+	&%/
+($~/
+(&f0
+/x$F/
+ !%&0(
+	%e0@
+	%E0P
+%%0`
+	$G0
+(!&R
+	$e1p
+	$E1x
+	%'0
+	&E1
+1x&E1
+	&e1
+(%Y+$
+	&G0
+0&%1
+	&e1x&%1
+	%E0@
+	%%0P
+	&F/h
+	&%3
+`0!%%4h
+	$E4
+p%e4
+	%F5
+p%%5
+	$E5`
+	$e5
+X8E@
+	%%5
+4%F5
+	%&5
+	&%5
+	&%5
+	&%5
+	&e5
+@&s5
+	&15
+	&25
+	&35
+	%ef4
+	&%fH
+	$ef\
+ X!<
+	&ef
+	&%gP
+	$ef4
+ !$Eg
+ !&D
+	$eg
+	&eg
+	&Eg
+	%eht
+	%Eh|
+	%%h
+@ !&
+	$eht
+	$EiD
+	&ei
+	%ei
+	%Fi
+	$fk$
+	$Ei
+	&ek@
+	&%h|
+$SkT<
+$$rc0
+	&Ek
+@8!&6
+	$fl
+	$el
+`&9g
+	%%l
+	&%m8
+8!%9g
+	&emh
+8!%9g
+(%ju
+$fuP
+	$Ev
+$ewT
+`@$m
+ !$E
+ !$E
+ !$E
+&Ex(
+x&Ex('
+	$Dx`
+($bx
+@(!$
+$X!$
+$X!$
+0 !$
+  !$
+`8!$
+ !$E
+ !$E
+	%$y
+p%Dzp
+	%d{`
+	$d{
+	&d},
+	&D}L
+	&$}
+` !<
+0!$Y
+	$e~
+P!2p
+iB1L
+	iB1$
+	&e~
+	%$~
+@ !'
+B0!$
+@(!$
+@ !$
+	AB%
+@ !$
+  !'
+@ !$
+  !'
+  !&
+50!&R
+` !&
+@ !&
+@ !$
+@ !'
+` !$
+ (!'
+$'9'
+ GetSearchCapabilities
+GetSortCapabilities
+GetSystemUpdateID
+Browse
+Search
+SearchCaps
+SortCaps
+item
+ %s="%lld"
+parentID
+restricted
+ %s="%s"
+upnp:class
+<%s>%s</%s>
+dc:title
+</%s>
+protocolInfo
+@size
+/web
+http://%s:%d%s/%s
+size
+container
+childCount
+searchable
+StartingIndex
+RequestedCount
+ObjectID
+BrowseFlag
+Filter
+SortCriteria
+BrowseMetadata
+BrowseDirectChildren
+DIDL-Lite
+<%s %s>
+xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp/"
+false
+Result
+NumberReturned
+TotalMatches
+UpdateID
+true
+Xbox
+object
+(upnp:class = "
+(upnp:class derivedfrom "
+(res@protocolInfo contains "
+) and (
+SearchCriteria
+got search request:
+ index: %d
+ count:%d
+ id: %d
+search_criteria:%s
+filter:%s
+sort_criteria: %d
+(upnp:class = "object.item.audioItem.musicTrack")
+(upnp:class = "object.item.videoItem")
+(upnp:class = "object.item.imageItem.photo")
+GetProtocolInfo
+GetCurrentConnectionIDs
+GetCurrentConnectionInfo
+Source
+Sink
+ConnectionIDs
+ConnectionID
+RcsID
+AVTransportID
+ProtocolInfo
+PeerConnectionManager
+PeerConnectionID
+Direction
+Output
+Status
+IsAuthorized
+RegisterDevice
+IsValidated
+Result
+http_get_info, filename : %s
+/web/cds.xml
+/web/cms.xml
+/web/msr.xml
+/web/ushare.cgi
+text/xml
+/web/ushare.html
+text/html
+%s/%s%s
+http_open, filename : %s
+<?xml version="1.0" encoding="utf-8"?><scpd xmlns="urn:schemas-upnp-org:service-1-0">  <specVersion>    <major>1</major>    <minor>0</minor>  </specVersion>  <actionList>    <action>      <name>Browse</name>      <argumentList>        <argument>          <name>ObjectID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_ObjectID</relatedStateVariable>        </argument>        <argument>          <name>BrowseFlag</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_BrowseFlag</relatedStateVariable>       </argument>        <argument>          <name>Filter</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_Filter</relatedStateVariable>        </argument>        <argument>          <name>StartingIndex</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_Index</relatedStateVariable>        </argument>        <argument>          <name>RequestedCount</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_Count</relatedStateVariable>        </argument>        <argument>          <name>SortCriteria</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_SortCriteria</relatedStateVariable>       </argument>        <argument>          <name>Result</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_Result</relatedStateVariable>        </argument>        <argument>          <name>NumberReturned</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_Count</relatedStateVariable>        </argument>        <argument>          <name>TotalMatches</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_Count</relatedStateVariable>        </argument>        <argument>          <name>UpdateID</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_UpdateID</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>DestroyObject</name>      <argumentList>        <argument>          <name>ObjectID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_ObjectID</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>GetSystemUpdateID</name>      <argumentList>        <argument>          <name>Id</name>          <direction>out</direction>          <relatedStateVariable>SystemUpdateID</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>GetSearchCapabilities</name>      <argumentList>        <argument>          <name>SearchCaps</name>          <direction>out</direction>          <relatedStateVariable>SearchCapabilities</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>GetSortCapabilities</name>      <argumentList>        <argument>          <name>SortCaps</name>          <direction>out</direction>          <relatedStateVariable>SortCapabilities</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>UpdateObject</name>      <argumentList>        <argument>          <name>ObjectID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_ObjectID</relatedStateVariable>        </argument>        <argument>          <name>CurrentTagValue</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_TagValueList</relatedStateVariable>        </argument>        <argument>          <name>NewTagValue</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_TagValueList</relatedStateVariable>        </argument>      </argumentList>    </action>  </actionList>  <serviceStateTable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_BrowseFlag</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>BrowseMetadata</allowedValue>        <allowedValue>BrowseDirectChildren</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="yes">      <name>SystemUpdateID</name>      <dataType>ui4</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_Count</name>      <dataType>ui4</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_SortCriteria</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>SortCapabilities</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_Index</name>      <dataType>ui4</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_ObjectID</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_UpdateID</name>      <dataType>ui4</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_TagValueList</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_Result</name>      <dataType>string</dataType>    </stateVariable>   <stateVariable sendEvents="no">      <name>SearchCapabilities</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_Filter</name>      <dataType>string</dataType>    </stateVariable>  </serviceStateTable></scpd>
+<?xml version="1.0" encoding="utf-8"?><scpd xmlns="urn:schemas-upnp-org:service-1-0">  <specVersion>    <major>1</major>    <minor>0</minor>  </specVersion>  <actionList>    <action>      <name>GetCurrentConnectionInfo</name>      <argumentList>        <argument>          <name>ConnectionID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_ConnectionID</relatedStateVariable>        </argument>        <argument>          <name>RcsID</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_RcsID</relatedStateVariable>        </argument>        <argument>          <name>AVTransportID</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_AVTransportID</relatedStateVariable>        </argument>        <argument>          <name>ProtocolInfo</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_ProtocolInfo</relatedStateVariable>        </argument>        <argument>          <name>PeerConnectionManager</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_ConnectionManager</relatedStateVariable>        </argument>        <argument>          <name>PeerConnectionID</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_ConnectionID</relatedStateVariable>        </argument>        <argument>          <name>Direction</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_Direction</relatedStateVariable>        </argument>        <argument>          <name>Status</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_ConnectionStatus</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>GetProtocolInfo</name>      <argumentList>        <argument>          <name>Source</name>          <direction>out</direction>          <relatedStateVariable>SourceProtocolInfo</relatedStateVariable>        </argument>        <argument>          <name>Sink</name>          <direction>out</direction>          <relatedStateVariable>SinkProtocolInfo</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>GetCurrentConnectionIDs</name>      <argumentList>        <argument>          <name>ConnectionIDs</name>          <direction>out</direction>          <relatedStateVariable>CurrentConnectionIDs</relatedStateVariable>        </argument>      </argumentList>    </action>  </actionList>  <serviceStateTable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_ProtocolInfo</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_ConnectionStatus</name>     <dataType>string</dataType>      <allowedValueList>        <allowedValue>OK</allowedValue>        <allowedValue>ContentFormatMismatch</allowedValue>        <allowedValue>InsufficientBandwidth</allowedValue>        <allowedValue>UnreliableChannel</allowedValue>        <allowedValue>Unknown</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_AVTransportID</name>      <dataType>i4</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_RcsID</name>      <dataType>i4</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_ConnectionID</name>      <dataType>i4</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_ConnectionManager</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="yes">      <name>SourceProtocolInfo</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="yes">      <name>SinkProtocolInfo</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_Direction</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>Input</allowedValue>        <allowedValue>Output</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="yes">      <name>CurrentConnectionIDs</name>      <dataType>string</dataType>    </stateVariable>  </serviceStateTable></scpd>
+<?xml version="1.0" encoding="utf-8"?><scpd xmlns="urn:schemas-upnp-org:service-1-0"><specVersion>  <major>1</major>  <minor>0</minor></specVersion><actionList>  <action>    <name>IsAuthorized</name>    <argumentList>      <argument>        <name>DeviceID</name>        <direction>in</direction>        <relatedStateVariable>A_ARG_TYPE_DeviceID</relatedStateVariable>      </argument>      <argument>        <name>Result</name>        <direction>out</direction>        <relatedStateVariable>A_ARG_TYPE_Result</relatedStateVariable>      </argument>    </argumentList>  </action>  <action>    <name>RegisterDevice</name>    <argumentList>      <argument>        <name>RegistrationReqMsg</name>        <direction>in</direction>        <relatedStateVariable>A_ARG_TYPE_RegistrationReqMsg</relatedStateVariable>      </argument>      <argument>        <name>RegistrationRespMsg</name>        <direction>out</direction>        <relatedStateVariable>A_ARG_TYPE_RegistrationRespMsg</relatedStateVariable>      </argument>    </argumentList>  </action>  <action>    <name>IsValidated</name>    <argumentList>      <argument>        <name>DeviceID</name>        <direction>in</direction>        <relatedStateVariable>A_ARG_TYPE_DeviceID</relatedStateVariable>      </argument>      <argument>        <name>Result</name>        <direction>out</direction>        <relatedStateVariable>A_ARG_TYPE_Result</relatedStateVariable>      </argument>    </argumentList>  </action></actionList><serviceStateTable>  <stateVariable sendEvents="no">    <name>A_ARG_TYPE_DeviceID</name>    <dataType>string</dataType>  </stateVariable>  <stateVariable sendEvents="no">    <name>A_ARG_TYPE_Result</name>    <dataType>int</dataType>  </stateVariable>  <stateVariable sendEvents="no">    <name>A_ARG_TYPE_RegistrationReqMsg</name>    <dataType>bin.base64</dataType>  </stateVariable>  <stateVariable sendEvents="no">    <name>A_ARG_TYPE_RegistrationRespMsg</name>    <dataType>bin.base64</dataType>  </stateVariable>  <stateVariable sendEvents="no">    <name>AuthorizationGrantedUpdateID</name>    <dataType>ui4</dataType>  </stateVariable>  <stateVariable sendEvents="no">    <name>AuthorizationDeniedUpdateID</name>    <dataType>ui4</dataType>  </stateVariable>  <stateVariable sendEvents="no">    <name>ValidationSucceededUpdateID</name>    <dataType>ui4</dataType>  </stateVariable>  <stateVariable sendEvents="no">    <name>ValidationRevokedUpdateID</name>    <dataType>ui4</dataType>  </stateVariable></serviceStateTable></scpd>
+http_read
+Unknown file type.
+Read %zd bytes.
+Read local file.
+Read file from memory.
+http write
+http_seek
+%s: cannot seek: %s
+Attempting to seek by %lld from end (was at %lld) in %s
+Attempting to seek to %lld (was at %lld) in %s
+Attempting to seek by %lld from %lld in %s
+%s: cannot stat: %s
+http_close
+action=
+path=
+<html>
+<head>
+uShare Information Page
+<title>%s</title>
+<meta http-equiv="pragma" content="no-cache"/>
+<meta http-equiv="expires" content="1970-01-01"/>
+<meta http-equiv="refresh" content="0; URL=/web/ushare.html"/>
+</head>
+</html>
+refresh
+share[%d]=on
+public
+<b>%s :</b> %s<br/>
+<meta http-equiv="Content-Type" content="text/html; charset=%s"/>
+/web/ushare.cgi
+<input type="hidden" name="action" value="%s"/>
+<body>
+<h1 align="center">
+<tt>%s</tt><br/>
+uShare UPnP A/V Media Server
+Information Page
+</h1>
+<br/>
+<center>
+<tr width="500">
+Version
+1.1a
+</tr>
+Device UDN
+<b>%s :</b> %d<br/>
+Number of shared files and directories
+</center><br/>
+<form method="get" action="%s">
+<b>%s #%d :</b>
+Share
+<input type="checkbox" name="share[%d]"/>
+%s<br/>
+unShare!
+<input type="submit" value="%s"/>
+</form>
+Add a new share :  
+<input type="text" name="path"/>
+Share!
+Refresh Shares ...
+</center>
+</body>
+UTF-8
+&quot;
+&amp;
+&apos;
+&lt;
+&gt;
+&#xA;
+&#xD;
+&#x9;
+Freed [%d] entries
+Invalid Mime type for %s, entry ignored
+Entry->URL (%d): %s
+unknown
+Entry invalid name id=%d [%s]
+%d.%s
+URL string too long for id %d, truncated!!
+Freeing entry invalid name id=%d [%s]
+Looking for entry id %d
+Found at %p
+Not Found
+%s/%s
+Failed to add the RB lookup tree
+scandir
+Cannot create RB tree for lookups
+Building Metadata List ...
+MediaServerRoot
+Looking for files in content directory : %s
+Found %d files and subdirectories.
+root
+x-ms-asf
+x-dv
+x-ms-wmv
+x-motion-jpeg
+mpeg
+mp2p
+mp2t
+mpeg2
+x-nerodigital-ps
+quicktime
+3gpp
+x-aac
+x-ac3
+aiff
+x-atrac3
+basic
+x-dts
+midi
+x-ogg
+x-ms-wma
+x-pn-realaudio
+x-flac
+x-scpls
+mpegurl
+x-icon
+jpeg
+x-ms-bmp
+x-portable-anymap
+x-portable-pixmap
+x-quicktime
+tiff
+object.item.videoItem
+object.item.audioItem.musicTrack
+object.item.imageItem.photo
+object.item.playlistItem
+object.item.textItem
+object.container.storageFolder
+divx
+mjpg
+mjpeg
+mpg2
+mp4ps
+rmvb
+hdmov
+at3p
+lpcm
+flac
+qtif
+http-get:*:audio/%s:*
+http-get:*:video/%s:*
+http-get:*:text/%s:*
+http-get:*:image/%s:*
+urn:upnp-org:serviceId:ContentDirectory
+urn:schemas-upnp-org:service:ContentDirectory:1
+urn:upnp-org:serviceId:ConnectionManager
+urn:schemas-upnp-org:service:ConnectionManager:1
+urn:microsoft.com:serviceId:X_MS_MediaReceiverRegistrar
+urn:microsoft.com:service:X_MS_MediaReceiverRegistrar:1
+Missing action request argument (%s)
+Invalid action request document
+ObjectID
+ContainerID
+error realloc
+USHARE_NAME
+USHARE_IFACE
+USHARE_PORT
+USHARE_TELNET_PORT
+USHARE_DIR
+USHARE_OVERRIDE_ICONV_ERR
+USHARE_ENABLE_WEB
+USHARE_ENABLE_TELNET
+USHARE_ENABLE_XBOX
+USHARE_ENABLE_DLNA
+Warning: port doesn't fit IANA port assignements.
+Warning: Only Dynamic or Private Ports can be used (from 49152 through 65535)
+true
+ushare.conf
+%s/%s
+/mnt/slave/workspace/soho5_1042/rtl819x/users/nas/media_server/tmp_inst/etc
+VhvDowtxdn:i:p:q:c:f:
+version
+help
+verbose
+daemon
+override-iconv-err
+name
+interface
+port
+telnet-port
+content
+no-web
+no-telnet
+xbox
+dlna
+Usage: ushare [-n name] [-i interface] [-p port] [-c directory] [[-c directory]...]
+Options:
+ -n, --name=NAME	Set UPnP Friendly Name (default is '%s')
+uShare
+ -i, --interface=IFACE	Use IFACE Network Interface (default is '%s')
+eth0
+ -f, --cfg=FILE		Config file to be used
+ -p, --port=PORT	Forces the HTTP server to run on PORT
+ -q, --telnet-port=PORT	Forces the TELNET server to run on PORT
+ -c, --content=DIR	Share the content of DIR directory
+ -w, --no-web		Disable the control web page (enabled by default)
+ -t, --no-telnet	Disable the TELNET control (enabled by default)
+ -o, --override-iconv-err	If iconv fails parsing name, still add to media contents (hoping the renderer can handle it)
+ -v, --verbose		Set verbose display
+ -x, --xbox		Use XboX 360 compliant profile
+ -d, --dlna		Use DLNA compliant profile (PlayStation3 needs this)
+ -D, --daemon		Run as a daemon
+ -V, --version		Display the version of uShare and exit
+ -h, --help		Display this help
+uShare
+%s: Command not found
+NULL in ctrl_telnet.c at line 656
+banner
+For a list of registered commands type "help"
+accept
+select
+Server is going down, Bye bye
+Failed to create new client
+Listening on telnet port %u
+echo
+Echos all arguments
+echod
+Echos all arguments but with each argument on a new line... DEBUG
+help
+Display help
+exit
+Exits this interface (Or CTRL+D then Enter)
+setsockopt
+Failed to create killer pipe
+Failed to create thread
+socket
+bind
+listen
+commands
+Registered command (command - description)
+=======================================================
+  %s - %s
+syntax
+Syntax is easy: command parameters
+  Each new word is a new argument, unless the space is precided
+  a backslash (\), or if a set of words are surrounded by quotes
+  ("). To get a litteral quote you can escape it as \".
+STUB
+Usage: help TOPIC
+Valid topics are
+  commands - For a list of registed commands
+  syntax - For a description of the interface syntax
+Unknown topic
+There's also %i hidden functions
+Sep 23 2013
+%s (%s) (Built %s)
+uShare
+1.1a
+%s%s
+Argc: %i
+%i: '%s'
+Bye bye
+uShare
+eth0
+%d.%d.%d.%d
+Unknown Service Action
+Unknown Service ID
+Action Result:
+***************************************************
+**						 New Action Request								**
+ServiceID: %s
+ActionName: %s
+CtrlPtIP: %s
+Action Request:
+%s : DLNA Media Server
+DLNA-SERVER-001
+<?xml version="1.0" encoding="utf-8"?><root xmlns="urn:schemas-upnp-org:device-1-0">  <specVersion>    <major>1</major>    <minor>0</minor>  </specVersion>  <device>    <deviceType>urn:schemas-upnp-org:device:MediaServer:1</deviceType>    <friendlyName>%s:1</friendlyName>    <manufacturer>%s</manufacturer>    <manufacturerURL>%s</manufacturerURL>    <modelDescription>%s : UPnP Media Server</modelDescription>    <modelName>%s</modelName>    <modelNumber>001</modelNumber>    <modelURL>%s</modelURL>    <serialNumber>%s</serialNumber>    <UDN>uuid:%s</UDN>    <serviceList>      <service>        <serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>        <serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>        <SCPDURL>/web/cms.xml</SCPDURL>        <controlURL>/web/cms_control</controlURL>        <eventSubURL>/web/cms_event</eventSubURL>      </service>      <service>        <serviceType>urn:schemas-upnp-org:service:ContentDirectory:1</serviceType>        <serviceId>urn:upnp-org:serviceId:ContentDirectory</serviceId>        <SCPDURL>/web/cds.xml</SCPDURL>        <controlURL>/web/cds_control</controlURL>        <eventSubURL>/web/cds_event</eventSubURL>      </service>      <service>        <serviceType>urn:microsoft.com:service:X_MS_MediaReceiverRegistrar:1</serviceType>
+        <serviceId>urn:microsoft.com:serviceId:X_MS_MediaReceiverRegistrar</serviceId>
+        <SCPDURL>/web/msr.xml</SCPDURL>        <controlURL>/web/msr_control</controlURL>        <eventSubURL>/web/msr_event</eventSubURL>      </service>
+    </serviceList>    <presentationURL>/web/ushare.html</presentationURL>  </device></root>
+Initializing UPnP subsystem ...
+UPnP MediaServer listening on %s:%d
+/web
+Sending UPnP advertisement for device ...
+Listening for control point connections ...
+/web/cms.xml
+/web/cms_control
+/web/cms_event
+/web/cds.xml
+/web/cds_control
+/web/cds_event
+Starting in XboX 360 compliant profile ...
+Could not set Max content UPnP
+Starting in DLNA compliant profile ...
+Cannot register UPnP device
+Cannot initialize UPnP subsystem
+Cannot set virtual directory callbacks
+Cannot add virtual directory for web server
+Cannot unregister UPnP device
+Can't find interface %s.
+Recheck uShare's configuration and try again !
+Interface %s is down.
+ioctl
+socket
+%s-%02x%02x%02x%02x%02x%02x
+898f9738-d930-4db4-a3cf
+Reloading configuration...
+Error: no content directory to be shared.
+Stopping UPnP Service ...
+%s (version %s), a lightweight UPnP A/V and DLNA Media Server.
+1.1a
+/mnt/slave/workspace/soho5_1042/rtl819x/users/nas/media_server/tmp_inst/etc/ushare.conf
+Warning: can't parse file "%s".
+Error: failed to daemonize program : %s
+Windows Media Connect Compatible
+%s (%s)
+/dev/null
+*dir title:%s
+dir id is: %d, parent is %d
+id is: %d, parent is %d
+**file title:%s
+**file title:%s,fullpath/url:%s++%s
+dir id is: %d
+echo "####start the ushare main" > /dev/console
+TPLINK
+www.tp-link.com
+FAT32
+/tmp/usbdisk/volume1/
+XBOX surpportting was set!
+/tmp/usbdisk/volume1
+setUshareInitInfo ERROR
+ushare server fcntl set non block error
+/var/run/mediaServerUshare
+ushare server bind error
+ushare server create sd error
+ushare server reuse tcp socket Address error
+echo "####init success" > /dev/console
+ushare server listen error!
+recv synchronization %s
+HTTPDSYN
+clientSd == -1
+synchronize error!
+tpSetTimer
+time out 
+timer_creat
+get ushare init info error!
+sizeof(gUshareInitInfo) is:%d, ret is:%d
+send error
+refresh content list...
+delete folder...
+add folder over
+stop media server...
+start media server...
+/tmp
+Htime up, auto scan..
+JPEG_SM_ICO
+PNG_SM_ICO
+AMR_3GPP
+ATRAC3plus
+LPCM
+AAC_ADTS
+WMABASE
+FLAC
+aiff
+MPEG1
+MPEG_TS_SD_EU
+MPEG4_P2_MP4_SP_AAC
+AVC_MP4_MP_SD_AAC_MULT5
+WMVMED_BASE
+image/jpeg
+image/png
+audio/3gpp
+audio/vnd.dlna.adts
+audio/x-sony-oma
+audio/vnd.dolby.dd-raw
+audio/L16
+audio/mpeg
+audio/mp4
+audio/x-ms-wma
+video/3gpp
+video/x-ms-asf
+video/mpeg
+video/mp4
+video/vnd.dlna.mpeg-tts
+video/x-ms-wmv
+image/bmp
+image/ico
+image/gif
+image/pcd
+image/tif
+image/tiff
+audio/aif
+audio/mp2
+audio/ogg
+audio/flac
+audio/x-aiff
+audio/x-wav
+video/x-msvideo
+video/mkv
+video/quicktime
+object.item.videoItem.movie
+object.item.audioItem.musicTrack
+object.item.imageItem.photo
+:DLNA.ORG_OP=01
+http-get:*:
+DLNA.ORG_CI
+DLNA.ORG_OP
+DLNA.ORG_PN
+DLNA.ORG_FLAGS
+:%s=%d;%s=%d;%s=%.2x;%s=%s;%s=%.8x%.24x
+DLNA.ORG_PS
+jpg,jpe,jpeg
+qti,qtf,qtif,tif,tiff
+gif,pcd,pnm,ppm
+bmp,ico
+aac,mp4,m4a
+at3p,acm
+pcm,lpcm
+aiff
+flac
+ogg,pcm,l16,ra,rm,ram
+mp1,mp2,mpa
+aif,au,snd,dts,rmi
+mpg,mpe,m1v
+mpeg,m2v,mp2p,mp2t,ts,ps,pes
+mp4,3gp,asf
+hdmov,3gpp
+mkv,rmvb,qt
+m4v,m4p,mp4ps,ogm
+avi,dv,divx,mjpg,mjpeg
+<?xml version="1.0" encoding="utf-8"?><root xmlns="urn:schemas-upnp-org:device-1-0">  <specVersion>    <major>1</major>    <minor>0</minor>  </specVersion>  <device>    <deviceType>urn:schemas-upnp-org:device:MediaServer:1</deviceType>    <friendlyName>%s:1</friendlyName>    <manufacturer>%s</manufacturer>    <manufacturerURL>%s</manufacturerURL>    <modelDescription>%s</modelDescription>    <modelName>%s</modelName>    <modelNumber>%s</modelNumber>    <modelURL>%s</modelURL>    <serialNumber>%s</serialNumber>    <UDN>uuid:%s</UDN>    <serviceList>      <service>        <serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>        <serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>        <SCPDURL>%s</SCPDURL>        <controlURL>%s</controlURL>        <eventSubURL>%s</eventSubURL>      </service>      <service>        <serviceType>urn:schemas-upnp-org:service:ContentDirectory:1</serviceType>        <serviceId>urn:upnp-org:serviceId:ContentDirectory</serviceId>        <SCPDURL>%s</SCPDURL>        <controlURL>%s</controlURL>        <eventSubURL>%s</eventSubURL>      </service>      <service>        <serviceType>urn:microsoft.com:service:X_MS_MediaReceiverRegistrar:1</serviceType>
+        <serviceId>urn:microsoft.com:serviceId:X_MS_MediaReceiverRegistrar</serviceId>
+        <SCPDURL>/web/msr.xml</SCPDURL>        <controlURL>/web/msr_control</controlURL>        <eventSubURL>/web/msr_event</eventSubURL>      </service>
+    </serviceList>    <presentationURL>%s</presentationURL>  </device></root>
+Ak`&
+Akh'
+Akp<
+Akx>
+$Id: redblack.c,v 1.9 2003/10/24 01:31:21 damo Exp $

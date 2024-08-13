@@ -1,0 +1,57 @@
+[*] Binary protection state of libntfs-3g.so.83.0.0
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of libntfs-3g.so.83.0.0
+
+lw v0, (v0)
+lw v0, 0x94(v0)
+andi v0, v0, 0x10
+beqz v0, 0x6d2d0
+nop
+lw a0, 0x490(fp)
+lw a1, 0x494(fp)
+lw a2, 0x498(fp)
+lw t9, -0x7fc4(gp)
+addiu t9, t9, -0x2e8c
+jalr t9
+nop
+lw gp, 0x10(fp)
+b 0x6d5e4
+sw v0, 0x470(fp)
+sw zero, 0x470(fp)
+lw v0, 0x490(fp)
+lw v0, 0x18(v0)
+sw v0, 0x480(fp)
+addiu v0, fp, 0x420
+move a0, v0
+lw a1, -segment.LOAD1(gp)
+addiu a1, a1, -0xf44
+lw a2, 0x480(fp)
+lw a3, 0x480(fp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+addiu v0, fp, 0x420
+move a0, v0
+move a1, zero
+lw t9, -sym.imp.open64(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x464(fp)
+lw v0, 0x464(fp)
+bltz v0, 0x6d5e4
+nop
+lw a0, 0x464(fp)
+addiu a1, fp, 0x18
+addiu a2, zero, 0x400
+lw t9, -sym.imp.read(gp)
+jalr t9
+nop
+
+[*] Function sprintf used 1 times libntfs-3g.so.83.0.0
+

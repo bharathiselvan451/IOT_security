@@ -1,0 +1,30 @@
+[+] PHP vulnerability checks
+=================================================================
+The PHP checker module performs securtiy checks on PHP scripts, identifies PHPinfo files with debugging information and assesses PHP config files for potential issues. Optional integration with ChatGPT.
+
+
+
+==> PHP script vulnerabilities (progpilot)
+-----------------------------------------------------------------
+[-] No PHP issues found with progpilot
+
+
+==> PHP script vulnerabilities - semgrep
+-----------------------------------------------------------------
+[-] No PHP issues found with semgrep
+
+[*] Statistics1:0:
+
+
+==> PHP configuration checks (php.ini)
+-----------------------------------------------------------------
+[-] No PHP.ini issues found
+
+
+==> PHPinfo file detection
+-----------------------------------------------------------------
+[-] No phpinfo files found
+
+
+[*] Statistics:0:0:0:0
+[-] Wed Jul 31 20:55:43 EDT 2024 - S22_php_check nothing reported

@@ -1,0 +1,311 @@
+[*] Binary protection state of libthreadutil.so.2.2.3
+
+  
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of libthreadutil.so.2.2.3
+
+    ; assembly                                   | /* r2dec pseudo code output */
+                                                 | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libthreadutil.so.2.2.3 @ 0x27c4 */
+                                                 | #include <stdint.h>
+                                                 |  
+    ; (fcn) sym.ThreadPoolAddPersistent ()       | void ThreadPoolAddPersistent () {
+    0x000027c4 lui gp, 5                         |     
+    0x000027c8 addiu gp, gp, -0x6014             |     
+    0x000027cc addu gp, gp, t9                   |     gp += t9;
+    0x000027d0 addiu sp, sp, -0x30               |     
+    0x000027d4 sw ra, 0x2c(sp)                   |     *(var_2ch) = ra;
+    0x000027d8 sw s2, 0x28(sp)                   |     *(var_28h) = s2;
+    0x000027dc sw s1, 0x24(sp)                   |     *(var_24h) = s1;
+    0x000027e0 sw s0, 0x20(sp)                   |     *(var_20h) = s0;
+    0x000027e4 sw gp, 0x10(sp)                   |     *(var_10h) = gp;
+    0x000027e8 addiu v0, zero, -1                |     v0 = -1;
+    0x000027ec move s0, a0                       |     s0 = a0;
+    0x000027f0 move s2, a1                       |     s2 = a1;
+    0x000027f4 sw v0, 0x18(sp)                   |     *(var_18h) = v0;
+    0x000027f8 move s1, a2                       |     s1 = a2;
+                                                 |     if (a0 != 0) {
+    0x000027fc beqz a0, 0x2808                   |         
+                                                 |         if (a1 != 0) {
+    0x00002800 bnez a1, 0x2810                   |             goto label_0;
+                                                 |         }
+    0x00002804 nop                               |         
+                                                 |     }
+    0x00002808 addiu v0, zero, 0x16              |     v0 = 0x16;
+    0x0000280c b 0x28fc                          |     goto label_1;
+                                                 | label_0:
+    0x00002810 addiu v0, sp, 0x18                |     v0 = sp + 0x18;
+                                                 |     if (a2 != 0) {
+    0x00002814 movz s1, v0, a2                   |         s1 = v0;
+                                                 |     }
+    0x00002818 lui v0, 0x2000                    |     v0 = 0x20000000;
+    0x0000281c lw t9, -0x7fa0(gp)                |     t9 = sym.imp.pthread_mutex_lock;
+    0x00002820 sw v0, (s1)                       |     *(s1) = v0;
+    0x00002824 jalr t9                           |     t9 ();
+    0x00002828 lw a0, 0x38(s0)                   |     a0 = *((s0 + 14));
+    0x0000282c lw v0, 0xf4(s0)                   |     v0 = *((s0 + 61));
+    0x00002830 lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x00002834 slt v0, a0, v0                    |     v0 = (a0 < v0) ? 1 : 0;
+    0x00002838 addiu v0, a0, -1                  |     v0 = a0 + -1;
+                                                 |     if (v0 != 0) {
+    0x0000283c beqz v0, 0x285c                   |         
+    0x00002840 lw t9, -0x7fe0(gp)                |         t9 = *((gp - 8184));
+    0x00002844 addiu t9, t9, 0x26a0              |         t9 += fcn.000026a0;
+    0x00002848 move a0, s0                       |         a0 = s0;
+    0x0000284c jalr t9                           |         t9 ();
+    0x00002850 lw gp, 0x10(sp)                   |         gp = *(var_10h);
+    0x00002854 b 0x2868                          |         goto label_2;
+    0x00002858 nop                               |         
+                                                 |     }
+    0x0000285c lw v1, 0x3c(s0)                   |     v1 = *((s0 + 15));
+                                                 |     if (v1 != v0) {
+    0x00002860 beq v1, v0, 0x288c                |         
+    0x00002864 nop                               |         
+                                                 | label_2:
+    0x00002868 lw t9, -0x7fe0(gp)                |         t9 = *((gp - 8184));
+    0x0000286c move a0, s2                       |         a0 = s2;
+    0x00002870 lw a1, 0x30(s0)                   |         a1 = *((s0 + 12));
+    0x00002874 addiu t9, t9, 0x25f8              |         t9 += fcn.000025f8;
+    0x00002878 move a2, s0                       |         a2 = s0;
+    0x0000287c jalr t9                           |         t9 ();
+    0x00002880 lw gp, 0x10(sp)                   |         gp = *(var_10h);
+    0x00002884 addiu a0, s0, 0x18                |         a0 = s0 + 0x18;
+                                                 |         if (v0 != 0) {
+    0x00002888 bnez v0, 0x28a4                   |             goto label_3;
+                                                 |         }
+                                                 |     }
+    0x0000288c lw t9, -0x7f84(gp)                |     t9 = sym.imp.pthread_mutex_unlock;
+    0x00002890 move a0, s0                       |     a0 = s0;
+    0x00002894 jalr t9                           |     t9 ();
+    0x00002898 lw gp, 0x10(sp)                   |     gp = *(var_10h);
+    0x0000289c lui v0, 0x2000                    |     v0 = 0x20000000;
+    0x000028a0 b 0x28fc                          |     goto label_1;
+                                                 | label_3:
+    0x000028a4 lw t9, -0x7eec(gp)                |     t9 = sym.imp.pthread_cond_signal;
+    0x000028a8 sw v0, 0xec(s0)                   |     *((s0 + 59)) = v0;
+    0x000028ac jalr t9                           |     t9 ();
+                                                 |     do {
+    0x000028b0 lw v0, 0xec(s0)                   |         v0 = *((s0 + 59));
+    0x000028b4 lw gp, 0x10(sp)                   |         gp = *(var_10h);
+    0x000028b8 addiu a0, s0, 0x24                |         a0 = s0 + 0x24;
+                                                 |         if (v0 == 0) {
+    0x000028bc beqz v0, 0x28d4                   |             goto label_4;
+                                                 |         }
+    0x000028c0 lw t9, -0x7fa8(gp)                |         t9 = sym.imp.pthread_cond_wait;
+    0x000028c4 move a1, s0                       |         a1 = s0;
+    0x000028c8 jalr t9                           |         t9 ();
+    0x000028cc b 0x28b0                          |         
+                                                 |     } while (1);
+    0x000028d0 nop                               |     
+                                                 | label_4:
+    0x000028d4 lw v0, 0x30(s0)                   |     v0 = *((s0 + 12));
+    0x000028d8 move a0, s0                       |     a0 = s0;
+    0x000028dc lw t9, -0x7f84(gp)                |     t9 = sym.imp.pthread_mutex_unlock;
+    0x000028e0 move v1, v0                       |     v1 = v0;
+    0x000028e4 addiu v0, v0, 1                   |     v0++;
+    0x000028e8 sw v0, 0x30(s0)                   |     *((s0 + 12)) = v0;
+    0x000028ec sw v1, (s1)                       |     *(s1) = v1;
+    0x000028f0 jalr t9                           |     t9 ();
+    0x000028f4 move v0, zero                     |     v0 = 0;
+    0x000028f8 lw gp, 0x10(sp)                   |     gp = *(var_10h);
+                                                 | label_1:
+    0x000028fc lw ra, 0x2c(sp)                   |     ra = *(var_2ch);
+    0x00002900 lw s2, 0x28(sp)                   |     s2 = *(var_28h);
+    0x00002904 lw s1, 0x24(sp)                   |     s1 = *(var_24h);
+    0x00002908 lw s0, 0x20(sp)                   |     s0 = *(var_20h);
+    0x0000290c addiu sp, sp, 0x30                |     
+    0x00002910 jr ra                             |     return v0;
+                                                 | }
+    ; assembly                           | /* r2dec pseudo code output */
+                                         | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libthreadutil.so.2.2.3 @ 0x2914 */
+                                         | #include <stdint.h>
+                                         |  
+    ; (fcn) sym.ThreadPoolAdd ()         | void ThreadPoolAdd () {
+    0x00002914 lui gp, 5                 |     
+    0x00002918 addiu gp, gp, -0x6164     |     
+    0x0000291c addu gp, gp, t9           |     gp += t9;
+    0x00002920 addiu sp, sp, -0x40       |     
+    0x00002924 sw ra, 0x38(sp)           |     *(var_38h) = ra;
+    0x00002928 sw s5, 0x34(sp)           |     *(var_34h) = s5;
+    0x0000292c sw s4, 0x30(sp)           |     *(var_30h) = s4;
+    0x00002930 sw s3, 0x2c(sp)           |     *(var_2ch) = s3;
+    0x00002934 sw s2, 0x28(sp)           |     *(var_28h) = s2;
+    0x00002938 sw s1, 0x24(sp)           |     *(var_24h) = s1;
+    0x0000293c sw s0, 0x20(sp)           |     *(var_20h) = s0;
+    0x00002940 sw gp, 0x10(sp)           |     *(var_10h) = gp;
+    0x00002944 addiu v0, zero, -1        |     v0 = -1;
+    0x00002948 move s2, a0               |     s2 = a0;
+    0x0000294c move s0, a1               |     s0 = a1;
+    0x00002950 sw v0, 0x18(sp)           |     *(var_18h) = v0;
+    0x00002954 move s4, a2               |     s4 = a2;
+    0x00002958 lui s5, 0x2000            |     s5 = 0x20000000;
+                                         |     if (a0 != 0) {
+    0x0000295c beqz a0, 0x2968           |         
+                                         |         if (a1 != 0) {
+    0x00002960 bnez a1, 0x2970           |             goto label_0;
+                                         |         }
+    0x00002964 nop                       |         
+                                         |     }
+    0x00002968 addiu v0, zero, 0x16      |     v0 = 0x16;
+    0x0000296c b 0x2b34                  |     goto label_1;
+                                         | label_0:
+    0x00002970 lw t9, -0x7fa0(gp)        |     t9 = sym.imp.pthread_mutex_lock;
+    0x00002974 jalr t9                   |     t9 ();
+    0x00002978 nop                       |     
+    0x0000297c lw v0, 0x68(s2)           |     v0 = *((s2 + 26));
+    0x00002980 lw v1, 0xd0(s2)           |     v1 = *((s2 + 52));
+    0x00002984 lw a0, 0x9c(s2)           |     a0 = *((s2 + 39));
+    0x00002988 addu v1, v1, v0           |     v1 += v0;
+    0x0000298c lw v0, 0x100(s2)          |     v0 = *((s2 + 64));
+    0x00002990 addu a2, v1, a0           |     a2 = v1 + a0;
+    0x00002994 lw gp, 0x10(sp)           |     gp = *(var_10h);
+    0x00002998 slt v0, a2, v0            |     v0 = (a2 < v0) ? 1 : 0;
+                                         |     if (v0 == 0) {
+    0x0000299c bnez v0, 0x29cc           |         
+    0x000029a0 nop                       |         
+    0x000029a4 lw v0, -0x7f8c(gp)        |         v0 = *((gp - 8163));
+    0x000029a8 lw a1, -0x7fe0(gp)        |         a1 = *((gp - 8184));
+[31m    0x000029ac lw t9, -0x7f40(gp)        |         t9 = sym.imp.fprintf;[0m
+    0x000029b0 lw a0, (v0)               |         a0 = *(v0);
+    0x000029b4 addiu a1, a1, 0x4580      |         a1 += 0x4580;
+    0x000029b8 jalr t9                   |         t9 ();
+    0x000029bc lw gp, 0x10(sp)           |         gp = *(var_10h);
+    0x000029c0 lw t9, -0x7f84(gp)        |         t9 = sym.imp.pthread_mutex_unlock;
+    0x000029c4 move a0, s2               |         a0 = s2;
+    0x000029c8 b 0x2a04                  |         
+                                         |     } else {
+    0x000029cc addiu v0, sp, 0x18        |         v0 = sp + 0x18;
+    0x000029d0 move a0, s0               |         a0 = s0;
+                                         |         if (s4 != 0) {
+    0x000029d4 movz s4, v0, s4           |             s4 = v0;
+                                         |         }
+    0x000029d8 lw t9, -0x7fe0(gp)        |         t9 = *((gp - 8184));
+    0x000029dc sw s5, (s4)               |         *(s4) = s5;
+    0x000029e0 lw a1, 0x30(s2)           |         a1 = *((s2 + 12));
+    0x000029e4 addiu t9, t9, 0x25f8      |         t9 += fcn.000025f8;
+    0x000029e8 move a2, s2               |         a2 = s2;
+    0x000029ec jalr t9                   |         t9 ();
+    0x000029f0 lw gp, 0x10(sp)           |         gp = *(var_10h);
+    0x000029f4 move s3, v0               |         s3 = v0;
+                                         |         if (v0 != 0) {
+    0x000029f8 bnez v0, 0x2a18           |             goto label_2;
+                                         |         }
+    0x000029fc lw t9, -0x7f84(gp)        |         t9 = sym.imp.pthread_mutex_unlock;
+    0x00002a00 move a0, s2               |         a0 = s2;
+                                         |     }
+    0x00002a04 jalr t9                   |     t9 ();
+    0x00002a08 nop                       |     
+    0x00002a0c lw gp, 0x10(sp)           |     gp = *(var_10h);
+    0x00002a10 lui v0, 0x2000            |     v0 = 0x20000000;
+    0x00002a14 b 0x2b34                  |     goto label_1;
+                                         | label_2:
+    0x00002a18 lw a0, 0x14(s0)           |     a0 = *((s0 + 5));
+    0x00002a1c addiu v0, zero, 2         |     v0 = 2;
+    0x00002a20 addiu v0, zero, 1         |     v0 = 1;
+                                         |     if (a0 == v0) {
+    0x00002a24 bne a0, v0, 0x2a34        |         
+    0x00002a28 lw t9, -0x7f78(gp)        |         t9 = sym.ListAddTail;
+    0x00002a2c addiu a0, s2, 0xb8        |         a0 = s2 + 0xb8;
+    0x00002a30 b 0x2a44                  |         
+                                         |     } else {
+    0x00002a34 lw t9, -0x7f78(gp)        |         t9 = sym.ListAddTail;
+    0x00002a38 addiu a0, s2, 0x50        |         a0 = s2 + 0x50;
+                                         |         if (a0 != v0) {
+    0x00002a3c bne a0, v0, 0x2a60        |             goto label_3;
+                                         |         }
+    0x00002a40 addiu a0, s2, 0x84        |         a0 = s2 + 0x84;
+                                         |     }
+    0x00002a44 move a1, s3               |     a1 = s3;
+    0x00002a48 jalr t9                   |     t9 ();
+    0x00002a4c lw gp, 0x10(sp)           |     gp = *(var_10h);
+                                         |     if (v0 != 0) {
+    0x00002a50 beqz v0, 0x2a70           |         
+    0x00002a54 nop                       |         
+    0x00002a58 move s5, zero             |         s5 = 0;
+    0x00002a5c b 0x2a70                  |         goto label_4;
+                                         | label_3:
+    0x00002a60 move a1, s3               |         a1 = s3;
+    0x00002a64 jalr t9                   |         t9 ();
+    0x00002a68 lw gp, 0x10(sp)           |         gp = *(var_10h);
+                                         |         if (v0 != 0) {
+    0x00002a6c movn s5, zero, v0         |             s5 = 0;
+                                         |             goto label_4;
+                                         |         }
+                                         |     }
+                                         | label_4:
+    0x00002a70 lw v1, 0x68(s2)           |     v1 = *((s2 + 26));
+    0x00002a74 lw v0, 0xd0(s2)           |     v0 = *((s2 + 52));
+    0x00002a78 lw a1, 0x38(s2)           |     a1 = *((s2 + 14));
+    0x00002a7c addu v0, v0, v1           |     v0 += v1;
+    0x00002a80 lw a0, 0x3c(s2)           |     a0 = *((s2 + 15));
+    0x00002a84 lw v1, 0x9c(s2)           |     v1 = *((s2 + 39));
+    0x00002a88 subu s0, a1, a0           |     __asm ("subu s0, a1, a0");
+    0x00002a8c addu s1, v0, v1           |     s1 = v0 + v1;
+                                         |     do {
+                                         |         if (s0 != 0) {
+    0x00002a90 beqz s0, 0x2abc           |             
+    0x00002a94 nop                       |             
+    0x00002a98 div zero, s1, s0          |             __asm ("div zero, s1, s0");
+                                         |             if (s0 == 0) {
+    0x00002a9c bnez s0, 0x2aa8           |                 
+    0x00002aa0 nop                       |                 
+    0x00002aa4 break 7                   |                 __asm ("break 7");
+                                         |             }
+    0x00002aa8 lw v0, 0xfc(s2)           |             v0 = *((s2 + 63));
+    0x00002aac mflo v1                   |             __asm ("mflo v1");
+    0x00002ab0 slt v0, v1, v0            |             v0 = (v1 < v0) ? 1 : 0;
+                                         |             if (v0 != 0) {
+    0x00002ab4 bnez v0, 0x2adc           |                 goto label_5;
+                                         |             }
+    0x00002ab8 nop                       |             
+                                         |         }
+    0x00002abc lw t9, -0x7fe0(gp)        |         t9 = *((gp - 8184));
+    0x00002ac0 move a0, s2               |         a0 = s2;
+    0x00002ac4 addiu t9, t9, 0x26a0      |         t9 += fcn.000026a0;
+    0x00002ac8 addiu s0, s0, 1           |         s0++;
+    0x00002acc jalr t9                   |         t9 ();
+    0x00002ad0 lw gp, 0x10(sp)           |         gp = *(var_10h);
+    0x00002ad4 beqz v0, 0x2a90           |         
+                                         |     } while (v0 == 0);
+    0x00002ad8 nop                       |     
+                                         | label_5:
+    0x00002adc move a1, s3               |     a1 = s3;
+                                         |     if (s5 == 0) {
+    0x00002ae0 bnez s5, 0x2af8           |         
+    0x00002ae4 lw t9, -0x7eec(gp)        |         t9 = sym.imp.pthread_cond_signal;
+    0x00002ae8 addiu a0, s2, 0x18        |         a0 = s2 + 0x18;
+    0x00002aec jalr t9                   |         t9 ();
+    0x00002af0 b 0x2b08                  |         goto label_6;
+    0x00002af4 nop                       |         
+                                         |     }
+    0x00002af8 lw t9, -0x7fe0(gp)        |     t9 = *((gp - 8184));
+    0x00002afc addiu t9, t9, 0x1e90      |     t9 += fcn.00001e90;
+    0x00002b00 move a0, s2               |     a0 = s2;
+    0x00002b04 jalr t9                   |     t9 ();
+                                         | label_6:
+    0x00002b08 lw v0, 0x30(s2)           |     v0 = *((s2 + 12));
+    0x00002b0c move a0, s2               |     a0 = s2;
+    0x00002b10 lw gp, 0x10(sp)           |     gp = *(var_10h);
+    0x00002b14 move v1, v0               |     v1 = v0;
+    0x00002b18 addiu v0, v0, 1           |     v0++;
+    0x00002b1c lw t9, -0x7f84(gp)        |     t9 = sym.imp.pthread_mutex_unlock;
+    0x00002b20 sw v0, 0x30(s2)           |     *((s2 + 12)) = v0;
+    0x00002b24 sw v1, (s4)               |     *(s4) = v1;
+    0x00002b28 jalr t9                   |     t9 ();
+    0x00002b2c move v0, s5               |     v0 = s5;
+    0x00002b30 lw gp, 0x10(sp)           |     gp = *(var_10h);
+                                         | label_1:
+    0x00002b34 lw ra, 0x38(sp)           |     ra = *(var_38h);
+    0x00002b38 lw s5, 0x34(sp)           |     s5 = *(var_34h);
+    0x00002b3c lw s4, 0x30(sp)           |     s4 = *(var_30h);
+    0x00002b40 lw s3, 0x2c(sp)           |     s3 = *(var_2ch);
+    0x00002b44 lw s2, 0x28(sp)           |     s2 = *(var_28h);
+    0x00002b48 lw s1, 0x24(sp)           |     s1 = *(var_24h);
+    0x00002b4c lw s0, 0x20(sp)           |     s0 = *(var_20h);
+    0x00002b50 addiu sp, sp, 0x40        |     
+    0x00002b54 jr ra                     |     return v0;
+                                         | }
+
+[*] Function fprintf used 1 times libthreadutil.so.2.2.3
+

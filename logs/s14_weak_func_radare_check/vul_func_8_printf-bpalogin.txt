@@ -1,0 +1,292 @@
+[*] Binary protection state of bpalogin
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function printf tear down of bpalogin
+
+sw ra, 0x1c(sp)
+sw s0, 0x18(sp)
+sw gp, 0x10(sp)
+addiu a1, zero, 8
+move s0, a0
+addiu a0, zero, 6
+lw t9, -sym.imp.msglogd(gp)
+jalr t9
+move a2, s0
+lw gp, 0x10(sp)
+lw v0, -obj.dosyslog(gp)
+lw v1, (v0)
+beqz v1, 0x404a8c
+move a2, s0
+lw a1, -segment.LOAD0(gp)
+addiu a0, zero, 2
+lw t9, -sym.imp.syslog(gp)
+jalr t9
+addiu a1, a1, 0x5e20
+lw gp, 0x10(sp)
+lw t9, -sym.imp.exit(gp)
+jalr t9
+addiu a0, zero, 1
+lw a0, -segment.LOAD0(gp)
+move a1, s0
+[31mlw t9, -sym.imp.printf(gp)[0m
+jalr t9
+addiu a0, a0, 0x5e20
+lw gp, 0x10(sp)
+lw t9, -sym.imp.exit(gp)
+jalr t9
+addiu a0, zero, 1
+lui gp, 5
+addiu gp, gp, -0x69f0
+addu gp, gp, t9
+addiu sp, sp, -0x120
+sw ra, 0x11c(sp)
+sw s0, 0x118(sp)
+sw gp, 0x10(sp)
+lw v0, -obj.debug_level(gp)
+move s0, a0
+sw a2, 0x128(sp)
+addiu a0, sp, 0x18
+lw v1, (v0)
+addiu a2, sp, 0x128
+[31mlw t9, -sym.imp.vsprintf(gp)[0m
+slt v1, s0, v1
+bnez v1, 0x404b04
+sw a3, 0x12c(sp)
+lw ra, 0x11c(sp)
+lw s0, 0x118(sp)
+jr ra
+addiu sp, sp, 0x120
+jalr t9
+nop
+addiu a2, sp, 0x18
+lw gp, 0x10(sp)
+addiu a0, zero, 6
+lw t9, -sym.imp.msglogd(gp)
+beqz s0, 0x404b88
+addiu a1, zero, 8
+lw v0, -obj.dosyslog(gp)
+addiu a0, zero, 6
+lw t9, -sym.imp.syslog(gp)
+addiu a2, sp, 0x18
+lw a1, -segment.LOAD0(gp)
+lw v1, (v0)
+move a3, t9
+[31mlw t9, -sym.imp.printf(gp)[0m
+beqz v1, 0x404b6c
+addiu a1, a1, 0x5e34
+move t9, a3
+jalr t9
+nop
+lw gp, 0x10(sp)
+lw ra, 0x11c(sp)
+lw s0, 0x118(sp)
+jr ra
+addiu sp, sp, 0x120
+lw a0, -segment.LOAD0(gp)
+addiu a1, sp, 0x18
+jalr t9
+addiu a0, a0, 0x5e34
+lw gp, 0x10(sp)
+b 0x404b5c
+nop
+jalr t9
+nop
+lw gp, 0x10(sp)
+b 0x404b24
+nop
+lui gp, 5
+addiu gp, gp, -0x6adc
+addu gp, gp, t9
+addiu sp, sp, -0x120
+sw ra, 0x11c(sp)
+sw s0, 0x118(sp)
+sw gp, 0x10(sp)
+[31mlw t9, -sym.imp.vsprintf(gp)[0m
+move s0, a0
+sw a3, 0x12c(sp)
+addiu a0, sp, 0x18
+sw a1, 0x124(sp)
+move a1, s0
+sw a2, 0x128(sp)
+jalr t9
+addiu a2, sp, 0x124
+move a2, s0
+lw gp, 0x10(sp)
+addiu a0, zero, 6
+lw t9, -sym.imp.msglogd(gp)
+jalr t9
+addiu a1, zero, 8
+addiu a0, zero, 2
+lw gp, 0x10(sp)
+lw v0, -obj.dosyslog(gp)
+lw t9, -sym.imp.syslog(gp)
+lw v1, (v0)
+move a2, t9
+[31mlw t9, -sym.imp.printf(gp)[0m
+beqz v1, 0x404c38
+addiu a1, sp, 0x18
+move t9, a2
+jalr t9
+nop
+lw gp, 0x10(sp)
+lw ra, 0x11c(sp)
+lw s0, 0x118(sp)
+jr ra
+addiu sp, sp, 0x120
+jalr t9
+addiu a0, sp, 0x18
+lw gp, 0x10(sp)
+lw ra, 0x11c(sp)
+lw s0, 0x118(sp)
+jr ra
+addiu sp, sp, 0x120
+lui gp, 5
+addiu gp, gp, -0x6b94
+addu gp, gp, t9
+--
+nop
+lw t9, -sym.imp.fork(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+beq v0, s0, 0x4051a4
+nop
+bnez v0, 0x4051c0
+nop
+lw t9, -sym.imp.getpid(gp)
+lw s2, -segment.LOAD0(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+addiu a0, s2, 0x5ea0
+move s1, v0
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.fopen(gp)
+jalr t9
+addiu a1, a1, 0x5eb8
+lw gp, 0x10(sp)
+beqz v0, 0x405180
+move s0, v0
+lw a1, -segment.LOAD0(gp)
+move a0, v0
+[31mlw t9, -sym.imp.fprintf(gp)[0m
+move a2, s1
+jalr t9
+addiu a1, a1, 0x5ebc
+lw gp, 0x10(sp)
+lw t9, -sym.imp.fclose(gp)
+jalr t9
+move a0, s0
+lw gp, 0x10(sp)
+addiu a1, zero, 1
+addiu a2, zero, 0x18
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.openlog(gp)
+jalr t9
+addiu a0, a0, 0x5ec0
+lw gp, 0x10(sp)
+lw v0, -obj.dosyslog(gp)
+lw v1, (v0)
+beqz v1, 0x405168
+nop
+lw a1, -segment.LOAD0(gp)
+--
+b 0x404ec0
+sw v0, (s7)
+addiu s3, s3, 1
+beq s3, s5, 0x405154
+addiu s0, s0, 4
+lw t9, -sym.imp.strncpy(gp)
+addiu a0, s4, 0x82
+lw a1, (s0)
+b 0x4050bc
+addiu a2, zero, 0x4f
+lw t9, -sym.usage(gp)
+jalr t9
+nop
+b 0x404eb8
+nop
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.puts(gp)
+jalr t9
+addiu a0, a0, 0x5f54
+b 0x404ff4
+nop
+lw v0, -0x7f90(gp)
+addiu a2, s2, 0x5ea0
+lw a1, -segment.LOAD0(gp)
+lw a0, (v0)
+[31mlw t9, -sym.imp.fprintf(gp)[0m
+jalr t9
+addiu a1, a1, 0x5f90
+b 0x404fb0
+nop
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.perror(gp)
+jalr t9
+addiu a0, a0, 0x5fb8
+lw gp, 0x10(sp)
+b 0x40502c
+addiu a0, zero, 1
+lw t9, -sym.imp.exit(gp)
+jalr t9
+move a0, zero
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.critical(gp)
+jalr t9
+addiu a0, a0, 0x5fe4
+lw gp, 0x10(sp)
+b 0x40502c
+--
+lw t9, -sym.imp.close(gp)
+jr t9
+nop
+lui gp, 5
+addiu gp, gp, -0x7218
+addu gp, gp, t9
+addiu sp, sp, -0xf0
+sw ra, 0xe8(sp)
+sw s1, 0xe4(sp)
+sw s0, 0xe0(sp)
+sw gp, 0x10(sp)
+lw t9, -sym.imp.__errno_location(gp)
+move s0, a1
+jalr t9
+move s1, a0
+lw gp, 0x10(sp)
+lw a0, (v0)
+lw t9, -sym.imp.strerror(gp)
+jalr t9
+nop
+move a2, s0
+lw gp, 0x10(sp)
+addiu a0, sp, 0x18
+move a3, v0
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+jalr t9
+addiu a1, a1, 0x6014
+lw t9, 0x310(s1)
+jalr t9
+addiu a0, sp, 0x18
+lw gp, 0x10(sp)
+lw ra, 0xe8(sp)
+lw s1, 0xe4(sp)
+lw s0, 0xe0(sp)
+jr ra
+addiu sp, sp, 0xf0
+lui gp, 5
+addiu gp, gp, -0x72a0
+addu gp, gp, t9
+addiu sp, sp, -0x28
+sw ra, 0x20(sp)
+sw s1, 0x1c(sp)
+sw s0, 0x18(sp)
+sw gp, 0x10(sp)
+addiu v0, zero, -1
+
+[*] Function printf used 8 times bpalogin
+

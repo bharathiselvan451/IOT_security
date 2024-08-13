@@ -1,0 +1,114 @@
+[*] Binary protection state of ushare
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function printf tear down of ushare
+
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/ushare @ 0x409e20 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) sym.print_log ()                 | void print_log () {
+    0x00409e20 lui gp, 6                     |     
+    0x00409e24 addiu gp, gp, -0x7260         |     
+    0x00409e28 addu gp, gp, t9               |     gp += t9;
+    0x00409e2c addiu sp, sp, -0x20           |     
+    0x00409e30 sw ra, 0x18(sp)               |     *(var_18h) = ra;
+    0x00409e34 sw gp, 0x10(sp)               |     *(var_10h) = gp;
+    0x00409e38 lw t0, -0x7e7c(gp)            |     t0 = *(gp);
+    0x00409e3c sw a2, 0x28(sp)               |     *(arg_28h) = a2;
+    0x00409e40 addiu a2, zero, 0             |     a2 = 0;
+    0x00409e44 lw v0, (t0)                   |     v0 = *(t0);
+    0x00409e48 sw a3, 0x2c(sp)               |     *(arg_2ch) = a3;
+                                             |     if (v0 != 0) {
+    0x00409e4c beqz v0, 0x409e5c             |         
+    0x00409e50 lbu v0, 0x52(v0)              |         v0 = *((v0 + 82));
+                                             |         if (v0 != 0) {
+    0x00409e54 bnez v0, 0x409efc             |             goto label_4;
+                                             |         }
+    0x00409e58 nop                           |         
+                                             |     }
+                                             | label_3:
+    0x00409e5c lw v0, (t0)                   |     v0 = *(t0);
+    0x00409e60 andi a3, a2, 0xff             |     a3 = a2 & 0xff;
+    0x00409e64 addiu a2, zero, 0             |     a2 = 0;
+                                             |     if (v0 != 0) {
+    0x00409e68 beqz v0, 0x409e78             |         
+    0x00409e6c lbu v1, 0x51(v0)              |         v1 = *((v0 + 81));
+                                             |         if (v1 != 0) {
+    0x00409e70 bnez v1, 0x409ef4             |             goto label_5;
+                                             |         }
+    0x00409e74 nop                           |         
+                                             |     }
+                                             | label_2:
+    0x00409e78 andi v0, a2, 0xff             |     v0 = a2 & 0xff;
+                                             |     if (a1 == 0) {
+    0x00409e7c beqz a1, 0x409eac             |         goto label_1;
+                                             |     }
+    0x00409e80 sltiu a2, a0, 3               |     a2 = (a0 < 3) ? 1 : 0;
+                                             |     if (v0 == 0) {
+    0x00409e84 beqz v0, 0x409eb8             |         goto label_6;
+                                             |     }
+    0x00409e88 addiu a2, sp, 0x28            |     a2 = sp + 0x28;
+                                             |     if (a3 == 0) {
+    0x00409e8c beqz a3, 0x409ec8             |         goto label_7;
+                                             |     }
+                                             | label_0:
+    0x00409e90 xori t0, a0, 2                |     t0 = a0 ^ 2;
+    0x00409e94 addiu a3, zero, 0x1d          |     a3 = 0x1d;
+    0x00409e98 lw t9, -0x7f50(gp)            |     t9 = sym.imp.vsyslog;
+    0x00409e9c addiu a0, zero, 0x1b          |     a0 = 0x1b;
+                                             |     if (t0 == 0) {
+    0x00409ea0 movn a0, a3, t0               |         a0 = a3;
+                                             |     }
+    0x00409ea4 jalr t9                       |     t9 ();
+    0x00409ea8 lw gp, 0x10(sp)               |     gp = *(var_10h);
+                                             |     do {
+                                             | label_1:
+    0x00409eac lw ra, 0x18(sp)               |         ra = *(var_18h);
+    0x00409eb0 addiu sp, sp, 0x20            |         
+    0x00409eb4 jr ra                         |         return v0;
+                                             | label_6:
+    0x00409eb8 beqz a2, 0x409eac             |         
+                                             |     } while (a2 == 0);
+    0x00409ebc nop                           |     
+    0x00409ec0 addiu a2, sp, 0x28            |     a2 = sp + 0x28;
+                                             |     if (a3 != 0) {
+    0x00409ec4 bnez a3, 0x409e90             |         goto label_0;
+                                             |     }
+                                             | label_7:
+    0x00409ec8 addiu t1, zero, 2             |     t1 = 2;
+                                             |     if (a0 == t1) {
+    0x00409ecc beq a0, t1, 0x409f04          |         goto label_8;
+                                             |     }
+    0x00409ed0 nop                           |     
+    0x00409ed4 lw v0, -0x7c94(gp)            |     v0 = *((gp - 7973));
+[31m    0x00409ed8 lw t9, -0x7fb8(gp)            |     t9 = sym.imp.vfprintf;[0m
+    0x00409edc lw a0, (v0)                   |     a0 = *(v0);
+    0x00409ee0 jalr t9                       |     t9 ();
+    0x00409ee4 nop                           |     
+                                             |     do {
+    0x00409ee8 lw gp, 0x10(sp)               |         gp = *(var_10h);
+    0x00409eec b 0x409eac                    |         goto label_1;
+    0x00409ef0 nop                           |         
+                                             | label_5:
+    0x00409ef4 addiu a2, zero, 1             |         a2 = 1;
+    0x00409ef8 b 0x409e78                    |         goto label_2;
+                                             | label_4:
+    0x00409efc addiu a2, zero, 1             |         a2 = 1;
+    0x00409f00 b 0x409e5c                    |         goto label_3;
+                                             | label_8:
+    0x00409f04 lw v0, -0x7ed8(gp)            |         v0 = *((gp - 8118));
+[31m    0x00409f08 lw t9, -0x7fb8(gp)            |         t9 = sym.imp.vfprintf;[0m
+    0x00409f0c lw a0, (v0)                   |         a0 = *(v0);
+    0x00409f10 jalr t9                       |         t9 ();
+    0x00409f14 nop                           |         
+    0x00409f18 b 0x409ee8                    |         
+                                             |     } while (1);
+    0x00409f1c nop                           |     
+                                             | }
+
+[*] Function printf used 2 times ushare
+

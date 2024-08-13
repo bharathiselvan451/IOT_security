@@ -1,0 +1,79 @@
+[*] Searching (args for grep: ) for PWD.
+[*] Grepit state info - comment: PWD abbrevation for password
+[*] Grepit state info - Filename 5_cryptocred_pwd_uppercase.txt
+[*] Grepit state info - Example: PWD
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: PWD
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7640[m[36m-[m1Mbps2Mbps5.5Mbps6Mbps7MbpsT9Mbps11Mbps12Mbps13MbpsT15Mbps18Mbps21MbpsT24Mbps26MbpsT30Mbps36Mbps39MbpsT45Mbps48Mbps52MbpsT54Mbps60Mbps65MbpsT72MbpsT78MbpsT90Mbps104MbpsT117MbpsT120Mbps130MbpsT135Mbps150Mbps180Mbps240Mbps270Mbps300MbpsTXT
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7641[m[36m-[mR\	RpRRRRRRRRR
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7642[m[36m-[mR
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m7643[m[36m:[mX.xDR-`X.tR-h	X.pLANGUAGEYLwHTTP_DEFAULT_PORTX9
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m7644[m[36m-[mS98ML
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd[m[36m-[m[32m146[m[36m-[mHTMLHTMContent-Type: text/html
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd[m[36m-[m[32m147[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd[m[36m-[m[32m148[m[36m-[mHTTP needs download - fix your configContent-Type: dunno
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd[m[36m:[m[32m149[m[36m:[mshould not be reachedLogin successful.IDLEQUITGoodbye.[01;31mPWD[mX[01;31mPWD[m"""CWDXCWDCDUPXCUP..RETRNOOPNOOP ok.EPSVSYSTUNIX Type: L8PASVP@SWLISTTYPESTORMKDXMKDCreate directory operation failed.RMDXRMDRemove directory operation failed.DELERESTRNFRRNTONLSTSIZESITEABORNo transfer to ABOR.APPEMDTMEPRTSTRUFStructure set to F.Bad STRU command.MODESTOUALLOALLO command ignored.SMode set to S.REINREIN not implemented.Bad MODE command.ACCTACCT not implemented.IL8Switching to Binary mode.L 8AA NSwitching to ASCII mode.Unrecognised TYPE command.Restart position accepted (RNFR required first.Ready for RNTO.Rename successful.RNFR command failed.Rename failed.Could not get file size.Bad EPRT command.Illegal EPRT command.EPRT command successful. Consider using EPSV.Bad EPRT protocol." createdRemove directory operation successful.Delete operation failed.The following commands are recognized. ABOR ACCT ALLO APPE CDUP CWD  DELE EPRT EPSV FEAT HELP LIST MDTM MKD
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd[m[36m:[m[32m150[m[36m:[m MODE NLST NOOP OPTS PASS PASV PORT [01;31mPWD[m  QUIT REIN REST RETR RMD  RNFR
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd[m[36m-[m[32m151[m[36m-[m RNTO SITE SIZE SMNT STAT STOR STOU STRU SYST TYPE USER XCUP XCWD XMKD
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd[m[36m:[m[32m152[m[36m:[m X[01;31mPWD[m XRMD
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd[m[36m-[m[32m153[m[36m-[mHelp OK.PORTIllegal PORT command.PORT command successful. Consider using PASV.SMNTSMNT not implemented.Delete operation successful.FEATOPTSSTATPROTUSERCan't change from guest user.PBSZAny password will do.PASSAlready logged in.Can't change to another user.FTP server status:     Connected to      Logged in as      TYPE: ASCII
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m66[m[36m-[m	}
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m67[m[36m-[m}
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m68[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m:[m[32m69[m[36m:[mfunction onClickUse[01;31mPWD[mCheckbox()
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m70[m[36m-[m{
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m153[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m154[m[36m-[m<TR><TD><TABLE>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m155[m[36m-[m	<TD class="Item"></TD>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m:[m[32m156[m[36m:[m	<TD><INPUT type="checkbox" name="use_passwd" onClick = "onClickUse[01;31mPWD[mCheckbox();"> Access shared storage with password </TD>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/NasCfgRpm.htm[m[36m-[m[32m157[m[36m-[m</TR>
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m5[m[36m-[mvar	ERR_PPPOE_TIMING_SET									=1001
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m6[m[36m-[mvar	ERR_PPPOE_STRING_TOO_LONG								=1002
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m7[m[36m-[mvar	ERR_PPPOE_USERNAME_TOO_LONG								=1003
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m:[m[32m8[m[36m:[mvar	ERR_PPPOE_[01;31mPWD[m_TOO_LONG									=1004
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m9[m[36m-[mvar	ERR_PPPOE_AUTO_OFF_WAITE_TIME							=1005
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m140[m[36m-[mvar	ERR_SPECIAL_APP_RECORD_ALREADY_FULL						=15003
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m141[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m142[m[36m-[mvar	ERR_DDNS_USER_NAME_EMPTY								=16000
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m:[m[32m143[m[36m:[mvar	ERR_DDNS_[01;31mPWD[m_EMPTY										=16001
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m144[m[36m-[mvar	ERR_DDNS_USER_HAS_SPACE									=16002
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m:[m[32m145[m[36m:[mvar	ERR_DDNS_[01;31mPWD[m_HAS_SPACE									=16003
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m146[m[36m-[mvar	ERR_DDNS_LIST_FULL										=16004
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m148[m[36m-[mvar	ERR_DDNS_ENTRY_BE_DELETE								=16006
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m149[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m150[m[36m-[mvar	ERR_USER_NAME_LENGTH									=17000
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m:[m[32m151[m[36m:[mvar	ERR_USER_[01;31mPWD[m_LENGTH										=17001
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m152[m[36m-[mvar	ERR_USER_NAME_ERROR										=17002
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m:[m[32m153[m[36m:[mvar	ERR_USER_[01;31mPWD[m_ERROR										=17003
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m:[m[32m154[m[36m:[mvar	ERR_USER_[01;31mPWD[m_INVALID_CHAR								=17004
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m155[m[36m-[m
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m279[m[36m-[mstr_err[ERR_PPPOE_TIMING_SET]					=	"The setting of time-based Connecting is incorrect.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m280[m[36m-[mstr_err[ERR_PPPOE_STRING_TOO_LONG]				=	"The PPPOE string is too long.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m281[m[36m-[mstr_err[ERR_PPPOE_USERNAME_TOO_LONG]			=	"The Username is out of length 119. Please input another one.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m:[m[32m282[m[36m:[mstr_err[ERR_PPPOE_[01;31mPWD[m_TOO_LONG]					=	"The password is out of length 119. Please input another one.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m283[m[36m-[mstr_err[ERR_PPPOE_AUTO_OFF_WAITE_TIME]			=	"The Max Idle time is out of range (10-99). Please input another number.";
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m405[m[36m-[mstr_err[ERR_SPECIAL_APP_DUPLICATE_TAG_PORT]		=	"This entry's Trigger condition (Trigger port and Trigger Protocol) conflict with another entry's Trigger condition behind it, please input another entry.<br>Two entries trigger protocol cannot set same when they have same trigger port.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m406[m[36m-[mstr_err[ERR_SPECIAL_APP_RECORD_ALREADY_FULL]	=	"Port Triggering list is already at maximum: 16.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m407[m[36m-[mstr_err[ERR_DDNS_USER_NAME_EMPTY]				=	"User name is NULL. Please input another one.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m:[m[32m408[m[36m:[mstr_err[ERR_DDNS_[01;31mPWD[m_EMPTY]						=	"Password is NULL. Please input another one.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m409[m[36m-[mstr_err[ERR_DDNS_USER_HAS_SPACE]				=	"User name contains space. Please input another one.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m:[m[32m410[m[36m:[mstr_err[ERR_DDNS_[01;31mPWD[m_HAS_SPACE]					=	"Password is NULL. Please input another one.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m411[m[36m-[mstr_err[ERR_DDNS_LIST_FULL]						=	"DDNS table is already full.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m412[m[36m-[mstr_err[ERR_DDNS_LIST_INDEX_OUT_RANGE]			=	"The index is out of range.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m413[m[36m-[mstr_err[ERR_DDNS_ENTRY_BE_DELETE]				=	"This entry has been deleted.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m414[m[36m-[mstr_err[ERR_USER_NAME_LENGTH]					=	"The user name is out of length 15. Please input another one.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m:[m[32m415[m[36m:[mstr_err[ERR_USER_[01;31mPWD[m_LENGTH]					=	"The password is out of length 15. Please input another one.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m416[m[36m-[mstr_err[ERR_USER_NAME_ERROR]					=	"Old user Name is incorrect. Please input another one.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m:[m[32m417[m[36m:[mstr_err[ERR_USER_[01;31mPWD[m_ERROR]						=	"Old password is incorrect. Please input another one.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m:[m[32m418[m[36m:[mstr_err[ERR_USER_[01;31mPWD[m_INVALID_CHAR]				=	"User Name or Password contains illegal character. Please input another one.";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/localiztion/str_err.js[m[36m-[m[32m419[m[36m-[mstr_err[ERR_SYS_TFTP_FAIL]						=	"Error occurred, please try again.";

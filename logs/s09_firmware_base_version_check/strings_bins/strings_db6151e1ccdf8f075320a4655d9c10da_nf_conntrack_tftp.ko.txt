@@ -1,0 +1,84 @@
+E0!<
+0!$B
+(!&'
+(!$B
+D !<
+T !<
+ !$B
+ports
+dtftp
+tftp-%u
+nf_ct_tftp: failed to register helper for pf: %u port: %u
+nf_nat_tftp_hook
+parm=ports:Port numbers of TFTP servers
+parmtype=ports:array of ushort
+alias=nfct-helper-tftp
+alias=ip_conntrack_tftp
+license=GPL
+description=TFTP connection tracking helper
+author=Magnus Boden <mb@ozaba.mine.nu>
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+nf_conntrack_tftp
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.tftp_help
+.rel.text.nf_conntrack_tftp_fini
+.rel.init.text
+.rel.rodata
+.rel__ksymtab_gpl
+__ksymtab_strings
+.modinfo
+.rel__param
+.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+nf_conntrack_tftp.c
+nf_conntrack_tftp_init
+nf_conntrack_tftp_fini
+__ksymtab_nf_nat_tftp_hook
+__kstrtab_nf_nat_tftp_hook
+__mod_ports31
+__mod_portstype30
+__param_ports
+__param_str_ports
+__param_arr_ports
+ports_c
+ports
+__mod_alias25
+__mod_alias24
+__mod_license23
+__mod_description22
+__mod_author21
+tftp_exp_policy
+tftp_help
+tftp
+tftp_names
+nf_conntrack_tftp.mod.c
+__module_depends
+__mod_vermagic5
+param_set_ushort
+skb_copy_bits
+__this_module
+cleanup_module
+init_module
+param_get_ushort
+nf_ct_expect_related_report
+nf_ct_expect_alloc
+nf_ct_expect_put
+printk
+memset
+param_array_set
+sprintf
+nf_ct_expect_init
+param_array_get
+nf_conntrack_helper_unregister
+nf_nat_tftp_hook
+nf_conntrack_helper_register

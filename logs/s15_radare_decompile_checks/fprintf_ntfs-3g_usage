@@ -1,0 +1,15 @@
+fcn.004119e8
+fcn.00411b0c
+fcn.0041db38
+fcn.0041f83c
+fcn.00421f74
+sym.fuse_fs_new
+sym.fuse_kern_mount
+sym.fuse_lowlevel_new
+sym.fuse_mnt_add_mount
+sym.fuse_mnt_resolve_path
+sym.fuse_mnt_umount
+sym.fuse_new
+sym.fuse_session_loop
+sym.fuse_session_new
+sym.fusermount

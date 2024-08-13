@@ -1,0 +1,11 @@
+[*] Binary protection state of usbp
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of usbp
+
+
+[*] Function sprintf used 0 times usbp
+

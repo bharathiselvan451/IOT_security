@@ -1,0 +1,13 @@
+[+] Binary firmware basic analyzer
+=================================================================
+The firmware bin base analyzer module tries to identify the used operating system via simple counting of different keywords and doing some basic heuristics.
+
+
+
+==> OS detection
+-----------------------------------------------------------------
+[*] Initial OS guessing:
+
+    Operating system detection:
+[0;32m	Linux detected      	:	74             	:	verified Linux operating system detected (root filesystem)[0m
+[0;33m	VxWorks detected    	:	221            [0m

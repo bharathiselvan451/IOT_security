@@ -1,0 +1,71 @@
+(!$T
+  !$
+@(!<
+ !$B
+ipt_TRIGGER.c trigger_target param:type  %d; hooknum: %d
+maniptypex : %d
+mangle
+<4>can't load conntrack support for proto=%d
+license=GPL
+description=Target for port trigger
+author=LSZ <www.tplink.com.cn>
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+TRIGGER
+ipt_TRIGGER
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.trigger_refresh
+.rel.text.__del_trigger
+.rel.text.trigger_timeout
+.rel.text.trigger_target
+.rel.text.trigger_check
+.rel.init.text
+.rel.exit.text
+.rodata
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+ipt_TRIGGER.c
+init
+fini
+__mod_license70
+__mod_description69
+__mod_author68
+ipt_trigger_target
+trigger_target
+trigger_check
+trigger_refresh
+__del_trigger
+trigger_timeout
+ipt_TRIGGER.mod.c
+__module_depends
+__mod_vermagic5
+__this_module
+cleanup_module
+memcpy
+kfree
+init_module
+local_bh_enable
+nf_nat_setup_info
+kmem_cache_alloc
+local_bh_disable
+xt_register_target
+add_timer
+printk
+memset
+jiffies
+trigger_list
+init_timer_key
+nf_ct_l3proto_try_module_get
+malloc_sizes
+del_timer
+xt_unregister_target

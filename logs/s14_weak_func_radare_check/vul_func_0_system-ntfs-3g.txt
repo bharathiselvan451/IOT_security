@@ -1,0 +1,11 @@
+[*] Binary protection state of ntfs-3g
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       RPATH        No RUNPATH   No Symbols
+
+
+[*] Function system tear down of ntfs-3g
+
+
+[*] Function system used 0 times ntfs-3g
+

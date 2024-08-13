@@ -1,0 +1,440 @@
+[*] Binary protection state of auth
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of auth
+
+move s0, v0
+lw t9, -sym.lib1x_message(gp)
+lw a2, -obj.dev_svr(gp)
+b 0x403a54
+addiu a0, zero, 0x11
+lw t9, -sym.libnet_get_ipaddr(gp)
+move a0, v0
+lw a1, -obj.dev_svr(gp)
+jalr t9
+addiu a2, sp, 0x18
+move a0, v0
+addiu v0, zero, -1
+lw gp, 0x10(sp)
+bne a0, v0, 0x403968
+nop
+lw a1, -0x7fd8(gp)
+addiu a0, zero, 0x11
+lw t9, -sym.lib1x_message(gp)
+lw a2, -obj.dev_svr(gp)
+b 0x403a5c
+addiu a1, a1, 0x43d0
+lw t9, -sym.imp.inet_ntoa(gp)
+jalr t9
+nop
+lw gp, 0x10(sp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw a0, -obj.ourip(gp)
+jalr t9
+move a1, v0
+move a0, s0
+lw gp, 0x10(sp)
+lw t9, -sym.libnet_get_hwaddr(gp)
+lw a1, -obj.dev_svr(gp)
+jalr t9
+addiu a2, sp, 0x18
+lw gp, 0x10(sp)
+bnez v0, 0x4039c4
+move t0, v0
+lw a1, -0x7fd8(gp)
+addiu a0, zero, 0x11
+lw t9, -sym.lib1x_message(gp)
+lw a2, -obj.dev_svr(gp)
+b 0x403a5c
+addiu a1, a1, 0x4400
+lbu a1, (v0)
+move a0, s0
+--
+lw t9, -sym.imp.setsid(gp)
+jalr t9
+nop
+lw gp, 0x38(sp)
+lw s0, 4(s4)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s0
+lw gp, 0x38(sp)
+sltiu v0, v0, 0x1a
+lw t9, -sym.imp.printf(gp)
+bnez v0, 0x404020
+addiu a1, s3, 0x44a0
+lw a0, -0x7fd8(gp)
+addiu a2, zero, 0x379
+addiu a3, zero, 0x1a
+b 0x404088
+addiu a0, a0, 0x45b0
+lw a0, -0x7fd8(gp)
+move a3, s0
+addiu a2, zero, 0x37c
+jalr t9
+addiu a0, a0, 0x4600
+lw gp, 0x38(sp)
+lw a1, 4(s4)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw a0, -obj.dev_supp(gp)
+jalr t9
+nop
+lw gp, 0x38(sp)
+lw s0, 8(s4)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s0
+lw gp, 0x38(sp)
+sltiu v0, v0, 0x1a
+lw t9, -sym.imp.printf(gp)
+bnez v0, 0x404098
+move a3, s0
+lw a0, -0x7fd8(gp)
+addiu a1, s3, 0x44a0
+addiu a2, zero, 0x382
+addiu a3, zero, 0x1a
+addiu a0, a0, 0x4628
+jalr t9
+nop
+b 0x404440
+nop
+lw a0, -0x7fd8(gp)
+addiu a2, zero, 0x385
+addiu a1, s3, 0x44a0
+jalr t9
+addiu a0, a0, 0x4678
+lw gp, 0x38(sp)
+lw a1, 8(s4)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw a0, -obj.dev_svr(gp)
+jalr t9
+nop
+lw gp, 0x38(sp)
+lw a1, 0x10(s4)
+lw t9, -sym.lib1x_load_config(gp)
+lw a0, -obj.RTLAuthenticator(gp)
+jalr t9
+nop
+lw gp, 0x38(sp)
+lw a3, 0x10(s4)
+lw t9, -sym.imp.printf(gp)
+beqz v0, 0x404100
+addiu a1, s3, 0x44a0
+lw a0, -0x7fd8(gp)
+addiu a2, zero, 0x38b
+b 0x404088
+addiu a0, a0, 0x46a0
+lw a0, -0x7fd8(gp)
+lw s7, -obj.svrip(gp)
+--
+sb v0, 5(s1)
+sh a0, 6(s1)
+sh t1, 8(s1)
+sb a1, 0xa(s1)
+sb t0, 0xb(s1)
+sw a2, 0xc(s1)
+sb t2, 0x10(s1)
+bnez t3, 0x4047f4
+sb t4, 0x11(s1)
+lw v0, 0x1d4(s3)
+beqz v0, 0x404a4c
+nop
+lw t9, -sym.imp.malloc(gp)
+addiu a0, zero, 0x1a
+jalr t9
+addiu s0, zero, 2
+addiu a2, zero, 4
+lw gp, 0x10(sp)
+move a0, v0
+move a1, zero
+lw t9, -sym.imp.memset(gp)
+jalr t9
+sw v0, 0x18(s1)
+lw gp, 0x10(sp)
+lw a1, 0x78(sp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw a0, 0x18(s1)
+jalr t9
+nop
+move a1, s4
+lw gp, 0x10(sp)
+lw a0, 0x18(s1)
+lw t9, -sym.lib1x_nal_initialize(gp)
+jalr t9
+addiu a2, zero, 1
+move a1, s2
+lw gp, 0x10(sp)
+addiu a2, zero, 2
+lw a0, 0x18(s1)
+lw t9, -sym.lib1x_nal_initialize(gp)
+jalr t9
+sw v0, 0x28(s1)
+move a0, fp
+lw gp, 0x10(sp)
+sw v0, 0x20(s1)
+lw t9, -sym.imp.inet_addr(gp)
+--
+sw zero, 0x8e8(s3)
+lw t9, -sym.imp.inet_aton(gp)
+lw a0, 0x70(sp)
+jalr t9
+addiu a1, s1, 0x3c
+lw gp, 0x10(sp)
+bnez v0, 0x404a4c
+addiu a0, zero, 0x11
+lw a1, -0x7fd8(gp)
+lw t9, -sym.lib1x_message(gp)
+jalr t9
+addiu a1, a1, 0x4944
+lw gp, 0x10(sp)
+lw t9, -sym.imp.malloc(gp)
+jalr t9
+addiu a0, zero, 0x1a
+addiu a2, zero, 4
+lw gp, 0x10(sp)
+move a0, v0
+sw v0, 0x14(s1)
+lw t9, -sym.imp.memset(gp)
+jalr t9
+move a1, zero
+lw gp, 0x10(sp)
+lw a1, 0x7c(sp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw a0, 0x14(s1)
+jalr t9
+nop
+move a1, s4
+lw gp, 0x10(sp)
+lw a0, 0x14(s1)
+lw t9, -sym.lib1x_nal_initialize(gp)
+jalr t9
+addiu a2, zero, 1
+addiu a0, zero, 0x1a
+lw gp, 0x10(sp)
+lw t9, -sym.imp.malloc(gp)
+jalr t9
+sw v0, 0x24(s1)
+addiu a2, zero, 4
+lw gp, 0x10(sp)
+move a0, v0
+sw v0, 0x1c(s1)
+lw t9, -sym.imp.memset(gp)
+jalr t9
+move a1, zero
+lw gp, 0x10(sp)
+lw a0, 0x1c(s1)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw a1, 0x14(s1)
+jalr t9
+nop
+lw gp, 0x10(sp)
+lw t9, -sym.lib1x_control_init(gp)
+jalr t9
+nop
+sw v0, 0x2c(s1)
+move v0, s1
+lw gp, 0x10(sp)
+lw ra, 0x44(sp)
+lw fp, 0x40(sp)
+lw s7, 0x3c(sp)
+lw s6, 0x38(sp)
+lw s5, 0x34(sp)
+lw s4, 0x30(sp)
+lw s3, 0x2c(sp)
+lw s2, 0x28(sp)
+lw s1, 0x24(sp)
+lw s0, 0x20(sp)
+--
+sw fp, 0x3c(s7)
+sw zero, 0x5c(fp)
+sw zero, 0x24(s7)
+sw zero, 0x30(s7)
+jalr t9
+sw zero, 0x40(s7)
+addiu a0, zero, 0x640
+lw gp, 0x28(sp)
+sw v0, 0x70(fp)
+lw t9, -sym.imp.malloc(gp)
+jalr t9
+sh zero, 0x74(fp)
+addiu a0, zero, 0x13aa
+lw gp, 0x28(sp)
+sw v0, 0x7c(fp)
+lw t9, -sym.imp.malloc(gp)
+jalr t9
+sh zero, 0x80(fp)
+addiu a0, zero, 0x12
+lw gp, 0x28(sp)
+lw t9, -sym.imp.malloc(gp)
+jalr t9
+sw v0, 0x8c(fp)
+lw gp, 0x28(sp)
+lw a0, 0x8c(fp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw a1, -obj.lib1x_nas_id(gp)
+addiu a0, a0, 0xd00
+jalr t9
+sw v0, 0xa4(fp)
+addiu a0, zero, 0x124
+lw gp, 0x28(sp)
+lw v0, 0x8c(fp)
+lw a1, -0x7fd8(gp)
+addiu v1, a1, 0x4990
+lw a1, 0x4990(a1)
+lw a3, 8(v1)
+srl t2, a1, 0x10
+srl s5, a1, 0x18
+sw t2, 0x38(sp)
+srl t7, a1, 8
+lbu t2, 0x16(v1)
+srl t4, a3, 0x18
+lw t0, 0xc(v1)
+srl t5, a3, 0x10
+lw a2, 4(v1)
+--
+sw v1, 0x10(sp)
+lw v0, 0x1d0(v0)
+beqz v0, 0x40650c
+nop
+lw v0, -0x7fd8(gp)
+b 0x406514
+addiu v0, v0, 0x4b44
+lw v0, -0x7fd8(gp)
+addiu v0, v0, 0x4b4c
+lw a1, -0x7fd8(gp)
+addiu a0, zero, 0x26
+lw t9, -sym.imp.syslog(gp)
+addiu s1, sp, 0x30
+lw a2, -obj.dev_supp(gp)
+addiu a1, a1, 0x4b50
+jalr t9
+sw v0, 0x14(sp)
+move a2, zero
+lw gp, 0x18(sp)
+addiu a0, zero, 2
+lw t9, -sym.imp.socket(gp)
+jalr t9
+addiu a1, zero, 1
+move a0, s1
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw a1, -obj.dev_supp(gp)
+jalr t9
+move s0, v0
+move a0, s0
+lw gp, 0x18(sp)
+ori a1, zero, 0x8913
+lw t9, -sym.imp.ioctl(gp)
+jalr t9
+move a2, s1
+lw gp, 0x18(sp)
+bltz v0, 0x4065e0
+move a2, s1
+lw t9, -sym.imp.ioctl(gp)
+move a0, s0
+jalr t9
+ori a1, zero, 0x8927
+lw gp, 0x18(sp)
+bltz v0, 0x4065e0
+nop
+lw v0, 0x40(sp)
+--
+nop
+addiu a0, zero, 2
+lw gp, 0x18(sp)
+lw a1, -0x7fe0(gp)
+lw t9, -sym.lib1x_message(gp)
+jalr t9
+addiu a1, a1, -0x7fe0
+lw v0, (fp)
+lw gp, 0x18(sp)
+lw v0, 0xa8(v0)
+beqz v0, 0x4155b8
+move a0, fp
+lw t9, -sym.lib1x_control_STA_QUERY_SSID(gp)
+jalr t9
+addiu a1, sp, 0x20
+addiu a1, sp, 0x20
+lw gp, 0x18(sp)
+lw v0, (fp)
+lw t9, -sym.imp.strcmp(gp)
+addiu s0, v0, 0x44f
+jalr t9
+move a0, s0
+lw gp, 0x18(sp)
+beqz v0, 0x4155b8
+addiu a1, sp, 0x20
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+move a0, s0
+lw s0, (fp)
+lw gp, 0x18(sp)
+addiu s1, s0, 0x3e7
+addiu s2, s0, 0x44f
+lw t9, -sym.imp.strlen(gp)
+move a0, s1
+jalr t9
+addiu s0, s0, 0x427
+move a0, s2
+lw gp, 0x18(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move s3, v0
+move a0, s1
+lw gp, 0x18(sp)
+move a1, s3
+move a2, s2
+move a3, v0
+--
+lw v0, (fp)
+lw v0, 0x1e0(v0)
+beqz v0, 0x415680
+nop
+lw v0, -0x7fe0(gp)
+b 0x415688
+addiu a3, v0, -0x7f70
+lw v0, -0x7fe0(gp)
+addiu a3, v0, -0x7f68
+lw a1, -0x7fe0(gp)
+addiu a0, zero, 0x26
+lw t9, -sym.imp.syslog(gp)
+addiu s1, sp, 0x48
+lw a2, -obj.dev_supp(gp)
+addiu a1, a1, -0x7f64
+jalr t9
+sw v1, 0x10(sp)
+move a2, zero
+lw gp, 0x18(sp)
+addiu a0, zero, 2
+lw t9, -sym.imp.socket(gp)
+jalr t9
+addiu a1, zero, 1
+move a0, s1
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+lw a1, -obj.dev_supp(gp)
+jalr t9
+move s0, v0
+move a0, s0
+lw gp, 0x18(sp)
+ori a1, zero, 0x8913
+lw t9, -sym.imp.ioctl(gp)
+jalr t9
+move a2, s1
+lw gp, 0x18(sp)
+bltz v0, 0x415754
+move a2, s1
+lw t9, -sym.imp.ioctl(gp)
+move a0, s0
+jalr t9
+ori a1, zero, 0x8927
+lw gp, 0x18(sp)
+bltz v0, 0x415754
+nop
+lw v0, 0x58(sp)
+
+[*] Function strcpy used 10 times auth
+

@@ -1,0 +1,138 @@
+[*] Binary protection state of libdl-0.9.30.so
+
+  
+  	Partial RELRO  No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of libdl-0.9.30.so
+
+    ; assembly                           | /* r2dec pseudo code output */
+                                         | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libdl-0.9.30.so @ 0x1518 */
+                                         | #include <stdint.h>
+                                         |  
+    ; (fcn) sym.dlinfo ()                | void dlinfo () {
+    0x00001518 lui gp, 5                 |     
+    0x0000151c addiu gp, gp, -0x74e8     |     
+    0x00001520 addu gp, gp, t9           |     gp += t9;
+    0x00001524 addiu sp, sp, -0x38       |     
+    0x00001528 sw ra, 0x34(sp)           |     *(var_34h) = ra;
+    0x0000152c sw s2, 0x30(sp)           |     *(var_30h) = s2;
+    0x00001530 sw s1, 0x2c(sp)           |     *(var_2ch) = s1;
+    0x00001534 sw s0, 0x28(sp)           |     *(var_28h) = s0;
+    0x00001538 sw gp, 0x20(sp)           |     *(var_20h) = gp;
+    0x0000153c lw s1, -0x7fcc(gp)        |     s1 = *((gp - 8179));
+    0x00001540 lw a1, -0x7fe4(gp)        |     a1 = *((gp - 8185));
+[31m    0x00001544 lw t9, -0x7fa8(gp)        |     t9 = sym.imp.fprintf;[0m
+    0x00001548 lw a0, (s1)               |     a0 = *(s1);
+    0x0000154c addiu a1, a1, 0x19d4      |     a1 += 0x19d4;
+    0x00001550 jalr t9                   |     t9 ();
+    0x00001554 lw gp, 0x20(sp)           |     gp = *(var_20h);
+    0x00001558 lw v0, -0x7fb0(gp)        |     v0 = *((gp - 8172));
+    0x0000155c lw s0, (v0)               |     s0 = *(v0);
+                                         |     do {
+    0x00001560 move a3, s0               |         a3 = s0;
+                                         |         if (s0 == 0) {
+    0x00001564 beqz s0, 0x15c4           |             goto label_1;
+                                         |         }
+    0x00001568 lw v0, 0x1c(s0)           |         v0 = *((s0 + 7));
+    0x0000156c lw a2, (s0)               |         a2 = *(s0);
+    0x00001570 sw v0, 0x10(sp)           |         *(var_10h) = v0;
+    0x00001574 lw v1, 0x18(s0)           |         v1 = *((s0 + 6));
+    0x00001578 lw v0, -0x7fe8(gp)        |         v0 = *((gp - 8186));
+    0x0000157c sll v1, v1, 2             |         v1 <<= 2;
+                                         |         /* loc._fdata */
+    0x00001580 addiu v0, v0, 0x2000      |         v0 += 0x2000;
+    0x00001584 addu v1, v1, v0           |         v1 += v0;
+    0x00001588 lw v0, (v1)               |         v0 = *(v1);
+    0x0000158c lw a0, (s1)               |         a0 = *(s1);
+    0x00001590 sw v0, 0x14(sp)           |         *(var_14h) = v0;
+    0x00001594 lhu v0, 0x20(s0)          |         v0 = *((s0 + 16));
+    0x00001598 lw a1, -0x7fe4(gp)        |         a1 = *((gp - 8185));
+    0x0000159c sw v0, 0x18(sp)           |         *(var_18h) = v0;
+    0x000015a0 lw v0, 4(s0)              |         v0 = *((s0 + 1));
+    0x000015a4 addiu a1, a1, 0x19ec      |         a1 += 0x19ec;
+[31m    0x000015a8 lw t9, -0x7fa8(gp)        |         t9 = sym.imp.fprintf;[0m
+    0x000015ac sw v0, 0x1c(sp)           |         *(var_1ch) = v0;
+    0x000015b0 jalr t9                   |         t9 ();
+    0x000015b4 lw gp, 0x20(sp)           |         gp = *(var_20h);
+    0x000015b8 lw s0, 0xc(s0)            |         s0 = *((s0 + 3));
+    0x000015bc b 0x1560                  |         
+                                         |     } while (1);
+    0x000015c0 nop                       |     
+                                         | label_1:
+    0x000015c4 lw s0, -0x7fa4(gp)        |     s0 = *((gp - 8169));
+    0x000015c8 lw s1, -0x7fcc(gp)        |     s1 = *((gp - 8179));
+    0x000015cc lw a1, -0x7fe4(gp)        |     a1 = *((gp - 8185));
+[31m    0x000015d0 lw t9, -0x7fa8(gp)        |     t9 = sym.imp.fprintf;[0m
+    0x000015d4 lw a2, (s0)               |     a2 = *(s0);
+    0x000015d8 lw a0, (s1)               |     a0 = *(s1);
+    0x000015dc addiu a1, a1, 0x1a00      |     a1 += 0x1a00;
+    0x000015e0 jalr t9                   |     t9 ();
+    0x000015e4 lw gp, 0x20(sp)           |     gp = *(var_20h);
+    0x000015e8 lw s0, (s0)               |     s0 = *(s0);
+                                         |     do {
+                                         |         if (s0 == 0) {
+    0x000015ec beqz s0, 0x1620           |             goto label_2;
+                                         |         }
+    0x000015f0 nop                       |         
+    0x000015f4 lw a2, (s0)               |         a2 = *(s0);
+    0x000015f8 lw a1, -0x7fe4(gp)        |         a1 = *((gp - 8185));
+[31m    0x000015fc lw t9, -0x7fa8(gp)        |         t9 = sym.imp.fprintf;[0m
+    0x00001600 lw a0, (s1)               |         a0 = *(s1);
+    0x00001604 lw a3, 4(a2)              |         a3 = *((a2 + 1));
+    0x00001608 addiu a1, a1, 0x1a20      |         a1 += 0x1a20;
+    0x0000160c jalr t9                   |         t9 ();
+    0x00001610 lw gp, 0x20(sp)           |         gp = *(var_20h);
+    0x00001614 lw s0, 0x10(s0)           |         s0 = *((s0 + 4));
+    0x00001618 b 0x15ec                  |         
+                                         |     } while (1);
+    0x0000161c nop                       |     
+                                         | label_2:
+    0x00001620 lw v0, -0x7fb8(gp)        |     v0 = *((gp - 8174));
+    0x00001624 lw s1, (v0)               |     s1 = *(v0);
+                                         | label_0:
+    0x00001628 move a2, s1               |     a2 = s1;
+                                         |     if (s1 == 0) {
+    0x0000162c beqz s1, 0x1690           |         goto label_3;
+                                         |     }
+    0x00001630 lw s2, -0x7fcc(gp)        |     s2 = *((gp - 8179));
+    0x00001634 lw a1, -0x7fe4(gp)        |     a1 = *((gp - 8185));
+    0x00001638 move s0, s1               |     s0 = s1;
+[31m    0x0000163c lw t9, -0x7fa8(gp)        |     t9 = sym.imp.fprintf;[0m
+    0x00001640 lw a0, (s2)               |     a0 = *(s2);
+    0x00001644 addiu a1, a1, 0x1a28      |     a1 += 0x1a28;
+    0x00001648 jalr t9                   |     t9 ();
+    0x0000164c lw gp, 0x20(sp)           |     gp = *(var_20h);
+                                         |     if (s1 == 0) {
+    0x00001650 beqz s1, 0x1684           |         goto label_4;
+                                         |     }
+    0x00001654 nop                       |     
+                                         |     do {
+    0x00001658 lw a2, (s0)               |         a2 = *(s0);
+    0x0000165c lw a1, -0x7fe4(gp)        |         a1 = *((gp - 8185));
+[31m    0x00001660 lw t9, -0x7fa8(gp)        |         t9 = sym.imp.fprintf;[0m
+    0x00001664 lw a0, (s2)               |         a0 = *(s2);
+    0x00001668 lw a3, 4(a2)              |         a3 = *((a2 + 1));
+    0x0000166c addiu a1, a1, 0x1a20      |         a1 += 0x1a20;
+    0x00001670 jalr t9                   |         t9 ();
+    0x00001674 lw s0, 0x10(s0)           |         s0 = *((s0 + 4));
+    0x00001678 lw gp, 0x20(sp)           |         gp = *(var_20h);
+    0x0000167c bnez s0, 0x1658           |         
+                                         |     } while (s0 != 0);
+    0x00001680 nop                       |     
+                                         | label_4:
+    0x00001684 lw s1, 4(s1)              |     s1 = *((s1 + 1));
+    0x00001688 b 0x1628                  |     goto label_0;
+    0x0000168c nop                       |     
+                                         | label_3:
+    0x00001690 lw ra, 0x34(sp)           |     ra = *(var_34h);
+    0x00001694 move v0, zero             |     v0 = 0;
+    0x00001698 lw s2, 0x30(sp)           |     s2 = *(var_30h);
+    0x0000169c lw s1, 0x2c(sp)           |     s1 = *(var_2ch);
+    0x000016a0 lw s0, 0x28(sp)           |     s0 = *(var_28h);
+    0x000016a4 addiu sp, sp, 0x38        |     
+    0x000016a8 jr ra                     |     return v0;
+                                         | }
+
+[*] Function fprintf used 6 times libdl-0.9.30.so
+

@@ -1,0 +1,13 @@
+Script path;Shell issues detected;common linux file;shellcheck/semgrep;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/idd (-rwxrwxr-x 501 502);1;no;NA;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ib (-rwxrwxr-x 501 502);1;no;NA;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/getmib (-rwxrwxr-x 501 502);1;no;NA;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/irf (-rwxrwxr-x 501 502);2;no;NA;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iw (-rwxrwxr-x 501 502);1;yes;NA;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/od (-rwxrwxr-x 501 502);2;yes;NA;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ob (-rwxrwxr-x 501 502);2;no;NA;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/orf (-rwxrwxr-x 501 502);3;no;NA;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ow (-rwxrwxr-x 501 502);2;no;NA;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/rssi (-rwxrwxr-x 501 502);1;no;NA;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/setmib (-rwxrwxr-x 501 502);2;no;NA;
+/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug (-rwxr-xr-x 501 502);4;no;NA;

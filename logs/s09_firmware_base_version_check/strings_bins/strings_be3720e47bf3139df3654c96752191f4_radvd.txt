@@ -1,0 +1,986 @@
+/lib/ld-uClibc.so.0
+@!$o
+_fini
+__uClibc_main
+__cxa_finalize
+__deregister_frame_info
+__register_frame_info
+_Jv_RegisterClasses
+openlog
+stderr
+fprintf
+fopen
+__errno_location
+strerror
+vsnprintf
+syslog
+localtime
+strftime
+fflush
+closelog
+fclose
+log_close
+log_open
+flog
+setsockopt
+memset
+malloc
+select
+recvmsg
+__cmsg_nxthdr
+dlog
+__divdf3
+__fixdfsi
+__floatsidf
+__muldf3
+__subdf3
+__adddf3
+inet_ntop
+strcpy
+memcmp
+strcmp
+pname
+strrchr
+srand
+conf_file
+prog_opt
+getopt_long
+optarg
+atoi
+set_debuglevel
+strdup
+version
+usage
+chroot
+perror
+chdir
+open_icmpv6_socket
+sock
+check_conffile_perm
+get_debuglevel
+check_ip6_forwarding
+readin_config
+privsep_init
+drop_root_privileges
+atol
+kill
+daemon
+sigemptyset
+sigaddset
+sigprocmask
+sigismember
+sighup_handler
+signal
+sigterm_handler
+sigint_handler
+getpid
+strlen
+config_interface
+kickoff_adverts
+recv_rs_ra
+IfaceList
+process
+sigterm_received
+sigint_received
+stop_adverts
+sighup_received
+reload_config
+unlink
+send_ra_forall
+rand_between
+__gtdf2
+set_timer
+set_interface_linkmtu
+set_interface_curhlim
+set_interface_reachtime
+set_interface_retranstimer
+timer_handler
+init_timer
+log_reopen
+clear_timer
+free
+getpwnam
+initgroups
+setgid
+setuid
+stat
+strncmp
+fscanf
+sysctl
+yyin
+yyparse
+usage_str
+gettimeofday
+setitimer
+check_time_diff
+send_ra
+check_device
+check_allrouters_membership
+htons
+memcpy
+htonl
+strchr
+__ltdf2
+__fixunsdfsi
+sendmsg
+print_addr
+mdelay
+ntohl
+check_rdnss_presence
+check_dnssl_presence
+strcat
+strncat
+__ledf2
+strncpy
+ioctl
+sscanf
+fgets
+setup_allrouters_membership
+access
+privsep_enabled
+privsep_interface_linkmtu
+set_interface_var
+privsep_interface_curhlim
+privsep_interface_reachtime
+privsep_interface_retranstimer
+inet_ntoa
+readn
+_exit
+pipe
+fork
+dup2
+privsep_read_loop
+writen
+yynerrs
+yychar
+yylex
+yylval
+setup_deviceinfo
+check_iface
+setup_linklocal_addr
+iface_init_defaults
+calloc
+prefix
+num_lines
+get_v4addr
+prefix_init_defaults
+route
+route_init_defaults
+rdnss
+rdnss_init_defaults
+dnssl
+dnssl_init_defaults
+realloc
+yytext
+stdin
+yyout
+stdout
+yy_create_buffer
+yy_load_buffer_state
+yyleng
+inet_pton
+strtoul
+atof
+fwrite
+yywrap
+yyrestart
+__fgetc_unlocked
+fgetc
+ferror
+fread
+yy_init_buffer
+yy_flush_buffer
+fileno
+isatty
+yy_switch_to_buffer
+yy_scan_bytes
+yy_scan_buffer
+libc.so.0
+_DYNAMIC_LINKING
+__RLD_MAP
+_GLOBAL_OFFSET_TABLE_
+libgcc_s_5281.so.1
+_ftext
+_fdata
+_edata
+__bss_start
+_fbss
+_end
+GCC_3.0
+GLIBC_2.0
+$'9"
+$!p4
+$Bp4
+$!p@
+$Bp@
+$Bp@
+$!p@
+@ !$
+$Bp@
+$Bp@
+$!p@
+$BpD
+$'9%
+$'9%
+$Bp@
+$Bp@
+$!p@
+$!pD
+$BpD
+@ !$
+$BpP
+$!pT
+$!pP
+$BpP
+$BpP
+$BpT
+@(!$
+@ !$
+@ !$
+@ !$
+4BB@
+@ !$
+4BB?
+@ !$
+$'9[
+$'9[
+$'9[
+4BB@
+@0!$
+@0!$
+@ !$
+$'9g|
+@ !$
+$'9g|
+@(!$
+@(!$
+@(!$
+$'9g|
+$'9g|
+@ !$
+$'9g|
+@ !$
+@ !$
+$'9g|
+$'9g|
+`(!$
+@ !$
+$'9g|
+`(!$
+@ !$
+$'9g|
+@(!$
+$'9}
+($B"
+($c"
+($B"
+($c"
+($B"
+($c"
+($B"
+($c%
+($B%
+($c%
+($B%
+($c%
+($B%
+(B#)
+`(!$
+($B'
+@ !$
+@ !$
+@ !$
+b4BM
+b4BM
+b4BM
+b4BM
+($B6
+($B2H
+($B/`
+($B3
+($B3L
+($B1D
+($B0
+($B;X
+`(!$
+`(!$
+($B0
+($B2
+($B3
+($B3L
+($B1
+($B2H
+($B3
+($B3L
+($B5P
+($B5P
+$Br(
+$!r(
+$Br,
+$!r,
+$Br 
+$!r 
+$Br$
+$Bw0
+($Be
+($B<
+$!w<
+$!w@
+($Bi
+,$B-t
+($Bi
+($Bi
+($Bi
+($B<
+$Bw@
+$cw<
+($B<
+$!w0
+$!r$
+ $Bl$
+$Bw0
+$Bw@
+$cw<
+$Bw0
+$!r$
+$!w0
+$!r$
+$Bv 
+`(!$
+$!v0
+$Bv0
+$Bw0
+$Br 
+$Br 
+$!w4
+$cr 
+$cr 
+$Br 
+$Bw4
+$Br$
+$!r$
+$Br$
+$!r$
+$Br$
+$!w8
+$!r$
+$Br,
+$Bw8
+$!r$
+$Br$
+$Br 
+$Bw4
+$!r$
+$cr$
+$Br 
+$Br 
+$Bw4
+$Br$
+$Br 
+$cr$
+$cr$
+$Br 
+$Br 
+$!w4
+$Br 
+$Br 
+$cr$
+$!r$
+$Br 
+$Br 
+$Br 
+$Br 
+$!w4
+$Br 
+@ !$
+$!w4
+$Bw4
+$cr 
+$Bw4
+$Bw4
+$cr 
+$Bw4
+$!w4
+$Br 
+$Bw4
+$Br 
+$Bw4
+$Br 
+$Br,
+$Br$
+($Be
+($B<
+$!w<
+$!w@
+($Bi
+,$B-t
+($Bi
+($Bi
+$Br$
+($B<
+$!w<
+$!w@
+($Bi
+,$B-t
+($Bi
+($Bi
+$Br$
+$Bw0
+$Br 
+$Bw4
+$Br 
+$cr 
+$Br 
+$Br 
+$cr 
+$Br 
+$!w4
+$Br 
+$!w0
+$!r$
+$cr$
+$Bw0
+$Br$
+$Br 
+$Bw4
+$Br$
+$Br$
+$cr$
+$Br$
+$!r$
+$Bw8
+$!r$
+$Br$
+$Br$
+$Br$
+$!r$
+$!w0
+$Br 
+$!r 
+$cr 
+$Br 
+$cr$
+$Bw0
+$cr 
+$Br$
+$cr 
+$Bw4
+$!r 
+$!w8
+$Br 
+$!w4
+$Br 
+$!r$
+$Br 
+$Br$
+$!w0
+$Br 
+$!r 
+$Br 
+$'9"0
+ %s: no logfile specified
+%s: can't open %s: %s
+%s: unknown logging method: %d
+28%s
+%b %d %H:%M:%S
+[%s] %s: %s
+can't create socket(AF_INET6): %s
+setsockopt(IPV6_RECVPKTINFO): %s
+setsockopt(IPV6_CHECKSUM): %s
+setsockopt(IPV6_UNICAST_HOPS): %s
+setsockopt(IPV6_MULTICAST_HOPS): %s
+setsockopt(IPV6_RECVHOPLIMIT): %s
+setsockopt(ICMPV6_FILTER): %s
+recv_rs_ra: malloc: %s
+select: %s
+recvmsg: %s
+received a bogus IPV6_HOPLIMIT from the kernel! len=%d, data=%d
+received a bogus IPV6_PKTINFO from the kernel! len=%d, index=%d
+recvmsg len=%d
+print_addr: inet_ntop: %s
+[invalid address]
+debug
+configtest
+config
+pidfile
+logfile
+logmethod
+facility
+username
+chrootdir
+version
+help
+singleprocess
+/var/log/radvd.log
+/mnt/slave/workspace/soho5_1042/rtl819x/users/ipv6_tools/radvd-1.7/install/etc/radvd.conf
+/var/run/radvd.pid
+d:C:l:m:p:t:u:vhcs
+syslog
+stderr_syslog
+stderr
+none
+%s: unknown log method: %s
+%s: option %s: parameter expected
+Chroot as root is not safe, exiting
+chroot
+chdir
+log_open
+version %s started
+open_icmpv6_socket
+Exiting, permissions on conf_file invalid.
+Insecure file permissions, but continuing anyway
+IPv6 forwarding seems to be disabled, exiting
+IPv6 forwarding seems to be disabled, but continuing anyway.
+Exiting, failed to read config file.
+Syntax OK
+Initializing privsep
+Failed to initialize privsep.
+drop_root_privileges
+cannot read radvd pid file, terminating: %s
+radvd already running, terminating.
+cannot create radvd pid file, terminating: %s
+daemon
+SIGALRM has been unblocked. Your startup environment might be wrong.
+Exiting, sigterm or sigint received.
+M`timer_handler called for %s
+attempting to reread config file
+reopening log
+log_reopen
+disabling timer for %s
+freeing interface %s
+readin_config failed.
+resuming normal operation
+sighup_handler called
+sigterm_handler called
+sigint_handler called
+Couldn't change to '%.32s' uid=%d gid=%d
+Couldn't find user '%.32s'
+can't open %s: %s
+root
+Insecure file permissions (writable by others): %s
+Insecure file permissions (writable by self/group): %s
+/proc/sys/net/ipv6/conf/all/forwarding
+Correct IPv6 forwarding procfs entry not found, perhaps the procfs is disabled, or the kernel interface has changed?
+Correct IPv6 forwarding sysctl branch not found, perhaps the kernel interface has changed?
+IPv6 forwarding setting is: %u, should be 1
+error parsing or activating the config file: %s
+Version: %s
+Compiled in settings:
+  default config file		"%s"
+  default pidfile		"%s"
+  default logfile		"%s"
+  default syslog facililty	%d
+Please send bug reports or suggestions to %s.
+Pekka Savola <pekkas@netcore.fi>
+usage: %s %s
+calling alarm: %ld secs, %ld usecs
+schedule_timer setitimer for %ld.%ld failed: %s
+next timer has already expired, queueing signal
+setting timer: %.2f secs
+setting timer: %ld secs %ld usecs
+calling schedule_timer from set_timer context
+calling schedule_timer from clear_timer context
+calling schedule_timer from alarm_handler context
+check_time_diff, difference: %ld sec + %ld usec
+alarm_handler clock was probably off by %ld usec, allowing %u
+Sending RA to %s
+Not answering request from %s, not configured
+Too many prefixes or routes. Exiting.
+interface %s does not exist, ignoring the interface
+interface %s seems to have come back up, trying to reinitialize
+problem checking all-routers membership on %s
+sending RA on %s
+sendmsg: %s
+received packet with no pkt_info!
+received icmpv6 packet with invalid length: %d
+icmpv6 filter failed
+received icmpv6 RA packet with invalid length: %d
+received icmpv6 RA packet with non-linklocal source address
+received icmpv6 RS packet with invalid length: %d
+received icmpv6 RS/RA packet with invalid code: %d
+if_index %u
+received packet from unknown interface: %d
+received RS or RA with invalid hoplimit %d from %s
+AdvSendAdvert is off for %s
+found Interface: %s
+trailing garbage in RS
+zero length option in RS
+option length greater than total length in RS
+received icmpv6 RS packet with unspecified source address and there is a lladdr option
+random mdelay for %s: %.2f
+our AdvCurHopLimit on %s doesn't agree with %s
+our AdvManagedFlag on %s doesn't agree with %s
+our AdvOtherConfigFlag on %s doesn't agree with %s
+our AdvReachableTime on %s doesn't agree with %s
+our AdvRetransTimer on %s doesn't agree with %s
+trailing garbage in RA on %s from %s
+zero length option in RA on %s from %s
+option length greater than total length in RA on %s from %s
+our AdvLinkMTU on %s doesn't agree with %s
+our AdvValidLifetime on %s for %s doesn't agree with %s
+our AdvPreferredLifetime on %s for %s doesn't agree with %s
+invalid option %d in RA on %s from %s
+RDNSS address %s received on %s from %s is not advertised by us
+invalid len %i in RDNSS option on %s from %s
+DNSSL suffix %s received on %s from %s is not advertised by us
+oversized suffix in DNSSL option on %s from %s
+unknown option %d in RA on %s from %s
+using Mobile IPv6 extensions
+MinRtrAdvInterval for %s (%.2f) must be at least %.2f but no more than 3/4 of MaxRtrAdvInterval (%.2f)
+MaxRtrAdvInterval for %s (%.2f) must be between %.2f and %d
+MinDelayBetweenRAs for %s (%.2f) must be at least %.2f
+AdvLinkMTU for %s (%u) must be zero or between %u and %u
+AdvReachableTime for %s (%u) must not be greater than %u
+AdvDefaultLifetime for %s (%u) must be zero or between %u and %u
+HomeAgentLifetime for %s (%u) must be between %u and %u
+AdvHomeAgentFlag for %s must be set with HomeAgentInfo
+AdvHomeAgentInfo for %s must be set with AdvMobRtrSupportFlag
+invalid prefix length (%u) for %s
+AdvValidLifetime for %s (%u) must be greater than AdvPreferredLifetime for
+invalid route prefix length (%u) for %s
+ioctl(SIOCGIFMTU) failed for %s: %s
+mtu for %s is %d
+ioctl(SIOCGIFHWADDR) failed for %s: %s
+hardware type for %s is %d
+link layer token length for %s is %d
+prefix length for %s is %d
+address length %d too big for %s
+WARNING, MAC address on %s is all zero!
+prefix length should be %d for %s
+/proc/net/if_inet6
+can't open %s: %s
+%32s %x %02x %02x %02x %15s
+%02x
+no linklocal address configured for %s
+can't join ipv6-allrouters on %s
+/proc/net/igmp6
+%u %*s %32[0-9A-Fa-f]
+ff020000000000000000000000000002
+resetting ipv6-allrouters membership on %s
+failed to set %s (%u) for %s: %s
+/proc/sys/net/ipv6/conf/%s/mtu
+LinkMTU
+/proc/sys/net/ipv6/conf/%s/hop_limit
+CurHopLimit
+/proc/sys/net/ipv6/neigh/%s/base_reachable_time_ms
+/proc/sys/net/ipv6/neigh/%s/base_reachable_time
+BaseReachableTimer
+/proc/sys/net/ipv6/neigh/%s/retrans_time_ms
+/proc/sys/net/ipv6/neigh/%s/retrans_time
+RetransTimer
+ioctl(SIOCGIFFLAGS) failed for %s: %s
+interface %s is not UP
+interface %s is not RUNNING
+interface %s does not support multicast
+   do you need to add the UnicastOnly flag?
+interface %s does not support broadcast
+create socket for IPv4 ioctl failed for %s: %s
+ioctl(SIOCGIFADDR) failed for %s: %s
+IPv4 address for %s is %s
+Exiting, privsep_read_loop had readn error: %s
+(privsep) %s: LinkMTU (%u) is not within the defined bounds, ignoring
+/proc/sys/net/ipv6/conf/%s/mtu
+LinkMTU
+(privsep) %s: CurHopLimit (%u) is not within the defined bounds, ignoring
+/proc/sys/net/ipv6/conf/%s/hop_limit
+CurHopLimit
+(privsep) %s: BaseReachableTimer (%u) is not within the defined bounds, ignoring
+/proc/sys/net/ipv6/neigh/%s/base_reachable_time_ms
+BaseReachableTimer (ms)
+/proc/sys/net/ipv6/neigh/%s/base_reachable_time
+BaseReachableTimer
+(privsep) %s: RetransTimer (%u) is not within the defined bounds, ignoring
+/proc/sys/net/ipv6/neigh/%s/retrans_time_ms
+RetransTimer (ms)
+/proc/sys/net/ipv6/neigh/%s/retrans_time
+RetransTimer
+Couldn't create privsep pipe.
+Couldn't fork for privsep.
+/dev/null
+Exiting, privsep_read_loop is complete.
+ !"#$%&'()*+,-./01
+67789:;;<<<<<<========================>??@ABBCCDDDDDDEFGGHHIIJKKLMNNOOPPPQRRSTUUVVWXX
+AB@MNL
+,8CO
+" !%#$&
+PR+7(
+Q)'013425*<=6GHI>SJ
+$/23789:;<=>?@AEFD
+(*+,-.456BCHIJKLMNOPQRST
+cdef
+ghijk
+opqr
+vwxyz?8@{9:ABCDEFGQH]SIJKLMNOPTUV[
+_`abc
+ijklmnopqrstu
+789	:
+#$%'()0;<=>@AEFJMQT
+KL	RS2
+3;222255LS
+?4444444444444444444444444
+ !"&BCD*+GHI,-.NOP/UVW
+X3PX3W444444444444444444
+Deleting
+duplicate interface definition for %s
+interface %s did not exist, ignoring the interface
+interface %s does not exist
+interface definition for %s is ok
+malloc failed: %s
+calloc failed: %s
+AdvValidLifeTime must be greater than AdvPreferredLifetime in %s, line %d
+interface %s has no IPv4 addresses, disabling 6to4 prefix
+invalid prefix length in %s, line %d
+invalid all-zeros prefix in %s, line %d
+prefix automatically selected, AdvRouterAddr always enabled, ignoring config line %d
+automatically selecting the prefix and Base6to4Interface are mutually exclusive
+using interface %s for 6to4
+invalid route prefix length in %s, line %d
+Too many addresses in RDNSS section
+No address specified in RDNSS section
+Ignoring deprecated RDNSS preference.
+Ignoring deprecated RDNSS open flag.
+AdvRDNSSLifetime must be at least MaxRtrAdvInterval
+Warning: AdvRDNSSLifetime <= 2*MaxRtrAdvInterval would allow stale DNS servers to be deleted faster
+Invalid domain suffix specified
+realloc failed: %s
+No domain specified in DNSSL section
+AdvDNSSLLifetime must be at least MaxRtrAdvInterval
+Warning: AdvDNSSLLifetime <= 2*MaxRtrAdvInterval would allow stale DNS suffixes to be deleted faster
+syntax error
+Error: discarding
+Error: popping
+memory exhausted
+Cleanup: discarding lookahead
+Cleanup: popping
+l%s in %s, line %d: %s
+	+	+	+	+	/	,
+	<	<
+	>	A
+	M	Q	Q
+	`	`	c	a	`	c
+	p	p	p	s	q
+!	!	2
+$	_	e
+	'	'	'
+	(	(	(	(	(	(
+	*	*	*	8	8	8	9	9	9
+2	9	9	9	:
+*	;	;	;	I	I	I
+4	J	J	J	J	J	J	K
+;	L	L	L
+6	Z	Z	Z	[	[	[	[	[	[	k	k	k
+g	]	]	]	l	l	l	l	l	l
+	n	n	n	|	|	|	}	}	}
+:	}	}	}	~
+							
+)												
+)													
+	 	 	 	!
+)	 	 	 	 	 	 
+)	 	 	 	 	 	 	"	"	"
+)	"	"	"	"	"	"
+)	"	"	"	"	"	"	#	#	#
+)	#	#	#	#	#	#
+)	#	#	#	#	#	#	$	$	$
+)	$	$	$	$	$	$
+)	$	$	$	$	$	$
+ 	+	+	+	,
+)	+	+	+	+	+	+
+)	+	+	+	+	+	+	-	-	-	.
+)	-	-	-	-	-	-
+)	-	-	-	-	-	-	/	/	/
+)	/	/	/	/	/	/
+)	/	/	/	/	/	/	0	0	0
+)	0	0	0	0	0	0
+)	0	0	0	0	0	0	1	1	1	2
+)	1	1	1	1	1	1
+)	1	1	1	1	1	1	3	3	3
+)	3	3	3	3	3	3
+)	3	3	3	3	3	3	4	4	4
+)	4	4	4	4	4	4
+)	4	4	4	4	4	4	5	5	5
+)	5	5	5	5	5	5
+)	5	5	5	5	5	5	<	<	<	=
+)	<	<	<	<	<	<
+)	<	<	<	<	<	<	>	>	>
+)	>	>	>	>	>	>
+)	>	>	>	>	>	>	?	?	?
+)	?	?	?	?	?	?
+)	?	?	?	?	?	?	@	@	@	A
+)	@	@	@	@	@	@
+)	@	@	@	@	@	@	B	B	B	C
+)	B	B	B	B	B	B
+)	B	B	B	B	B	B	D	D	D
+)	D	D	D	D	D	D
+)	D	D	D	D	D	D	E	E	E
+)	E	E	E	E	E	E
+)	E	E	E	E	E	E	F	F	F
+)	F	F	F	F	F	F
+)	F	F	F	F	F	F	M	M	M	N
+)	M	M	M	M	M	M
+)	M	M	M	M	M	M	O	O	O	P
+)	O	O	O	O	O	O
+)	O	O	O	O	O	O	Q	Q	Q	R
+)	Q	Q	Q	Q	Q	Q
+)	Q	Q	Q	Q	Q	Q	S	S	S
+)	S	S	S	S	S	S
+)	S	S	S	S	S	S	T	T	T
+)	T	T	T	T	T	T
+)	T	T	T	T	T	T	U	U	U
+)	U	U	U	U	U	U
+)	U	U	U	U	U	U	V	V	V
+)	V	V	V	V	V	V
+)	V	V	V	V	V	V	W	W	W
+)	W	W	W	W	W	W
+)	W	W	W	W	W	W
+ 	^	^	^	_
+)	^	^	^	^	^	^
+)	^	^	^	^	^	^	`	`	`	a
+)	`	`	`	`	`	`
+)	`	`	`	`	`	`	b	b	b
+)	b	b	b	b	b	b
+)	b	b	b	b	b	b	c	c	c
+)	c	c	c	c	c	c
+)	c	c	c	c	c	c	d	d	d	e
+)	d	d	d	d	d	d
+)	d	d	d	d	d	d	f	f	f
+)	f	f	f	f	f	f
+)	f	f	f	f	f	f	g	g	g
+)	g	g	g	g	g	g
+)	g	g	g	g	g	g	h	h	h
+)	h	h	h	h	h	h
+)	h	h	h	h	h	h	p	p	p	q
+)	p	p	p	p	p	p
+)	p	p	p	p	p	p	r	r	r	o
+)	r	r	r	r	r	r
+)	r	r	r	r	r	r	s	s	s
+)	s	s	s	s	s	s
+)	s	s	s	s	s	s	t	t	t
+)	t	t	t	t	t	t
+)	t	t	t	t	t	t	u	u	u	v
+)	u	u	u	u	u	u
+)	u	u	u	u	u	u	w	w	w
+)	w	w	w	w	w	w
+)	w	w	w	w	w	w	x	x	x
+)	x	x	x	x	x	x
+)	x	x	x	x	x	x	y	y	y
+)	y	y	y	y	y	y
+)	y	y	y	y	y	y	
+	%	%	%	&	&	&	&	6	6	6	7	7	7	7	G	G	G	H	H	H	H	X	X	X	Y	Y	Y	Y	i	i	i	j	j	j	j	z	z	z	{	{	{	{	
+	S	W
+	w	x
+	'	'	'	(	(	(
+	)	)	)	*
+	*	*	*	8	8	8
+	9	9	9	:	:	:	;
+-	;	;	;
+	I	I	I	J	J	J	K	K	K	Z	Z	Z
+V	L	L	L	[	[	[	\	\	\
+	]	]	]	k	k	k	l	l	l
+	m	m	m	n
+	n	n	n	|	|	|
+	}	}	}	~	~	~	
+	&	&	&	7	7	7
+	&	&
+	7	7
+	 	 	 
+	 	 	 	 	 	 
+	 	 	 	 	 	 	$	$	$
+	$	$	$	$	$	$
+	$	$	$	$	$	$	+	+	+	+
+	+	+	+	+	+	+
+	+	+	+	+	+	+	,	,	,
+	,	,	,	,	,	,
+	,	,	,	,	,	,	-	-	-
+	-	-	-	-	-	-
+	-	-	-	-	-	-	.	.	.	.
+	.	.	.	.	.	.
+	.	.	.	.	.	.	/	/	/	/
+	/	/	/	/	/	/
+	/	/	/	/	/	/	0	0	0
+	0	0	0	0	0	0
+	0	0	0	0	0	0	1	1	1
+	1	1	1	1	1	1
+	1	1	1	1	1	1	4	4	4
+	4	4	4	4	4	4
+	4	4	4	4	4	4	<	<	<	<
+	<	<	<	<	<	<
+	<	<	<	<	<	<	=	=	=	=
+	=	=	=	=	=	=
+	=	=	=	=	=	=	>	>	>	>
+	>	>	>	>	>	>
+	>	>	>	>	>	>	?	?	?
+	?	?	?	?	?	?
+	?	?	?	?	?	?	@	@	@
+	@	@	@	@	@	@
+	@	@	@	@	@	@	A	A	A
+	A	A	A	A	A	A
+	A	A	A	A	A	A	B	B	B
+	B	B	B	B	B	B
+	B	B	B	B	B	B	E	E	E
+	E	E	E	E	E	E
+	E	E	E	E	E	E	H	H	H
+	H	Y	Y	Y	j	j	j
+	H	H	M	M	M	M
+	M	M	M	M	M	M	Y	Y
+	j	j
+	M	M	M	M	M	M	N	N	N	N
+	N	N	N	N	N	N
+	N	N	N	N	N	N	O	O	O
+	O	O	O	O	O	O
+	O	O	O	O	O	O	P	P	P
+	P	P	P	P	P	P
+	P	P	P	P	P	P	Q	Q	Q	Q
+	Q	Q	Q	Q	Q	Q
+	Q	Q	Q	Q	Q	Q	T	T	T
+	T	T	T	T	T	T
+	T	T	T	T	T	T	U	U	U
+	U	U	U	U	U	U
+	U	U	U	U	U	U	V	V	V
+	V	V	V	V	V	V
+	V	V	V	V	V	V	_	_	_	_
+	_	_	_	_	_	_
+	_	_	_	_	_	_	`	`	`	`
+	`	`	`	`	`	`
+	`	`	`	`	`	`	a	a	a
+	a	a	a	a	a	a
+	a	a	a	a	a	a	b	b	b
+	b	b	b	b	b	b
+	b	b	b	b	b	b	c	c	c	c
+	c	c	c	c	c	c
+	c	c	c	c	c	c	d	d	d
+	d	d	d	d	d	d
+	d	d	d	d	d	d	f	f	f
+	f	f	f	f	f	f
+	f	f	f	f	f	f	g	g	g
+	g	g	g	g	g	g
+	g	g	g	g	g	g	o	o	o	o
+	o	o	o	o	o	o
+	o	o	o	o	o	o	p	p	p	p
+	p	p	p	p	p	p
+	p	p	p	p	p	p	q	q	q
+	q	q	q	q	q	q
+	q	q	q	q	q	q	r	r	r
+	r	r	r	r	r	r
+	r	r	r	r	r	r	s	s	s	s
+	s	s	s	s	s	s
+	s	s	s	s	s	s	t	t	t
+	t	t	t	t	t	t
+	t	t	t	t	t	t	u	u	u
+	u	u	u	u	u	u
+	u	u	u	u	u	u	y	y	y
+	y	y	y	y	y	y
+	y	y	y	y	y	y	{	{	{
+	{	{	
+invalid address in %s, line %d
+fatal flex scanner internal error--no action found
+tfatal flex scanner internal error--end of buffer missed
+fatal error - scanner input buffer overflow
+input in flex scanner failed
+flex scanner push-back overflow
+out of dynamic memory in yy_create_buffer()
+out of dynamic memory in yy_scan_buffer()
+out of dynamic memory in yy_scan_bytes()
+bad buffer in yy_scan_bytes()
+[-hsvc] [-d level] [-C config_file] [-m log_method] [-l log_file]
+	[-f facility] [-p pid_file] [-u username] [-t chrootdir]

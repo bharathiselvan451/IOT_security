@@ -1,0 +1,13 @@
+[*] Searching (args for grep: -i) for exec:.
+[*] Grepit state info - comment: Possible command injection when executing bash scripts.
+[*] Grepit state info - Filename 5_modsecurity_exec.txt
+[*] Grepit state info - Example: exec:
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: -i
+[*] Grepit state info - Search regex: exec:
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m951[m[36m-[m	async/sync:	Writes are asynchronous / synchronous.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m952[m[36m-[m	atime/noatime:	Enable / disable updates to inode access times.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m953[m[36m-[m	dev/nodev:	Allow use of special device files / disallow them.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m:[m[32m954[m[36m:[m	exec/no[01;31mexec:[m	Allow use of executable files / disallow them.
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m955[m[36m-[m	suid/nosuid:	Allow set-user-id-root programs / disallow them.

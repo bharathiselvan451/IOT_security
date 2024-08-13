@@ -1,0 +1,131 @@
+[*] Binary protection state of lld2d
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of lld2d
+
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/lld2d @ 0x406614 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) sym.die ()                       | void die () {
+    0x00406614 lui gp, 6                     |     
+    0x00406618 addiu gp, gp, -0x7aa4         |     
+    0x0040661c addu gp, gp, t9               |     gp += t9;
+    0x00406620 addiu sp, sp, -0x28           |     
+    0x00406624 sw ra, 0x24(sp)               |     *(var_24h) = ra;
+    0x00406628 sw fp, 0x20(sp)               |     *(var_20h) = fp;
+    0x0040662c move fp, sp                   |     fp = sp;
+    0x00406630 sw gp, 0x10(sp)               |     *(var_10h) = gp;
+    0x00406634 sw a1, 0x2c(fp)               |     *(arg_2ch) = a1;
+    0x00406638 sw a2, 0x30(fp)               |     *(arg_30h) = a2;
+    0x0040663c sw a3, 0x34(fp)               |     *(arg_34h) = a3;
+    0x00406640 sw a0, 0x28(fp)               |     *(arg_28h) = a0;
+    0x00406644 addiu v0, fp, 0x2c            |     v0 = fp + 0x2c;
+    0x00406648 sw v0, 0x18(fp)               |     *(var_18h) = v0;
+    0x0040664c lw v0, -0x7fe8(gp)            |     v0 = *((gp - 8186));
+    0x00406650 addiu v0, v0, 0x7080          |     v0 += 0x7080;
+    0x00406654 lw v0, (v0)                   |     v0 = *(v0);
+                                             |     if (v0 != 0) {
+    0x00406658 beqz v0, 0x406680             |         
+    0x0040665c nop                           |         
+    0x00406660 addiu a0, zero, 3             |         a0 = 3;
+    0x00406664 lw a1, 0x28(fp)               |         a1 = *(arg_28h);
+    0x00406668 lw a2, 0x18(fp)               |         a2 = *(var_18h);
+    0x0040666c lw t9, -0x7f50(gp)            |         t9 = sym.imp.vsyslog;
+    0x00406670 jalr t9                       |         t9 ();
+    0x00406674 nop                           |         
+    0x00406678 lw gp, 0x10(fp)               |         gp = *(var_10h);
+    0x0040667c b 0x4066c8                    |         
+                                             |     } else {
+    0x00406680 lw v0, -0x7ee8(gp)            |         v0 = *((gp - 8122));
+    0x00406684 lw v1, -0x7d74(gp)            |         v1 = *(gp);
+    0x00406688 lw a0, (v0)                   |         a0 = *(v0);
+    0x0040668c lw a1, -0x7fe0(gp)            |         a1 = *((gp - 8184));
+                                             |         /* esilref: '&s: ERROR: ' */
+    0x00406690 addiu a1, a1, 0x3540          |         a1 += 0x3540;
+    0x00406694 lw a2, (v1)                   |         a2 = *(v1);
+[31m    0x00406698 lw t9, -0x7d9c(gp)            |         t9 = sym.imp.fprintf;[0m
+    0x0040669c jalr t9                       |         t9 ();
+    0x004066a0 nop                           |         
+    0x004066a4 lw gp, 0x10(fp)               |         gp = *(var_10h);
+    0x004066a8 lw v0, -0x7ee8(gp)            |         v0 = *((gp - 8122));
+    0x004066ac lw a0, (v0)                   |         a0 = *(v0);
+    0x004066b0 lw a1, 0x28(fp)               |         a1 = *(arg_28h);
+    0x004066b4 lw a2, 0x18(fp)               |         a2 = *(var_18h);
+[31m    0x004066b8 lw t9, -0x7fb4(gp)            |         t9 = sym.imp.vfprintf;[0m
+    0x004066bc jalr t9                       |         t9 ();
+    0x004066c0 nop                           |         
+    0x004066c4 lw gp, 0x10(fp)               |         gp = *(var_10h);
+                                             |     }
+    0x004066c8 addiu a0, zero, 1             |     a0 = 1;
+    0x004066cc lw t9, -0x7f38(gp)            |     t9 = sym.imp.exit;
+    0x004066d0 jalr t9                       |     t9 ();
+    0x004066d4 nop                           |     
+    0x004066d8 lw gp, 0x10(fp)               |     gp = *(var_10h);
+                                             | }
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/lld2d @ 0x4066dc */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) sym.warn ()                      | void warn () {
+    0x004066dc lui gp, 6                     |     
+    0x004066e0 addiu gp, gp, -0x7b6c         |     
+    0x004066e4 addu gp, gp, t9               |     gp += t9;
+    0x004066e8 addiu sp, sp, -0x28           |     
+    0x004066ec sw ra, 0x24(sp)               |     *(var_24h) = ra;
+    0x004066f0 sw fp, 0x20(sp)               |     *(var_20h) = fp;
+    0x004066f4 move fp, sp                   |     fp = sp;
+    0x004066f8 sw gp, 0x10(sp)               |     *(var_10h) = gp;
+    0x004066fc sw a1, 0x2c(fp)               |     *(arg_2ch) = a1;
+    0x00406700 sw a2, 0x30(fp)               |     *(arg_30h) = a2;
+    0x00406704 sw a3, 0x34(fp)               |     *(arg_34h) = a3;
+    0x00406708 sw a0, 0x28(fp)               |     *(arg_28h) = a0;
+    0x0040670c addiu v0, fp, 0x2c            |     v0 = fp + 0x2c;
+    0x00406710 sw v0, 0x18(fp)               |     *(var_18h) = v0;
+    0x00406714 lw v0, -0x7fe8(gp)            |     v0 = *((gp - 8186));
+    0x00406718 addiu v0, v0, 0x7080          |     v0 += 0x7080;
+    0x0040671c lw v0, (v0)                   |     v0 = *(v0);
+                                             |     if (v0 != 0) {
+    0x00406720 beqz v0, 0x406748             |         
+    0x00406724 nop                           |         
+    0x00406728 addiu a0, zero, 4             |         a0 = 4;
+    0x0040672c lw a1, 0x28(fp)               |         a1 = *(arg_28h);
+    0x00406730 lw a2, 0x18(fp)               |         a2 = *(var_18h);
+    0x00406734 lw t9, -0x7f50(gp)            |         t9 = sym.imp.vsyslog;
+    0x00406738 jalr t9                       |         t9 ();
+    0x0040673c nop                           |         
+    0x00406740 lw gp, 0x10(fp)               |         gp = *(var_10h);
+    0x00406744 b 0x406790                    |         
+                                             |     } else {
+    0x00406748 lw v0, -0x7ee8(gp)            |         v0 = *((gp - 8122));
+    0x0040674c lw v1, -0x7d74(gp)            |         v1 = *(gp);
+    0x00406750 lw a0, (v0)                   |         a0 = *(v0);
+    0x00406754 lw a1, -0x7fe0(gp)            |         a1 = *((gp - 8184));
+                                             |         /* esilref: '&s: warning: ' */
+    0x00406758 addiu a1, a1, 0x354c          |         a1 += 0x354c;
+    0x0040675c lw a2, (v1)                   |         a2 = *(v1);
+[31m    0x00406760 lw t9, -0x7d9c(gp)            |         t9 = sym.imp.fprintf;[0m
+    0x00406764 jalr t9                       |         t9 ();
+    0x00406768 nop                           |         
+    0x0040676c lw gp, 0x10(fp)               |         gp = *(var_10h);
+    0x00406770 lw v0, -0x7ee8(gp)            |         v0 = *((gp - 8122));
+    0x00406774 lw a0, (v0)                   |         a0 = *(v0);
+    0x00406778 lw a1, 0x28(fp)               |         a1 = *(arg_28h);
+    0x0040677c lw a2, 0x18(fp)               |         a2 = *(var_18h);
+[31m    0x00406780 lw t9, -0x7fb4(gp)            |         t9 = sym.imp.vfprintf;[0m
+    0x00406784 jalr t9                       |         t9 ();
+    0x00406788 nop                           |         
+    0x0040678c lw gp, 0x10(fp)               |         gp = *(var_10h);
+                                             |     }
+    0x00406790 move sp, fp                   |     
+    0x00406794 lw ra, 0x24(sp)               |     ra = *(var_24h);
+    0x00406798 lw fp, 0x20(sp)               |     fp = *(var_20h);
+    0x0040679c addiu sp, sp, 0x28            |     
+    0x004067a0 jr ra                         |     return v0;
+                                             | }
+
+[*] Function fprintf used 4 times lld2d
+

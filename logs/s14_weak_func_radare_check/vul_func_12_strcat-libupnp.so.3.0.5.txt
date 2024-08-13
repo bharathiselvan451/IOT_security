@@ -1,0 +1,309 @@
+[*] Binary protection state of libupnp.so.3.0.5
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  PIE enabled  RPATH        No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of libupnp.so.3.0.5
+
+srl t4, t1, 0x18
+sb a2, (fp)
+sb t8, 1(fp)
+sb t7, 5(fp)
+sb v1, 6(fp)
+sb t0, 7(fp)
+sb t4, 8(fp)
+sb t5, 9(fp)
+sb t6, 0xa(fp)
+sb t1, 0xb(fp)
+sb t2, 0xf(fp)
+sb t3, 0x13(fp)
+sb s3, 2(fp)
+sb s4, 4(fp)
+sb s0, 0xc(fp)
+sb s1, 0xd(fp)
+sb s2, 0xe(fp)
+sb s5, 0x10(fp)
+sb s6, 0x11(fp)
+sb s7, 0x12(fp)
+sb ra, 0x14(fp)
+jalr t9
+addiu a2, v0, -0x888
+move a0, fp
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+addiu a1, sp, 0x1d0
+move a0, fp
+lw gp, 0x18(sp)
+lw a1, -0x7fe0(gp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+addiu a1, a1, -0x878
+lw a0, 0x30c(sp)
+lw gp, 0x18(sp)
+blez a0, 0x47fc
+addiu a0, sp, 0x1d0
+lw a1, -0x7fe0(gp)
+lw t9, -sym.imp.sprintf(gp)
+lw a2, 0x30c(sp)
+jalr t9
+addiu a1, a1, -0x860
+move a0, fp
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+addiu a1, sp, 0x1d0
+lw gp, 0x18(sp)
+lw t4, 0x34c(sp)
+beqz t4, 0x4834
+addiu a0, sp, 0x1d0
+lw a1, -0x7fe0(gp)
+lw t9, -sym.imp.sprintf(gp)
+move a2, t4
+jalr t9
+addiu a1, a1, -0x854
+move a0, fp
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+addiu a1, sp, 0x1d0
+lw gp, 0x18(sp)
+lw a1, -0x7fe0(gp)
+move a0, fp
+[31mlw t9, -sym.imp.strcat(gp)[0m
+addiu s6, sp, 0x120
+addiu a1, a1, -0x848
+jalr t9
+addiu s5, sp, 0x130
+move a0, s6
+lw gp, 0x18(sp)
+move a1, zero
+lw t9, -sym.imp.memset(gp)
+jalr t9
+addiu a2, zero, 0x10
+lw gp, 0x18(sp)
+lw v0, -0x7fe0(gp)
+lw t9, -sym.imp.inet_addr(gp)
+addiu a0, v0, -0x888
+addiu v0, zero, 2
+jalr t9
+sh v0, 0x120(sp)
+move v1, s5
+sw v0, 0x124(sp)
+addiu v0, zero, 0x76c
+--
+lw v0, 4(s5)
+bnez v0, 0xe4d8
+addiu v0, zero, -0x1f7
+b 0xe700
+sw v0, 0x34(sp)
+beqz s5, 0xe6dc
+nop
+lw v0, 4(s5)
+beqz v0, 0xe6dc
+addu a3, s7, s4
+lw v0, -0x7fe0(gp)
+lw a1, -0x7fe0(gp)
+move a2, s4
+addiu s0, v0, 0x478
+addiu a0, sp, 0x20
+lbu v1, 0x478(v0)
+addiu a1, a1, 0x47c
+lbu v0, 1(s0)
+move s1, a0
+lw t9, -sym.imp.sprintf(gp)
+sb v1, (a3)
+jalr t9
+sb v0, 1(a3)
+move a1, s0
+lw gp, 0x18(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+addiu a0, sp, 0x20
+lw gp, 0x18(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+addiu a0, sp, 0x20
+move a1, s1
+lw gp, 0x18(sp)
+move a2, v0
+lw t9, -sym.imp.memcpy(gp)
+jalr t9
+subu a0, s7, v0
+lw gp, 0x18(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s1
+lw gp, 0x18(sp)
+addu a2, s4, v0
+lw a0, 0x60(sp)
+subu a1, s7, v0
+--
+addiu t8, t8, 0x10
+lw v0, (t9)
+move s3, zero
+lw v1, 4(t9)
+lbu a2, 9(t9)
+srl a3, v0, 0x18
+lbu t3, 8(t9)
+srl a0, v0, 0x10
+srl a1, v0, 8
+srl t0, v1, 0x18
+srl t1, v1, 0x10
+srl t2, v1, 8
+sb a2, 9(t8)
+sb a3, (t8)
+sb a0, 1(t8)
+sb a1, 2(t8)
+sb v0, 3(t8)
+sb t0, 4(t8)
+sb t1, 5(t8)
+sb t2, 6(t8)
+sb v1, 7(t8)
+beqz s5, 0x146a4
+sb t3, 8(t8)
+lw a1, -0x7fe0(gp)
+move a0, s2
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+addiu a1, a1, 0xf7c
+lw gp, 0x18(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, s2
+sll v1, s3, 2
+lw gp, 0x18(sp)
+addu a1, v1, s6
+addu v1, v1, s7
+addu a0, s2, v0
+lw v1, (v1)
+addiu s3, s3, 1
+lw a3, (a1)
+lw a1, -0x7fe0(gp)
+move a2, v1
+lw t9, -sym.imp.sprintf(gp)
+sw v1, 0x10(sp)
+jalr t9
+addiu a1, a1, 0xf8c
+slt v0, s3, s4
+lw gp, 0x18(sp)
+bnez v0, 0x14638
+nop
+lw a1, -0x7fe0(gp)
+move a0, s2
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+addiu a1, a1, 0xfa8
+lw gp, 0x18(sp)
+lw t9, -sym.imp.ixmlCloneDOMString(gp)
+jalr t9
+move a0, s2
+move a0, s2
+lw gp, 0x18(sp)
+lw t9, -0x7c68(gp)
+jalr t9
+sw v0, (fp)
+move v0, zero
+lw gp, 0x18(sp)
+lw ra, 0x44(sp)
+lw fp, 0x40(sp)
+lw s7, 0x3c(sp)
+lw s6, 0x38(sp)
+lw s5, 0x34(sp)
+lw s4, 0x30(sp)
+lw s3, 0x2c(sp)
+--
+addiu v1, v1, 1
+lw s4, 0x160(sp)
+xori v0, v0, 0x2f
+jalr t9
+movz s4, v1, v0
+move a0, s4
+lw gp, 0x10(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+addu s0, s0, v0
+lw gp, 0x10(sp)
+addu s0, s0, v0
+lw t9, -sym.imp.malloc(gp)
+jalr t9
+addiu a0, s0, 1
+lw gp, 0x10(sp)
+beqz v0, 0x1ed24
+move s0, v0
+lw t9, -sym.imp.strcpy(gp)
+move a1, s2
+move a0, v0
+jalr t9
+move s1, zero
+move a0, s0
+lw gp, 0x10(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+move a1, s3
+move a1, s4
+lw gp, 0x10(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+move a0, s0
+lw gp, 0x10(sp)
+sw s0, 0x12c(sp)
+lw v0, -0x7fe0(gp)
+lw t9, -sym.imp.strlen(gp)
+addiu s3, v0, 0x1630
+jalr t9
+move a0, s3
+move a0, s6
+lw gp, 0x10(sp)
+lw s2, 0x12c(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move s0, v0
+move a0, s2
+lw gp, 0x10(sp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+addu s0, s0, v0
+addu s0, s0, v0
+sltiu s0, s0, 0xb4
+lw gp, 0x10(sp)
+bnez s0, 0x1eca0
+nop
+b 0x1ed24
+addiu s1, zero, -0x76
+lw t9, -sym.imp.strcpy(gp)
+lw a0, 0x168(sp)
+jalr t9
+move a1, s3
+lw gp, 0x10(sp)
+lw a0, 0x168(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+move a1, s6
+lw gp, 0x10(sp)
+lw a0, 0x168(sp)
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+move a1, s2
+lw gp, 0x10(sp)
+lw t9, -sym.imp.ixmlPrintDocument(gp)
+jalr t9
+move a0, fp
+lw gp, 0x10(sp)
+beqz v0, 0x1ed24
+move s7, v0
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+move a0, v0
+move a1, s7
+lw gp, 0x10(sp)
+lw a3, 0x164(sp)
+lw t9, -0x7d40(gp)
+lw a0, 0x12c(sp)
+jalr t9
+move a2, v0
+lw gp, 0x10(sp)
+
+[*] Function strcat used 12 times libupnp.so.3.0.5
+

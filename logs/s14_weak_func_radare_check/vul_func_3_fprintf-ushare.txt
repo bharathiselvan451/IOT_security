@@ -1,0 +1,116 @@
+[*] Binary protection state of ushare
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of ushare
+
+nop
+beqz a1, 0x409eac
+andi v0, a2, 0xff
+beqz v0, 0x409eb8
+sltiu a2, a0, 3
+beqz a3, 0x409ec8
+addiu a2, sp, 0x28
+xori t0, a0, 2
+addiu a3, zero, 0x1d
+lw t9, -sym.imp.vsyslog(gp)
+addiu a0, zero, 0x1b
+jalr t9
+movn a0, a3, t0
+lw gp, 0x10(sp)
+lw ra, 0x18(sp)
+jr ra
+addiu sp, sp, 0x20
+beqz a2, 0x409eac
+nop
+bnez a3, 0x409e90
+addiu a2, sp, 0x28
+addiu t1, zero, 2
+beq a0, t1, 0x409f04
+nop
+lw v0, -0x7c94(gp)
+[31mlw t9, -sym.imp.vfprintf(gp)[0m
+lw a0, (v0)
+jalr t9
+nop
+lw gp, 0x10(sp)
+b 0x409eac
+nop
+b 0x409e78
+addiu a2, zero, 1
+b 0x409e5c
+addiu a2, zero, 1
+lw v0, -0x7ed8(gp)
+[31mlw t9, -sym.imp.vfprintf(gp)[0m
+lw a0, (v0)
+jalr t9
+nop
+b 0x409ee8
+nop
+lui gp, 6
+addiu gp, gp, -0x7360
+addu gp, gp, t9
+lw a0, -0x7fd8(gp)
+addiu a1, zero, 1
+lw t9, -sym.imp.openlog(gp)
+addiu a2, zero, 0x18
+jr t9
+addiu a0, a0, 0x7e90
+nop
+nop
+nop
+lui gp, 6
+addiu gp, gp, -0x7390
+addu gp, gp, t9
+--
+jalr t9
+nop
+move v1, zero
+lw gp, 0x10(sp)
+lw ra, 0x38(sp)
+move v0, v1
+lw s7, 0x34(sp)
+lw s6, 0x30(sp)
+lw s5, 0x2c(sp)
+lw s4, 0x28(sp)
+lw s3, 0x24(sp)
+lw s2, 0x20(sp)
+lw s1, 0x1c(sp)
+lw s0, 0x18(sp)
+jr ra
+addiu sp, sp, 0x40
+lw a0, (s7)
+lw a1, -0x7ed8(gp)
+lw a2, 0x54(a0)
+lw a0, (a1)
+bnez a2, 0x40eb98
+nop
+lw a3, -0x7fe0(gp)
+addiu a2, a3, -0x7178
+lw t0, -0x7fe0(gp)
+[31mlw t9, -sym.imp.fprintf(gp)[0m
+jalr t9
+addiu a1, t0, -0x7120
+lw a0, (s7)
+lw gp, 0x10(sp)
+lw v0, (a0)
+lw s1, -obj.ut(gp)
+beqz v0, 0x40e940
+nop
+lw t9, -sym.imp.free(gp)
+jalr t9
+move a0, v0
+lw gp, 0x10(sp)
+lw a0, (s7)
+lw s4, -obj.gUshareInitInfo(gp)
+lw v1, 0x10(a0)
+addiu a2, s4, 4
+beqz v1, 0x40e954
+sw a2, (a0)
+lw t9, -sym.imp.free(gp)
+jalr t9
+
+[*] Function fprintf used 3 times ushare
+

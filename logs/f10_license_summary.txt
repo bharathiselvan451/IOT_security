@@ -1,0 +1,17 @@
+[+] License inventory
+=================================================================
+This module collects license details.
+
+[+] Binary: busybox / Version: busybox:1.01 / License: GPL-2.0-only
+[+] Binary: iptables / Version: iptables:1.4.5 / License: GPL-2.0-only
+[+] Binary: wscd / Version: openssl:openssl:0.9.8b / License: OpenSSL OR Apache-2.0
+[+] Binary: httpd / Version: zlib:1.1.4 / License: Zlib
+[+] Binary: bpalogin / Version: bpalogin:2.0.2 / License: GPL-2.0-only
+[+] Binary: ping6 / Version: openssl:openssl:1.0.0d / License: OpenSSL OR Apache-2.0
+[+] Binary: vsftpd / Version: vsftpd_project:vsftpd:2.3.2 / License: GPL-2.0-only
+[+] Binary: xl2tpd / Version: xl2tpd:1.1.12 / License: unknown
+
+-----------------------------------------------------------------
+EMBA was able to identify the shown software components with license details. These details should be checked for license violations.
+
+-----------------------------------------------------------------

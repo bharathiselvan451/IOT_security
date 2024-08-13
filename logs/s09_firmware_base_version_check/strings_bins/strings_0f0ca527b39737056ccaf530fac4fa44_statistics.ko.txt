@@ -1,0 +1,91 @@
+@0!<
+`(!$c
+ !$B
+b8!<
+(!'9
+d8!$
+@ !'9
+ !$B
+(!$B
+<1>recv a unknowed ctl command
+description=network statistics
+author=Li Shaozhang <lishaozhang@tp-link.net>
+license=Dual BSD/GPL
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+statistics
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.find_existed_index
+.rel.text.find_index
+.rel.text.record_stat
+.rel.text.ipt_stat_proc
+.rel.text.ipt_stat_del_one
+.rel.text.ipt_stat_del_all
+.rel.text.ipt_stat_reset_one_by_index
+.rel.text.ipt_stat_reset_one
+.rel.text.ipt_stat_reset_all
+.rel.text.do_stat_set_ctl
+.rel.text.do_stat_get_ctl
+.rel.init.text
+.rel.exit.text
+.rel.rodata
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+statistics.c
+init
+fini
+__mod_description28
+__mod_author27
+__mod_license25
+stat_sockopts
+nfho
+total
+interval
+stat_lock
+subnet_mask
+subnet_ip
+entries
+stat_timer
+statistics.mod.c
+__module_depends
+__mod_vermagic5
+find_existed_index
+__this_module
+nf_register_sockopt
+wan_statistics
+cleanup_module
+memcpy
+nf_unregister_hook
+tp_statistics_fastpath_hook
+init_module
+local_bh_enable
+nf_unregister_sockopt
+ipt_stat_reset_all
+local_bh_disable
+ipt_stat_del_all
+record_stat
+do_stat_set_ctl
+mod_timer
+ipt_stat_reset_one
+printk
+find_index
+memset
+__copy_user
+do_stat_get_ctl
+jiffies
+nf_register_hook
+init_timer_key
+ipt_stat_proc
+del_timer
+ipt_stat_reset_one_by_index
+ipt_stat_del_one

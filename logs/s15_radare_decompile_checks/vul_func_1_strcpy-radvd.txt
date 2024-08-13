@@ -1,0 +1,72 @@
+[*] Binary protection state of radvd
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of radvd
+
+    ; assembly                               | /* r2dec pseudo code output */
+                                             | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/radvd @ 0x403790 */
+                                             | #include <stdint.h>
+                                             |  
+    ; (fcn) sym.print_addr ()                | void print_addr () {
+    0x00403790 lui gp, 0xb                   |     
+    0x00403794 addiu gp, gp, -0x4550         |     
+    0x00403798 addu gp, gp, t9               |     gp += t9;
+    0x0040379c addiu sp, sp, -0x28           |     
+    0x004037a0 sw ra, 0x24(sp)               |     *(var_24h) = ra;
+    0x004037a4 sw fp, 0x20(sp)               |     *(var_20h) = fp;
+    0x004037a8 move fp, sp                   |     fp = sp;
+    0x004037ac sw gp, 0x10(sp)               |     *(var_10h) = gp;
+    0x004037b0 sw a0, 0x28(fp)               |     *(arg_28h) = a0;
+    0x004037b4 sw a1, 0x2c(fp)               |     *(arg_2ch) = a1;
+    0x004037b8 addiu a0, zero, 0xa           |     a0 = 0xa;
+    0x004037bc lw a1, 0x28(fp)               |     a1 = *(arg_28h);
+    0x004037c0 lw a2, 0x2c(fp)               |     a2 = *(arg_2ch);
+    0x004037c4 addiu a3, zero, 0x2e          |     a3 = 0x2e;
+    0x004037c8 lw t9, -0x7f54(gp)            |     t9 = sym.imp.inet_ntop;
+    0x004037cc jalr t9                       |     t9 ();
+    0x004037d0 nop                           |     
+    0x004037d4 lw gp, 0x10(fp)               |     gp = *(var_10h);
+    0x004037d8 sw v0, 0x18(fp)               |     *(var_18h) = v0;
+    0x004037dc lw v0, 0x18(fp)               |     v0 = *(var_18h);
+                                             |     if (v0 == 0) {
+    0x004037e0 bnez v0, 0x403848             |         
+    0x004037e4 nop                           |         
+    0x004037e8 lw t9, -0x7f44(gp)            |         t9 = sym.imp.__errno_location;
+    0x004037ec jalr t9                       |         t9 ();
+    0x004037f0 nop                           |         
+    0x004037f4 lw gp, 0x10(fp)               |         gp = *(var_10h);
+    0x004037f8 lw a0, (v0)                   |         a0 = *(v0);
+    0x004037fc lw t9, -0x7cb8(gp)            |         t9 = sym.imp.strerror;
+    0x00403800 jalr t9                       |         t9 ();
+    0x00403804 nop                           |         
+    0x00403808 lw gp, 0x10(fp)               |         gp = *(var_10h);
+    0x0040380c addiu a0, zero, 3             |         a0 = 3;
+    0x00403810 lw a1, -0x7fd8(gp)            |         a1 = *((gp - 8182));
+                                             |         /* esilref: 'print_addr: inet_ntop: &s' */
+    0x00403814 addiu a1, a1, 0xee0           |         a1 += 0xee0;
+    0x00403818 move a2, v0                   |         a2 = v0;
+    0x0040381c lw t9, -0x7f30(gp)            |         t9 = sym.flog;
+    0x00403820 jalr t9                       |         t9 ();
+    0x00403824 nop                           |         
+    0x00403828 lw gp, 0x10(fp)               |         gp = *(var_10h);
+    0x0040382c lw a0, 0x2c(fp)               |         a0 = *(arg_2ch);
+    0x00403830 lw a1, -0x7fd8(gp)            |         a1 = *((gp - 8182));
+                                             |         /* esilref: '[invalid address]' */
+    0x00403834 addiu a1, a1, 0xefc           |         a1 += 0xefc;
+[31m    0x00403838 lw t9, -0x7c8c(gp)            |         t9 = sym.imp.strcpy;[0m
+    0x0040383c jalr t9                       |         t9 ();
+    0x00403840 nop                           |         
+    0x00403844 lw gp, 0x10(fp)               |         gp = *(var_10h);
+                                             |     }
+    0x00403848 move sp, fp                   |     
+    0x0040384c lw ra, 0x24(sp)               |     ra = *(var_24h);
+    0x00403850 lw fp, 0x20(sp)               |     fp = *(var_20h);
+    0x00403854 addiu sp, sp, 0x28            |     
+    0x00403858 jr ra                         |     return v0;
+                                             | }
+
+[*] Function strcpy used 1 times radvd
+

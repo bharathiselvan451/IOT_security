@@ -1,0 +1,11 @@
+[*] Binary protection state of librt-0.9.30.so
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function popen tear down of librt-0.9.30.so
+
+
+[*] Function popen used 0 times librt-0.9.30.so
+

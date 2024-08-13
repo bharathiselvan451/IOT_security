@@ -1,0 +1,104 @@
+[*] Binary protection state of tc
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of tc
+
+nop
+lw a0, -0x7fe0(gp)
+lw t9, -sym.imp.fwrite(gp)
+addiu a2, zero, 0x36
+lw a3, (s1)
+jalr t9
+addiu a0, a0, 0x58f4
+lw gp, 0x10(sp)
+lw t9, -sym.imp.exit(gp)
+b 0x4190e8
+move a0, s2
+lui gp, 5
+addiu gp, gp, 0x5e98
+addu gp, gp, t9
+addiu sp, sp, -0x28
+sw ra, 0x24(sp)
+sw s0, 0x20(sp)
+sw gp, 0x18(sp)
+lw s0, -0x7fe8(gp)
+lbu v1, 3(a0)
+lbu v0, 2(a0)
+lw a1, -0x7fe0(gp)
+lbu a2, (a0)
+lbu a3, 1(a0)
+addiu a1, a1, 0x592c
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+addiu a0, s0, 0x75d0
+sw v0, 0x10(sp)
+jalr t9
+sw v1, 0x14(sp)
+addiu v0, s0, 0x75d0
+lw gp, 0x18(sp)
+lw ra, 0x24(sp)
+lw s0, 0x20(sp)
+jr ra
+addiu sp, sp, 0x28
+lui gp, 5
+addiu gp, gp, 0x5e34
+addu gp, gp, t9
+addiu sp, sp, -0x40
+sw ra, 0x38(sp)
+sw s5, 0x34(sp)
+sw s4, 0x30(sp)
+sw s3, 0x2c(sp)
+sw s2, 0x28(sp)
+sw s1, 0x24(sp)
+--
+sw ra, 0x3c(sp)
+sw fp, 0x38(sp)
+sw s7, 0x34(sp)
+sw s6, 0x30(sp)
+sw s5, 0x2c(sp)
+sw s4, 0x28(sp)
+sw s3, 0x24(sp)
+sw s2, 0x20(sp)
+sw s1, 0x1c(sp)
+sw s0, 0x18(sp)
+sw gp, 0x10(sp)
+move s2, zero
+move fp, a2
+move s4, a1
+move s6, a0
+move s0, a3
+blez a1, 0x41de9c
+move s1, a2
+lw s5, -0x7fe0(gp)
+addiu s3, a1, -1
+addiu s7, zero, 0x3a
+slti v0, s0, 3
+move a0, s1
+addu v1, s6, s2
+addiu a1, s5, 0x61cc
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+bnez v0, 0x41de9c
+addiu s1, s1, 2
+lbu a2, (v1)
+jalr t9
+addiu s0, s0, -2
+lw gp, 0x10(sp)
+beq s3, s2, 0x41de8c
+slti v0, s0, 2
+bnez v0, 0x41de8c
+nop
+sb s7, (s1)
+addiu s0, s0, -1
+addiu s1, s1, 1
+addiu s2, s2, 1
+slt v0, s2, s4
+bnez v0, 0x41de48
+slti v0, s0, 3
+move v0, fp
+lw ra, 0x3c(sp)
+lw fp, 0x38(sp)
+
+[*] Function sprintf used 2 times tc
+

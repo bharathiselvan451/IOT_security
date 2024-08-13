@@ -1,0 +1,57 @@
+[*] Binary protection state of iapp
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of iapp
+
+bne v0, v1, 0x401920
+nop
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.puts(gp)
+jalr t9
+addiu a0, a0, 0x2eec
+lw gp, 0x18(sp)
+lw t9, -sym.imp.exit(gp)
+jalr t9
+addiu a0, zero, 1
+lw a1, -segment.LOAD0(gp)
+move a0, s1
+lw t9, -sym.imp.fdopen(gp)
+jalr t9
+addiu a1, a1, 0x2f00
+lw gp, 0x18(sp)
+beqz v0, 0x40197c
+move s0, v0
+lw t9, -sym.imp.getpid(gp)
+jalr t9
+nop
+move a0, s0
+lw gp, 0x18(sp)
+move a2, v0
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.fprintf(gp)[0m
+jalr t9
+addiu a1, a1, 0x2f04
+lw gp, 0x18(sp)
+lw t9, -sym.imp.fclose(gp)
+jalr t9
+move a0, s0
+lw gp, 0x18(sp)
+lw t9, -sym.imp.lockf(gp)
+addiu a1, zero, 2
+move a2, zero
+jalr t9
+move a0, s1
+lw gp, 0x18(sp)
+lw t9, -sym.imp.close(gp)
+lw s0, -0x7fe8(gp)
+jalr t9
+move a0, s1
+move a1, zero
+lw gp, 0x18(sp)
+addiu a2, zero, 0x10
+
+[*] Function fprintf used 1 times iapp
+

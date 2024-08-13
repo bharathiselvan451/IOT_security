@@ -1,0 +1,57 @@
+[*] Binary protection state of lld2d
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of lld2d
+
+lw v0, 0x18(fp)
+beqz v0, 0x40f2c4
+nop
+sw zero, 0x2c(fp)
+addiu v0, zero, -1
+sw v0, 0x28(fp)
+addiu v0, zero, -1
+sw v0, 0x24(fp)
+addiu v0, zero, -1
+sw v0, 0x20(fp)
+addiu v0, zero, -1
+sw v0, 0x1c(fp)
+addiu v0, fp, 0x30
+lw v1, -obj.g_interface(gp)
+move a0, v0
+lw a1, (v1)
+addiu a2, zero, 0xe
+lw t9, -sym.imp.strncpy(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+addiu v0, fp, 0x30
+move a0, v0
+lw a1, -0x7fe0(gp)
+addiu a1, a1, 0x5a04
+[31mlw t9, -sym.imp.strcat(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, -obj.g_buf(gp)
+addiu a1, zero, 0xa0
+lw a2, 0x18(fp)
+lw t9, -sym.imp.fgets(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+move v1, v0
+lw v0, -obj.g_buf(gp)
+bne v1, v0, 0x40f234
+nop
+addiu v0, fp, 0x30
+lw a0, -obj.g_buf(gp)
+move a1, v0
+lw t9, -sym.imp.strstr(gp)
+jalr t9
+nop
+
+[*] Function strcat used 1 times lld2d
+

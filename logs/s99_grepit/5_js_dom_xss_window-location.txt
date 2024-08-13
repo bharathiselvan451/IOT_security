@@ -1,0 +1,61 @@
+[*] Searching (args for grep: ) for window\.location.
+[*] Grepit state info - comment: Window location: DOM-based XSS source/sink.
+[*] Grepit state info - Filename 5_js_dom_xss_window-location.txt
+[*] Grepit state info - Example: window.location
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: window\.location
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5581[m[36m-[m<SCRIPT language="javascript" src="/dynaform/common.js" type="text/javascript"></SCRIPT>
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5582[m[36m-[m<LINK href="/dynaform/css_help.css" rel=stylesheet type="text/css">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5583[m[36m-[m<SCRIPT language="javascript" type="text/javascript"><!--
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m:[m[32m5584[m[36m:[m%d.%d.%d.%dif(window.parent == window){[01;31mwindow.location[m.href="http://%s";}
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/bin/httpd[m[36m-[m[32m5585[m[36m-[mfunction Click(){ return false;}
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m-[m[32m685[m[36m-[m	name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m-[m[32m686[m[36m-[m	var regexS = "[\\?&]"+name+"=\\s*([^&#]*)";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m-[m[32m687[m[36m-[m	var regex = new RegExp( regexS );
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m:[m[32m688[m[36m:[m	var results = regex.exec( [01;31mwindow.location[m.href );
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/dynaform/common.js[m[36m-[m[32m689[m[36m-[m	if(results == null)
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WanDynamicIpCfgRpm.htm[m[36m-[m[32m28[m[36m-[m	var s = "wan="+n;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WanDynamicIpCfgRpm.htm[m[36m-[m[32m29[m[36m-[m	if(1==bRefreshFlag)
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WanDynamicIpCfgRpm.htm[m[36m-[m[32m30[m[36m-[m	{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WanDynamicIpCfgRpm.htm[m[36m:[m[32m31[m[36m:[m		[01;31mwindow.location[m.href="/userRpm/WanDynamicIpCfgRpm.htm?"+s;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WanDynamicIpCfgRpm.htm[m[36m-[m[32m32[m[36m-[m	}
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/GetGMTRpm.htm[m[36m-[m[32m4[m[36m-[m<!-- 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/GetGMTRpm.htm[m[36m-[m[32m5[m[36m-[mfunction LoadPage()
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/GetGMTRpm.htm[m[36m-[m[32m6[m[36m-[m{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/GetGMTRpm.htm[m[36m:[m[32m7[m[36m:[m	[01;31mwindow.location[m.href = "/userRpm/GetGMTRpm.htm?ReqAccessed="+getGmtInf[0]; 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/GetGMTRpm.htm[m[36m-[m[32m8[m[36m-[m}
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/GetGMTRpm.htm[m[36m-[m[32m9[m[36m-[mfunction goBack()
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/GetGMTRpm.htm[m[36m-[m[32m10[m[36m-[m{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/GetGMTRpm.htm[m[36m:[m[32m11[m[36m:[m	[01;31mwindow.location[m.href="/userRpm/DateTimeCfgRpm.htm";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/GetGMTRpm.htm[m[36m-[m[32m12[m[36m-[m}
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanDisconnRpm.htm[m[36m-[m[32m3[m[36m-[m<SCRIPT type="text/javascript">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanDisconnRpm.htm[m[36m-[m[32m4[m[36m-[mfunction goRetry()
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanDisconnRpm.htm[m[36m-[m[32m5[m[36m-[m{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanDisconnRpm.htm[m[36m:[m[32m6[m[36m:[m	[01;31mwindow.location[m.href = "/userRpm/WzdWanAutoTypeRpm.htm"; 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanDisconnRpm.htm[m[36m-[m[32m7[m[36m-[m}
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanDisconnRpm.htm[m[36m-[m[32m8[m[36m-[mfunction goBack()
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanDisconnRpm.htm[m[36m-[m[32m9[m[36m-[m{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanDisconnRpm.htm[m[36m:[m[32m10[m[36m:[m	[01;31mwindow.location[m.href="/userRpm/WzdWanTypeRpm.htm";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanDisconnRpm.htm[m[36m-[m[32m11[m[36m-[m}
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanAutoTypeRpm.htm[m[36m-[m[32m5[m[36m-[m<SCRIPT type="text/javascript">
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanAutoTypeRpm.htm[m[36m-[m[32m6[m[36m-[mfunction LoadPage()
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanAutoTypeRpm.htm[m[36m-[m[32m7[m[36m-[m{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanAutoTypeRpm.htm[m[36m:[m[32m8[m[36m:[m	[01;31mwindow.location[m.href = "/userRpm/WzdWanAutoTypeRpm.htm?detected=1"; 
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanAutoTypeRpm.htm[m[36m-[m[32m9[m[36m-[m}
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanAutoTypeRpm.htm[m[36m-[m[32m10[m[36m-[mfunction goBack()
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanAutoTypeRpm.htm[m[36m-[m[32m11[m[36m-[m{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanAutoTypeRpm.htm[m[36m:[m[32m12[m[36m:[m	[01;31mwindow.location[m.href="/userRpm/WzdWanTypeRpm.htm";
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWanAutoTypeRpm.htm[m[36m-[m[32m13[m[36m-[m}
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m36[m[36m-[mvar url="http://" + our_web_site;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m37[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m38[m[36m-[mif(window.parent == window)	
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m:[m[32m39[m[36m:[m	[01;31mwindow.location[m.href=url;
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/frames/top.htm[m[36m-[m[32m40[m[36m-[mfunction Click(){ window.event.returnValue=false;}

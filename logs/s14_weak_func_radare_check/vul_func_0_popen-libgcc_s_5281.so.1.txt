@@ -1,0 +1,11 @@
+[*] Binary protection state of libgcc_s_5281.so.1
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function popen tear down of libgcc_s_5281.so.1
+
+
+[*] Function popen used 0 times libgcc_s_5281.so.1
+

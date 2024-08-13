@@ -1,0 +1,28 @@
+[+] Check for interesting files
+=================================================================
+This modules searches for interesting files and binaries like gcc or gdb. Additionally it also searches binaries that could be useful for post exploitation tasks like wget or ftp.
+
+
+
+==> Interesting binaries
+-----------------------------------------------------------------
+[-] No interesting binaries found
+
+
+==> Interesting binaries for post exploitation
+-----------------------------------------------------------------
+[+] Found interesting binaries for post exploitation:
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox (-rwxr-xr-x 501 502)
+    /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/usr/sbin/vsftpd (-rwxrwxr-x 501 502)
+
+
+==> Hidden files
+-----------------------------------------------------------------
+[-] No hidden files found
+
+
+==> Toolchain related files
+-----------------------------------------------------------------
+[-] No compile related files found
+
+[*] Statistics:0:2

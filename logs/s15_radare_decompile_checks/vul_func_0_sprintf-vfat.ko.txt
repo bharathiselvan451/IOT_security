@@ -1,0 +1,11 @@
+[*] Binary protection state of vfat.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function sprintf tear down of vfat.ko
+
+
+[*] Function sprintf used 0 times vfat.ko
+

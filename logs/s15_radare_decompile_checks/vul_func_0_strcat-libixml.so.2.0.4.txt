@@ -1,0 +1,11 @@
+[*] Binary protection state of libixml.so.2.0.4
+
+  
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcat tear down of libixml.so.2.0.4
+
+
+[*] Function strcat used 0 times libixml.so.2.0.4
+

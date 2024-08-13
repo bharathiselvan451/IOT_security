@@ -1,0 +1,141 @@
+[*] Binary protection state of libmsglog.so
+
+  
+  	No RELRO       No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of libmsglog.so
+
+    ; assembly                           | /* r2dec pseudo code output */
+                                         | /* /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/lib/libmsglog.so @ 0x9d0 */
+                                         | #include <stdint.h>
+                                         |  
+    ; (fcn) sym.msglogd ()               | void msglogd () {
+    0x000009d0 lui gp, 5                 |     
+    0x000009d4 addiu gp, gp, -0x7c10     |     
+    0x000009d8 addu gp, gp, t9           |     gp += t9;
+    0x000009dc addiu sp, sp, -0x2a0      |     
+    0x000009e0 sw ra, 0x29c(sp)          |     *(var_29ch) = ra;
+    0x000009e4 sw s4, 0x298(sp)          |     *(var_298h) = s4;
+    0x000009e8 sw s3, 0x294(sp)          |     *(var_294h) = s3;
+    0x000009ec sw s2, 0x290(sp)          |     *(var_290h) = s2;
+    0x000009f0 sw s1, 0x28c(sp)          |     *(var_28ch) = s1;
+    0x000009f4 sw s0, 0x288(sp)          |     *(var_288h) = s0;
+    0x000009f8 sw gp, 0x18(sp)           |     *(var_18h) = gp;
+    0x000009fc move s0, a0               |     s0 = a0;
+    0x00000a00 addiu v0, a1, -1          |     v0 = a1 + -1;
+    0x00000a04 lw a0, -0x7fe0(gp)        |     a0 = *((gp - 8184));
+    0x00000a08 sltiu v0, v0, 9           |     v0 = (v0 < 9) ? 1 : 0;
+    0x00000a0c move s1, a1               |     s1 = a1;
+    0x00000a10 sltiu v1, s0, 8           |     v1 = (s0 < 8) ? 1 : 0;
+    0x00000a14 lw t9, -0x7f8c(gp)        |     t9 = sym.imp.printf;
+    0x00000a18 addiu a0, a0, 0xd20       |     a0 += 0xd20;
+    0x00000a1c sw a3, 0x2ac(sp)          |     *(arg_2ach) = a3;
+    0x00000a20 move s4, a2               |     s4 = a2;
+                                         |     if (v0 != 0) {
+    0x00000a24 beqz v0, 0xa4c            |         
+    0x00000a28 lw t9, -0x7fb8(gp)        |         t9 = sym.imp.memset;
+    0x00000a2c addiu s2, sp, 0x20        |         s2 = sp + 0x20;
+    0x00000a30 move a0, s2               |         a0 = s2;
+    0x00000a34 move v0, t9               |         v0 = t9;
+    0x00000a38 lw t9, -0x7f8c(gp)        |         t9 = sym.imp.printf;
+    0x00000a3c addiu a2, zero, 0x1f4     |         a2 = 0x1f4;
+                                         |         if (v1 != 0) {
+    0x00000a40 bnez v1, 0xa5c            |             goto label_0;
+                                         |         }
+    0x00000a44 lw a0, -0x7fe0(gp)        |         a0 = *((gp - 8184));
+    0x00000a48 addiu a0, a0, 0xd20       |         a0 += 0xd20;
+                                         |     }
+    0x00000a4c jalr t9                   |     t9 ();
+    0x00000a50 nop                       |     
+    0x00000a54 b 0xb78                   |     goto label_1;
+    0x00000a58 nop                       |     
+                                         | label_0:
+    0x00000a5c move t9, v0               |     t9 = v0;
+    0x00000a60 move a1, zero             |     a1 = 0;
+    0x00000a64 jalr t9                   |     t9 ();
+    0x00000a68 addiu v0, s0, 0x30        |     v0 = s0 + 0x30;
+    0x00000a6c lw gp, 0x18(sp)           |     gp = *(var_18h);
+    0x00000a70 addiu a3, s1, 0x30        |     a3 = s1 + 0x30;
+    0x00000a74 move a2, s0               |     a2 = s0;
+    0x00000a78 move a0, s2               |     a0 = s2;
+    0x00000a7c lw a1, -0x7fe0(gp)        |     a1 = *((gp - 8184));
+    0x00000a80 addiu s3, sp, 0x21a       |     s3 = sp + 0x21a;
+[31m    0x00000a84 lw t9, -0x7fc4(gp)        |     t9 = sym.imp.sprintf;[0m
+    0x00000a88 addiu a1, a1, 0xd50       |     a1 += 0xd50;
+    0x00000a8c sw v0, 0x10(sp)           |     *(var_10h) = v0;
+    0x00000a90 jalr t9                   |     t9 ();
+    0x00000a94 lw gp, 0x18(sp)           |     gp = *(var_18h);
+    0x00000a98 lw t9, -0x7fc8(gp)        |     t9 = sym.imp.strlen;
+    0x00000a9c move a0, s2               |     a0 = s2;
+    0x00000aa0 jalr t9                   |     t9 ();
+    0x00000aa4 move a1, s4               |     a1 = s4;
+    0x00000aa8 lw gp, 0x18(sp)           |     gp = *(var_18h);
+    0x00000aac addu a0, s2, v0           |     a0 = s2 + v0;
+[31m    0x00000ab0 lw t9, -0x7f90(gp)        |     t9 = sym.imp.vsprintf;[0m
+    0x00000ab4 addiu a2, sp, 0x2ac       |     a2 = sp + 0x2ac;
+    0x00000ab8 jalr t9                   |     t9 ();
+    0x00000abc addiu a1, zero, 1         |     a1 = 1;
+    0x00000ac0 lw gp, 0x18(sp)           |     gp = *(var_18h);
+    0x00000ac4 move a2, zero             |     a2 = 0;
+    0x00000ac8 lw t9, -0x7fa0(gp)        |     t9 = sym.imp.socket;
+    0x00000acc addiu a0, zero, 1         |     a0 = 1;
+    0x00000ad0 jalr t9                   |     t9 ();
+    0x00000ad4 addiu a2, zero, 0x6c      |     a2 = 0x6c;
+    0x00000ad8 lw gp, 0x18(sp)           |     gp = *(var_18h);
+    0x00000adc move s1, v0               |     s1 = v0;
+    0x00000ae0 move a0, s3               |     a0 = s3;
+    0x00000ae4 lw t9, -0x7fac(gp)        |     t9 = sym.imp.strncpy;
+    0x00000ae8 lw a1, -0x7fe0(gp)        |     a1 = *((gp - 8184));
+    0x00000aec move v1, t9               |     v1 = t9;
+    0x00000af0 lw t9, -0x7f98(gp)        |     t9 = sym.imp.puts;
+    0x00000af4 addiu a1, a1, 0xd5c       |     a1 += 0xd5c;
+                                         |     if (v0 < 0) {
+    0x00000af8 bgez v0, 0xb08            |         
+    0x00000afc lw a0, -0x7fe0(gp)        |         a0 = *((gp - 8184));
+    0x00000b00 addiu a0, a0, 0xd68       |         a0 += 0xd68;
+    0x00000b04 b 0xb70                   |         
+                                         |     } else {
+    0x00000b08 addiu v0, zero, 1         |         v0 = 1;
+    0x00000b0c move t9, v1               |         t9 = v1;
+    0x00000b10 sh v0, 0x218(sp)          |         *(var_218h) = v0;
+    0x00000b14 jalr t9                   |         t9 ();
+    0x00000b18 lw gp, 0x18(sp)           |         gp = *(var_18h);
+    0x00000b1c lw t9, -0x7fc8(gp)        |         t9 = sym.imp.strlen;
+    0x00000b20 move a0, s3               |         a0 = s3;
+    0x00000b24 jalr t9                   |         t9 ();
+    0x00000b28 move a0, s2               |         a0 = s2;
+    0x00000b2c lw gp, 0x18(sp)           |         gp = *(var_18h);
+    0x00000b30 lw t9, -0x7fc8(gp)        |         t9 = sym.imp.strlen;
+    0x00000b34 addiu s0, v0, 2           |         s0 = v0 + 2;
+    0x00000b38 jalr t9                   |         t9 ();
+    0x00000b3c move a0, s1               |         a0 = s1;
+    0x00000b40 lw gp, 0x18(sp)           |         gp = *(var_18h);
+    0x00000b44 move a2, v0               |         a2 = v0;
+    0x00000b48 addiu v0, sp, 0x218       |         v0 = sp + 0x218;
+    0x00000b4c move a1, s2               |         a1 = s2;
+    0x00000b50 lw t9, -0x7fb0(gp)        |         t9 = sym.imp.sendto;
+    0x00000b54 move a3, zero             |         a3 = 0;
+    0x00000b58 sw v0, 0x10(sp)           |         *(var_10h) = v0;
+    0x00000b5c sw s0, 0x14(sp)           |         *(var_14h) = s0;
+    0x00000b60 jalr t9                   |         t9 ();
+    0x00000b64 move a0, s1               |         a0 = s1;
+    0x00000b68 lw gp, 0x18(sp)           |         gp = *(var_18h);
+    0x00000b6c lw t9, -0x7fd0(gp)        |         t9 = sym.imp.close;
+                                         |     }
+    0x00000b70 jalr t9                   |     t9 ();
+    0x00000b74 nop                       |     
+                                         | label_1:
+    0x00000b78 lw gp, 0x18(sp)           |     gp = *(var_18h);
+    0x00000b7c lw ra, 0x29c(sp)          |     ra = *(var_29ch);
+    0x00000b80 lw s4, 0x298(sp)          |     s4 = *(var_298h);
+    0x00000b84 lw s3, 0x294(sp)          |     s3 = *(var_294h);
+    0x00000b88 lw s2, 0x290(sp)          |     s2 = *(var_290h);
+    0x00000b8c lw s1, 0x28c(sp)          |     s1 = *(var_28ch);
+    0x00000b90 lw s0, 0x288(sp)          |     s0 = *(var_288h);
+    0x00000b94 addiu sp, sp, 0x2a0       |     
+    0x00000b98 jr ra                     |     return v0;
+                                         | }
+
+[*] Function sprintf used 2 times libmsglog.so
+

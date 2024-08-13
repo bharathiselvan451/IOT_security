@@ -1,0 +1,59 @@
+C8%$
+@(!,B
+mangle
+<4>MARK: unknown mode %u
+alias=ip6t_MARK
+alias=ipt_MARK
+description=Xtables: packet mark modification
+author=Marc Boucher <marc@mbsi.ca>
+license=GPL
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+MARK
+MARK
+MARK
+xt_MARK
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.text.mark_tg_v0
+.rel.text.mark_tg_v1
+.text.mark_tg
+.text.mark_tg_check_v0
+.rel.text.mark_tg_check_v1
+.rel.init.text
+.rel.exit.text
+.rodata
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+xt_MARK.c
+mark_tg_init
+mark_tg_exit
+__mod_alias31
+__mod_alias30
+__mod_description29
+__mod_author28
+__mod_license27
+mark_tg_reg
+mark_tg_v0
+mark_tg_check_v0
+mark_tg_v1
+mark_tg_check_v1
+mark_tg
+xt_MARK.mod.c
+__module_depends
+__mod_vermagic5
+__this_module
+cleanup_module
+init_module
+xt_unregister_targets
+xt_register_targets
+printk

@@ -1,0 +1,49 @@
+(!2B
+E($<
+ !&e
+alias=xfrm-mode-10-4
+license=GPL
+depends=ipv6
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+xfrm6_mode_beet
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.xfrm6_beet_make_header
+.rel.text.xfrm6_beet_output
+.rel.text.xfrm6_beet_input
+.rel.init.text
+.rel.exit.text
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+xfrm6_mode_beet.c
+xfrm6_beet_init
+xfrm6_beet_exit
+__mod_alias137
+__mod_license136
+xfrm6_beet_mode
+xfrm6_beet_input
+xfrm6_beet_output
+xfrm6_beet_make_header
+xfrm6_mode_beet.mod.c
+__module_depends
+__mod_vermagic5
+memmove
+__this_module
+cleanup_module
+memcpy
+init_module
+pskb_expand_head
+xfrm_unregister_mode
+xfrm_prepare_input
+xfrm_register_mode
+memset
+xfrm6_prepare_output

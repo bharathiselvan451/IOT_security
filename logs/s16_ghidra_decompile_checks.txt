@@ -1,0 +1,10 @@
+[+] Check decompiled binary source code for vulnerabilities
+=================================================================
+The following module tries to decompile the firmware binaries with Ghidra. Afterwards it tests the decompiled sources with semgrep for vulnerabilities.
+Furhter details about the used approach are documented by 0xdea in the following resources:
+    [*] https://security.humanativaspa.it/automating-binary-vulnerability-discovery-with-ghidra-and-semgrep/
+    [*] https://github.com/0xdea/ghidra-scripts/blob/main/Haruspex.java
+    [*] https://github.com/0xdea/semgrep-rules
+
+[-] S16_ghidra_decompile_checks - BINARY_EXTENDED not set to 1. You can set it up via a scan-profile.
+[-] Wed Jul 31 20:53:45 EDT 2024 - S16_ghidra_decompile_checks nothing reported

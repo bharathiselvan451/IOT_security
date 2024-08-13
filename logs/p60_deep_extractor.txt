@@ -1,0 +1,6 @@
+[+] Binary firmware deep extractor
+=================================================================
+This module extracts firmware with all available extractors and checks if a root filesystem can be found.
+As last resort EMBA will try to extract every available file multiple times.
+
+[-] Wed Jul 31 20:45:54 EDT 2024 - P60_deep_extractor nothing reported

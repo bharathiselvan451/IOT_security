@@ -1,0 +1,25 @@
+[*] Searching (args for grep: ) for move\s{0,20}\(.
+[*] Grepit state info - comment: shutil.move is flawed and silently leaves the old file behind if the source and destination are on different file systems, see https://access.redhat.com/blogs/766093/posts/2592591
+[*] Grepit state info - Filename 4_python_shutil_move.txt
+[*] Grepit state info - Example: shutil.move(src, dst)
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: move\s{0,20}\(
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m976[m[36m-[mOptions:
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m977[m[36m-[m	-d		delay interval for rebooting.[OPTION]... FILE...
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m978[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m:[m[32m979[m[36m:[mRe[01;31mmove ([munlink) the FILE(s).  You may use '--' to
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/busybox[m[36m-[m[32m980[m[36m-[mindicate that all following arguments are non-options.
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WlanNetworkRpm.htm[m[36m-[m[32m526[m[36m-[m	//remove all old options
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WlanNetworkRpm.htm[m[36m-[m[32m527[m[36m-[m	while((i = cf.rate.options.length) > 0)
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WlanNetworkRpm.htm[m[36m-[m[32m528[m[36m-[m	{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WlanNetworkRpm.htm[m[36m:[m[32m529[m[36m:[m		cf.rate.re[01;31mmove([m0);
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WlanNetworkRpm.htm[m[36m-[m[32m530[m[36m-[m	}
+[36m--[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWlanRpm.htm[m[36m-[m[32m162[m[36m-[m	//remove all old options
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWlanRpm.htm[m[36m-[m[32m163[m[36m-[m	while((i = cf.rate.options.length) > 0)
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWlanRpm.htm[m[36m-[m[32m164[m[36m-[m	{
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWlanRpm.htm[m[36m:[m[32m165[m[36m:[m		cf.rate.re[01;31mmove([m0);
+[35m/logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/web/userRpm/WzdWlanRpm.htm[m[36m-[m[32m166[m[36m-[m	}

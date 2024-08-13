@@ -1,0 +1,185 @@
+  !$B
+  !$B
+  !$B
+@ !$
+  !$
+ !$B
+(!$B
+@0!$B
+@0!<
+` !$
+` !$B
+` !$
+  !$
+F0%<
+e(%<
+  !$B
+  !$B
+G8%<
+@ !4
+@ !4
+  !$B
+ !$B
+@(!<
+@(!<
+4BtZ
+4BtY
+8!4B
+@ !&
+@ !<
+@ !<
+@ !<
+log_packets
+log_level
+<6>PPTP[%i]: send packet: seq=%i
+ ack=%i
+<6>PPTP: discarding truncated packet (expected %d, got %d bytes)
+<6>PPTP[%i]: discarding duplicate or old packet %d (expecting %d)
+<6>PPTP[%i]: accepting packet %d size=%i (%02x %02x %02x %02x %02x %02x)
+<6>PPTP: Discarding GRE: %X %X %X %X %X %X
+<6>PPTP: Discarding packet from unknown call_id %i
+<6>PPTP: bind: addr=%X call_id=%i
+<6>PPTP: using call_id %i
+<6>PPTP[%i]: connect: addr=%X call_id=%i
+<3>PPTP: failed to register PPP channel (%d)
+<6>PPTP[%i]: release
+<6>PPTP driver version 0.8.3
+<6>PPTP: can't add protocol
+<6>PPTP: can't register sk_proto
+<6>PPTP: can't register pppox_proto
+parm=log_level:Logging level (default=0)
+parmtype=log_packets:int
+parmtype=log_level:int
+license=GPL
+author=Kozlov D. (xeb@mail.ru)
+description=Point-to-Point Tunneling Protocol for Linux
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+PPTP
+pptp
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.text
+.rel.text.del_chan
+.rel.text.pptp_xmit
+.rel.text.pptp_rcv_core
+.rel.text.pptp_rcv
+.rel.text.pptp_bind
+.rel.text.pptp_connect
+.rel.text.pptp_getname
+.rel.text.pptp_release
+.rel.text.pptp_sock_destruct
+.rel.text.pptp_create
+.rel.text.pptp_ppp_ioctl
+.rel.fixup
+.rel.text.pptp_init_module
+.rel.text.pptp_exit_module
+.rodata
+.modinfo
+.rel__param
+.rel__ex_table
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+pptp.c
+pptp_init_module
+pptp_exit_module
+__mod_log_level74
+__mod_log_packetstype72
+__param_log_packets
+__param_str_log_packets
+log_packets
+__mod_log_leveltype71
+__param_log_level
+__param_str_log_level
+log_level
+__mod_license57
+__mod_author56
+__mod_description55
+callid_sock
+callid_bitmap
+net_pptp_protocol
+pptp_rcv
+pptp_sk_proto
+chan_lock
+pppox_pptp_proto
+pptp_create
+pptp_ops
+pptp_release
+pptp_bind
+pptp_connect
+pptp_getname
+pptp_chan_ops
+pptp_xmit
+pptp_ppp_ioctl
+del_chan
+pptp_rcv_core
+call_id.0
+pptp_sock_destruct
+pptp.mod.c
+__module_depends
+__mod_vermagic5
+pppox_ioctl
+__ip_select_ident
+sock_wfree
+__this_module
+ppp_register_channel
+ppp_input
+cleanup_module
+sock_no_sendmsg
+flush_scheduled_work
+memcpy
+unregister_pppox_proto
+free_pages
+nf_conntrack_destroy
+sk_receive_skb
+init_module
+local_bh_enable
+proto_unregister
+kfree_skb
+__get_free_pages
+proto_register
+local_bh_disable
+sock_no_shutdown
+init_net
+skb_pull
+inet_add_protocol
+sk_free
+sock_no_accept
+skb_push
+sock_no_listen
+register_pppox_proto
+find_next_zero_bit
+pppox_unbind_sock
+lock_sock_nested
+printk
+sk_alloc
+sock_no_socketpair
+memset
+skb_queue_purge
+sock_no_recvmsg
+sock_no_mmap
+__pskb_pull_tail
+sock_no_poll
+skb_realloc_headroom
+inet_del_protocol
+param_set_int
+sock_queue_rcv_skb
+ip_send_check
+find_next_bit
+dst_release
+sk_setup_caps
+sock_no_getsockopt
+ip_local_out
+sock_no_setsockopt
+ip_route_output_key
+param_get_int
+sock_init_data
+release_sock

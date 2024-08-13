@@ -1,0 +1,11 @@
+[*] Binary protection state of radvdctl
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function popen tear down of radvdctl
+
+
+[*] Function popen used 0 times radvdctl
+

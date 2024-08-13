@@ -1,0 +1,40 @@
+[+] Toolchain overview
+=================================================================
+The toolchain identification module aggregates multiple sources to help the tester in getting a better understanding of the toolchain that was used to compile/build the firmware.
+For this process EMBA aggregates the following details:
+    * The identified kernel version
+    * Identifies the kernel release date - getting an idea on how old the used Linux kernel really is
+    * EMBA extracts the GCC version from a kernel identifier string
+    * EMBA extracts the GCC version from the firmware binaries
+    * Uses an already identified libstdc++ for further GCC identification
+    * Identifies the GCC release date - getting an idea on how old the used toolchain really is
+    * EMBA extracts the binary flags from the firmware binaries
+
+The following details will help the tester for a better understanding of the original firmware build process. Additionally, these details can support the tester during the build process of a well fitting cross-compilation toolchain.
+
+[+] Identified kernel version 2.6.30.9 which was released on 05-Oct-2009 - no kernel configuration available.
+
+[+] Identified GCC version gcc version 3.4.6 released on March 06, 2006 in the Linux kernel identifier string.
+    Linux version 2.6.30.9 (tplink@localhost.localdomain) (gcc version 3.4.6-1.3.6) #1 Mon Sep 23 15:31:05 CST 2013
+
+[+] Identified firmware architecture MIPS, MIPS-I version 1 (SYSV) / endianes big / machine configuration MIPS R3000 on binary level.
+
+[+] Identified possible GCC version on binary level GCC (GNU) 3.2.3-1.2.11 / 3.2.3 released on April 22, 2003.
+[+] Identified possible GCC version on binary level GCC (GNU) 3.3.2 / 3.3.2 released on October 17, 2003.
+[+] Identified possible GCC version on binary level GCC (GNU) 3.4.6-1.3.6 / 3.4.6 released on March 06, 2006.
+
+[+] Identified the following used binary flags:
+    0x1001
+    0x1007
+    cpic
+    mips1
+    noreorder
+    o32
+    pic
+
+
+-----------------------------------------------------------------
+The shown toolchain details can help in building a working buildchain for building working binaries and libraries.
+Multiple examples of such a build process are collected in the EMBA wiki
+
+-----------------------------------------------------------------

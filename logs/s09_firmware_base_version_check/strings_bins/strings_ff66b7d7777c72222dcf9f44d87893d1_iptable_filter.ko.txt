@@ -1,0 +1,74 @@
+ !'9
+ !'9
+@!,c
+forward
+iptables forward must be 0 or 1
+parmtype=forward:bool
+description=iptables filter table
+author=Netfilter Core Team <coreteam@netfilter.org>
+license=GPL
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+filter
+filter
+@ERROR
+ERROR
+iptable_filter
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.ipt_local_in_hook
+.rel.text.ipt_hook
+.rel.text.ipt_local_out_hook
+.rel.init.text
+.rel.ref.text
+.rel.exit.text
+.rodata
+.modinfo
+.rel__param
+.rel.data
+.init.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+iptable_filter.c
+iptable_filter_init
+iptable_filter_fini
+__mod_forwardtype127
+__param_forward
+__param_str_forward
+forward
+__mod_description20
+__mod_author19
+__mod_license18
+iptable_filter_net_ops
+iptable_filter_net_init
+iptable_filter_net_exit
+ipt_ops
+ipt_local_in_hook
+ipt_hook
+ipt_local_out_hook
+initial_table
+packet_filter
+iptable_filter.mod.c
+__module_depends
+__mod_vermagic5
+__this_module
+param_get_bool
+ipt_do_table
+cleanup_module
+nf_register_hooks
+init_module
+register_pernet_subsys
+nf_unregister_hooks
+init_net
+ipt_unregister_table
+param_set_bool
+printk
+unregister_pernet_subsys
+ipt_register_table

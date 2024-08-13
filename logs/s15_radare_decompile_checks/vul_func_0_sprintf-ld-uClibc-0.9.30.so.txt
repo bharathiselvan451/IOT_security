@@ -1,0 +1,11 @@
+[*] Binary protection state of ld-uClibc-0.9.30.so
+
+  
+  	Full RELRO     No Canary found   NX disabled  PIE enabled  No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of ld-uClibc-0.9.30.so
+
+
+[*] Function sprintf used 0 times ld-uClibc-0.9.30.so
+

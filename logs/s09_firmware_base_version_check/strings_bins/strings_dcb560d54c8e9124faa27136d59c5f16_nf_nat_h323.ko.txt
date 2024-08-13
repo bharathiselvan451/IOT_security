@@ -1,0 +1,103 @@
+E0!<
+ 0!$B
+@ !$^
+(!$B
+0!$B
+`(!$c
+0!$T
+  !<
+(!$B
+  !$
+(!$B
+0!&1
+(!$B
+  !'
+(!$B
+  !$
+nf_nat_h323: nf_nat_mangle_tcp_packet error
+nf_nat_h323: nf_nat_mangle_udp_packet error
+nf_nat_h323: out of expectations
+nf_nat_h323: out of RTP ports
+nf_nat_h323: out of TCP ports
+nf_nat_q931: out of TCP ports
+nf_nat_ras: out of TCP ports
+alias=ip_nat_h323
+license=GPL
+description=H.323 NAT helper
+author=Jing Min Zhao <zhaojingmin@users.sourceforge.net>
+depends=nf_conntrack_h323
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+nf_nat_h323
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.set_addr
+.rel.text.set_h225_addr
+.rel.text.set_h245_addr
+.rel.text.set_sig_addr
+.rel.text.set_ras_addr
+.rel.text.nat_rtp_rtcp
+.rel.text.nat_t120
+.rel.text.nat_h245
+.rel.text.ip_nat_q931_expect
+.rel.text.nat_q931
+.rel.text.ip_nat_callforwarding_expect
+.rel.text.nat_callforwarding
+.rel.init.text
+.rel.exit.text
+.rodata
+.modinfo
+.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+nf_nat_h323.c
+init
+fini
+__mod_alias580
+__mod_license579
+__mod_description578
+__mod_author577
+set_addr
+set_h225_addr
+set_h245_addr
+set_sig_addr
+set_ras_addr
+nat_rtp_rtcp
+nat_t120
+nat_h245
+ip_nat_q931_expect
+nat_q931
+ip_nat_callforwarding_expect
+nat_callforwarding
+nf_nat_h323.mod.c
+__module_depends
+__mod_vermagic5
+skb_copy_bits
+__this_module
+nf_nat_follow_master
+nat_callforwarding_hook
+cleanup_module
+net_ratelimit
+init_module
+nat_t120_hook
+set_h225_addr_hook
+nf_nat_setup_info
+nf_nat_mangle_udp_packet
+set_ras_addr_hook
+synchronize_rcu
+nf_ct_expect_related_report
+nat_q931_hook
+nat_rtp_rtcp_hook
+printk
+nf_nat_mangle_tcp_packet
+set_sig_addr_hook
+get_h225_addr
+nf_ct_unexpect_related
+nat_h245_hook
+set_h245_addr_hook

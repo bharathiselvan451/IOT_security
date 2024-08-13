@@ -1,0 +1,249 @@
+`X!<
+` !$B
+@(!<
+ 0!$B
+`P!<	
+8%0B
+b0$0
+`H!<
+@(!<
+  !'9
+@(!$B
+E($0D
+@!4B
+E($0D
+E($0D
+ !1E
+l($1"
+ $0C
+(%0B
+@ !$B
+0!$B
+(!$B
+@(!$B
+ (!'9
+@ !<
+(!$B
+ !$B
+@(!<
+b4cM
+ !$B
+(!&R
+ 8!$
+8!$B
+E(%<
+(!$B
+ !$B
+(!$B
+@ !<
+@(!<
+` !<
+ 8!<
+` !$B
+(!$B
+@(!<
+0!2B
+@(!<
+` !2B
+@ !<
+@(!<
+0!$B
+(!2B
+ %0B
+`@!4M
+` !2B
+@ !<
+@ !<
+`H!<
+@(!<
+/*&2
+4Bx'
+ %4BI%
+(!$B
+(!4B
+H$0f
+@ !<
+@(!<
+@ !<
+(!$B
+no_handshake
+distrust_firmware
+rtl8652-ohci
+RTL8652 OHCI
+ohci_hcd
+k<4>%s %s: bogus NDP, rereads as NDP=%d
+pdrivers/usb/host/ohci-q.c
+include/linux/usb.h
+<4>%s %s: ED unlink timeout
+ (has tds)
+<3>%s %s: leak ed %p (#%02x) state %d%s
+<3>%s %s: OHCI Unrecoverable Error, disabled
+<3>%s %s: bad entry %8x
+ohci_td
+ohci_ed
+<3>%s %s: USB HC takeover failed!  (BIOS/SMM bug)
+<3>%s %s: init err (%08x %04x)
+<3>%s %s: USB HC reset timed out!
+<3>ohci_hcd: can't start %s
+rtl8652
+OHCI already cleanup
+OHCI-HCD: already init 
+<6>%s: USB 1.1 'Open' Host Controller (OHCI) Driver
+Ohci-rtl8652.c: OHCI device already init
+OHCI-HCD: not init, cannot cleanup 
+alias=platform:rtl8652-ohci
+license=GPL
+description=USB 1.1 'Open' Host Controller (OHCI) Driver
+author=Roman Weissgaerber, David Brownell
+parm=no_handshake:true (not default) disables BIOS handshake
+parmtype=no_handshake:bool
+parm=distrust_firmware:true to distrust firmware power/overcurrent setup
+parmtype=distrust_firmware:bool
+depends=usbcore
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+ohci_hcd
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.ohci_hub_status_data
+.rel.text.ohci_hub_control
+.rel.text.td_alloc
+.rel.text.td_free
+.rel.text.ed_free
+.rel.text.urb_free_priv
+.rel.text.finish_urb
+.rel.text.ed_schedule
+.rel.text.start_ed_unlink
+.rel.text.td_fill
+.rel.text.td_done
+.rel.text.finish_unlinks
+.rel.text.takeback_td
+.rel.text.ohci_urb_enqueue
+.rel.text.ohci_urb_dequeue
+.rel.text.ohci_endpoint_disable
+.text.ohci_get_frame
+.text.ohci_usb_reset
+.rel.text.ohci_shutdown
+.text.check_ed
+.rel.text.unlink_watchdog_func
+.rel.text.ohci_irq
+.rel.text.ohci_stop
+.text.rtl8652_stop_hc
+.rel.devinit.text
+.rel.text.ohci_hcd_rtl8652_drv_probe
+.rel.text.ohci_hcd_rtl8652_drv_remove
+.rel.text.ohci_rtl8652_cleanup
+.rel.init.text
+.rel.exit.text
+.rel.rodata
+.modinfo
+.rel__param
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+ohci-hcd.c
+ohci_hcd_mod_init
+ohci_hcd_mod_exit
+__mod_alias207
+__mod_license988
+__mod_description987
+__mod_author986
+__mod_no_handshake129
+__mod_no_handshaketype128
+__param_no_handshake
+__param_str_no_handshake
+no_handshake
+__mod_distrust_firmware124
+__mod_distrust_firmwaretype122
+__param_distrust_firmware
+__param_str_distrust_firmware
+distrust_firmware
+ohci_hcd_rtl8652_driver
+ohci_hcd_rtl8652_drv_probe
+ohci_hcd_rtl8652_drv_remove
+ohci_rtl8652_hc_driver
+hcd_name
+ohci_irq
+ohci_rtl8652_start
+ohci_stop
+ohci_shutdown
+ohci_get_frame
+ohci_urb_enqueue
+ohci_urb_dequeue
+ohci_endpoint_disable
+ohci_hub_status_data
+ohci_hub_control
+cc_to_error
+usb_dev_host
+td_alloc
+td_free
+ed_free
+urb_free_priv
+finish_urb
+ed_schedule
+start_ed_unlink
+td_fill
+td_done
+finish_unlinks
+takeback_td
+ohci_usb_reset
+check_ed
+unlink_watchdog_func
+rtl8652_stop_hc
+ohci_rtl8652_cleanup
+ohci-hcd.mod.c
+__module_depends
+__mod_vermagic5
+free_irq
+usb_hcd_platform_shutdown
+__udelay
+dma_pool_create
+usb_hcd_unlink_urb_from_ep
+platform_driver_unregister
+__this_module
+param_get_bool
+__iounmap
+cleanup_module
+flush_scheduled_work
+kfree
+usb_disabled
+__release_region
+init_module
+dma_pool_alloc
+dev_driver_string
+msecs_to_jiffies
+usb_hcd_check_unlink_urb
+usb_hcds_loaded
+dma_alloc_coherent
+platform_driver_register
+dma_pool_free
+platform_device_unregister
+mod_timer
+usb_calc_bus_time
+warn_slowpath_null
+dma_free_coherent
+param_set_bool
+printk
+usb_hcd_link_urb_to_ep
+memset
+usb_put_hcd
+jiffies
+dma_pool_destroy
+usb_hcd_giveback_urb
+usb_hcd_poll_rh_status
+usb_create_hcd
+platform_device_register_simple
+schedule_timeout_uninterruptible
+usb_remove_hcd
+iomem_resource
+round_jiffies
+usb_add_hcd
+msleep
+__kmalloc
+__request_region

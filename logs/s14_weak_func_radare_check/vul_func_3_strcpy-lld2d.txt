@@ -1,0 +1,151 @@
+[*] Binary protection state of lld2d
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of lld2d
+
+sw v0, 0x230(fp)
+sw v1, 0x234(fp)
+sw a0, 0x238(fp)
+lw v0, -0x7fe0(gp)
+addiu v0, v0, 0x2ea4
+lhu v0, 0xc(v0)
+sh v0, 0x23c(fp)
+lw s0, -obj.g_icon_path(gp)
+addiu v0, fp, 0x230
+move a0, v0
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+addiu v0, v0, 1
+move a0, v0
+lw t9, -sym.xmalloc(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, (s0)
+lw v0, -obj.g_icon_path(gp)
+addiu v1, fp, 0x230
+lw a0, (v0)
+move a1, v1
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw a0, -0x7fe0(gp)
+addiu a0, a0, 0x2eb4
+lw a1, -0x7fe0(gp)
+addiu a1, a1, 0x2ec4
+lw t9, -sym.imp.fopen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x18(fp)
+lw v0, 0x18(fp)
+bnez v0, 0x404f38
+nop
+b 0x40524c
+nop
+addiu v0, fp, 0x1c
+addiu v1, fp, 0x220
+move a0, v0
+--
+lw gp, 0x10(fp)
+sw zero, 0x240(fp)
+sw zero, 0x244(fp)
+addiu v0, fp, 0x120
+move a0, v0
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+addiu v0, v0, 6
+move a0, v0
+lw t9, -sym.xmalloc(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x240(fp)
+lw v0, 0x240(fp)
+sw v0, 0x244(fp)
+lb v1, 0x120(fp)
+addiu v0, zero, 0x2f
+beq v1, v0, 0x405058
+nop
+lw a0, 0x244(fp)
+lw a1, -0x7fe0(gp)
+addiu a1, a1, 0x2ed8
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw v0, 0x244(fp)
+addiu v0, v0, 5
+sw v0, 0x244(fp)
+addiu v0, fp, 0x120
+move a0, v0
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+move v1, v0
+addiu v0, fp, 0x120
+lw a0, 0x244(fp)
+move a1, v0
+move a2, v1
+lw t9, -sym.imp.strncpy(gp)
+jalr t9
+nop
+--
+lw gp, 0x10(fp)
+sw zero, 0x244(fp)
+sw zero, 0x240(fp)
+addiu v0, fp, 0x120
+move a0, v0
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+addiu v0, v0, 6
+move a0, v0
+lw t9, -sym.xmalloc(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x244(fp)
+lw v0, 0x244(fp)
+sw v0, 0x240(fp)
+lb v1, 0x120(fp)
+addiu v0, zero, 0x2f
+beq v1, v0, 0x40516c
+nop
+lw a0, 0x240(fp)
+lw a1, -0x7fe0(gp)
+addiu a1, a1, 0x2ed8
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw v0, 0x240(fp)
+addiu v0, v0, 5
+sw v0, 0x240(fp)
+addiu v0, fp, 0x120
+move a0, v0
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+move v1, v0
+addiu v0, fp, 0x120
+lw a0, 0x240(fp)
+move a1, v0
+move a2, v1
+lw t9, -sym.imp.strncpy(gp)
+jalr t9
+nop
+
+[*] Function strcpy used 3 times lld2d
+

@@ -1,0 +1,7 @@
+version_details;iptables;1.4.5;CVEs;1;Exploits;0;Source;STAT
+version_details;vsftpd;2.3.2;CVEs;3;Exploits;1;Source;STAT
+version_details;busybox;1.01;CVEs;16;Exploits;0;Source;STAT
+version_details;zlib;1.1.4;CVEs;5;Exploits;1;Source;STAT
+version_details;openssl;1.0.0d;CVEs;69;Exploits;6;Source;STAT
+version_details;openssl;0.9.8b;CVEs;88;Exploits;10;Source;STAT
+version_details;linux_kernel;2.6.30.9;CVEs;1946;Exploits;150;Source;STAT

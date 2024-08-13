@@ -1,0 +1,11 @@
+[*] Binary protection state of scsi_wait_scan.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function popen tear down of scsi_wait_scan.ko
+
+
+[*] Function popen used 0 times scsi_wait_scan.ko
+

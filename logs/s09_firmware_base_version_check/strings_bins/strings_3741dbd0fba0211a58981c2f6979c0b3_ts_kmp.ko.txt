@@ -1,0 +1,47 @@
+@ !'
+ !$B
+@(!$B
+license=GPL
+depends=
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+ts_kmp
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.kmp_find
+.rel.text.kmp_init
+.text.kmp_get_pattern
+.text.kmp_get_pattern_len
+.rel.init.text
+.rel.exit.text
+.rodata
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+ts_kmp.c
+init_kmp
+exit_kmp
+__mod_license154
+kmp_ops
+kmp_init
+kmp_find
+kmp_get_pattern
+kmp_get_pattern_len
+ts_kmp.mod.c
+__module_depends
+__mod_vermagic5
+textsearch_unregister
+__this_module
+cleanup_module
+memcpy
+init_module
+_ctype
+textsearch_register
+__kmalloc

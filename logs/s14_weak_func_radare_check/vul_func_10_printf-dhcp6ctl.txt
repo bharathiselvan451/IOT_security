@@ -1,0 +1,402 @@
+[*] Binary protection state of dhcp6ctl
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function printf tear down of dhcp6ctl
+
+move a0, s0
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.strcmp(gp)
+jalr t9
+addiu a1, a1, 0x3f30
+lw gp, 0x18(sp)
+beqz v0, 0x4015c0
+move a0, s0
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.strcmp(gp)
+jalr t9
+addiu a1, a1, 0x3f38
+lw gp, 0x18(sp)
+beqz v0, 0x4019d8
+move a0, s0
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.strcmp(gp)
+jalr t9
+addiu a1, a1, 0x3f40
+lw gp, 0x18(sp)
+bnez v0, 0x401618
+nop
+lw a0, -segment.LOAD0(gp)
+addiu a2, zero, 0x18d
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.printf(gp)[0m
+addiu a0, a0, 0x3f48
+jalr t9
+addiu a1, a1, 0x3f08
+addiu v1, s3, -1
+lw gp, 0x18(sp)
+beqz v1, 0x401810
+move v0, zero
+lw v0, 0x4510(s6)
+bnez v0, 0x401a90
+nop
+lw a1, -segment.LOAD0(gp)
+lw s0, 4(s1)
+lw t9, -sym.imp.strcmp(gp)
+addiu a1, a1, 0x3f50
+jalr t9
+move a0, s0
+lw gp, 0x18(sp)
+bnez v0, 0x401b58
+move a1, s0
+lw t0, 0x188c(sp)
+lw v1, 0x1888(sp)
+sltiu v0, t0, 4
+beqz v0, 0x4017c0
+addiu v0, zero, 4
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.warnx(gp)
+jalr t9
+addiu a0, a0, 0x3f5c
+lw gp, 0x18(sp)
+lw a0, -segment.LOAD0(gp)
+addiu a2, zero, 0xa4
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.printf(gp)[0m
+addiu a0, a0, 0x3f48
+jalr t9
+addiu a1, a1, 0x3f00
+addiu a0, zero, 1
+lw gp, 0x18(sp)
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.errx(gp)
+jalr t9
+addiu a1, a1, 0x3f78
+lw v0, -0x7f40(gp)
+lw v1, -0x7fe8(gp)
+lw a0, (v0)
+b 0x400fe0
+sw a0, 0x4644(v1)
+lw v0, -0x7f40(gp)
+lw s4, (v0)
+b 0x400fe0
+nop
+lw v0, -0x7f40(gp)
+lw v1, -0x7fe8(gp)
+--
+lw v0, -segment.LOAD0(gp)
+addiu v0, v0, 0x3f98
+sw v0, 0x4640(v1)
+lw v1, -0x7fe8(gp)
+lw v0, 0x4644(v1)
+bnez v0, 0x401388
+nop
+lw v0, -segment.LOAD0(gp)
+addiu v0, v0, 0x3f9c
+sw v0, 0x4644(v1)
+bnez s4, 0x40109c
+nop
+lw v0, -segment.LOAD0(gp)
+b 0x40109c
+addiu s4, v0, 0x3fa4
+lw t9, -segment.LOAD0(gp)
+addiu t9, t9, 0xf44
+jalr t9
+nop
+lw gp, 0x18(sp)
+b 0x401084
+nop
+lw a0, -segment.LOAD0(gp)
+addiu a2, zero, 0x175
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.printf(gp)[0m
+addiu a0, a0, 0x3f48
+jalr t9
+addiu a1, a1, 0x3f08
+addiu v1, zero, 1
+lw gp, 0x18(sp)
+sh v1, 0x860(sp)
+lw v0, 0x1888(sp)
+addiu v1, sp, 0x870
+lw t9, -sym.imp.time(gp)
+move a0, zero
+subu s2, v0, v1
+addiu v1, s2, -0xc
+jalr t9
+sh v1, 0x862(sp)
+lw gp, 0x18(sp)
+bltz v0, 0x401a60
+move a3, v0
+lw v1, 0x864(sp)
+addiu a0, sp, 0x87c
+lw v0, 0x860(sp)
+--
+sw v0, 0x10(sp)
+move a1, s2
+lw t9, -sym.dhcp6_calc_mac(gp)
+addiu a2, zero, -1
+sw s5, 0x14(sp)
+jalr t9
+addiu a3, zero, 1
+lw gp, 0x18(sp)
+beqz v0, 0x401820
+nop
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.warnx(gp)
+jalr t9
+addiu a0, a0, 0x3fb8
+b 0x4012b0
+nop
+lw a0, -segment.LOAD0(gp)
+move a1, s4
+lw t9, -sym.imp.warn(gp)
+jalr t9
+addiu a0, a0, 0x3fd0
+lw gp, 0x18(sp)
+lw a0, -segment.LOAD0(gp)
+addiu a2, zero, 0x9e
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.printf(gp)[0m
+addiu a0, a0, 0x3f48
+jalr t9
+addiu a1, a1, 0x3f00
+addiu a0, zero, 1
+lw gp, 0x18(sp)
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.errx(gp)
+jalr t9
+addiu a1, a1, 0x3fdc
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.warnx(gp)
+jalr t9
+addiu a0, a0, 0x4004
+b 0x4012b0
+nop
+lw v1, -0x7fe8(gp)
+lw v0, 0x4640(v1)
+bnez v0, 0x401504
+nop
+lw v0, -segment.LOAD0(gp)
+--
+nop
+lw t9, -sym.imp.fclose(gp)
+jalr t9
+move a0, s2
+lw gp, 0x18(sp)
+lw a0, 0x14(s5)
+beqz a0, 0x40149c
+nop
+lw t9, -sym.imp.free(gp)
+jalr t9
+nop
+b 0x401498
+nop
+lw a1, -segment.LOAD0(gp)
+addiu a0, zero, 1
+lw t9, -sym.imp.errx(gp)
+jalr t9
+addiu a1, a1, 0x4080
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.warn(gp)
+b 0x401558
+addiu a0, a0, 0x4098
+lw a0, -segment.LOAD0(gp)
+addiu a2, zero, 0x179
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.printf(gp)[0m
+addiu a0, a0, 0x3f48
+jalr t9
+addiu a1, a1, 0x3f08
+addiu v0, zero, 1
+lw s4, 0x4510(s6)
+lw gp, 0x18(sp)
+beq s4, v0, 0x401634
+addiu v0, s3, -1
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.warnx(gp)
+jalr t9
+addiu a0, a0, 0x40a8
+b 0x4012b0
+nop
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.warn(gp)
+b 0x401558
+addiu a0, a0, 0x40cc
+lw a0, -segment.LOAD0(gp)
+move a1, s0
+--
+move s0, v0
+lw a0, 0x189c(sp)
+addiu s1, zero, -1
+bnez a0, 0x401988
+move s0, a0
+lw t9, -sym.imp.freeaddrinfo(gp)
+jalr t9
+nop
+lw gp, 0x18(sp)
+bltz s1, 0x401d58
+addiu a2, zero, 0xc9
+lw t9, -sym.imp.write(gp)
+lw a1, 0x1880(sp)
+lw a2, 0x1884(sp)
+jalr t9
+move a0, s1
+lw gp, 0x18(sp)
+bltz v0, 0x401d24
+move v1, v0
+lw v0, 0x1884(sp)
+beq v1, v0, 0x401ca8
+nop
+lw a0, -segment.LOAD0(gp)
+addiu a2, zero, 0xd7
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.printf(gp)[0m
+addiu a0, a0, 0x3f48
+jalr t9
+addiu a1, a1, 0x3f00
+addiu a0, zero, 1
+lw gp, 0x18(sp)
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.errx(gp)
+jalr t9
+addiu a1, a1, 0x4128
+lw a0, -segment.LOAD0(gp)
+addiu s1, zero, -1
+lw t9, -sym.imp.warn(gp)
+jalr t9
+addiu a0, a0, 0x4148
+lw gp, 0x18(sp)
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.perror(gp)
+addiu a0, a0, 0x4150
+jalr t9
+nop
+--
+beqz s0, 0x4019cc
+nop
+lw t9, -sym.imp.socket(gp)
+lw a0, 4(s0)
+lw a1, 8(s0)
+lw a2, 0xc(s0)
+jalr t9
+nop
+lw gp, 0x18(sp)
+bltz v0, 0x401b70
+move s1, v0
+lw t9, -sym.imp.connect(gp)
+lw a1, 0x14(s0)
+lw a2, 0x10(s0)
+jalr t9
+move a0, v0
+lw gp, 0x18(sp)
+bltz v0, 0x40194c
+nop
+lw a0, 0x189c(sp)
+b 0x4018d4
+nop
+lw a0, -segment.LOAD0(gp)
+addiu a2, zero, 0x185
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.printf(gp)[0m
+addiu a0, a0, 0x3f48
+jalr t9
+addiu a1, a1, 0x3f08
+addiu v1, s3, -1
+lw gp, 0x18(sp)
+beqz v1, 0x401a78
+nop
+lw v0, 0x4510(s6)
+bnez v0, 0x401a90
+nop
+lw a1, -segment.LOAD0(gp)
+lw s0, 4(s1)
+lw t9, -sym.imp.strcmp(gp)
+addiu a1, a1, 0x3f50
+jalr t9
+move a0, s0
+lw gp, 0x18(sp)
+bnez v0, 0x401b40
+move a1, s0
+lw t0, 0x188c(sp)
+--
+b 0x4012b0
+nop
+lw a0, -segment.LOAD0(gp)
+move a1, s0
+lw t9, -sym.imp.warnx(gp)
+jalr t9
+addiu a0, a0, 0x4348
+b 0x4012b0
+nop
+lw t9, -sym.imp.close(gp)
+jalr t9
+move a0, s1
+lw gp, 0x18(sp)
+lw a0, 0x1880(sp)
+lw t9, -sym.imp.free(gp)
+jalr t9
+nop
+move a0, zero
+lw gp, 0x18(sp)
+lw t9, -sym.imp.exit(gp)
+jalr t9
+nop
+lw a0, -segment.LOAD0(gp)
+addiu a2, zero, 0xb3
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.printf(gp)[0m
+addiu a0, a0, 0x3f48
+jalr t9
+addiu a1, a1, 0x3f00
+lw gp, 0x18(sp)
+lw t9, -sym.imp.gai_strerror(gp)
+jalr t9
+move a0, s0
+addiu a0, zero, 1
+lw gp, 0x18(sp)
+move a2, v0
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.errx(gp)
+jalr t9
+addiu a1, a1, 0x4364
+lw a0, -segment.LOAD0(gp)
+addiu a2, zero, 0xd2
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.printf(gp)[0m
+addiu a0, a0, 0x3f48
+jalr t9
+addiu a1, a1, 0x3f00
+addiu a0, zero, 1
+lw gp, 0x18(sp)
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.err(gp)
+jalr t9
+addiu a1, a1, 0x437c
+lw a0, -segment.LOAD0(gp)
+lw a1, -segment.LOAD0(gp)
+[31mlw t9, -sym.imp.printf(gp)[0m
+addiu a0, a0, 0x3f48
+jalr t9
+addiu a1, a1, 0x3f00
+lw v1, 0x4510(s6)
+lw gp, 0x18(sp)
+bnez v1, 0x401da4
+nop
+lw v0, -segment.LOAD0(gp)
+addiu a1, v0, 0x438c
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.warnx(gp)
+jalr t9
+addiu a0, a0, 0x4394
+lw gp, 0x18(sp)
+b 0x401cd0
+addiu a0, zero, 1
+lw v0, -segment.LOAD0(gp)
+b 0x401d88
+addiu a1, v0, 0x43b0
+lui gp, 5
+
+[*] Function printf used 10 times dhcp6ctl
+

@@ -1,0 +1,11 @@
+[*] Binary protection state of smbd
+
+  
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of smbd
+
+
+[*] Function fprintf used 0 times smbd
+

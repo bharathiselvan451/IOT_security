@@ -1,0 +1,20 @@
+[+] Package extractor
+=================================================================
+The extraction module extracts package archives (DEB, IPK, APK) from firmware files and provides details about the extracted files and binaries.
+
+
+
+==> Debian archive extraction mode
+-----------------------------------------------------------------
+[*] Identify debian archives and extracting it to the root directories ...
+
+
+==> IPK archive extraction mode
+-----------------------------------------------------------------
+[*] Identify ipk archives and extracting it to the root directories ...
+
+
+==> APK archive extraction mode
+-----------------------------------------------------------------
+[*] Identify apk archives and extracting it to the root directories ...
+[-] Wed Jul 31 20:45:59 EDT 2024 - P65_package_extractor nothing reported

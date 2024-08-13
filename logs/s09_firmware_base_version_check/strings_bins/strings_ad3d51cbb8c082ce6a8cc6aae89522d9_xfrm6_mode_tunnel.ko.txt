@@ -1,0 +1,46 @@
+(#$B
+0!$B
+alias=xfrm-mode-10-1
+license=GPL
+depends=ipv6
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+xfrm6_mode_tunnel
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.xfrm6_mode_tunnel_output
+.rel.text.xfrm6_mode_tunnel_input
+.rel.init.text
+.rel.exit.text
+.modinfo
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+xfrm6_mode_tunnel.c
+xfrm6_mode_tunnel_init
+xfrm6_mode_tunnel_exit
+__mod_alias117
+__mod_license116
+xfrm6_tunnel_mode
+xfrm6_mode_tunnel_input
+xfrm6_mode_tunnel_output
+xfrm6_mode_tunnel.mod.c
+__module_depends
+__mod_vermagic5
+memmove
+__this_module
+cleanup_module
+memcpy
+init_module
+pskb_expand_head
+xfrm_unregister_mode
+xfrm_prepare_input
+xfrm_register_mode
+__pskb_pull_tail
+xfrm6_prepare_output

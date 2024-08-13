@@ -1,0 +1,11 @@
+[*] Binary protection state of fat.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function mmap tear down of fat.ko
+
+
+[*] Function mmap used 0 times fat.ko
+

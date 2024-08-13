@@ -1,0 +1,11 @@
+[*] Binary protection state of ts_bm.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function sprintf tear down of ts_bm.ko
+
+
+[*] Function sprintf used 0 times ts_bm.ko
+

@@ -1,0 +1,13 @@
+[*] Searching (args for grep: ) for format:.
+[*] Grepit state info - comment: iOS string format function format. Just check if the first argument to these functions are user controlled, that could be a format string vulnerability.
+[*] Grepit state info - Filename 6_ios_string_format_format_wide.txt
+[*] Grepit state info - Example: format:
+[*] Grepit state info - False positive example: FALSE_POSITIVES_EXAMPLE_PLACEHOLDER
+[*] Grepit state info - Grep args: 
+[*] Grepit state info - Search regex: format:
+
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m5698[m[36m-[mPlease reset the target after leaving Test Mode
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m5699[m[36m-[m6x	PHY Test 4 Mode: No:%d  Port:%d
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m5700[m[36m-[m
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m:[m[32m5701[m[36m:[mTest  [01;31mformat:[m	"Test 1~4"
+[35m/logs/firmware/unblob_extracted/firmware_extract/142344-1130103.lzma_extract/lzma.uncompressed[m[36m-[m[32m5702[m[36m-[mPHY Test 4 Mode: No  Port{0~4}

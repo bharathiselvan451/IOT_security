@@ -1,0 +1,11 @@
+[*] Binary protection state of nf_nat_rtsp.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function sprintf tear down of nf_nat_rtsp.ko
+
+
+[*] Function sprintf used 0 times nf_nat_rtsp.ko
+

@@ -1,0 +1,57 @@
+[*] Binary protection state of smbd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of smbd
+
+lw a2, 0x30(sp)
+lw a1, 0x34(sp)
+sll a3, a2, 1
+addu a3, a3, a2
+sll v0, a1, 1
+sll a3, a3, 3
+addu v0, v0, a1
+addu a3, a3, a2
+sll v0, v0, 3
+sll a3, a3, 2
+addu v0, v0, a1
+div zero, a3, s0
+bnez s0, 0x42eee8
+nop
+break 7
+sll v0, v0, 2
+lw t0, 0x38(sp)
+lw gp, 0x28(sp)
+sll v1, t0, 1
+addu v1, v1, t0
+sll v1, v1, 3
+addu v1, v1, t0
+sll v1, v1, 2
+sw a1, 0x10(sp)
+lw a1, -0x7fdc(gp)
+[31mlw t9, -sym.imp.fprintf(gp)[0m
+sw s0, 0x20(sp)
+sw t0, 0x18(sp)
+addiu a1, a1, 0x5074
+mflo a3
+div zero, v0, s0
+bnez s0, 0x42ef34
+nop
+break 7
+mflo v0
+div zero, v1, s0
+bnez s0, 0x42ef48
+nop
+break 7
+sw v0, 0x14(sp)
+mflo v1
+jalr t9
+sw v1, 0x1c(sp)
+lw gp, 0x28(sp)
+lw ra, 0x48(sp)
+lw s1, 0x44(sp)
+
+[*] Function fprintf used 1 times smbd
+

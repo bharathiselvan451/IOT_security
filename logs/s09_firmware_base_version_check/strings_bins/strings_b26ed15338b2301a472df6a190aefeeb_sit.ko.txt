@@ -1,0 +1,157 @@
+  !$B
+ !$B
+(!(b
+b0#,
+ !0B
+ !0B
+ !0B
+  !$
+0!$B
+  !$B
+  !$B
+ %8c
+#0c@
+ !$B
+  !$B
+(!$B
+`(!$B
+  !$B
+8!&i
+ !$B
+  !$B
+(!$B
+ (!$B
+` !$B
+ (!<
+@ !$B
+  !$B
+@(!$
+` !$
+@ !<
+@ !$B
+L4B 
+` !'9
+<7>sit: nexthop == NULL
+sit%%d
+Xsit0
+<6>IPv6 over IPv4 tunneling driver
+<6>sit init: Can't add protocol
+alias=sit0
+license=GPL
+depends=tunnel4,ipv6
+vermagic=2.6.30.9 mod_unload RLX 32BIT 
+GCC: (GNU) 3.4.6-1.3.6
+GCC: (GNU) 3.4.6-1.3.6
+.symtab
+.strtab
+.shstrtab
+.reginfo
+.rel.text.ipip6_tunnel_lookup
+.text.__ipip6_bucket
+.rel.text.ipip6_tunnel_unlink
+.rel.text.ipip6_tunnel_link
+.rel.text.ipip6_tunnel_del_prl
+.rel.text.ipip6_tunnel_uninit
+.rel.text.ipip6_err
+.rel.text.ipip6_rcv
+.rel.text.ipip6_tunnel_xmit
+.rel.text.ipip6_tunnel_bind_dev
+.rel.text.ipip6_tunnel_locate
+.rel.text.ipip6_tunnel_ioctl
+.rel.fixup
+.text.ipip6_tunnel_change_mtu
+.rel.text.ipip6_tunnel_setup
+.rel.text.sit_init_net
+.rel.text.sit_exit_net
+.rel.exit.text
+.rel.init.text
+.rel.rodata
+.modinfo
+.rel__ex_table
+.rel.data
+.rel.gnu.linkonce.this_module
+.bss
+.comment
+.mdebug.abi32
+.rel.pdr
+sit.c
+sit_init
+sit_cleanup
+__mod_alias1094
+__mod_license1093
+sit_net_ops
+sit_init_net
+sit_exit_net
+sit_handler
+ipip6_rcv
+ipip6_err
+ipip6_lock
+ipip6_netdev_ops
+ipip6_tunnel_uninit
+ipip6_tunnel_xmit
+ipip6_tunnel_ioctl
+ipip6_tunnel_change_mtu
+ipip6_tunnel_lookup
+sit_net_id
+__ipip6_bucket
+ipip6_tunnel_unlink
+ipip6_tunnel_link
+ipip6_tunnel_del_prl
+ipip6_tunnel_bind_dev
+ipip6_tunnel_locate
+ipip6_tunnel_setup
+sit.mod.c
+__module_depends
+__mod_vermagic5
+__ip_select_ident
+rtnl_unlock
+__ipv6_addr_type
+sock_wfree
+consume_skb
+__this_module
+xfrm4_tunnel_register
+ipv6_chk_prefix
+cleanup_module
+dev_alloc_name
+memcpy
+kfree
+net_ratelimit
+nf_conntrack_destroy
+netdev_state_change
+init_module
+local_bh_enable
+kfree_skb
+alloc_netdev_mq
+kmem_cache_alloc
+__secpath_destroy
+local_bh_disable
+capable
+__dev_get_by_index
+init_net
+skb_push
+strlcpy
+register_netdev
+free_netdev
+printk
+memset
+__copy_user
+__pskb_pull_tail
+netif_rx
+register_pernet_gen_device
+jiffies
+skb_realloc_headroom
+sprintf
+icmp_send
+dst_release
+rtnl_lock
+malloc_sizes
+ip_local_out
+net_assign_generic
+ip_route_output_key
+strchr
+unregister_netdevice
+unregister_pernet_gen_device
+xfrm4_tunnel_deregister
+icmpv6_send
+__kmalloc
+register_netdevice

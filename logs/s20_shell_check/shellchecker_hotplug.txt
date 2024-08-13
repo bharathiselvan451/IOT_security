@@ -1,0 +1,100 @@
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug line 3:[0m
+[0mif [ "$ACTION" = "add" -a "$1" = "bdi" ] ; then[0m
+[33m                       ^-- SC2166 (warning): Prefer [ p ] && [ q ] as [ p -a q ] is not well defined.[0m
+
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug line 9:[0m
+[0m	`usbp mount`[0m
+[33m        ^----------^ SC2092 (warning): Remove backticks to avoid executing output (or use eval if intentional).[0m
+[32m        ^----------^ SC2006 (style): Use $(...) notation instead of legacy backticks `...`.[0m
+
+[1mDid you mean: [0m
+	$(usbp mount)
+
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug line 10:[0m
+[0m	`echo 1 > /tmp/ab`[0m
+[33m        ^----------------^ SC2092 (warning): Remove backticks to avoid executing output (or use eval if intentional).[0m
+[32m        ^----------------^ SC2006 (style): Use $(...) notation instead of legacy backticks `...`.[0m
+[32m        ^----------------^ SC2116 (style): Useless echo? Instead of 'cmd $(echo foo)', just use 'cmd foo'.[0m
+
+[1mDid you mean: [0m
+	$(echo 1 > /tmp/ab)
+
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug line 12:[0m
+[0mif [ "$ACTION" = "remove" -a "$1" = "scsi_host" ] ; then[0m
+[33m                          ^-- SC2166 (warning): Prefer [ p ] && [ q ] as [ p -a q ] is not well defined.[0m
+
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug line 13:[0m
+[0m	`usbp umount`[0m
+[33m        ^-----------^ SC2092 (warning): Remove backticks to avoid executing output (or use eval if intentional).[0m
+[32m        ^-----------^ SC2006 (style): Use $(...) notation instead of legacy backticks `...`.[0m
+
+[1mDid you mean: [0m
+	$(usbp umount)
+
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug line 14:[0m
+[0m	`echo 2 > /tmp/ab`[0m
+[33m        ^----------------^ SC2092 (warning): Remove backticks to avoid executing output (or use eval if intentional).[0m
+[32m        ^----------------^ SC2006 (style): Use $(...) notation instead of legacy backticks `...`.[0m
+[32m        ^----------------^ SC2116 (style): Useless echo? Instead of 'cmd $(echo foo)', just use 'cmd foo'.[0m
+
+[1mDid you mean: [0m
+	$(echo 2 > /tmp/ab)
+
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug line 18:[0m
+[0mif [ "$ACTION" = "add" -a "$1" = "usb_device" ] ; then[0m
+[33m                       ^-- SC2166 (warning): Prefer [ p ] && [ q ] as [ p -a q ] is not well defined.[0m
+
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug line 20:[0m
+[0m		`usbp mount`[0m
+[33m                ^----------^ SC2092 (warning): Remove backticks to avoid executing output (or use eval if intentional).[0m
+[32m                ^----------^ SC2006 (style): Use $(...) notation instead of legacy backticks `...`.[0m
+
+[1mDid you mean: [0m
+		$(usbp mount)
+
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug line 21:[0m
+[0m		`echo 3 > /tmp/ab`[0m
+[33m                ^----------------^ SC2092 (warning): Remove backticks to avoid executing output (or use eval if intentional).[0m
+[32m                ^----------------^ SC2006 (style): Use $(...) notation instead of legacy backticks `...`.[0m
+[32m                ^----------------^ SC2116 (style): Useless echo? Instead of 'cmd $(echo foo)', just use 'cmd foo'.[0m
+
+[1mDid you mean: [0m
+		$(echo 3 > /tmp/ab)
+
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug line 24:[0m
+[0mif [ "$ACTION" = "remove" -a "$1" = "usb_device" ] ; then[0m
+[33m                          ^-- SC2166 (warning): Prefer [ p ] && [ q ] as [ p -a q ] is not well defined.[0m
+
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug line 25:[0m
+[0m	`usbp umount`[0m
+[33m        ^-----------^ SC2092 (warning): Remove backticks to avoid executing output (or use eval if intentional).[0m
+[32m        ^-----------^ SC2006 (style): Use $(...) notation instead of legacy backticks `...`.[0m
+
+[1mDid you mean: [0m
+	$(usbp umount)
+
+
+[1mIn /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug line 26:[0m
+[0m	`echo 4 > /tmp/ab`[0m
+[33m        ^----------------^ SC2092 (warning): Remove backticks to avoid executing output (or use eval if intentional).[0m
+[32m        ^----------------^ SC2006 (style): Use $(...) notation instead of legacy backticks `...`.[0m
+[32m        ^----------------^ SC2116 (style): Useless echo? Instead of 'cmd $(echo foo)', just use 'cmd foo'.[0m
+
+[1mDid you mean: [0m
+	$(echo 4 > /tmp/ab)
+
+For more information:
+  https://www.shellcheck.net/wiki/SC2092 -- Remove backticks to avoid executi...
+  https://www.shellcheck.net/wiki/SC2166 -- Prefer [ p ] && [ q ] as [ p -a q...
+  https://www.shellcheck.net/wiki/SC2006 -- Use $(...) notation instead of le...

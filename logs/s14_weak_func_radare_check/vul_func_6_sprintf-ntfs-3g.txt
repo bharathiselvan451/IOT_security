@@ -1,0 +1,255 @@
+[*] Binary protection state of ntfs-3g
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       RPATH        No RUNPATH   No Symbols
+
+
+[*] Function sprintf tear down of ntfs-3g
+
+move v1, v0
+lw v0, 0x1c(fp)
+addu v1, v1, v0
+lw v0, 0x38(fp)
+addu v0, v1, v0
+addiu v0, v0, 2
+sw v0, 0x20(fp)
+lw v0, 0x30(fp)
+lw a0, (v0)
+lw a1, 0x20(fp)
+lw t9, -sym.imp.realloc(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+sw v0, 0x18(fp)
+lw v0, 0x18(fp)
+beqz v0, 0x4208f4
+nop
+lw v0, 0x18(fp)
+lw v1, 0x1c(fp)
+addu v0, v0, v1
+move a0, v0
+lw a1, -0x7fdc(gp)
+addiu a1, a1, 0x6b64
+lw a2, 0x34(fp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+jalr t9
+nop
+lw gp, 0x10(fp)
+lw v0, 0x18(fp)
+bnez v0, 0x420938
+nop
+lw v0, -0x7e8c(gp)
+lw a0, (v0)
+lw a1, -0x7fdc(gp)
+addiu a1, a1, 0x6b68
+lw a2, -0x7fe0(gp)
+addiu a2, a2, 0x7c60
+lw a2, (a2)
+lw t9, -sym.imp.fprintf(gp)
+jalr t9
+nop
+lw gp, 0x10(fp)
+addiu v0, zero, -1
+b 0x420948
+sw v0, 0x24(fp)
+--
+nop
+lw gp, 0x18(fp)
+sw v0, 0x20(fp)
+lw v1, 0x20(fp)
+addiu v0, zero, -1
+bne v1, v0, 0x421284
+nop
+b 0x421698
+nop
+lw t9, -sym.imp.getuid(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+move s0, v0
+lw t9, -sym.imp.getgid(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+sw s0, 0x10(sp)
+sw v0, 0x14(sp)
+lw a0, 0x34(fp)
+lw a1, -0x7fdc(gp)
+addiu a1, a1, 0x6c24
+lw a2, 0x21c(fp)
+lw a3, 0x218(fp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+jalr t9
+nop
+lw gp, 0x18(fp)
+lw a0, 0x224(fp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+sw v0, 0x1f4(fp)
+lw v0, 0x38(fp)
+beqz v0, 0x421330
+nop
+lw a0, 0x38(fp)
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+sw v0, 0x1f8(fp)
+lw v1, 0x1f8(fp)
+lw v0, 0x1f4(fp)
+--
+nop
+lw gp, 0x18(fp)
+sw v0, 0x20(fp)
+lw v1, 0x20(fp)
+addiu v0, zero, -1
+bne v1, v0, 0x421510
+nop
+lw t9, -sym.imp.__errno_location(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+lw v1, (v0)
+addiu v0, zero, 0x16
+bne v1, v0, 0x421510
+nop
+lw t9, -sym.imp.getuid(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+sw v0, 0x10(sp)
+lw a0, 0x34(fp)
+lw a1, -0x7fdc(gp)
+addiu a1, a1, 0x6c58
+lw a2, 0x21c(fp)
+lw a3, 0x218(fp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+jalr t9
+nop
+lw gp, 0x18(fp)
+lw v0, 0x28(fp)
+sw v0, 0x10(sp)
+lw a0, 0x3c(fp)
+lw a1, 0x210(fp)
+lw a2, 0x40(fp)
+lw a3, 0x24(fp)
+lw t9, -sym.imp.mount(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+sw v0, 0x20(fp)
+lw t9, -sym.drop_privs(gp)
+jalr t9
+nop
+beqz v0, 0x42152c
+lw gp, 0x18(fp)
+b 0x421698
+--
+andi v1, v0, 0xf000
+ori v0, zero, 0x8000
+beq v1, v0, 0x421c50
+nop
+lw v0, -0x7e8c(gp)
+lw a0, (v0)
+lw a1, -0x7fdc(gp)
+addiu a1, a1, 0x6e08
+lw a2, -0x7fe0(gp)
+addiu a2, a2, 0x7c60
+lw a2, (a2)
+lw a3, 0x24(fp)
+lw t9, -sym.imp.fprintf(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+addiu v0, zero, -1
+b 0x421ccc
+sw v0, 0x2c(fp)
+lw v0, 0x4c(fp)
+lw a0, -0x7fe8(gp)
+addiu a0, a0, -0x7cb0
+lw a1, -0x7fdc(gp)
+addiu a1, a1, 0x6e38
+lw a2, (v0)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+jalr t9
+nop
+lw gp, 0x18(fp)
+lw v1, 0x40(fp)
+lw v0, -0x7fe8(gp)
+addiu v0, v0, -0x7cb0
+b 0x421cc8
+sw v0, (v1)
+lw v0, -0x7e8c(gp)
+lw a0, (v0)
+lw a1, -0x7fdc(gp)
+addiu a1, a1, 0x6e4c
+lw a2, -0x7fe0(gp)
+addiu a2, a2, 0x7c60
+lw a2, (a2)
+lw a3, 0x24(fp)
+lw t9, -sym.imp.fprintf(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+--
+sw v0, 0x1024(fp)
+lw v0, 0x1024(fp)
+beqz v0, 0x423bb4
+nop
+addiu a0, fp, 0x20
+lw t9, -sym.imp.strlen(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+sw v0, 0x1034(fp)
+lw v0, 0x1034(fp)
+beqz v0, 0x423b90
+nop
+lw v1, 0x1034(fp)
+addiu v0, fp, 0x20
+addu v0, v0, v1
+lb v1, -1(v0)
+addiu v0, zero, 0x2f
+bne v1, v0, 0x423b90
+nop
+lw a0, 0x1024(fp)
+lw a1, -0x7fdc(gp)
+addiu a1, a1, 0x7288
+addiu a2, fp, 0x20
+lw a3, 0x102c(fp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+jalr t9
+nop
+b 0x423bb4
+lw gp, 0x18(fp)
+lw a0, 0x1024(fp)
+lw a1, -0x7fdc(gp)
+addiu a1, a1, 0x7290
+addiu a2, fp, 0x20
+lw a3, 0x102c(fp)
+[31mlw t9, -sym.imp.sprintf(gp)[0m
+jalr t9
+nop
+lw gp, 0x18(fp)
+lw a0, 0x1020(fp)
+lw t9, -sym.imp.free(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+lw v0, 0x1024(fp)
+bnez v0, 0x423bf8
+nop
+lw v0, -0x7e8c(gp)
+lw a0, (v0)
+lw a1, -0x7fdc(gp)
+addiu a1, a1, 0x7240
+lw a2, 0x1050(fp)
+lw t9, -sym.imp.fprintf(gp)
+jalr t9
+nop
+lw gp, 0x18(fp)
+
+[*] Function sprintf used 6 times ntfs-3g
+

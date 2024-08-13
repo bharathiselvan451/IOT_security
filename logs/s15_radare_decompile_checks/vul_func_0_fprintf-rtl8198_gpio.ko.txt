@@ -1,0 +1,11 @@
+[*] Binary protection state of rtl8198_gpio.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function fprintf tear down of rtl8198_gpio.ko
+
+
+[*] Function fprintf used 0 times rtl8198_gpio.ko
+

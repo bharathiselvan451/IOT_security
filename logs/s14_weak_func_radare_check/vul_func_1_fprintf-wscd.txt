@@ -1,0 +1,57 @@
+[*] Binary protection state of wscd
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function fprintf tear down of wscd
+
+addiu a0, a0, 0x7db0
+b 0x409e44
+nop
+lw t9, -sym.imp.lockf(gp)
+move a0, v0
+addiu a1, zero, 1
+jalr t9
+move a2, zero
+lw gp, 0x18(sp)
+bltz s1, 0x40b32c
+move a0, s1
+lw s7, -0x7fd8(gp)
+lw t9, -sym.imp.fdopen(gp)
+jalr t9
+addiu a1, s7, 0x7dcc
+lw gp, 0x18(sp)
+beqz v0, 0x409ea8
+move s0, v0
+lw t9, -sym.imp.getpid(gp)
+jalr t9
+nop
+move a0, s0
+lw gp, 0x18(sp)
+move a2, v0
+lw a1, -0x7fd8(gp)
+[31mlw t9, -sym.imp.fprintf(gp)[0m
+jalr t9
+addiu a1, a1, 0x7dd0
+lw gp, 0x18(sp)
+lw t9, -sym.imp.fclose(gp)
+jalr t9
+move a0, s0
+lw gp, 0x18(sp)
+lw t9, -sym.imp.lockf(gp)
+addiu a1, zero, 2
+move a2, zero
+jalr t9
+move a0, s1
+lw gp, 0x18(sp)
+lw t9, -sym.imp.close(gp)
+jalr t9
+move a0, s1
+move a0, s3
+lw gp, 0x18(sp)
+lw t9, -sym.init_wlan(gp)
+jalr t9
+
+[*] Function fprintf used 1 times wscd
+

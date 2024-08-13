@@ -1,0 +1,11 @@
+[*] Binary protection state of xt_comment.ko
+
+  
+  	No RELRO       No Canary found   NX disabled  REL          No RPATH     No RUNPATH   Symbols
+
+
+[*] Function popen tear down of xt_comment.ko
+
+
+[*] Function popen used 0 times xt_comment.ko
+

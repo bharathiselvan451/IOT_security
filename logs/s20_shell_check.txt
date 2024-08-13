@@ -1,0 +1,55 @@
+[+] Check scripts with shellcheck and semgrep
+=================================================================
+This module tries to identify shell scripts and analyses them with shellcheck - https://www.shellcheck.net/.
+
+
+
+==> Check scripts with shellcheck
+-----------------------------------------------------------------
+[+] Found 1 issues in script (common linux file: no): /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/getmib (-rwxrwxr-x 501 502)
+[REF] /logs/s20_shell_check/shellchecker_getmib.txt
+[+] Found 1 issues in script (common linux file: no): /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/idd (-rwxrwxr-x 501 502)
+[REF] /logs/s20_shell_check/shellchecker_idd.txt
+[+] Found 1 issues in script (common linux file: no): /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ib (-rwxrwxr-x 501 502)
+[REF] /logs/s20_shell_check/shellchecker_ib.txt
+[+] Found 2 issues in script (common linux file: no): /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/irf (-rwxrwxr-x 501 502)
+[REF] /logs/s20_shell_check/shellchecker_irf.txt
+[+] Found 1 issues in script (common linux file: yes): /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/iw (-rwxrwxr-x 501 502)
+[REF] /logs/s20_shell_check/shellchecker_iw.txt
+[+] Found 2 issues in script (common linux file: no): /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ob (-rwxrwxr-x 501 502)
+[REF] /logs/s20_shell_check/shellchecker_ob.txt
+[+] Found 2 issues in script (common linux file: yes): /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/od (-rwxrwxr-x 501 502)
+[REF] /logs/s20_shell_check/shellchecker_od.txt
+[+] Found 3 issues in script (common linux file: no): /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/orf (-rwxrwxr-x 501 502)
+[REF] /logs/s20_shell_check/shellchecker_orf.txt
+[+] Found 2 issues in script (common linux file: no): /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/ow (-rwxrwxr-x 501 502)
+[REF] /logs/s20_shell_check/shellchecker_ow.txt
+[+] Found 1 issues in script (common linux file: no): /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/rssi (-rwxrwxr-x 501 502)
+[REF] /logs/s20_shell_check/shellchecker_rssi.txt
+[+] Found 2 issues in script (common linux file: no): /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/bin/setmib (-rwxrwxr-x 501 502)
+[REF] /logs/s20_shell_check/shellchecker_setmib.txt
+[+] Found 4 issues in script (common linux file: no): /logs/firmware/unblob_extracted/firmware_extract/1180160-3904000.squashfs_v4_le_extract/sbin/hotplug (-rwxr-xr-x 501 502)
+[REF] /logs/s20_shell_check/shellchecker_hotplug.txt
+
+
+
+==> Summary of shell issues (shellcheck)
+-----------------------------------------------------------------
+[+] Found 22 issues in 15 shell scripts
+
+[*] Statistics:22:15
+    [+] SC2086 (info): Double quote to prevent globbing and word splitting.
+    [+] SC2166 (warning): Prefer [ p ] && [ q ] as [ p -a q ] is not well defined.
+
+
+==> Check shell scripts with semgrep
+-----------------------------------------------------------------
+[+] Found 53 issues in 15 shell scripts
+[REF] /logs/s20_shell_check/semgrep.log
+
+[*] Statistics1:53:15
+
+
+==> Summary of shell eval usages
+-----------------------------------------------------------------
+[-] No eval usage found in shell scripts

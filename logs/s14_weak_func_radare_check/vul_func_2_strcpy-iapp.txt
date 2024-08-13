@@ -1,0 +1,72 @@
+[*] Binary protection state of iapp
+
+  	RELRO          CANARY            NX           PIE          RPATH        RUNPATH      SYMBOLS      
+  	No RELRO       No Canary found   NX disabled  No PIE       No RPATH     No RUNPATH   No Symbols
+
+
+[*] Function strcpy tear down of iapp
+
+lw gp, 0x18(sp)
+beqz v0, 0x401a98
+move a0, s0
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.strncmp(gp)
+addiu a2, zero, 3
+jalr t9
+addiu a1, a1, 0x2f0c
+lw gp, 0x18(sp)
+beqz v0, 0x401a98
+move a0, s0
+lw a1, -segment.LOAD0(gp)
+lw t9, -sym.imp.strncmp(gp)
+addiu a2, zero, 4
+jalr t9
+addiu a1, a1, 0x2f10
+lw gp, 0x18(sp)
+bnez v0, 0x401b0c
+nop
+lw v0, -0x7fe8(gp)
+lw a0, 0x3330(v0)
+lb v0, 0x1c(a0)
+bnez v0, 0x401abc
+nop
+lw a1, (s1)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+b 0x401af8
+addiu a0, a0, 0x1c
+lb v0, 0x671(a0)
+beqz v0, 0x401adc
+move s2, zero
+addiu a0, a0, 0x671
+addiu a0, a0, 0x10
+lb v0, (a0)
+bnez v0, 0x401acc
+addiu s2, s2, 1
+lw v0, -0x7fe8(gp)
+sll v1, s2, 4
+lw a1, (s1)
+lw a0, 0x3330(v0)
+[31mlw t9, -sym.imp.strcpy(gp)[0m
+addu a0, a0, v1
+addiu a0, a0, 0x671
+jalr t9
+nop
+lw gp, 0x18(sp)
+b 0x401be0
+nop
+lw a0, -segment.LOAD0(gp)
+lw t9, -sym.imp.puts(gp)
+b 0x401bd0
+addiu a0, a0, 0x2f18
+lw v0, -0x7f2c(gp)
+lw t9, -sym.imp.atoi(gp)
+lw a0, (v0)
+lw v0, -0x7fe8(gp)
+lw s0, 0x3330(v0)
+jalr t9
+nop
+slti v1, v0, 4
+lw gp, 0x18(sp)
+
+[*] Function strcpy used 2 times iapp
+
